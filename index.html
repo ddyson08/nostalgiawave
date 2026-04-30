@@ -57,7 +57,7 @@
         <div id="textEnter" class="teTextEnter card">
             <b id="teTitle" words="3"></b>
             <input n="0" type="text" class="hasBorder" id="teInput" />
-            <button id="teButton" words="4" onclick='if(doneAnimation && is8){user.year = document.querySelector("#teInput").value;makeShapes(user.year,"","y",true); swapTe(8, generatePreferences, 4, generatePreferences); document.querySelector("#teButton").removeAttribute("onclick","");}'></button>
+            <button id="teButton" words="4" onclick='  if (doneAnimation) {            var thisVall = validateDate(document.querySelector("#teInput").value);            if (!thisVall.includes("Year Error")) {                user.year = thisVall;                makeShapes(user.year, "", "y", true);                swapTe(8, generatePreferences, 4, generatePreferences);                document.querySelector("#teButton").removeAttribute("onclick", "");            } else {                handleError(thisVall)            }        }'></button>
             <button id="viewSaved"></button>
             <button id="saveThis"></button>
         </div>
@@ -73,8 +73,6 @@
             </iframe>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
-                <div id="saveButton" class="sideButton" words="26"></div>
-                <div id="rightButton" class="sideButton" words="27"></div>
             </div>
         </div>
         <div id="background"></div>
@@ -92,11 +90,11 @@
                 <p class="swText scrollable" words="29"></p>
                 <div class="swGive scrollable"></div>
             </div>
-            <div class="scrollable" id="swDiff">
-                <p class="swText scrollable">search different</p>
+            <div class="scrollable" id="exitsw">
+                <p class="swText scrollable" words="30"></p>
                 <div class="swGive scrollable"></div>
             </div>
-            <div class="scrollable" id="exitsw">
+            <div class="scrollable" id="sharenos">
                 <p class="swText scrollable" words="31"></p>
                 <div class="swGive scrollable"></div>
             </div>

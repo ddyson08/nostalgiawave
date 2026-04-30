@@ -126,7 +126,7 @@ words = {
         "next", //4
         "Your", //5
         "nostalgia", //6
-        "what time period are you nostalgic for?", //7
+        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
         "what creator?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //8
         "what topic?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //9
         "'s ", //10
@@ -144,13 +144,13 @@ words = {
         "delete this one&nbsp;", //22
         "view saved nostalgias", //23
         "next one&nbsp;-&nbsp;", //24
-        "less of ts", //25
+        "options", //25
         "➢", //26
         "more of ts", //27
-        "creator", //28
-        "topic", //29
-        "drag ts down", //30
-        "exit ts menu", //31
+        "search again", //28
+        "share video", //29
+        "open video", //30
+        "share nostalgiaTok", //31
         "what's good, ", //32
         "anqrzfeubxkmlpwhdvocty", //33
         "abcd_efghijklmn_opqrstudvwxyz_", //34
@@ -162,7 +162,44 @@ words = {
         "summer", //40
         "winter", //41
         "fall", //42
-        "quarantine" //43
+        "early", //43
+        "mid", //44
+        "late", //45
+        "jan", //46
+        "feb", //47
+        "mar", //48
+        "apr", //49
+        "may", //50
+        "jun", //51
+        "jul", //52
+        "aug", //53
+        "sep", //54
+        "oct", //55
+        "nov", //56
+        "dec", //57
+        "january", //58
+        "february", //59
+        "march", //60
+        "april", //61
+        "may", //62
+        "june", //63
+        "july", //64
+        "august", //65
+        "september", //66
+        "october", //67
+        "november", //68
+        "december", //69
+        "past 2021 plzz", //70
+        "well, before this year plzz", //71
+        "between 2021 - now plzz", //72
+        "sorry, try again plzz", //73
+        "tysm btw ☺", //74
+        "oopsie!", //75
+        `Something didn't work<br>Hit "options" and then drag the box to "search again" to do another search`, //76
+        "thats it ngl", //77
+        "you've watched all the videos for this query", //78
+        "videos are still coming in", //79
+        "this will automatically scroll when they arrive" //80
     ],
 
     "en": [
@@ -305,8 +342,17 @@ function startFollow() {
 }
 function endFollow() {
     SF = false;
-    if (document.querySelector('#swDrag').parentNode == document.querySelector('#swDiff')) {
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#creator')) {
         editModeAnimation();
+    }
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
+        window.share("https://youtu.be/" + tsVideo.shortUrl);
+    }
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
+        window.open("https://youtu.be/" + tsVideo.shortUrl);
+    }
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')) {
+        window.share("https://ddyson08.github.io/nostalgiatok/");
     }
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
@@ -572,8 +618,6 @@ function pgCancel(text) {
             </iframe>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
-                <div id="saveButton" class="sideButton" words="26"></div>
-                <div id="rightButton" class="sideButton" words="27"></div>
             </div>
         </div>`;
 
@@ -621,15 +665,29 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             teTee.innerHTML = `
 <b id="teTitle" words="7">what time period are you nostalgic for?</b>
         <input n="0" type="text" class="hasBorder" id="teInput" />
-<button id="teButton" words="4" onclick="var raeleigh = function () {
-                 document.querySelector('#teButton').remove();
-                    user.year = document.querySelector(&quot;#teInput&quot;).value;
-                    makeShapes(user.year, ' ', 'y', true);
-                    swapTe(8, generatePreferences, 4, generatePreferences)
-             
-            }; raeleigh();" style="display: block; opacity: 1;">next</button>
+<button id="teButton" words="4" onclick='  if (doneAnimation) {
+      var thisVall = validateDate(document.querySelector("#teInput").value);
+      if (!thisVall.includes("Year Error")) {
+          user.year = thisVall;
+          makeShapes(user.year, "       ", "y", true);
+          swapTe(8, generatePreferences, 4, generatePreferences);
+          document.querySelector("#teButton").removeAttribute("onclick", "");
+      } else {
+          handleError(thisVall)
+      }
+  }' style="display: block; opacity: 1;">next</button>
 <button id="viewSaved"></button>
-        <button id="teButton" words="4" onclick='if(doneAnimation && is8){user.year = document.querySelector("#teInput").value;makeShapes(user.year,"","y",true); swapTe(8, generatePreferences, 4, generatePreferences); document.querySelector("#teButton").removeAttribute("onclick","");}'></button>
+        <button id="teButton" words="4" onclick='  if (doneAnimation) {
+      var thisVall = validateDate(document.querySelector("#teInput").value);
+      if (!thisVall.includes("Year Error")) {
+          user.year = thisVall;
+          makeShapes(user.year, "       ", "y", true);
+          swapTe(8, generatePreferences, 4, generatePreferences);
+          document.querySelector("#teButton").removeAttribute("onclick", "");
+      } else {
+          handleError(thisVall)
+      }
+  }'></button>
 
         <button id="saveThis"></button>
     `;
@@ -639,12 +697,10 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             </iframe>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
-                <div id="saveButton" class="sideButton" words="26"></div>
-                <div id="rightButton" class="sideButton" words="27"></div>
             </div>`;
             document.body.querySelector('#allHold').append(dv);
             document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
-            document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
+         //   document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
             setTimeout(function () {
                 document.documentElement.scrollTop = 0;
                 document.documentElement.scrollLeft = 0;
@@ -689,17 +745,29 @@ function editModeFunction(simmilar, pgGivenData, neww) {
                 editMode = true;
                 swapTe(7, function () {
                     if (doneAnimation) {
-                        user.year = document.querySelector("#teInput").value;
-                        makeShapes(user.year, ' ', 'y', true);
-                        swapTe(8, generatePreferences, 4, generatePreferences)
-                        setTimeout(function () { document.querySelector('#teInput').value = user.preferences; }, 1000)
+                        var thisVall = validateDate(document.querySelector("#teInput").value);
+                        if (!thisVall.includes("Year Error")) {
+                            user.year = thisVall;
+                            makeShapes(user.year, "       ", "y", true);
+                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            document.querySelector("#teButton").removeAttribute("onclick", "");
+
+                        } else {
+                            handleError(thisVall)
+                        }
                     }
                 }, 4, function () {
                     if (doneAnimation) {
-                        user.year = document.querySelector("#teInput").value;
-                        makeShapes(user.year, ' ', 'y', true);
-                        swapTe(8, generatePreferences, 4, generatePreferences)
-                        setTimeout(function () { document.querySelector('#teInput').value = user.preferences; }, 1000)
+                        var thisVall = validateDate(document.querySelector("#teInput").value);
+                        if (!thisVall.includes("Year Error")) {
+                            user.year = thisVall;
+                            makeShapes(user.year, "       ", "y", true);
+                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            document.querySelector("#teButton").removeAttribute("onclick", "");
+
+                        } else {
+                            handleError(thisVall)
+                        }
                     }
                 });
                 setTimeout(function () { jintI = 0; fkAround2() }, 550);
@@ -707,17 +775,27 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             } else {
                 swapTe(7, function () {
                     if (doneAnimation) {
-                        user.year = document.querySelector("#teInput").value;
-                        makeShapes(user.year, ' ', 'y', true);
-                        swapTe(8, generatePreferences, 4, generatePreferences)
-                       
+                        var thisVall = validateDate(document.querySelector("#teInput").value);
+                        if (!thisVall.includes("Year Error")) {
+                            user.year = thisVall;
+                            makeShapes(user.year, "       ", "y", true);
+                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            document.querySelector("#teButton").removeAttribute("onclick", "");
+                        } else {
+                            handleError(thisVall)
+                        }
                     }
                 }, 4, function () {
                     if (doneAnimation) {
-                        user.year = document.querySelector("#teInput").value;
-                        makeShapes(user.year, ' ', 'y', true);
-                        swapTe(8, generatePreferences, 4, generatePreferences)
-                        
+                        var thisVall = validateDate(document.querySelector("#teInput").value);
+                        if (!thisVall.includes("Year Error")) {
+                            user.year = thisVall;
+                            makeShapes(user.year, "       ", "y", true);
+                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            document.querySelector("#teButton").removeAttribute("onclick", "");
+                        } else {
+                            handleError(thisVall)
+                        }
                     }
                 });
                 setTimeout(function () { document.querySelector('#teInput').value = ""}, 300);
@@ -807,7 +885,7 @@ window.onload = function () {
         root.style.setProperty('--lightText', 'HSL(60, 56%, 10%)');
         root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
         root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
-        root.style.setProperty('--contrast', 'HSL(60, 2%, 5%)');
+        root.style.setProperty('--contrast', 'HSL(60, 2%, 7%)');
         /*
          * :root {
     --bg: HSL(60, 56%, 90%);
@@ -837,20 +915,24 @@ window.onload = function () {
             lilWidth = clientY
             var closest = [10000000, '']; for (var i of list) { var Aa = document.querySelector(i).getBoundingClientRect(); var Aaa = Aa.y + Aa.height / 2; if (closest[0] > Math.abs(lilWidth - Aaa)) { closest[0] = Math.abs(lilWidth - Aaa); closest[1] = i; newConsoleLog(closest) } }
             if (closest[1] == "#creator") {
-                document.querySelector('#swDrag').innerText = tsVideo.creator;
+                document.querySelector('#swDrag').innerText = "-->";
+               
                // document.querySelector('#touchOverlay').style.display = "block";
             }
             if (closest[1] == "#swTopic") {
-                document.querySelector('#swDrag').innerText = tsVideo.topic;
+                document.querySelector('#swDrag').innerText = "✈";
+              
                // document.querySelector('#touchOverlay').style.display = "block";
             }
-            if (closest[1] == "#swDiff") {
-                document.querySelector('#swDrag').innerText = "🔎";
+            if (closest[1] == "#exitsw") {
+                document.querySelector('#swDrag').innerText = "https://youtu.be/" + tsVideo.shortUrl;
+               
                // document.querySelector('#touchOverlay').style.display = "block";
                 //eMA2();
             }
-            if (closest[1] == "#exitsw") {
-                document.querySelector('#swDrag').innerText = "-->";
+            if (closest[1] == "#sharenos") {
+                document.querySelector('#swDrag').innerText = words[navigator.language][74];
+                
                
             }
             document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
@@ -884,15 +966,27 @@ window.onload = function () {
             }, 500);
             swapTe(7, function () {
                 if (doneAnimation) {
-                    user.year = document.querySelector("#teInput").value;
-                    makeShapes(user.year, ' ', 'y', true);
-                    swapTe(8, generatePreferences, 4, generatePreferences)
+                    var thisVall = validateDate(document.querySelector("#teInput").value);
+                    if (!thisVall.includes("Year Error")) {
+                        user.year = thisVall;
+                        makeShapes(user.year, "       ", "y", true);
+                        swapTe(8, generatePreferences, 4, generatePreferences);
+                        document.querySelector("#teButton").removeAttribute("onclick", "");
+                    } else {
+                        handleError(thisVall)
+                    }
                 }
             }, 4, function () {
                 if (doneAnimation) {
-                    user.year = document.querySelector("#teInput").value;
-                    makeShapes(user.year, ' ', 'y', true);
-                    swapTe(8, generatePreferences, 4, generatePreferences)
+                    var thisVall = validateDate(document.querySelector("#teInput").value);
+                    if (!thisVall.includes("Year Error")) {
+                        user.year = thisVall;
+                        makeShapes(user.year, "       ", "y", true);
+                        swapTe(8, generatePreferences, 4, generatePreferences);
+                        document.querySelector("#teButton").removeAttribute("onclick", "");
+                    } else {
+                        handleError(thisVall)
+                    }
                 }
             });
             newConsoleLog(4);
@@ -989,7 +1083,7 @@ window.onload = function () {
     });
     newConsoleLog(14);
     document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
-    document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
+  //  document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
     setTimeout(function () {
         document.documentElement.scrollTop = 0;
         document.documentElement.scrollLeft = 0;
@@ -1500,7 +1594,7 @@ async function getSaved() {
     }
 }
 
-list = ['#creator', '#swTopic', '#swDiff','#exitsw'];
+list = ['#creator', '#swTopic', '#exitsw','#sharenos'];
 function generatePreferences() {
     user.preferences = document.querySelector("#teInput").value;
     makeShapes(user.preferences, ',', 'p', true);
@@ -1510,6 +1604,7 @@ function generatePreferences() {
 
         user.topics = document.querySelector("#teInput").value;
         makeShapes(user.topics, ',', 't', true);
+        requestVideos();
         swapTe(13, function () {
             saveNew(document.querySelector('input').value);
             swapTe(15, function () { }, 16, function () { }, true)
@@ -1522,6 +1617,7 @@ function generatePreferences() {
         user.topics = document.querySelector('input').value;
 
         makeShapes(user.topics, ',', 't', true);
+        requestVideos();
         swapTe(13, function () {
             saveNew(document.querySelector('input').value);
             swapTe(15, function () { }, 16, function () { }, true)
@@ -1838,7 +1934,7 @@ try{
                                                                     var v = document.querySelector('#displayVideos');
                                                                     v.style.opacity = "1";
                                                                     v.style.display = "block";
-                                                                    document.querySelector('#leftButton').style.width = "calc(" + document.querySelector('#rightButton').getBoundingClientRect().width + "px - 1em)";
+                                                                   // document.querySelector('#leftButton').style.width = "calc(" + document.querySelector('#rightButton').getBoundingClientRect().width + "px - 1em)";
                                                                     t.append(v);
                                                                     funnyC = 1; newConsoleLog('HERE');
                                                                     v.style.top = "6em";
@@ -2254,16 +2350,28 @@ function enterName() {
     }, 1000);
     swapTe(7, function () {
         if (doneAnimation) {
-            user.year = document.querySelector("#teInput").value;
-            makeShapes(user.year, ' ', 'y', true);
-            swapTe(8, generatePreferences, 4, generatePreferences)
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(8, generatePreferences, 4, generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+            } else {
+                handleError(thisVall)
+            }
         }
 
     }, 4, function () {
         if (doneAnimation) {
-            user.year = document.querySelector("#teInput").value;
-            makeShapes(user.year, ' ', 'y', true);
-            swapTe(8, generatePreferences, 4, generatePreferences)
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(8, generatePreferences, 4, generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+            } else {
+                handleError(thisVall)
+            }
         }
     });
     setTimeout(function () {
@@ -2789,6 +2897,24 @@ function swipeUp() {
                                 bigJuf.style.backgroundColor = "var(--accent)";
 
                                 setTimeout(function () {
+                                    currentPlace += 1;
+                                    if (currentPlace == allVideos.length - 1) {
+                                        if (nextToken == "") {
+                                            giveError2()
+                                        } else {
+                                            giveError3();
+                                            gE3Mode = true;
+                                        }
+                                    } else {
+                                        if (allVideos[currentPlace] == "Error") {
+                                            giveError();
+                                        } else {
+                                            document.querySelector('iframe').setAttribute('src', allVideos[currentPlace]);
+                                            if (nextToken !== '') {
+                                                requestVideos(true);
+                                            }
+                                        }
+                                    }
                                     bigJuf.remove();
                                     bigJu.remove();
                                 }, 100);
@@ -2849,7 +2975,14 @@ function swipeDown() {
             bj.style.height = o2.height + "px";
             bj.style.transform = "rotate(0deg)";
             bj.style.borderRadius = "5px";
-            setTimeout(function () { bj.remove();},255)
+            setTimeout(function () {
+                bj.remove(); currentPlace -= 1; if (currentPlace == -1) { giveError() } else {
+                    if (allVideos[currentPlace] == "Error") {
+                        giveError();
+                    } else {
+                        document.querySelector('iframe').setAttribute('src', allVideos[currentPlace]);
+                    }
+                }}, 255)
             if (o2.x >= window.innerWidth / 2 && o2.y < (window.innerHeight - (6 * (parseFloat(getComputedStyle(orbit.parentNode).fontSize))
             ))) {
                // bj.remove();
@@ -2861,6 +2994,7 @@ function swipeDown() {
                 setTimeout(function () {
                     orbit.remove();
                     canSwipe = true;
+
                    // bj.remove();
                 }, 250)
             }
@@ -2995,95 +3129,294 @@ function swipeDown() {
     }
 };
 
-function validateDate(text) {
+function validateDate(tex) {
+    var text = tex.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     if (text.includes("-")) {
         var retText = text.split('-');
-        return validateDate(retText[0]).split('~')[0] + "~" + validateDate(retText[1]).split('~')[1]
+        var retValue = validateDate(retText[0]).split('~')[0] + "~" + validateDate(retText[1]).split('~')[1];
+        console.log([retText[0], retText[1]])
+        if (retValue.includes('Year Error: Out of bounds')) {
+            return ("Year Error: Out of bounds");
+        }
+        if (retValue.includes("Year Error: Too low") && !retValue.includes("Year Error: Too high")) {
+            console.log(retValue);
+            return ("Year Error: Too low");
+        }
+        if (retValue.includes("Year Error: Too high") && !retValue.includes("Year Error: Too low")) {
+            return ("Year Error: Too high");
+        }
+        if (retValue.includes("Year Error: Too low") && retValue.includes("Year Error: Too high")) {
+            return ("Year Error: Both outta bounds");
+        }
+        var retValue2 = validateDate(retText[0]).split('~')[1] + "~" + validateDate(retText[1]).split('~')[0];
+        var firstOne = new Date(retValue2.split('~')[0]);
+        var secondOne = new Date(retValue2.split('~')[1]);
+        console.log([validateDate(retText[0]).split('~')[1] + "~" + validateDate(retText[1]).split('~')[0], firstOne, secondOne])
+        if (firstOne.getTime() > secondOne.getTime()) {
+            retValue = retValue2.split('~')[1] + "~" + retValue2.split('~')[0]
+        }
+        return retValue;
     } else {
+        try { 
         var tbr = "";
         var theYear = parseFloat(text.match(/(\d+)/)[0]);
         if (theYear.toString().length < 3) {
             theYear = 2000 + theYear;
         }
+        var d = new Date();
+            if (theYear < 2019) {
+                return ("Year Error: Too low~Year Error: Too low")
+            }
+            if (theYear > d.getFullYear()) {
+                return ("Year Error: Too high~Year Error: Too high")
+            }
+    }
+        catch (e) {
+            return ("Year Error: Can't read data~Year Error: Can't read data")
+        }
         //spring
         if (text.includes(words[navigator.language][39])) {
-            tbr += "03/15/XXXX ~ 05/31/XXXX"
+            tbr = "03/15/XXXX ~ 05/31/XXXX"
         }
         //summer
         if (text.includes(words[navigator.language][40])) {
-            tbr += "06/01/XXXX ~ 09/01/XXXX"
+            tbr = "06/01/XXXX ~ 09/01/XXXX"
         }
         //fall
         if (text.includes(words[navigator.language][41])) {
-            tbr += "09/01/XXXX ~ 11/30/XXXX"
+            tbr = "09/01/XXXX ~ 11/30/XXXX"
         }
         //winter
         if (text.includes(words[navigator.language][42])) {
-            tbr += "12/01/XXXX ~ 03/14/XXXY"
+            tbr = "12/01/XXXX ~ 03/14/XXXY"
         }
         if (text.includes(words[navigator.language][43])) {
-            tbr += "01/01/XXXX ~ 03/31/XXXX"
+            tbr = "01/01/XXXX ~ 03/31/XXXX"
         }
         if (text.includes(words[navigator.language][44])) {
-            tbr += "04/01/XXXX ~ 09/30/XXXX"
+            tbr = "04/01/XXXX ~ 09/30/XXXX"
         }
         if (text.includes(words[navigator.language][45])) {
-            tbr += "10/01/XXXX ~ 12/31/XXXX"
+            tbr = "10/01/XXXX ~ 12/31/XXXX"
         }
         //jan 
-        if (text.includes(words[navigator.language][46])) {
-            tbr += "01/01/XXXX ~ 02/01/XXXX"
+        if (text.toLowerCase().includes(words[navigator.language][46]) || text.includes(words[navigator.language][46+12])) {
+            tbr = "01/01/XXXX ~ 02/01/XXXX"
         }
         //feb
-        if (text.includes(words[navigator.language][47])) {
-            tbr += "02/01/XXXX ~ 03/01/XXXX"
+        if (text.includes(words[navigator.language][47]) || text.includes(words[navigator.language][47 + 12])) {
+            tbr = "02/01/XXXX ~ 03/01/XXXX"
         }
         //mar
-        if (text.includes(words[navigator.language][48])) {
-            tbr += "03/01/XXXX ~ 04/01/XXXX"
+        if (text.includes(words[navigator.language][48]) || text.includes(words[navigator.language][48 + 12])) {
+            tbr = "03/01/XXXX ~ 04/01/XXXX"
         }
         //apr
-        if (text.includes(words[navigator.language][49])) {
-            tbr += "04/01/XXXX ~ 05/01/XXXX"
+        if (text.includes(words[navigator.language][49]) || text.includes(words[navigator.language][49 + 12])) {
+            tbr = "04/01/XXXX ~ 05/01/XXXX"
         }
         //may
-        if (text.includes(words[navigator.language][50])) {
-            tbr += "05/01/XXXX ~ 06/01/XXXX"
+        if (text.includes(words[navigator.language][50]) || text.includes(words[navigator.language][50 + 12])) {
+            tbr = "05/01/XXXX ~ 06/01/XXXX"
         }
         //jun
-        if (text.includes(words[navigator.language][51])) {
-            tbr += "06/01/XXXX ~ 07/01/XXXX"
+        if (text.includes(words[navigator.language][51]) || text.includes(words[navigator.language][51 + 12])) {
+            tbr = "06/01/XXXX ~ 07/01/XXXX"
         }
         //july
-        if (text.includes(words[navigator.language][52])) {
-            tbr += "07/01/XXXX ~ 08/01/XXXX"
+        if (text.includes(words[navigator.language][52]) || text.includes(words[navigator.language][52 + 12])) {
+            tbr = "07/01/XXXX ~ 08/01/XXXX"
         }
         //aug
-        if (text.includes(words[navigator.language][53])) {
-            tbr += "08/01/XXXX ~ 09/01/XXXX"
+        if (text.includes(words[navigator.language][53]) || text.includes(words[navigator.language][53 + 12])) {
+            tbr = "08/01/XXXX ~ 09/01/XXXX"
         }
         //sep
-        if (text.includes(words[navigator.language][54])) {
-            tbr += "09/01/XXXX ~ 10/01/XXXX"
+        if (text.includes(words[navigator.language][54]) || text.includes(words[navigator.language][54 + 12])) {
+            tbr = "09/01/XXXX ~ 10/01/XXXX"
         }
         //oct
-        if (text.includes(words[navigator.language][55])) {
-            tbr += "10/01/XXXX ~ 11/01/XXXX"
+        if (text.includes(words[navigator.language][55]) || text.includes(words[navigator.language][55 + 12])) {
+            tbr = "10/01/XXXX ~ 11/01/XXXX"
         }
         //nov
-        if (text.includes(words[navigator.language][56])) {
-            tbr += "11/01/XXXX ~ 12/01/XXXX"
+        if (text.includes(words[navigator.language][56]) || text.includes(words[navigator.language][56 + 12])) {
+            tbr = "11/01/XXXX ~ 12/01/XXXX"
         }
         //dec
-        if (text.includes(words[navigator.language][57])) {
-            tbr += "12/01/XXXX ~ 1/01/XXXY"
+        if (text.includes(words[navigator.language][57]) || text.includes(words[navigator.language][57 + 12])) {
+            tbr = "12/01/XXXX ~ 1/01/XXXY"
         }
         //quarantine
-        if (text.includes(words[navigator.language][58])) {
-            tbr += "03/17/2020 ~ 01/01/2022"
+        if (text.includes(words[navigator.language][58 + 12])) {
+            tbr = "03/17/2020 ~ 01/01/2022"
+        }
+        if (tbr == '') {
+            tbr = "01/01/XXXX ~ 01/01/XXXY";
         }
         tbr = tbr.replace(/XXXX/g, theYear).replace(/XXXY/g, theYear + 1)
         return tbr;
     }
     return tbr;
+}
+function handleError(Error) {
+    console.log(Error)
+    if (Error.includes('Too low')) {
+        console.log(['too low', 70])
+        words[navigator.language][7] = words[navigator.language][70] + '<br>' + words[navigator.language][7].split('<br>')[1]
+    }
+    if (Error.includes('Too high')) {
+        console.log(['too high', 71])
+        words[navigator.language][7] = words[navigator.language][71] + '<br>' + words[navigator.language][7].split('<br>')[1]
+    }
+    if (Error.includes("Can't read data")) {
+        console.log([' cant read', 73])
+        words[navigator.language][7] = words[navigator.language][73] + '<br>' + words[navigator.language][7].split('<br>')[1]
+    }
+    if (Error.includes("Both outta bounds")) {
+        console.log(['both', 72])
+        words[navigator.language][7] = words[navigator.language][72] + '<br>' + words[navigator.language][7].split('<br>')[1]
+    }
+    swapTe(7, function () {
+        if (doneAnimation) {
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(8, generatePreferences, 4, generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+
+            } else {
+                handleError(thisVall)
+            }
+        }
+    }, 4, function () {
+        if (doneAnimation) {
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(8, generatePreferences, 4, generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+
+            } else {
+                handleError(thisVall)
+            }
+        }
+    });
+    setTimeout(
+        function () {
+            while ([...document.querySelectorAll('.vs2')].length > 1) {
+                [...document.querySelectorAll('.vs2')][0].remove();
+            };
+            var QQ = document.querySelector('.vs2');
+           /* var newButtonNext = document.createElement('button');
+            newButtonNext.setAttribute('onclick', `var raeleigh = function () {
+                if (doneAnimation) {
+                    var thisVall = validateDate(document.querySelector("#teInput").value);
+                    if (!thisVall.includes("Year Error")) {
+                        user.year = thisVall;
+                        makeShapes(user.year, "       ", "y", true);
+                        swapTe(8, generatePreferences, 4, generatePreferences);
+                        document.querySelector("#teButton").removeAttribute("onclick", "");
+                    } else {
+                        handleError(thisVall)
+                    }
+                }
+            }; raeleigh();`);
+            newButtonNext.setAttribute('words', 4);
+            newButtonNext.setAttribute('id', 'teButton');
+            newButtonNext.innerText = words[navigator.language][4];
+            document.querySelector('#textEnter').append(newButtonNext);
+            newButtonNext.style.opacity = "1";
+            newButtonNext.style.display = "block";
+            */
+            jintI = 0;
+            fkAround2();
+            document.querySelector('#textEnter').append(QQ);
+           while ([...document.querySelector('#textEnter').querySelectorAll('[words = "4"]')].length > 1) {
+               [...document.querySelector('#textEnter').querySelectorAll('[words = "4"]')][0].remove();
+           };
+        }, 505
+    )
+}
+var nextToken;
+var ge3Mode;
+//text = text.toLowerCase();
+async function requestVideos(value) {
+    if (false) {
+        try {
+            const result = await requestVideosInner(value);
+            var sanitized = result.split('NEXT_TOKEN:')[0];
+            nextToken = result.split('NEXT_TOKEN:')[1];
+            if (nextToken !== "") {
+                for (var i of sanitized.split(' ~ ')) {
+                    allVideos.push(i);
+                    if (gE3Mode) {
+                        swipeDown();
+                        ge3Mode = false;
+                    }
+                }
+            }
+            allVideos = sanitized.split(' ~ ');
+            console.log(result);
+
+        } catch (err) {
+            console.error(err);
+            allVideos[0] = "ERROR";
+            giveError();
+        }
+    }
+}
+var allVideos = [];
+var currentPlace = 0;
+async function requestVideosInner(value) {
+    let url =
+        "https://script.google.com/macros/s/AKfycbxUDb4Foe5IyGmygjb_5RVmgbAkaBdoeECGtj6LFmYGE_ctMRlW_h8xVKifR8EArmtnnw/exec"
+        + "?year=" + encodeURIComponent(user.year)
+        + "&creator=" + encodeURIComponent(user.preferences)
+        + "&topic=" + encodeURIComponent(user.topic);
+    if (value) {
+        url = url + "&token=" + encodeURIComponent(nextToken);
+    }
+
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            allVideos[0] = "ERROR";
+            
+        }
+
+        const result = await response.json();
+        return result;   
+    } catch (error) {
+        console.error(error.message);
+        allVideos[0] = "ERROR";
+        
+    }
+}
+function giveError() {
+    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
+    margin-top: 0em;
+    background-color: var(--second);
+    padding: calc(var(--margin)/2);
+"><p style="color:var(--emphasizedText)">`+ words[navigator.language][75] + `</p><span>` + words[navigator.language][76] + `</span>
+            </div>` + document.querySelector('#touchOverlay').innerHTML;
+}
+function giveError2() {
+    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
+    margin-top: 0em;
+    background-color: var(--second);
+    padding: calc(var(--margin)/2);
+"><p style="color:var(--emphasizedText)">`+ words[navigator.language][77] + `</p><span>` + words[navigator.language][76] + '<br>' + words[navigator.language][78] + `</span>
+            </div>` + document.querySelector('#touchOverlay').innerHTML;
+}
+function giveError3() {
+    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
+    margin-top: 0em;
+    background-color: var(--second);
+    padding: calc(var(--margin)/2);
+"><p style="color:var(--emphasizedText)">`+ words[navigator.language][79] + `</p><span>` + words[navigator.language][80] + `</span>
+            </div>` + document.querySelector('#touchOverlay').innerHTML;
 }
