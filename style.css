@@ -694,3 +694,6 @@ button {
 #titleBar :is(a) {
     text-decoration: underline;
 }
+.giveError :is(p) {
+    background-color: var(--second);
+}
