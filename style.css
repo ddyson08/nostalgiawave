@@ -20,9 +20,7 @@
     font-weight: 100;
     font-style: normal;
 }
-body {
-    width: 100dvw;
-}
+
 
 html, body {
     margin: 0;
@@ -696,4 +694,7 @@ button {
 }
 .giveError :is(p) {
     background-color: var(--second);
+}
+body {
+    width: 100vw !important;
 }
