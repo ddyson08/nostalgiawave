@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+     <script src="youtube.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -99,7 +100,7 @@
                 <div class="swGive scrollable"></div>
             </div>
         </div>
-        <div id="touchOverlay">
+        <div id="touchOverlay" onclick = "if(document.querySelector('#videoFrame').getAttribute('src') !== '') {autoplay = 1}">
             <div id="fullscreenButton" onclick="requestTheFullscreen(true)">↘</div>
         </div>
     </div>

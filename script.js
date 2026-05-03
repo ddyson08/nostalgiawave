@@ -253,10 +253,10 @@ words = {
 
 
 
-
-
-
-additions = {
+var autoplay = 0;
+var currentPlace = 0;
+var allVideos = [];
+var additions = {
     "en-US": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "en": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "ar": [" ", "<a>&nbsp;  </a>", "<b> </b>"],
@@ -264,6 +264,8 @@ additions = {
     "es": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "fr": [" ", "<b>&nbsp;  </b>", "<a> </a>"]
 }
+var nextToken;
+var gE3mode;
 var secondFunnyN = 41.23;
 var funnyN = 0;
 funnyN = secondFunnyN;
@@ -1604,6 +1606,7 @@ function generatePreferences() {
 
         user.topics = document.querySelector("#teInput").value;
         makeShapes(user.topics, ',', 't', true);
+        allVideos = [];
         requestVideos();
         swapTe(13, function () {
             saveNew(document.querySelector('input').value);
@@ -1650,6 +1653,7 @@ function runAnimation(bypass) {
  if (isPWA()) {
       //  await appendToStringStore('[NOSTALGIATOKSPLIT][NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
  } else {
+    if(localStorage.getItem('nostalgiaTokSaved')){
      if (localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]') !== undefined) {
          var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]');
      } else {
@@ -1662,6 +1666,9 @@ function runAnimation(bypass) {
              totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
      }
      localStorage.setItem('nostalgiaTokSaved', totalNST.join('[NOSTALGIATOKSPLIT]'));
+    }else{
+        localStorage.setItem('nostalgiaTokSaved', '""');
+    }
     }
     ra = true;
     setTimeout(function () {
@@ -1944,6 +1951,28 @@ try{
                                                                     v.style.bottom = "2em";
                                                                     happeningNow = false;
                                                                     var TOOO = document.querySelector('#touchOverlay');
+                                                                    currentPlace = -1;
+
+                                                                     if (currentPlace == allVideos.length - 1) {
+                                        
+                                        if (nextToken == "") {
+                                            giveError2()
+                                        } else {
+                                            giveError3();
+                                            gE3mode = true;
+                                        }
+                                    } else {
+                                       // alert(5);
+                                        if (allVideos[currentPlace] == "Error") {
+                                            giveError();
+                                        } else {
+                                           // alert(6);
+                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            if (nextToken !== '') {
+                                                requestVideos(true);
+                                            }
+                                        }
+                                    }
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                     TOOO.addEventListener('touchstart', function (event) {
                                                                         newConsoleLog("ts");
@@ -2726,6 +2755,13 @@ function handleTouch(startX, endX,
 }
 
 function swipeUp() {
+    currentPlace += 1;
+    try{
+    document.querySelector('#giveError').remove();
+    }
+    catch(e){
+
+    }
     if (canSwipe) {
         //var bcr = document.querySelector('#videoFrame').boundingClientRect();
         canSwipe = false;
@@ -2875,6 +2911,26 @@ function swipeUp() {
                                 bigJu.style.backgroundColor = "var(--accent)";
 
                                 setTimeout(function () {
+                                    if (currentPlace == allVideos.length - 1) {
+                                        
+                                        if (nextToken == "") {
+                                            giveError2()
+                                        } else {
+                                            giveError3();
+                                            gE3mode = true;
+                                        }
+                                    } else {
+                                       // alert(5);
+                                        if (allVideos[currentPlace] == "Error") {
+                                            giveError();
+                                        } else {
+                                           // alert(6);
+                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            if (nextToken !== '') {
+                                                requestVideos(true);
+                                            }
+                                        }
+                                    }
                                     bigJu.remove();
                                     bigJuf.remove();
                                 }, 100);
@@ -2894,22 +2950,28 @@ function swipeUp() {
                         setTimeout(function () {
                             bigJuf.style.transition = "0.1s";
                             setTimeout(function () {
+                               // alert(1);
                                 bigJuf.style.backgroundColor = "var(--accent)";
-
+//alert(2);
                                 setTimeout(function () {
-                                    currentPlace += 1;
+                                   // alert(3);
+                                    
+                                   // alert(4);
                                     if (currentPlace == allVideos.length - 1) {
+                                        
                                         if (nextToken == "") {
                                             giveError2()
                                         } else {
                                             giveError3();
-                                            gE3Mode = true;
+                                            gE3mode = true;
                                         }
                                     } else {
+                                       // alert(5);
                                         if (allVideos[currentPlace] == "Error") {
                                             giveError();
                                         } else {
-                                            document.querySelector('iframe').setAttribute('src', allVideos[currentPlace]);
+                                           // alert(6);
+                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -2928,6 +2990,13 @@ function swipeUp() {
 }
 };
 function swipeDown() {
+     try{
+    document.querySelector('#giveError').remove();
+    }
+    catch(e){
+
+    }
+    currentPlace -= 1;
     if (canSwipe) {
         canSwipe = false;
         if (fullsc == 'yes') {
@@ -2976,11 +3045,11 @@ function swipeDown() {
             bj.style.transform = "rotate(0deg)";
             bj.style.borderRadius = "5px";
             setTimeout(function () {
-                bj.remove(); currentPlace -= 1; if (currentPlace == -1) { giveError() } else {
+                bj.remove(); if (currentPlace == -1) { currentPlace = 0; } else {
                     if (allVideos[currentPlace] == "Error") {
                         giveError();
                     } else {
-                        document.querySelector('iframe').setAttribute('src', allVideos[currentPlace]);
+                        document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
                     }
                 }}, 255)
             if (o2.x >= window.innerWidth / 2 && o2.y < (window.innerHeight - (6 * (parseFloat(getComputedStyle(orbit.parentNode).fontSize))
@@ -3340,11 +3409,10 @@ function handleError(Error) {
         }, 505
     )
 }
-var nextToken;
-var ge3Mode;
+
 //text = text.toLowerCase();
 async function requestVideos(value) {
-    if (false) {
+    if (true) {
         try {
             const result = await requestVideosInner(value);
             var sanitized = result.split('NEXT_TOKEN:')[0];
@@ -3352,9 +3420,9 @@ async function requestVideos(value) {
             if (nextToken !== "") {
                 for (var i of sanitized.split(' ~ ')) {
                     allVideos.push(i);
-                    if (gE3Mode) {
+                    if (gE3mode) {
                         swipeDown();
-                        ge3Mode = false;
+                        gE3mode = false;
                     }
                 }
             }
@@ -3368,8 +3436,7 @@ async function requestVideos(value) {
         }
     }
 }
-var allVideos = [];
-var currentPlace = 0;
+
 async function requestVideosInner(value) {
     let url =
         "https://script.google.com/macros/s/AKfycbxUDb4Foe5IyGmygjb_5RVmgbAkaBdoeECGtj6LFmYGE_ctMRlW_h8xVKifR8EArmtnnw/exec"
@@ -3385,10 +3452,10 @@ async function requestVideosInner(value) {
 
         if (!response.ok) {
             allVideos[0] = "ERROR";
-            
         }
+        console.log(response);
 
-        const result = await response.json();
+        const result = await response.text();
         return result;   
     } catch (error) {
         console.error(error.message);
