@@ -255,7 +255,7 @@ var player;
 var playPause = 0;
 var autoplay = 1;
 
-var currentPlace = 1;
+var currentPlace = 0;
 var allVideos = [];
 var additions = {
     "en-US": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
