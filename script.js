@@ -251,9 +251,10 @@ words = {
     ]
 }
 
+var player;
+var playPause = 0;
+var autoplay = 1;
 
-
-var autoplay = 0;
 var currentPlace = 0;
 var allVideos = [];
 var additions = {
@@ -383,6 +384,7 @@ function openAh() {
     document.querySelector('#uvula').style.display = "none";
 }
 function editModeAnimation() {
+    stopVideo = 0;
     document.querySelector('#pgTitle').style.opacity = 1;
     document.querySelector('#pgTitle').querySelector('b').innerText = "Search History";
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
@@ -622,7 +624,7 @@ function pgCancel(text) {
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>
         </div>`;
-
+        onYouTubeIframeAPIReady();
         document.querySelector('#fullscreenButton').style.display = "block";
         runAnimation(true);
         editModeAnimation();
@@ -1967,7 +1969,8 @@ try{
                                             giveError();
                                         } else {
                                            // alert(6);
-                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            onYouTubeIframeAPIReady();
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -2925,7 +2928,8 @@ function swipeUp() {
                                             giveError();
                                         } else {
                                            // alert(6);
-                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            onYouTubeIframeAPIReady()
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -3487,3 +3491,48 @@ function giveError3() {
 "><p style="color:var(--emphasizedText)">`+ words[navigator.language][79] + `</p><span>` + words[navigator.language][80] + `</span>
             </div>` + document.querySelector('#touchOverlay').innerHTML;
 }
+var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('videoFrame', {
+          height: '390',
+          width: '640',
+          videoId: allVideos[currentPlace],
+          playerVars: {
+            'playsinline': 1,
+            'autoplay': 1,
+            'muted': autoplay
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange,
+            'onError': function(event) {
+                swipeUp();
+            }
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+      function startVideo() {
+        player.playVideo();
+      }
