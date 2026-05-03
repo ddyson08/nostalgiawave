@@ -3229,6 +3229,9 @@ function swipeDown() {
 };
 
 function validateDate(tex) {
+	if(tex.includes("~")){
+		return tex;
+	}else{
     var text = tex.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     if (text.includes("-")) {
         var retText = text.split('-');
@@ -3357,6 +3360,7 @@ function validateDate(tex) {
         return tbr;
     }
     return tbr;
+}
 }
 function handleError(Error) {
     console.log(Error)
