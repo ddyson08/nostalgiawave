@@ -255,7 +255,7 @@ var player;
 var playPause = 0;
 var autoplay = 1;
 
-var currentPlace = 0;
+var currentPlace = 1;
 var allVideos = [];
 var additions = {
     "en-US": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
@@ -618,13 +618,14 @@ function pgCancel(text) {
         document.querySelector('.uBall').innerHTML = `<div class='teShape'></div><div class='teShape'></div>`;
         swapTe(17, function () { }, 18, function () { }, true);
         document.querySelector('#textEnter').innerHTML += ` <div id="displayVideos">
-            <iframe id="videoFrame" src="" frameborder="0" allow="autoplay">
-            </iframe>
+            <div id="videoFrame" src="" frameborder="0" allow="autoplay">
+            </div>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>
         </div>`;
         onYouTubeIframeAPIReady();
+        //player.loadVideoById(allVideos[currentPlace]);
         document.querySelector('#fullscreenButton').style.display = "block";
         runAnimation(true);
         editModeAnimation();
@@ -639,6 +640,7 @@ function pgCancel(text) {
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+    document.querySelector('#uvula').style.zIndex = "1";
     //document.querySelector('#playground').scrollTo(0, 0);
     onScroll = false;
     var ah = document.querySelector('#allHold');
@@ -654,6 +656,7 @@ function editModeFunction(simmilar, pgGivenData, neww) {
     
     //
     if (simmilar) {
+         document.querySelector('#uvula').style.zIndex = "1";
         document.querySelector('#uvula').style.display = "block";
         document.querySelector('.uBall').innerHTML = "";
         var pg = document.querySelector('#pgTitle');
@@ -697,11 +700,12 @@ function editModeFunction(simmilar, pgGivenData, neww) {
     `;
             var dv = document.createElement('div');
             dv.setAttribute('id', 'displayVideos');
-            dv.innerHTML = ` <iframe id="videoFrame" src="" frameborder="0" allow="autoplay">
-            </iframe>
+            dv.innerHTML = ` <div id="videoFrame" src="" frameborder="0" allow="autoplay">
+            </div>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>`;
+            onYouTubeIframeAPIReady();
             document.body.querySelector('#allHold').append(dv);
             document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
          //   document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
@@ -811,6 +815,7 @@ function editModeFunction(simmilar, pgGivenData, neww) {
                 } else {
                     editMode = false;
                 }
+                 document.querySelector('#uvula').style.zIndex = "1";
             }, 1000)
             for (var i of [...document.querySelectorAll('[words]')]) {
                 try {
@@ -1970,7 +1975,7 @@ try{
                                         } else {
                                            // alert(6);
                                             //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
-                                            onYouTubeIframeAPIReady();
+                                            player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -2025,7 +2030,7 @@ try{
     }, 500);
 }
 function requestTheFullscreen(a) {
-    var video = document.querySelector('iframe');
+    var video = document.querySelector('#videoFrame');
     var touchOverlay = document.querySelector('#touchOverlay');
     var fullscreenButton = document.querySelector('#fullscreenButton');
     var Tee = document.querySelector('#textEnter');
@@ -2929,7 +2934,7 @@ function swipeUp() {
                                         } else {
                                            // alert(6);
                                             //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
-                                            onYouTubeIframeAPIReady()
+                                           player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -2975,7 +2980,8 @@ function swipeUp() {
                                             giveError();
                                         } else {
                                            // alert(6);
-                                            document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                            //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                           player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -3053,7 +3059,8 @@ function swipeDown() {
                     if (allVideos[currentPlace] == "Error") {
                         giveError();
                     } else {
-                        document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                        //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                        player.loadVideoById(allVideos[currentPlace]);
                     }
                 }}, 255)
             if (o2.x >= window.innerWidth / 2 && o2.y < (window.innerHeight - (6 * (parseFloat(getComputedStyle(orbit.parentNode).fontSize))
