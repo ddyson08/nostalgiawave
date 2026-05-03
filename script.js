@@ -748,7 +748,7 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             uv.style.display = "block";
             ul.style.height = "";
             ul.style.top = "";
-            document.querySelector('#fullscreenButton').style.display = "none";
+            //document.querySelector('#fullscreenButton').style.display = "none";
             if (!neww) {
                 editMode = true;
                 swapTe(7, function () {
@@ -1755,6 +1755,7 @@ try{
                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
                         ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
                         mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+                        
                         for (var i of document.querySelectorAll(".teShape")) {
                             if (Math.random() < 0.5) {
                                 i.style.backgroundColor = "var(--oj)";
@@ -1871,6 +1872,7 @@ try{
                                             break;
                                         }
                                     }*/
+                                   document.querySelector('.uBall').style.overflow = "visible";
                                     setTimeout(function () {
                                         q.style.top = "calc(1em)";
                                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
@@ -1958,8 +1960,8 @@ try{
                                                                     v.style.bottom = "2em";
                                                                     happeningNow = false;
                                                                     var TOOO = document.querySelector('#touchOverlay');
-                                                                    currentPlace = -1;
-
+                                                                    currentPlace = 0;
+document.querySelector('.uBall').style.overflow = "hidden";
                                                                      if (currentPlace == allVideos.length - 1) {
                                         
                                         if (nextToken == "") {
@@ -1976,7 +1978,7 @@ try{
                                            // alert(6);
                                             //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
                                            onYouTubeIframeAPIReady();
-                                            player.loadVideoById(allVideos[currentPlace]);
+                                            //player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
                                             }
@@ -1984,14 +1986,14 @@ try{
                                     }
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                     TOOO.addEventListener('touchstart', function (event) {
-                                                                        newConsoleLog("ts");
+                                                                        console.log("ts");
                                                                         initialTouchX = event.touches[0].clientX;
                                                                         initialTouchY = event.touches[0].clientY;
                                                                     });
 
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('touchend', function (event) {
-                                                                        newConsoleLog("te");
+                                                                        console.log("te");
                                                                         finalTouchX = event.changedTouches[0].clientX;
                                                                         finalTouchY = event.changedTouches[0].clientY;
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
@@ -1999,14 +2001,14 @@ try{
 
                                                                     // MOUSE DOWN
                                                                     TOOO.addEventListener('mousedown', function (event) {
-                                                                        newConsoleLog("md");
+                                                                        console.log("md");
                                                                         initialTouchX = event.clientX;
                                                                         initialTouchY = event.clientY;
                                                                     });
 
                                                                     // MOUSE UP
                                                                     TOOO.addEventListener('mouseup', function (event) {
-                                                                        newConsoleLog("mu");
+                                                                        console.log("mu");
                                                                         finalTouchX = event.clientX;
                                                                         finalTouchY = event.clientY;
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
@@ -2927,14 +2929,12 @@ function swipeUp() {
                         bigJu.style.top = "4em";
                         bigJu.style.transform = "rotate(360deg)";
                         bigJu.style.backgroundColor = "var(--swText)";
-                        bigJu.style.opacity = 0.5;
+                        bigJu.style.opacity = 1;
                         setTimeout(function () {
                             bigJu.style.transition = "0.1s";
                             setTimeout(function () {
                                 bigJu.style.backgroundColor = "var(--accent)";
-
-                                setTimeout(function () {
-                                    if (currentPlace == allVideos.length - 1) {
+if (currentPlace == allVideos.length - 1) {
                                         
                                         if (nextToken == "") {
                                             giveError2()
@@ -2955,6 +2955,8 @@ function swipeUp() {
                                             }
                                         }
                                     }
+                                setTimeout(function () {
+                                    
                                     bigJu.remove();
                                     bigJuf.remove();
                                 }, 100);
@@ -2970,18 +2972,14 @@ function swipeUp() {
                         bigJuf.style.top = "0";
                         bigJuf.style.transform = "rotate(360deg)";
                         bigJuf.style.backgroundColor = "var(--swText)";
-                        bigJuf.style.opacity = 0.5;
+                        bigJuf.style.opacity = 1;
                         setTimeout(function () {
                             bigJuf.style.transition = "0.1s";
                             setTimeout(function () {
                                // alert(1);
                                 bigJuf.style.backgroundColor = "var(--accent)";
 //alert(2);
-                                setTimeout(function () {
-                                   // alert(3);
-                                    
-                                   // alert(4);
-                                    if (currentPlace == allVideos.length - 1) {
+  if (currentPlace == allVideos.length - 1) {
                                         
                                         if (nextToken == "") {
                                             giveError2()
@@ -3002,6 +3000,11 @@ function swipeUp() {
                                             }
                                         }
                                     }
+                                setTimeout(function () {
+                                   // alert(3);
+                                    
+                                   // alert(4);
+                                  
                                     bigJuf.remove();
                                     bigJu.remove();
                                 }, 100);
