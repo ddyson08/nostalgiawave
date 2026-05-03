@@ -1,3 +1,4 @@
+/* -------------------- FONTS -------------------- */
 @font-face {
     font-family: 'GlacialIndifference';
     src: url('GlacialIndifference-Regular.otf') format('opentype');
@@ -21,34 +22,7 @@
     font-style: normal;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100dvh;
-    width: 100dvw;
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
-}
-
-body, #allHold {
-    touch-action: none;
-}
-
-
-html, body {
-    overscroll-behavior: none; /* Prevents scroll chaining and rubber-banding */
-
-
-    overflow: hidden; /* Disables scrolling */
-}
-
-scrollable {
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-}
-
+/* -------------------- ROOT VARIABLES -------------------- */
 :root {
     --bg: HSL(60, 56%, 90%);
     --accent: HSL(152, 6%, 50%);
@@ -68,632 +42,120 @@ scrollable {
 }
 
 @media (orientation: landscape) {
-    :root {
-        --margin: 2em;
-    }
+    :root { --margin: 2em; }
 }
 
-@media (orientation: portrait) {
-    :root {
-        --margin: 1em;
-    }
-}
-
-#fullscreenButton {
-    position: absolute;
-    top: calc(100% - 2em);
-    right: 0;
-    width: max-content;
-    height: 1em;
-    margin: 0.5em;
-    z-index: 9999;
-    background-color: rgba(0,0,0,0);
+/* -------------------- GLOBAL RESET -------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100svh; /* FIX: iPhone-safe height */
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto; /* FIX: allow scrolling */
+    overscroll-behavior: none;
+    box-sizing: border-box;
 }
 
 * {
+    margin: 0;
     background-color: var(--bg);
     color: var(--text);
     font-family: var(--font), system-ui, -apple-system, "Elms Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 24px;
     line-height: 1.2;
     user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
 }
 
+/* -------------------- TITLE BAR -------------------- */
 #titleBar {
     background-color: var(--accent);
     color: var(--text);
     width: max-content;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0 0.5em;
     border-radius: 5px;
     height: 2em;
-    max-height: 2em;
     display: grid;
     place-items: center;
     position: absolute;
-    top: calc(100dvh - 4em);
-    left: 10dvw;
+    bottom: 2em;
+    left: 10vw;
     z-index: 2000;
 }
 
-div#buttonHolder::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: calc((100dvh - 10em) * (9/16));
-    height: 1%;
-    transform: translateX(-50%) translateY(9900%);
-    background: var(--lightTxt);
-    border-radius: 5px;
-}
-
-#titleBar :is(div) {
-    display: block;
-    background-color: inherit;
-    width: inherit;
-    max-height: inherit;
-}
-
-img {
-    height: 1em;
-    width: 1em;
-    vertical-align: middle;
-}
-
-b, a, span, button {
-    background-color: inherit;
-}
-
-b, #teTitle {
-    font-weight: normal;
-}
-
-body {
-    overflow-y: hidden;
-}
-
+/* -------------------- BACKGROUND -------------------- */
 #background {
-    background: radial-gradient( circle at 100%, var(--bg), var(--contrast) 50%, var(--bg) 100%, var(--contrast) 100% );
+    background: radial-gradient(circle at 100%, var(--bg), var(--contrast) 50%, var(--bg) 100%);
     position: absolute;
-    top: -50dvh;
-    left: 0px;
-    width: 100dvw;
-    height: 150dvh;
+    top: -50svh;
+    left: 0;
+    width: 100vw;
+    height: 150svh;
     z-index: 0;
     transition: 0.5s;
 }
 
+/* -------------------- TEXT ENTER BOX -------------------- */
 #textEnter {
     transition: 0.5s;
     background-color: var(--second);
     color: var(--text);
-    width: calc(100dvw - (4 * var(--margin)) - 2em);
-    height: max-content;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    width: calc(100vw - (4 * var(--margin)) - 2em);
+    padding: 1em;
     border-radius: 5px;
-    min-height: 0;
     position: absolute;
     bottom: 2em;
-    left: calc(100dvw + (2 * var(--margin)));
-    display: block;
+    left: calc(100vw + (2 * var(--margin)));
     z-index: 100;
     overflow: hidden;
 }
 
-    #textEnter :is(span, button) {
-        transition: 0.5s;
-    }
-
+/* -------------------- BUTTONS -------------------- */
 button {
-    border: 0px;
-    text-align: left;
-}
-
-.hasBorder {
-    border-bottom: 0.0625em dashed var(--text);
-    border-top: 0.0625em solid var(--second);
-    border-left: 0.0625em solid var(--second);
-    border-right: 0.0625em solid var(--second);
-    display: block;
-}
-
-.noBorder {
-    border: 0.0625em solid var(--second);
-    display: none;
-}
-
-#textEnter :is(span, input, #teButton, button) {
-    width: 100%;
-    min-height: 0;
-}
-
-#b1, #b2, #b3, button {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    width: 100%;
-    min-height: 0;
-}
-
-#teTitle {
-    width: 100%;
-    min-height: 0;
-    padding: 0 !important;
-    color: var(--emphasizedText);
-}
-
-#b4 {
-    width: 100%;
-    min-height: 0;
-}
-
-#teButton {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures consistent sizing */
-}
-
-#teTitle {
-    display: grid;
-    align-items: center;
-}
-
-#viewSaved {
-    display: none;
-}
-
-#saveThis {
-    display: none;
-}
-
-#teInput {
-    background: transparent;
-    margin-bottom: 1em;
+    border: 1px solid var(--text);
     border-radius: 5px;
-    transition: 0.5s;
-    width: max-content !important;
-    min-width: 5ch;
-    color: var(--text);
+    padding: 0.25em;
+    background-color: var(--bg);
+    color: var(--emphasizedText);
+    width: 100%;
 }
 
-body {
-    top: 0dvh;
-    min-height: 100dvh;
-    max-height: 100dvh;
-    margin: 0;
-    padding: 0;
-}
-
-.card, #textEnter, .uBall, #uBalance, #uLine, #uNameplate, #titleBar {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    opacity: 0.9;
-    transition: 0.3s;
-}
-
-#uNameplate {
-    opacity: 0.7;
-}
-
-/* On mouse-over, add a deeper shadow */
-* {
-    margin: 0
-}
-
+/* -------------------- UVULA + BALL -------------------- */
 #uvula {
     will-change: transform;
     position: relative;
     width: var(--ballSize);
-    height: 100dvh;
-    top: calc(-50dvh + 1.5em);
-    left: calc(50dvw - (var(--ballSize) / 2));
+    height: 100svh;
+    top: calc(-50svh + 1.5em);
+    left: calc(50vw - (var(--ballSize) / 2));
     z-index: 1;
-    background-color: rgba(0,0,0,0);
-    transition: opacity 0.5s, top 0.5s, z-index 0.5s, background-color 0.5s, margin-top 0.5s, width 0.5s, height 0.5s, position 0.5s, left 0.5s, margin-left 0.5s, filter 0.5s !important;
+    background-color: transparent;
+    transition: 0.5s;
     opacity: 0;
-    transform: rotateZ(0deg);
 }
 
-.uBall, .palestine {
+.uBall {
     position: absolute;
     border-radius: 50%;
     top: calc(100% - var(--ballSize));
-    left: 0;
     width: var(--ballSize);
     height: var(--ballSize);
     background-color: var(--accent);
-    overflow: hidden;
-    transition: opacity 0.5s, top 0.5s, z-index 0.5s, background-color 0.5s, margin-top 0.5s, width 0.5s, height 0.5s, position 0.5s, left 0.5s, margin-left 0.5s, filter 0.5s !important;
-}
-
-#teButton {
-    display: none;
-}
-
-#uMiniball {
-    position: absolute;
-    border-radius: 50%;
-    top: calc(50% - 0.5em);
-    left: calc(50% - 0.5em);
-    width: 1em;
-    height: 1em;
-    background-color: var(--accent);
     transition: 0.5s;
 }
 
-#uLine {
-    position: absolute;
-    top: 50%;
-    height: calc(50dvh - (var(--ballSize) / 2));
-    width: 1em;
-    left: calc(50% - 0.5em);
-    background-color: var(--accent);
-    transition: 0.5s;
-}
-
-#uNameplate {
-    position: absolute;
-    height: 2em;
-    display: grid;
-    place-items: center;
-    width: max-content;
-    background-color: var(--accent);
-    color: var(--accent);
-    position: absolute;
-    top: calc(50% + 4em);
-    left: calc(50% - 0.5em);
-    color: var(--accent);
-    border-radius: 5px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-#uBalance {
-    position: absolute;
-    height: 50%;
-    opacity: 0;
-    top: 0;
-}
-
-.teShape {
-    background-color: var(--bg);
-    position: absolute;
-    border: 0.125em dashed var(--second);
-    transition: 0.5s;
-    opacity: 0;
-    display: grid;
-    place-items: center;
-    mix-blend-mode: destination-out;
-}
-
-#displayVideos {
-    transition: 0.5s;
-    opacity: 0;
-    width: 100dvw;
-    height: calc(100dvh - 6em);
-    max-height: calc(100dvh - 4em);
-    background-color: var(--bg);
-    color: var(--text);
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-    #displayVideos :is(iframe), #touchOverlay {
-        /* top: 1.5em; */
-        position: absolute;
-        left: calc((100dvw - ((100dvh - 10em) * (9/16)))/2);
-        height: calc(100dvh - 10em);
-        width: calc(calc(100dvh - 10em) * (9/16));
-        background-color: var(--second);
-        border-radius: 5px;
-    }
-
-#buttonHolder {
-    position: absolute;
-    width: 100dvw;
-    display: grid;
-    height: 4em !important;
-    place-items: center;
-    top: calc((100dvh - 10em));
-    left: 0em;
-}
-
-    #buttonHolder :is(div) {
-        position: absolute;
-        background-color: var(--second);
-        color: var(--text);
-        border: 0px solid black !important;
-        border-radius: 5px;
-        display: grid;
-        place-items: center;
-        padding: 0.5em;
-    }
-
-#leftButton {
-    left: calc((100dvw - ((100dvh - 10em) * (9/16)))/2);
-    width: calc((((100dvh - 10em) * (9/16))) - 1em)
-}
-
-#rightButton {
-    right: calc((100dvw - ((100dvh - 10em) * (9/16)))/2);
-}
-
-#swipeScreen {
-    display: none;
-    place-items: left;
-    display: block;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-#swFirst, #creator, #swDiff, #swTopic, #exitsw {
-    padding-top: 1em;
-    display: flex;
-    gap: var(--margin);
-    height: 2em;
-    align-items: center;
-}
-
-.swText {
-    color: var(--swText);
-    font-size: 1.6em;
-}
-
-#swDrag {
-    background-color: var(--swText);
-    color: var(--emphasizedText);
-    width: max-content;
-    border-radius: 5px;
-    padding: 1em;
-}
-
-#swGive {
-    background-color: var(--accent);
-    width: 10em;
-    height: 4em;
-    border-radius: 10%;
-    padding: 1em;
-}
-
-#swLine {
-    width: calc(100dvw - (4 * var(--margin)));
-    left: calc(2 * var(--margin));
-    height: 0.1em;
-    background-color: var(--swText);
-    margin-top: 1em;
-}
-
-#teInput {
-    font-size: 20px;
-    height: 30px;
-}
-
-#touchOverlay {
-    position: absolute;
-    z-index: 9999;
-    background: transparent;
-    display: none;
-}
-
+/* -------------------- PLAYGROUND -------------------- */
 #playground {
     position: absolute;
     left: 0;
     top: 0;
-    height: calc(100dvh - var(--margin));
-    width: 100dvw;
-    overflow-y: scroll;
-    text-wrap: normal;
+    height: calc(100svh - var(--margin));
+    width: 100vw;
+    overflow-y: auto;
+    padding-top: 3em;
     z-index: 5;
     opacity: 0;
-    padding-top: 3em;
-    color: var(--text) !important;
 }
 
-    #playground :is(span, text, button) {
-        color: var(--text);
-    }
-
-    #playground :is(button) {
-        border: 1px solid var(--text);
-        background-color: var(--bg);
-        color: var(--emphasizedText);
-    }
-  
-
-    .pgMain {
-        display: flex;
-        width: 100dvw;
-        height: 8em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
-    }
-
-.pgData {
-    overflow-x: scroll !important;
-}
-
-.pgButtonHold {
-    display: flex;
-    transition: 0s;
-    width: -webkit-fill-available;
-    margin-top: 0.5em;
-}
-
-.pgP {
-    display: grid;
-    left: var(--margin);
-    position: absolute;
-    width: calc(100dvw - 3*var(--margin) - calc(((2*var(--margin) * var(--screenWidthRatio)))));
-}
-
-.pgCover {
-    position: absolute;
-    left: calc(100dvw - var(--margin) - (2*var(--margin) * var(--screenWidthRatio)));
-    height: calc(2*var(--margin)) !important;
-    width: calc(2 * var(--margin) * var(--screenWidthRatio));
-    border-radius: 5px !important;
-    border: 1px solid var(--textColor) !important;
-    opacity: 0 !important;
-}
-
-#allHold {
-    z-index: 6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100dvw;
-    height: 100dvh;
-    transition: 0.5s;
-}
-
-body, #allHold, #playground {
-    overflow-x: hidden;
-}
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-* {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-.pgFlex {
-    display: flex;
-}
-
-button {
-    border: 1px solid var(--text);
-    margin-right: 1em;
-    border-radius: 5px;
-    line-height: 1em;
-    padding-left: 0.25em;
-    display: inline-block;
-    max-width: max-content;
-    font-size: var(--lighterText);
-}
-
-#pgTitle {
-    top: 2.5em;
-    display: none;
-    margin-left: 1em;
-    margin-right: 1.5em;
-    width: max-content;
-    background-color: rgba(0,0,0,0);
-    z-index: 1000;
-    transition: 0.5s;
-}
-
-    #pgTitle :is(b) {
-        margin-right: 0.5em;
-        width: 50dvw;
-        vertical-align: text-bottom;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-
-    #pgTitle :is(button) {
-        /* margin-left: 0.5em; */
-        width: var(--margin);
-        padding-left: 0.5em;
-        margin-right: 0.5em;
-        padding-right: 0.5em;
-    }
-
-#pgTitle {
-    display: none;
-    position: absolute;
-}
-#playground :is(.primaryButton), #pgTitle :is(.primaryButton), [words = "38"] {
-    background-color: var(--emphasizedText) !important;
-    color: var(--bg) !important;
-}
-.uBall {
-    transition: 1s;
-}
-
-.primaryButton{
-    background-color: var(--text);
-    color: var(--second);
-}
-
-span.pgData {
-    text-align: right;
-    width: -webkit-fill-available;
-}
-
-.pgButtonHold.special :nth-child(1) {
-    margin-right: 0.5em;
-}
-
-.pgButtonHold.special :nth-child(2) {
-    margin-left: 0.5em;
-}
-
-.pgButtonHold.nonspecial :nth-child(1) {
-    margin-right: 0.5em;
-}
-
-.pgButtonHold.nonspecial :nth-child(2) {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-.pgButtonHold.nonspecial :nth-child(3) {
-    margin-left: 0.5em;
-}
-
-button {
-    border: 1px solid var(--text);
-    /* margin-right: 1em; */
-    border-radius: 5px;
-    line-height: 1em;
-    /* padding-left: 0.25em; */
-    display: inline-block;
-    /* max-width: max-content; */
-}
-
-#b1, #b2, #b3, button {
-    /* padding: 0.25em; */
-    /* margin-bottom: 0.25em; */
-    width: 100%;
-    min-height: 0;
-}
-
-#playground :is(button) {
-    border: 1px solid var(--text);
-    width: -webkit-fill-available;
-    background-color: var(--bg);
-    /* color: var(--text) !important; */
-}
-
-.nstLower {
-    color: var(--text);
-}
-
-#titleBar :is(a) {
-    text-decoration: underline;
-}
-.giveError :is(p) {
-    background-color: var(--second);
-}
-body {
-    width: 100vw !important;
-}
+/* Hide scrollbars */
+*::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
