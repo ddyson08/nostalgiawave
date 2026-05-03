@@ -1977,10 +1977,11 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                         } else {
                                            // alert(6);
                                             //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
-                                           onYouTubeIframeAPIReady();
+                                           
                                             //player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
+												
                                             }
                                         }
                                     }
@@ -3456,6 +3457,7 @@ async function requestVideos(value) {
                 }
             }
             allVideos = sanitized.split(' ~ ');
+			onYouTubeIframeAPIReady();
             console.log(result);
 
         } catch (err) {
