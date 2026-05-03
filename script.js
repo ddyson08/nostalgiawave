@@ -934,7 +934,7 @@ window.onload = function () {
                // document.querySelector('#touchOverlay').style.display = "block";
             }
             if (closest[1] == "#exitsw") {
-                document.querySelector('#swDrag').innerText = "https://youtu.be/" + tsVideo.shortUrl;
+                document.querySelector('#swDrag').innerText = allVideos[currentPlace];
                
                // document.querySelector('#touchOverlay').style.display = "block";
                 //eMA2();
@@ -1975,6 +1975,7 @@ try{
                                         } else {
                                            // alert(6);
                                             //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
+                                           onYouTubeIframeAPIReady();
                                             player.loadVideoById(allVideos[currentPlace]);
                                             if (nextToken !== '') {
                                                 requestVideos(true);
@@ -2009,6 +2010,20 @@ try{
                                                                         finalTouchX = event.clientX;
                                                                         finalTouchY = event.clientY;
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
+                                                                    });
+
+                                                                    TOOO.addEventListener('click', function (event) {
+                                                                       autoplay = 0; 
+                                                                     
+                                                                    const element = document.elementFromPoint(event.clientX, event.clientY);
+                                                                if (!(element && element.getAttribute('id') === 'fullscreenButton')) {
+                                                                      playPause +=1; 
+                                                                    if (playPause % 2 == 0) {
+                                                                        player.pauseVideo()
+                                                                    } else {
+                                                                        player.playVideo()
+                                                                    }
+                                                                }
                                                                     });
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
@@ -3514,7 +3529,10 @@ var tag = document.createElement('script');
           playerVars: {
             'playsinline': 1,
             'autoplay': 1,
-            'muted': autoplay
+            'muted': autoplay,
+            'loop':1,
+            'playlist': allVideos[currentPlace],
+            'showcontrols': 0
           },
           events: {
             'onReady': onPlayerReady,
