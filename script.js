@@ -250,7 +250,7 @@ words = {
         "", "נוסטלגיה", " של "
     ]
 }
-
+var canYT = false;
 var player;
 var playPause = 0;
 var autoplay = 1;
@@ -3457,6 +3457,7 @@ async function requestVideos(value) {
                 }
             }
             allVideos = sanitized.split(' ~ ');
+			canYT = true;
 			onYouTubeIframeAPIReady();
             console.log(result);
 
@@ -3527,6 +3528,7 @@ var tag = document.createElement('script');
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       function onYouTubeIframeAPIReady() {
+		  if(canYT){
         player = new YT.Player('videoFrame', {
           height: '390',
           width: '640',
@@ -3547,6 +3549,7 @@ var tag = document.createElement('script');
             }
           }
         });
+		  }
       }
 
       // 4. The API will call this function when the video player is ready.
