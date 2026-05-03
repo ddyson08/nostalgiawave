@@ -3457,8 +3457,13 @@ async function requestVideos(value) {
                 }
             }
             allVideos = sanitized.split(' ~ ');
-			canYT = true;
-			onYouTubeIframeAPIReady();
+			var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			
             console.log(result);
 
         } catch (err) {
@@ -3519,16 +3524,11 @@ function giveError3() {
 "><p style="color:var(--emphasizedText)">`+ words[navigator.language][79] + `</p><span>` + words[navigator.language][80] + `</span>
             </div>` + document.querySelector('#touchOverlay').innerHTML;
 }
-var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       function onYouTubeIframeAPIReady() {
-		  if(canYT){
+		
         player = new YT.Player('videoFrame', {
           height: '390',
           width: '640',
@@ -3549,7 +3549,7 @@ var tag = document.createElement('script');
             }
           }
         });
-		  }
+		  
       }
 
       // 4. The API will call this function when the video player is ready.
