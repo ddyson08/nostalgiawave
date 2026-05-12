@@ -640,6 +640,7 @@ function pgCancel(text) {
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+
     document.querySelector('#uvula').style.zIndex = "1";
     //document.querySelector('#playground').scrollTo(0, 0);
     onScroll = false;
@@ -811,7 +812,7 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             }
             setTimeout(function () {
                 if (!neww) {
-                    document.querySelector('#teInput').value = user.year;
+                    document.querySelector('#teInput').value = backValidateDate(user.year);
                 } else {
                     editMode = false;
                 }
@@ -1156,7 +1157,7 @@ function swapTe(n, f, m, g, t) {
         var inputEl = nee.querySelector("input");
         if (editMode) {
             if (n == 7) {
-                inputEl.value = user.year;
+                inputEl.value = backValidateDate(user.year);
             }
             if (n == 8) {
                 inputEl.value = user.preferences;
@@ -1170,7 +1171,7 @@ function swapTe(n, f, m, g, t) {
     var inputEl = nee.querySelector("input");
     if (editMode) {
         if (n == 7) {
-            inputEl.value = user.year;
+            inputEl.value = backValidateDate(user.year);
         }
         if (n == 8) {
             inputEl.value = user.preferences;
@@ -1293,7 +1294,7 @@ function swapTe(n, f, m, g, t) {
             var inputEl = nee.querySelector("input");
             if (editMode) {
                 if (n == 7) {
-                    inputEl.value = user.year;
+                    inputEl.value = backValidateDate(user.year);
                 }
                 if (n == 8) {
                     inputEl.value = user.preferences;
@@ -1947,6 +1948,7 @@ try{
                                                                     t.style.height = "100dvh";
                                                                     t.style.maxHeight = "100dvh"
                                                                     t.style.bottom = "-var(--margin)";
+                                                                    document.querySelector('#uvula').style.zIndex = 1;
                                                                     var v = document.querySelector('#displayVideos');
                                                                     v.style.opacity = "1";
                                                                     v.style.display = "block";
@@ -2022,9 +2024,9 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                 if (!(element && element.getAttribute('id') === 'fullscreenButton')) {
                                                                       playPause +=1; 
                                                                     if (playPause % 2 == 0) {
-                                                                        player.pauseVideo()
+                                                                        stopVideo();
                                                                     } else {
-                                                                        player.playVideo()
+                                                                        startVideo();
                                                                     }
                                                                 }
                                                                     });
@@ -3362,6 +3364,326 @@ function validateDate(tex) {
     return tbr;
 }
 }
+var words = {
+    "en-US": [
+        "by", //0
+        "nostalgiaTok", //1
+        "peiLamed", //2
+        "what's your name?", //3
+        "next", //4
+        "Your", //5
+        "nostalgia", //6
+        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
+        "what creator?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //8
+        "what topic?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //9
+        "'s ", //10
+        "", //11
+        "", //12
+        "if you wanna save your nostalgia for later, name it here", //13
+        "or not, thats ok", //14
+        "fishing out your videos", //15
+        "a whole lot of 'em", //16
+        "player", //17
+        "ts plays videos", //18
+        "loading...", //19
+        "", //20
+        "choose this one&nbsp;-&nbsp;", //21
+        "delete this one&nbsp;", //22
+        "view saved nostalgias", //23
+        "next one&nbsp;-&nbsp;", //24
+        "options", //25
+        "➢", //26
+        "more of ts", //27
+        "search again", //28
+        "share video", //29
+        "open video", //30
+        "share nostalgiaTok", //31
+        "what's good, ", //32
+        "anqrzfeubxkmlpwhdvocty", //33
+        "abcd_efghijklmn_opqrstudvwxyz_", //34
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
+        "nvm", //36
+        "Last time you used nostalgiaTok", //37
+        "search this now", //38
+        "spring", //39
+        "summer", //40
+        "winter", //41
+        "fall", //42
+        "early", //43
+        "mid", //44
+        "late", //45
+        "jan", //46
+        "feb", //47
+        "mar", //48
+        "apr", //49
+        "may", //50
+        "jun", //51
+        "jul", //52
+        "aug", //53
+        "sep", //54
+        "oct", //55
+        "nov", //56
+        "dec", //57
+        "january", //58
+        "february", //59
+        "march", //60
+        "april", //61
+        "may", //62
+        "june", //63
+        "july", //64
+        "august", //65
+        "september", //66
+        "october", //67
+        "november", //68
+        "december", //69
+        "past 2021 plzz", //70
+        "well, before this year plzz", //71
+        "between 2021 - now plzz", //72
+        "sorry, try again plzz", //73
+        "tysm btw ☺", //74
+        "oopsie!", //75
+        `Something didn't work<br>Hit "options" and then drag the box to "search again" to do another search`, //76
+        "thats it ngl", //77
+        "you've watched all the videos for this query", //78
+        "videos are still coming in", //79
+        "this will automatically scroll when they arrive" //80
+    ],
+
+    "en": [
+        "by", "nostalgiaTok", "FM Da$ani", "what's your name?", "(next)",
+        "Your", "nostalgia", "what time period are you nostalgic for?",
+        "what creators (if any) (use commas)?",
+        "what topics (if any) (use commas)?",
+        "'s ", "", ""
+    ],
+
+    "fr": [
+        "par", "nostalgiaTok", "FM Da$ani", "Comment tu t'appelles ?", "(suivant)",
+        "Ton", "nostalgie", "Pour quelle période ressens-tu de la nostalgie ?",
+        "Quels créateurs (le cas échéant) (sépare par des virgules) ?",
+        "Quels sujets (le cas échéant) (sépare par des virgules) ?",
+        "de ", "", ""
+    ],
+
+    "es": [
+        "por", "nostalgiaTok", "FM Da$ani", "¿Cómo te llamas?", "(siguiente)",
+        "Tu", "", "¿De qué época sientes nostalgia?",
+        "¿Qué creadores (si los hay) (usa comas)?",
+        "¿Qué temas (si los hay) (usa comas)?",
+        "", "nostalgia", " de "
+    ],
+
+    "ja": [
+        "〜によって", "nostalgiaTok", "FM Da$ani", "あなたの名前は何ですか？", "(次)",
+        "あなたの", "", "どの時代にノスタルジーを感じますか？",
+        "どのクリエイター（いる場合）（カンマで区切って）？",
+        "どのトピック（ある場合）（カンマで区切って）？",
+        "", "ノスタルジア", " の "
+    ],
+
+    "ar": [
+        "من", "FM Da$ani", "nostalgiaTok", "ما اسمك؟", "(التالي)",
+        "لك", "", "ما الفترة الزمنية التي تشعر بالحنين إليها؟",
+        "ما المبدعين (إن وجد) (استخدم الفواصل)؟",
+        "ما المواضيع (إن وجد) (استخدم الفواصل)؟",
+        "", "الحنين", " لـ "
+    ],
+
+    "he": [
+        "מִן", "FM Da$ani", "nostalgiaTok", "מה השם שלך?", "(בא)",
+        "שלך", "", "לאיזו תקופה אתה מתגעגע?",
+        "אילו יוצרים (אם בכלל) (השתמש בפסיקים)?",
+        "אילו נושאים (אם בכלל) (השתמש בפסיקים)?",
+        "", "נוסטלגיה", " של "
+    ]
+}
+function backValidateDate(tex, first) {
+    var text = tex.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+   console.log(text);
+    if (text.includes("~")) {
+      if((parseFloat(tex.split('~')[0].split('/')[2]) == (parseInt(tex.split('~')[1].split('/')[2])-1)) && tex.split('~')[0].includes('01/01/') && tex.split('~')[1].includes('01/01/')){
+        return parseFloat(tex.split('~')[0].split('/')[2]);
+      }
+        var retValue = backValidateDate(tex.split('~')[0], true) + "- " + backValidateDate(tex.split('~')[1], false);
+        return retValue;
+    } else {
+        var tbr = "";
+        var theYear = text.split('/')[2];
+        if (theYear.length < 3) {
+            theYear = 2000 + theYear;
+        }
+       
+           
+   
+        //spring
+        if(first){
+        if (text.includes("03/15/"+theYear)) {
+            tbr = words[navigator.language][39];
+        }
+        //summer
+        if (text.includes("06/01/"+theYear)) {
+            tbr = words[navigator.language][40];
+        }
+        //fall
+        if (text.includes("09/01/"+theYear)) {
+            tbr = words[navigator.language][41]
+        }
+        //winter
+        if (text.includes("12/01/"+theYear)) {
+            tbr = words[navigator.language][42]
+        }
+        if (text.includes("01/01/"+theYear)) {
+            tbr = words[navigator.language][43];
+        }
+        if (text.includes("04/01/"+theYear)) {
+            tbr = words[navigator.language][44];
+        }
+        if (text.includes("10/01/"+theYear)) {
+            tbr = words[navigator.language][45];
+        }
+        //jan 
+        if (text.toLowerCase().includes("01/01/"+theYear)) {
+            tbr = words[navigator.language][46];
+        }
+        //feb
+        if (text.includes("02/01/"+theYear)) {
+            tbr = words[navigator.language][47];
+        }
+        //mar
+        if (text.includes("03/01/"+theYear)) {
+            tbr = words[navigator.language][48];
+        }
+        //apr
+        if (text.includes("04/01/"+theYear)) {
+            tbr = words[navigator.language][49];
+        }
+        //may
+        if (text.includes("05/01/"+theYear)) {
+            tbr = words[navigator.language][50];
+        }
+        //jun
+        if (text.includes("06/01/"+theYear)) {
+            tbr = words[navigator.language][51];
+        }
+        //july
+        if (text.includes("07/01/"+theYear)) {
+            tbr = words[navigator.language][52];
+        }
+        //aug
+        if (text.includes("08/01/"+theYear)) {
+            tbr = words[navigator.language][53];
+        }
+        //sep
+        if (text.includes("09/01/"+theYear)) {
+            tbr = words[navigator.language][54]
+        }
+        //oct
+        if (text.includes("10/01/"+theYear)) {
+            tbr = words[navigator.language][55]
+        }
+        //nov
+        if (text.includes("11/01/"+theYear)) {
+            tbr = words[navigator.language][56];
+        }
+        //dec
+        if (text.includes("12/01/"+theYear)) {
+            tbr = words[navigator.language][57];
+        }
+        tbr+=" "+theYear;
+        //quarantine
+        if (text.includes("03/17/2020")) {
+            tbr = words[navigator.language][58 + 12];
+        }
+        if (tbr == "01/01/"+theYear) {
+            tbr = theYear;
+        }
+    }else{
+         if (text.includes("05/31/"+theYear)) {
+            tbr = words[navigator.language][39];
+        }
+        //summer
+        if (text.includes("09/01/"+theYear)) {
+            tbr = words[navigator.language][40];
+        }
+        //fall
+        if (text.includes("11/30/"+theYear)) {
+            tbr = words[navigator.language][41];
+        }
+        //winter
+        if (text.includes("03/14/"+theYear)) {
+            tbr = words[navigator.language][42];
+        }
+        if (text.includes("03/31/"+theYear)) {
+            tbr = words[navigator.language][43];
+        }
+        if (text.includes("09/30/"+theYear)) {
+            tbr = words[navigator.language][44];
+        }
+        if (text.includes("02/31/"+theYear)) {
+            tbr = words[navigator.language][45];
+        }
+        //jan 
+        if (text.toLowerCase().includes("02/01/"+theYear)) {
+            tbr = words[navigator.language][46];
+        }
+        //feb
+        if (text.includes("03/01/"+theYear)) {
+            tbr = words[navigator.language][47];
+        }
+        //mar
+        if (text.includes("04/01/"+theYear)) {
+            tbr = words[navigator.language][48];
+        }
+        //apr
+        if (text.includes("05/01/"+theYear)) {
+            tbr = words[navigator.language][49];
+        }
+        //may
+        if (text.includes("06/01/"+theYear)) {
+            tbr = words[navigator.language][50];
+        }
+        //jun
+        if (text.includes("07/01/"+theYear)) {
+            tbr = words[navigator.language][51];
+        }
+        //july
+        if (text.includes("08/01/"+theYear)) {
+            tbr = words[navigator.language][52];
+        }
+        //aug
+        if (text.includes("09/01/"+theYear)) {
+            tbr = words[navigator.language][53];
+        }
+        //sep
+        if (text.includes("10/01/"+theYear)) {
+            tbr = words[navigator.language][54];
+        }
+        //oct
+        if (text.includes("11/01/"+theYear)) {
+            tbr = words[navigator.language][55];
+        }
+        //nov
+        if (text.includes("12/01/"+theYear)) {
+            tbr = words[navigator.language][56];
+        }
+        //dec
+        tbr+=" "+theYear;
+        if (text.includes("01/01/"+theYear)) {
+            tbr = words[navigator.language][57];
+             tbr+=" "+(theYear-1);
+        }
+       
+        //quarantine
+        if (text.includes("01/01/2022")) {
+            tbr = words[navigator.language][58 + 12]
+        }
+        if (tbr == "01/01/XXXY") {
+            tbr = theYear + 1;
+        }
+    }
+        return tbr.charAt(0).toUpperCase() + tbr.slice(1);
+    }
+}
 function handleError(Error) {
     console.log(Error)
     if (Error.includes('Too low')) {
@@ -3483,7 +3805,7 @@ async function requestVideosInner(value) {
         "https://script.google.com/macros/s/AKfycbxUDb4Foe5IyGmygjb_5RVmgbAkaBdoeECGtj6LFmYGE_ctMRlW_h8xVKifR8EArmtnnw/exec"
         + "?year=" + encodeURIComponent(user.year)
         + "&creator=" + encodeURIComponent(user.preferences)
-        + "&topic=" + encodeURIComponent(user.topic);
+        + "&topic=" + encodeURIComponent(user.topics);
     if (value) {
         url = url + "&token=" + encodeURIComponent(nextToken);
     }
@@ -3549,16 +3871,16 @@ function giveError3() {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange,
             'onError': function(event) {
-                swipeUp();
+                giveError();
             }
           }
         });
-		  
+		  player.stopVideo();
       }
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-        event.target.playVideo();
+        //event.target.playVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
