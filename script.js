@@ -384,7 +384,7 @@ function openAh() {
     document.querySelector('#uvula').style.display = "none";
 }
 function editModeAnimation() {
-    stopVideo = 0;
+    player.stopVideo();
     document.querySelector('#pgTitle').style.opacity = 1;
     document.querySelector('#pgTitle').querySelector('b').innerText = "Search History";
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
@@ -3827,6 +3827,9 @@ async function requestVideosInner(value) {
     }
 }
 function giveError() {
+    for(var i of document.querySelectorAll('.giveError')){
+        i.remove();
+    }
     document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
     margin-top: 0em;
     background-color: var(--second);
@@ -3835,6 +3838,9 @@ function giveError() {
             </div>` + document.querySelector('#touchOverlay').innerHTML;
 }
 function giveError2() {
+     for(var i of document.querySelectorAll('.giveError')){
+        i.remove();
+    }
     document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
     margin-top: 0em;
     background-color: var(--second);
@@ -3843,6 +3849,9 @@ function giveError2() {
             </div>` + document.querySelector('#touchOverlay').innerHTML;
 }
 function giveError3() {
+     for(var i of document.querySelectorAll('.giveError')){
+        i.remove();
+    }
     document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
     margin-top: 0em;
     background-color: var(--second);
@@ -3875,12 +3884,11 @@ function giveError3() {
             }
           }
         });
-		  player.stopVideo();
       }
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-        //event.target.playVideo();
+        player.stopVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
