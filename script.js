@@ -706,8 +706,8 @@ function editModeFunction(simmilar, pgGivenData, neww) {
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>`;
-            onYouTubeIframeAPIReady();
             document.body.querySelector('#allHold').append(dv);
+            onYouTubeIframeAPIReady();
             document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
          //   document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
             setTimeout(function () {
@@ -3888,6 +3888,7 @@ function giveError3() {
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
+        readyy = true;
         player.stopVideo();
       }
 
