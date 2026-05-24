@@ -148,9 +148,9 @@ words = {
         "➢", //26
         "more of ts", //27
         "search again", //28
-        "share video", //29
-        "open video", //30
-        "share nostalgiaTok", //31
+        "open video", //29
+        "change name", //30
+        "include watched vids?", //31
         "what's good, ", //32
         "anqrzfeubxkmlpwhdvocty", //33
         "abcd_efghijklmn_opqrstudvwxyz_", //34
@@ -160,8 +160,8 @@ words = {
         "search this now", //38
         "spring", //39
         "summer", //40
-        "winter", //41
-        "fall", //42
+        "fall", //41
+        "winter", //42
         "early", //43
         "mid", //44
         "late", //45
@@ -199,7 +199,10 @@ words = {
         "thats it ngl", //77
         "you've watched all the videos for this query", //78
         "videos are still coming in", //79
-        "this will automatically scroll when they arrive" //80
+        "this will automatically scroll when they arrive", //80
+        "include now", //81
+        "exclude now", //82
+        "hold again to toggle 2x speed" //83
     ],
 
     "en": [
@@ -322,6 +325,10 @@ function jumpLogo() {
 var stopdouble = false;
 var wiggle = "";
 var SF = false;
+var isTE = false;
+var speedVar = 0;
+var isPD = true;
+var handleSpeed = [1,2];
 var nostalgiaTokVideos = [];
 var tsVideo = {
     creator: "theragingitalian",
@@ -349,14 +356,47 @@ function endFollow() {
         editModeAnimation();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
-        window.share("https://youtu.be/" + tsVideo.shortUrl);
+        window.open("https://youtube.com/shorts/" + allVideos[currentPlace]);
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
-        window.open("https://youtu.be/" + tsVideo.shortUrl);
+       //change name
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')) {
-        window.share("https://ddyson08.github.io/nostalgiatok/");
+           if(isPWA()){
+
+                }else{
+                    var bool = localStorage.getItem('nostalgiaTokAllowOldVideos');
+                    if(bool == "false"){
+                       localStorage.setItem('nostalgiaTokAllowOldVideos','true');    
+                         var remainingArray = allVideos.slice(currentPlace, allVideos.length);
+                         var innerValls = localStorage.getItem('nostalgiaTokOldVideos');
+                var offset = 0;
+            for(var excludeWatched in remainingArray){
+               // console.log([allVideos[excludeWatched-offset],innerValls,innerValls.includes(allVideos[excludeWatched-offset])])
+                if(innerValls.includes(remainingArray[excludeWatched-offset])){
+                    remainingArray.splice(excludeWatched-offset,1);
+                    offset++;
+                }
+            }
+             remainingArray = remainingArray.sort(() => Math.random() - 0.5);
+                       allVideos = [...allVideos.slice(0, currentPlace), ...remainingArray];
+                     
+                    }else{
+                        localStorage.setItem('nostalgiaTokAllowOldVideos','false');
+                         var remainingArray = allVideos.slice(currentPlace, allVideos.length);
+                       for(var tbaa in ogArr){
+                        if (!allVideos.includes(ogArr[tbaa])) {
+    remainingArray.push(ogArr[tbaa]);
+}
+
+                       }  
+                       remainingArray = remainingArray.sort(() => Math.random() - 0.5);
+                       allVideos = [...allVideos.slice(0, currentPlace), ...remainingArray];
+                    }
+                    
+                }
     }
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
@@ -365,6 +405,7 @@ function endFollow() {
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
     document.querySelector('#swDrag').innerText = "";
     setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
+}
 }
 var Arr = [];
 var posinar = 0;
@@ -383,8 +424,18 @@ function openAh() {
     document.querySelector('#uvula').style.opacity = 0;
     document.querySelector('#uvula').style.display = "none";
 }
+function endSwipeFunc(){
+     document.querySelector('#touchOverlay').style.display = "block";
+    setTimeout(function () {
+        document.querySelector('#touchOverlay').style.display = "block";
+    },100)
+    document.querySelector('#swipeScreen').style.opacity = 0;
+    document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
+    document.querySelector('#swDrag').innerText = "";
+    setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
+}
 function editModeAnimation() {
-    player.stopVideo();
+    player.pauseVideo();
     document.querySelector('#pgTitle').style.opacity = 1;
     document.querySelector('#pgTitle').querySelector('b').innerText = "Search History";
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
@@ -859,6 +910,12 @@ window.addEventListener('touchmove', function (e) {
     }
 }, { passive: false });
 window.onload = function () {
+    if(localStorage.getItem('nostalgiaTokAllowOldVideos') == null){
+        localStorage.setItem('nostalgiaTokAllowOldVideos',false);
+    }
+    if(localStorage.getItem('nostalgiaTokOldVideos') == null){
+        localStorage.setItem('nostalgiaTokOldVideos','');
+    }
     if (localStorage.getItem('nostalgiaTokName') !== null) {
         nsTimesNumber = 1;
     }
@@ -935,13 +992,31 @@ window.onload = function () {
                // document.querySelector('#touchOverlay').style.display = "block";
             }
             if (closest[1] == "#exitsw") {
-                document.querySelector('#swDrag').innerText = allVideos[currentPlace];
-               
-               // document.querySelector('#touchOverlay').style.display = "block";
-                //eMA2();
+                var inp = document.createElement('input');
+                inp.setAttribute('onclick','SF = false');
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined){if(isPWA()){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
+                inp.setAttribute('id','inpName');
+                if(isPWA()){
+
+                }else{
+                inp.setAttribute('placeholder',localStorage.getItem('nostalgiaTokName'))
+                }
+               document.querySelector('#swDrag').innerHTML = '';
+                document.querySelector('#swDrag').append(inp);
             }
             if (closest[1] == "#sharenos") {
-                document.querySelector('#swDrag').innerText = words[navigator.language][74];
+                if(isPWA()){
+
+                }else{
+                    var bool = localStorage.getItem('nostalgiaTokAllowOldVideos');
+                    if(bool == "true"){
+                      document.querySelector('#swDrag').innerText = words[navigator.language][82];
+                      
+                    }else{
+                       document.querySelector('#swDrag').innerText = words[navigator.language][81];
+                          }
+                    
+                }
                 
                
             }
@@ -1060,7 +1135,6 @@ window.onload = function () {
     function stopPendulum() {
         clearInterval(wiggle);
         var UVU = document.querySelector('#uvula');
-        UVU.style.transition = "0s";
         UVU.style.transform = "";
         UVU.style.transform = "0.5s";
     }
@@ -1989,46 +2063,76 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                     }
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                     TOOO.addEventListener('touchstart', function (event) {
+                                                                        isTE = false;
                                                                         console.log("ts");
                                                                         initialTouchX = event.touches[0].clientX;
                                                                         initialTouchY = event.touches[0].clientY;
+                                                                        setTimeout(function(){if(isTE == false){
+                                                                    isPD = true;
+                                                                            speedVar++;
+                                                                            document.querySelector('#fullscreenButton').innerText += words[navigator.language][83];
+                                                                            var playbackRate = handleSpeed[speedVar%2];
+var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
+var message = JSON.stringify(data);
+document.querySelector('iframe').contentWindow.postMessage(message, '*');
+                                                                        }},500);
                                                                     });
 
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('touchend', function (event) {
+                                                                        isTE = true;
                                                                         console.log("te");
                                                                         finalTouchX = event.changedTouches[0].clientX;
                                                                         finalTouchY = event.changedTouches[0].clientY;
+                                                                      document.querySelector('#fullscreenButton').innerText =  document.querySelector('#fullscreenButton').innerText.replace(words[navigator.language][83],'')
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
+                                                                    
                                                                     });
 
                                                                     // MOUSE DOWN
                                                                     TOOO.addEventListener('mousedown', function (event) {
-                                                                        console.log("md");
+                                                                        isTE = false;
+                                                                        console.log("ts");
                                                                         initialTouchX = event.clientX;
                                                                         initialTouchY = event.clientY;
+                                                                        setTimeout(function(){if(isTE == false){
+                                                                            isPD = true;
+                                                                            speedVar++;
+                                                                            document.querySelector('#fullscreenButton').innerText += words[navigator.language][83];
+                                                                            var playbackRate = handleSpeed[speedVar%2];
+var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
+var message = JSON.stringify(data);
+document.querySelector('iframe').contentWindow.postMessage(message, '*');
+                                                                        }},500);
                                                                     });
 
-                                                                    // MOUSE UP
+                                                                    // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
-                                                                        console.log("mu");
+                                                                        isTE = true;
+                                                                        console.log("te");
                                                                         finalTouchX = event.clientX;
                                                                         finalTouchY = event.clientY;
+                                                                                    document.querySelector('#fullscreenButton').innerText =  document.querySelector('#fullscreenButton').innerText.replace(words[navigator.language][83],'')
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
+                                                                    
                                                                     });
 
                                                                     TOOO.addEventListener('click', function (event) {
+                                                                        if(!isPD){
                                                                        autoplay = 0; 
                                                                      
                                                                     const element = document.elementFromPoint(event.clientX, event.clientY);
                                                                 if (!(element && element.getAttribute('id') === 'fullscreenButton')) {
                                                                       playPause +=1; 
                                                                     if (playPause % 2 == 0) {
-                                                                        stopVideo();
+                                                                        pauseVideo();
                                                                     } else {
-                                                                        startVideo();
+                                                                        playVideo();
                                                                     }
                                                                 }
+                                                            }else{
+                                                                isPD = false;
+                                                            }
                                                                     });
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
@@ -2783,6 +2887,9 @@ function handleTouch(startX, endX,
 }
 
 function swipeUp() {
+     for(var i of document.querySelectorAll('.giveError')){
+        i.remove();
+    }
     currentPlace += 1;
     try{
     document.querySelector('#giveError').remove();
@@ -2824,6 +2931,9 @@ function swipeUp() {
         orbitf.style.left = sVl['yes'][0];
         orbitf.style.top = sVt['yes'][1];
         tsMT = Math.random();
+        if(tsMT < 0.3){
+            tsMT = 0.3;
+        }
         orbit.style.transition = "0.25s";
         // orbit.setAttribute('class', "videoOrbit");
         document.querySelector("#allHold").append(orbit);
@@ -2863,6 +2973,9 @@ function swipeUp() {
 
                         setTimeout(function () {
                             //    orbit.style.transform = "rotate(360deg)";
+                           
+                                    localStorage.setItem('nostalgiaTokOldVideos', localStorage.getItem('nostalgiaTokOldVideos') + "|SPLIT|"+allVideos[currentPlace]);
+                              
                         }, 125);
 
                     }, 250);
@@ -3021,6 +3134,9 @@ if (currentPlace == allVideos.length - 1) {
 }
 };
 function swipeDown() {
+     for(var i of document.querySelectorAll('.giveError')){
+        i.remove();
+    }
      try{
     document.querySelector('#giveError').remove();
     }
@@ -3364,7 +3480,7 @@ function validateDate(tex) {
     return tbr;
 }
 }
-var words = {
+/*var words = {
     "en-US": [
         "by", //0
         "nostalgiaTok", //1
@@ -3496,7 +3612,7 @@ var words = {
         "אילו נושאים (אם בכלל) (השתמש בפסיקים)?",
         "", "נוסטלגיה", " של "
     ]
-}
+}*/
 function backValidateDate(tex, first) {
     var text = tex.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
    console.log(text);
@@ -3765,7 +3881,8 @@ function handleError(Error) {
         }, 505
     )
 }
-
+var ogArr = [];
+var ogArr2 = [];
 //text = text.toLowerCase();
 async function requestVideos(value) {
     if (true) {
@@ -3783,6 +3900,31 @@ async function requestVideos(value) {
                 }
             }
             allVideos = sanitized.split(' ~ ');
+            allVideos = allVideos.sort(() => Math.random() - 0.5);
+
+            ogArr = allVideos;
+            console.log(allVideos);
+            var innerBool = true;
+            if(isPWA()){
+
+            }else{
+                if(localStorage.getItem('nostalgiaTokAllowOldVideos') == "true"){
+                    innerBool = false;
+                }
+            }
+            if(innerBool){
+                var innerValls = localStorage.getItem('nostalgiaTokOldVideos');
+                var offset = 0;
+            for(var excludeWatched in allVideos){
+                console.log([allVideos[excludeWatched-offset],innerValls,innerValls.includes(allVideos[excludeWatched-offset])])
+                if(innerValls.includes(allVideos[excludeWatched-offset])){
+                    allVideos.splice(excludeWatched-offset,1);
+                    offset++;
+                }
+            }
+            }
+            console.log(allVideos);
+            ogArr2 = allVideos;
 			var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
@@ -3889,7 +4031,7 @@ function giveError3() {
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         readyy = true;
-        player.stopVideo();
+        player.pauseVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
@@ -3898,9 +4040,9 @@ function giveError3() {
       var done = false;
       function onPlayerStateChange(event) {
       }
-      function stopVideo() {
-        player.stopVideo();
+      function pauseVideo() {
+        player.pauseVideo();
       }
-      function startVideo() {
+      function playVideo() {
         player.playVideo();
       }

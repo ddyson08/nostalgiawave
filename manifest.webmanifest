@@ -1,8 +1,8 @@
 {
-  "name": "nostalgiaTok",
+  "name": "nostalgiaTok by peiLamed",
   "short_name": "nostalgiaTok",
-  "description": "Watch old TikToks like you're in that era",
-  "start_url": "/",
+  "description": "Watch old short form videos like you're in that era :)",
+  "start_url": "/index.html",
   "scope": "/",
   "display": "fullscreen",
   "background_color": "#f5f5dc",
