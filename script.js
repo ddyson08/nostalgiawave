@@ -2001,8 +2001,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                             }
                                                             isPD = false;
                                                                         console.log("te");
-                                                                        finalTouchX = event.changedTouches[0].clientX;
-                                                                        finalTouchY = event.changedTouches[0].clientY;
+                                                                        finalTouchX = event.touches[0].clientX;
+                                                                        finalTouchY = event.touches[0].clientY;
                                                                     try{
                                                                      document.querySelector('#riseup').remove();
                                                                         }catch(e){console.log(e)}
