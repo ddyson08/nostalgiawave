@@ -1989,7 +1989,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         isTE = true;
                                                                             if(!isPD){
                                                                                
-                                                                          const element = document.elementFromPoint(event.clientX, event.clientY);
+                                                                          const element = document.elementFromPoint(event.touches[0].clientX, event.touches[0].clientY);
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
                                                                     if (playPause % 2 == 0) {
@@ -2016,8 +2016,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     TOOO.addEventListener('mousedown', function (event) {
                                                                         isTE = false;
                                                                         console.log("ts");
-                                                                        initialTouchX = event.changedTouches[0].clientX;
-                                                                        initialTouchY = event.changedTouches[0].clientY;
+                                                                        initialTouchX = event.clientX;
+                                                                        initialTouchY = event.clientY;
                                                                         setTimeout(function(){if(isTE == false){
                                                                             withinSpeedUp = true;
                                                                     isPD = true;
@@ -2042,7 +2042,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         isTE = true;
                                                                           if(!isPD){
                                                                             
-                                                                          const element = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
+                                                                          const element = document.elementFromPoint(event.clientX, event.clientY);
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      // playPause +=1; 
                                                                     if (playPause % 2 == 0) {
@@ -2054,8 +2054,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                             }
                                                             isPD = false;
                                                                         console.log("te");
-                                                                        finalTouchX = event.changedTouches[0].clientX;
-                                                                        finalTouchY = event.changedTouches[0].clientY;
+                                                                        finalTouchX = event.clientX;
+                                                                        finalTouchY = event.clientY;
                                                                         try{
                                                                      document.querySelector('#riseup').remove();
                                                                         }catch(e){console.log(e)}
