@@ -462,15 +462,26 @@ body {
     align-items: center;
 }
 
-.swText {
+.swText, .swGive {
     color: var(--swText);
     font-size: 1.6em;
+    max-width: calc(50vh - 3em - 0.5*var(--margin));
+}
+    #inpName {
+    width: calc((50vh - 2em - var(--margin) + 2em)/2);
+    margin-left: 0em;
+    border-bottom: 1px dashed blue;
+    background-color: var(--swText);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: var(--emphasizedText);
 }
 
 #swDrag {
     background-color: var(--swText);
     color: var(--emphasizedText);
-    width: max-content;
+    width: calc(50vh - 3em - var(--margin)) !important;
     border-radius: 5px;
     padding: 1em;
 }
@@ -711,7 +722,9 @@ button {
     background-color: var(--second);
 }
 .giveError{
-    transition: 0.2s;
+    transition: 1s;
+    border-bottom: 1px solid var(--second);
+
 }
 body {
     width: 100vw !important;
