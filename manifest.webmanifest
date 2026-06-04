@@ -4,7 +4,7 @@
   "description": "Watch old short form videos like you're in that era :)",
   "start_url": "/index.html",
   "scope": "/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#f5f5dc",
   "theme_color": "#77867f",
   "prefer_related_applications": false,

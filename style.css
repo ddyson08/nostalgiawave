@@ -39,11 +39,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     max-width: 100vw;
     max-height: 100vh;
     overflow: hidden;
+    position: fixed;
 }
 
 body, #allHold {
@@ -284,11 +285,13 @@ html, body {
 }
 
 body {
-    top: 0dvh;
-    min-height: 100dvh;
-    max-height: 100dvh;
+    top: 0;
+    min-height: 100vh;
+    max-height: 100vh;
     margin: 0;
     padding: 0;
+    position: fixed;
+    width: 100vw;
 }
 
 .card, #textEnter, .uBall, #uBalance, #uLine, #uNameplate, #titleBar {
@@ -430,7 +433,6 @@ body {
         position: absolute;
         background-color: var(--second);
         color: var(--text);
-        border: 0px solid black !important;
         border-radius: 5px;
         display: grid;
         place-items: center;
@@ -454,14 +456,37 @@ body {
     transition: 0.5s;
 }
 
-#swFirst, #creator, #swDiff, #swTopic, #exitsw {
+#swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstCredits, #nstExit {
     padding-top: 1em;
     display: flex;
     gap: var(--margin);
     height: 2em;
     align-items: center;
 }
-
+.hTFMessage {
+    position: absolute;
+    right: 2em;
+    top: 3.5em;
+    border-radius: 5px;
+    color: var(--text);
+    border: 0.25em solid var(--accent);
+    padding-left: 1em;
+    padding-right: 1em;
+    /* padding: 1em; */
+    width: calc(50vw - 4em);
+    height: calc(100dvh - 6em);
+    display: grid;
+    place-items: center;
+    text-align: left;
+    z-index: 1000;
+}
+.hTFMessage :is(button){
+    border: 0px solid var(--bg);
+}
+.hTFMessage :is(b){
+    width: var(--margin) * 2;
+    text-align: center;
+}
 .swText, .swGive {
     color: var(--swText);
     font-size: 1.6em;
@@ -660,7 +685,6 @@ button {
     background-color: var(--text);
     color: var(--second);
 }
-
 span.pgData {
     text-align: right;
     width: -webkit-fill-available;
@@ -728,4 +752,8 @@ button {
 }
 body {
     width: 100vw !important;
+}
+#leftButton{
+    transition: 0.5s;
+    border-bottom: 0.1em solid var(--second);
 }

@@ -66,14 +66,14 @@ words = {
         "search again", //28
         "open video", //29
         "change name", //30
-        "include watched vids w/ search", //31
+        "unseen vids only", //31
         "what's good, ", //32
         "anqrzfeubxkmlpwhdvocty", //33
         "abcd_efghijklmn_opqrstudvwxyz_", //34
         "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
         "nvm", //36
         "Last time you used nostalgiaTok", //37
-        "search this now", //38
+        "drag me to the option you want", //38
         "spring", //39
         "summer", //40
         "fall", //41
@@ -116,14 +116,32 @@ words = {
         "you've watched all the videos for this query", //78
         "videos are still coming in", //79
         "this will automatically scroll when they arrive", //80
-        "❌ -> ✅", //81
-        "✅ -> ❌", //82
+        "✅ -> ❌", //81
+        "❌ -> ✅", //82
         "hold again to toggle 2x speed", //83
         "Advertisement", //84
         "Product of 🇸🇱", //85
         "Go Fullscreen", //86
         "Exit this menu", //87
-        "Credits" //88
+        "Credits", //88
+        "or click the '𐄛' menu --> 'Install App'", //Windows chrome 89
+        "or click the '𐄛' menu --> 'Apps' --> 'Install this site as an app'", //windows edge 90
+        "or click the '𐄛' menu  --> 'Install App'", //mac chrome 91
+        "or click the share menu  --> 'Add to dock'", //mac safari 92
+        "or click the share menu --> 'Install App' or 'Add to Home screen' ", //android chrome 93
+        "Click the share menu --> Add to home screen", //ios mobile and firefox mobile 94
+        "I'm not exactly sure how to do it on your browser <br> but look for an 'Add to homescreen'-esque or 'Install app'-esque button in the share menu or browser menu and click that", //other 95
+        "Click 'Install nostalgiaTok'<br>", //add-on for the first 5... 96
+        "Hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //firefox desktop 97 
+        "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br>  help from stack overflow & a little bit of ai debugging <br><br>  designed by peiLamed <br><br>  product of sierra leone 🇸🇱 <br><br>  free palestine 🇵🇸🇸🇩🇨🇩", //98
+        "see directions", //99
+        "「」 |  『』 | Fullscreen Available :)", //100
+        "use me instead :)", //101
+        "share video", //102
+        "your video is loading", //103
+        "will copy link", //104
+        "copied, thx 4 sharing :)" //105
+
     ],
 
     "en": [
@@ -324,19 +342,23 @@ function endFollow() {
        howToFullscreen();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')) {
-       nstCredits();
+       howToFullscreen(true);
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')) {
-       //change name
+      
     }
-    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')){
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')) {
+      navigator.clipboard.writeText(window.location.href+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
+      evaluateFullscreenReminder(105);
+    }
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
     },100)
     document.querySelector('#swipeScreen').style.opacity = 0;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
-    document.querySelector('#swDrag').innerText = words[navigator.language][30];
+    document.querySelector('#swDrag').innerText = words[navigator.language][38];
     setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
 }
 }
@@ -367,8 +389,132 @@ function endSwipeFunc(){
     document.querySelector('#swDrag').innerText = "";
     setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
 }
-function howToFullscreen(){
+var hTFInterval;
+var hTFInt = 0;
+var hTFCurrPlace;
+var hTFallVideos = [];
+var hTFCover;
+var hTFMessage;
+function hTFEnd(){
+   player.unMute();
+hTFCover.style.opacity = "0";
+setTimeout(function(){
+    hTFCover.remove()
+}, 500)
+hTFMessage.style.opacity = "0";
+setTimeout(function(){
+    hTFMessage.remove()
+}, 500)
+document.querySelector('#allHold').style.marginLeft = "0vw";
+}
+function howToFullscreen(a){
+    setTimeout(function(){
+    player.mute();
+    document.querySelector('#allHold').style.marginLeft = "-50vw";
+    hTFCover = document.createElement('div');
+    hTFCover.style.mask = "linear-gradient(to right, black 1%, transparent 99%)";
+    hTFCover.style.width = "50dvw";
+    hTFCover.style.height = "100dvh";
+    hTFCover.style.left = "0";
+    hTFCover.style.top = "0";
+    hTFCover.style.zIndex = "100000";
+    hTFCover.style.position = "absolute";
+    hTFCover.style.opacity = "0";
+    hTFCover.style.transition = "0.5s";
+    setTimeout(function(){
+    hTFCover.style.opacity = "1";
+    },50)
+    document.body.append(hTFCover);
+    hTFMessage = document.createElement('div');
+    hTFMessage.setAttribute('class','hTFMessage');
+    hTFMessage.append(document.createElement('b'));
+    hTFMessage.append(document.createElement('p'))
+    if(a){
+        hTFMessage.querySelector('b').innerText = words[navigator.language][88];
+        hTFMessage.querySelector('p').innerHTML = words[navigator.language][98];
+    }else{
+         hTFMessage.querySelector('b').innerText = words[navigator.language][86];
+       var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+       // Source - https://stackoverflow.com/a/19176790
+// Posted by Havaligi Sathish, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-06-02, License - CC BY-SA 4.0
+var OSName = "Unknown";
+if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows 10";
+if (window.navigator.userAgent.indexOf("Windows NT 6.3") != -1) OSName="Windows 8.1";
+if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows 8";
+if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac/iOS";
+if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
+if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
+// Source - https://stackoverflow.com/a/26358856
+// Posted by Nimesh, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-06-02, License - CC BY-SA 4.0
+var bowserr = "unknown";
+  if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+    bowserr = ('Opera');
+  } else if (navigator.userAgent.indexOf("Edg") != -1) {
+    bowserr = ('Edge');
+  } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+    bowserr = ('Chrome');
+  } else if (navigator.userAgent.indexOf("Safari") != -1) {
+    bowserr = ('Safari');
+  } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+    bowserr = ('Firefox');
+  } else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
+  {
+    bowserr = ('IE');
+  } else {
+    bowserr = ('unknown');
+  }
 
+  //From David Adams @ codeshack.io
+const isMobile = () => {
+  // Check if the new API is supported
+  if (navigator.userAgentData) {
+    return navigator.userAgentData.mobile;
+  }
+  
+  // Fallback for Safari/Firefox (see Solution 3)
+  return /Mobi|Android/i.test(navigator.userAgent);
+};
+var numberToBeSeen = 95;
+if(OSName.includes('Windows') && bowserr == "Chrome" && isMobile() == false){
+    numberToBeSeen = 89;
+}
+if(OSName.includes('Windows') && bowserr == "Edge" && isMobile() == false){
+    numberToBeSeen = 90;
+}
+if(OSName == "Mac/iOS" && bowserr == "Chrome" && isMobile() == false){
+    numberToBeSeen = 91;
+}
+if(OSName == "Mac/iOS" && bowserr == "Safari" && isMobile() == false){
+    numberToBeSeen = 92;
+}
+if(isMobile() && bowserr == "Chrome" && iOS == false){
+    numberToBeSeen = 93;
+}
+if(isMobile() && iOS){
+    numberToBeSeen = 94;
+}
+if(isMobile() == false && bowserr == "Firefox"){
+    numberToBeSeen == 97
+}
+if(numberToBeSeen < 94){
+hTFMessage.querySelector('p').innerHTML = words[navigator.language][96] + words[navigator.language][numberToBeSeen];
+}else{
+    hTFMessage.querySelector('p').innerHTML = words[navigator.language][numberToBeSeen];
+}
+    }
+    var Bb = document.createElement('button');
+    Bb.innerText = "✅";
+    Bb.setAttribute('onclick','hTFEnd()')
+    hTFMessage.append(Bb);
+    document.body.append(hTFMessage);
+    hTFCover.style.opacity = "0";
+    hTFCover.style.transition = "0.5s";
+    setTimeout(function(){
+    hTFCover.style.opacity = "1";
+    },50)
+},100)
 }
 function editModeAnimation() {
     pauseVideo();
@@ -781,26 +927,26 @@ catch(e){
             //document.querySelector('#fullscreenButton').style.display = "none";
             if (!neww) {
                 editMode = true;
-                swapTe(7, function () {
+                swapTe(shVar[isSharing][0], function () {
                     if (doneAnimation) {
                         var thisVall = validateDate(document.querySelector("#teInput").value);
                         if (!thisVall.includes("Year Error")) {
                             user.year = thisVall;
                             makeShapes(user.year, "       ", "y", true);
-                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                             document.querySelector("#teButton").removeAttribute("onclick", "");
 
                         } else {
                             handleError(thisVall)
                         }
                     }
-                }, 4, function () {
+                }, shVar[isSharing][1], function () {
                     if (doneAnimation) {
                         var thisVall = validateDate(document.querySelector("#teInput").value);
                         if (!thisVall.includes("Year Error")) {
                             user.year = thisVall;
                             makeShapes(user.year, "       ", "y", true);
-                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                             document.querySelector("#teButton").removeAttribute("onclick", "");
 
                         } else {
@@ -811,25 +957,25 @@ catch(e){
                 setTimeout(function () { jintI = 0; fkAround2() }, 550);
              
             } else {
-                swapTe(7, function () {
+                swapTe(shVar[isSharing][0], function () {
                     if (doneAnimation) {
                         var thisVall = validateDate(document.querySelector("#teInput").value);
                         if (!thisVall.includes("Year Error")) {
                             user.year = thisVall;
                             makeShapes(user.year, "       ", "y", true);
-                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                             document.querySelector("#teButton").removeAttribute("onclick", "");
                         } else {
                             handleError(thisVall)
                         }
                     }
-                }, 4, function () {
+                }, shVar[isSharing][1], function () {
                     if (doneAnimation) {
                         var thisVall = validateDate(document.querySelector("#teInput").value);
                         if (!thisVall.includes("Year Error")) {
                             user.year = thisVall;
                             makeShapes(user.year, "       ", "y", true);
-                            swapTe(8, generatePreferences, 4, generatePreferences);
+                            swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                             document.querySelector("#teButton").removeAttribute("onclick", "");
                         } else {
                             handleError(thisVall)
@@ -887,7 +1033,44 @@ window.addEventListener('touchmove', function (e) {
         e.preventDefault(); // Prevents page scrolling
     }
 }, { passive: false });
+var isSharing = "false";
+var shVar = {
+    "true": [15,0,15,0],
+    "false": [7,4,8,4]
+}
+function nameClick(a){
+    if(a == "false"){
+        evaluateFullscreenReminder(101);
+    }else{
+        window.open('https://ddyson08.github.io/nostalgiatok/index.html')
+    }
+}
+var shareVarr;
 window.onload = function () {
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var shareUrl = decodeURIComponent(urlParams.get('share'));
+if(shareUrl!=="null"){
+     
+     shareVarr = shareUrl;
+     words[navigator.language][32] = words[navigator.language][103];
+     words[navigator.language][3] = words[navigator.language][103];
+     isSharing = "true";
+     console.log(window.isSharing);
+setTimeout(function(){
+    
+    document.querySelector('#uvula').style.display = "block";
+    document.querySelector('#uvula').style.opacity = "1";
+    user = JSON.parse(decodeURIComponent(urlParams.get('user')));
+    makeShapes(user.year,'   ','y',true);
+    makeShapes(user.topics,'   ','y',true);
+    makeShapes(user.preferences,'   ','y',true);
+    setTimeout(function(){runAnimation();},500);
+},1000);
+}
+
+
+
     if(localStorage.getItem('nostalgiaTokAllowOldVideos') == null){
         localStorage.setItem('nostalgiaTokAllowOldVideos',false);
     }
@@ -971,13 +1154,18 @@ window.onload = function () {
             }
             if (closest[1] == "#exitsw") {
                 var inp = document.createElement('input');
-                inp.setAttribute('onclick','SF = false');
+                inp.setAttribute('onmouseup','SF = false');
+                inp.setAttribute('ontouchend','SF = false');
                 inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined){if(false){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
                 }else{
-                inp.setAttribute('placeholder',localStorage.getItem('nostalgiaTokName'))
+                    var addon = "";
+                    for(var ayi = 0; ayi<100; ayi++){
+                        addon+="&nbsp;"
+                    }
+                inp.setAttribute('placeholder',localStorage.getItem('nostalgiaTokName')+addon)
                 }
                document.querySelector('#swDrag').innerHTML = '';
                 document.querySelector('#swDrag').append(inp);
@@ -999,13 +1187,16 @@ window.onload = function () {
                
             }
             if (closest[1] == "#nstFs") {
-                document.querySelector('#swDrag').innerText; 
+                document.querySelector('#swDrag').innerText = words[navigator.language][99];
             }
             if(closest[1] == "#nstCredits"){
                 document.querySelector('#swDrag').innerText = words[navigator.language][85];
             }
             if(closest[1] == "#nstExit"){
                 document.querySelector('#swDrag').innerText = "-->";
+            }
+            if(closest[1] == "#nstShare"){
+                document.querySelector('#swDrag').innerText = words[navigator.language][104];
             }
             document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
             document.querySelector(closest[1]).append(document.querySelector('#swDrag'))
@@ -1036,25 +1227,25 @@ window.onload = function () {
                     ni.style.left = "calc(50% - " + (ni.getBoundingClientRect().width / 2) +"px + 0.5em)"
                 }, 500);
             }, 500);
-            swapTe(7, function () {
+            swapTe(shVar[isSharing][0], function () {
                 if (doneAnimation) {
                     var thisVall = validateDate(document.querySelector("#teInput").value);
                     if (!thisVall.includes("Year Error")) {
                         user.year = thisVall;
                         makeShapes(user.year, "       ", "y", true);
-                        swapTe(8, generatePreferences, 4, generatePreferences);
+                        swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                         document.querySelector("#teButton").removeAttribute("onclick", "");
                     } else {
                         handleError(thisVall)
                     }
                 }
-            }, 4, function () {
+            }, shVar[isSharing][1], function () {
                 if (doneAnimation) {
                     var thisVall = validateDate(document.querySelector("#teInput").value);
                     if (!thisVall.includes("Year Error")) {
                         user.year = thisVall;
                         makeShapes(user.year, "       ", "y", true);
-                        swapTe(8, generatePreferences, 4, generatePreferences);
+                        swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                         document.querySelector("#teButton").removeAttribute("onclick", "");
                     } else {
                         handleError(thisVall)
@@ -1322,7 +1513,10 @@ function swapTe(n, f, m, g, t) {
         catch (e) { newConsoleLog(e) }
         newConsoleLog('NNN' + n)
         if (n !== 7 ) {
+            try{
             document.querySelector('#teButton').style.display = "block";
+            }
+            catch(e){}
         } else {
             document.querySelector('#teButton').style.display = "none";
         }
@@ -1660,7 +1854,7 @@ async function getSaved() {
     }
 }
 
-list = ['#creator', '#swTopic', '#exitsw','#sharenos'];
+list = ['#creator', '#swTopic', '#exitsw','#sharenos','#nstFs','#nstCredits','#nstExit', '#nstShare'];
 function generatePreferences() {
     user.preferences = document.querySelector("#teInput").value;
     makeShapes(user.preferences, ',', 'p', true);
@@ -2064,10 +2258,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton') && withinSpeedUp == false) {
                                                                       //playPause +=1; 
                                                                       if(!withinSpeedUp){
-                                                                    if (playPause % 2 == 0) {
-                                                                        pauseVideo();
-                                                                    } else {
-                                                                        playVideo();
+                                                                    if(player.isPlaying){
+                                                                        player.pauseVideo();
+                                                                    }else{
+                                                                        player.playVideo();
                                                                     }
                                                                 }
                                                                 }else{
@@ -2122,10 +2316,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      // playPause +=1; 
                                                                      if(!withinSpeedUp){
-                                                                    if (playPause % 2 == 0) {
-                                                                        pauseVideo();
-                                                                    } else {
-                                                                        playVideo();
+                                                                     if(player.isPlaying){
+                                                                        player.pauseVideo();
+                                                                    }else{
+                                                                        player.playVideo();
                                                                     }
                                                                 }
                                                                 }else{
@@ -2146,11 +2340,14 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     
                                                                     });
 
- 
+ isSharing = "false";
                                                                     TOOO.addEventListener('click', function (event) {
                                                                         autoplay = 0; 
                                                                 
                                                                     });
+                                                                    player.loadVideoById(allVideos[currentPlace].replace('📺',''))
+                                                                    player.playVideo();
+                    
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
                                                         }, 50 * multiplier)
@@ -2359,16 +2556,32 @@ function reverseUball() {
             }
             //document.querySelector('#textEnter').append(document.querySelector('#textEnter').querySelector('button'));
 
-            swapTe(7, function () {
-                user.year = document.querySelector("#teInput").value;
-                makeShapes(user.year, ' ', 'y', true);
-                swapTe(8, generatePreferences, 4, generatePreferences)
+             swapTe(shVar[isSharing][0], function () {
+        if (doneAnimation) {
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+            } else {
+                handleError(thisVall)
+            }
+        }
 
-            }, 4, function () {
-                user.year = document.querySelector("#teInput").value;
-                makeShapes(user.year, ' ', 'y', true);
-                swapTe(8, generatePreferences, 4, generatePreferences)
-            });
+    }, shVar[isSharing][1], function () {
+        if (doneAnimation) {
+            var thisVall = validateDate(document.querySelector("#teInput").value);
+            if (!thisVall.includes("Year Error")) {
+                user.year = thisVall;
+                makeShapes(user.year, "       ", "y", true);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
+                document.querySelector("#teButton").removeAttribute("onclick", "");
+            } else {
+                handleError(thisVall)
+            }
+        }
+    });
             setTimeout(function () {
                 removeAllEventListeners(document.querySelector('#teInput'));
                 document.querySelector('#teInput').addEventListener('keyup', fkAround2);
@@ -2526,26 +2739,26 @@ function enterName() {
             ni.style.left = "calc(50% - " + (ni.getBoundingClientRect().width / 2) + "px + 0.5em)"
         }, 500);
     }, 1000);
-    swapTe(7, function () {
+    swapTe(shVar[isSharing][0], function () {
         if (doneAnimation) {
             var thisVall = validateDate(document.querySelector("#teInput").value);
             if (!thisVall.includes("Year Error")) {
                 user.year = thisVall;
                 makeShapes(user.year, "       ", "y", true);
-                swapTe(8, generatePreferences, 4, generatePreferences);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                 document.querySelector("#teButton").removeAttribute("onclick", "");
             } else {
                 handleError(thisVall)
             }
         }
 
-    }, 4, function () {
+    }, shVar[isSharing][0], function () {
         if (doneAnimation) {
             var thisVall = validateDate(document.querySelector("#teInput").value);
             if (!thisVall.includes("Year Error")) {
                 user.year = thisVall;
                 makeShapes(user.year, "       ", "y", true);
-                swapTe(8, generatePreferences, 4, generatePreferences);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                 document.querySelector("#teButton").removeAttribute("onclick", "");
             } else {
                 handleError(thisVall)
@@ -2903,7 +3116,51 @@ function handleTouch(startX, endX,
         }
     }
 }
+function evaluateFullscreenReminder(n){
+    var fsNumber = 0;
+    try{
+        fsNumber = parseInt(localStorage.getItem("nstFSRN"));
+    }
+    catch(e){
+        localStorage.setItem("nstFSRN",0);
+    }
+    if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || n){
+        var activeItem = document.querySelector('#leftButton');
+        var valueOg = activeItem.innerText;
+        activeItem.style.color = "var(--second)";
+        var wnl100 = words[navigator.language][100].split('|');
 
+        setTimeout(function(){
+            activeItem.style.color = "var(--text)";
+            if(!n){
+            activeItem.innerText = [wnl100[0],wnl100[1]][fsNumber % 2] + wnl100[2];
+            }else{
+                activeItem.innerText = words[navigator.language][n];
+            }
+            activeItem.style.borderBottom = "0.1em solid var(--second)";
+            setTimeout(function(){
+                activeItem.style.borderBottom = "0.1em solid var(--text)";
+                setTimeout(function(){
+                    activeItem.style.borderBottom = "0.1em solid var(--emphasizedText)";
+                     setTimeout(function(){
+            activeItem.style.borderBottom = "0.1em solid var(--second)";
+            setTimeout(function(){
+                activeItem.style.borderBottom = "0.1em solid var(--text)";
+                setTimeout(function(){
+                    activeItem.style.borderBottom = "0.1em solid var(--emphasizedText)";
+                    setTimeout(function(){ activeItem.style.borderBottom = "0.1em solid var(--second)"; activeItem.style.color = "var(--second)";  
+                    setTimeout(function(){activeItem.style.color = "var(--text)"; activeItem.innerText = valueOg;},500);
+                    },500)
+                    },500)
+                },500)
+            },500);
+                    },500)
+                },500)
+            },500);
+    }
+    fsNumber++;
+    localStorage.setItem("nstFSRN",fsNumber);
+}
 function swipeUp() {
     if(currentPlace == allVideos.length - 1){
         if(nextToken!==""){
@@ -2914,6 +3171,9 @@ function swipeUp() {
         document.querySelector('.giveError').style.borderBottom="1px dotted var(--emphasizedText)";
         setTimeout(function(){document.querySelector('.giveError').style.border=""},250)
     }else{
+        if(!isPWA()){
+        evaluateFullscreenReminder();
+        }
      for(var i of document.querySelectorAll('.giveError')){
         i.remove();
     }
@@ -3900,26 +4160,26 @@ function handleError(Error) {
         console.log(['both', 72])
         words[navigator.language][7] = words[navigator.language][72] + '<br>' + words[navigator.language][7].split('<br>')[1]
     }
-    swapTe(7, function () {
+    swapTe(shVar[isSharing][0], function () {
         if (doneAnimation) {
             var thisVall = validateDate(document.querySelector("#teInput").value);
             if (!thisVall.includes("Year Error")) {
                 user.year = thisVall;
                 makeShapes(user.year, "       ", "y", true);
-                swapTe(8, generatePreferences, 4, generatePreferences);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                 document.querySelector("#teButton").removeAttribute("onclick", "");
 
             } else {
                 handleError(thisVall)
             }
         }
-    }, 4, function () {
+    }, shVar[isSharing][1], function () {
         if (doneAnimation) {
             var thisVall = validateDate(document.querySelector("#teInput").value);
             if (!thisVall.includes("Year Error")) {
                 user.year = thisVall;
                 makeShapes(user.year, "       ", "y", true);
-                swapTe(8, generatePreferences, 4, generatePreferences);
+                swapTe(shVar[isSharing][2], generatePreferences, shVar[isSharing][3], generatePreferences);
                 document.querySelector("#teButton").removeAttribute("onclick", "");
 
             } else {
@@ -4101,7 +4361,11 @@ catch(e){
 
 			allVideos = [...new Set(allVideos)]
             console.log(result);
-
+            if(isSharing!=="false"){
+                console.log(allVideos);
+allVideos.unshift(shareVarr);
+console.log(allVideos);
+            }
         
     
 }
