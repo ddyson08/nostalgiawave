@@ -456,6 +456,7 @@ body {
     transition: 0.5s;
 }
 
+
 #swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstCredits, #nstExit {
     padding-top: 1em;
     display: flex;
@@ -487,10 +488,17 @@ body {
     width: var(--margin) * 2;
     text-align: center;
 }
+.hTFMessage :is(p){
+   height: 80%;
+   overflow-y:scroll;
+}
 .swText, .swGive {
     color: var(--swText);
     font-size: 1.6em;
     max-width: calc(50vh - 3em - 0.5*var(--margin));
+}
+.swText{
+    background-color: transparent;
 }
     #inpName {
     width: calc((50vh - 2em - var(--margin) + 2em)/2);

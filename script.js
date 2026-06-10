@@ -111,11 +111,11 @@ words = {
         "sorry, try again plzz", //73
         "tysm btw ☺", //74
         "oopsie!", //75
-        `Something didn't work<br>Hit "options" and then drag the box to "search again" to do another search`, //76
-        "thats it ngl", //77
-        "you've watched all the videos for this query", //78
-        "videos are still coming in", //79
-        "this will automatically scroll when they arrive", //80
+        `Something didn't work<br>try searching again`, //76
+        "all watched", //77
+        "you watched all the videos for this search", //78
+        "still loading", //79
+        "the player will auto-scroll when videos arrive", //80
         "✅ -> ❌", //81
         "❌ -> ✅", //82
         "hold again to toggle 2x speed", //83
@@ -126,7 +126,7 @@ words = {
         "Credits", //88
         "or click the '𐄛' menu --> 'Install App'", //Windows chrome 89
         "or click the '𐄛' menu --> 'Apps' --> 'Install this site as an app'", //windows edge 90
-        "or click the '𐄛' menu  --> 'Install App'", //mac chrome 91
+        "or click the '𐄛' menu  --> 'Cast, Save, and Share' --> 'Install App'", //mac chrome 91
         "or click the share menu  --> 'Add to dock'", //mac safari 92
         "or click the share menu --> 'Install App' or 'Add to Home screen' ", //android chrome 93
         "Click the share menu --> Add to home screen", //ios mobile and firefox mobile 94
@@ -139,9 +139,14 @@ words = {
         "use me instead :)", //101
         "share video", //102
         "your video is loading", //103
-        "will copy link", //104
-        "copied, thx 4 sharing :)" //105
-
+        "thx btw :)", //104
+        "copied, thx 4 sharing :)", //105
+        "enjoy this blast from the past", //106
+        "sharing doesnt work on your browser, so i copied the link instead <br> thanks for sharing btw", //107
+        "search similar", //108
+        "search history", //109
+        "search new", //110
+        "searching..." //111
     ],
 
     "en": [
@@ -342,13 +347,45 @@ function endFollow() {
        howToFullscreen();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')) {
-       howToFullscreen(true);
+       howToFullscreen(true, [88,98]);
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')) {
       
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')) {
-      navigator.clipboard.writeText(window.location.href+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
+        var Bbb = document.createElement('button');
+        Bbb.addEventListener('click', async () => {
+  const shareData = {
+    title: 'nostalgiaTok',
+    text: words[navigator.language][106],
+    url: window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)) 
+  };
+
+  // 1. Check if the browser supports the Web Share API
+  if (navigator.share) {
+    try {
+      // 2. Invoke the native sharing menu
+      await navigator.share(shareData);
+      console.log('Content shared successfully!');
+    } catch (error) {
+      // Handles user cancellation or system errors
+      console.log('Sharing failed or was canceled:', error.message);
+       fallbackShare(shareData);
+    }
+  } else {
+    // 3. Fallback behavior if Web Share API is missing
+    fallbackShare(shareData);
+  }
+});
+
+function fallbackShare(data) {
+  // Example: Fallback to copying the link to the clipboard
+  navigator.clipboard.writeText(data.url);
+  howToFullscreen(true,[102,107]);
+}
+        document.body.append(Bbb);
+        Bbb.click();
+        Bbb.remove();
       evaluateFullscreenReminder(105);
     }
     if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')){
@@ -407,7 +444,7 @@ setTimeout(function(){
 }, 500)
 document.querySelector('#allHold').style.marginLeft = "0vw";
 }
-function howToFullscreen(a){
+function howToFullscreen(a,b){
     setTimeout(function(){
     player.mute();
     document.querySelector('#allHold').style.marginLeft = "-50vw";
@@ -430,8 +467,8 @@ function howToFullscreen(a){
     hTFMessage.append(document.createElement('b'));
     hTFMessage.append(document.createElement('p'))
     if(a){
-        hTFMessage.querySelector('b').innerText = words[navigator.language][88];
-        hTFMessage.querySelector('p').innerHTML = words[navigator.language][98];
+        hTFMessage.querySelector('b').innerText = words[navigator.language][b[0]];
+        hTFMessage.querySelector('p').innerHTML = words[navigator.language][b[1]];
     }else{
          hTFMessage.querySelector('b').innerText = words[navigator.language][86];
        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
@@ -483,10 +520,10 @@ if(OSName.includes('Windows') && bowserr == "Chrome" && isMobile() == false){
 if(OSName.includes('Windows') && bowserr == "Edge" && isMobile() == false){
     numberToBeSeen = 90;
 }
-if(OSName == "Mac/iOS" && bowserr == "Chrome" && isMobile() == false){
+if((OSName == "Mac/iOS" || OSName == "Unix") && bowserr == "Chrome" && isMobile() == false){
     numberToBeSeen = 91;
 }
-if(OSName == "Mac/iOS" && bowserr == "Safari" && isMobile() == false){
+if((OSName == "Mac/iOS" || OSName == "Unix") && bowserr == "Safari" && isMobile() == false){
     numberToBeSeen = 92;
 }
 if(isMobile() && bowserr == "Chrome" && iOS == false){
@@ -506,7 +543,11 @@ hTFMessage.querySelector('p').innerHTML = words[navigator.language][96] + words[
     }
     var Bb = document.createElement('button');
     Bb.innerText = "✅";
-    Bb.setAttribute('onclick','hTFEnd()')
+    var extraPress = "";
+    if(a && (b[0] == 77 || b[0] == 75)){
+        extraPress = "; evaluateFullscreenReminder(28);"
+    }
+    Bb.setAttribute('onclick','hTFEnd()'+extraPress)
     hTFMessage.append(Bb);
     document.body.append(hTFMessage);
     hTFCover.style.opacity = "0";
@@ -517,9 +558,9 @@ hTFMessage.querySelector('p').innerHTML = words[navigator.language][96] + words[
 },100)
 }
 function editModeAnimation() {
-    pauseVideo();
+    player.pauseVideo();
     document.querySelector('#pgTitle').style.opacity = 1;
-    document.querySelector('#pgTitle').querySelector('b').innerText = "Search History";
+    document.querySelector('#pgTitle').querySelector('b').innerText = words[navigator.language][109];
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
     setTimeout(function () {
         document.querySelector('#pgTitle').style.display = "flex";
@@ -541,7 +582,7 @@ function editModeAnimation() {
         if ([...pg.querySelectorAll('.pgMain')].length > 1) {
             var pqb = [...pg.querySelectorAll('.pgMain')[0].querySelectorAll('button')];
             pqb[0].style.display = "block";
-            pqb[1].innerText = "search simmilar";
+            pqb[1].innerText = words[navigator.language][108];
             pqb[1].setAttribute('class', 'primaryButton');
         }
         var swr = window.innerWidth / window.innerHeight;
@@ -612,7 +653,7 @@ function eMA2(simmilar, pgGivenData, neww) {
         }, 1000)
         var pqb = [...pg2.querySelectorAll('button')];
         pqb[0].style.display = "block";
-        pqb[1].innerText = "search simmilar";
+        pqb[1].innerText = words[navigator.language][108];
         pqb[1].setAttribute('class', 'primaryButton');
         var pqb2 = [...pg1.querySelectorAll('button')];
         pqb2[0].setAttribute('class', 'special');
@@ -743,7 +784,7 @@ function pgCancel(text) {
         document.querySelector('#uvula').style.display = "none";
         pg1.remove();
         if ([...document.querySelectorAll('.pgButtonHold')].length < 2) {
-            document.querySelector('.pgButtonHold').innerHTML = ` <button class="notspecial pgButton" style="display:none" onclick="eMA2(false, this)">search this now</button><button class="notspecial primaryButton" onclick="eMA2(true, this)">search again!</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">search new</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navigator.language][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navigator.language][110]+`</button>`
         } else {
             document.querySelector('.primaryButton').setAttribute('class', '');
         }
@@ -780,9 +821,9 @@ function pgCancel(text) {
         var pgt = document.querySelector('#pgTitle');
         pgt.querySelector('button').innerText = "X";
         
-        pgt.querySelector('b').innerText = "Search History";
+        pgt.querySelector('b').innerText = words[navigator.language][109];
          if ([...document.querySelectorAll('.pgButtonHold')].length <= 2) {
-            document.querySelector('.pgButtonHold').innerHTML = ` <button class="notspecial pgButton" style="display:none" onclick="eMA2(false, this)">search this now</button><button  class="notspecial primaryButton" onclick="eMA2(true, this)">search again!</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">search new</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navigator.language][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navigator.language][110]+`</button>`
                 }
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
@@ -831,13 +872,14 @@ try{
 catch(e){
     console.log(e);
 }
+document.querySelector('#playground').style.opacity = 0;
     if (simmilar) {
          document.querySelector('#uvula').style.zIndex = "1";
         document.querySelector('#uvula').style.display = "block";
         document.querySelector('.uBall').innerHTML = "";
         var pg = document.querySelector('#pgTitle');
         pg.querySelector('button').innerText = "<";
-        pg.querySelector('b').innerText = "Searching...";
+        pg.querySelector('b').innerText = words[navigator.language][111];
 
         var teTee = document.querySelector('#textEnter');
         var uv = document.querySelector('#uvula');
@@ -1154,18 +1196,17 @@ setTimeout(function(){
             }
             if (closest[1] == "#exitsw") {
                 var inp = document.createElement('input');
-                inp.setAttribute('onmouseup','SF = false');
-                inp.setAttribute('ontouchend','SF = false');
+                var exii = document.querySelector('#exitsw');
+                exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
+                exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined){if(false){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
                 }else{
-                    var addon = "";
-                    for(var ayi = 0; ayi<100; ayi++){
-                        addon+="&nbsp;"
-                    }
-                inp.setAttribute('placeholder',localStorage.getItem('nostalgiaTokName')+addon)
+                   
+                    
+                inp.setAttribute('placeholder',localStorage.getItem('nostalgiaTokName'))
                 }
                document.querySelector('#swDrag').innerHTML = '';
                 document.querySelector('#swDrag').append(inp);
@@ -1934,6 +1975,18 @@ function runAnimation(bypass, bypass2) {
      localStorage.setItem('nostalgiaTokSaved', totalNST.join('[NOSTALGIATOKSPLIT]'));
     }else{
         localStorage.setItem('nostalgiaTokSaved', '""');
+        if (localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]') !== undefined) {
+         var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]');
+     } else {
+         var totalNST = "";
+     }
+     if (totalNST[0].includes('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]')) {
+         totalNST[0] = '[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user)
+     }
+     else {
+             totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
+     }
+     localStorage.setItem('nostalgiaTokSaved', totalNST.join('[NOSTALGIATOKSPLIT]'));
     }
     }
     ra = true;
@@ -2240,7 +2293,8 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                             document.querySelector('#fullscreenButton').style.width = "calc(calc(100dvh - 10em) * (9/16))";
                                                                             document.querySelector('#riseup').style.marginTop = "3em";
                                                                             document.querySelector('#riseup').style.opacity = "0";
-                                                                            setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500)
+                                                                            setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500);
+                                                                            setTimeout(function(){document.querySelector('#riseup').remove()},1500)
                                                                            var playbackRate = handleSpeed[speedVar%2];
 var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
 var message = JSON.stringify(data);
@@ -2254,14 +2308,14 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         isTE = true;
                                                                             if(!isPD){
                                                                                
-                                                                          const element = document.elementFromPoint(event.touches[0].clientX, event.touches[0].clientY);
+                                                                          const element = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton') && withinSpeedUp == false) {
                                                                       //playPause +=1; 
                                                                       if(!withinSpeedUp){
-                                                                    if(player.isPlaying){
-                                                                        player.pauseVideo();
+                                                                    if(playPause % 2 == 0){
+                                                                        player.playVideo(); playPause++;
                                                                     }else{
-                                                                        player.playVideo();
+                                                                        player.pauseVideo(); playPause++;
                                                                     }
                                                                 }
                                                                 }else{
@@ -2271,8 +2325,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                             }
                                                             isPD = false;
                                                                         console.log("te");
-                                                                        finalTouchX = event.touches[0].clientX;
-                                                                        finalTouchY = event.touches[0].clientY;
+                                                                        finalTouchX = event.changedTouches[0].clientX;
+                                                                        finalTouchY = event.changedTouches[0].clientY;
                                                                     try{
                                                                      document.querySelector('#riseup').remove();
                                                                         }catch(e){console.log(e)}
@@ -2297,7 +2351,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                             document.querySelector('#fullscreenButton').style.width = "calc(calc(100dvh - 10em) * (9/16))";
                                                                             document.querySelector('#riseup').style.marginTop = "3em";
                                                                             document.querySelector('#riseup').style.opacity = "0";
-                                                                            setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500)
+                                                                            setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500);
+                                                                            setTimeout(function(){document.querySelector('#riseup').remove()},1500);
                                                                           var playbackRate = handleSpeed[speedVar%2];
                                                                             console.log([handleSpeed[speedVar%2],speedVar, speedVar%2])
 var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
@@ -2316,10 +2371,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      // playPause +=1; 
                                                                      if(!withinSpeedUp){
-                                                                     if(player.isPlaying){
-                                                                        player.pauseVideo();
+                                                                    if(playPause % 2 == 0){
+                                                                        player.playVideo(); playPause++;
                                                                     }else{
-                                                                        player.playVideo();
+                                                                        player.pauseVideo(); playPause++;
                                                                     }
                                                                 }
                                                                 }else{
@@ -2345,8 +2400,11 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         autoplay = 0; 
                                                                 
                                                                     });
+                                                                    try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''))
                                                                     player.playVideo();
+                                                                    }
+                                                                    catch(e){}
                     
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
@@ -3162,14 +3220,14 @@ function evaluateFullscreenReminder(n){
     localStorage.setItem("nstFSRN",fsNumber);
 }
 function swipeUp() {
-    if(currentPlace == allVideos.length - 1){
+    if(currentPlace >= allVideos.length - 1){
         if(nextToken!==""){
             giveError3();
         }else{
             giveError2();
         }
-        document.querySelector('.giveError').style.borderBottom="1px dotted var(--emphasizedText)";
-        setTimeout(function(){document.querySelector('.giveError').style.border=""},250)
+        /*document.querySelector('.giveError').style.borderBottom="1px dotted var(--emphasizedText)";
+        setTimeout(function(){document.querySelector('.giveError').style.border=""},250)*/
     }else{
         if(!isPWA()){
         evaluateFullscreenReminder();
@@ -3236,7 +3294,7 @@ function swipeUp() {
             orbitf.style.top = sVt['yes'][0];
             setTimeout(function () {
                 // Move UP
-                //  orbit.style.transform = "rotate(90deg)";
+                orbit.style.transform = "rotate(90deg)";
                 orbit.style.left = sVl['no'][1];
                 orbit.style.top = sVt['no'][0];
                 orbitf.style.left = sVl['yes'][1];
@@ -3244,7 +3302,7 @@ function swipeUp() {
 
                 setTimeout(function () {
                     // Move LEFT
-                    //   orbit.style.transform = "rotate(180deg)";
+                    orbit.style.transform = "rotate(180deg)";
                     orbit.style.left = sVl['no'][1];
                     orbit.style.top = sVt['no'][1];
                     orbitf.style.left = sVl['yes'][1];
@@ -3252,14 +3310,14 @@ function swipeUp() {
 
                     setTimeout(function () {
                         // Move DOWN
-                        //  orbit.style.transform = "rotate(270deg)";
+                        orbit.style.transform = "rotate(270deg)";
                         orbit.style.left = sVl['no'][2];
                         orbit.style.top = sVt['no'][1];
                         orbitf.style.left = sVl['yes'][2];
                         orbitf.style.top = sVt['yes'][1];
 
                         setTimeout(function () {
-                            //    orbit.style.transform = "rotate(360deg)";
+                            orbit.style.transform = "rotate(360deg)";
                            
                                     localStorage.setItem('nostalgiaTokOldVideos', localStorage.getItem('nostalgiaTokOldVideos') + "|SPLIT|"+allVideos[currentPlace]);
                               
@@ -4372,7 +4430,7 @@ console.log(allVideos);
 
 async function requestVideosInner(value) {
     let url =
-        "https://script.google.com/macros/s/AKfycbxUDb4Foe5IyGmygjb_5RVmgbAkaBdoeECGtj6LFmYGE_ctMRlW_h8xVKifR8EArmtnnw/exec"
+        "https://script.google.com/macros/s/AKfycbyRGI3dRtizuTd9bAfHw6xu7VzwpBQobP9o6ULFSMht5laEduw5QtoHHRVoC_qAJHo/exec"
         + "?year=" + encodeURIComponent(user.year)
         + "&creator=" + encodeURIComponent(user.preferences)
         + "&topic=" + encodeURIComponent(user.topics);
@@ -4397,44 +4455,22 @@ async function requestVideosInner(value) {
     }
 }
 function giveError() {
-    for(var i of document.querySelectorAll('.giveError')){
-        i.remove();
-    }
-    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
-    margin-top: 0em;
-    background-color: var(--second);
-    padding: calc(var(--margin)/2);
-"><p style="color:var(--emphasizedText)">`+ words[navigator.language][75] + `</p><span>` + words[navigator.language][76] + `</span>
-            </div>` + document.querySelector('#touchOverlay').innerHTML;
+    howToFullscreen(true, [75,76])
 }
 function giveError2() {
-     for(var i of document.querySelectorAll('.giveError')){
-        i.remove();
-    }
-    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
-    margin-top: 0em;
-    background-color: var(--second);
-    padding: calc(var(--margin)/2);
-"><p style="color:var(--emphasizedText)">`+ words[navigator.language][77] + `</p><span>` + words[navigator.language][76] + '<br>' + words[navigator.language][78] + `</span>
-            </div>` + document.querySelector('#touchOverlay').innerHTML;
+    howToFullscreen(true, [79,80])
 }
 function giveError3() {
-     for(var i of document.querySelectorAll('.giveError')){
-        i.remove();
-    }
-    document.querySelector('#touchOverlay').innerHTML = `<div class="giveError" style="
-    margin-top: 0em;
-    background-color: var(--second);
-    padding: calc(var(--margin)/2);
-"><p style="color:var(--emphasizedText)">`+ words[navigator.language][79] + `</p><span>` + words[navigator.language][80] + `</span>
-            </div>` + document.querySelector('#touchOverlay').innerHTML;
+   howToFullscreen(true, [77,78])
 }
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var ErrCount = 0;
       function onYouTubeIframeAPIReady() {
-        
+        if(allVideos.length == 0){
+            allVideos == [...Ads[1]];
+        }
      var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
@@ -4487,6 +4523,9 @@ function giveError3() {
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
+        if(allVideos.length == 0){
+            allVideos == [...Ads[1]];
+        }
           var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
@@ -4499,9 +4538,14 @@ function giveError3() {
                                             }else{
                                                  document.querySelector('#fullscreenButton').innerText = '↘';
                                             }
+                                            var TOOO = document.querySelector('#touchOverlay');
+                                            TOOO.style.transition ="0";
+                                            TOOO.style.marginLeft = "-1000vw";
                                             player.loadVideoById(avcp)
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},200)
         readyy = true;
         player.pauseVideo();
+                                        
       }
 
       // 5. The API calls this function when the player's state changes.
@@ -4514,7 +4558,7 @@ function giveError3() {
        
         console.error(playPause)
         if(withinSpeedUp){
-            playVideo();
+            player.playVideo();
         }
     }
      if (event.data == YT.PlayerState.PLAYING) {
@@ -4523,19 +4567,6 @@ function giveError3() {
     }
 }
 function incPlayPause(){
-    playPause+=1;
+   // playPause++;
 }
-      function pauseVideo() {
-        try{
-        player.pauseVideo();
-         incPlayPause()
-        }
-        catch(e){console.log(e)}
-      }
-      function playVideo() {
-        try{
-        player.playVideo();
-         incPlayPause()
-        }
-        catch(e){console.log(e)}
-      }
+      
