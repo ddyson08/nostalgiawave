@@ -472,8 +472,7 @@ body {
     right: 2em;
     top: 3.5em;
     border-radius: 5px;
-    color: var(--text);
-    border: 0.25em solid var(--accent);
+    color: var(--pgButtonText);
     padding-left: 1em;
     padding-right: 1em;
     /* padding: 1em; */
@@ -483,6 +482,7 @@ body {
     place-items: center;
     text-align: left;
     z-index: 1000;
+    background-color: var(--accent);
 }
 .hTFMessage :is(button){
     border: 0px solid var(--bg);
@@ -798,7 +798,10 @@ html{
   box-sizing: border-box;
 height: calc(100vh - env(safe-area-inset-top);
 }
-#allHold, #playground, #swipeScreen {
+html, body {
+    height: 100%;
+}
+div#allHold, div#playground, div#swipeScreen {
     padding-top: env(safe-area-inset-top) !important;
     
     padding-bottom: env(safe-area-inset-bottom) !important;
