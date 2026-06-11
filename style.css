@@ -799,9 +799,9 @@ html{
 height: calc(100vh - env(safe-area-inset-top);
 }
 #allHold, #playground, #swipeScreen {
-    padding-top: env(safe-area-inset-top);
-    padding-right: env(safe-area-inset-right);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
+    padding-top: env(safe-area-inset-top) !important;
+    
+    padding-bottom: env(safe-area-inset-bottom) !important;
+    
 }
     
