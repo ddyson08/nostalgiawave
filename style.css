@@ -796,5 +796,6 @@ body{
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   box-sizing: border-box;
+height: calc(100vh - env(safe-area-inset-top);
 }
     
