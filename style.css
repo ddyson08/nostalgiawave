@@ -39,7 +39,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    padding-top: env(safe-area-inset-top);
     height: 100vh;
     width: 100vw;
     max-width: 100vw;
@@ -47,6 +46,9 @@ html, body {
     overflow: hidden;
     position: fixed;
 }
+body{
+    padding-top: env(safe-area-inset-top);
+    }
 
 body, #allHold {
     touch-action: none;
@@ -128,7 +130,6 @@ scrollable {
     width: max-content;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    padding-top: max(0.5em, env(safe-area-inset-top));
     border-radius: 5px;
     height: 2em;
     max-height: 2em;
