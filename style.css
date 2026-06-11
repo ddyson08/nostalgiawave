@@ -79,8 +79,10 @@ scrollable {
     --emphBg: HSL(60, 2%, 96%);
     --contrast: HSL(60, 2%, 80%);
     --margin: 1em;
-    --emphasizedText: HSL(60, 10%, 100%);
+    --emphasizedText: HSL(60, 56%, 90%);
     --lighterText: 18px;
+    --pgText: HSL(60, 10%, 10%);
+    --pgButtonText: HSL(60, 10%, 10%);
 }
 
 @media (orientation: landscape) {
@@ -545,6 +547,8 @@ body {
     z-index: 9999;
     background: transparent;
     display: none;
+    height: calc((100dvh - 10em) * 0.85);
+    margin-top: calc((100dvh - 10em) * 0.05);
 }
 
 #playground {
@@ -562,13 +566,13 @@ body {
 }
 
     #playground :is(span, text, button) {
-        color: var(--text);
+        color: var(--pgText);
     }
 
     #playground :is(button) {
         border: 1px solid var(--text);
         background-color: var(--bg);
-        color: var(--emphasizedText);
+        color: var(--emphText);
     }
   
 
@@ -650,7 +654,7 @@ button {
 }
 
 #pgTitle {
-    top: 2.5em;
+    top: calc(50dvh + 2.5em);
     display: none;
     margin-left: 1em;
     margin-right: 1.5em;
@@ -658,6 +662,7 @@ button {
     background-color: rgba(0,0,0,0);
     z-index: 1000;
     transition: 0.5s;
+    color: var(--emphText);
 }
 
     #pgTitle :is(b) {
@@ -667,11 +672,12 @@ button {
         display: flex;
         justify-content: left;
         align-items: center;
+        color: var(--emphText);
     }
 
     #pgTitle :is(button) {
         /* margin-left: 0.5em; */
-        width: var(--margin);
+        width: calc(var(--margin) * 2);
         padding-left: 0.5em;
         margin-right: 0.5em;
         padding-right: 0.5em;
@@ -683,7 +689,7 @@ button {
 }
 #playground :is(.primaryButton), #pgTitle :is(.primaryButton), [words = "38"] {
     background-color: var(--emphasizedText) !important;
-    color: var(--bg) !important;
+    color: var(--pgText) !important;
 }
 .uBall {
     transition: 1s;
@@ -764,4 +770,18 @@ body {
 #leftButton{
     transition: 0.5s;
     border-bottom: 0.1em solid var(--second);
+}
+#playground :is(.primaryButton), #pgTitle :is(.primaryButton), [words = "38"] {
+    background-color: var(--pgText) !important;
+    color: var(--emphasizedText) !important;
+}
+#playground :is(button) {
+    border: 1px solid var(--text);
+    width: -webkit-fill-available;
+    background-color: var(--bg);
+    color: var(--pgButtonText) !important;
+}
+.glass{
+-webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }

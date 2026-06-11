@@ -33,170 +33,380 @@ function isPWA() {
 function newConsoleLog(message) {
 
 }
-words = {
-    "en-US": [
-        "by", //0
-        "nostalgiaTok", //1
-        "peiLamed", //2
-        "what's your name?", //3
-        "next", //4
-        "Your", //5
-        "nostalgia", //6
-        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
-        "what creator?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //8
-        "what topic?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //9
-        "'s ", //10
-        "", //11
-        "", //12
-        "if you wanna save your nostalgia for later, name it here", //13
-        "or not, thats ok", //14
-        "fishing out your videos", //15
-        "a whole lot of 'em", //16
-        "player", //17
-        "ts plays videos", //18
-        "loading...", //19
-        "", //20
-        "choose this one&nbsp;-&nbsp;", //21
-        "delete this one&nbsp;", //22
-        "view saved nostalgias", //23
-        "next one&nbsp;-&nbsp;", //24
-        "options", //25
-        "➢", //26
-        "more of ts", //27
-        "search again", //28
-        "open video", //29
-        "change name", //30
-        "unseen vids only", //31
-        "what's good, ", //32
-        "anqrzfeubxkmlpwhdvocty", //33
-        "abcd_efghijklmn_opqrstudvwxyz_", //34
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
-        "nvm", //36
-        "Last time you used nostalgiaTok", //37
-        "drag me to the option you want", //38
-        "spring", //39
-        "summer", //40
-        "fall", //41
-        "winter", //42
-        "early", //43
-        "mid", //44
-        "late", //45
-        "jan", //46
-        "feb", //47
-        "mar", //48
-        "apr", //49
-        "may", //50
-        "jun", //51
-        "jul", //52
-        "aug", //53
-        "sep", //54
-        "oct", //55
-        "nov", //56
-        "dec", //57
-        "january", //58
-        "february", //59
-        "march", //60
-        "april", //61
-        "may", //62
-        "june", //63
-        "july", //64
-        "august", //65
-        "september", //66
-        "october", //67
-        "november", //68
-        "december", //69
-        "past 2021 plzz", //70
-        "well, before this year plzz", //71
-        "between 2021 - now plzz", //72
-        "sorry, try again plzz", //73
-        "tysm btw ☺", //74
-        "oopsie!", //75
-        `Something didn't work<br>try searching again`, //76
-        "all watched", //77
-        "you watched all the videos for this search", //78
-        "still loading", //79
-        "the player will auto-scroll when videos arrive", //80
-        "✅ -> ❌", //81
-        "❌ -> ✅", //82
-        "hold again to toggle 2x speed", //83
-        "Advertisement", //84
-        "Product of 🇸🇱", //85
-        "Go Fullscreen", //86
-        "Exit this menu", //87
-        "Credits", //88
-        "or click the '𐄛' menu --> 'Install App'", //Windows chrome 89
-        "or click the '𐄛' menu --> 'Apps' --> 'Install this site as an app'", //windows edge 90
-        "or click the '𐄛' menu  --> 'Cast, Save, and Share' --> 'Install App'", //mac chrome 91
-        "or click the share menu  --> 'Add to dock'", //mac safari 92
-        "or click the share menu --> 'Install App' or 'Add to Home screen' ", //android chrome 93
-        "Click the share menu --> Add to home screen", //ios mobile and firefox mobile 94
-        "I'm not exactly sure how to do it on your browser <br> but look for an 'Add to homescreen'-esque or 'Install app'-esque button in the share menu or browser menu and click that", //other 95
-        "Click 'Install nostalgiaTok'<br>", //add-on for the first 5... 96
-        "Hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //firefox desktop 97 
-        "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br>  help from stack overflow & a little bit of ai debugging <br><br>  designed by peiLamed <br><br>  product of sierra leone 🇸🇱 <br><br>  free palestine 🇵🇸🇸🇩🇨🇩", //98
-        "see directions", //99
-        "「」 |  『』 | Fullscreen Available :)", //100
-        "use me instead :)", //101
-        "share video", //102
-        "your video is loading", //103
-        "thx btw :)", //104
-        "copied, thx 4 sharing :)", //105
-        "enjoy this blast from the past", //106
-        "sharing doesnt work on your browser, so i copied the link instead <br> thanks for sharing btw", //107
-        "search similar", //108
-        "search history", //109
-        "search new", //110
-        "searching..." //111
-    ],
-
-    "en": [
-        "by", "nostalgiaTok", "FM Da$ani", "what's your name?", "(next)",
-        "Your", "nostalgia", "what time period are you nostalgic for?",
-        "what creators (if any) (use commas)?",
-        "what topics (if any) (use commas)?",
-        "'s ", "", ""
-    ],
-
-    "fr": [
-        "par", "nostalgiaTok", "FM Da$ani", "Comment tu t'appelles ?", "(suivant)",
-        "Ton", "nostalgie", "Pour quelle période ressens-tu de la nostalgie ?",
-        "Quels créateurs (le cas échéant) (sépare par des virgules) ?",
-        "Quels sujets (le cas échéant) (sépare par des virgules) ?",
-        "de ", "", ""
-    ],
-
-    "es": [
-        "por", "nostalgiaTok", "FM Da$ani", "¿Cómo te llamas?", "(siguiente)",
-        "Tu", "", "¿De qué época sientes nostalgia?",
-        "¿Qué creadores (si los hay) (usa comas)?",
-        "¿Qué temas (si los hay) (usa comas)?",
-        "", "nostalgia", " de "
-    ],
-
-    "ja": [
-        "〜によって", "nostalgiaTok", "FM Da$ani", "あなたの名前は何ですか？", "(次)",
-        "あなたの", "", "どの時代にノスタルジーを感じますか？",
-        "どのクリエイター（いる場合）（カンマで区切って）？",
-        "どのトピック（ある場合）（カンマで区切って）？",
-        "", "ノスタルジア", " の "
-    ],
-
-    "ar": [
-        "من", "FM Da$ani", "nostalgiaTok", "ما اسمك؟", "(التالي)",
-        "لك", "", "ما الفترة الزمنية التي تشعر بالحنين إليها؟",
-        "ما المبدعين (إن وجد) (استخدم الفواصل)؟",
-        "ما المواضيع (إن وجد) (استخدم الفواصل)؟",
-        "", "الحنين", " لـ "
-    ],
-
-    "he": [
-        "מִן", "FM Da$ani", "nostalgiaTok", "מה השם שלך?", "(בא)",
-        "שלך", "", "לאיזו תקופה אתה מתגעגע?",
-        "אילו יוצרים (אם בכלל) (השתמש בפסיקים)?",
-        "אילו נושאים (אם בכלל) (השתמש בפסיקים)?",
-        "", "נוסטלגיה", " של "
-    ]
-}
+const words = {
+"en-US": [
+"by", //0
+"nostalgiaTok", //1
+"peiLamed", //2
+"what's your name?", //3
+"next", //4
+"your", //5
+"nostalgia", //6
+"what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
+"what creator?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //8
+"what topic?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //9
+"'s ", //10
+"", //11
+"", //12
+"if you wanna save your nostalgia for later, name it here", //13
+"or not, thats ok", //14
+"fishing out your videos", //15
+"a whole lot of 'em", //16
+"player", //17
+"ts plays videos", //18
+"loading...", //19
+"", //20
+"choose this one&nbsp;-&nbsp;", //21
+"delete this one&nbsp;", //22
+"view saved nostalgias", //23
+"next one&nbsp;-&nbsp;", //24
+"options", //25
+"➢", //26
+"more of ts", //27
+"search again", //28
+"open video", //29
+"change name", //30
+"unseen vids only", //31
+"what's good, ", //32
+"anqrzfeubxkmlpwhdvocty", //33
+"abcd_efghijklmn_opqrstudvwxyz_", //34
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
+"nvm", //36
+"last time you used nostalgiaTok", //37
+"drag me to the option you want", //38
+"spring", //39
+"summer", //40
+"fall", //41
+"winter", //42
+"early", //43
+"mid", //44
+"late", //45
+"jan", //46
+"feb", //47
+"mar", //48
+"apr", //49
+"may", //50
+"jun", //51
+"jul", //52
+"aug", //53
+"sep", //54
+"oct", //55
+"nov", //56
+"dec", //57
+"january", //58
+"february", //59
+"march", //60
+"april", //61
+"may", //62
+"june", //63
+"july", //64
+"august", //65
+"september", //66
+"october", //67
+"november", //68
+"december", //69
+"past 2021 plzz", //70
+"well, before this year plzz", //71
+"between 2021 - now plzz", //72
+"sorry, try again plzz", //73
+"tysm btw ☺", //74
+"oopsie!", //75
+`something didn't work<br>try searching again`, //76
+"all watched", //77
+"you watched all the videos for this search", //78
+"still loading", //79
+"the player will auto-scroll when videos arrive", //80
+"✅ -> ❌", //81
+"❌ -> ✅", //82
+"hold again to toggle 2x speed", //83
+"advertisement", //84
+"product of 🇸🇱", //85
+"go fullscreen", //86
+"exit this menu", //87
+"credits", //88
+"or click the '𐄛' menu --> 'install app'", //89
+"or click the '𐄛' menu --> 'apps' --> 'install this site as an app'", //90
+"or click the '𐄛' menu --> 'cast, save, and share' --> 'install app'", //91
+"or click the share menu --> 'add to dock'", //92
+"or click the share menu --> 'install app' or 'add to home screen' ", //93
+"click the share menu --> add to home screen", //94
+"i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
+"click 'install nostalgiaTok'<br>", //96
+"hit this button <br> <button id='nstfirefoxfullscreen'>「 」</button>", //97 
+"made by ddyson bang-ura (aka peiLamed / פилмед) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
+"see directions", //99
+"「」 | 『』 | fullscreen available :)", //100
+"use me instead :)", //101
+"share video", //102
+"your video is loading", //103
+"thx btw :)", //104
+"copied, thx 4 sharing :)", //105
+"enjoy this blast from the past", //106
+"sharing doesnt work on your browser, so i copied the link instead <br> thanks for sharing btw", //107
+"search similar", //108
+"search history", //109
+"search new", //110
+"searching..." //111
+],
+"ja": [
+"によって", "nostalgiaTok", "peiLamed", "お名前は何ですか？", "次へ", "あなたの", "ノスタルジー",
+"どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2021年3月 - 2023年春)</span>",
+"どのクリエイターですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
+"どのトピックですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
+"の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
+"動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
+"これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
+"動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaTokを使用した日時",
+"希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
+"3月", "4月",
+"5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
+"9月", "10月", "11月", "12月", "2021年以降でお願いします", "というか、今年より前でお願いします",
+"2021年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
+"正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
+"まだ読み込み中", "動画が届くとプレイヤーが自動スクロールします本地", "✅ -> ❌", "❌ -> ✅",
+"長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
+"または「𐄛」メニュー --> 「アプリをインストール」をクリック",
+"または「𐄛」メニュー --> 「アプリ」 --> 「このサイトをアプリとしてインストール」をクリック",
+"または「𐄛」メニュー --> 「キャスト、保存、共有」 --> 「アプリをインストール」をクリック",
+"または共有メニュー --> 「ドックに追加」をクリック",
+"または共有メニュー --> 「アプリをインストール」または「ホーム画面に追加」をクリック",
+"共有メニューをクリック --> ホーム画面に追加",
+"お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
+"「nostalgiaTokをインストール」をクリック<br>",
+"このボタンを押してください <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"制作：ddyson bang-ura (別名 peiLamed / פилмед) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
+"手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
+"動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
+"お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました<br>共有してくれてありがとう",
+"類似の検索", "検索履歴", "新しく検索", "検索中..."
+],
+"ar": [
+"بواسطة", "nostalgiaTok", "peiLamed", "ما اسمك؟", "التالي", "الخاص بك", "الحنين",
+"ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2021 - ربيع 2023)</span>",
+"أي منشئ محتوى؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
+"أي موضوع؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
+" لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
+"الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر هذا&nbsp;-&nbsp;", "احذف هذا&nbsp;",
+"عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
+"تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaTok",
+"اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
+"مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
+"أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2021 رجاءً",
+"حسنًا، قبل هذه السنة رجاءً", "بين 2021 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
+"حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
+"سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديو", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
+"إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
+"أو انقر على قائمة '𐄛' --> 'التطبيقات' --> 'تثبيت هذا الموقع كتطبيق'",
+"أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
+"أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
+"لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> ولكن ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
+"انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פيلمد) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
+"انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
+"الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
+"المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك <br> شكراً للمشاركة على أي حال", "بحث عن مماثل",
+"سجل البحث", "بحث جديد", "جاري البحث..."
+],
+"es": [
+"por", "nostalgiaTok", "peiLamed", "¿cómo te llamas?", "siguiente", "tu", "nostalgia",
+"¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2021 - primavera 2023)</span>",
+"¿qué creador?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
+"¿qué tema?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
+"de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
+"un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
+"ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
+"cambiar nombre", "solo videos no vistos", "¿qué tal, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaTok",
+"arrástrame a la opción que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
+"finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
+"marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2021 porfa",
+"bueno, antes de este año porfa", "entre 2021 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
+"¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
+"todavía cargando", "el reproductor se desplazará automáticamente cuando lleguen los videos", "✅ -> ❌", "❌ -> ✅",
+"mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
+"créditos", "o haz clic en el menú '𐄛' --> 'instalar aplicación'",
+"o haz clic en el menú '𐄛' --> 'aplicaciones' --> 'instalar este sitio como una aplicación'",
+"o haz clic en el menú '𐄛' --> 'transmitir, guardar y compartir' --> 'instalar aplicación'",
+"o haz clic en el menú compartir --> 'añadir al dock'",
+"o haz clic en el menú compartir --> 'instalar aplicación' o 'añadir a la pantalla de inicio'",
+"haz clic en el menú compartir --> añadir a la pantalla de inicio",
+"no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
+"haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"hecho por ddyson bang-ura (alias peiLamed / פилмед) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
+"ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
+"tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
+"compartir no funciona en tu navegador, así que copié el enlace <br> gracias por compartir de todos modos", "buscar similares",
+"historial de búsqueda", "nueva búsqueda", "buscando..."
+],
+"fr": [
+"par", "nostalgiaTok", "peiLamed", "quel est ton nom ?", "suivant", "ton", "nostalgie",
+"de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2021 - printemps 2023)</span>",
+"quel créateur ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
+"quel sujet ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
+"de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
+"on récupère tes vidéos", "un sacré paquet", "lecteur", "ceci lit des vidéos", "chargement...", "", "choisis celle-ci&nbsp;-&nbsp;",
+"supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
+"rechercher à nouveau", "ouvrir la vidéo", "changer de nom", "vidéos non vues uniquement", "quoi de neuf, ",
+"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
+"laisse tomber", "dernière fois que tu as utilisé nostalgiaTok", "glisse-moi vers l'option de ton choix", "printemps",
+"été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
+"sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+"octobre", "novembre", "décembre", "après 2021 stp", "enfin, avant cette année stp", "entre 2021 et maintenant stp",
+"désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
+"tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
+"le lecteur défilera automatiquement quand les vidéos arriveront", "✅ -> ❌", "❌ -> ✅",
+"maintiens enfoncé pour basculer en vitesse 2x", "publicité", "produit de 🇸🇱", "plein écran", "quitter ce menu", "crédits",
+"ou clique sur le menu '𐄛' --> 'installer l'application'",
+"ou clique sur le menu '𐄛' --> 'applications' --> 'installer ce site en tant qu'application'",
+"ou clique sur le menu '𐄛' --> 'diffuser, enregistrer et partager' --> 'installer l'application'",
+"ou clique sur le menu de partage --> 'ajouter au dock'",
+"ou clique sur le menu de partage --> 'installer l'application' ou 'ajouter à l'écran d'accueil'",
+"clique sur le menu de partage --> ajouter à l'écran d'accueil",
+"je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
+"clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"fait par ddyson bang-ura (alias peiLamed / פيلмед) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
+"voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
+"ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
+"le partage ne fonctionne pas sur ton navigateur, j'ai donc copié le lien <br> merci pour le partage au fait",
+"rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours..."
+],
+"de": [
+"von", "nostalgiaTok", "peiLamed", "wie heißt du?", "weiter", "dein", "nostalgie",
+"nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2021 - frühjahr 2023)</span>",
+"welcher creator?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
+"welches thema?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
+"von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
+"deine videos werden herausgefischt", "eine ganze menge davon", "player", "dieser spielt videos ab", "lädt...", "",
+"dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
+"optionen", "➢", "mehr davon", "erneut suchen", "video öffnen", "name ändern", "nur ungesehene videos", "was geht, ",
+"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "egal",
+"letztes mal, als du nostalgiaTok benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
+"winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
+"januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
+"nach 2021 bitte", "na ja, vor diesem jahr bitte", "zwischen 2021 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
+"vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
+"du hast alle videos für diese suche angesehen", "lädt noch", "der player scrollt automatisch, wenn videos geladen sind",
+"✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
+"menü verlassen", "credits", "oder klicke auf das '𐄛'-menü --> 'app installieren'",
+"oder klicke auf das '𐄛'-menü --> 'apps' --> 'diese website als app installieren'",
+"oder klicke auf das '𐄛'-menü --> 'streamen, speichern und teilen' --> 'app installieren'",
+"oder klicke auf das teilen-menü --> 'zum dock hinzufügen'",
+"oder klicke auf das teilen-menü --> 'app installieren' oder 'zum startbildschirm hinzufügen'",
+"klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
+"ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
+"klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"erstellt von ddyson bang-ura (alias peiLamed / פيلмед) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
+"anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
+"dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
+"teilen funktioniert in deinem browser nicht, deshalb habe ich den link kopiert <br> danke fürs teilen übrigens",
+"ähnliche suchen", "suchverlauf", "neu suchen", "sucht..."
+],
+"pt": [
+"por", "nostalgiaTok", "peiLamed", "qual o seu nome?", "seguinte", "seu", "nostalgia",
+"de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2021 - primavera de 2023)</span>",
+"qual criador?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
+"qual tema?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
+"de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
+"um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
+"ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
+"alterar nome", "apenas vídeos não vistos", "e aí, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaTok",
+"arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
+"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
+"abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2021 por favor",
+"bem, antes deste ano por favor", "entre 2021 e agora por favor", "desculpe, tente de novo por favor",
+"muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
+"você assistiu a todos os vídeos desta busca", "ainda carregando", "o player vai rolar automaticamente quando os vídeos chegarem",
+"✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
+"sair deste menu", "créditos", "ou clique no menu '𐄛' --> 'instalar aplicativo'",
+"ou clique no menu '𐄛' --> 'aplicativos' --> 'instalar este site como aplicativo'",
+"ou clique no menu '𐄛' --> 'transmitir, salvar e compartilhar' --> 'instalar aplicativo'",
+"ou clique no menu de compartilhamento --> 'adicionar ao dock'",
+"ou clique no menu de compartilhamento --> 'instalar aplicativo' ou 'adicionar à tela inicial'",
+"clique no menu de compartilhamento --> adicionar à tela inicial",
+"não tenho certeza de como fazer no seu navegador <br> mas procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
+"clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"feito por ddyson bang-ura (vulgo peiLamed / פيلмед) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
+"ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartilhar vídeo",
+"seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
+"o compartilhamento não funciona no seu navegador, então copiei o link <br> obrigado por compartilhar aliás",
+"buscar semelhantes", "histórico de buscas", "nova busca", "buscando..."
+],
+"zh-cn": [
+"由", "nostalgiaTok", "peiLamed", "你叫什么名字？", "下一个", "你的", "怀旧",
+"你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2021年3月 - 2023年春季)</span>",
+"哪位创作者？<br><span class='nstLower'>(请固定选择一位或不选，稍后可更改)</span>",
+"什么主题？<br><span class='nstLower'>(请固定选择一个或不选，稍后可更改)</span>",
+"的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
+"超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
+"查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
+"仅看未看过的视频", "嗨，最近怎么样，", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaTok",
+"请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
+"2月", "3月",
+"4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
+"七月", "八月", "九月", "十月", "十一月", "十二月", "求2021年之后的吧", "好吧，求今年之前的吧", "求2021年到现在之间的吧",
+"抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
+"你已看完了此搜索下的所有视频", "还在加载中", "视频到达后播放器会自动滚动", "✅ -> ❌", "❌ -> ✅",
+"再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
+"或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
+"或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
+"我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
+"点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"制作者：ddyson bang-ura (又名 peiLamed / פيلמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
+"查看指南", 
+"「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
+"已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享在您的浏览器上无法工作，所以我复制了链接 <br> 顺便谢谢分享",
+"搜索相似", "搜索历史", "搜索全新", "正在搜索..."
+],
+"hi": [
+"द्वारा", "nostalgiaTok", "peiLamed", "आपका नाम क्या है?", "आगे", "आपका", "पुरानी यादें",
+"आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2021 - वसंत 2023)</span>",
+"कौन सा क्रिएटर?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
+"कौन सा विषय?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
+" का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
+"आपके वीडियो निकाले जा रहे हैं", "बहुत सारे वीडियो हैं", "प्लेयर", "यह वीडियो चलाता है", "लोड हो रहा है...", "",
+"इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
+"इसके बारे में और जानें", "फिर से खोजें", "वीडियो खोलें", "नाम बदलें", "केवल अनदेखे वीडियो", "क्या चल रहा है, ",
+"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
+"रहने दो", "पिछली बार आपने nostalgiaTok का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
+"पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", "अक्तू",
+"नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
+"कृपया 2021 के बाद का दें", 
+"खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2021 और अब के बीच का दें",
+"क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
+"सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
+"वीडियो आने पर प्लेयर अपने आप स्क्रॉल करेगा", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
+"विज्ञापन", "🇸🇱 का उत्पाद", "पूर्ण स्क्रीन करें", "इस मेनू से बाहर निकलें", "क्रेडिट",
+"या '𐄛' मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें'",
+"या '𐄛' मेनू पर क्लिक करें --> 'ऐप्स' --> 'इस साइट को ऐप के रूप में इंस्टॉल करें'",
+"या '𐄛' मेनू पर क्लिक करें --> 'कास्ट, सहेजें और साझा करें' --> 'ऐप इंस्टॉल करें'",
+"या साझा करें मेनू पर क्लिक करें --> 'डॉक में जोड़ें'",
+"या साझा करें मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें' या 'होम स्क्रीन पर जोड़ें'",
+"साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
+"मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
+"'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstfirefoxfullscreen'>「 」</button>",
+"ddyson bang-ura (उर्फ peiLamed / פिलמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
+"निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
+"आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)",
+"अतीत के इस झोंके का आनंद लें",
+"साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने लिंक कॉपी कर लिया है <br> वैसे साझा करने के लिए धन्यवाद",
+"समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
+]
+};
+var navLang = navigator.language;
+if(words[navLang] == undefined){
+    try{
+        navLang = navLang.split('-')[0];
+        if(words[navLang] == undefined){
+            navLang = "en-US";
+        }
+    }catch(e){
+        navLang = "en-US";
+    }
+    }
  async function reqA() {
     let urli ="https://script.google.com/macros/s/AKfycbzZFj_09O6q6EQpHZepUbUbiOe8aO-6eWEQT92VJ1wshJiu-3TdlSpXPsrVTFniNbykxw/exec";
 
@@ -219,6 +429,7 @@ async function setA(){
  Ads = await reqA();
 }
 setA();
+var isStarted = false;
 var canYT = false;
 var player;
 var playPause = 0;
@@ -284,6 +495,7 @@ function jumpLogo() {
             logo.style.left = 0;
             setTimeout(function () {
                 logo.style.width = "100dvw";
+                logo.style.borderRadius = "0px";
             }, 250 * nsTimesNumber)
         }, 500 * nsTimesNumber)
     }, 1000 * nsTimesNumber)
@@ -310,7 +522,7 @@ var newPref = {
 function startFollow() {
     SF = false;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
-    document.querySelector('#swDrag').innerHTML = words[navigator.language][31];
+    document.querySelector('#swDrag').innerHTML = words[navLang][31];
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
     document.querySelector('#swDrag').innerText = "";
     SF = true;
@@ -335,10 +547,10 @@ function endFollow() {
                     var bool = localStorage.getItem('nostalgiaTokAllowOldVideos');
                     if(bool == "false"){
                        localStorage.setItem('nostalgiaTokAllowOldVideos','true');    
-                       words[navigator.language][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navigator.language][31].replace('✅','').replace('❌','');
+                       words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
                     }else{
                         localStorage.setItem('nostalgiaTokAllowOldVideos','false');
-                        words[navigator.language][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navigator.language][31].replace('✅','').replace('❌','');
+                        words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
                            }
                     
                 }
@@ -357,7 +569,7 @@ function endFollow() {
         Bbb.addEventListener('click', async () => {
   const shareData = {
     title: 'nostalgiaTok',
-    text: words[navigator.language][106],
+    text: words[navLang][106],
     url: window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)) 
   };
 
@@ -395,7 +607,7 @@ function fallbackShare(data) {
     },100)
     document.querySelector('#swipeScreen').style.opacity = 0;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
-    document.querySelector('#swDrag').innerText = words[navigator.language][38];
+    document.querySelector('#swDrag').innerText = words[navLang][38];
     setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
 }
 }
@@ -467,10 +679,10 @@ function howToFullscreen(a,b){
     hTFMessage.append(document.createElement('b'));
     hTFMessage.append(document.createElement('p'))
     if(a){
-        hTFMessage.querySelector('b').innerText = words[navigator.language][b[0]];
-        hTFMessage.querySelector('p').innerHTML = words[navigator.language][b[1]];
+        hTFMessage.querySelector('b').innerText = words[navLang][b[0]];
+        hTFMessage.querySelector('p').innerHTML = words[navLang][b[1]];
     }else{
-         hTFMessage.querySelector('b').innerText = words[navigator.language][86];
+         hTFMessage.querySelector('b').innerText = words[navLang][86];
        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
        // Source - https://stackoverflow.com/a/19176790
 // Posted by Havaligi Sathish, modified by community. See post 'Timeline' for change history
@@ -536,9 +748,9 @@ if(isMobile() == false && bowserr == "Firefox"){
     numberToBeSeen == 97
 }
 if(numberToBeSeen < 94){
-hTFMessage.querySelector('p').innerHTML = words[navigator.language][96] + words[navigator.language][numberToBeSeen];
+hTFMessage.querySelector('p').innerHTML = words[navLang][96] + words[navLang][numberToBeSeen];
 }else{
-    hTFMessage.querySelector('p').innerHTML = words[navigator.language][numberToBeSeen];
+    hTFMessage.querySelector('p').innerHTML = words[navLang][numberToBeSeen];
 }
     }
     var Bb = document.createElement('button');
@@ -560,7 +772,7 @@ hTFMessage.querySelector('p').innerHTML = words[navigator.language][96] + words[
 function editModeAnimation() {
     player.pauseVideo();
     document.querySelector('#pgTitle').style.opacity = 1;
-    document.querySelector('#pgTitle').querySelector('b').innerText = words[navigator.language][109];
+    document.querySelector('#pgTitle').querySelector('b').innerText = words[navLang][109];
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
     setTimeout(function () {
         document.querySelector('#pgTitle').style.display = "flex";
@@ -582,7 +794,7 @@ function editModeAnimation() {
         if ([...pg.querySelectorAll('.pgMain')].length > 1) {
             var pqb = [...pg.querySelectorAll('.pgMain')[0].querySelectorAll('button')];
             pqb[0].style.display = "block";
-            pqb[1].innerText = words[navigator.language][108];
+            pqb[1].innerText = words[navLang][108];
             pqb[1].setAttribute('class', 'primaryButton');
         }
         var swr = window.innerWidth / window.innerHeight;
@@ -645,15 +857,15 @@ function eMA2(simmilar, pgGivenData, neww) {
         pg.scrollTop = 0;
         //to put in a timeout
         var pg2 = pg1.cloneNode(true);
-        var button = pg1.querySelector('#pgSN');
-        button.style.transition = "0.5s";
-        button.style.opacity = "0";
+       //var button = pg1.querySelector('#pgSN');
+       // button.style.transition = "0.5s";
+       // button.style.opacity = "0";
         setTimeout(function () {
-            button.remove()
+           // button.remove()
         }, 1000)
         var pqb = [...pg2.querySelectorAll('button')];
         pqb[0].style.display = "block";
-        pqb[1].innerText = words[navigator.language][108];
+        pqb[1].innerText = words[navLang][108];
         pqb[1].setAttribute('class', 'primaryButton');
         var pqb2 = [...pg1.querySelectorAll('button')];
         pqb2[0].setAttribute('class', 'special');
@@ -784,7 +996,7 @@ function pgCancel(text) {
         document.querySelector('#uvula').style.display = "none";
         pg1.remove();
         if ([...document.querySelectorAll('.pgButtonHold')].length < 2) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navigator.language][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navigator.language][110]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
         } else {
             document.querySelector('.primaryButton').setAttribute('class', '');
         }
@@ -801,7 +1013,7 @@ function pgCancel(text) {
          var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
@@ -821,9 +1033,9 @@ function pgCancel(text) {
         var pgt = document.querySelector('#pgTitle');
         pgt.querySelector('button').innerText = "X";
         
-        pgt.querySelector('b').innerText = words[navigator.language][109];
-         if ([...document.querySelectorAll('.pgButtonHold')].length <= 2) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navigator.language][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navigator.language][110]+`</button>`
+        pgt.querySelector('b').innerText = words[navLang][109];
+         if ([...document.querySelectorAll('.pgButtonHold')].length <= 1) {
+            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
                 }
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
@@ -832,7 +1044,7 @@ function pgCancel(text) {
                                               var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
@@ -841,7 +1053,14 @@ function pgCancel(text) {
                                             }else{
                                                  document.querySelector('#fullscreenButton').innerText = '↘';
                                             }
+                                            setTimeout(function(){
+                                            var TOOO = document.querySelector('#touchOverlay');
+                                            TOOO.style.transition ="0";
+                                            TOOO.style.marginLeft = "-1000vw";
+                                            player.loadVideoById(avcp)
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},600)
                                              player.loadVideoById(avcp);
+                                            },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
                                            document.querySelector('#loadNext').setAttribute('src','https://youtube.com/embed/'+allVideos[((currentPlace)+1)].replace('📺',''));
@@ -879,8 +1098,7 @@ document.querySelector('#playground').style.opacity = 0;
         document.querySelector('.uBall').innerHTML = "";
         var pg = document.querySelector('#pgTitle');
         pg.querySelector('button').innerText = "<";
-        pg.querySelector('b').innerText = words[navigator.language][111];
-
+        pg.querySelector('b').innerText = words[navLang][111];
         var teTee = document.querySelector('#textEnter');
         var uv = document.querySelector('#uvula');
         var ul = document.querySelector('#uLine');
@@ -1037,14 +1255,14 @@ document.querySelector('#playground').style.opacity = 0;
             }, 1000)
             for (var i of [...document.querySelectorAll('[words]')]) {
                 try {
-                    ah = additions[this.navigator.language][i.getAttribute('words')].split(" ")
+                    ah = additions[this.navLang][i.getAttribute('words')].split(" ")
                 }
                 catch (e) {
                     newConsoleLog(e);
                     ah = ["", ""]
                 }
                 try {
-                    i.innerHTML = ah[0] + words[this.navigator.language][i.getAttribute('words')] + ah[1];
+                    i.innerHTML = ah[0] + words[this.navLang][i.getAttribute('words')] + ah[1];
                 }
                 catch (e) {
                     newConsoleLog(e);
@@ -1084,19 +1302,22 @@ function nameClick(a){
     if(a == "false"){
         evaluateFullscreenReminder(101);
     }else{
-        window.open('https://ddyson08.github.io/nostalgiatok/index.html')
+        window.open('https://ddyson08.github.io/nostalgiaTok/index.html')
     }
 }
 var shareVarr;
+var teby = 0;
+
 window.onload = function () {
+    
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var shareUrl = decodeURIComponent(urlParams.get('share'));
 if(shareUrl!=="null"){
      
      shareVarr = shareUrl;
-     words[navigator.language][32] = words[navigator.language][103];
-     words[navigator.language][3] = words[navigator.language][103];
+     words[navLang][32] = words[navLang][103];
+     words[navLang][3] = words[navLang][103];
      isSharing = "true";
      console.log(window.isSharing);
 setTimeout(function(){
@@ -1132,11 +1353,11 @@ setTimeout(function(){
     fullsc = 'no';
     sVl = {
         no: ["calc(((100dvw - ((100dvh - 10em) * (9/16)))/2) + calc((100dvh - 10em) * (9/16)))", "calc(((100dvw - ((100dvh - 10em) * (9/16)))/2) - 0.5em)", "calc(((100dvw - ((100dvh - 10em) * (9/16)))/2) + calc((100dvh - 10em) * (9/16)))"],
-        yes: ["calc(100dvw - 0.25em)", "-0.25em", "calc(100dvw - 0.25em)"]
+        yes: ["calc(100dvw - 0.25em - 1em)", "0.75em", "calc(100dvw - 0.25em - 1em)"]
     }
     sVt = {
         no: ["calc(100dvh - 10em + 4em)", "3.5em"],
-        yes: ["calc(100dvh - 0.25em)", "0.25em"]
+        yes: ["calc(100dvh - 0.25em - 1em)", "1.25em"]
     }
     var Arr = [];
     var posinar = 0;
@@ -1156,6 +1377,9 @@ setTimeout(function(){
         root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
         root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
         root.style.setProperty('--contrast', 'HSL(60, 2%, 7%)');
+         root.style.setProperty('--emphasizedText', 'HSL(60, 10%, 100%)');
+          root.style.setProperty('--pgText', 'HSL(60, 10%, 60%)');
+           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 100%)');
         /*
          * :root {
     --bg: HSL(60, 56%, 90%);
@@ -1172,9 +1396,9 @@ setTimeout(function(){
     }
     newConsoleLog(1);
     for (var ii of jintArr) {
-        var fg = Array.from(words[navigator.language][33]);
-        fg[ii] = words[this.navigator.language][34][Math.floor(Math.random() * words[this.navigator.language][34].length)];
-        words[navigator.language][33] = fg.join('');
+        var fg = Array.from(words[navLang][33]);
+        fg[ii] = words[this.navLang][34][Math.floor(Math.random() * words[this.navLang][34].length)];
+        words[navLang][33] = fg.join('');
     }
     newConsoleLog(2);
     document.querySelector("#allHold").onpointermove = event => {
@@ -1217,10 +1441,10 @@ setTimeout(function(){
                 }else{
                     var bool = localStorage.getItem('nostalgiaTokAllowOldVideos');
                     if(bool == "true"){
-                      document.querySelector('#swDrag').innerText = words[navigator.language][82];
+                      document.querySelector('#swDrag').innerText = words[navLang][82];
                       
                     }else{
-                       document.querySelector('#swDrag').innerText = words[navigator.language][81];
+                       document.querySelector('#swDrag').innerText = words[navLang][81];
                           }
                     
                 }
@@ -1228,16 +1452,16 @@ setTimeout(function(){
                
             }
             if (closest[1] == "#nstFs") {
-                document.querySelector('#swDrag').innerText = words[navigator.language][99];
+                document.querySelector('#swDrag').innerText = words[navLang][99];
             }
             if(closest[1] == "#nstCredits"){
-                document.querySelector('#swDrag').innerText = words[navigator.language][85];
+                document.querySelector('#swDrag').innerText = words[navLang][85];
             }
             if(closest[1] == "#nstExit"){
                 document.querySelector('#swDrag').innerText = "-->";
             }
             if(closest[1] == "#nstShare"){
-                document.querySelector('#swDrag').innerText = words[navigator.language][104];
+                document.querySelector('#swDrag').innerText = words[navLang][104];
             }
             document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
             document.querySelector(closest[1]).append(document.querySelector('#swDrag'))
@@ -1252,14 +1476,14 @@ setTimeout(function(){
         document.querySelector('#textEnter').style.width = " calc(100dvw - (4 * var(--margin)) - 2em)";
         document.querySelector('#teButton').style.display = "none";
         userName = localStorage.getItem('nostalgiaTokName');
-        document.querySelector('#teTitle').innerHTML = words[navigator.language][32] + localStorage.getItem('nostalgiaTokName') + "?";
+        document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + "?";
         setTimeout(function () {
             var ni = document.querySelector("#uNameplate");
             ni.style.color = "var(--accent)";
             ni.style.transition = "0.5s";
             ni.style.width = "0px";
             setTimeout(function () {
-                ni.innerText = words[navigator.language][11] + words[navigator.language][12] + userName + words[navigator.language][10] + words[navigator.language][6];
+                ni.innerText = words[navLang][11] + words[navLang][12] + userName + words[navLang][10] + words[navLang][6];
                 ni.style.color = "var(--text)";
                 ni.style.width = "max-content";
                 ni.style.left = "calc(50% + 0.5em)"
@@ -1305,7 +1529,7 @@ setTimeout(function(){
         }, 2000, {})
         newConsoleLog(5);
         this.setTimeout(function () {
-            document.querySelector('#teTitle').innerHTML = words[navigator.language][32] + localStorage.getItem('nostalgiaTokName') + "?";
+            document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + "?";
             document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
             document.querySelector('#textEnter').style.width = " calc(100dvw - (4 * var(--margin)) - 2em)";
         }, 1000);
@@ -1313,14 +1537,14 @@ setTimeout(function(){
     newConsoleLog(6);
     for (var i of [...document.querySelectorAll('[words]')]) {
         try {
-            ah = additions[this.navigator.language][i.getAttribute('words')].split(" ")
+            ah = additions[this.navLang][i.getAttribute('words')].split(" ")
         }
         catch (e) {
             newConsoleLog(e);
             ah = ["", ""]
         }
         try {
-            i.innerHTML = ah[0] + words[this.navigator.language][i.getAttribute('words')] + ah[1];
+            i.innerHTML = ah[0] + words[this.navLang][i.getAttribute('words')] + ah[1];
         }
         catch (e) {
             newConsoleLog(e);
@@ -1338,6 +1562,8 @@ setTimeout(function(){
   
     newConsoleLog(8);
     function startPendulum() {
+        if(!isStarted){
+            
       //  var start = performance.now();
         wiggle = setInterval(function () {
             if (funnyC !== 0) {
@@ -1349,6 +1575,8 @@ setTimeout(function(){
 				funnyN +=1;
             }
         }, 18); // ~60fps
+        isStarted = true;
+    }
     }
     newConsoleLog(9);
     function stopPendulum() {
@@ -1360,8 +1588,8 @@ setTimeout(function(){
     newConsoleLog(10);
     newConsoleLog(11);
     document.querySelector("#teInput").addEventListener("keyup", function (e) {
-        slowLimit = 5;
-        wiggleNumber = 10;
+      //  slowLimit = 5;
+       // wiggleNumber = 10;
         canCount = true; 
         if (e.keyCode == 13) {
             enterName();
@@ -1417,7 +1645,7 @@ function swapTe(n, f, m, g, t) {
     if (n == 15 || n == 17) {
         nee.innerHTML = `<b id='teTitle'></b><button id='teButton'></button>`
     }
-    nee.querySelector("#teTitle").innerHTML = words[navigator.language][n];
+    nee.querySelector("#teTitle").innerHTML = words[navLang][n];
     if (n == 15 || n == 17 || n == 19 || n == 20) {
         if (nee.querySelector("input") !== null) {
             nee.querySelector("input").remove();
@@ -1431,7 +1659,7 @@ function swapTe(n, f, m, g, t) {
     if (t) {
         nee.style.height = "calc(var(--ballSize) + 1em)  ";
     }
-    nee.querySelector("button").innerHTML = words[navigator.language][m];
+    nee.querySelector("button").innerHTML = words[navLang][m];
     //nee.querySelector("button").addEventListener("click", g);
     if (n == 19 || n >= 19) {
         if (nee.querySelector("button") !== null) {
@@ -1498,20 +1726,20 @@ function swapTe(n, f, m, g, t) {
             b1.setAttribute('onclick', 'nextSaved()');
             b1.setAttribute('class', 'primaryButton');
             b1.setAttribute('id', 'b1');
-            b1.innerHTML = words[navigator.language][24];
+            b1.innerHTML = words[navLang][24];
             var b2 = document.createElement('button');
             b2.setAttribute('onclick', 'chooseSaved()');
             b2.setAttribute('class', 'primaryButton');
             b2.setAttribute('id', 'b2');
-            b2.innerHTML = words[navigator.language][21];
+            b2.innerHTML = words[navLang][21];
             var b3 = document.createElement('button');
             b3.setAttribute('onclick', 'delSaved()');
             b3.setAttribute('id', 'b3');
-            b3.innerHTML = words[navigator.language][22];
+            b3.innerHTML = words[navLang][22];
             var b4 = document.createElement('button');
             b4.setAttribute('onclick', 'nvm()');
             b4.setAttribute('id', 'b4');
-            b4.innerHTML = words[navigator.language][36];
+            b4.innerHTML = words[navLang][36];
             setTimeout(function () {
                 nee.append(b2);
                 nee.append(b1);
@@ -1577,7 +1805,7 @@ function swapTe(n, f, m, g, t) {
 
         if (n < 8) {
             if (window.localStorage.getItem('nostalgiaTokSaved') !== null) {
-                nee.innerHTML += `<button style="display: block" id="viewSaved" class = "vs2" onclick="swapTe(19,function(){},25,function(){}); getSaved();">` + words[navigator.language][23] + `</button>`
+                nee.innerHTML += `<button style="display: block" id="viewSaved" class = "vs2" onclick="swapTe(19,function(){},25,function(){}); getSaved();">` + words[navLang][23] + `</button>`
             }
             var inputEl = nee.querySelector("input");
             if (editMode) {
@@ -1609,11 +1837,11 @@ var userName = "";
 async function saveNew(val) {
     //  newConsoleLog(val);
     if (false) {
-        await appendToStringStore('[NOSTALGIATOKSPLIT]' + val + '[NTS2]' + JSON.stringify(user))
+        await appendToStringStore('[nostalgiaTokSPLIT]' + val + '[NTS2]' + JSON.stringify(user))
     } else {
         var jsu = localStorage.getItem('nostalgiaTokSaved');
         if (jsu !== null) {
-            localStorage.setItem('nostalgiaTokSaved', jsu + '[NOSTALGIATOKSPLIT]' + val + '[NTS2]' + JSON.stringify(user));
+            localStorage.setItem('nostalgiaTokSaved', jsu + '[nostalgiaTokSPLIT]' + val + '[NTS2]' + JSON.stringify(user));
         }
         else {
             localStorage.setItem('nostalgiaTokSaved', val + '[NTS2]' + JSON.stringify(user));
@@ -1768,12 +1996,12 @@ function genNext(t, two, x) {
     });
 if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
     Arr.splice(posinar % Arr.length, 1);
-    localStorage.setItem('nostalgiaTokSaved',Arr.join('[NOSTALGIATOKSPLIT]'));
+    localStorage.setItem('nostalgiaTokSaved',Arr.join('[nostalgiaTokSPLIT]'));
 }
     document.querySelector('#uvula').append(document.querySelector('.uBall'));
     var clone = document.querySelector('.uBall').cloneNode();
     clone.style.zIndex = "1000";
-    words[navigator.language][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navigator.language][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
+    words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
     var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
     makeShapes(obj.year, ' ', 'y', false, clone);
     makeShapes(obj.preferences, ',', 'p', false, clone);
@@ -1870,7 +2098,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
 }
 async function getSaved() {
     if (true) {
-        Arr = localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]');
+        Arr = localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]');
         if (Arr[0] == "null") {
             Arr.shift();
         }
@@ -1888,7 +2116,7 @@ async function getSaved() {
        // setTimeout(function () { nextSaved();},1000)
     } else {
         var nArr = await readStringStore();
-        Arr = nArr.split('[NOSTALGIATOKSPLIT]');
+        Arr = nArr.split('[nostalgiaTokSPLIT]');
         Arr.shift();
         genNext(false);
         swapTe(20, function () { }, 25, function () { });
@@ -1939,6 +2167,7 @@ user = {
 }
 var ra = false;
 function runAnimation(bypass, bypass2) {
+    teby = document.querySelector('#textEnter').getBoundingClientRect().y;
      for (var j of [...document.querySelectorAll('.videoOrbit')]) {
         j.remove();
     }
@@ -1958,11 +2187,11 @@ function runAnimation(bypass, bypass2) {
         multiplier = 0.1
     }
  if (false) {
-      //  await appendToStringStore('[NOSTALGIATOKSPLIT][NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
+      //  await appendToStringStore('[nostalgiaTokSPLIT][NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
  } else {
     if(localStorage.getItem('nostalgiaTokSaved')){
-     if (localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]') !== undefined) {
-         var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]');
+     if (localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]') !== undefined) {
+         var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]');
      } else {
          var totalNST = "";
      }
@@ -1972,11 +2201,11 @@ function runAnimation(bypass, bypass2) {
      else {
              totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
      }
-     localStorage.setItem('nostalgiaTokSaved', totalNST.join('[NOSTALGIATOKSPLIT]'));
+     localStorage.setItem('nostalgiaTokSaved', totalNST.join('[nostalgiaTokSPLIT]'));
     }else{
         localStorage.setItem('nostalgiaTokSaved', '""');
-        if (localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]') !== undefined) {
-         var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[NOSTALGIATOKSPLIT]');
+        if (localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]') !== undefined) {
+         var totalNST = localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]');
      } else {
          var totalNST = "";
      }
@@ -1986,7 +2215,7 @@ function runAnimation(bypass, bypass2) {
      else {
              totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
      }
-     localStorage.setItem('nostalgiaTokSaved', totalNST.join('[NOSTALGIATOKSPLIT]'));
+     localStorage.setItem('nostalgiaTokSaved', totalNST.join('[nostalgiaTokSPLIT]'));
     }
     }
     ra = true;
@@ -2288,13 +2517,13 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                     isPD = true;
                                                                     withinSpeedUp = true;
                                                                             speedVar++;
-                                                                             document.querySelector('#fullscreenButton').innerHTML = `<p id="riseup">`+words[navigator.language][83]+`</p>`;
+                                                                             document.querySelector('#fullscreenButton').innerHTML = `<p id="riseup">`+words[navLang][83]+`</p>`;
                                                                             //document.querySelector('#fullscreenButton').style.backdropFilter = "blur(10px)";
                                                                             document.querySelector('#fullscreenButton').style.width = "calc(calc(100dvh - 10em) * (9/16))";
                                                                             document.querySelector('#riseup').style.marginTop = "3em";
                                                                             document.querySelector('#riseup').style.opacity = "0";
                                                                             setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500);
-                                                                            setTimeout(function(){document.querySelector('#riseup').remove()},1500)
+                                                                            setTimeout(function(){document.querySelector('#riseup').remove(); document.querySelector('#fullscreenButton').style.width = "max-content";},1500)
                                                                            var playbackRate = handleSpeed[speedVar%2];
 var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
 var message = JSON.stringify(data);
@@ -2304,12 +2533,12 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('touchend', function (event) {
-                                                                        
+                                                                        autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
                                                                                
                                                                           const element = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
-                                                                if (!(element && element.getAttribute('id') == 'fullscreenButton') && withinSpeedUp == false) {
+                                                                if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
                                                                       if(!withinSpeedUp){
                                                                     if(playPause % 2 == 0){
@@ -2331,7 +2560,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      document.querySelector('#riseup').remove();
                                                                         }catch(e){console.log(e)}
                                                                      document.querySelector('#fullscreenButton').setAttribute('style','');
-                                                                      document.querySelector('#fullscreenButton').innerText = "↘";
+                                                                      document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     
                                                                     });
@@ -2346,13 +2575,13 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                             withinSpeedUp = true;
                                                                     isPD = true;
                                                                             speedVar++;
-                                                                             document.querySelector('#fullscreenButton').innerHTML = `<p id="riseup">`+words[navigator.language][83]+`</p>`;
+                                                                             document.querySelector('#fullscreenButton').innerHTML = `<p id="riseup">`+words[navLang][83]+`</p>`;
                                                                             //document.querySelector('#fullscreenButton').style.backdropFilter = "blur(10px)";
                                                                             document.querySelector('#fullscreenButton').style.width = "calc(calc(100dvh - 10em) * (9/16))";
                                                                             document.querySelector('#riseup').style.marginTop = "3em";
                                                                             document.querySelector('#riseup').style.opacity = "0";
                                                                             setTimeout(function(){document.querySelector('#riseup').style.marginTop = "0em"; document.querySelector('#riseup').style.opacity = "1";},500);
-                                                                            setTimeout(function(){document.querySelector('#riseup').remove()},1500);
+                                                                            setTimeout(function(){document.querySelector('#riseup').remove(); document.querySelector('#fullscreenButton').style.width = "max-content";},1500);
                                                                           var playbackRate = handleSpeed[speedVar%2];
                                                                             console.log([handleSpeed[speedVar%2],speedVar, speedVar%2])
 var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
@@ -2363,11 +2592,12 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
-                                                                      
+                                                                      autoplay = 0; 
                                                                         isTE = true;
                                                                           if(!isPD){
                                                                             
                                                                           const element = document.elementFromPoint(event.clientX, event.clientY);
+                                                                          console.log([!(element && element.getAttribute('id') == 'fullscreenButton'), element.getAttribute('id')])
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      // playPause +=1; 
                                                                      if(!withinSpeedUp){
@@ -2378,6 +2608,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     }
                                                                 }
                                                                 }else{
+                                                                    console.log('yes');
+                                                                    console.log(document.getElementById('fullscreenButton').click());
                                                                     document.getElementById('fullscreenButton').click();
                                                                 }
                                                                 withinSpeedUp = false;
@@ -2390,16 +2622,13 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      document.querySelector('#riseup').remove();
                                                                         }catch(e){console.log(e)}
                                                                       document.querySelector('#fullscreenButton').setAttribute('style','');
-                                                                       document.querySelector('#fullscreenButton').innerText = "↘";
+                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                         handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     
                                                                     });
 
  isSharing = "false";
-                                                                    TOOO.addEventListener('click', function (event) {
-                                                                        autoplay = 0; 
-                                                                
-                                                                    });
+                                                                  
                                                                     try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''))
                                                                     player.playVideo();
@@ -2439,11 +2668,13 @@ function requestTheFullscreen(a) {
     video.style.left = "0";
     video.style.top = "-4em";
      touchOverlay.style.width = "100dvw";
-    touchOverlay.style.height = "100dvh";
+    touchOverlay.style.height = "85dvh";
+    touchOverlay.style.marginTop = "5dvh";
     touchOverlay.style.left = "0";
     touchOverlay.style.top = "0";
     Tee.style.zIndex = "152";
     video.style.zIndex = "152";
+    document.querySelector('#titleBar').style.zIndex = "0";
     touchOverlay.style.zIndex = "153";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(false)');
         fullscreenButton.innerText = '↖';
@@ -2460,13 +2691,17 @@ function requestTheFullscreen(a) {
         video.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
         video.style.top = "0em";
         touchOverlay.style.width = "calc(calc(100dvh - 10em) * (9/16))";
-        touchOverlay.style.height = "calc(100dvh - 10em)";
-        touchOverlay.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)"
+        touchOverlay.style.height = "calc(calc(100dvh - 10em) * 0.85)";
+        touchOverlay.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
+        //alert(touchOverlay.style.marginTop);
+        touchOverlay.style.marginTop = "calc(calc(100dvh - 10em) * 0.05)";
+        //alert(touchOverlay.style.marginTop);
         touchOverlay.style.top = "4em";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(true)')
         fullscreenButton.innerText = '↘';
          Tee.style.zIndex = "0";
     video.style.zIndex = "0";
+    document.querySelector('#titleBar').style.zIndex = "2000";
         touchOverlay.style.zIndex = "1";
         for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 0;
@@ -2681,9 +2916,9 @@ function nvm() {
 function delSaved() {
     Arr.splice((posinar - 1) % Arr.length, 1);
     if (true) {
-        localStorage.setItem('nostalgiaTokSaved', Arr.join('[NOSTALGIATOKSPLIT]'));
+        localStorage.setItem('nostalgiaTokSaved', Arr.join('[nostalgiaTokSPLIT]'));
     } else {
-        var nArr = Arr.join('[NOSTALGIATOKSPLIT]');
+        var nArr = Arr.join('[nostalgiaTokSPLIT]');
         openTheDatabase().then(async function () {
             await appendToStringStore(nArr);
         });
@@ -2716,7 +2951,7 @@ function chooseSaved() {
     },1000)
 }
 var jint = true;
-var jintArr = words[navigator.language][35].split(',').reverse();
+var jintArr = words[navLang][35].split(',').reverse();
 var jintI = 0;
 var doneAnimation = false;
 function fkAround2() {
@@ -2728,7 +2963,7 @@ function fkAround2() {
     var newH = 0;
     if (document.querySelector('.vs2') == null) {
         var newW = document.createElement('button');
-        newW.innerText = words[navigator.language][33];
+        newW.innerText = words[navLang][33];
         document.querySelector('#textEnter').append(newW);
         newH = newW.getBoundingClientRect().height;
         newW.remove();
@@ -2742,7 +2977,7 @@ function fkAround2() {
         document.querySelector('#teInput').style.transition = "0s";
         document.querySelector('#teInput').style.marginBottom = "1em";
         document.querySelector("#teButton").style.display = "block";
-        document.querySelector("#teButton").innerText = words[navigator.language][33];
+        document.querySelector("#teButton").innerText = words[navLang][33];
         setTimeout(function () {
             document.querySelector("#teButton").style.opacity = "1";
             document.querySelector('#teInput').style.transition = 0;
@@ -2779,7 +3014,7 @@ function enterName() {
     var i = document.querySelector("#teInput");
     userName = i.value;
     if (userName == "") {
-        userName = words[navigator.language][5]
+        userName = words[navLang][5]
     } else {
 
     }
@@ -2791,7 +3026,7 @@ function enterName() {
         ni.style.color = "var(--text)";
         ni.style.width = "max-content";
         ni.style.left = "calc(50% + 0.5em)";
-        ni.innerText = words[navigator.language][11] + words[navigator.language][12] + userName + words[navigator.language][10] + words[navigator.language][6];
+        ni.innerText = words[navLang][11] + words[navLang][12] + userName + words[navLang][10] + words[navLang][6];
         setTimeout(function () {
             ni.style.transition = "1s";
             ni.style.left = "calc(50% - " + (ni.getBoundingClientRect().width / 2) + "px + 0.5em)"
@@ -3129,9 +3364,9 @@ function displaySwipe(lr) {
         swsc.style.opacity = 1;
 
         if (lr == "l") {
-            swsc.querySelector('p').innerText = words[navigator.language][25].replace('(', '').replace(')', '') + "↓";
+            swsc.querySelector('p').innerText = words[navLang][25].replace('(', '').replace(')', '') + "↓";
         } else {
-            swsc.querySelector('p').innerText = words[navigator.language][27].replace('(', '').replace(')', '') + "↓";
+            swsc.querySelector('p').innerText = words[navLang][27].replace('(', '').replace(')', '') + "↓";
         }
     }, 100);
 }
@@ -3186,14 +3421,14 @@ function evaluateFullscreenReminder(n){
         var activeItem = document.querySelector('#leftButton');
         var valueOg = activeItem.innerText;
         activeItem.style.color = "var(--second)";
-        var wnl100 = words[navigator.language][100].split('|');
+        var wnl100 = words[navLang][100].split('|');
 
         setTimeout(function(){
             activeItem.style.color = "var(--text)";
             if(!n){
             activeItem.innerText = [wnl100[0],wnl100[1]][fsNumber % 2] + wnl100[2];
             }else{
-                activeItem.innerText = words[navigator.language][n];
+                activeItem.innerText = words[navLang][n];
             }
             activeItem.style.borderBottom = "0.1em solid var(--second)";
             setTimeout(function(){
@@ -3382,7 +3617,11 @@ function swipeUp() {
 
                 setTimeout(function () {
                     if (fullsc == 'no') {
-                        bigJu.style.opacity = 1;
+                        bigJu.style.opacity = 0.6;
+                         bigJu.style.width = "0.5em";
+                        bigJu.style.height = "0.5em";
+                        bigJu.style.transition = "0.2s";
+                        bigJu.setAttribute('class','glass');
                         bigJu.style.width = "calc((100dvh - 10em) * (9/16))";
                         bigJu.style.height = "calc(100dvh - 10em)";
                         bigJu.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
@@ -3390,9 +3629,9 @@ function swipeUp() {
                         bigJu.style.top = "4em";
                         bigJu.style.transform = "rotate(360deg)";
                         bigJu.style.backgroundColor = "var(--swText)";
-                        bigJu.style.opacity = 1;
+                       
                         setTimeout(function () {
-                            bigJu.style.transition = "0.1s";
+                            
                             setTimeout(function () {
                                 bigJu.style.backgroundColor = "var(--accent)";
 if (currentPlace < allVideos.length-3) {
@@ -3403,7 +3642,7 @@ if (currentPlace < allVideos.length-3) {
                                             var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
@@ -3413,7 +3652,14 @@ if (currentPlace < allVideos.length-3) {
                                                  document.querySelector('#fullscreenButton').innerText = '↘';
                                             }
                                 
+                                             setTimeout(function(){
+                                            var TOOO = document.querySelector('#touchOverlay');
+                                            TOOO.style.transition ="0";
+                                            TOOO.style.marginLeft = "-1000vw";
+                                            player.loadVideoById(avcp)
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},600)
                                              player.loadVideoById(avcp);
+                                            },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
                                            document.querySelector('#loadNext').setAttribute('src','https://youtube.com/embed/'+allVideos[((currentPlace)+1)].replace('📺',''));
@@ -3442,11 +3688,15 @@ if (currentPlace < allVideos.length-3) {
                                     bigJu.remove();
                                     bigJuf.remove();
                                 }, 100);
-                            }, 100)
+                            }, 200)
                             canSwipe = true;
                         }, 200)
                     } else {
-                        bigJuf.style.opacity = 1;
+                         bigJu.style.width = "0.5em";
+                        bigJu.style.height = "0.5em";
+                        bigJu.style.transition = "0.2s";
+                        bigJuf.style.opacity = 0.6;
+                        bigJu.setAttribute('class','glass');
                         bigJuf.style.width = "100dvw";
                         bigJuf.style.height = "100dvh";
                         bigJuf.style.left = "0";
@@ -3454,9 +3704,9 @@ if (currentPlace < allVideos.length-3) {
                         bigJuf.style.top = "0";
                         bigJuf.style.transform = "rotate(360deg)";
                         bigJuf.style.backgroundColor = "var(--swText)";
-                        bigJuf.style.opacity = 1;
+                        
                         setTimeout(function () {
-                            bigJuf.style.transition = "0.1s";
+                           
                             setTimeout(function () {
                                // alert(1);
                                 bigJuf.style.backgroundColor = "var(--accent)";
@@ -3470,7 +3720,7 @@ if (currentPlace < allVideos.length-3) {
                                            var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
@@ -3481,9 +3731,17 @@ if (currentPlace < allVideos.length-3) {
                                             }
                                 
                                              
+                                             setTimeout(function(){
+                                            var TOOO = document.querySelector('#touchOverlay');
+                                            TOOO.style.transition ="0";
+                                            TOOO.style.marginLeft = "-1000vw";
+                                            player.loadVideoById(avcp)
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},600)
                                              player.loadVideoById(avcp);
+                                            },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
+                                            
                                            document.querySelector('#loadNext').setAttribute('src','https://youtube.com/embed/'+allVideos[((currentPlace)+1)].replace('📺',''));
                                           }
                                           catch(e){
@@ -3514,7 +3772,7 @@ if (currentPlace < allVideos.length-3) {
                                     bigJuf.remove();
                                     bigJu.remove();
                                 }, 100);
-                            }, 100)
+                            }, 200)
                             canSwipe = true;
                         }, 200)
                     }
@@ -3795,80 +4053,80 @@ function validateDate(tex) {
             return ("Year Error: Can't read data~Year Error: Can't read data")
         }
         //spring
-        if (text.includes(words[navigator.language][39])) {
+        if (text.includes(words[navLang][39])) {
             tbr = "03/15/XXXX ~ 05/31/XXXX"
         }
         //summer
-        if (text.includes(words[navigator.language][40])) {
+        if (text.includes(words[navLang][40])) {
             tbr = "06/01/XXXX ~ 09/01/XXXX"
         }
         //fall
-        if (text.includes(words[navigator.language][41])) {
+        if (text.includes(words[navLang][41])) {
             tbr = "09/01/XXXX ~ 11/30/XXXX"
         }
         //winter
-        if (text.includes(words[navigator.language][42])) {
+        if (text.includes(words[navLang][42])) {
             tbr = "12/01/XXXX ~ 03/14/XXXY"
         }
-        if (text.includes(words[navigator.language][43])) {
+        if (text.includes(words[navLang][43])) {
             tbr = "01/01/XXXX ~ 03/31/XXXX"
         }
-        if (text.includes(words[navigator.language][44])) {
+        if (text.includes(words[navLang][44])) {
             tbr = "04/01/XXXX ~ 09/30/XXXX"
         }
-        if (text.includes(words[navigator.language][45])) {
+        if (text.includes(words[navLang][45])) {
             tbr = "10/01/XXXX ~ 12/31/XXXX"
         }
         //jan 
-        if (text.toLowerCase().includes(words[navigator.language][46]) || text.includes(words[navigator.language][46+12])) {
+        if (text.toLowerCase().includes(words[navLang][46]) || text.includes(words[navLang][46+12])) {
             tbr = "01/01/XXXX ~ 02/01/XXXX"
         }
         //feb
-        if (text.includes(words[navigator.language][47]) || text.includes(words[navigator.language][47 + 12])) {
+        if (text.includes(words[navLang][47]) || text.includes(words[navLang][47 + 12])) {
             tbr = "02/01/XXXX ~ 03/01/XXXX"
         }
         //mar
-        if (text.includes(words[navigator.language][48]) || text.includes(words[navigator.language][48 + 12])) {
+        if (text.includes(words[navLang][48]) || text.includes(words[navLang][48 + 12])) {
             tbr = "03/01/XXXX ~ 04/01/XXXX"
         }
         //apr
-        if (text.includes(words[navigator.language][49]) || text.includes(words[navigator.language][49 + 12])) {
+        if (text.includes(words[navLang][49]) || text.includes(words[navLang][49 + 12])) {
             tbr = "04/01/XXXX ~ 05/01/XXXX"
         }
         //may
-        if (text.includes(words[navigator.language][50]) || text.includes(words[navigator.language][50 + 12])) {
+        if (text.includes(words[navLang][50]) || text.includes(words[navLang][50 + 12])) {
             tbr = "05/01/XXXX ~ 06/01/XXXX"
         }
         //jun
-        if (text.includes(words[navigator.language][51]) || text.includes(words[navigator.language][51 + 12])) {
+        if (text.includes(words[navLang][51]) || text.includes(words[navLang][51 + 12])) {
             tbr = "06/01/XXXX ~ 07/01/XXXX"
         }
         //july
-        if (text.includes(words[navigator.language][52]) || text.includes(words[navigator.language][52 + 12])) {
+        if (text.includes(words[navLang][52]) || text.includes(words[navLang][52 + 12])) {
             tbr = "07/01/XXXX ~ 08/01/XXXX"
         }
         //aug
-        if (text.includes(words[navigator.language][53]) || text.includes(words[navigator.language][53 + 12])) {
+        if (text.includes(words[navLang][53]) || text.includes(words[navLang][53 + 12])) {
             tbr = "08/01/XXXX ~ 09/01/XXXX"
         }
         //sep
-        if (text.includes(words[navigator.language][54]) || text.includes(words[navigator.language][54 + 12])) {
+        if (text.includes(words[navLang][54]) || text.includes(words[navLang][54 + 12])) {
             tbr = "09/01/XXXX ~ 10/01/XXXX"
         }
         //oct
-        if (text.includes(words[navigator.language][55]) || text.includes(words[navigator.language][55 + 12])) {
+        if (text.includes(words[navLang][55]) || text.includes(words[navLang][55 + 12])) {
             tbr = "10/01/XXXX ~ 11/01/XXXX"
         }
         //nov
-        if (text.includes(words[navigator.language][56]) || text.includes(words[navigator.language][56 + 12])) {
+        if (text.includes(words[navLang][56]) || text.includes(words[navLang][56 + 12])) {
             tbr = "11/01/XXXX ~ 12/01/XXXX"
         }
         //dec
-        if (text.includes(words[navigator.language][57]) || text.includes(words[navigator.language][57 + 12])) {
+        if (text.includes(words[navLang][57]) || text.includes(words[navLang][57 + 12])) {
             tbr = "12/01/XXXX ~ 1/01/XXXY"
         }
         //quarantine
-        if (text.includes(words[navigator.language][58 + 12])) {
+        if (text.includes(words[navLang][58 + 12])) {
             tbr = "03/17/2020 ~ 01/01/2022"
         }
         if (tbr == '') {
@@ -4034,164 +4292,164 @@ function backValidateDate(tex, first) {
         //spring
         if(first){
         if (text.includes("03/15/"+theYear)) {
-            tbr = words[navigator.language][39];
+            tbr = words[navLang][39];
         }
         //summer
         if (text.includes("06/01/"+theYear)) {
-            tbr = words[navigator.language][40];
+            tbr = words[navLang][40];
         }
         //fall
         if (text.includes("09/01/"+theYear)) {
-            tbr = words[navigator.language][41]
+            tbr = words[navLang][41]
         }
         //winter
         if (text.includes("12/01/"+theYear)) {
-            tbr = words[navigator.language][42]
+            tbr = words[navLang][42]
         }
         if (text.includes("01/01/"+theYear)) {
-            tbr = words[navigator.language][43];
+            tbr = words[navLang][43];
         }
         if (text.includes("04/01/"+theYear)) {
-            tbr = words[navigator.language][44];
+            tbr = words[navLang][44];
         }
         if (text.includes("10/01/"+theYear)) {
-            tbr = words[navigator.language][45];
+            tbr = words[navLang][45];
         }
         //jan 
         if (text.toLowerCase().includes("01/01/"+theYear)) {
-            tbr = words[navigator.language][46];
+            tbr = words[navLang][46];
         }
         //feb
         if (text.includes("02/01/"+theYear)) {
-            tbr = words[navigator.language][47];
+            tbr = words[navLang][47];
         }
         //mar
         if (text.includes("03/01/"+theYear)) {
-            tbr = words[navigator.language][48];
+            tbr = words[navLang][48];
         }
         //apr
         if (text.includes("04/01/"+theYear)) {
-            tbr = words[navigator.language][49];
+            tbr = words[navLang][49];
         }
         //may
         if (text.includes("05/01/"+theYear)) {
-            tbr = words[navigator.language][50];
+            tbr = words[navLang][50];
         }
         //jun
         if (text.includes("06/01/"+theYear)) {
-            tbr = words[navigator.language][51];
+            tbr = words[navLang][51];
         }
         //july
         if (text.includes("07/01/"+theYear)) {
-            tbr = words[navigator.language][52];
+            tbr = words[navLang][52];
         }
         //aug
         if (text.includes("08/01/"+theYear)) {
-            tbr = words[navigator.language][53];
+            tbr = words[navLang][53];
         }
         //sep
         if (text.includes("09/01/"+theYear)) {
-            tbr = words[navigator.language][54]
+            tbr = words[navLang][54]
         }
         //oct
         if (text.includes("10/01/"+theYear)) {
-            tbr = words[navigator.language][55]
+            tbr = words[navLang][55]
         }
         //nov
         if (text.includes("11/01/"+theYear)) {
-            tbr = words[navigator.language][56];
+            tbr = words[navLang][56];
         }
         //dec
         if (text.includes("12/01/"+theYear)) {
-            tbr = words[navigator.language][57];
+            tbr = words[navLang][57];
         }
         tbr+=" "+theYear;
         //quarantine
         if (text.includes("03/17/2020")) {
-            tbr = words[navigator.language][58 + 12];
+            tbr = words[navLang][58 + 12];
         }
         if (tbr == "01/01/"+theYear) {
             tbr = theYear;
         }
     }else{
          if (text.includes("05/31/"+theYear)) {
-            tbr = words[navigator.language][39];
+            tbr = words[navLang][39];
         }
         //summer
         if (text.includes("09/01/"+theYear)) {
-            tbr = words[navigator.language][40];
+            tbr = words[navLang][40];
         }
         //fall
         if (text.includes("11/30/"+theYear)) {
-            tbr = words[navigator.language][41];
+            tbr = words[navLang][41];
         }
         //winter
         if (text.includes("03/14/"+theYear)) {
-            tbr = words[navigator.language][42];
+            tbr = words[navLang][42];
         }
         if (text.includes("03/31/"+theYear)) {
-            tbr = words[navigator.language][43];
+            tbr = words[navLang][43];
         }
         if (text.includes("09/30/"+theYear)) {
-            tbr = words[navigator.language][44];
+            tbr = words[navLang][44];
         }
         if (text.includes("02/31/"+theYear)) {
-            tbr = words[navigator.language][45];
+            tbr = words[navLang][45];
         }
         //jan 
         if (text.toLowerCase().includes("02/01/"+theYear)) {
-            tbr = words[navigator.language][46];
+            tbr = words[navLang][46];
         }
         //feb
         if (text.includes("03/01/"+theYear)) {
-            tbr = words[navigator.language][47];
+            tbr = words[navLang][47];
         }
         //mar
         if (text.includes("04/01/"+theYear)) {
-            tbr = words[navigator.language][48];
+            tbr = words[navLang][48];
         }
         //apr
         if (text.includes("05/01/"+theYear)) {
-            tbr = words[navigator.language][49];
+            tbr = words[navLang][49];
         }
         //may
         if (text.includes("06/01/"+theYear)) {
-            tbr = words[navigator.language][50];
+            tbr = words[navLang][50];
         }
         //jun
         if (text.includes("07/01/"+theYear)) {
-            tbr = words[navigator.language][51];
+            tbr = words[navLang][51];
         }
         //july
         if (text.includes("08/01/"+theYear)) {
-            tbr = words[navigator.language][52];
+            tbr = words[navLang][52];
         }
         //aug
         if (text.includes("09/01/"+theYear)) {
-            tbr = words[navigator.language][53];
+            tbr = words[navLang][53];
         }
         //sep
         if (text.includes("10/01/"+theYear)) {
-            tbr = words[navigator.language][54];
+            tbr = words[navLang][54];
         }
         //oct
         if (text.includes("11/01/"+theYear)) {
-            tbr = words[navigator.language][55];
+            tbr = words[navLang][55];
         }
         //nov
         if (text.includes("12/01/"+theYear)) {
-            tbr = words[navigator.language][56];
+            tbr = words[navLang][56];
         }
         //dec
         tbr+=" "+theYear;
         if (text.includes("01/01/"+theYear)) {
-            tbr = words[navigator.language][57];
+            tbr = words[navLang][57];
              tbr+=" "+(theYear-1);
         }
        
         //quarantine
         if (text.includes("01/01/2022")) {
-            tbr = words[navigator.language][58 + 12]
+            tbr = words[navLang][58 + 12]
         }
         if (tbr == "01/01/XXXY") {
             tbr = theYear + 1;
@@ -4204,19 +4462,19 @@ function handleError(Error) {
     console.log(Error)
     if (Error.includes('Too low')) {
         console.log(['too low', 70])
-        words[navigator.language][7] = words[navigator.language][70] + '<br>' + words[navigator.language][7].split('<br>')[1]
+        words[navLang][7] = words[navLang][70] + '<br>' + words[navLang][7].split('<br>')[1]
     }
     if (Error.includes('Too high')) {
         console.log(['too high', 71])
-        words[navigator.language][7] = words[navigator.language][71] + '<br>' + words[navigator.language][7].split('<br>')[1]
+        words[navLang][7] = words[navLang][71] + '<br>' + words[navLang][7].split('<br>')[1]
     }
     if (Error.includes("Can't read data")) {
         console.log([' cant read', 73])
-        words[navigator.language][7] = words[navigator.language][73] + '<br>' + words[navigator.language][7].split('<br>')[1]
+        words[navLang][7] = words[navLang][73] + '<br>' + words[navLang][7].split('<br>')[1]
     }
     if (Error.includes("Both outta bounds")) {
         console.log(['both', 72])
-        words[navigator.language][7] = words[navigator.language][72] + '<br>' + words[navigator.language][7].split('<br>')[1]
+        words[navLang][7] = words[navLang][72] + '<br>' + words[navLang][7].split('<br>')[1]
     }
     swapTe(shVar[isSharing][0], function () {
         if (doneAnimation) {
@@ -4267,7 +4525,7 @@ function handleError(Error) {
             }; raeleigh();`);
             newButtonNext.setAttribute('words', 4);
             newButtonNext.setAttribute('id', 'teButton');
-            newButtonNext.innerText = words[navigator.language][4];
+            newButtonNext.innerText = words[navLang][4];
             document.querySelector('#textEnter').append(newButtonNext);
             newButtonNext.style.opacity = "1";
             newButtonNext.style.display = "block";
@@ -4474,7 +4732,7 @@ function giveError3() {
      var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
@@ -4529,20 +4787,20 @@ function giveError3() {
           var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navigator.language][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc]
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
                                             player.loadVideoById(avcp)
-                                            setTimeout(function(){ TOOO.style.marginLeft = "";},200)
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},600)
         readyy = true;
         player.pauseVideo();
                                         
