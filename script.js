@@ -1,4 +1,4 @@
-﻿// =======================================================
+// =======================================================
 // Self-contained IndexedDB Helper Functions
 // =======================================================
 /**
@@ -2691,7 +2691,7 @@ function requestTheFullscreen(a) {
         video.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
         video.style.top = "0em";
         touchOverlay.style.width = "calc(calc(100dvh - 10em) * (9/16))";
-        touchOverlay.style.height = "calc(calc(100dvh - 10em) * 0.85)";
+        touchOverlay.style.height = "calc(calc(100dvh - 10em) * 0.75)";
         touchOverlay.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
         //alert(touchOverlay.style.marginTop);
         touchOverlay.style.marginTop = "calc(calc(100dvh - 10em) * 0.05)";
