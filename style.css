@@ -46,9 +46,7 @@ html, body {
     overflow: hidden;
     position: fixed;
 }
-body{
-    padding-top: env(safe-area-inset-top);
-    }
+
 
 body, #allHold {
     touch-action: none;
@@ -788,3 +786,7 @@ body {
 -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
+
+body{
+    padding-top: env(safe-area-inset-top) !important;
+    }
