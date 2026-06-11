@@ -47,7 +47,7 @@ html, body {
     position: fixed;
 }
 body{
-    padding-top: env(safe-area-inset-top);
+    margin-top: env(safe-area-inset-top);
     }
 
 body, #allHold {
