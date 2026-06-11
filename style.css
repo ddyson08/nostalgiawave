@@ -39,6 +39,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-top: env(safe-area-inset-top);
     height: 100vh;
     width: 100vw;
     max-width: 100vw;
@@ -127,6 +128,7 @@ scrollable {
     width: max-content;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    padding-top: max(0.5em, env(safe-area-inset-top));
     border-radius: 5px;
     height: 2em;
     max-height: 2em;
