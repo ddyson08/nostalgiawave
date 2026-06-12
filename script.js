@@ -2674,7 +2674,7 @@ try{
 document.querySelector('.uBall').style.overflow = "hidden";
 
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
-                                                                   TOOO.addEventListener('touchstart', function (event) {
+                                                                 /*  TOOO.addEventListener('touchstart', function (event) {
                                                                         isTE = false;
                                                                         console.log("ts");
                                                                         initialTouchX = event.touches[0].clientX;
@@ -2695,10 +2695,10 @@ var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true
 var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},500);
-                                                                    });
+                                                                    }); */
 
                                                                     // TOUCH END
-                                                                    TOOO.addEventListener('touchend', function (event) {
+                                                                 /*   TOOO.addEventListener('touchend', function (event) {
                                                                         autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
@@ -2729,7 +2729,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     
-                                                                    });
+                                                                    });*/
 
                                                                     // MOUSE DOWN
                                                                     TOOO.addEventListener('mousedown', function (event) {
