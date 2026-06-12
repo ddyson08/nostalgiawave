@@ -3872,11 +3872,11 @@ if (currentPlace < allVideos.length-3) {
                             canSwipe = true;
                         }, 200)
                     } else {
-                         bigJu.style.width = "0.5em";
-                        bigJu.style.height = "0.5em";
-                        bigJu.style.transition = "0.5s";
+                         bigJuf.style.width = "0.5em";
+                        bigJuf.style.height = "0.5em";
+                        bigJuf.style.transition = "0.5s";
                         bigJuf.style.opacity = 0.6;
-                        bigJu.setAttribute('class','glass');
+                        bigJuf.setAttribute('class','glass');
                         bigJuf.style.width = "100dvw";
                         bigJuf.style.height = "100dvh";
                         bigJuf.style.left = "0";
