@@ -1,5 +1,5 @@
 /* eslint-disable no-restricted-globals */
-const CACHE_NAME = 'nostalgiaTok';
+const CACHE_NAME = 'nostalgiaWave';
 const APP_SHELL = [
   '/',
   '/index.html',
