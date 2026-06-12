@@ -473,8 +473,7 @@ body {
     top: 3.5em;
     border-radius: 5px;
     color: var(--pgButtonText);
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     /* padding: 1em; */
     width: calc(50vw - 4em);
     height: calc(100dvh - 6em);
@@ -497,7 +496,9 @@ body {
    height: 80%;
    color: var(--pgButtonText);
     background-color: var(--accent);
-   overflow-y:scroll;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding-right: 0.5em;
 }
 .swText, .swGive {
     color: var(--swText);
@@ -805,10 +806,3 @@ height: calc(100vh - env(safe-area-inset-top));
 html, body {
     height: 100%;
 }
-div#allHold, div#playground, div#swipeScreen {
-    padding-top: env(safe-area-inset-top) !important;
-    
-    padding-bottom: env(safe-area-inset-bottom) !important;
-    
-}
-    
