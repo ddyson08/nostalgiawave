@@ -489,10 +489,14 @@ body {
 }
 .hTFMessage :is(b){
     width: var(--margin) * 2;
+    color: var(--pgButtonText);
+     background-color: var(--accent);
     text-align: center;
 }
 .hTFMessage :is(p){
    height: 80%;
+   color: var(--pgButtonText);
+    background-color: var(--accent);
    overflow-y:scroll;
 }
 .swText, .swGive {
@@ -790,13 +794,13 @@ body {
 html{
     padding-top: env(safe-area-inset-top) !important;
     }
-    html {
-  padding-top: env(safe-area-inset-top);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
+    html,body {
+  margin-top: env(safe-area-inset-top);
+  margin-right: env(safe-area-inset-right);
+  margin-bottom: env(safe-area-inset-bottom);
+  margin-left: env(safe-area-inset-left);
   box-sizing: border-box;
-height: calc(100vh - env(safe-area-inset-top);
+height: calc(100vh - env(safe-area-inset-top));
 }
 html, body {
     height: 100%;

@@ -445,6 +445,7 @@ var additions = {
     "es": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "fr": [" ", "<b>&nbsp;  </b>", "<a> </a>"]
 }
+var touchMe = false;
 var nextToken = "";
 var currentToken = "";
 var gE3mode;
@@ -846,6 +847,9 @@ function pgFormat(text) {
 }
 var oldUser = {};
 function eMA2(simmilar, pgGivenData, neww) {
+    for(var iA of [...document.querySelectorAll('.videoOrbit')]){
+        iA.remove();
+    }
     var pg = document.querySelector('#playground');
     pg.scrollTo(0, pg.scrollHeight);
     if (canEMA) {
@@ -2541,7 +2545,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
                                                                       if(!withinSpeedUp){
-                                                                    if(playPause % 2 == 0){
+                                                                    if(playPause % 4 == 0){
                                                                         player.playVideo(); playPause++;
                                                                     }else{
                                                                         player.pauseVideo(); playPause++;
@@ -3620,7 +3624,7 @@ function swipeUp() {
                         bigJu.style.opacity = 0.6;
                          bigJu.style.width = "0.5em";
                         bigJu.style.height = "0.5em";
-                        bigJu.style.transition = "0.2s";
+                        bigJu.style.transition = "0.5s";
                         bigJu.setAttribute('class','glass');
                         bigJu.style.width = "calc((100dvh - 10em) * (9/16))";
                         bigJu.style.height = "calc(100dvh - 10em)";
@@ -3688,13 +3692,13 @@ if (currentPlace < allVideos.length-3) {
                                     bigJu.remove();
                                     bigJuf.remove();
                                 }, 100);
-                            }, 200)
+                            }, 500)
                             canSwipe = true;
                         }, 200)
                     } else {
                          bigJu.style.width = "0.5em";
                         bigJu.style.height = "0.5em";
-                        bigJu.style.transition = "0.2s";
+                        bigJu.style.transition = "0.5s";
                         bigJuf.style.opacity = 0.6;
                         bigJu.setAttribute('class','glass');
                         bigJuf.style.width = "100dvw";
@@ -3772,7 +3776,7 @@ if (currentPlace < allVideos.length-3) {
                                     bigJuf.remove();
                                     bigJu.remove();
                                 }, 100);
-                            }, 200)
+                            }, 500)
                             canSwipe = true;
                         }, 200)
                     }
