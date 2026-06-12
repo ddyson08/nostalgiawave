@@ -796,9 +796,7 @@ body {
   backdrop-filter: blur(5px);
 }
 
-html{
-    padding-top: env(safe-area-inset-top) !important;
-    }
+
     html,body {
   margin-top: env(safe-area-inset-top);
   margin-right: env(safe-area-inset-right);
