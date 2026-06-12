@@ -755,10 +755,7 @@ function endFollow() {
 function fallbackShare(data) {
   // Example: Fallback to copying the link to the clipboard
   try{
-    if(!isMobile()){
-  navigator.clipboard.writeText(data.url);
-  howToFullscreen(true,[102,107]);
-    }
+    window.open(data.url);
   }catch(e){
 
   }
