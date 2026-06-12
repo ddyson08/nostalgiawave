@@ -132,8 +132,8 @@ const words = {
 "click the share menu --> add to home screen", //94
 "i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
 "click 'install nostalgiaTok'<br>", //96
-"hit this button <br> <button id='nstfirefoxfullscreen'>「 」</button>", //97 
-"made by ddyson bang-ura (aka peiLamed / פилмед) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
+"hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
+"made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
 "see directions", //99
 "「」 | 『』 | fullscreen available :)", //100
 "use me instead :)", //101
@@ -174,8 +174,8 @@ const words = {
 "共有メニューをクリック --> ホーム画面に追加",
 "お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
 "「nostalgiaTokをインストール」をクリック<br>",
-"このボタンを押してください <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"制作：ddyson bang-ura (別名 peiLamed / פилмед) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
+"このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
 "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
 "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
 "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました<br>共有してくれてありがとう",
@@ -202,8 +202,8 @@ const words = {
 "أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
 "أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
 "لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> ولكن ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
-"انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פيلمد) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
+"انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
 "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
 "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
 "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك <br> شكراً للمشاركة على أي حال", "بحث عن مماثل",
@@ -233,8 +233,8 @@ const words = {
 "o haz clic en el menú compartir --> 'instalar aplicación' o 'añadir a la pantalla de inicio'",
 "haz clic en el menú compartir --> añadir a la pantalla de inicio",
 "no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
-"haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"hecho por ddyson bang-ura (alias peiLamed / פилмед) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
+"haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
 "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
 "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
 "compartir no funciona en tu navegador, así que copié el enlace <br> gracias por compartir de todos modos", "buscar similares",
@@ -265,8 +265,8 @@ const words = {
 "ou clique sur le menu de partage --> 'installer l'application' ou 'ajouter à l'écran d'accueil'",
 "clique sur le menu de partage --> ajouter à l'écran d'accueil",
 "je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
-"clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"fait par ddyson bang-ura (alias peiLamed / פيلмед) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
+"clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
 "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
 "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
 "le partage ne fonctionne pas sur ton navigateur, j'ai donc copié le lien <br> merci pour le partage au fait",
@@ -296,8 +296,8 @@ const words = {
 "oder klicke auf das teilen-menü --> 'app installieren' oder 'zum startbildschirm hinzufügen'",
 "klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
 "ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
-"klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"erstellt von ddyson bang-ura (alias peiLamed / פيلмед) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
+"klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
 "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
 "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
 "teilen funktioniert in deinem browser nicht, deshalb habe ich den link kopiert <br> danke fürs teilen übrigens",
@@ -327,8 +327,8 @@ const words = {
 "ou clique no menu de compartilhamento --> 'instalar aplicativo' ou 'adicionar à tela inicial'",
 "clique no menu de compartilhamento --> adicionar à tela inicial",
 "não tenho certeza de como fazer no seu navegador <br> mas procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
-"clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"feito por ddyson bang-ura (vulgo peiLamed / פيلмед) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
+"clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
 "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartilhar vídeo",
 "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
 "o compartilhamento não funciona no seu navegador, então copiei o link <br> obrigado por compartilhar aliás",
@@ -354,8 +354,8 @@ const words = {
 "或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
 "或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
 "我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
-"点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"制作者：ddyson bang-ura (又名 peiLamed / פيلמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
+"点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
 "查看指南", 
 "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
 "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享在您的浏览器上无法工作，所以我复制了链接 <br> 顺便谢谢分享",
@@ -387,14 +387,151 @@ const words = {
 "या साझा करें मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें' या 'होम स्क्रीन पर जोड़ें'",
 "साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
 "मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
-"'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstfirefoxfullscreen'>「 」</button>",
-"ddyson bang-ura (उर्फ peiLamed / פिलמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
+"'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+"ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
 "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
 "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)",
 "अतीत के इस झोंके का आनंद लें",
 "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने लिंक कॉपी कर लिया है <br> वैसे साझा करने के लिए धन्यवाद",
 "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
-]
+],
+"am": [
+        "በ", "nostalgiaTok", "peiLamed", "ስምህ ማን ነው?", "ቀጣይ", "የእርስዎ", "ትዝታ",
+        "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2021 - ጸደይ 2023)</span>",
+        "የትኛው ፈጣሪ?<br><span class='nstLower'>(ከአንድ ሰው ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
+        "ምን ርዕስ?<br><span class='nstlower'>(ከአንድ ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
+        " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
+        "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
+        "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት", "ስም ቀይር",
+        "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiatokን ለመጨረሻ ጊዜ የተጠቀሙበት",
+        "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ", "መጋ", "ሚያ", "ግን",
+        "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል", "ሜይ", "ጁን", "ጁላይ", "ኦገስት",
+        "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2021 በኋላ ይሁን እባክህ", "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ",
+        "በ2021 እና አሁን መካከል ይሁን እባክህ", "ይቅርታ፣ እንደገና ይሞክሩ እባክህ", "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!",
+        "አንድ ነገር አልሰራም<br>እንደገና ለመፈለግ ይሞክሩ", "ሁሉም ታይተዋል", "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተዋል", "አሁንም በመጫን ላይ ነው",
+        "ቪዲዮዎች ሲደርሱ ተጫዋቹ በራሱ ይሸብልላል", "✅ -> ❌", "❌ -> ✅", "የ2x ፍጥነትን ለመቀየር እንደገና ተጭነው ይቆዩ",
+        "ማስታወቂያ", "የ🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ", "ከዚህ ማውጫ ውጣ", "ምስጋናዎች", "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'መተግበሪያን ጫን'",
+        "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'መተግበሪያዎች' --> 'ይህንን ድረ-ገጽ እንደ መተግበሪያ ጫን'",
+        "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'cast፣ አስቀምጥ እና አጋራ' --> 'መተግበሪያን ጫን'",
+        "ወይም የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> 'ወደ ዶክ ያክሉ'",
+        "ወይም የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> 'መተግበሪያን ጫን' ወይም 'ወደ መነሻ ማያ ገጽ ያክሉ'",
+        "የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> ወደ መነሻ ማያ ገጽ ያክሉ",
+        "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት በትክክል እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ማውጫው ወይም በአሳሽ ማውጫው ውስጥ 'ወደ መነሻ ማያ ገጽ ያክሉ' ወይም 'መተግበሪያን ጫን' የሚል ቁልፍ ይፈልጉና ጠቅ ያድርጉት",
+        "'nostalgiatok ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+        "የተሰራው በ ddyson bang-ura (በቅጽል ስሙ peilamed / פילמד) <br><br> ከ stack overflow እና ከጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peilamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
+        "መመሪያዎችን እይ", "「」 | 『』 | ሙሉ ማያ ገጽ አለ :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ", "ቪዲዮዎ በመጫን ላይ ነው",
+        "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከአለፈው ጊዜ በዚሁ ምርጥ ትዝታ ይደሰቱ",
+        "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ <br> ለማንኛውም ስላጋሩ እናመሰግናለን",
+        "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፈልግ", "በመፈለግ ላይ..."
+    ],
+    "ber": [
+        "ⵙⵖ", "nostalgiaTok", "peiLamed", "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ?", "ⴰⴼⵔⵓ", "ⵉⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
+        "ⵎⴰⵏ ⵜⵉⵣⵉ ⵏ ⵓⵣⵎⵣ ⵓⴽⴽⴰⵏ ⵜⵍⵍⵉⴷ ⴷⵉⵙ ⵜⵏⵓⵙⵜⴰⵍⵊⵉⵜ?<br><span class='nstlower'>(ⵎⴷ. 2022, ⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2021 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
+        "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⵙⵜⵉ ⵢⴰⵏ, ⵢ⼒ ⴰⴷ ⵉⴱⴷⴷⴻⵍ ⴱⵄⴷ)</span>",
+        "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⵙⵜⵉ ⵢⴰⵏ, ⵢ⼒ ⴰⴷ ⵉⴱⴷⴷⴻел ⴱⵄⴷ)</span>",
+        " ⵏ ", "", "", "ⵉⴳ ⵜⵔⵉⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵏⵓⵙⵜⴰⵍⵊⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⵜ ⴷⵖⵉ", "ⵉⵖ ⵓⵔ ⵜⵔⵉⴷ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⴰⵔ ⴷ ⵏⵜⴰⵡⵉ ⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
+        "ⴱⴰⵀⵔⴰ ⴳⵓⵜⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⴰⵔ ⵉⵜⵜⴰⵡⵉ ⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵔ ⵢⴰⵇⵇⵍ...", "", "ⵙⵜⵉ ⵡⴰⴷ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰⴷ&nbsp;",
+        "ⵉⵥⵕ ⵜⵉⵏⵓⵙⵜⴰⵍⵊⵉⵢⵉⵏ ⵜⵢⴰⵃⴼⴰⴹⵏⵉⵏ", "ⵡⴰⴷ ⴷⵉⵇⵇⵍⵏ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰⴷ", "ⴰⵍⵙ ⴰⵔⵣⵣⵓ", "ⵓⵔⵣⵓ ⴼⵉⴷⵢⵓ",
+        "ⴱⴷⴷⴻⵍ ⵉⵙⵎ", "ⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⴰⵥⵕⵏⵉⵏ ⵉⵣⵡⴰⵔⵏ", "ⵎⴰⵏ ⵉⵎⵓⵔⵏ, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⵢⴰⴷⴷ ⵜ", "ⵜⵉⴽⴽⵍⵜ ⵉⴳⴳⵓⵔⴰⵏ ⵍⵍⵉ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiatok",
+        "ⵊⴱⴷ ⵢⵉ ⵙ ⵓⵙⵜⵉⵢ ⵍⵍⵉ ⵜⵔⵉⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴳⵉⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ", "ⵎⴰⵕ", "ⵉⴱⵔ",
+        "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵔ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵢⵓ", "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓ", "ⵖⵓⵛⵜ",
+        "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2021 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ", "ⴳⵔ 2021 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ",
+        "ⵙⵓⵔⴼ, ⴰⵍⵙ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ ☺", "ⵓⵅⵅ !", "ⵢⴰⵏ ⵓⴼⵔⵉⵙ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴱⴰⵀⵔⴰ<br>ⴰⵍⵙ ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴽⵓⵍⵍⵓ ⵜⵢⴰⵥⵕⵏ",
+        "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔcomponent_libraryⵣⵣⵓ ⵡⴰⴷ", "ⵙⵓⵍ ⴰⵔ ⵢⴰⵇⵇⵍ", "ⴰⵎⵓⵔⴰⵔ ⴰⵔ ⵉⵜⵜⵎⵓⵙⵙⵓ ⵡⴰⵃⴷⵓⵙ ⵉⴳ ⴷ ⵍⴽⵎⵏ ⴼⵉⴷⵢⵓⵜⵏ",
+        "✅ -> ❌", "❌ -> ✅", "ⴰⵟⵟⴼ ⴷⴰⵖ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼාරⵉⵙ ⵏ 🇸🇱", "ⵙⵉⴷⴼ ⴰⵎⴰⴽⵔⴰⴷ ⴽⵓⵍⵍⵓ", "ⴼⴼⵓⵖ ⴳ ⵜⴰⵍⴳⴰⵎⵜ ⴰⴷ",
+        "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⴰⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵏⵙⵉ'", "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰタルⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵏⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⴰⴷ ⴰⵎ ⴰⵙնⵙི'",
+        "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰタルⴳⴰⵎⵜ '𐄛' --> 'ⴼⵙⵔ, ⵃⴼⴹ ⴷ ⴱⴹⵓ' --> 'ⵙⴱⴷⴷ ⴰⵙնសⵉ'", "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰⵍⴳⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> 'ⵔⵏⵓ ⵙ ⵓⴷⵓⴽ'",
+        "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰଲﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> 'ⵙⴱⴷⴷ ⴰⵙնⵙི' ⵏⵖ 'ⵔⵏⵓ ⵙ ⴰⴼⵔⴰⴳ ⵏ ⵓⵙⵏⵓⴱⴳ'", "ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⴰタルﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> ⵔⵏⵓ ⵙ ⴰⴼראⴳ ⵏ ⵓⵙնⵓⴱገ",
+        "ⵓⵔ ⵙⵙⵉⵏⵅ ⴱⴰⵀⵔⴰ ⵎⴰⵏⵎⴽ ⴰⵔ ⵜⵎⵙⴰⵔ ⴳ ⵓⵎⵙ glycolysis ⵏⵏⴽ <br> ⵎⴰⵛ膩 ⴰⵔⵣⵣⵓ ⴼ ⵜⵇⴼⵍⵜ 'ⵔⵏⵓ ⵙ ⴰⴼⵔⴰⴳ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙնⵙི' ⴳ ⵜⴰལﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ",
+        "ⴽⵍⵉⴽⵉ ⴼ 'ⵙⴱⴷⴷ nostalgiatok'<br>", "ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⵇⴼⵍⵜ ⴰⴷ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+        "ⵉⵙⴽⵔ ⵜ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ peilamed / פילמד) <br><br> ⵙ ⵜⵡⵉⵙⵉ ⵏ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ai debugging <br><br> ⴰⵙⵓⵏⴼ ⵙⵖ peilamed <br><br> ⴰⴼාරⵉⵙ ⵏ ⵙﻴⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⵉⵍⵉⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
+        "ⵥⵕ ⵉⵙⵡⵉⵏ", "「」 | 『』 | ⴰⵎⴰⴽⵔⴰⴷ ⴽⵓⵍⵍⵓ ⵍⵍⴰ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵔⵉ ⴱⵍⴰ ⵡⴰⴷ :)", "ⴱⴹⵓ ⴼⵉⴷⵢⵓ", "ⴼⵉⴷⵢⵓ ⵏⵏⴽ ⴰⵔ ⵢⴰⵇⵇⵍ",
+        "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ :)", "ⵜⵢⴰⵏⵙⴰⵖ, ⵜⴰནⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵓⵎⵔⵜ ⵙ ⵓⵙⴽⵜⵉ ⵡⴰⴷ ⵏ ⵓⵣⵎⵣ ⵉⵣⵔⵉⵏ",
+        "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼⵍⵓⵍ ⵏⵏⴽ, ⴰⵢⴰ ⵅⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ <br> ⵜⴰནⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ",
+        "ⴰⵔⵣⵣⵓ ⵎⴰⵏ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔ ⵉⵔⵣⵣⵓ..."
+    ],
+    "kri": [
+        "by", "nostalgiaTok", "peiLamed", "wetin na yu nem?", "neks", "yu", "nostalgia",
+        "usay tɛm yu de fil am sɔf we yu de tɔk bawt yu pas tɛm?<br><span class='nstLower'>(ɛgzampul 2022, sɔma 2023, maj 2021 - sprin 2023)</span>",
+        "uskr噴etɔ? <br><span class='nstLower'>(ol wan nɔmɔ, yu kin chenj am leta)</span>",
+        "wetin na di tɔpik?<br><span class='nstlower'>(ol wan nɔmɔ, yu kin chenj am leta)</span>",
+        " in ", "", "", "if yu wan sev yu nostalgia fɔ leta, gi am nem ya", "ɔ yu nɔ sev am, dat fayn sef", "wi de pul yu vido dɛm",
+        "bɔku bɔku dɛm", "pleya", "dis wan de ple vido dɛm", "e de lod...", "", "pik dis wan&nbsp;-&nbsp;", "ebis dis wan&nbsp;",
+        "luk di nostalgia dɛm we yu sev", "di neks wan&nbsp;-&nbsp;", "ɔpshɔn dɛm", "➢", "bɔku mɔ fɔ dis", "faynd agɛn", "opin vido",
+        "chenj nem", "di vido dɛm we yu nɔ luk yɛt nɔmɔ", "wetin de bi, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mɛnd am", "di las tɛm we yu yuz nostalgiatok",
+        "dragg mi go na di ɔpshɔn we yu wan", "sprin", "sɔma", "fɔl", "winta", "fɔstɛm na di", "midul na di", "let tɛm na di", "jan",
+        "fɛb", "maj", "epr", "me", "jun", "jul", "ɔg", "sɛp", "ɔkt", "nɔv", "dis", "januari", "fɛbuari", "maj", "epril", "me",
+        "jun", "julai", "ɔgɔst", "sɛptɛmba", "ɔktoba", "nɔvɛmba", "disɛmba", "pas 2021 duya", "wɛl, bifo dis ia duya",
+        "bitwin 2021 - naw duya", "sɔri, tray agɛn duya", "tɛnki fɔ dat sef ☺", "waw!", "sɔmtin nɔ wǝk fayn<br>tray fɔ faynd agɛn",
+        "yu luk ɔl", "yu dɔn luk ɔl di vido dɛm fɔ dis faynd", "e de lod yɛt", "di pleya go skrol inmsɛlf we di vido dɛm kam",
+        "✅ -> ❌", "❌ -> ✅", "hold am agɛn fɔ chenj am to 2x spid", "ad", "mek na 🇸🇱", "mek e ful skrin", "kɔmɔt na dis mɛnu",
+        "kredit dɛm", "ɔ klik di '𐄛' mɛnu --> 'instɔl di app'", "ɔ klik di '𐄛' mɛnu --> 'apps' --> 'instɔl dis sayt lǝk app'",
+        "ɔ klik di '𐄛' mɛnu --> 'cast, sev, ɛn shia' --> 'instɔl di app'", "ɔ klik di shia mɛnu --> 'ad am na dock'",
+        "ɔ klik di shia mɛnu --> 'instɔl di app' ɔ 'ad am na yu om skrin'", "klik di shia mɛnu --> ad am na yu om skrin",
+        "a nɔ sho fine-fine usay fɔ du am na yu brausa <br> bɔt luk fɔ sɔmtin lǝk 'ad am na yu om skrin' ɔ 'instɔl di app' butɔn na di shia mɛnu ɔ brausa mɛnu dɛn klik am",
+        "klik 'instɔl nostalgiatok'<br>", "prɛs dis butɔn ya <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+        "ddyson bang-ura na in mek am (we dɛn de kɔl peilamed / פילמד) <br><br> ɛlp kɔmɔt na stack overflow ɛn lili bit fɔ ai debugging <br><br> peilamed na in dǝzayn am <br><br> maranza tin kɔmɔt na sierra leone 🇸🇱 <br><br> fri palestine 🇵🇸🇸🇩🇨🇩",
+        "luk di dırɛkshɔn dɛm", "「」 | 『』 | ful skrin de :)", "yuz mi bifo dat wan :)", "shia vido", "yu vido de lod",
+        "tɛnki sef :)", "a dɔn kɔpi am, tɛnki fɔ shia :)", "ɛnjoy dis fayn tin kɔmɔt na yu pas tɛm",
+        "shia nɔ de wǝk na yu brausa, so a dɔn kɔpi di link bifo dat <br> tɛnki fɔ shia sef", "faynd tin dɛm we lǝk dis",
+        "usay yu bin de faynd bifo", "faynd nyu wan", "e de faynd..."
+    ],
+    "ko": [
+        "작성자:", "nostalgiaTok", "peiLamed", "이름이 무엇인가요?", "다음", "당신의", "추억",
+        "어떤 시대의 추억을 찾고 계신가요?<br><span class='nstLower'>(예: 2022, 2023 여름, 2021 3월 - 2023 봄)</span>",
+        "어떤 크리에이터인가요?<br><span class='nstLower'>(한 명만 선택, 나중에 변경 가능)</span>",
+        "어떤 주제인가요?<br><span class='nstLower'>(한 가지만 선택, 나중에 변경 가능)</span>",
+        "의 ", "", "", "나중을 위해 이 추억을 저장하고 싶다면 여기에 이름을 지정하세요", "이름을 안 정해도 괜찮아요", "비디오를 찾아내는 중",
+        "엄청나게 많네요", "플레이어", "이 플레이어는 비디오를 재생합니다", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
+        "저장된 추억 보기", "다음 항목&nbsp;-&nbsp;", "옵션", "➢", "이 플레이어 더 보기", "다시 검색", "비디오 열기", "이름 변경",
+        "시청하지 않은 비디오만", "반가워요, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "됐어요", "마지막으로 nostalgiaTok을 사용한 시간",
+        "원하는 옵션으로 나를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
+        "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
+        "9월", "10월", "11월", "12월", "제발 2021년 이후로요", "음, 제발 올해 이전으로요", "제발 2021년에서 지금 사이로요",
+        "죄송합니다, 제발 다시 시도해보세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
+        "이 검색어에 대한 모든 비디오를 시청하셨습니다", "아직 로딩 중", "비디오가 준비되면 플레이어가 자동으로 스크롤됩니다", "✅ -> ❌",
+        "❌ -> ✅", "2배속으로 전환하려면 다시 길게 누르세요", "광고", "🇸🇱의 제품", "전체 화면으로 보기", "이 메뉴 나가기",
+        "크레딧", "또는 '𐄛' 메뉴 클릭 --> '앱 설치'", "또는 '𐄛' menu --> '앱' --> '이 사이트를 앱으로 설치' 클릭",
+        "또는 '𐄛' menu --> '전송, 저장 및 공유' --> '앱 설치' 클릭", "또는 공유 메뉴 클릭 --> 'Dock에 추가'",
+        "또는 공유 메뉴 클릭 --> '앱 설치' 또는 '홈 화면에 추가'", "공유 메뉴 클릭 --> 홈 화면에 추가",
+        "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치' 같은 버튼을 찾아 클릭해 보세요",
+        "'nostalgiaTok 설치' 클릭<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+        "제작: ddyson bang-ura (aka peiLamed / פילמד) <br><br> stack overflow 및 약간의 AI 디버깅 도움 <br><br> 디자인: peiLamed <br><br> 시에라리온 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
+        "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 나를 사용하세요 :)", "비디오 공유", "비디오를 로딩 중입니다",
+        "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "과거로의 짜릿한 시간 여행을 즐기세요",
+        "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다 <br> 어쨌든 공유해 주셔서 고마워요",
+        "유사한 항목 검색", "검색 기록", "새로 검색", "검색 중..."
+    ],
+    "he": [
+        "על ידי", "nostalgiaTok", "peiLamed", "מה שמך?", "הבא", "שלך", "נוסטלגיה",
+        "לאיזו תקופת זמן אתה מתגעגע?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2021 - אביב 2023)</span>",
+        "איזה יוצר?<br><span class='nstLower'>(בחר אחד, ניתן לשינוי מאוחר יותר)</span>",
+        "איזה נושא?<br><span class='nstLower'>(בחר אחד, ניתן לשינוי מאוחר יותר)</span>",
+        " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך לאחר כך, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
+        "המון סרטונים", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
+        "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
+        "סרטונים שלא נצפו בלבד", "מה המצב, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaTok",
+        "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
+        "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני", "יולי",
+        "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2021 בבקשה", "טוב, לפני השנה הזו בבקשה", "בין 2021 לעכשיו בבקשה",
+        "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
+        "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעו", "✅ -> ❌", "❌ -> ✅",
+        "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
+        "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
+        "או לחץ על תפריט '𐄛' --> 'הזרמה, שמירה ושיתוף' --> 'התקן אפליקציה'", "או לחץ על תפריט השיתוף --> 'הוסף ל-Dock'",
+        "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
+        "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או בתפריט הדפדפן ולחץ עליו",
+        "לחץ 'התקן את nostalgiaTok'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+        "נוצר על ידי ddyson bang-ura (הידוע כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים עם בינה מלאכותית <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> שחררו את פלסטין 🇵🇸🇸🇩🇨🇩",
+        "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען", "תודה בכל מקרה :)",
+        "הועתק, תודה על השיתוף :)", "תהנה מפיצוץ זה מהעבר", "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום <br> תודה על השיתוף בכל מקרה",
+        "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש..."
+    ]
 };
 var navLang = navigator.language;
 if(words[navLang] == undefined){
@@ -523,7 +660,7 @@ var newPref = {
 function startFollow() {
     SF = false;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
-    document.querySelector('#swDrag').innerHTML = words[navLang][31];
+    document.querySelector('#swDrag').innerHTML = words[navLang][38];
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
     document.querySelector('#swDrag').innerText = "";
     SF = true;
@@ -2545,10 +2682,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
                                                                       if(!withinSpeedUp){
-                                                                    if(playPause % 4 == 0){
-                                                                        player.playVideo(); playPause++;
-                                                                    }else{
-                                                                        player.pauseVideo(); playPause++;
+                                                                    if(player.getPlayerState() == 1){
+                                                                         player.pauseVideo();
+                                                                     }else{
+                                                                         player.playVideo();
                                                                     }
                                                                 }
                                                                 }else{
@@ -2605,10 +2742,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      // playPause +=1; 
                                                                      if(!withinSpeedUp){
-                                                                    if(playPause % 2 == 0){
-                                                                        player.playVideo(); playPause++;
-                                                                    }else{
-                                                                        player.pauseVideo(); playPause++;
+                                                                    if(player.getPlayerState() == 1){
+                                                                         player.pauseVideo();
+                                                                     }else{
+                                                                         player.playVideo();
                                                                     }
                                                                 }
                                                                 }else{
