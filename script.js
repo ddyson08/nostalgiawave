@@ -36,7 +36,7 @@ function newConsoleLog(message) {
 const words = {
   "en-US": [
     "by", //0
-    "nostalgiaWave", //1
+    "nostalgiaTok", //1
     "peiLamed", //2
     "what's your name? <br><span class='nstLower'>hit enter afterwards ☺️</span>", //3
     "next", //4
@@ -72,7 +72,7 @@ const words = {
     "abcd_efghijklmn_opqrstudvwxyz_", //34
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
     "nvm", //36
-    "last time you used nostalgiaWave", //37
+    "last time you used nostalgiaTok", //37
     "drag me to the option you want", //38
     "spring", //39
     "summer", //40
@@ -131,7 +131,7 @@ const words = {
     "or click the share menu --> 'install app' or 'add to home screen' ", //93
     "click the share menu --> add to home screen", //94
     "i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
-    "click 'install nostalgiaWave'<br>", //96
+    "click 'install nostalgiaTok'<br>", //96
     "hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
     "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
     "see directions", //99
@@ -149,7 +149,7 @@ const words = {
     "searching..." //111
   ],
   "ja": [
-    "によって", "nostalgiaWave", "peiLamed",
+    "によって", "nostalgiaTok", "peiLamed",
     "お名前は何ですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
     "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2021年3月 - 2023年春)</span>",
@@ -159,7 +159,7 @@ const words = {
     "動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
     "これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
     "動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaWaveを使用した日時",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaTokを使用した日時",
     "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
     "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
     "9月", "10月", "11月", "12月", "2021年以降でお願いします", "というか、今年より前でお願いします",
@@ -174,7 +174,7 @@ const words = {
     "または共有メニュー --> 「アプリをインストール」または「ホーム画面に追加」をクリック",
     "共有メニューをクリック --> ホーム画面に追加",
     "お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
-    "「nostalgiaWaveをインストール」をクリック<br>",
+    "「nostalgiaTokをインストール」をクリック<br>",
     "このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
     "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
@@ -183,7 +183,7 @@ const words = {
     "類似の検索", "検索履歴", "新しく検索", "検索中..."
   ],
   "ar": [
-    "بواسطة", "nostalgiaWave", "peiLamed",
+    "بواسطة", "nostalgiaTok", "peiLamed",
     "ما اسمك؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
     "التالي", "الخاص بك", "الحنين",
     "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2021 - ربيع 2023)</span>",
@@ -193,7 +193,7 @@ const words = {
     "الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر this&nbsp;-&nbsp;", "احذف this&nbsp;",
     "عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
     "تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaTok",
     "اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
     "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
     "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2021 رجاءً",
@@ -205,7 +205,7 @@ const words = {
     "أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
     "أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
     "لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> მაგრამ ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
-    "انقر فوق 'تثبيت nostalgiaWave'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
     "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
     "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
@@ -213,7 +213,7 @@ const words = {
     "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث..."
   ],
   "es": [
-    "por", "nostalgiaWave", "peiLamed",
+    "por", "nostalgiaTok", "peiLamed",
     "¿cómo te llamas? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
     "siguiente", "tu", "nostalgia",
     "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2021 - primavera 2023)</span>",
@@ -223,7 +223,7 @@ const words = {
     "un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
     "ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
     "cambiar nombre", "solo videos no vistos", "¿qué tal, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaTok",
     "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
     "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
     "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2021 porfa",
@@ -238,7 +238,7 @@ const words = {
     "o haz clic en el menú compartir --> 'instalar aplicación' o 'añadir a la pantalla de inicio'",
     "haz clic en el menú compartir --> añadir a la pantalla de inicio",
     "no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
-    "haz clic en 'instalar nostalgiaWave'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
     "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
     "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
@@ -246,7 +246,7 @@ const words = {
     "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando..."
   ],
   "fr": [
-    "par", "nostalgiaWave", "peiLamed",
+    "par", "nostalgiaTok", "peiLamed",
     "quel est ton nom ? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
     "suivant", "ton", "nostalgie",
     "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2021 - printemps 2023)</span>",
@@ -257,7 +257,7 @@ const words = {
     "supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
     "rechercher à nouveau", "ouvrir la vidéo", "changer de nom", "vidéos non vues uniquement", "quoi de neuf, ",
     "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
-    "laisse tomber", "dernière fois que tu as utilisé nostalgiaWave", "glisse-moi vers l'option de ton choix", "printemps",
+    "laisse tomber", "dernière fois que tu as utilisé nostalgiaTok", "glisse-moi vers l'option de ton choix", "printemps",
     "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
     "octobre", "novembre", "décembre", "après 2021 stp", "enfin, avant cette année stp", "entre 2021 et maintenant stp",
@@ -272,7 +272,7 @@ const words = {
     "ou clique sur le menu de partage --> 'installer l'application' ou 'ajouter à l'écran d'accueil'",
     "clique sur le menu de partage --> ajouter à l'écran d'accueil",
     "je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
-    "clique sur 'installer nostalgiaWave'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
     "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
     "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
@@ -280,7 +280,7 @@ const words = {
     "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours..."
   ],
   "de": [
-    "von", "nostalgiaWave", "peiLamed",
+    "von", "nostalgiaTok", "peiLamed",
     "wie heißt du? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
     "weiter", "dein", "nostalgie",
     "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2021 - frühjahr 2023)</span>",
@@ -291,7 +291,7 @@ const words = {
     "dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
     "optionen", "➢", "mehr davon", "erneut suchen", "video öffnen", "name ändern", "nur ungesehene videos", "was geht, ",
     "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "egal",
-    "letztes mal, als du nostalgiaWave benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
+    "letztes mal, als du nostalgiaTok benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
     "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
     "nach 2021 bitte", "na ja, vor diesem jahr bitte", "between 2021 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
@@ -305,7 +305,7 @@ const words = {
     "oder klicke auf das teilen-menü --> 'app installieren' oder 'zum startbildschirm hinzufügen'",
     "klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
     "ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
-    "klicke auf 'nostalgiaWave installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
     "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
     "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
@@ -313,7 +313,7 @@ const words = {
     "ähnliche suchen", "suchverlauf", "neu suchen", "sucht..."
   ],
   "pt": [
-    "por", "nostalgiaWave", "peiLamed",
+    "por", "nostalgiaTok", "peiLamed",
     "qual o seu nome? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
     "seguinte", "seu", "nostalgia",
     "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2021 - primavera de 2023)</span>",
@@ -323,7 +323,7 @@ const words = {
     "um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
     "ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
     "alterar nome", "apenas vídeos não vistos", "e aí, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaTok",
     "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
     "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
     "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2021 por favor",
@@ -338,7 +338,7 @@ const words = {
     "ou clique no menu de compartilhamento --> 'instalar aplicativo' ou 'adicionar à tela inicial'",
     "clique no menu de compartilhamento --> adicionar à tela inicial",
     "não tenho certeza de como fazer no seu navegador <br> mais procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
-    "clique em 'instalar nostalgiaWave'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
     "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartir vídeo",
     "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
@@ -346,7 +346,7 @@ const words = {
     "buscar semelhantes", "histórico de buscas", "nova busca", "buscando..."
   ],
   "zh-cn": [
-    "由", "nostalgiaWave", "peiLamed",
+    "由", "nostalgiaTok", "peiLamed",
     "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
     "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2021年3月 - 2023年春季)</span>",
@@ -356,7 +356,7 @@ const words = {
     "超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
     "查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
     "仅看未看过的视频", "嗨，最近怎么样，", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaTok",
     "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
     "七月", "八月", "九月", "十月", "十一月", "十二月", "求2021年之后的吧", "好吧，求今年之前的吧", "求2021年到现在之间的吧",
@@ -366,14 +366,14 @@ const words = {
     "或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
     "或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
     "我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
-    "点击“安装 nostalgiaWave”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
     "查看指南", "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
     "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
     "搜索相似", "搜索历史", "搜索全新", "正在搜索..."
   ],
   "hi": [
-    "द्वारा", "nostalgiaWave", "peiLamed",
+    "द्वारा", "nostalgiaTok", "peiLamed",
     "आपका नाम क्या है? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
     "आगे", "आपका", "पुरानी यादें",
     "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2021 - वसंत 2023)</span>",
@@ -384,7 +384,7 @@ const words = {
     "इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
     "इसके बारे में और जानें", "फिर से खोजें", "वीडियो खोलें", "नाम बदलें", "केवल अनदेखे वीडियो", "क्या चल रहा है, ",
     "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
-    "रहने दो", "पिछली बार आपने nostalgiaWave का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
+    "रहने दो", "पिछली बार आपने nostalgiaTok का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
     "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
     "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
     "कृपया 2021 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2021 और अब के बीच का दें",
@@ -399,7 +399,7 @@ const words = {
     "या साझा करें मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें' या 'होम स्क्रीन पर जोड़ें'",
     "साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
     "मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
-    "'nostalgiaWave इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
     "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
     "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
@@ -407,7 +407,7 @@ const words = {
     "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
   ],
   "am": [
-    "በ", "nostalgiaWave", "peiLamed",
+    "በ", "nostalgiaTok", "peiLamed",
     "ስምህ ማን ነው? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
     "ቀጣይ", "የእርስዎ", "ትዝታ",
     "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2021 - ጸደይ 2023)</span>",
@@ -417,7 +417,7 @@ const words = {
     "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
     "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት",
     "ስም ቀይር", "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiaWaveን ለመጨረሻ ጊዜ የተጠቀሙበት",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiatokን ለመጨረሻ ጊዜ የተጠቀሙበት",
     "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
     "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
     "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2021 በኋላ ይሁን እባክህ",
@@ -432,7 +432,7 @@ const words = {
     "ወይም የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> 'መተግበሪያ ጫን' ወይም 'ወደ መነሻ ማያ ገጽ አክል'",
     "የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> ወደ መነሻ ማያ ገጽ አክል",
     "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ምናሌው ወይም በአሳሽ ምናሌው ውስጥ 'ወደ መነሻ ማያ ገጽ አክል' ወይም 'መተግበሪያ ጫን' የሚል ቁልፍ ይፈልጉ እና ጠቅ ያድርጉት",
-    "'nostalgiaWave ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "'nostalgiaTok ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "በ ddyson bang-ura (በቅጽል ስሙ peiLamed / פילמד) የተሰራ <br><br> ከ stack overflow እና ጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peiLamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
     "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
     "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
@@ -440,7 +440,7 @@ const words = {
     "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ..."
   ],
   "ber": [
-    "ⵙ", "nostalgiaWave", "peiLamed",
+    "ⵙ", "nostalgiaTok", "peiLamed",
     "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
     "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
     "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2021 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
@@ -450,7 +450,7 @@ const words = {
     "ⴱⵣⵣⴰⴼ ⴷⵉⴳⵙⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⵉⵜⵜⵓⵔⴰⵔ ⵉⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵙⴰⵍⵉ...", "", "ⴰⴼⵔ ⵡⴰ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰ&nbsp;",
     "ⵥⵕ ⵜⵉⵡարգⵉⵡⵉⵏ ⵜⵢⵓⵃⴼⴹⵏ", "ⵡⴰ ⴷⵉⴳⵙⵏ ⴱⵄⴷ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰ", "ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴰⵔⵥⵎ ⵉⴼⵉⴷⵢⵓ",
     "ⴱⴷⴷⵍ ⵉⵙⵎ", "ⵉⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⵓⵥⵕⴰⵏ  wale ⴷ", "ⵎⴰⵅ ⵉⵅⴱⴰⵔⵏ, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaTok",
     "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
     "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2021 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
@@ -461,7 +461,7 @@ const words = {
     "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⴰⵣⵓⵣⵣⵡ, ⴰⵃⴼⴰⴹ ⴷ ⵓⴱⴹⴰ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⴰⵔⵏⵓ ⵙ dock'",
     "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⵏⵖ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ'", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ",
     "ⵓⵔ ⵙⵙⵉⵏⵅ ⵎⴰⵏⵎⴽ ⴰⴷ ⵜ ⵜⴳⴷ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ <br> ⵎⴰⵛⴰ ⴰⵔⵣⴰ ⴼ ⵓⵇⴼⵍ ⴰⵎ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⴳ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ ⵏⵖ ⵓⵎⵙⵏⴼﻠول ⵜⴽⵍⵉⴽⵢⴷ ⴼⵍⴰⵙ",
-    "ⵜⴽⵍⵉⴽⵢ ⴼ 'ⵙⴱⴷⴷ nostalgiaWave'<br>", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵓⵇⴼⵍ ⵡⴰ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "ⵜⴽⵍⵉⴽⵢ ⴼ 'ⵙⴱⴷⴷ nostalgiaTok'<br>", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵓⵇⴼⵍ ⵡⴰ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "ⵉⵜⵢⵓⵙⴽⴰⵔ ⵙ ⵓⴼⵓⵙ ⵏ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ ⵢⴰⴹⵏ peiLamed / פילמד) <br><br> ⵜⴰⵡⵉⵣⴰ ⵙⴳ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ⵓⵙⴳⴳⴷ ⵙ ai <br><br> ⴰⵙⵓⵏⴼⵔ ⵏ peiLamed <br><br> ⴰⴼⴰⵔⵉⵙ ⵏ ⵙⵉⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⴰⵍⴰⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
     "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
     "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
@@ -469,7 +469,7 @@ const words = {
     "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ..."
   ],
   "kri": [
-    "by", "nostalgiaWave", "peiLamed",
+    "by", "nostalgiaTok", "peiLamed",
     "wetin na yu nem? <br><span class='nstLower'>klik enter bɛfۆ yu kۆمۆት ☺️</span>", //3
     "nɛks", "yu", "nۆstalgia",
     "ustɛm yu de തിങ്ക bawt di tɛm we dۆn pas?<br><span class='nstLower'>(ɛgsaम्पल: 2022, bɔr tɛm 2023, mाch 2021 - prाय tɛm 2023)</span>",
@@ -479,7 +479,7 @@ const words = {
     "bۆku dɛm de sef", "pleya", "dis wan de ple vॉdiۆ dɛm", "e de lۆd...", "", "pik dis wan&nbsp;-&nbsp;", "pۆl dis wan&nbsp;",
     "si di wan dɛm we dۆn sev", "nɛks wan&nbsp;-&nbsp;", "ɔpsiɔn dɛm", "➢", "mۆ fۆ dis wan", "fri fۆ fayan am dाgɛn", "opin vॉdiۆ",
     "chenj nem", "di wan we yu nۆ si bɛfۆ nɔmɔ", "wetin de bۆd, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mाynd", "las tɛm we yu yuz nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mाynd", "las tɛm we yu yuz nostalgiaTok",
     "drाg me kۆ di ɔpsiɔn we yu want", "prाय tɛm", "bɔr tɛm", "ren tɛm", "kۆl tɛm", "fۆ bɛfۆ na", "mॉdil na", "las na", "jan", "fɛb",
     "mाch", "eprॉ", "me", "jun", "jul", "ɔgɔ", "sɛp", "ɔktۆ", "nۆv", "dॉs", "januari", "fɛbuari", "mाch", "eprॉ", "me",
     "jun", "julai", "ɔgɔs", "sɛptɛmba", "ɔktۆba", "nۆvɛmba", "dॉsɛmba", "pas tɛm 2021 dۆ dۆ", "wɛl, bɛfۆ dis yia dۆ dۆ",
@@ -490,7 +490,7 @@ const words = {
     "ɔ klik di '𐄛' mɛnyu --> 'shia, sev ɛn sho' --> 'sɛt am na fۆn'", "ɔ klik di shia mɛnyu --> 'add to dock'",
     "ɔ klik di shia mɛnyu --> 'sɛt am na fۆn' ɔ 'add to home screen'", "klik di shia mɛnyu --> add to home screen",
     "a nۆ dۆn fayan us tɛm fۆ mek am na yu brausa <br> bɔt fayan bɔtin lाyk 'add to home screen' ɔ 'sɛt am na fۆn' na di shia mɛnyu ɔ brausa mɛnyu ɛn klik am",
-    "klik 'sɛt am nostalgiaWave'<br>", "klik dis bɔtin <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "klik 'sɛt am nostalgiaTok'<br>", "klik dis bɔtin <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "ddyson bang-ura (we dɛm de kɔl peiLamed / פילמד) na in mek am <br><br> help kाm fۆ stack overflow & sɔm ai dॉbɔg tɛm <br><br> peiLamed na in chenj am fayan <br><br> mۆna fۆ salone 🇸🇱 <br><br> fri palɛstाyn 🇵🇸🇸🇩🇨🇩",
     "si us tɛm fۆ mek am", "「」 | 『』 | big skrin de sef :)", "yuz me bɛfۆ dat :)", "shia vॉdiۆ", "yu vॉdiۆ de lۆd na",
     "tɛnki bɛfۆ dat :)", "kۆpi dۆn, tɛnki fۆ shia :)", "fri fۆ si wetin dۆn pas fۆ bɛfۆ",
@@ -498,7 +498,7 @@ const words = {
     "fayan wan lाyk am", "tɛm fۆ di wan we yu fayan", "fayan nyu wan", "e de fayan am..."
   ],
   "ko": [
-    "에 의해", "nostalgiaWave", "peiLamed",
+    "에 의해", "nostalgiaTok", "peiLamed",
     "이름이 무엇인가요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
     "다음", "당신의", "향수",
     "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2021년 3월 - 2023년 봄)</span>",
@@ -508,7 +508,7 @@ const words = {
     "엄청나게 많네요", "플레이어", "동영상을 재생하는 중", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
     "저장된 향수 보기", "다음&nbsp;-&nbsp;", "옵션", "➢", "자세히 보기", "다시 검색", "동영상 열기", "이름 변경",
     "시청하지 않은 동영상만", "잘 지냈어요, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaTok을 사용한 시간",
     "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
     "9월", "10월", "11월", "12월", "2021년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2021년에서 현재 사이로 해주세요",
@@ -520,7 +520,7 @@ const words = {
     "또는 '𐄛' 메뉴 --> '이용, 저장 및 공유' --> '앱 설치'를 클릭하세요", "또는 공유 메뉴 --> 'dock에 추가'를 클릭하세요",
     "또는 공유 메뉴 --> '앱 설치' 또는 '홈 화면에 추가'를 클릭하세요", "공유 메뉴 클릭 --> 홈 화면에 추가",
     "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치'와 같은 버튼을 찾아 클릭해 보세요",
-    "'nostalgiaWave 설치'를 클릭하세요<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "'nostalgiaTok 설치'를 클릭하세요<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "제작: ddyson bang-ura (별명 peiLamed / פילמד) <br><br> stack overflow의 도움 및 약간의 AI 디버깅 <br><br> 디자인: peiLamed <br><br> 시에라리온의 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
     "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 저를 사용하세요 :)", "동영상 공유",
     "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
@@ -528,7 +528,7 @@ const words = {
     "유사한 검색", "검색 기록", "새로 검색", "검색 중..."
   ],
   "he": [
-    "על ידי", "nostalgiaWave", "peiLamed",
+    "על ידי", "nostalgiaTok", "peiLamed",
     "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
     "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2021 - אביב 2023)</span>",
@@ -538,7 +538,7 @@ const words = {
     "המון מהם", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
     "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
     "סרטונים שלא נצפו בלבד", "מה קורה, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaWave",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaTok",
     "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
     "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
     "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2021 בבקשה", "ובכן, לפני השנה הזו בבקשה",
@@ -549,7 +549,7 @@ const words = {
     "או לחץ על תפריט '𐄛' --> 'הזרמה, שמירה ושיתוף' --> 'התקן אפליקציה'", "או לחץ על תפריט השיתוף --> 'הוסף ל-Dock'",
     "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
     "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או הדפדפן ולחץ עליו",
-    "לחץ על 'התקן את nostalgiaWave'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "לחץ על 'התקן את nostalgiaTok'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩",
     "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
     "תודה בכל מקרה :)", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
@@ -744,7 +744,7 @@ function endFollow() {
     } catch (error) {
       // Handles user cancellation or system errors
       console.log('Sharing failed or was canceled:', error.message);
-       fallbackShare(shareData);
+       giveError(true);
     }
   } else {
     // 3. Fallback behavior if Web Share API is missing
@@ -754,8 +754,14 @@ function endFollow() {
 
 function fallbackShare(data) {
   // Example: Fallback to copying the link to the clipboard
+  try{
+    if(!isMobile()){
   navigator.clipboard.writeText(data.url);
   howToFullscreen(true,[102,107]);
+    }
+  }catch(e){
+
+  }
 }
         document.body.append(Bbb);
         Bbb.click();
@@ -806,6 +812,15 @@ var hTFCurrPlace;
 var hTFallVideos = [];
 var hTFCover;
 var hTFMessage;
+const isMobile = () => {
+  // Check if the new API is supported
+  if (navigator.userAgentData) {
+    return navigator.userAgentData.mobile;
+  }
+  
+  // Fallback for Safari/Firefox (see Solution 3)
+  return /Mobi|Android/i.test(navigator.userAgent);
+};
 function hTFEnd(){
    player.unMute();
 hTFCover.style.opacity = "0";
@@ -818,7 +833,7 @@ setTimeout(function(){
 }, 500)
 document.querySelector('#allHold').style.marginLeft = "0vw";
 }
-function howToFullscreen(a,b){
+function howToFullscreen(a,b,searchError){
     setTimeout(function(){
     player.mute();
     document.querySelector('#allHold').style.marginLeft = "-50vw";
@@ -843,7 +858,11 @@ function howToFullscreen(a,b){
     hTFMessage.querySelector('p').setAttribute('class','scrollable');
     if(a){
         hTFMessage.querySelector('b').innerText = words[navLang][b[0]];
+        if(!searchError){
         hTFMessage.querySelector('p').innerHTML = words[navLang][b[1]];
+        }else{
+             hTFMessage.querySelector('p').innerHTML = words[navLang][b[1]].split('<br>')[0];
+        }
     }else{
          hTFMessage.querySelector('b').innerText = words[navLang][86];
        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
@@ -919,7 +938,8 @@ hTFMessage.querySelector('p').innerHTML = words[navLang][96] + words[navLang][nu
     var Bb = document.createElement('button');
     Bb.innerText = "✅";
     var extraPress = "";
-    if(a && (b[0] == 77 || b[0] == 75)){
+    if(a && (b[0] == 77 || b[0] == 75) && !searchError){
+        
         extraPress = "; evaluateFullscreenReminder(28);"
     }
     Bb.setAttribute('onclick','hTFEnd()'+extraPress)
@@ -1589,7 +1609,7 @@ setTimeout(function(){
                 var exii = document.querySelector('#exitsw');
                 exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
-                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined){if(false){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
@@ -2674,7 +2694,7 @@ try{
 document.querySelector('.uBall').style.overflow = "hidden";
 
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
-                                                                 /*  TOOO.addEventListener('touchstart', function (event) {
+                                                                  TOOO.addEventListener('touchstart', function (event) {
                                                                         isTE = false;
                                                                         console.log("ts");
                                                                         initialTouchX = event.touches[0].clientX;
@@ -2695,10 +2715,10 @@ var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true
 var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},500);
-                                                                    }); */
+                                                                    });
 
                                                                     // TOUCH END
-                                                                 /*   TOOO.addEventListener('touchend', function (event) {
+                                                                   TOOO.addEventListener('touchend', function (event) {
                                                                         autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
@@ -2706,13 +2726,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                           const element = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
-                                                                      if(!withinSpeedUp){
-                                                                    if(player.getPlayerState() == 1){
-                                                                         player.pauseVideo();
-                                                                     }else{
-                                                                         player.playVideo();
-                                                                    }
-                                                                }
+                                                                
                                                                 }else{
                                                                     document.getElementById('fullscreenButton').click();
                                                                 }
@@ -2729,7 +2743,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     
-                                                                    });*/
+                                                                    });
 
                                                                     // MOUSE DOWN
                                                                     TOOO.addEventListener('mousedown', function (event) {
@@ -4878,8 +4892,8 @@ async function requestVideosInner(value) {
         
     }
 }
-function giveError() {
-    howToFullscreen(true, [75,76])
+function giveError(a) {
+    howToFullscreen(true, [75,76], a)
 }
 function giveError2() {
     howToFullscreen(true, [79,80])
