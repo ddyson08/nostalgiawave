@@ -660,7 +660,7 @@ button {
 }
 
 #pgTitle {
-    top: calc(50dvh + 2.5em);
+    top: 2.5em !important;
     display: none;
     margin-left: 1em;
     margin-right: 1.5em;

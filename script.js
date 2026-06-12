@@ -34,504 +34,528 @@ function newConsoleLog(message) {
 
 }
 const words = {
-"en-US": [
-"by", //0
-"nostalgiaTok", //1
-"peiLamed", //2
-"what's your name?", //3
-"next", //4
-"your", //5
-"nostalgia", //6
-"what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
-"what creator?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //8
-"what topic?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //9
-"'s ", //10
-"", //11
-"", //12
-"if you wanna save your nostalgia for later, name it here", //13
-"or not, thats ok", //14
-"fishing out your videos", //15
-"a whole lot of 'em", //16
-"player", //17
-"ts plays videos", //18
-"loading...", //19
-"", //20
-"choose this one&nbsp;-&nbsp;", //21
-"delete this one&nbsp;", //22
-"view saved nostalgias", //23
-"next one&nbsp;-&nbsp;", //24
-"options", //25
-"➢", //26
-"more of ts", //27
-"search again", //28
-"open video", //29
-"change name", //30
-"unseen vids only", //31
-"what's good, ", //32
-"anqrzfeubxkmlpwhdvocty", //33
-"abcd_efghijklmn_opqrstudvwxyz_", //34
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
-"nvm", //36
-"last time you used nostalgiaTok", //37
-"drag me to the option you want", //38
-"spring", //39
-"summer", //40
-"fall", //41
-"winter", //42
-"early", //43
-"mid", //44
-"late", //45
-"jan", //46
-"feb", //47
-"mar", //48
-"apr", //49
-"may", //50
-"jun", //51
-"jul", //52
-"aug", //53
-"sep", //54
-"oct", //55
-"nov", //56
-"dec", //57
-"january", //58
-"february", //59
-"march", //60
-"april", //61
-"may", //62
-"june", //63
-"july", //64
-"august", //65
-"september", //66
-"october", //67
-"november", //68
-"december", //69
-"past 2021 plzz", //70
-"well, before this year plzz", //71
-"between 2021 - now plzz", //72
-"sorry, try again plzz", //73
-"tysm btw ☺", //74
-"oopsie!", //75
-`something didn't work<br>try searching again`, //76
-"all watched", //77
-"you watched all the videos for this search", //78
-"still loading", //79
-"the player will auto-scroll when videos arrive", //80
-"✅ -> ❌", //81
-"❌ -> ✅", //82
-"hold again to toggle 2x speed", //83
-"advertisement", //84
-"product of 🇸🇱", //85
-"go fullscreen", //86
-"exit this menu", //87
-"credits", //88
-"or click the '𐄛' menu --> 'install app'", //89
-"or click the '𐄛' menu --> 'apps' --> 'install this site as an app'", //90
-"or click the '𐄛' menu --> 'cast, save, and share' --> 'install app'", //91
-"or click the share menu --> 'add to dock'", //92
-"or click the share menu --> 'install app' or 'add to home screen' ", //93
-"click the share menu --> add to home screen", //94
-"i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
-"click 'install nostalgiaTok'<br>", //96
-"hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
-"made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
-"see directions", //99
-"「」 | 『』 | fullscreen available :)", //100
-"use me instead :)", //101
-"share video", //102
-"your video is loading", //103
-"thx btw :)", //104
-"copied, thx 4 sharing :)", //105
-"enjoy this blast from the past", //106
-"sharing doesnt work on your browser, so i copied the link instead <br> thanks for sharing btw", //107
-"search similar", //108
-"search history", //109
-"search new", //110
-"searching..." //111
-],
-"ja": [
-"によって", "nostalgiaTok", "peiLamed", "お名前は何ですか？", "次へ", "あなたの", "ノスタルジー",
-"どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2021年3月 - 2023年春)</span>",
-"どのクリエイターですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
-"どのトピックですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
-"の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
-"動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
-"これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
-"動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaTokを使用した日時",
-"希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
-"3月", "4月",
-"5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
-"9月", "10月", "11月", "12月", "2021年以降でお願いします", "というか、今年より前でお願いします",
-"2021年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
-"正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
-"まだ読み込み中", "動画が届くとプレイヤーが自動スクロールします本地", "✅ -> ❌", "❌ -> ✅",
-"長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
-"または「𐄛」メニュー --> 「アプリをインストール」をクリック",
-"または「𐄛」メニュー --> 「アプリ」 --> 「このサイトをアプリとしてインストール」をクリック",
-"または「𐄛」メニュー --> 「キャスト、保存、共有」 --> 「アプリをインストール」をクリック",
-"または共有メニュー --> 「ドックに追加」をクリック",
-"または共有メニュー --> 「アプリをインストール」または「ホーム画面に追加」をクリック",
-"共有メニューをクリック --> ホーム画面に追加",
-"お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
-"「nostalgiaTokをインストール」をクリック<br>",
-"このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
-"手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
-"動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
-"お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました<br>共有してくれてありがとう",
-"類似の検索", "検索履歴", "新しく検索", "検索中..."
-],
-"ar": [
-"بواسطة", "nostalgiaTok", "peiLamed", "ما اسمك؟", "التالي", "الخاص بك", "الحنين",
-"ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2021 - ربيع 2023)</span>",
-"أي منشئ محتوى؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
-"أي موضوع؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
-" لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
-"الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر هذا&nbsp;-&nbsp;", "احذف هذا&nbsp;",
-"عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
-"تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaTok",
-"اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
-"مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
-"أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2021 رجاءً",
-"حسنًا، قبل هذه السنة رجاءً", "بين 2021 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
-"حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
-"سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديو", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
-"إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
-"أو انقر على قائمة '𐄛' --> 'التطبيقات' --> 'تثبيت هذا الموقع كتطبيق'",
-"أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
-"أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
-"لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> ولكن ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
-"انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
-"انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
-"الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
-"المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك <br> شكراً للمشاركة على أي حال", "بحث عن مماثل",
-"سجل البحث", "بحث جديد", "جاري البحث..."
-],
-"es": [
-"por", "nostalgiaTok", "peiLamed", "¿cómo te llamas?", "siguiente", "tu", "nostalgia",
-"¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2021 - primavera 2023)</span>",
-"¿qué creador?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
-"¿qué tema?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
-"de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
-"un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
-"ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
-"cambiar nombre", "solo videos no vistos", "¿qué tal, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaTok",
-"arrástrame a la opción que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
-"finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
-"marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2021 porfa",
-"bueno, antes de este año porfa", "entre 2021 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
-"¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
-"todavía cargando", "el reproductor se desplazará automáticamente cuando lleguen los videos", "✅ -> ❌", "❌ -> ✅",
-"mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
-"créditos", "o haz clic en el menú '𐄛' --> 'instalar aplicación'",
-"o haz clic en el menú '𐄛' --> 'aplicaciones' --> 'instalar este sitio como una aplicación'",
-"o haz clic en el menú '𐄛' --> 'transmitir, guardar y compartir' --> 'instalar aplicación'",
-"o haz clic en el menú compartir --> 'añadir al dock'",
-"o haz clic en el menú compartir --> 'instalar aplicación' o 'añadir a la pantalla de inicio'",
-"haz clic en el menú compartir --> añadir a la pantalla de inicio",
-"no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
-"haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
-"ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
-"tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
-"compartir no funciona en tu navegador, así que copié el enlace <br> gracias por compartir de todos modos", "buscar similares",
-"historial de búsqueda", "nueva búsqueda", "buscando..."
-],
-"fr": [
-"par", "nostalgiaTok", "peiLamed", "quel est ton nom ?", "suivant", "ton", "nostalgie",
-"de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2021 - printemps 2023)</span>",
-"quel créateur ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
-"quel sujet ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
-"de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
-"on récupère tes vidéos", "un sacré paquet", "lecteur", "ceci lit des vidéos", "chargement...", "", "choisis celle-ci&nbsp;-&nbsp;",
-"supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
-"rechercher à nouveau", "ouvrir la vidéo", "changer de nom", "vidéos non vues uniquement", "quoi de neuf, ",
-"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
-"laisse tomber", "dernière fois que tu as utilisé nostalgiaTok", "glisse-moi vers l'option de ton choix", "printemps",
-"été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
-"sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
-"octobre", "novembre", "décembre", "après 2021 stp", "enfin, avant cette année stp", "entre 2021 et maintenant stp",
-"désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
-"tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
-"le lecteur défilera automatiquement quand les vidéos arriveront", "✅ -> ❌", "❌ -> ✅",
-"maintiens enfoncé pour basculer en vitesse 2x", "publicité", "produit de 🇸🇱", "plein écran", "quitter ce menu", "crédits",
-"ou clique sur le menu '𐄛' --> 'installer l'application'",
-"ou clique sur le menu '𐄛' --> 'applications' --> 'installer ce site en tant qu'application'",
-"ou clique sur le menu '𐄛' --> 'diffuser, enregistrer et partager' --> 'installer l'application'",
-"ou clique sur le menu de partage --> 'ajouter au dock'",
-"ou clique sur le menu de partage --> 'installer l'application' ou 'ajouter à l'écran d'accueil'",
-"clique sur le menu de partage --> ajouter à l'écran d'accueil",
-"je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
-"clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
-"voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
-"ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
-"le partage ne fonctionne pas sur ton navigateur, j'ai donc copié le lien <br> merci pour le partage au fait",
-"rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours..."
-],
-"de": [
-"von", "nostalgiaTok", "peiLamed", "wie heißt du?", "weiter", "dein", "nostalgie",
-"nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2021 - frühjahr 2023)</span>",
-"welcher creator?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
-"welches thema?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
-"von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
-"deine videos werden herausgefischt", "eine ganze menge davon", "player", "dieser spielt videos ab", "lädt...", "",
-"dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
-"optionen", "➢", "mehr davon", "erneut suchen", "video öffnen", "name ändern", "nur ungesehene videos", "was geht, ",
-"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "egal",
-"letztes mal, als du nostalgiaTok benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
-"winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
-"januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
-"nach 2021 bitte", "na ja, vor diesem jahr bitte", "zwischen 2021 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
-"vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
-"du hast alle videos für diese suche angesehen", "lädt noch", "der player scrollt automatisch, wenn videos geladen sind",
-"✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
-"menü verlassen", "credits", "oder klicke auf das '𐄛'-menü --> 'app installieren'",
-"oder klicke auf das '𐄛'-menü --> 'apps' --> 'diese website als app installieren'",
-"oder klicke auf das '𐄛'-menü --> 'streamen, speichern und teilen' --> 'app installieren'",
-"oder klicke auf das teilen-menü --> 'zum dock hinzufügen'",
-"oder klicke auf das teilen-menü --> 'app installieren' oder 'zum startbildschirm hinzufügen'",
-"klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
-"ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
-"klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
-"anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
-"dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
-"teilen funktioniert in deinem browser nicht, deshalb habe ich den link kopiert <br> danke fürs teilen übrigens",
-"ähnliche suchen", "suchverlauf", "neu suchen", "sucht..."
-],
-"pt": [
-"por", "nostalgiaTok", "peiLamed", "qual o seu nome?", "seguinte", "seu", "nostalgia",
-"de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2021 - primavera de 2023)</span>",
-"qual criador?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
-"qual tema?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
-"de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
-"um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
-"ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
-"alterar nome", "apenas vídeos não vistos", "e aí, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaTok",
-"arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
-"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
-"abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2021 por favor",
-"bem, antes deste ano por favor", "entre 2021 e agora por favor", "desculpe, tente de novo por favor",
-"muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
-"você assistiu a todos os vídeos desta busca", "ainda carregando", "o player vai rolar automaticamente quando os vídeos chegarem",
-"✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
-"sair deste menu", "créditos", "ou clique no menu '𐄛' --> 'instalar aplicativo'",
-"ou clique no menu '𐄛' --> 'aplicativos' --> 'instalar este site como aplicativo'",
-"ou clique no menu '𐄛' --> 'transmitir, salvar e compartilhar' --> 'instalar aplicativo'",
-"ou clique no menu de compartilhamento --> 'adicionar ao dock'",
-"ou clique no menu de compartilhamento --> 'instalar aplicativo' ou 'adicionar à tela inicial'",
-"clique no menu de compartilhamento --> adicionar à tela inicial",
-"não tenho certeza de como fazer no seu navegador <br> mas procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
-"clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
-"ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartilhar vídeo",
-"seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
-"o compartilhamento não funciona no seu navegador, então copiei o link <br> obrigado por compartilhar aliás",
-"buscar semelhantes", "histórico de buscas", "nova busca", "buscando..."
-],
-"zh-cn": [
-"由", "nostalgiaTok", "peiLamed", "你叫什么名字？", "下一个", "你的", "怀旧",
-"你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2021年3月 - 2023年春季)</span>",
-"哪位创作者？<br><span class='nstLower'>(请固定选择一位或不选，稍后可更改)</span>",
-"什么主题？<br><span class='nstLower'>(请固定选择一个或不选，稍后可更改)</span>",
-"的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
-"超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
-"查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
-"仅看未看过的视频", "嗨，最近怎么样，", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaTok",
-"请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
-"2月", "3月",
-"4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
-"七月", "八月", "九月", "十月", "十一月", "十二月", "求2021年之后的吧", "好吧，求今年之前的吧", "求2021年到现在之间的吧",
-"抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
-"你已看完了此搜索下的所有视频", "还在加载中", "视频到达后播放器会自动滚动", "✅ -> ❌", "❌ -> ✅",
-"再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
-"或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
-"或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
-"我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
-"点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
-"查看指南", 
-"「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
-"已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享在您的浏览器上无法工作，所以我复制了链接 <br> 顺便谢谢分享",
-"搜索相似", "搜索历史", "搜索全新", "正在搜索..."
-],
-"hi": [
-"द्वारा", "nostalgiaTok", "peiLamed", "आपका नाम क्या है?", "आगे", "आपका", "पुरानी यादें",
-"आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2021 - वसंत 2023)</span>",
-"कौन सा क्रिएटर?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
-"कौन सा विषय?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
-" का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
-"आपके वीडियो निकाले जा रहे हैं", "बहुत सारे वीडियो हैं", "प्लेयर", "यह वीडियो चलाता है", "लोड हो रहा है...", "",
-"इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
-"इसके बारे में और जानें", "फिर से खोजें", "वीडियो खोलें", "नाम बदलें", "केवल अनदेखे वीडियो", "क्या चल रहा है, ",
-"anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
-"रहने दो", "पिछली बार आपने nostalgiaTok का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
-"पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", "अक्तू",
-"नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
-"कृपया 2021 के बाद का दें", 
-"खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2021 और अब के बीच का दें",
-"क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
-"सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
-"वीडियो आने पर प्लेयर अपने आप स्क्रॉल करेगा", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
-"विज्ञापन", "🇸🇱 का उत्पाद", "पूर्ण स्क्रीन करें", "इस मेनू से बाहर निकलें", "क्रेडिट",
-"या '𐄛' मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें'",
-"या '𐄛' मेनू पर क्लिक करें --> 'ऐप्स' --> 'इस साइट को ऐप के रूप में इंस्टॉल करें'",
-"या '𐄛' मेनू पर क्लिक करें --> 'कास्ट, सहेजें और साझा करें' --> 'ऐप इंस्टॉल करें'",
-"या साझा करें मेनू पर क्लिक करें --> 'डॉक में जोड़ें'",
-"या साझा करें मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें' या 'होम स्क्रीन पर जोड़ें'",
-"साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
-"मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
-"'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-"ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
-"निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
-"आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)",
-"अतीत के इस झोंके का आनंद लें",
-"साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने लिंक कॉपी कर लिया है <br> वैसे साझा करने के लिए धन्यवाद",
-"समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
-],
-"am": [
-        "በ", "nostalgiaTok", "peiLamed", "ስምህ ማን ነው?", "ቀጣይ", "የእርስዎ", "ትዝታ",
-        "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2021 - ጸደይ 2023)</span>",
-        "የትኛው ፈጣሪ?<br><span class='nstLower'>(ከአንድ ሰው ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
-        "ምን ርዕስ?<br><span class='nstlower'>(ከአንድ ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
-        " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
-        "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
-        "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት", "ስም ቀይር",
-        "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiatokን ለመጨረሻ ጊዜ የተጠቀሙበት",
-        "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ", "መጋ", "ሚያ", "ግን",
-        "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል", "ሜይ", "ጁን", "ጁላይ", "ኦገስት",
-        "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2021 በኋላ ይሁን እባክህ", "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ",
-        "በ2021 እና አሁን መካከል ይሁን እባክህ", "ይቅርታ፣ እንደገና ይሞክሩ እባክህ", "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!",
-        "አንድ ነገር አልሰራም<br>እንደገና ለመፈለግ ይሞክሩ", "ሁሉም ታይተዋል", "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተዋል", "አሁንም በመጫን ላይ ነው",
-        "ቪዲዮዎች ሲደርሱ ተጫዋቹ በራሱ ይሸብልላል", "✅ -> ❌", "❌ -> ✅", "የ2x ፍጥነትን ለመቀየር እንደገና ተጭነው ይቆዩ",
-        "ማስታወቂያ", "የ🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ", "ከዚህ ማውጫ ውጣ", "ምስጋናዎች", "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'መተግበሪያን ጫን'",
-        "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'መተግበሪያዎች' --> 'ይህንን ድረ-ገጽ እንደ መተግበሪያ ጫን'",
-        "ወይም የ'𐄛' ማውጫን ጠቅ ያድርጉ --> 'cast፣ አስቀምጥ እና አጋራ' --> 'መተግበሪያን ጫን'",
-        "ወይም የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> 'ወደ ዶክ ያክሉ'",
-        "ወይም የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> 'መተግበሪያን ጫን' ወይም 'ወደ መነሻ ማያ ገጽ ያክሉ'",
-        "የማጋሪያ ማውጫውን ጠቅ ያድርጉ --> ወደ መነሻ ማያ ገጽ ያክሉ",
-        "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት በትክክል እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ማውጫው ወይም በአሳሽ ማውጫው ውስጥ 'ወደ መነሻ ማያ ገጽ ያክሉ' ወይም 'መተግበሪያን ጫን' የሚል ቁልፍ ይፈልጉና ጠቅ ያድርጉት",
-        "'nostalgiatok ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-        "የተሰራው በ ddyson bang-ura (በቅጽል ስሙ peilamed / פילמד) <br><br> ከ stack overflow እና ከጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peilamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
-        "መመሪያዎችን እይ", "「」 | 『』 | ሙሉ ማያ ገጽ አለ :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ", "ቪዲዮዎ በመጫን ላይ ነው",
-        "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከአለፈው ጊዜ በዚሁ ምርጥ ትዝታ ይደሰቱ",
-        "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ <br> ለማንኛውም ስላጋሩ እናመሰግናለን",
-        "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፈልግ", "በመፈለግ ላይ..."
-    ],
-    "ber": [
-        "ⵙⵖ", "nostalgiaTok", "peiLamed", "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ?", "ⴰⴼⵔⵓ", "ⵉⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
-        "ⵎⴰⵏ ⵜⵉⵣⵉ ⵏ ⵓⵣⵎⵣ ⵓⴽⴽⴰⵏ ⵜⵍⵍⵉⴷ ⴷⵉⵙ ⵜⵏⵓⵙⵜⴰⵍⵊⵉⵜ?<br><span class='nstlower'>(ⵎⴷ. 2022, ⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2021 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
-        "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⵙⵜⵉ ⵢⴰⵏ, ⵢ⼒ ⴰⴷ ⵉⴱⴷⴷⴻⵍ ⴱⵄⴷ)</span>",
-        "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⵙⵜⵉ ⵢⴰⵏ, ⵢ⼒ ⴰⴷ ⵉⴱⴷⴷⴻел ⴱⵄⴷ)</span>",
-        " ⵏ ", "", "", "ⵉⴳ ⵜⵔⵉⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵏⵓⵙⵜⴰⵍⵊⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⵜ ⴷⵖⵉ", "ⵉⵖ ⵓⵔ ⵜⵔⵉⴷ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⴰⵔ ⴷ ⵏⵜⴰⵡⵉ ⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
-        "ⴱⴰⵀⵔⴰ ⴳⵓⵜⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⴰⵔ ⵉⵜⵜⴰⵡⵉ ⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵔ ⵢⴰⵇⵇⵍ...", "", "ⵙⵜⵉ ⵡⴰⴷ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰⴷ&nbsp;",
-        "ⵉⵥⵕ ⵜⵉⵏⵓⵙⵜⴰⵍⵊⵉⵢⵉⵏ ⵜⵢⴰⵃⴼⴰⴹⵏⵉⵏ", "ⵡⴰⴷ ⴷⵉⵇⵇⵍⵏ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰⴷ", "ⴰⵍⵙ ⴰⵔⵣⵣⵓ", "ⵓⵔⵣⵓ ⴼⵉⴷⵢⵓ",
-        "ⴱⴷⴷⴻⵍ ⵉⵙⵎ", "ⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⴰⵥⵕⵏⵉⵏ ⵉⵣⵡⴰⵔⵏ", "ⵎⴰⵏ ⵉⵎⵓⵔⵏ, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⵢⴰⴷⴷ ⵜ", "ⵜⵉⴽⴽⵍⵜ ⵉⴳⴳⵓⵔⴰⵏ ⵍⵍⵉ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiatok",
-        "ⵊⴱⴷ ⵢⵉ ⵙ ⵓⵙⵜⵉⵢ ⵍⵍⵉ ⵜⵔⵉⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴳⵉⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ", "ⵎⴰⵕ", "ⵉⴱⵔ",
-        "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵔ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵢⵓ", "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓ", "ⵖⵓⵛⵜ",
-        "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2021 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ", "ⴳⵔ 2021 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ",
-        "ⵙⵓⵔⴼ, ⴰⵍⵙ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ ☺", "ⵓⵅⵅ !", "ⵢⴰⵏ ⵓⴼⵔⵉⵙ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴱⴰⵀⵔⴰ<br>ⴰⵍⵙ ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴽⵓⵍⵍⵓ ⵜⵢⴰⵥⵕⵏ",
-        "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔcomponent_libraryⵣⵣⵓ ⵡⴰⴷ", "ⵙⵓⵍ ⴰⵔ ⵢⴰⵇⵇⵍ", "ⴰⵎⵓⵔⴰⵔ ⴰⵔ ⵉⵜⵜⵎⵓⵙⵙⵓ ⵡⴰⵃⴷⵓⵙ ⵉⴳ ⴷ ⵍⴽⵎⵏ ⴼⵉⴷⵢⵓⵜⵏ",
-        "✅ -> ❌", "❌ -> ✅", "ⴰⵟⵟⴼ ⴷⴰⵖ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼාරⵉⵙ ⵏ 🇸🇱", "ⵙⵉⴷⴼ ⴰⵎⴰⴽⵔⴰⴷ ⴽⵓⵍⵍⵓ", "ⴼⴼⵓⵖ ⴳ ⵜⴰⵍⴳⴰⵎⵜ ⴰⴷ",
-        "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⴰⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵏⵙⵉ'", "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰタルⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵏⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⴰⴷ ⴰⵎ ⴰⵙնⵙི'",
-        "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰタルⴳⴰⵎⵜ '𐄛' --> 'ⴼⵙⵔ, ⵃⴼⴹ ⴷ ⴱⴹⵓ' --> 'ⵙⴱⴷⴷ ⴰⵙնសⵉ'", "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰⵍⴳⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> 'ⵔⵏⵓ ⵙ ⵓⴷⵓⴽ'",
-        "ⵏⵖ ⵜⴽﻠⵉⴽⵉⴷ ⴼ ⵜⴰଲﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> 'ⵙⴱⴷⴷ ⴰⵙնⵙི' ⵏⵖ 'ⵔⵏⵓ ⵙ ⴰⴼⵔⴰⴳ ⵏ ⵓⵙⵏⵓⴱⴳ'", "ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⴰタルﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ --> ⵔⵏⵓ ⵙ ⴰⴼראⴳ ⵏ ⵓⵙնⵓⴱገ",
-        "ⵓⵔ ⵙⵙⵉⵏⵅ ⴱⴰⵀⵔⴰ ⵎⴰⵏⵎⴽ ⴰⵔ ⵜⵎⵙⴰⵔ ⴳ ⵓⵎⵙ glycolysis ⵏⵏⴽ <br> ⵎⴰⵛ膩 ⴰⵔⵣⵣⵓ ⴼ ⵜⵇⴼⵍⵜ 'ⵔⵏⵓ ⵙ ⴰⴼⵔⴰⴳ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙնⵙི' ⴳ ⵜⴰལﮕⴰﻤⵜ ⵏ ⵓⴱⴹⴰ",
-        "ⴽⵍⵉⴽⵉ ⴼ 'ⵙⴱⴷⴷ nostalgiatok'<br>", "ⵜⴽⵍⵉⴽⵉⴷ ⴼ ⵜⵇⴼⵍⵜ ⴰⴷ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-        "ⵉⵙⴽⵔ ⵜ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ peilamed / פילמד) <br><br> ⵙ ⵜⵡⵉⵙⵉ ⵏ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ai debugging <br><br> ⴰⵙⵓⵏⴼ ⵙⵖ peilamed <br><br> ⴰⴼාරⵉⵙ ⵏ ⵙﻴⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⵉⵍⵉⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
-        "ⵥⵕ ⵉⵙⵡⵉⵏ", "「」 | 『』 | ⴰⵎⴰⴽⵔⴰⴷ ⴽⵓⵍⵍⵓ ⵍⵍⴰ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵔⵉ ⴱⵍⴰ ⵡⴰⴷ :)", "ⴱⴹⵓ ⴼⵉⴷⵢⵓ", "ⴼⵉⴷⵢⵓ ⵏⵏⴽ ⴰⵔ ⵢⴰⵇⵇⵍ",
-        "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⴰⵀⵔⴰ :)", "ⵜⵢⴰⵏⵙⴰⵖ, ⵜⴰནⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵓⵎⵔⵜ ⵙ ⵓⵙⴽⵜⵉ ⵡⴰⴷ ⵏ ⵓⵣⵎⵣ ⵉⵣⵔⵉⵏ",
-        "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼⵍⵓⵍ ⵏⵏⴽ, ⴰⵢⴰ ⵅⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ <br> ⵜⴰནⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ",
-        "ⴰⵔⵣⵣⵓ ⵎⴰⵏ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔ ⵉⵔⵣⵣⵓ..."
-    ],
-    "kri": [
-        "by", "nostalgiaTok", "peiLamed", "wetin na yu nem?", "neks", "yu", "nostalgia",
-        "usay tɛm yu de fil am sɔf we yu de tɔk bawt yu pas tɛm?<br><span class='nstLower'>(ɛgzampul 2022, sɔma 2023, maj 2021 - sprin 2023)</span>",
-        "uskr噴etɔ? <br><span class='nstLower'>(ol wan nɔmɔ, yu kin chenj am leta)</span>",
-        "wetin na di tɔpik?<br><span class='nstlower'>(ol wan nɔmɔ, yu kin chenj am leta)</span>",
-        " in ", "", "", "if yu wan sev yu nostalgia fɔ leta, gi am nem ya", "ɔ yu nɔ sev am, dat fayn sef", "wi de pul yu vido dɛm",
-        "bɔku bɔku dɛm", "pleya", "dis wan de ple vido dɛm", "e de lod...", "", "pik dis wan&nbsp;-&nbsp;", "ebis dis wan&nbsp;",
-        "luk di nostalgia dɛm we yu sev", "di neks wan&nbsp;-&nbsp;", "ɔpshɔn dɛm", "➢", "bɔku mɔ fɔ dis", "faynd agɛn", "opin vido",
-        "chenj nem", "di vido dɛm we yu nɔ luk yɛt nɔmɔ", "wetin de bi, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mɛnd am", "di las tɛm we yu yuz nostalgiatok",
-        "dragg mi go na di ɔpshɔn we yu wan", "sprin", "sɔma", "fɔl", "winta", "fɔstɛm na di", "midul na di", "let tɛm na di", "jan",
-        "fɛb", "maj", "epr", "me", "jun", "jul", "ɔg", "sɛp", "ɔkt", "nɔv", "dis", "januari", "fɛbuari", "maj", "epril", "me",
-        "jun", "julai", "ɔgɔst", "sɛptɛmba", "ɔktoba", "nɔvɛmba", "disɛmba", "pas 2021 duya", "wɛl, bifo dis ia duya",
-        "bitwin 2021 - naw duya", "sɔri, tray agɛn duya", "tɛnki fɔ dat sef ☺", "waw!", "sɔmtin nɔ wǝk fayn<br>tray fɔ faynd agɛn",
-        "yu luk ɔl", "yu dɔn luk ɔl di vido dɛm fɔ dis faynd", "e de lod yɛt", "di pleya go skrol inmsɛlf we di vido dɛm kam",
-        "✅ -> ❌", "❌ -> ✅", "hold am agɛn fɔ chenj am to 2x spid", "ad", "mek na 🇸🇱", "mek e ful skrin", "kɔmɔt na dis mɛnu",
-        "kredit dɛm", "ɔ klik di '𐄛' mɛnu --> 'instɔl di app'", "ɔ klik di '𐄛' mɛnu --> 'apps' --> 'instɔl dis sayt lǝk app'",
-        "ɔ klik di '𐄛' mɛnu --> 'cast, sev, ɛn shia' --> 'instɔl di app'", "ɔ klik di shia mɛnu --> 'ad am na dock'",
-        "ɔ klik di shia mɛnu --> 'instɔl di app' ɔ 'ad am na yu om skrin'", "klik di shia mɛnu --> ad am na yu om skrin",
-        "a nɔ sho fine-fine usay fɔ du am na yu brausa <br> bɔt luk fɔ sɔmtin lǝk 'ad am na yu om skrin' ɔ 'instɔl di app' butɔn na di shia mɛnu ɔ brausa mɛnu dɛn klik am",
-        "klik 'instɔl nostalgiatok'<br>", "prɛs dis butɔn ya <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-        "ddyson bang-ura na in mek am (we dɛn de kɔl peilamed / פילמד) <br><br> ɛlp kɔmɔt na stack overflow ɛn lili bit fɔ ai debugging <br><br> peilamed na in dǝzayn am <br><br> maranza tin kɔmɔt na sierra leone 🇸🇱 <br><br> fri palestine 🇵🇸🇸🇩🇨🇩",
-        "luk di dırɛkshɔn dɛm", "「」 | 『』 | ful skrin de :)", "yuz mi bifo dat wan :)", "shia vido", "yu vido de lod",
-        "tɛnki sef :)", "a dɔn kɔpi am, tɛnki fɔ shia :)", "ɛnjoy dis fayn tin kɔmɔt na yu pas tɛm",
-        "shia nɔ de wǝk na yu brausa, so a dɔn kɔpi di link bifo dat <br> tɛnki fɔ shia sef", "faynd tin dɛm we lǝk dis",
-        "usay yu bin de faynd bifo", "faynd nyu wan", "e de faynd..."
-    ],
-    "ko": [
-        "작성자:", "nostalgiaTok", "peiLamed", "이름이 무엇인가요?", "다음", "당신의", "추억",
-        "어떤 시대의 추억을 찾고 계신가요?<br><span class='nstLower'>(예: 2022, 2023 여름, 2021 3월 - 2023 봄)</span>",
-        "어떤 크리에이터인가요?<br><span class='nstLower'>(한 명만 선택, 나중에 변경 가능)</span>",
-        "어떤 주제인가요?<br><span class='nstLower'>(한 가지만 선택, 나중에 변경 가능)</span>",
-        "의 ", "", "", "나중을 위해 이 추억을 저장하고 싶다면 여기에 이름을 지정하세요", "이름을 안 정해도 괜찮아요", "비디오를 찾아내는 중",
-        "엄청나게 많네요", "플레이어", "이 플레이어는 비디오를 재생합니다", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
-        "저장된 추억 보기", "다음 항목&nbsp;-&nbsp;", "옵션", "➢", "이 플레이어 더 보기", "다시 검색", "비디오 열기", "이름 변경",
-        "시청하지 않은 비디오만", "반가워요, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "됐어요", "마지막으로 nostalgiaTok을 사용한 시간",
-        "원하는 옵션으로 나를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
-        "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
-        "9월", "10월", "11월", "12월", "제발 2021년 이후로요", "음, 제발 올해 이전으로요", "제발 2021년에서 지금 사이로요",
-        "죄송합니다, 제발 다시 시도해보세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
-        "이 검색어에 대한 모든 비디오를 시청하셨습니다", "아직 로딩 중", "비디오가 준비되면 플레이어가 자동으로 스크롤됩니다", "✅ -> ❌",
-        "❌ -> ✅", "2배속으로 전환하려면 다시 길게 누르세요", "광고", "🇸🇱의 제품", "전체 화면으로 보기", "이 메뉴 나가기",
-        "크레딧", "또는 '𐄛' 메뉴 클릭 --> '앱 설치'", "또는 '𐄛' menu --> '앱' --> '이 사이트를 앱으로 설치' 클릭",
-        "또는 '𐄛' menu --> '전송, 저장 및 공유' --> '앱 설치' 클릭", "또는 공유 메뉴 클릭 --> 'Dock에 추가'",
-        "또는 공유 메뉴 클릭 --> '앱 설치' 또는 '홈 화면에 추가'", "공유 메뉴 클릭 --> 홈 화면에 추가",
-        "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치' 같은 버튼을 찾아 클릭해 보세요",
-        "'nostalgiaTok 설치' 클릭<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-        "제작: ddyson bang-ura (aka peiLamed / פילמד) <br><br> stack overflow 및 약간의 AI 디버깅 도움 <br><br> 디자인: peiLamed <br><br> 시에라리온 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
-        "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 나를 사용하세요 :)", "비디오 공유", "비디오를 로딩 중입니다",
-        "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "과거로의 짜릿한 시간 여행을 즐기세요",
-        "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다 <br> 어쨌든 공유해 주셔서 고마워요",
-        "유사한 항목 검색", "검색 기록", "새로 검색", "검색 중..."
-    ],
-    "he": [
-        "על ידי", "nostalgiaTok", "peiLamed", "מה שמך?", "הבא", "שלך", "נוסטלגיה",
-        "לאיזו תקופת זמן אתה מתגעגע?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2021 - אביב 2023)</span>",
-        "איזה יוצר?<br><span class='nstLower'>(בחר אחד, ניתן לשינוי מאוחר יותר)</span>",
-        "איזה נושא?<br><span class='nstLower'>(בחר אחד, ניתן לשינוי מאוחר יותר)</span>",
-        " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך לאחר כך, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
-        "המון סרטונים", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
-        "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
-        "סרטונים שלא נצפו בלבד", "מה המצב, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-        "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaTok",
-        "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
-        "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני", "יולי",
-        "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2021 בבקשה", "טוב, לפני השנה הזו בבקשה", "בין 2021 לעכשיו בבקשה",
-        "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
-        "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעו", "✅ -> ❌", "❌ -> ✅",
-        "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
-        "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
-        "או לחץ על תפריט '𐄛' --> 'הזרמה, שמירה ושיתוף' --> 'התקן אפליקציה'", "או לחץ על תפריט השיתוף --> 'הוסף ל-Dock'",
-        "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
-        "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או בתפריט הדפדפן ולחץ עליו",
-        "לחץ 'התקן את nostalgiaTok'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-        "נוצר על ידי ddyson bang-ura (הידוע כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים עם בינה מלאכותית <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> שחררו את פלסטין 🇵🇸🇸🇩🇨🇩",
-        "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען", "תודה בכל מקרה :)",
-        "הועתק, תודה על השיתוף :)", "תהנה מפיצוץ זה מהעבר", "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום <br> תודה על השיתוף בכל מקרה",
-        "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש..."
-    ]
+  "en-US": [
+    "by", //0
+    "nostalgiaTok", //1
+    "peiLamed", //2
+    "what's your name? <br><span class='nstLower'>hit enter afterwards ☺️</span>", //3
+    "next", //4
+    "your", //5
+    "nostalgia", //6
+    "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
+    "what creator?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //8
+    "what topic?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //9
+    "'s ", //10
+    "", //11
+    "", //12
+    "if you wanna save your nostalgia for later, name it here", //13
+    "or not, thats ok", //14
+    "fishing out your videos", //15
+    "a whole lot of 'em", //16
+    "player", //17
+    "ts plays videos", //18
+    "loading...", //19
+    "", //20
+    "choose this one&nbsp;-&nbsp;", //21
+    "delete this one&nbsp;", //22
+    "view saved nostalgias", //23
+    "next one&nbsp;-&nbsp;", //24
+    "options", //25
+    "➢", //26
+    "more of ts", //27
+    "search again", //28
+    "open video", //29
+    "change name", //30
+    "unseen vids only", //31
+    "what's good, ", //32
+    "anqrzfeubxkmlpwhdvocty", //33
+    "abcd_efghijklmn_opqrstudvwxyz_", //34
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
+    "nvm", //36
+    "last time you used nostalgiaTok", //37
+    "drag me to the option you want", //38
+    "spring", //39
+    "summer", //40
+    "fall", //41
+    "winter", //42
+    "early", //43
+    "mid", //44
+    "late", //45
+    "jan", //46
+    "feb", //47
+    "mar", //48
+    "apr", //49
+    "may", //50
+    "jun", //51
+    "jul", //52
+    "aug", //53
+    "sep", //54
+    "oct", //55
+    "nov", //56
+    "dec", //57
+    "january", //58
+    "february", //59
+    "march", //60
+    "april", //61
+    "may", //62
+    "june", //63
+    "july", //64
+    "august", //65
+    "september", //66
+    "october", //67
+    "november", //68
+    "december", //69
+    "past 2021 plzz", //70
+    "well, before this year plzz", //71
+    "between 2021 - now plzz", //72
+    "sorry, try again plzz", //73
+    "tysm btw ☺", //74
+    "oopsie!", //75
+    `something didn't work<br>try searching again`, //76
+    "all watched", //77
+    "you watched all the videos for this search", //78
+    "still loading", //79
+    "the player will auto-scroll when videos arrive", //80
+    "✅ -> ❌", //81
+    "❌ -> ✅", //82
+    "hold again to toggle 2x speed", //83
+    "advertisement", //84
+    "product of 🇸🇱", //85
+    "go fullscreen", //86
+    "exit this menu", //87
+    "credits", //88
+    "or click the '𐄛' menu --> 'install app'", //89
+    "or click the '𐄛' menu --> 'apps' --> 'install this site as an app'", //90
+    "or click the '𐄛' menu --> 'cast, save, and share' --> 'install app'", //91
+    "or click the share menu --> 'add to dock'", //92
+    "or click the share menu --> 'install app' or 'add to home screen' ", //93
+    "click the share menu --> add to home screen", //94
+    "i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
+    "click 'install nostalgiaTok'<br>", //96
+    "hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
+    "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
+    "see directions", //99
+    "「」 | 『』 | fullscreen available :)", //100
+    "use me instead :)", //101
+    "share video", //102
+    "your video is loading", //103
+    "thx btw :)", //104
+    "copied, thx 4 sharing :)", //105
+    "enjoy this blast from the past", //106
+    "sharing doesn't work on your browser <br> use 'open video' and then share from there", //107
+    "search similar", //108
+    "search history", //109
+    "search new", //110
+    "searching..." //111
+  ],
+  "ja": [
+    "によって", "nostalgiaTok", "peiLamed",
+    "お名前は何ですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
+    "次へ", "あなたの", "ノスタルジー",
+    "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2021年3月 - 2023年春)</span>",
+    "どのクリエイターですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
+    "どのトピックですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
+    "の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
+    "動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
+    "これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
+    "動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaTokを使用した日時",
+    "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
+    "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
+    "9月", "10月", "11月", "12月", "2021年以降でお願いします", "というか、今年より前でお願いします",
+    "2021年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
+    "正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
+    "まだ読み込み中", "動画が届くとプレイヤーが自動スクロールします本地", "✅ -> ❌", "❌ -> ✅",
+    "長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
+    "または「𐄛」メニュー --> 「アプリをインストール」をクリック",
+    "または「𐄛」メニュー --> 「アプリ」 --> 「このサイトをアプリとしてインストール」をクリック",
+    "または「𐄛」メニュー --> 「キャスト、保存、共有」 --> 「アプリをインストール」をクリック",
+    "または共有メニュー --> 「ドックに追加」をクリック",
+    "または共有メニュー --> 「アプリをインストール」または「ホーム画面に追加」をクリック",
+    "共有メニューをクリック --> ホーム画面に追加",
+    "お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
+    "「nostalgiaTokをインストール」をクリック<br>",
+    "このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
+    "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
+    "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
+    "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました。いずれにせよ、共有してくれてありがとう！", //107
+    "類似の検索", "検索履歴", "新しく検索", "検索中..."
+  ],
+  "ar": [
+    "بواسطة", "nostalgiaTok", "peiLamed",
+    "ما اسمك؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
+    "التالي", "الخاص بك", "الحنين",
+    "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2021 - ربيع 2023)</span>",
+    "أي منشئ محتوى؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
+    "أي موضوع؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
+    " لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
+    "الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر this&nbsp;-&nbsp;", "احذف this&nbsp;",
+    "عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
+    "تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaTok",
+    "اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
+    "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
+    "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2021 رجاءً",
+    "حسنًا، قبل هذه السنة رجاءً", "بين 2021 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
+    "حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
+    "سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديو", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
+    "إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
+    "أو انقر على قائمة '𐄛' --> 'التطبيقات' --> 'تثبيت هذا الموقع كتطبيق'",
+    "أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
+    "أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
+    "لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> მაგრამ ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
+    "انقر فوق 'تثبيت nostalgiaTok'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
+    "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
+    "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
+    "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك. شكراً للمشاركة على أي حال!", //107
+    "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث..."
+  ],
+  "es": [
+    "por", "nostalgiaTok", "peiLamed",
+    "¿cómo te llamas? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
+    "siguiente", "tu", "nostalgia",
+    "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2021 - primavera 2023)</span>",
+    "¿qué creador?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
+    "¿qué tema?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
+    "de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
+    "un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
+    "ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
+    "cambiar nombre", "solo videos no vistos", "¿qué tal, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaTok",
+    "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
+    "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
+    "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2021 porfa",
+    "bueno, antes de este año porfa", "entre 2021 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
+    "¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
+    "todavía cargando", "el reproductor se desplazará automáticamente cuando lleguen los videos", "✅ -> ❌", "❌ -> ✅",
+    "mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
+    "créditos", "o haz clic en el menú '𐄛' --> 'instalar aplicación'",
+    "o haz clic en el menú '𐄛' --> 'aplicaciones' --> 'instalar este sitio como una aplicación'",
+    "o haz clic en el menú '𐄛' --> 'transmitir, guardar y compartir' --> 'instalar aplicación'",
+    "o haz clic en el menú compartir --> 'añadir al dock'",
+    "o haz clic en el menú compartir --> 'instalar aplicación' o 'añadir a la pantalla de inicio'",
+    "haz clic en el menú compartir --> añadir a la pantalla de inicio",
+    "no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
+    "haz clic en 'instalar nostalgiaTok'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
+    "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
+    "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
+    "Compartir no funciona en tu navegador, así que copié el enlace en su lugar. ¡Gracias por compartir de todos modos!", //107
+    "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando..."
+  ],
+  "fr": [
+    "par", "nostalgiaTok", "peiLamed",
+    "quel est ton nom ? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
+    "suivant", "ton", "nostalgie",
+    "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2021 - printemps 2023)</span>",
+    "quel créateur ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
+    "quel sujet ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
+    "de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
+    "on récupère tes vidéos", "un sacré paquet", "lecteur", "ceci lit des vidéos", "chargement...", "", "choisis celle-ci&nbsp;-&nbsp;",
+    "supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
+    "rechercher à nouveau", "ouvrir la vidéo", "changer de nom", "vidéos non vues uniquement", "quoi de neuf, ",
+    "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
+    "laisse tomber", "dernière fois que tu as utilisé nostalgiaTok", "glisse-moi vers l'option de ton choix", "printemps",
+    "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
+    "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+    "octobre", "novembre", "décembre", "après 2021 stp", "enfin, avant cette année stp", "entre 2021 et maintenant stp",
+    "désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
+    "tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
+    "le lecteur défilera automatiquement quand les vidéos arriveront", "✅ -> ❌", "❌ -> ✅",
+    "maintiens enfoncé pour basculer en vitesse 2x", "publicité", "produit de 🇸🇱", "plein écran", "quitter ce menu", "crédits",
+    "ou clique sur le menu '𐄛' --> 'installer l'application'",
+    "ou clique sur le menu '𐄛' --> 'applications' --> 'installer ce site en tant qu'application'",
+    "ou clique sur le menu '𐄛' --> 'diffuser, enregistrer et partager' --> 'installer l'application'",
+    "ou clique sur le menu de partage --> 'ajouter au dock'",
+    "ou clique sur le menu de partage --> 'installer l'application' ou 'ajouter à l'écran d'accueil'",
+    "clique sur le menu de partage --> ajouter à l'écran d'accueil",
+    "je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
+    "clique sur 'installer nostalgiaTok'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
+    "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
+    "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
+    "Le partage ne fonctionne pas sur votre navigateur, j'ai donc copié le lien à la place. Merci pour le partage en tout cas !", //107
+    "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours..."
+  ],
+  "de": [
+    "von", "nostalgiaTok", "peiLamed",
+    "wie heißt du? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
+    "weiter", "dein", "nostalgie",
+    "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2021 - frühjahr 2023)</span>",
+    "welcher creator?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
+    "welches thema?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
+    "von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
+    "deine videos werden herausgefischt", "eine ganze menge davon", "player", "dieser spielt videos ab", "lädt...", "",
+    "dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
+    "optionen", "➢", "mehr davon", "erneut suchen", "video öffnen", "name ändern", "nur ungesehene videos", "was geht, ",
+    "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "egal",
+    "letztes mal, als du nostalgiaTok benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
+    "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
+    "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
+    "nach 2021 bitte", "na ja, vor diesem jahr bitte", "between 2021 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
+    "vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
+    "du hast alle videos für diese suche angesehen", "lädt noch", "der player scrollt automatisch, wenn videos geladen sind",
+    "✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
+    "menü verlassen", "credits", "oder klicke auf das '𐄛'-menü --> 'app installieren'",
+    "oder klicke auf das '𐄛'-menü --> 'apps' --> 'diese website als app installieren'",
+    "oder klicke auf das '𐄛'-menü --> 'streamen, speichern und teilen' --> 'app installieren'",
+    "oder klicke auf das teilen-menü --> 'zum dock hinzufügen'",
+    "oder klicke auf das teilen-menü --> 'app installieren' oder 'zum startbildschirm hinzufügen'",
+    "klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
+    "ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
+    "klicke auf 'nostalgiaTok installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
+    "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
+    "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
+    "Teilen funktioniert in deinem Browser nicht, deshalb habe ich stattdessen den Link kopiert. Danke fürs Teilen übrigens!", //107
+    "ähnliche suchen", "suchverlauf", "neu suchen", "sucht..."
+  ],
+  "pt": [
+    "por", "nostalgiaTok", "peiLamed",
+    "qual o seu nome? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
+    "seguinte", "seu", "nostalgia",
+    "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2021 - primavera de 2023)</span>",
+    "qual criador?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
+    "qual tema?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
+    "de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
+    "um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
+    "ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
+    "alterar nome", "apenas vídeos não vistos", "e aí, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaTok",
+    "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
+    "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
+    "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2021 por favor",
+    "bem, antes deste ano por favor", "entre 2021 e agora por favor", "desculpe, tente de novo por favor",
+    "muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
+    "você assistiu a todos os vídeos desta busca", "ainda carregando", "o player vai rolar automaticamente quando os vídeos chegarem",
+    "✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
+    "sair deste menu", "créditos", "ou clique no menu '𐄛' --> 'instalar aplicativo'",
+    "ou clique no menu '𐄛' --> 'aplicativos' --> 'instalar este site como aplicativo'",
+    "ou clique no menu '𐄛' --> 'transmitir, salvar e compartilhar' --> 'instalar aplicativo'",
+    "ou clique no menu de compartilhamento --> 'adicionar ao dock'",
+    "ou clique no menu de compartilhamento --> 'instalar aplicativo' ou 'adicionar à tela inicial'",
+    "clique no menu de compartilhamento --> adicionar à tela inicial",
+    "não tenho certeza de como fazer no seu navegador <br> mais procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
+    "clique em 'instalar nostalgiaTok'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
+    "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartir vídeo",
+    "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
+    "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
+    "buscar semelhantes", "histórico de buscas", "nova busca", "buscando..."
+  ],
+  "zh-cn": [
+    "由", "nostalgiaTok", "peiLamed",
+    "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
+    "下一个", "你的", "怀旧",
+    "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2021年3月 - 2023年春季)</span>",
+    "哪位创作者？<br><span class='nstLower'>(请固定选择一位或不选，稍后可更改)</span>",
+    "什么主题？<br><span class='nstLower'>(请固定选择一个或不选，稍后可更改)</span>",
+    "的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
+    "超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
+    "查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
+    "仅看未看过的视频", "嗨，最近怎么样，", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaTok",
+    "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
+    "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
+    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2021年之后的吧", "好吧，求今年之前的吧", "求2021年到现在之间的吧",
+    "抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
+    "你已看完了此搜索下的所有视频", "还在加载中", "视频到达后播放器会自动滚动", "✅ -> ❌", "❌ -> ✅",
+    "再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
+    "或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
+    "或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
+    "我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
+    "点击“安装 nostalgiaTok”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
+    "查看指南", "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
+    "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
+    "搜索相似", "搜索历史", "搜索全新", "正在搜索..."
+  ],
+  "hi": [
+    "द्वारा", "nostalgiaTok", "peiLamed",
+    "आपका नाम क्या है? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
+    "आगे", "आपका", "पुरानी यादें",
+    "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2021 - वसंत 2023)</span>",
+    "कौन सा क्रिएटर?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
+    "कौन सा विषय?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
+    " का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
+    "आपके वीडियो निकाले जा रहे हैं", "बहुत सारे वीडियो हैं", "प्लेयर", "यह वीडियो चलाता है", "लोड हो रहा है...", "",
+    "इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
+    "इसके बारे में और जानें", "फिर से खोजें", "वीडियो खोलें", "नाम बदलें", "केवल अनदेखे वीडियो", "क्या चल रहा है, ",
+    "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
+    "रहने दो", "पिछली बार आपने nostalgiaTok का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
+    "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
+    "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
+    "कृपया 2021 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2021 और अब के बीच का दें",
+    "क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
+    "सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
+    "वीडियो आने पर प्लेयर अपने आप स्क्रॉल करेगा", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
+    "विज्ञापन", "🇸🇱 का उत्पाद", "पूर्ण स्क्रीन करें", "इस मेनू से बाहर निकलें", "क्रेडिट",
+    "या '𐄛' मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें'",
+    "या '𐄛' मेनू पर क्लिक करें --> 'ऐप्स' --> 'इस साइट को ऐप के रूप में इंस्टॉल करें'",
+    "या '𐄛' मेनू पर क्लिक करें --> 'कास्ट, सहेजें और साझा करें' --> 'ऐप इंस्टॉल करें'",
+    "या साझा करें मेनू पर क्लिक करें --> 'डॉक में जोड़ें'",
+    "या साझा करें मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें' या 'होम स्क्रीन पर जोड़ें'",
+    "साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
+    "मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
+    "'nostalgiaTok इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
+    "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
+    "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
+    "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने इसकी जगह लिंक कॉपी कर लिया है। फिर भी साझा करने के लिए धन्यवाद!", //107
+    "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
+  ],
+  "am": [
+    "በ", "nostalgiaTok", "peiLamed",
+    "ስምህ ማን ነው? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
+    "ቀጣይ", "የእርስዎ", "ትዝታ",
+    "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2021 - ጸደይ 2023)</span>",
+    "የትኛው ፈጣሪ?<br><span class='nstLower'>(ከአንድ ሰው ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
+    "ምን ርዕስ?<br><span class='nstlower'>(ከአንድ ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
+    " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
+    "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
+    "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት",
+    "ስም ቀይር", "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiatokን ለመጨረሻ ጊዜ የተጠቀሙበት",
+    "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
+    "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
+    "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2021 በኋላ ይሁን እባክህ",
+    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2021 እና አሁን መካከል ይሁን እባክህ", "አዘንባለሁ፣ እባክህ እንደገና ሞክር",
+    "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!", "የሆነ ነገር አልሰራም<br>እባክህ እንደገና ለመፈለግ ሞክር", "ሁሉም ታይተዋል",
+    "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ቪዲዮዎች ሲደርሱ ማጫወቻው በራሱ ይሸብልላል", "✅ -> ❌",
+    "❌ -> ✅", "ወደ 2 እጥፍ ፍጥነት ለመቀየር እንደገና ተጭነው ይቆዩ", "ማስታወቂያ", "የ 🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ",
+    "ከዚህ ምናሌ ውጣ", "ምስጋናዎች", "ወይም '𐄛' ምናሌን ጠቅ ያድርጉ --> 'መተግበሪያ ጫን'",
+    "ወይም '𐄛' ምናሌን ጠቅ ያድርጉ --> 'መተግበሪያዎች' --> 'ይህንን ጣቢያ እንደ መተግበሪያ ጫን'",
+    "ወይም '𐄛' ምናሌን ጠቅ ያድርጉ --> 'አስተላልፍ፣ አስቀምጥ እና አጋራ' --> 'መተግበሪያ ጫን'",
+    "ወይም የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> 'ወደ ዶክ አክል'",
+    "ወይም የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> 'መተግበሪያ ጫን' ወይም 'ወደ መነሻ ማያ ገጽ አክል'",
+    "የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> ወደ መነሻ ማያ ገጽ አክል",
+    "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ምናሌው ወይም በአሳሽ ምናሌው ውስጥ 'ወደ መነሻ ማያ ገጽ አክል' ወይም 'መተግበሪያ ጫን' የሚል ቁልፍ ይፈልጉ እና ጠቅ ያድርጉት",
+    "'nostalgiaTok ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "በ ddyson bang-ura (በቅጽል ስሙ peiLamed / פילמד) የተሰራ <br><br> ከ stack overflow እና ጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peiLamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
+    "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
+    "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
+    "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ። ለማንኛውም ስላጋሩ እናመሰግናለን!", //107
+    "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ..."
+  ],
+  "ber": [
+    "ⵙ", "nostalgiaTok", "peiLamed",
+    "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
+    "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
+    "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2021 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
+    "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
+    "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
+    " ⵏ ", "", "", "ⵉⴳ ⵜⵅⵙⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⴰⵙ ⴷⵖⵉ", "ⵏⵖ ⵓⵔⵓ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⵏⵙⵙⵓⴼⵖ ⴷ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
+    "ⴱⵣⵣⴰⴼ ⴷⵉⴳⵙⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⵉⵜⵜⵓⵔⴰⵔ ⵉⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵙⴰⵍⵉ...", "", "ⴰⴼⵔ ⵡⴰ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰ&nbsp;",
+    "ⵥⵕ ⵜⵉⵡարգⵉⵡⵉⵏ ⵜⵢⵓⵃⴼⴹⵏ", "ⵡⴰ ⴷⵉⴳⵙⵏ ⴱⵄⴷ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰ", "ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴰⵔⵥⵎ ⵉⴼⵉⴷⵢⵓ",
+    "ⴱⴷⴷⵍ ⵉⵙⵎ", "ⵉⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⵓⵥⵕⴰⵏ  wale ⴷ", "ⵎⴰⵅ ⵉⵅⴱⴰⵔⵏ, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaTok",
+    "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
+    "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
+    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2021 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
+    "ⴱⵉⵏ 2021 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
+    "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⴰⵎⵓⵔⴰⵔ ⴰⴷ ⵉⵜⵜⴷⴷⵓ ⵡⴰⵃⴷⵓⵙ ⵉⴳ ⴷ ⵍⴽⵎⵏ ⵉⴼⵉⴷⵢⵓⵜⵏ",
+    "✅ -> ❌", "❌ -> ✅", "ⵄⴰⵡⴷ ⴹⵕⵥ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵙ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼⴰⵔⵉⵙ ⵏ 🇸🇱", "ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ", "ⴼⴼⵖ ⵙⴳ ⵜⵍⴳⴰⵎⵜ ⴰ",
+    "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⵡⴰ ⴰⵎ ⴰⵙⵉⵜ'",
+    "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⴰⵣⵓⵣⵣⵡ, ⴰⵃⴼⴰⴹ ⴷ ⵓⴱⴹⴰ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⴰⵔⵏⵓ ⵙ dock'",
+    "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⵏⵖ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ'", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ",
+    "ⵓⵔ ⵙⵙⵉⵏⵅ ⵎⴰⵏⵎⴽ ⴰⴷ ⵜ ⵜⴳⴷ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ <br> ⵎⴰⵛⴰ ⴰⵔⵣⴰ ⴼ ⵓⵇⴼⵍ ⴰⵎ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⴳ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ ⵏⵖ ⵓⵎⵙⵏⴼﻠول ⵜⴽⵍⵉⴽⵢⴷ ⴼⵍⴰⵙ",
+    "ⵜⴽⵍⵉⴽⵢ ⴼ 'ⵙⴱⴷⴷ nostalgiaTok'<br>", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵓⵇⴼⵍ ⵡⴰ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "ⵉⵜⵢⵓⵙⴽⴰⵔ ⵙ ⵓⴼⵓⵙ ⵏ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ ⵢⴰⴹⵏ peiLamed / פילמד) <br><br> ⵜⴰⵡⵉⵣⴰ ⵙⴳ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ⵓⵙⴳⴳⴷ ⵙ ai <br><br> ⴰⵙⵓⵏⴼⵔ ⵏ peiLamed <br><br> ⴰⴼⴰⵔⵉⵙ ⵏ ⵙⵉⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⴰⵍⴰⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
+    "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
+    "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
+    "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ, ⴰይⴰ ଖⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ. ⵜⴰⵏⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ!", //107
+    "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ..."
+  ],
+  "kri": [
+    "by", "nostalgiaTok", "peiLamed",
+    "wetin na yu nem? <br><span class='nstLower'>klik enter bɛfۆ yu kۆمۆት ☺️</span>", //3
+    "nɛks", "yu", "nۆstalgia",
+    "ustɛm yu de തിങ്ക bawt di tɛm we dۆn pas?<br><span class='nstLower'>(ɛgsaम्पल: 2022, bɔr tɛm 2023, mाch 2021 - prाय tɛm 2023)</span>",
+    "us wan mek am?<br><span class='nstLower'>(pik wan ɔ nۆ pik wan sef, yu sa chenj am bɛfɔ)</span>",
+    "us tɔpik?<br><span class='nstLower'>(pik wan ɔ nۆ pik wan sef, yu sa chenj am bɛfɔ)</span>",
+    " in ", "", "", "if yu want fۆ sev di tɛm we dۆn pas fۆ bɛfɔ, chenj di nem na ya", "ɔ nۆ chenj am, ɔlrait de sef", "wi de pul yu vॉdiۆ dɛm",
+    "bۆku dɛm de sef", "pleya", "dis wan de ple vॉdiۆ dɛm", "e de lۆd...", "", "pik dis wan&nbsp;-&nbsp;", "pۆl dis wan&nbsp;",
+    "si di wan dɛm we dۆn sev", "nɛks wan&nbsp;-&nbsp;", "ɔpsiɔn dɛm", "➢", "mۆ fۆ dis wan", "fri fۆ fayan am dाgɛn", "opin vॉdiۆ",
+    "chenj nem", "di wan we yu nۆ si bɛfۆ nɔmɔ", "wetin de bۆd, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mाynd", "las tɛm we yu yuz nostalgiaTok",
+    "drाg me kۆ di ɔpsiɔn we yu want", "prाय tɛm", "bɔr tɛm", "ren tɛm", "kۆl tɛm", "fۆ bɛfۆ na", "mॉdil na", "las na", "jan", "fɛb",
+    "mाch", "eprॉ", "me", "jun", "jul", "ɔgɔ", "sɛp", "ɔktۆ", "nۆv", "dॉs", "januari", "fɛbuari", "mाch", "eprॉ", "me",
+    "jun", "julai", "ɔgɔs", "sɛptɛmba", "ɔktۆba", "nۆvɛmba", "dॉsɛmba", "pas tɛm 2021 dۆ dۆ", "wɛl, bɛfۆ dis yia dۆ dۆ",
+    "bॉtwin 2021 - nाw dۆ dۆ", "kाय, fri fۆ trाy dाgɛn dۆ dۆ", "tɛnki bۆku bɛfۆ dat ☺", "ɔps!", "sɔm tॉŋ nۆ wɛk bाŋ<br>fri fۆayan am dाgɛn",
+    "ɔl dۆn si", "yu dۆn si ɔl di vॉdiۆ fۆ dis fayan tɛm", "e de lۆd sef", "di pleya sa rۆl fۆ insef tɛm di vॉdiۆ dɛm kाm",
+    "✅ -> ❌", "❌ -> ✅", "ۆl dाgɛn fۆ sॉ chenj di spॉd fۆ tाym tʊ", "adyۆv", "mۆna fۆ 🇸🇱", "go big skrin", "kۆmۆት na dis mɛnyu",
+    "nem fۆ di wan dɛm", "ɔ klik di '𐄛' mɛnyu --> 'sɛt am na fۆn'", "ɔ klik di '𐄛' mɛnyu --> 'ap dɛm' --> 'sɛt dis wan fۆ ap'",
+    "ɔ klik di '𐄛' mɛnyu --> 'shia, sev ɛn sho' --> 'sɛt am na fۆn'", "ɔ klik di shia mɛnyu --> 'add to dock'",
+    "ɔ klik di shia mɛnyu --> 'sɛt am na fۆn' ɔ 'add to home screen'", "klik di shia mɛnyu --> add to home screen",
+    "a nۆ dۆn fayan us tɛm fۆ mek am na yu brausa <br> bɔt fayan bɔtin lाyk 'add to home screen' ɔ 'sɛt am na fۆn' na di shia mɛnyu ɔ brausa mɛnyu ɛn klik am",
+    "klik 'sɛt am nostalgiaTok'<br>", "klik dis bɔtin <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "ddyson bang-ura (we dɛm de kɔl peiLamed / פילמד) na in mek am <br><br> help kाm fۆ stack overflow & sɔm ai dॉbɔg tɛm <br><br> peiLamed na in chenj am fayan <br><br> mۆna fۆ salone 🇸🇱 <br><br> fri palɛstाyn 🇵🇸🇸🇩🇨🇩",
+    "si us tɛm fۆ mek am", "「」 | 『』 | big skrin de sef :)", "yuz me bɛfۆ dat :)", "shia vॉdiۆ", "yu vॉdiۆ de lۆd na",
+    "tɛnki bɛfۆ dat :)", "kۆpi dۆn, tɛnki fۆ shia :)", "fri fۆ si wetin dۆn pas fۆ bɛfۆ",
+    "shia nۆ de wǝk na yu brausa, so a dۆn kۆpi di link bifo dat. tɛnki fۆ shia sef!", //107
+    "fayan wan lाyk am", "tɛm fۆ di wan we yu fayan", "fayan nyu wan", "e de fayan am..."
+  ],
+  "ko": [
+    "에 의해", "nostalgiaTok", "peiLamed",
+    "이름이 무엇인가요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
+    "다음", "당신의", "향수",
+    "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2021년 3월 - 2023년 봄)</span>",
+    "어떤 크리에이터인가요?<br><span class='nstLower'>(한 명만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
+    "어떤 주제인가요?<br><span class='nstLower'>(하나만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
+    "의 ", "", "", "나중에 보려고 향수를 저장하고 싶다면 여기에 이름을 입력하세요", "아니어도 괜찮습니다", "동영상을 가져오는 중",
+    "엄청나게 많네요", "플레이어", "동영상을 재생하는 중", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
+    "저장된 향수 보기", "다음&nbsp;-&nbsp;", "옵션", "➢", "자세히 보기", "다시 검색", "동영상 열기", "이름 변경",
+    "시청하지 않은 동영상만", "잘 지냈어요, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaTok을 사용한 시간",
+    "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
+    "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
+    "9월", "10월", "11월", "12월", "2021년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2021년에서 현재 사이로 해주세요",
+    "죄송합니다, 다시 시도해 주세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
+    "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "동영상이 도착하면 플레이어가 자동으로 스크롤됩니다",
+    "✅ -> ❌", "❌ -> ✅", "다시 길게 누르면 2배속 전환", "광고", "🇸🇱의 제품", "전체 화면", "이 메뉴 나가기", "크레딧",
+    "또는 '𐄛' 메뉴 --> '앱 설치'를 클릭하세요",
+    "또는 '𐄛' 메뉴 --> '앱' --> '이 사이트를 앱으로 설치'를 클릭하세요",
+    "또는 '𐄛' 메뉴 --> '이용, 저장 및 공유' --> '앱 설치'를 클릭하세요", "또는 공유 메뉴 --> 'dock에 추가'를 클릭하세요",
+    "또는 공유 메뉴 --> '앱 설치' 또는 '홈 화면에 추가'를 클릭하세요", "공유 메뉴 클릭 --> 홈 화면에 추가",
+    "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치'와 같은 버튼을 찾아 클릭해 보세요",
+    "'nostalgiaTok 설치'를 클릭하세요<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "제작: ddyson bang-ura (별명 peiLamed / פילמד) <br><br> stack overflow의 도움 및 약간의 AI 디버깅 <br><br> 디자인: peiLamed <br><br> 시에라리온의 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
+    "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 저를 사용하세요 :)", "동영상 공유",
+    "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
+    "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다. 어쨌든 공유해 주셔서 고마워요!", //107
+    "유사한 검색", "검색 기록", "새로 검색", "검색 중..."
+  ],
+  "he": [
+    "על ידי", "nostalgiaTok", "peiLamed",
+    "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
+    "הבא", "שלך", "נוסטלגיה",
+    "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2021 - אביב 2023)</span>",
+    "איזה יוצר?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
+    "איזה נושא?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
+    " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך למאוחר יותר, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
+    "המון מהם", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
+    "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
+    "סרטונים שלא נצפו בלבד", "מה קורה, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaTok",
+    "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
+    "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
+    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2021 בבקשה", "ובכן, לפני השנה הזו בבקשה",
+    "בין 2021 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
+    "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעו", "✅ -> ❌", "❌ -> ✅",
+    "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
+    "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
+    "או לחץ על תפריט '𐄛' --> 'הזרמה, שמירה ושיתוף' --> 'התקן אפליקציה'", "או לחץ על תפריט השיתוף --> 'הוסף ל-Dock'",
+    "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
+    "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או הדפדפן ולחץ עליו",
+    "לחץ על 'התקן את nostalgiaTok'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
+    "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩",
+    "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
+    "תודה בכל מקרה :)", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
+    "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום. תודה על השיתוף בכל מקרה!", //107
+    "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש..."
+  ]
 };
 var navLang = navigator.language;
 if(words[navLang] == undefined){
@@ -815,7 +839,8 @@ function howToFullscreen(a,b){
     hTFMessage = document.createElement('div');
     hTFMessage.setAttribute('class','hTFMessage');
     hTFMessage.append(document.createElement('b'));
-    hTFMessage.append(document.createElement('p'))
+    hTFMessage.append(document.createElement('p'));
+    hTFMessage.querySelector('p').setAttribute('class','scrollable');
     if(a){
         hTFMessage.querySelector('b').innerText = words[navLang][b[0]];
         hTFMessage.querySelector('p').innerHTML = words[navLang][b[1]];
