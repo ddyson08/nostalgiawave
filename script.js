@@ -1202,7 +1202,18 @@ function firefoxFullsc() {
   hTFEnd();
 }
 function editModeAnimation() {
+    for (var yes of [...document.querySelectorAll('.yes')]) {
+            yes.style.opacity = 0;
+        }
+        for (var no of [...document.querySelectorAll('.no')]) {
+            no.style.opacity = 0;
+        }
+        try{
     player.pauseVideo();
+        }
+        catch(e){
+
+        }
     document.querySelector('#pgTitle').style.opacity = 1;
     document.querySelector('#pgTitle').querySelector('b').innerText = words[navLang][109];
     document.querySelector('#pgTitle').querySelector('button').innerText = "X";
@@ -1399,6 +1410,7 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
+    var oldPlayer;
        for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 1;
         }
@@ -1432,10 +1444,15 @@ function pgCancel(text) {
            document.querySelector('#pgTitle').style.opacity = 0;
             setTimeout(function () {
                 document.querySelector('#pgTitle').style.display = "none";
-                document.querySelector("#allHold").style.border = ""
+                document.querySelector("#allHold").style.border = "";
+                requestTheFullscreen({'yes':true,'no':false}[fullsc]);
             }, 500);
         }, 100);
     } else {
+        var voHold = [];
+        for(var Aiy of [...document.querySelectorAll('.videoOrbit')]){
+            voHold.push(Aiy);
+        }
         document.querySelector('#uvula').style.display = "none";
         pg1.remove();
         if ([...document.querySelectorAll('.pgButtonHold')].length < 2) {
@@ -1443,16 +1460,15 @@ function pgCancel(text) {
         } else {
             document.querySelector('.primaryButton').setAttribute('class', '');
         }
-       
+       oldPlayer = document.querySelector('#videoFrame');
         document.querySelector('.uBall').innerHTML = `<div class='teShape'></div><div class='teShape'></div>`;
         swapTe(17, function () { }, 18, function () { }, true);
         document.querySelector('#textEnter').innerHTML += ` <div id="displayVideos">
-            <div id="videoFrame" src="" frameborder="0" allow="autoplay">
-            </div>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>
         </div>`;
+        document.querySelector('#displayVideos').append(oldPlayer);
          var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
@@ -1467,8 +1483,12 @@ function pgCancel(text) {
                                             }
                                 
                                       // console     
-                                      player.destroy();
-        onYouTubeIframeAPIReady();
+                                      //player.destroy();
+        if (typeof YT !== 'undefined' && YT.Player) {
+            createOrReloadYouTubePlayer(avcp);
+        } else {
+            onYouTubeIframeAPIReady();
+        }
         //player.loadVideoById(allVideos[currentPlace]);
         document.querySelector('#fullscreenButton').style.display = "block";
         runAnimation(true, true);
@@ -1483,7 +1503,23 @@ function pgCancel(text) {
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
                                             giveError();
+                                            try{
+                                            for(var Aiyy of voHold){
+                                                ah.append(Aiyy);
+                                            }
+                                            requestTheFullscreen({'yes':true,'no':false}[fullsc]);
+                                        }catch(e){
+
+                                        }
                                         }  else {
+                                            try{
+                                            for(var Aiyy of voHold){
+                                                ah.append(Aiyy);
+                                            }
+                                            requestTheFullscreen({'yes':true,'no':false}[fullsc]);
+                                        }catch(e){
+
+                                        }
                                               var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
@@ -1500,9 +1536,13 @@ function pgCancel(text) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+                                            try{
                                             player.loadVideoById(avcp)
+                                            }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
+                                            try{
                                              player.loadVideoById(avcp);
+                                            }catch(e){}
                                             },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
@@ -1514,10 +1554,10 @@ function pgCancel(text) {
                                            // alert([allVideos[((currentPlace)+1)], currentPlace+1, document.querySelector('#loadNext').getAttribute('src')])
                                          console.error(allVideos);
                                         }},600)
+                                       // document.querySelector('#videoOverlay').style.marginLeft="0"
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
-    allVideos = [];
 try{
     document.querySelector('#uvula').style.zIndex = "1";
     //document.querySelector('#playground').scrollTo(0, 0);
@@ -1586,7 +1626,7 @@ document.querySelector('#playground').style.opacity = 0;
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>`;
             document.body.querySelector('#allHold').append(dv);
-            onYouTubeIframeAPIReady();
+            
             document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
          //   document.querySelector("#rightButton").setAttribute("onclick", "displaySwipe('r')");
             setTimeout(function () {
@@ -2664,7 +2704,9 @@ function runAnimation(bypass, bypass2) {
     currentPlace = 0;
     }
     //if(document.querySelector('iframe#videoFrame') == null){
+    allVideos = [];
     requestVideos(currentToken);                      
+   
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
     setTimeout(function () {
@@ -3084,9 +3126,9 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                           const element = document.elementFromPoint(event.clientX, event.clientY);
                                                                           console.log([!(element && element.getAttribute('id') == 'fullscreenButton'), element.getAttribute('id')])
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
-                                                                     // playPause +=1; 
+                                                                     playPause +=1; 
                                                                      if(!withinSpeedUp){
-                                                                    if(player.getPlayerState() == 1){
+                                                                    if(playPause % 2 == 0){
                                                                          player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
@@ -4157,9 +4199,15 @@ if (currentPlace < allVideos.length-3) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+                                            try{
                                             player.loadVideoById(avcp)
+                                            }
+                                            catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
+                                            try{
                                              player.loadVideoById(avcp);
+                                            }
+                                            catch(e){}
                                             },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
@@ -4236,9 +4284,13 @@ if (currentPlace < allVideos.length-3) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+                                            try{
                                             player.loadVideoById(avcp)
+                                            }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
+                                            try{
                                              player.loadVideoById(avcp);
+                                            }catch(e){}
                                             },100);
                                           // alert([allVideos[currentPlace], currentPlace])
                                           try{
@@ -5188,7 +5240,7 @@ allVideos.unshift(shareVarr);
 console.log(allVideos);
             }
         
-    
+     onYouTubeIframeAPIReady();
 }
 
 async function requestVideosInner(value) {
@@ -5230,7 +5282,37 @@ function giveError3() {
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var ErrCount = 0;
+      function createOrReloadYouTubePlayer(avcp) {
+        if(document.querySelector('div#videoFrame') != null){
+        player = new YT.Player('videoFrame', {
+          height: '390',
+          width: '640',
+          videoId: avcp,
+          playerVars: {
+            'playsinline': 1,
+            'autoplay': 1,
+            'muted': autoplay,
+            'loop': 1,
+            'playlist': avcp,
+            'showcontrols': 0
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange,
+            'onError': function(event) {
+              console.log(event);
+            }
+          }
+        });
+    }
+      }
+
       function onYouTubeIframeAPIReady() {
+        try{
+             requestTheFullscreen({'yes':true,'no':false}[fullsc]);
+        }catch(e){
+        }
+       
         if(allVideos.length == 0){
             allVideos == [...Ads[1]];
         }
@@ -5246,43 +5328,23 @@ function giveError3() {
                                             }else{
                                                  document.querySelector('#fullscreenButton').innerText = '↘';
                                             }
-		try{
-        player = new YT.Player('videoFrame', {
-          height: '390',
-          width: '640',
-          videoId: avcp,
-          playerVars: {
-            'playsinline': 1,
-            'autoplay': 1,
-            'muted': autoplay,
-            'loop':1,
-            'playlist': avcp,
-            'showcontrols': 0
-          },
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange,
-            'onError': function(event) {
-               console.log(event);
-            }
-          }
-        });
-    }
-    catch(e){
-        console.log(e);
-        if(ErrCount < 4){
-            ErrCount++;
-            console.log('EC<4');
-        currentPlace += 1;
-        onYouTubeIframeAPIReady();
-        }else{
-            giveError();
-            ErrCount = 0;
+                                          
+        try{
+          createOrReloadYouTubePlayer(avcp);
         }
-
-
-}
-       }
+        catch(e){
+            console.log(e);
+            if(ErrCount < 4){
+                ErrCount++;
+                console.log('EC<4');
+                currentPlace += 1;
+                onYouTubeIframeAPIReady();
+            }else{
+                giveError();
+                ErrCount = 0;
+            }
+        }
+      }
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
@@ -5304,7 +5366,9 @@ function giveError3() {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+                                            try{
                                             player.loadVideoById(avcp)
+                                            }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
         readyy = true;
         player.pauseVideo();
