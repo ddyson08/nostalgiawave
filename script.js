@@ -1283,9 +1283,6 @@ function eMA2(simmilar, pgGivenData, neww) {
         allVideos.push(Ads[1]);
         allVideos.push(Ads[1]);
     }
-    for(var iA of [...document.querySelectorAll('.videoOrbit')]){
-        iA.remove();
-    }
     var pg = document.querySelector('#playground');
     pg.scrollTo(0, pg.scrollHeight);
     if (canEMA) {
@@ -1402,6 +1399,12 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
+       for (var yes of [...document.querySelectorAll('.yes')]) {
+            yes.style.opacity = 1;
+        }
+        for (var no of [...document.querySelectorAll('.no')]) {
+            no.style.opacity = 1;
+        }
     var ah = document.querySelector('#allHold');
     var pg = document.querySelector('#playground');
     var pg1 = pg.querySelectorAll('.pgMain')[pg.querySelectorAll('.pgMain').length - 1];
@@ -1514,6 +1517,7 @@ function pgCancel(text) {
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+    allVideos = [];
 try{
     document.querySelector('#uvula').style.zIndex = "1";
     //document.querySelector('#playground').scrollTo(0, 0);
@@ -2659,9 +2663,9 @@ function runAnimation(bypass, bypass2) {
     if(!bypass2){
     currentPlace = 0;
     }
-    if(document.querySelector('iframe#videoFrame') == null){
+    //if(document.querySelector('iframe#videoFrame') == null){
     requestVideos(currentToken);                      
-    }              
+    //}              
     document.querySelector('#pgTitle').style.opacity = 0;
     setTimeout(function () {
         document.querySelector('#pgTitle').style.display = "none";
@@ -4358,7 +4362,7 @@ function swipeDown() {
                 setTimeout(function () {
                     orbit.style.left = sVl[fullsc][2];
                     orbit.style.top = "calc(0em + " + sVt[fullsc][1] + ")";
-                }, 125);
+                }, 125*2);
                 
                 setTimeout(function () {
                     orbit.remove();
@@ -4388,10 +4392,10 @@ function swipeDown() {
                                 orbit.remove();
                                 canSwipe = true;
                                 //bj.remove();
-                            }, 125)
-                        }, 125);
-                    }, 125);
-                }, 125);
+                            }, 125*2)
+                        }, 125*2);
+                    }, 125*2);
+                }, 125*2);
             }
 
             if (o2.y >= (window.innerHeight - (6.1 * (parseFloat(getComputedStyle(orbit.parentNode).fontSize))
@@ -4411,11 +4415,11 @@ function swipeDown() {
                             orbit.remove();
                             canSwipe = true;
                            // bj.remove();
-                        }, 125)
-                    }, 125);
-                }, 125);
+                        }, 125*2)
+                    }, 125*2);
+                }, 125*2);
             }
-        }, 125);
+        }, 125*2);
 
         /*
         canSwipe = false;
