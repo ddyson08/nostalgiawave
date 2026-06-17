@@ -42,7 +42,7 @@ const words = {
     "next", //4
     "your", //5
     "nostalgia", //6
-    "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
+    "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
     "what creator?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //8
     "what topic?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //9
     "'s ", //10
@@ -71,7 +71,7 @@ const words = {
     "anqrzfeubxkmlpwhdvocty", //33
     "abcd_efghijklmn_opqrstudvwxyz_", //34
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
-    "nvm", //36
+    "nevermind", //36
     "last time you used nostalgiaWave", //37
     "drag me to the option you want", //38
     "spring", //39
@@ -105,9 +105,9 @@ const words = {
     "october", //67
     "november", //68
     "december", //69
-    "past 2021 plzz", //70
+    "past 2019 plzz", //70
     "well, before this year plzz", //71
-    "between 2021 - now plzz", //72
+    "between 2019 - now plzz", //72
     "sorry, try again plzz", //73
     "tysm btw ☺", //74
     "oopsie!", //75
@@ -146,13 +146,145 @@ const words = {
     "search similar", //108
     "search history", //109
     "search new", //110
-    "searching..." //111
+    "searching...", //111
+    "sharing didn't work", //112
+    "select this link and copy it :)" //113
   ],
+  "ru": [
+"от", //0
+"nostalgiaWave", //1
+"peiLamed", //2
+"Как тебя зовут? <br><span class='nstLower'>После этого нажмите Enter ☺️</span>", //3
+"next", //4
+"your", //5
+"nostalgia", //6
+"По какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
+"Какой автор?<br><span class='nstLower'>(придерживайтесь одного или ни одного, можно изменить позже)</span>", //8
+"Какая тема?<br><span class='nstLower'>(придерживайтесь одного или ни одного, можно изменить позже)</span>", //9
+"'s ", //10
+"", //11
+"", //12
+"Если хотите сохранить свою ностальгию на потом, назовите её здесь", //13
+
+"Или нет, это нормально", //14
+"Поиск ваших видео", //15
+"Их очень много", //16
+"плеер", //17
+"TS воспроизводит видео", //18
+"Загрузка...", //19
+"", //20
+"Выберите это, -", //21
+"Удалить это", //22
+"Просмотреть сохранённые ностальгии", //23
+"Следующее, -", //24
+"Параметры", //25
+"➢", //26
+"Ещё от TS", //27
+"Поиск снова", //28
+"Открыть видео", //29
+"Изменить имя", //30
+"Только непросмотренные видео", //31
+"Что хорошего, ", //32
+"anqrzfeubxkmlpwhdvocty", //33
+"abcd_efghijklmn_opqrstudvwxyz_", //34
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
+"неважно", //36
+"в прошлый раз, когда вы использовали nostalgiaWave", //37
+"перетащите меня к нужному варианту", //38
+"весна", //39
+"лето", //40
+"осень", //41
+"зима", //42
+"начало", //43
+"середина", //44
+"конец", //45
+"январь", //46
+"февраль", //47
+"март", //48
+"апрель", //49
+"май", //50
+"июнь", //51
+"июль", //52
+"авг", //53
+"сент", //54
+"окт", //55
+"ноя", //56
+"дек", //57
+"январь", //58
+"февраль", //59
+"март", //60
+"апрель", //61
+"май", //62
+"июнь", //63
+"июль", //64
+"август", //65
+"сентябрь", //66
+"октябрь", //67
+"ноябрь", //68
+"декабрь", //69
+"после 2019 года, пожалуйста", //70
+"ну, до этого года, пожалуйста", //71
+"между 2019 годом - сейчас, пожалуйста", //72
+"извините, попробуйте еще раз, пожалуйста", //73
+"большое спасибо, кстати ☺", //74
+"ой!", //75
+`что-то не получилось работа<br>попробуйте выполнить поиск снова`, //76
+"все просмотрено", //77
+"вы просмотрели все видео для этого поиска", //78
+
+"все еще загружается", //79
+
+"плеер будет автоматически прокручиваться по мере поступления видео", //80
+
+"✅ -> ❌", //81
+
+"❌ -> ✅", //82
+
+"удерживайте еще раз, чтобы переключить скорость в 2 раза", //83
+
+"реклама", //84
+
+"продукт 🇸🇱", //85
+
+"перейти в полноэкранный режим", //86
+
+"выйти из этого меню", //87
+
+"титры", //88
+"или нажмите меню '𐄛' --> 'установить приложение'", //89
+"или нажмите меню '𐄛' --> 'приложения' --> 'установить этот сайт как приложение'", //90
+"или нажмите меню '𐄛' --> 'транслировать, сохранять и делиться' --> 'установить приложение'", //91
+"или нажмите меню 'Поделиться' --> 'Добавить в док'", //92
+"или нажмите меню 'Поделиться' --> 'Установить приложение' или 'Добавить на главный экран'", //93
+
+"нажмите меню 'Поделиться' --> 'Добавить на главный экран'", //94
+"я не совсем уверен, как это сделать в вашем браузере, <br> но найдите кнопку, похожую на 'Добавить на главный экран' или 'Установить приложение', в меню 'Поделиться' или меню браузера и нажмите на нее'", //95
+"нажмите 'Установить nostalgiaWave'<br>", //96
+"нажмите эту кнопку <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97
+"создано ddyson bang-ura (aka peiLamed / פילמד) <br><br> помощь со Stack Overflow и немного отладки ИИ <br><br> разработано peiLamed <br><br> продукт из Сьерра-Леоне 🇸🇱 <br><br> свободная Палестина 🇵🇸🇸🇩🇨🇩", //98
+"см. указания", //99
+"「」 | 『』 | доступен полноэкранный режим :)", //100
+"используйте меня вместо :)", //101
+"поделиться видео", //102
+"ваше видео загружается", //103
+"спасибо, кстати :)", //104
+"скопировано, спасибо за то, что поделились :)", //105
+"наслаждайтесь этим приветом из прошлого", //106
+"совместное использование не работает в вашем браузере <br> используйте 'открыть видео', а затем поделитесь оттуда", //107
+
+"поиск похожих", //108
+"история поиска", //109
+"поиск новых", //110
+"поиск...", //111
+"совместное использование не сработало", //112
+"Выделите эту ссылку и скопируйте её :)" //113
+
+],
   "ja": [
     "によって", "nostalgiaWave", "peiLamed",
     "お名前は何ですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
-    "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2021年3月 - 2023年春)</span>",
+    "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2019年3月 - 2023年春)</span>",
     "どのクリエイターですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
     "どのトピックですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
     "の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
@@ -162,8 +294,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaWaveを使用した日時",
     "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
     "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
-    "9月", "10月", "11月", "12月", "2021年以降でお願いします", "というか、今年より前でお願いします",
-    "2021年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
+    "9月", "10月", "11月", "12月", "2019年以降でお願いします", "というか、今年より前でお願いします",
+    "2019年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
     "正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
     "まだ読み込み中", "動画が届くとプレイヤーが自動スクロールします本地", "✅ -> ❌", "❌ -> ✅",
     "長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
@@ -180,13 +312,13 @@ const words = {
     "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
     "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
     "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました。いずれにせよ、共有してくれてありがとう！", //107
-    "類似の検索", "検索履歴", "新しく検索", "検索中..."
+    "類似の検索", "検索履歴", "新しく検索", "検索中...", "うまくいきませんでした", "このリンクを選択してコピーしてください :)"
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
     "ما اسمك؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
     "التالي", "الخاص بك", "الحنين",
-    "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2021 - ربيع 2023)</span>",
+    "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2019 - ربيع 2023)</span>",
     "أي منشئ محتوى؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
     "أي موضوع؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
     " لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
@@ -196,8 +328,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaWave",
     "اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
     "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
-    "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2021 رجاءً",
-    "حسنًا، قبل هذه السنة رجاءً", "بين 2021 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
+    "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2019 رجاءً",
+    "حسنًا، قبل هذه السنة رجاءً", "بين 2019 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
     "حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
     "سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديو", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
     "إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
@@ -210,13 +342,13 @@ const words = {
     "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
     "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
     "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك. شكراً للمشاركة على أي حال!", //107
-    "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث..."
+    "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث...", "لم ينجح الأمر", "حدد هذا الرابط وانسخه :)"
   ],
   "es": [
     "por", "nostalgiaWave", "peiLamed",
     "¿cómo te llamas? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
     "siguiente", "tu", "nostalgia",
-    "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2021 - primavera 2023)</span>",
+    "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2019 - primavera 2023)</span>",
     "¿qué creador?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
     "¿qué tema?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
     "de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
@@ -226,8 +358,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaWave",
     "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
     "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
-    "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2021 porfa",
-    "bueno, antes de este año porfa", "entre 2021 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
+    "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2019 porfa",
+    "bueno, antes de este año porfa", "entre 2019 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
     "¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
     "todavía cargando", "el reproductor se desplazará automáticamente cuando lleguen los videos", "✅ -> ❌", "❌ -> ✅",
     "mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
@@ -243,13 +375,13 @@ const words = {
     "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
     "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
     "Compartir no funciona en tu navegador, así que copié el enlace en su lugar. ¡Gracias por compartir de todos modos!", //107
-    "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando..."
+    "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando...", "No funcionó", "Selecciona este enlace y cópialo :)"
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
     "quel est ton nom ? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
     "suivant", "ton", "nostalgie",
-    "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2021 - printemps 2023)</span>",
+    "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2019 - printemps 2023)</span>",
     "quel créateur ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
     "quel sujet ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
     "de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
@@ -260,7 +392,7 @@ const words = {
     "laisse tomber", "dernière fois que tu as utilisé nostalgiaWave", "glisse-moi vers l'option de ton choix", "printemps",
     "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
-    "octobre", "novembre", "décembre", "après 2021 stp", "enfin, avant cette année stp", "entre 2021 et maintenant stp",
+    "octobre", "novembre", "décembre", "après 2019 stp", "enfin, avant cette année stp", "entre 2019 et maintenant stp",
     "désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
     "tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
     "le lecteur défilera automatiquement quand les vidéos arriveront", "✅ -> ❌", "❌ -> ✅",
@@ -277,13 +409,13 @@ const words = {
     "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
     "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
     "Le partage ne fonctionne pas sur votre navigateur, j'ai donc copié le lien à la place. Merci pour le partage en tout cas !", //107
-    "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours..."
+    "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours...", "Ça n'a pas marché", "Sélectionnez ce lien et copiez-le :)"
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
     "wie heißt du? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
     "weiter", "dein", "nostalgie",
-    "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2021 - frühjahr 2023)</span>",
+    "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2019 - frühjahr 2023)</span>",
     "welcher creator?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
     "welches thema?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
     "von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
@@ -294,7 +426,7 @@ const words = {
     "letztes mal, als du nostalgiaWave benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
     "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
-    "nach 2021 bitte", "na ja, vor diesem jahr bitte", "between 2021 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
+    "nach 2019 bitte", "na ja, vor diesem jahr bitte", "between 2019 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
     "vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
     "du hast alle videos für diese suche angesehen", "lädt noch", "der player scrollt automatisch, wenn videos geladen sind",
     "✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
@@ -310,13 +442,13 @@ const words = {
     "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
     "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
     "Teilen funktioniert in deinem Browser nicht, deshalb habe ich stattdessen den Link kopiert. Danke fürs Teilen übrigens!", //107
-    "ähnliche suchen", "suchverlauf", "neu suchen", "sucht..."
+    "ähnliche suchen", "suchverlauf", "neu suchen", "sucht...", "Es hat nicht funktioniert", "Wähle diesen Link aus und kopiere ihn :)"
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
     "qual o seu nome? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
     "seguinte", "seu", "nostalgia",
-    "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2021 - primavera de 2023)</span>",
+    "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2019 - primavera de 2023)</span>",
     "qual criador?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
     "qual tema?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
     "de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
@@ -326,8 +458,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaWave",
     "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
     "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
-    "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2021 por favor",
-    "bem, antes deste ano por favor", "entre 2021 e agora por favor", "desculpe, tente de novo por favor",
+    "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2019 por favor",
+    "bem, antes deste ano por favor", "entre 2019 e agora por favor", "desculpe, tente de novo por favor",
     "muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
     "você assistiu a todos os vídeos desta busca", "ainda carregando", "o player vai rolar automaticamente quando os vídeos chegarem",
     "✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
@@ -343,13 +475,13 @@ const words = {
     "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartir vídeo",
     "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
     "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
-    "buscar semelhantes", "histórico de buscas", "nova busca", "buscando..."
+    "buscar semelhantes", "histórico de buscas", "nova busca", "buscando...", "não funcionou", "Selecione este link e copie-o :)"
   ],
   "zh-cn": [
     "由", "nostalgiaWave", "peiLamed",
     "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
-    "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2021年3月 - 2023年春季)</span>",
+    "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2019年3月 - 2023年春季)</span>",
     "哪位创作者？<br><span class='nstLower'>(请固定选择一位或不选，稍后可更改)</span>",
     "什么主题？<br><span class='nstLower'>(请固定选择一个或不选，稍后可更改)</span>",
     "的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
@@ -359,7 +491,7 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaWave",
     "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
-    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2021年之后的吧", "好吧，求今年之前的吧", "求2021年到现在之间的吧",
+    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "好吧，求今年之前的吧", "求2019年到现在之间的吧",
     "抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
     "你已看完了此搜索下的所有视频", "还在加载中", "视频到达后播放器会自动滚动", "✅ -> ❌", "❌ -> ✅",
     "再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
@@ -370,13 +502,13 @@ const words = {
     "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
     "查看指南", "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
     "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
-    "搜索相似", "搜索历史", "搜索全新", "正在搜索..."
+    "搜索相似", "搜索历史", "搜索全新", "正在搜索...", "没用", "选中此链接并复制 :)"
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
     "आपका नाम क्या है? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
     "आगे", "आपका", "पुरानी यादें",
-    "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2021 - वसंत 2023)</span>",
+    "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2019 - वसंत 2023)</span>",
     "कौन सा क्रिएटर?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
     "कौन सा विषय?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
     " का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
@@ -387,7 +519,7 @@ const words = {
     "रहने दो", "पिछली बार आपने nostalgiaWave का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
     "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
     "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
-    "कृपया 2021 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2021 और अब के बीच का दें",
+    "कृपया 2019 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2019 और अब के बीच का दें",
     "क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
     "सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
     "वीडियो आने पर प्लेयर अपने आप स्क्रॉल करेगा", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
@@ -404,13 +536,13 @@ const words = {
     "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
     "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
     "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने इसकी जगह लिंक कॉपी कर लिया है। फिर भी साझा करने के लिए धन्यवाद!", //107
-    "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है..."
+    "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है...", "काम नहीं किया", "इस लिंक को चुनें और कॉपी करें :)"
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
     "ስምህ ማን ነው? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
     "ቀጣይ", "የእርስዎ", "ትዝታ",
-    "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2021 - ጸደይ 2023)</span>",
+    "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2019 - ጸደይ 2023)</span>",
     "የትኛው ፈጣሪ?<br><span class='nstLower'>(ከአንድ ሰው ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
     "ምን ርዕስ?<br><span class='nstlower'>(ከአንድ ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
     " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
@@ -420,8 +552,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiaWaveን ለመጨረሻ ጊዜ የተጠቀሙበት",
     "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
     "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
-    "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2021 በኋላ ይሁን እባክህ",
-    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2021 እና አሁን መካከል ይሁን እባክህ", "አዘንባለሁ፣ እባክህ እንደገና ሞክር",
+    "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2019 በኋላ ይሁን እባክህ",
+    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2019 እና አሁን መካከል ይሁን እባክህ", "አዘንባለሁ፣ እባክህ እንደገና ሞክር",
     "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!", "የሆነ ነገር አልሰራም<br>እባክህ እንደገና ለመፈለግ ሞክር", "ሁሉም ታይተዋል",
     "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ቪዲዮዎች ሲደርሱ ማጫወቻው በራሱ ይሸብልላል", "✅ -> ❌",
     "❌ -> ✅", "ወደ 2 እጥፍ ፍጥነት ለመቀየር እንደገና ተጭነው ይቆዩ", "ማስታወቂያ", "የ 🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ",
@@ -437,13 +569,13 @@ const words = {
     "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
     "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
     "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ። ለማንኛውም ስላጋሩ እናመሰግናለን!", //107
-    "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ..."
+    "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ...", "አልሰራም", "ይህንን ሊንክ ምረጥና ኮፒ አድርገው :)"
   ],
-  "ber": [
+  "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
     "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
     "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
-    "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2021 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
+    "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2019 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
     "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
     "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
     " ⵏ ", "", "", "ⵉⴳ ⵜⵅⵙⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⴰⵙ ⴷⵖⵉ", "ⵏⵖ ⵓⵔⵓ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⵏⵙⵙⵓⴼⵖ ⴷ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
@@ -453,8 +585,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
     "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
-    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2021 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
-    "ⴱⵉⵏ 2021 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
+    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
+    "ⴱⵉⵏ 2019 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
     "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⴰⵎⵓⵔⴰⵔ ⴰⴷ ⵉⵜⵜⴷⴷⵓ ⵡⴰⵃⴷⵓⵙ ⵉⴳ ⴷ ⵍⴽⵎⵏ ⵉⴼⵉⴷⵢⵓⵜⵏ",
     "✅ -> ❌", "❌ -> ✅", "ⵄⴰⵡⴷ ⴹⵕⵥ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵙ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼⴰⵔⵉⵙ ⵏ 🇸🇱", "ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ", "ⴼⴼⵖ ⵙⴳ ⵜⵍⴳⴰⵎⵜ ⴰ",
     "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⵡⴰ ⴰⵎ ⴰⵙⵉⵜ'",
@@ -466,42 +598,129 @@ const words = {
     "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
     "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
     "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ, ⴰይⴰ ଖⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ. ⵜⴰⵏⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ!", //107
-    "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ..."
+    "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ...", "ⵓⵔ ⵉⵅⴻⴷⴷⴻⵎ ⴰⵔⴰ", "ⴼⵔⴻⵏ ⴰⵙⴻⵏⵇⴻⴷⴰ ⵓ ⵙⵏⵓⵍⴼⵓⵜ :)"
   ],
-  "kri": [
-    "by", "nostalgiaWave", "peiLamed",
-    "wetin na yu nem? <br><span class='nstLower'>klik enter bɛfۆ yu kۆمۆት ☺️</span>", //3
-    "nɛks", "yu", "nۆstalgia",
-    "ustɛm yu de തിങ്ക bawt di tɛm we dۆn pas?<br><span class='nstLower'>(ɛgsaम्पल: 2022, bɔr tɛm 2023, mाch 2021 - prाय tɛm 2023)</span>",
-    "us wan mek am?<br><span class='nstLower'>(pik wan ɔ nۆ pik wan sef, yu sa chenj am bɛfɔ)</span>",
-    "us tɔpik?<br><span class='nstLower'>(pik wan ɔ nۆ pik wan sef, yu sa chenj am bɛfɔ)</span>",
-    " in ", "", "", "if yu want fۆ sev di tɛm we dۆn pas fۆ bɛfɔ, chenj di nem na ya", "ɔ nۆ chenj am, ɔlrait de sef", "wi de pul yu vॉdiۆ dɛm",
-    "bۆku dɛm de sef", "pleya", "dis wan de ple vॉdiۆ dɛm", "e de lۆd...", "", "pik dis wan&nbsp;-&nbsp;", "pۆl dis wan&nbsp;",
-    "si di wan dɛm we dۆn sev", "nɛks wan&nbsp;-&nbsp;", "ɔpsiɔn dɛm", "➢", "mۆ fۆ dis wan", "fri fۆ fayan am dाgɛn", "opin vॉdiۆ",
-    "chenj nem", "di wan we yu nۆ si bɛfۆ nɔmɔ", "wetin de bۆd, ", "anqrzfeubxkmlpwhdvocty", "abcd_efghijklmn_opqrstudvwxyz_",
-    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "nɔ mाynd", "las tɛm we yu yuz nostalgiaWave",
-    "drाg me kۆ di ɔpsiɔn we yu want", "prाय tɛm", "bɔr tɛm", "ren tɛm", "kۆl tɛm", "fۆ bɛfۆ na", "mॉdil na", "las na", "jan", "fɛb",
-    "mाch", "eprॉ", "me", "jun", "jul", "ɔgɔ", "sɛp", "ɔktۆ", "nۆv", "dॉs", "januari", "fɛbuari", "mाch", "eprॉ", "me",
-    "jun", "julai", "ɔgɔs", "sɛptɛmba", "ɔktۆba", "nۆvɛmba", "dॉsɛmba", "pas tɛm 2021 dۆ dۆ", "wɛl, bɛfۆ dis yia dۆ dۆ",
-    "bॉtwin 2021 - nाw dۆ dۆ", "kाय, fri fۆ trाy dाgɛn dۆ dۆ", "tɛnki bۆku bɛfۆ dat ☺", "ɔps!", "sɔm tॉŋ nۆ wɛk bाŋ<br>fri fۆayan am dाgɛn",
-    "ɔl dۆn si", "yu dۆn si ɔl di vॉdiۆ fۆ dis fayan tɛm", "e de lۆd sef", "di pleya sa rۆl fۆ insef tɛm di vॉdiۆ dɛm kाm",
-    "✅ -> ❌", "❌ -> ✅", "ۆl dाgɛn fۆ sॉ chenj di spॉd fۆ tाym tʊ", "adyۆv", "mۆna fۆ 🇸🇱", "go big skrin", "kۆmۆት na dis mɛnyu",
-    "nem fۆ di wan dɛm", "ɔ klik di '𐄛' mɛnyu --> 'sɛt am na fۆn'", "ɔ klik di '𐄛' mɛnyu --> 'ap dɛm' --> 'sɛt dis wan fۆ ap'",
-    "ɔ klik di '𐄛' mɛnyu --> 'shia, sev ɛn sho' --> 'sɛt am na fۆn'", "ɔ klik di shia mɛnyu --> 'add to dock'",
-    "ɔ klik di shia mɛnyu --> 'sɛt am na fۆn' ɔ 'add to home screen'", "klik di shia mɛnyu --> add to home screen",
-    "a nۆ dۆn fayan us tɛm fۆ mek am na yu brausa <br> bɔt fayan bɔtin lाyk 'add to home screen' ɔ 'sɛt am na fۆn' na di shia mɛnyu ɔ brausa mɛnyu ɛn klik am",
-    "klik 'sɛt am nostalgiaWave'<br>", "klik dis bɔtin <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "ddyson bang-ura (we dɛm de kɔl peiLamed / פילמד) na in mek am <br><br> help kाm fۆ stack overflow & sɔm ai dॉbɔg tɛm <br><br> peiLamed na in chenj am fayan <br><br> mۆna fۆ salone 🇸🇱 <br><br> fri palɛstाyn 🇵🇸🇸🇩🇨🇩",
-    "si us tɛm fۆ mek am", "「」 | 『』 | big skrin de sef :)", "yuz me bɛfۆ dat :)", "shia vॉdiۆ", "yu vॉdiۆ de lۆd na",
-    "tɛnki bɛfۆ dat :)", "kۆpi dۆn, tɛnki fۆ shia :)", "fri fۆ si wetin dۆn pas fۆ bɛfۆ",
-    "shia nۆ de wǝk na yu brausa, so a dۆn kۆpi di link bifo dat. tɛnki fۆ shia sef!", //107
-    "fayan wan lाyk am", "tɛm fۆ di wan we yu fayan", "fayan nyu wan", "e de fayan am..."
-  ],
+ "kri": [ 
+"bay", //0 
+"nostaljiaWev", //1 
+"peiLamed", //2 
+"wetin na yu nem? <br><span class='nstLower'>hit enta afta ☺️</span>", //3 
+"nɛks", //4 
+"yu", //5 
+"nɔstaljia", //6 
+"wetin tɛm yu de nostaljik fɔ?<br><span class='nstLower'>(ex 2022, sɔma 2023, mar 2019 - spring 2023)</span>", //7 
+"wetin krieta?<br><span class='nstLower'>(stik to wan ɔ nɔ, yu kin chenj leta)</span>", //8 
+"wetin tɔpik?<br><span class='nstLower'>(stik to wan ɔ nɔ, yu kin chenj leta)</span>", //9 
+"'s ", //10 
+"", //11 
+"", //12 
+"if yu wan sev yu nostaljia fo leta, nem am ya", //13 
+"ɔ nɔto, dats ok", //14 
+"fishin out yu vidio dem", //15 
+"wan ol lot of 'em", //16 
+"plɛya", //17 
+"ts de ple vidio", //18 
+"we de lod...", //19 
+"", //20 
+"chuz dis wan&nbsp;-&nbsp;", //21 
+"dilit dis wan&nbsp;", //22 
+"luk sev nostaljia", //23 
+"nɛks wan&nbsp;-&nbsp;", //24 
+"opshɔn dɛn", //25 
+"➢", //26 
+"mɔ pan ts", //27 
+"sɔch bak", //28 
+"opin vidio", //29 
+"chenj nem", //30 
+"vids we nɔ de si nɔmɔ", //31 
+"wetin gud, ", //32 
+"anqrzfeubxkmlpwhdvokti", //33 
+"abcd_efghijklmn_opqrstudvwxyz_", //34 
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35 
+"kɔmɔt", //36 
+"las tɛm we yu yuz nostalgiaWave", //37 
+"drag mi to di opshɔn we yu want", //38 
+"spring", //39 
+"sɔm", //40 
+"fɔdɔm", //41 
+"winta", //42 
+"ali", //43 
+"mid", //44 
+"let", //45 
+"jan", //46 
+"feb", //47 
+"mar", //48 
+"apr", //49 we de tɔk bɔt 
+"may", //50 
+"jun", //51 
+"jul", //52 
+"ɔg", //53 
+"sɛp", //54 
+"ɔkt", //55 
+"nɔv", //56 
+"dɛk", //57 
+"janwari", //58 
+"februari", //59 
+"mach", //60 
+"epril", //61 
+"may", //62 
+"jun", //63 
+"julay", //64 
+"ɔgɔst", //65 
+"sɛptɛmba", //66 
+"ɔktoba", //67 
+"nɔvemba", //68 
+"disɛmba", //69 
+"pas 2019 plzz", //70 
+"wɛl, bifo dis ia plzz", //71 
+"bitwin 2019 - naw plzz", //72 
+"sɔri, tray bak plzz", //73 
+"tysm btw ☺", //74 we de sho aw fɔ du am 
+"oopsie!", //75 we de tɔk bɔt 
+`sɔntin nɔ bin wok<br>tray fɔ fɛn bak`, //76 
+"ɔl dɛn bin de wach", //77 
+"yu wach ol di vidio dem fo dis sach", //78 
+"stil de lod", //79 
+"di pleya go ɔto-skrol we vidio dɛn kam", //80 
+"✅ -> ❌", //81 
+"❌ -> ✅", //82 
+"hold bak fɔ toggle 2x spid", //83 
+"advatayzmɛnt", //84 
+"prɔdakt fɔ 🇸🇱", //85 
+"go fulskrin", //86 
+"kɔmɔt na dis mɛnyu", //87 
+"krɛdit dɛn", //88 
+"ɔ klik di '𐄛' mɛnyu --> 'instɔl ap'", //89 
+"ɔ klik di '𐄛' mɛnyu --> 'apps' --> 'instɔl dis sayt as ap'", //90 
+"ɔ klik di '𐄛' mɛnyu --> 'kas, sev, ɛn sheb' --> 'instɔl ap'", //91 
+"ɔ klik di sheri mɛnyu --> 'ad to dock'", //92 
+"ɔ klik di sheri mɛnyu --> 'instɔl ap' ɔ 'ad to hom skrin' ", //93 
+"klik di sheri mɛnyu --> ad to hom skrin", //94 
+"a nɔ rili shɔ aw fɔ du am na yu brawza <br> bɔt luk fɔ wan 'add to homescreen'-esque ɔ 'install app'-esque bɔtin na di sheri mɛnyu ɔ brawza mɛnyu ɛn klik dat", //95 
+"klik 'instɔl nostaljiaWev'<br>", //96 
+"hit dis bɔtin <br> <bɔtin id='nstFirefoxFullscreen'>「 」</bɔtin>", //97 
+"we ddyson bang-ura (aka peiLamed / פילמד) mek am <br><br> ɛp frɔm stak ɔvaflɔ & smɔl bit fɔ ai dibɔg <br><br> we peiLamed disayn am <br><br> prodakt fɔ siera liɔn 🇸🇱 <br><br> fri palestayn 🇵🇸🇸🇩🇨🇩", //98 
+"luk di dairekshɔn dɛn", //99 
+"「」 | 『』 | fulskrin de :)", //100 
+"yuz mi insted :)", //101 
+"shɛri vidio", //102 
+"yu vidio de lod", //103 
+"thx btw :)", //104 we de sho aw fɔ du am 
+"kɔpi, thx 4 sheb :)", //105 
+"ɛnjɔy dis blast frɔm di past", //106 
+"shɛrin nɔ de wok na yu brawza <br> yuz 'open video' ɛn afta dat sheri frɔm de", //107 
+"suk we fiba am", //108 
+"sech istri", //109 
+"sɔch nyu", //110 
+"we de luk fɔ...", //111 
+"sharing nɔ bin wok", //112 
+"tiise link raus suuche un kopiire :)"
+],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
     "이름이 무엇인가요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
     "다음", "당신의", "향수",
-    "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2021년 3월 - 2023년 봄)</span>",
+    "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2019년 3월 - 2023년 봄)</span>",
     "어떤 크리에이터인가요?<br><span class='nstLower'>(한 명만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
     "어떤 주제인가요?<br><span class='nstLower'>(하나만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
     "의 ", "", "", "나중에 보려고 향수를 저장하고 싶다면 여기에 이름을 입력하세요", "아니어도 괜찮습니다", "동영상을 가져오는 중",
@@ -511,7 +730,7 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
     "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
-    "9월", "10월", "11월", "12월", "2021년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2021년에서 현재 사이로 해주세요",
+    "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2019년에서 현재 사이로 해주세요",
     "죄송합니다, 다시 시도해 주세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
     "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "동영상이 도착하면 플레이어가 자동으로 스크롤됩니다",
     "✅ -> ❌", "❌ -> ✅", "다시 길게 누르면 2배속 전환", "광고", "🇸🇱의 제품", "전체 화면", "이 메뉴 나가기", "크레딧",
@@ -525,13 +744,13 @@ const words = {
     "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 저를 사용하세요 :)", "동영상 공유",
     "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
     "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다. 어쨌든 공유해 주셔서 고마워요!", //107
-    "유사한 검색", "검색 기록", "새로 검색", "검색 중..."
+    "유사한 검색", "검색 기록", "새로 검색", "검색 중...", "작동하지 않았습니다", "이 링크를 선택해서 복사하세요 :)"
   ],
   "he": [
-    "על ידי", "nostalgiaWave", "peiLamed",
+    "על ידי", "nostalgiaWave 🇵🇸", "peiLamed",
     "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
-    "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2021 - אביב 2023)</span>",
+    "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2019 - אביב 2023)</span>",
     "איזה יוצר?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
     "איזה נושא?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
     " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך למאוחר יותר, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
@@ -541,8 +760,8 @@ const words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaWave",
     "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
     "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
-    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2021 בבקשה", "ובכן, לפני השנה הזו בבקשה",
-    "בין 2021 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
+    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2019 בבקשה", "ובכן, לפני השנה הזו בבקשה",
+    "בין 2019 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
     "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעו", "✅ -> ❌", "❌ -> ✅",
     "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
     "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
@@ -550,17 +769,20 @@ const words = {
     "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
     "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או הדפדפן ולחץ עליו",
     "לחץ על 'התקן את nostalgiaWave'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩",
+    "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩 <br> עם פלשתינה חי",
     "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
     "תודה בכל מקרה :)", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
     "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום. תודה על השיתוף בכל מקרה!", //107
-    "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש..."
+    "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש...", "לא עבד", "תבחרו את הקישור הזה ותעתיקו אותו :)"
   ]
 };
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
         navLang = navLang.split('-')[0];
+         if(navLang == "ber"){
+            navLang = "zgh";
+        }
         if(words[navLang] == undefined){
             navLang = "en-US";
         }
@@ -648,7 +870,7 @@ function jumpLogo() {
     }, 450 * nsTimesNumber);
     setTimeout(function () {
         logo.style.transition = "0.5s";
-        logo.style.top = 0;
+        logo.style.top = "0px";
         logo.style.transition = "0.5s";
         var ll = logo.getBoundingClientRect().width;
         logo.style.width = ll + "px";
@@ -691,6 +913,15 @@ function startFollow() {
   //  document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
 
 }
+function fallbackShare(data) {
+    shareWorks = false;
+  // Example: Fallback to copying the link to the clipboard
+  try{
+    evaluateFullscreenReminder(112);
+  }catch(e){
+
+  }
+}
 function endFollow() {
     SF = false;
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#creator')) {
@@ -727,10 +958,11 @@ function endFollow() {
       
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')) {
+        if(shareWorks){
         var Bbb = document.createElement('button');
         Bbb.addEventListener('click', async () => {
   const shareData = {
-    title: 'nostalgiaTok',
+    title: 'nostalgiaWave',
     text: words[navLang][106],
     url: window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)) 
   };
@@ -744,7 +976,7 @@ function endFollow() {
     } catch (error) {
       // Handles user cancellation or system errors
       console.log('Sharing failed or was canceled:', error.message);
-       giveError(true);
+       fallbackShare(shareData);
     }
   } else {
     // 3. Fallback behavior if Web Share API is missing
@@ -752,20 +984,14 @@ function endFollow() {
   }
 });
 
-function fallbackShare(data) {
-  // Example: Fallback to copying the link to the clipboard
-  try{
-    window.open(data.url);
-  }catch(e){
 
-  }
-}
         document.body.append(Bbb);
         Bbb.click();
-        Bbb.remove();
-      evaluateFullscreenReminder(105);
+}else{
+    prompt(words[navLang][113],window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
+}
     }
-    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')){
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
@@ -784,7 +1010,7 @@ var canEMAog = true;
 function openAh() {
     var ah = document.querySelector('#allHold');
     ah.style.transition = "0.5s";
-    ah.style.top = "0";
+    ah.style.top = "calc(env(safe-area-inset-top)"
     ah.style.left = "0";
     ah.style.width = "100dvw";
     ah.style.height = "100dvh";
@@ -819,27 +1045,40 @@ const isMobile = () => {
   return /Mobi|Android/i.test(navigator.userAgent);
 };
 function hTFEnd(){
+    try{
    player.unMute();
-hTFCover.style.opacity = "0";
+    }catch(e){
+
+    }
+   for(var i of document.querySelectorAll('.hTFMessage')){
+    try{
+document.querySelectorAll('.hTFCover')[0].style.opacity = "0";
 setTimeout(function(){
-    hTFCover.remove()
+    document.querySelectorAll('.hTFCover')[0].remove()
 }, 500)
-hTFMessage.style.opacity = "0";
+    }catch(e){}
+    try{
+document.querySelectorAll('.hTFMessage')[0].style.opacity = "0";
 setTimeout(function(){
-    hTFMessage.remove()
+    document.querySelectorAll('.hTFMessage')[0].remove()
 }, 500)
+    }catch(e){}
 document.querySelector('#allHold').style.marginLeft = "0vw";
+   }
+
+
 }
 function howToFullscreen(a,b,searchError){
     setTimeout(function(){
     player.mute();
     document.querySelector('#allHold').style.marginLeft = "-50vw";
     hTFCover = document.createElement('div');
+    hTFCover.setAttribute('class','hTFCover');
     hTFCover.style.mask = "linear-gradient(to right, black 1%, transparent 99%)";
     hTFCover.style.width = "50dvw";
     hTFCover.style.height = "100dvh";
     hTFCover.style.left = "0";
-    hTFCover.style.top = "0";
+    hTFCover.style.top = "env(safe-area-inset-top)";
     hTFCover.style.zIndex = "100000";
     hTFCover.style.position = "absolute";
     hTFCover.style.opacity = "0";
@@ -923,7 +1162,7 @@ if(isMobile() && bowserr == "Chrome" && iOS == false){
 if(isMobile() && iOS){
     numberToBeSeen = 94;
 }
-if(isMobile() == false && bowserr == "Firefox"){
+if(bowserr == "Firefox"){
     numberToBeSeen == 97
 }
 if(numberToBeSeen < 94){
@@ -948,6 +1187,19 @@ hTFMessage.querySelector('p').innerHTML = words[navLang][96] + words[navLang][nu
     hTFCover.style.opacity = "1";
     },50)
 },100)
+try{document.querySelector('#nstFirefoxFullscreen').addEventListener('click','firefoxFullsc()')}catch(e){}
+}
+function firefoxFullsc() {
+  var doc = document.documentElement; // Targets the entire page
+  
+  if (doc.requestFullscreen) {
+    doc.requestFullscreen().catch(err => {
+      evaluateFullscreenReminder(112);
+    });
+  }else{
+    evaluateFullscreenReminder(112);
+  }
+  hTFEnd();
 }
 function editModeAnimation() {
     player.pauseVideo();
@@ -999,7 +1251,7 @@ function editModeAnimation() {
         setTimeout(function () {
             ah.style.transition = "0s";
             pg1.append(ah);
-            ah.style.top = "calc(" + (pg1.offsetTop) + "px + 1em)";
+            ah.style.top = "calc(" + (pg1.offsetTop) + "px + 1em + env(safe-area-inset-top))";
             canEMAog = true;
         }, 500)
     }
@@ -1094,7 +1346,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 }
                 //animate the allHold
                 ah.style.transition = "0s";
-                ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em)";
+                ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em";
                 document.body.append(pg1.querySelector('#allHold'));
                 ah = document.querySelector('#allHold');
 
@@ -1106,7 +1358,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 //kghghj
                 // ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em)";
 
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em)";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height;
                 ah.style.transition = "0.5s";
@@ -1115,7 +1367,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 ahBcr = pg2.querySelector('.pgCover').getBoundingClientRect();
                 var ahBcrOG = pg1.querySelector('.pgCover').getBoundingClientRect();
                 ah.style.width = ahBcr.width + "px";
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em)";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height + "px";
                 editModeFunction(simmilar, pgGivenData, neww);
@@ -1126,11 +1378,11 @@ function eMA2(simmilar, pgGivenData, neww) {
                 var ahBcr = ah.getBoundingClientRect();
                 ah.style.width = ahBcr.width;
                 pg.scrollTo(0, pg.scrollHeight);
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em)";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height;
                 ah.style.transition = "0.5s";
-                ah.style.top = "0";
+                ah.style.top = "calc(0px + env(safe-area-inset-top))";
                 ah.style.left = "0";
                 ah.style.width = "100dvw";
                 ah.style.height = "100dvh";
@@ -1157,14 +1409,14 @@ function pgCancel(text) {
         var ahBcr = ah.getBoundingClientRect();
         ah.style.width = ahBcr.width;
         pg.scrollTo(0, pg.scrollHeight);
-        ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em)";
+        ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
         ah.style.left = ahBcr.x + "px";
         ah.style.height = ahBcr.height + "px";
         ah.style.width = ahBcr.width + "px";
         document.body.append(ah);
         ah.style.transition = "0.5s";
         setTimeout(function () {
-            ah.style.top = "0";
+            ah.style.top = "calc(0px + env(safe-area-inset-top))";
             ah.style.left = "0";
             ah.style.width = "100dvw";
             ah.style.height = "100dvh";
@@ -1363,10 +1615,10 @@ document.querySelector('#playground').style.opacity = 0;
                         console.log(e);
                     }
             doneAnimation = true;
-            uv.style.top = "";
+            uv.style.top = "calc(-50dvh + 1.5em)";
             uv.style.display = "block";
-            ul.style.height = "";
-            ul.style.top = "";
+            ul.style.height = "calc(50dvh - (var(--ballSize) / 2))";
+            ul.style.top = "50%";
             //document.querySelector('#fullscreenButton').style.display = "none";
             if (!neww) {
                 editMode = true;
@@ -1468,7 +1720,7 @@ window.addEventListener('scroll', () => {
         // Get the current vertical scroll position (in pixels)
         var sht = document.querySelector('#pgTitle');
         var tb = document.querySelector('#titleBar');
-        if (tb.getBoundingClientRect().top + tb.getBoundingClientRect().height > 0) { sht.style.top = "calc(1em + " + tb.getBoundingClientRect().top + tb.getBoundingClientRect().height + "px)" } else { sht.style.top = 0 }
+        if (tb.getBoundingClientRect().top + tb.getBoundingClientRect().height > 0) { sht.style.top = "calc(env(safe-area-inset-top) + 1em + " + tb.getBoundingClientRect().top + tb.getBoundingClientRect().height + "px)" } else { sht.style.top = "env(safe-area-inset-top)" }
     }
 });
 window.addEventListener('touchmove', function (e) {
@@ -1490,8 +1742,62 @@ function nameClick(a){
 }
 var shareVarr;
 var teby = 0;
-
+var shareWorks = true;
 window.onload = function () {
+    try{
+        setInterval(function(){
+             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // User prefers dark mode
+        newConsoleLog('Dark mode is preferred');
+        var root = document.documentElement;
+        root.style.setProperty('--bg', 'HSL(60, 2%, 2%)');
+        root.style.setProperty('--accent', 'HSL(152, 6%, 15%)');
+        root.style.setProperty('--second', 'HSL(340, 100%, 10%)');
+        root.style.setProperty('--text', 'HSL(60, 10%, 60%)');
+        root.style.setProperty('--oj', ' HSL(11, 42%, 20%)');
+        root.style.setProperty('--swText', 'HSL(152, 6%, 50%)');
+        root.style.setProperty('--lightText', 'HSL(60, 56%, 10%)');
+        root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
+        root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
+        root.style.setProperty('--contrast', 'HSL(60, 2%, 7%)');
+         root.style.setProperty('--emphasizedText', 'HSL(60, 10%, 100%)');
+          root.style.setProperty('--pgText', 'HSL(60, 10%, 60%)');
+           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 100%)');
+        /*
+         * :root {
+    --bg: HSL(60, 56%, 90%);
+    --accent: HSL(152, 6%, 70%);
+    --second: HSL(340, 85%, 60%);
+    --text: HSL(60, 56%, 90%);
+    --font: 'GlacialIndifference';
+    --ballSize: 10em;
+    --oj: HSL(11, 42%, 58%);
+    --swText: HSL(152, 6%, 50%);
+    --lightTxt: HSL(60, 56%, 90%);
+}
+*/
+    }else{
+ // User prefers dark mode
+        newConsoleLog('Light mode is preferred');
+        var root = document.documentElement;
+        root.style.setProperty('--bg', 'HSL(60, 56%, 90%)');
+        root.style.setProperty('--accent', 'HSL(152, 6%, 50%)');
+        root.style.setProperty('--second', 'HSL(340, 65%, 40%)');
+        root.style.setProperty('--text', 'HSL(60, 10%, 80%)');
+        root.style.setProperty('--oj', 'HSL(11, 42%, 58%)');
+        root.style.setProperty('--swText', 'HSL(152, 6%, 50%)');
+        root.style.setProperty('--lightText', 'HSL(60, 56%, 90%)');
+        root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
+        root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
+        root.style.setProperty('--contrast', 'HSL(60, 2%, 80%)');
+         root.style.setProperty('--emphasizedText', ' HSL(60, 56%, 90%)');
+          root.style.setProperty('--pgText', ' HSL(60, 10%, 10%)');
+           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 10%)');
+    }
+        }, 1000)
+    }catch(e){
+
+    }
     
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -1563,20 +1869,8 @@ setTimeout(function(){
          root.style.setProperty('--emphasizedText', 'HSL(60, 10%, 100%)');
           root.style.setProperty('--pgText', 'HSL(60, 10%, 60%)');
            root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 100%)');
-        /*
-         * :root {
-    --bg: HSL(60, 56%, 90%);
-    --accent: HSL(152, 6%, 70%);
-    --second: HSL(340, 85%, 60%);
-    --text: HSL(60, 56%, 90%);
-    --font: 'GlacialIndifference';
-    --ballSize: 10em;
-    --oj: HSL(11, 42%, 58%);
-    --swText: HSL(152, 6%, 50%);
-    --lightTxt: HSL(60, 56%, 90%);
-}
-*/
-    }
+
+    } 
     newConsoleLog(1);
     for (var ii of jintArr) {
         var fg = Array.from(words[navLang][33]);
@@ -1644,7 +1938,10 @@ setTimeout(function(){
                 document.querySelector('#swDrag').innerText = "-->";
             }
             if(closest[1] == "#nstShare"){
+                
+          
                 document.querySelector('#swDrag').innerText = words[navLang][104];
+            
             }
             document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
             document.querySelector(closest[1]).append(document.querySelector('#swDrag'))
@@ -1837,7 +2134,7 @@ function swapTe(n, f, m, g, t) {
         const inputEl = nee.querySelector("input");
         inputEl.value = '';
        
-        inputEl.setAttribute("onkeyup", "if (event.keyCode == 13) { var raeleigh = " + f + "; this.blur(); setTimeout(function(){raeleigh()},100)}");
+        inputEl.setAttribute("onkeyup", "if (event.keyCode == 13) { var jaeee = " + f + "; this.blur(); setTimeout(function(){jaeee()},100)}");
     }
     if (t) {
         nee.style.height = "calc(var(--ballSize) + 1em)  ";
@@ -1877,7 +2174,7 @@ function swapTe(n, f, m, g, t) {
         }
     }
     ne.style.left = "-100dvw";
-    document.querySelector('#teButton').setAttribute('onclick', "var raeleigh = " + g + "; raeleigh();");
+    document.querySelector('#teButton').setAttribute('onclick', "var jaeee = " + g + "; jaeee();");
     if (n !== 7 && document.querySelector('#teButton') !== "undefined") {
         document.querySelector('#teButton').style.display = "block";
     } else {
@@ -2011,7 +2308,7 @@ function swapTe(n, f, m, g, t) {
                 newConsoleLog('errr' + e);
             }
         }
-        document.querySelector('#teButton').setAttribute('onclick', "var raeleigh = " + g + "; raeleigh();");
+        document.querySelector('#teButton').setAttribute('onclick', "var jaeee = " + g + "; jaeee();");
         stopdouble = false;
     }, 250));
     // }
@@ -2125,7 +2422,7 @@ function nextSaved() {
                 Gaza.style.opacity = 0;
                 Gaza.style.position = "absolute";
                 Gaza.style.backgroundColor = "var(--bg)";
-                Gaza.style.top = "-150dvh";
+                Gaza.style.top = "calc(-150dvh + env(safe-area-inset-top))";
                 Gaza.style.filter = "blur(0.25em)";
                 Gaza.style.width = "100dvw";
                 Gaza.style.height = "100dvh";
@@ -2226,14 +2523,14 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     console.warn([mH, clone]);
                     clone.style.width = "50%";
                     clone.style.height = "50%"
-                    clone.style.top = "25%";
+                    clone.style.top = "calc(25% + env(safe-area-inset-top))";
                     clone.style.opacity = "1";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
                         i.style.left = (parseFloat(i.style.left) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
-                        i.style.top = (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
+                        i.style.top = "calc(env(safe-area-inset-top) + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
@@ -2265,13 +2562,13 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     clone.style.width = "50%";
                     clone.style.opacity = "1";
                     clone.style.height = "50%";
-                    clone.style.top = "25%";
+                    clone.style.top = "calc(25% + env(safe-area-inset-top))";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
                         i.style.left = (parseFloat(i.style.left) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
-                        i.style.top = (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
+                        i.style.top = "calc(env(safe-area-inset-top) + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
@@ -2291,7 +2588,7 @@ async function getSaved() {
         pl.style.opacity = 0;
         pl.style.position = "absolute";
         pl.style.backgroundColor = "var(--bg)";
-        pl.style.top = "-150dvh";
+        pl.style.top = "calc(-150dvh + env(safe-area-inset-top))";
         pl.style.width = "100dvw";
         pl.style.height = "100dvh";
         document.querySelector("#allHold").append(pl);
@@ -2450,10 +2747,10 @@ try{
         var ooh = document.querySelector('#uLine');
         var mem = document.querySelector('#uMiniball');
         setTimeout(function () {
-            q.style.top = "calc(1em)";
+            q.style.top = "calc(1em + env(safe-area-inset-top))";
             ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-            ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
-            mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+            ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
+            mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
             funnyC = 0;
             setTimeout(function () {
 
@@ -2463,10 +2760,10 @@ try{
                 //document.querySelector('#uvula').style.transform = "rotateZ(0deg)";
 
                 setTimeout(function () {
-                    q.style.top = "calc(-50dvh + 4em)";
+                    q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
                     ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                    ooh.style.top = "calc(50%)"
-                    mem.style.top = "calc(50% - 0.5em)";
+                    ooh.style.top = "calc(50% + env(safe-area-inset-top))"
+                    mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
 
                    // document.querySelector('#uvula').style.transform = "rotateZ(0deg)";
                     var n = document.querySelectorAll(".teShape");
@@ -2475,10 +2772,10 @@ try{
                     nn.style.opacity = "1";
                     // nn.style.filter = "";
                     setTimeout(function () {
-                        q.style.top = "calc(1em)";
+                        q.style.top = "calc(1em + env(safe-area-inset-top))";
                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                        ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
-                        mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+                        ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
+                        mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
                         
                         for (var i of document.querySelectorAll(".teShape")) {
                             if (Math.random() < 0.5) {
@@ -2504,10 +2801,10 @@ try{
                             }
                         }
                         setTimeout(function () {
-                            q.style.top = "calc(-50dvh + 4em)";
+                            q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
                             ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                            ooh.style.top = "calc(50%)"
-                            mem.style.top = "calc(50% - 0.5em)";
+                            ooh.style.top = "calc(50% + env(safe-area-inset-top))"
+                            mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
                           /*  for (var i of document.querySelectorAll(".teShape")) {
                                 var r = Math.floor(Math.random() * 3);
                                 if (r == 0) {
@@ -2552,10 +2849,10 @@ try{
                     }
                         */
                             setTimeout(function () {
-                                q.style.top = "calc(1em)";
+                                q.style.top = "calc(1em + env(safe-area-inset-top))";
                                 ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
-                                mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+                                ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
+                                mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
                                 for (var ayi of document.querySelectorAll(".teShape")) {
 
                                     ayi.style.backgroundColor = "var(--oj)";
@@ -2580,10 +2877,10 @@ try{
 
                                 }
                                 setTimeout(function () {
-                                    q.style.top = "calc(-50dvh + 4em)";
+                                    q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
                                     ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                                    ooh.style.top = "calc(50%)"
-                                    mem.style.top = "calc(50% - 0.5em)";
+                                    ooh.style.top = "calc(50% + env(safe-area-inset-top))"
+                                    mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
                                    /* for (var i of document.querySelectorAll(".teShape")) {
                                         if (i.style.backgroundColor != "var(--oj)") {
                                             i.style.backgroundColor = "var(--oj)";
@@ -2598,25 +2895,25 @@ try{
                                     }*/
                                    document.querySelector('.uBall').style.overflow = "visible";
                                     setTimeout(function () {
-                                        q.style.top = "calc(1em)";
+                                        q.style.top = "calc(1em + env(safe-area-inset-top))";
                                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                        ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
-                                        mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+                                        ooh.style.top = "calc(50% + 30dvh + env(safe-area-inset-top) - (var(--ballSize) / 2))";
+                                        mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
                                        
                                         setTimeout(function () {
-                                            q.style.top = "calc(-50dvh + 4em)";
+                                            q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
                                             ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                                            ooh.style.top = "calc(50%)"
-                                            mem.style.top = "calc(50% - 0.5em)";
+                                            ooh.style.top = "calc(50% + env(safe-area-inset-top))"
+                                            mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
                                             if (!bypass) {
                                                 swapTe(17, function () { }, 18, function () { }, true);
                                             }
 
                                             setTimeout(function () {
-                                                q.style.top = "calc(1em)";
+                                                q.style.top = "calc(1em + env(safe-area-inset-top))";
                                                 ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                                ooh.style.top = "calc(50% + 30dvh - (var(--ballSize) / 2))";
-                                                mem.style.top = "calc(50% - var(--margin) + 20dvh)";
+                                                ooh.style.top = "calc(50% + 30dvh - env(safe-area-inset-top) + (var(--ballSize) / 2))";
+                                                mem.style.top = "calc(50% - env(safe-area-inset-top) + var(--margin) + 20dvh)";
                                                 document.querySelector('#textEnter').style.background = "";
                                                
                                                 
@@ -2678,9 +2975,9 @@ try{
                                                                    // document.querySelector('#leftButton').style.width = "calc(" + document.querySelector('#rightButton').getBoundingClientRect().width + "px - 1em)";
                                                                     t.append(v);
                                                                     funnyC = 1; newConsoleLog('HERE');
-                                                                    v.style.top = "6em";
+                                                                    v.style.top = "calc(6em + env(safe-area-inset-top))";
                                                                     var tOo = document.querySelector('#touchOverlay');
-                                                                    tOo.style.top = "4em";
+                                                                    tOo.style.top = "calc(4em + env(safe-area-inset-top))";
                                                                     tOo.style.display = "block";
                                                                     v.style.bottom = "2em";
                                                                     happeningNow = false;
@@ -2744,6 +3041,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     // MOUSE DOWN
                                                                     TOOO.addEventListener('mousedown', function (event) {
+                                                                       
                                                                         isTE = false;
                                                                         console.log("ts");
                                                                         initialTouchX = event.clientX;
@@ -2769,6 +3067,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
+                                                                     
                                                                       autoplay = 0; 
                                                                         isTE = true;
                                                                           if(!isPD){
@@ -2780,13 +3079,28 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      if(!withinSpeedUp){
                                                                     if(player.getPlayerState() == 1){
                                                                          player.pauseVideo();
+                                                                          try{
+                                                                        if(fullsc == 'yes'){
+                                                                        document.querySelector('#titleBar').style.zIndex = "0";
+                                                                        }
+                                                                    }
+                                                                    catch(e){
+                                                                    }
                                                                      }else{
                                                                          player.playVideo();
+                                                                          try{
+                                                                       
+                                                                        document.querySelector('#titleBar').style.zIndex = "2000";
+                                                                        
+                                                                    }
+                                                                    catch(e){
+
+                                                                    }
                                                                     }
                                                                 }
                                                                 }else{
                                                                     console.log('yes');
-                                                                    console.log(document.getElementById('fullscreenButton').click());
+                                                                    //console.log(document.getElementById('fullscreenButton').click());
                                                                     document.getElementById('fullscreenButton').click();
                                                                 }
                                                                 withinSpeedUp = false;
@@ -2836,7 +3150,6 @@ function requestTheFullscreen(a) {
     var touchOverlay = document.querySelector('#touchOverlay');
     var fullscreenButton = document.querySelector('#fullscreenButton');
     var Tee = document.querySelector('#textEnter');
-    Tee.style.transition = "0s";
     if (a) {
         fullsc = 'yes';
 		document.querySelector('#uvula').style.display = "none";
@@ -2852,7 +3165,7 @@ function requestTheFullscreen(a) {
     Tee.style.zIndex = "152";
     video.style.zIndex = "152";
     document.querySelector('#titleBar').style.zIndex = "0";
-    touchOverlay.style.zIndex = "153";
+    touchOverlay.style.zIndex = "155";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(false)');
         fullscreenButton.innerText = '↖';
         for (var yes of [...document.querySelectorAll('.yes')]) {
@@ -2876,10 +3189,9 @@ function requestTheFullscreen(a) {
         touchOverlay.style.top = "4em";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(true)')
         fullscreenButton.innerText = '↘';
-         Tee.style.zIndex = "0";
+         Tee.style.zIndex = "";
     video.style.zIndex = "0";
     document.querySelector('#titleBar').style.zIndex = "2000";
-        touchOverlay.style.zIndex = "1";
         for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 0;
         }
@@ -2931,7 +3243,7 @@ function reverseUball() {
         var countt = 0;
         var plLength = document.querySelectorAll(".palestine").length;
         var plList = [...document.querySelectorAll(".palestine")].reverse().slice(-5);
-        for (let el of plList) { el.style.transition = "0.5s"; el.style.opacity = "0"; el.style.top = "0px"; }
+        for (let el of plList) { el.style.transition = "0.5s"; el.style.opacity = "0"; el.style.top = "env(safe-area-inset-top)"; }
         // 2. Force browser to commit the initial state
         void document.querySelector("#allHold").offsetHeight;
         var count2 = 0;
@@ -2942,10 +3254,10 @@ function reverseUball() {
                 try {
                     i.style.transition = "0.5s";
                     newConsoleLog('GAZA' + i);
-                    var juheeValues = document.querySelector('.uBall').getBoundingClientRect();
+                    var jaeValues = document.querySelector('.uBall').getBoundingClientRect();
                     i.setAttribute('style', '');
                     i.style.transition = "0.5s";
-                    i.style.top = "0";
+                    i.style.top = "env(safe-area-inset-top)";
                     i.style.left = "0";
                     i.style.width = "calc(40dvw + 100dvw)";
                     i.style.height = "calc(40dvw + 100dvh)";
@@ -2954,10 +3266,10 @@ function reverseUball() {
                     i.style.zIndex = "100";
                     setTimeout(function () {
                         i.style.transition = "0.5s";
-                        i.style.top = juheeValues.y + "px";
-                        i.style.left = juheeValues.x + "px";
-                        i.style.width = juheeValues.width + "px";
-                        i.style.height = juheeValues.height + "px";
+                        i.style.top = "calc(env(safe-area-inset-top) + " + jaeValues.y + "px)";
+                        i.style.left = jaeValues.x + "px";
+                        i.style.width = jaeValues.width + "px";
+                        i.style.height = jaeValues.height + "px";
                         i.style.opacity = 1;
                         i.style.filter = "";
                         i.style.backgroundColor = "var(--accent)";
@@ -2971,7 +3283,7 @@ function reverseUball() {
             }, ((1000 / plList.length) * countt) + 500)
         }
         setTimeout(function () {
-            document.querySelector('#background').style.top = "-50dvh";
+            document.querySelector('#background').style.top = "calc(-50dvh + env(safe-area-inset-top))";
             setTimeout(function () {
                 document.querySelector('.uBall').innerHTML = "";
                 funnyC = 1; newConsoleLog('HERE');
@@ -3083,7 +3395,7 @@ function nvm() {
          }
         */
         var bg = document.querySelector('#background');
-        bg.style.top = "0px";
+        bg.style.top = "env(safe-area-inset-top)";
         setTimeout(function () {
             reverseUball();
         }, 250)
@@ -3336,7 +3648,7 @@ function makeShapes(n, y, extra, t, c) {
             a.append(sh);
             sh.style.left = properties[1] + "em";
             sh.style.opacity = "1";
-            sh.style.top = properties[2] + "em";
+            sh.style.top = "calc(env(safe-area-inset-top) + " + properties[2] + "em)";
             sh.style.height = properties[3];
             sh.style.width = properties[3];
             sh.style.zIndex = "50";
@@ -3357,7 +3669,7 @@ function makeShapes(n, y, extra, t, c) {
                         setTimeout(function () {
                             twin1.style.left = "calc(50dvw - var(--ballSize)/2 + " + ppy1[1] + "em)";
                             twin1.style.opacity = "1";
-                            twin1.style.top = "calc(" + ppy1[2] + "em + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
+                            twin1.style.top = "calc(" + ppy1[2] + "em + env(safe-area-inset-top) + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
                             twin1.style.height = ppy1[3];
                             twin1.style.width = ppy1[3];
                             twin1.style.zIndex = "50";
@@ -3376,7 +3688,7 @@ function makeShapes(n, y, extra, t, c) {
 
 
                                     twin.style.left = ppy[1] + "em";
-                                    twin.style.top = ppy[2] + "em";
+                                    twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                     twin.style.height = ppy[3];
                                     twin.style.width = ppy[3];
                                     twin.style.transform = "rotate(" + ppy[4] + ")";
@@ -3405,7 +3717,7 @@ function makeShapes(n, y, extra, t, c) {
                     setTimeout(function () {
                         twin1.style.left = "calc(50dvw - var(--ballSize)/2 + " + ppy1[1] + "em)";
                         twin1.style.opacity = "1";
-                        twin1.style.top = "calc(" + ppy1[2] + "em + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
+                        twin1.style.top = "calc(" + ppy1[2] + "em + env(safe-area-inset-top) + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
                         twin1.style.height = ppy1[3];
                         twin1.style.width = ppy1[3];
                         twin1.style.zIndex = "50";
@@ -3422,7 +3734,7 @@ function makeShapes(n, y, extra, t, c) {
 
                                 twin.style.transition = "0s";
                                 twin.style.left = ppy[1] + "em";
-                                twin.style.top = ppy[2] + "em";
+                                twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                 twin.style.height = ppy[3];
                                 twin.style.width = ppy[3];
                                 twin.style.transform = "rotateZ(" + ppy[4] + ")";
@@ -3456,7 +3768,7 @@ function makeShapes(n, y, extra, t, c) {
                     document.querySelector("#allHold").append(sh);
                     sh.style.borderRadius = properties[0];
                     sh.setAttribute('class', 'teShape');
-                    sh.style.top = "90dvh";
+                    sh.style.top = "calc(90dvh + env(safe-area-inset-top))";
                     sh.style.left = "50dvw";
                     sh.style.height = "0dvh";
                     sh.style.left = "0dvw";
@@ -3491,7 +3803,7 @@ function makeShapes(n, y, extra, t, c) {
 
 
                                 twin.style.left = ppy[1] + "em";
-                                twin.style.top = ppy[2] + "em";
+                                twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                 twin.style.height = ppy[3];
                                 twin.style.width = ppy[3];
                                 twin.style.transform = "rotate(" + ppy[4] + ")";
@@ -3589,14 +3901,17 @@ function handleTouch(startX, endX,
 function evaluateFullscreenReminder(n){
     var fsNumber = 0;
     try{
+        if(localStorage.getItem("nstFSRN") == null){
+            localStorage.setItem("nstFSRN",0);
+        }
         fsNumber = parseInt(localStorage.getItem("nstFSRN"));
     }
     catch(e){
         localStorage.setItem("nstFSRN",0);
     }
-    if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || n){
+    if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || currentPlace == 1 || n){
         var activeItem = document.querySelector('#leftButton');
-        var valueOg = activeItem.innerText;
+        var valueOg = words[navLang][25];
         activeItem.style.color = "var(--second)";
         var wnl100 = words[navLang][100].split('|');
 
@@ -3676,7 +3991,7 @@ function swipeUp() {
         orbit.style.backgroundColor = "var(--swText)";
         orbit.style.position = "absolute";
         orbit.style.left = sVl['no'][0];
-        orbit.style.top = sVt['no'][1];
+        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
         orbitf.setAttribute('class', 'videoOrbit yes');
         orbitf.style.borderRadius = "5px";
         orbitf.style.zIndex = "200";
@@ -3686,7 +4001,7 @@ function swipeUp() {
         orbitf.style.backgroundColor = "var(--swText)";
         orbitf.style.position = "absolute";
         orbitf.style.left = sVl['yes'][0];
-        orbitf.style.top = sVt['yes'][1];
+        orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] + ")";
         tsMT = Math.random();
         if(tsMT < 0.3){
             tsMT = 0.3;
@@ -3701,32 +4016,32 @@ function swipeUp() {
         setTimeout(function () {
             // Move RIGHT
             orbit.style.left = sVl['no'][0];
-            orbit.style.top = sVt['no'][0];
+            orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][0] + ")";
             orbitf.style.left = sVl['yes'][0];
-            orbitf.style.top = sVt['yes'][0];
+            orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][0] +")";
             setTimeout(function () {
                 // Move UP
                 orbit.style.transform = "rotate(90deg)";
                 orbit.style.left = sVl['no'][1];
-                orbit.style.top = sVt['no'][0];
+                orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][0]+")";
                 orbitf.style.left = sVl['yes'][1];
-                orbitf.style.top = sVt['yes'][0];
+                orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][0] +")";
 
                 setTimeout(function () {
                     // Move LEFT
                     orbit.style.transform = "rotate(180deg)";
                     orbit.style.left = sVl['no'][1];
-                    orbit.style.top = sVt['no'][1];
+                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1]+")";
                     orbitf.style.left = sVl['yes'][1];
-                    orbitf.style.top = sVt['yes'][1];
+                    orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1]+")";
 
                     setTimeout(function () {
                         // Move DOWN
                         orbit.style.transform = "rotate(270deg)";
                         orbit.style.left = sVl['no'][2];
-                        orbit.style.top = sVt['no'][1];
+                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
                         orbitf.style.left = sVl['yes'][2];
-                        orbitf.style.top = sVt['yes'][1];
+                        orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] +")";
 
                         setTimeout(function () {
                             orbit.style.transform = "rotate(360deg)";
@@ -3744,73 +4059,73 @@ function swipeUp() {
         }, 250);
 
         setTimeout(function () {
-                var bigJuf = orbitf.cloneNode();
-                var theBigJuf = orbitf.getBoundingClientRect();
+                var bigjaef = orbitf.cloneNode();
+                var thebigjaef = orbitf.getBoundingClientRect();
 
-                var bigJu = orbit.cloneNode();
-                var theBigJu = orbit.getBoundingClientRect();
+                var bigjae = orbit.cloneNode();
+                var thebigjae = orbit.getBoundingClientRect();
 
-                bigJu.style.left = theBigJu.x + "px";
-                newConsoleLog(theBigJu.left);
-                bigJu.style.top = theBigJu.y + "px";
-                newConsoleLog(theBigJu.top);
-                document.querySelector("#allHold").append(bigJu);
-                newConsoleLog([theBigJu, tsMT]);
-                bigJu.style.backgroundColor = "var(--swText)";
-                var bigJu2 = orbit.cloneNode();
-                bigJu2.style.left = theBigJu.x + "px";
-                document.querySelector("#allHold").append(bigJu2);
-                bigJu2.style.top = theBigJu.y + "px";
-                bigJu2.style.backgroundColor = "var(--swText)";
-                // bigJu2.style.opacity = "0.2";
-                bigJu2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
+                bigjae.style.left = thebigjae.x + "px";
+                newConsoleLog(thebigjae.left);
+                bigjae.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
+                newConsoleLog(thebigjae.top);
+                document.querySelector("#allHold").append(bigjae);
+                newConsoleLog([thebigjae, tsMT]);
+                bigjae.style.backgroundColor = "var(--swText)";
+                var bigjae2 = orbit.cloneNode();
+                bigjae2.style.left = thebigjae.x + "px";
+                document.querySelector("#allHold").append(bigjae2);
+                bigjae2.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
+                bigjae2.style.backgroundColor = "var(--swText)";
+                // bigjae2.style.opacity = "0.2";
+                bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbit.remove();
-                bigJu.style.transition = "0.1s";
+                bigjae.style.transition = "0.1s";
 
-                bigJuf.style.left = theBigJuf.x + "px";
-                newConsoleLog(theBigJuf.left);
-                bigJuf.style.top = theBigJuf.y + "px";
-                newConsoleLog(theBigJuf.top);
-                document.querySelector("#allHold").append(bigJuf);
-                newConsoleLog([theBigJuf, tsMT]);
-                bigJuf.style.backgroundColor = "var(--swText)";
-                var bigJu2f = orbitf.cloneNode();
-                bigJu2f.style.left = theBigJuf.x + "px";
-                document.querySelector("#allHold").append(bigJu2f);
-                bigJu2f.style.top = theBigJuf.y + "px";
-                bigJu2f.style.backgroundColor = "var(--swText)";
-                //bigJu2f.style.opacity = "0.2";
-                bigJu2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
+                bigjaef.style.left = thebigjaef.x + "px";
+                newConsoleLog(thebigjaef.left);
+                bigjaef.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
+                newConsoleLog(thebigjaef.top);
+                document.querySelector("#allHold").append(bigjaef);
+                newConsoleLog([thebigjaef, tsMT]);
+                bigjaef.style.backgroundColor = "var(--swText)";
+                var bigjae2f = orbitf.cloneNode();
+                bigjae2f.style.left = thebigjaef.x + "px";
+                document.querySelector("#allHold").append(bigjae2f);
+                bigjae2f.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
+                bigjae2f.style.backgroundColor = "var(--swText)";
+                //bigjae2f.style.opacity = "0.2";
+                bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbitf.remove();
-                bigJuf.style.transition = "0.1s";
+                bigjaef.style.transition = "0.1s";
                 if (fullsc == 'yes') {
-                    bigJu2f.style.opacity = "0.25";
-                    bigJu2.style.opacity = "0";
+                    bigjae2f.style.opacity = "0.25";
+                    bigjae2.style.opacity = "0";
                 } else {
-                    bigJu2.style.opacity = "0.25";
-                    bigJu2f.style.opacity = "0";
+                    bigjae2.style.opacity = "0.25";
+                    bigjae2f.style.opacity = "0";
 
                 }
 
                 setTimeout(function () {
                     if (fullsc == 'no') {
-                        bigJu.style.opacity = 0.6;
-                         bigJu.style.width = "0.5em";
-                        bigJu.style.height = "0.5em";
-                        bigJu.style.transition = "0.5s";
-                        bigJu.setAttribute('class','glass');
-                        bigJu.style.width = "calc((100dvh - 10em) * (9/16))";
-                        bigJu.style.height = "calc(100dvh - 10em)";
-                        bigJu.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
-                        bigJu.style.borderRadius = "5px";
-                        bigJu.style.top = "4em";
-                        bigJu.style.transform = "rotate(360deg)";
-                        bigJu.style.backgroundColor = "var(--swText)";
+                        bigjae.style.opacity = 0.6;
+                         bigjae.style.width = "0.5em";
+                        bigjae.style.height = "0.5em";
+                        bigjae.style.transition = "0.5s";
+                        bigjae.setAttribute('class','glass');
+                        bigjae.style.width = "calc((100dvh - 10em) * (9/16))";
+                        bigjae.style.height = "calc(100dvh - 10em)";
+                        bigjae.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
+                        bigjae.style.borderRadius = "5px";
+                        bigjae.style.top = "calc(env(safe-area-inset-top) + " + "4em)";
+                        bigjae.style.transform = "rotate(360deg)";
+                        bigjae.style.backgroundColor = "var(--swText)";
                        
                         setTimeout(function () {
                             
                             setTimeout(function () {
-                                bigJu.style.backgroundColor = "var(--accent)";
+                                bigjae.style.backgroundColor = "var(--accent)";
 if (currentPlace < allVideos.length-3) {
                                         
                                         if (allVideos[currentPlace] == "Error") {
@@ -3862,31 +4177,31 @@ if (currentPlace < allVideos.length-3) {
                                     }
                                 setTimeout(function () {
                                     
-                                    bigJu.remove();
-                                    bigJuf.remove();
+                                    bigjae.remove();
+                                    bigjaef.remove();
                                 }, 100);
                             }, 500)
                             canSwipe = true;
                         }, 200)
                     } else {
-                         bigJuf.style.width = "0.5em";
-                        bigJuf.style.height = "0.5em";
-                        bigJuf.style.transition = "0.5s";
-                        bigJuf.style.opacity = 0.6;
-                        bigJuf.setAttribute('class','glass');
-                        bigJuf.style.width = "100dvw";
-                        bigJuf.style.height = "100dvh";
-                        bigJuf.style.left = "0";
-                        bigJuf.style.borderRadius = "5px";
-                        bigJuf.style.top = "0";
-                        bigJuf.style.transform = "rotate(360deg)";
-                        bigJuf.style.backgroundColor = "var(--swText)";
+                         bigjaef.style.width = "0.5em";
+                        bigjaef.style.height = "0.5em";
+                        bigjaef.style.transition = "0.5s";
+                        bigjaef.style.opacity = 0.6;
+                        bigjaef.setAttribute('class','glass');
+                        bigjaef.style.width = "100dvw";
+                        bigjaef.style.height = "100dvh";
+                        bigjaef.style.left = "0";
+                        bigjaef.style.borderRadius = "5px";
+                        bigjaef.style.top = "env(safe-area-inset-top)"
+                        bigjaef.style.transform = "rotate(360deg)";
+                        bigjaef.style.backgroundColor = "var(--swText)";
                         
                         setTimeout(function () {
                            
                             setTimeout(function () {
                                // alert(1);
-                                bigJuf.style.backgroundColor = "var(--accent)";
+                                bigjaef.style.backgroundColor = "var(--accent)";
 //alert(2);
   if (currentPlace < allVideos.length - 3) {
                                         
@@ -3946,8 +4261,8 @@ if (currentPlace < allVideos.length-3) {
                                     
                                    // alert(4);
                                   
-                                    bigJuf.remove();
-                                    bigJu.remove();
+                                    bigjaef.remove();
+                                    bigjae.remove();
                                 }, 100);
                             }, 500)
                             canSwipe = true;
@@ -3960,9 +4275,6 @@ if (currentPlace < allVideos.length-3) {
     }
 };
 function swipeDown() {
-     for(var i of document.querySelectorAll('.giveError')){
-        i.remove();
-    }
      try{
     document.querySelector('#giveError').remove();
     }
@@ -3994,13 +4306,13 @@ function swipeDown() {
             bj.style.height = "calc(100dvh - 10em)";
             bj.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
             bj.style.borderRadius = "5px";
-            bj.style.top = "4em";
+            bj.style.top = "calc(4em + env(safe-area-inset-top))";
         } else {
             bj.style.width = "100dvw";
             bj.style.height = "100dvh";
             bj.style.left = "0";
             bj.style.borderRadius = "5px";
-            bj.style.top = "var(--margin)";
+            bj.style.top = "calc(env(safe-area-inset-top) + var(--margin))";
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
@@ -4012,7 +4324,7 @@ function swipeDown() {
        // orbit.style.opacity = 0;
         setTimeout(function () {
             bj.style.left = o2.left + "px";
-            bj.style.top = o2.top + "px";
+            bj.style.top = "calc(env(safe-area-inset-top) + " + o2.top + "px)";
             bj.style.width = o2.width + "px";
             bj.style.height = o2.height + "px";
             bj.style.transform = "rotate(0deg)";
@@ -4040,7 +4352,7 @@ function swipeDown() {
                // bj.remove();
                 setTimeout(function () {
                     orbit.style.left = sVl[fullsc][2];
-                    orbit.style.top = sVt[fullsc][1];
+                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] + ")";
                 }, 125);
                 
                 setTimeout(function () {
@@ -4056,16 +4368,16 @@ function swipeDown() {
                    // bj.remove();
                     orbit.style.transform = "rotate(90deg)";
                     orbit.style.left = sVl[fullsc][1];
-                    orbit.style.top = sVt[fullsc][0];
+                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
                    
                     setTimeout(function () {
 
                         orbit.style.left = sVl[fullsc][0];
-                        orbit.style.top = sVt[fullsc][0];
+                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
                         setTimeout(function () {
 
                             orbit.style.left = sVl[fullsc][2];
-                            orbit.style.top = sVt[fullsc][1];
+                            orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] +")";
                             
                             setTimeout(function () {
                                 orbit.remove();
@@ -4083,12 +4395,12 @@ function swipeDown() {
                    // bj.remove();
 
                     orbit.style.left = sVl[fullsc][0];
-                    orbit.style.top = sVt[fullsc][0];
+                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
                     
                     setTimeout(function () {
                         
                         orbit.style.left = sVl[fullsc][2];
-                        orbit.style.top = sVt[fullsc][1];
+                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] +")";
                        
                         setTimeout(function () {
                             orbit.remove();
@@ -4154,25 +4466,25 @@ function swipeDown() {
         }, 250);
 
         setTimeout(function () {
-            var bigJu = orbit.cloneNode();
-            var theBigJu = orbit.getBoundingClientRect();
-            bigJu.style.left = theBigJu.left;
-            bigJu.style.top = theBigJu.top;
-            document.querySelector("#allHold").append(bigJu);
-            bigJu.style.backgroundColor = "var(--swText)";
+            var bigjae = orbit.cloneNode();
+            var thebigjae = orbit.getBoundingClientRect();
+            bigjae.style.left = thebigjae.left;
+            bigjae.style.top = thebigjae.top;
+            document.querySelector("#allHold").append(bigjae);
+            bigjae.style.backgroundColor = "var(--swText)";
             orbit.remove();
-            bigJu.style.transition = "0.1s";
+            bigjae.style.transition = "0.1s";
             document.querySelector('#j' + tsMTs[tsMTs.length - 1].toString().replace('.', 'o')).remove();
             tsMTs.pop();
             setTimeout(function () {
-                bigJu.style.width = sV[6];
-                bigJu.style.height = sV[7];
-                bigJu.style.left = sV[8];
-                bigJu.style.top = sV[9];
-                bigJu.style.transform = "rotate(360deg)";
-                bigJu.style.backgroundColor = "var(--swText)";
+                bigjae.style.width = sV[6];
+                bigjae.style.height = sV[7];
+                bigjae.style.left = sV[8];
+                bigjae.style.top = sV[9];
+                bigjae.style.transform = "rotate(360deg)";
+                bigjae.style.backgroundColor = "var(--swText)";
                 setTimeout(function () {
-                    bigJu.remove();
+                    bigjae.remove();
                     canSwipe = true;
                 }, 100)
             }, 100)
@@ -4324,7 +4636,7 @@ function validateDate(tex) {
         "next", //4
         "Your", //5
         "nostalgia", //6
-        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2021 - spring 2023)</span>", //7
+        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
         "what creator?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //8
         "what topic?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //9
         "'s ", //10
@@ -4387,9 +4699,9 @@ function validateDate(tex) {
         "october", //67
         "november", //68
         "december", //69
-        "past 2021 plzz", //70
+        "past 2019 plzz", //70
         "well, before this year plzz", //71
-        "between 2021 - now plzz", //72
+        "between 2019 - now plzz", //72
         "sorry, try again plzz", //73
         "tysm btw ☺", //74
         "oopsie!", //75
@@ -4687,7 +4999,7 @@ function handleError(Error) {
             };
             var QQ = document.querySelector('.vs2');
            /* var newButtonNext = document.createElement('button');
-            newButtonNext.setAttribute('onclick', `var raeleigh = function () {
+            newButtonNext.setAttribute('onclick', `var jaeee = function () {
                 if (doneAnimation) {
                     var thisVall = validateDate(document.querySelector("#teInput").value);
                     if (!thisVall.includes("Year Error")) {
@@ -4699,7 +5011,7 @@ function handleError(Error) {
                         handleError(thisVall)
                     }
                 }
-            }; raeleigh();`);
+            }; jaeee();`);
             newButtonNext.setAttribute('words', 4);
             newButtonNext.setAttribute('id', 'teButton');
             newButtonNext.innerText = words[navLang][4];
@@ -4935,7 +5247,7 @@ function giveError3() {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange,
             'onError': function(event) {
-                giveError();
+               console.log(event);
             }
           }
         });

@@ -453,6 +453,7 @@ body {
 
 #swipeScreen {
     display: none;
+    margin-top: 1em;
     place-items: left;
     display: block;
     opacity: 0;
@@ -461,7 +462,7 @@ body {
 }
 
 
-#swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstCredits, #nstExit {
+#swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstShare, #nstCredits, #nstExit {
     padding-top: 1em;
     display: flex;
     gap: var(--margin);
@@ -476,9 +477,12 @@ body {
     border-radius: 5px;
     color: var(--pgButtonText);
     padding: 1em;
-    /* padding: 1em; */
-    width: calc(50vw - 4em);
-    height: calc(100dvh - 6em);
+    /* padding-top: 1em; */
+    /* padding-left: 1em; */
+    /* padding-right: 1em; */
+    /* padding-bottom: 1em; */
+    width: calc(50vw - 3em);
+    height: calc(100dvh - 8em);
     display: grid;
     place-items: center;
     text-align: left;
