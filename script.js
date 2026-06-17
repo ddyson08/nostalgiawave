@@ -1010,7 +1010,7 @@ var canEMAog = true;
 function openAh() {
     var ah = document.querySelector('#allHold');
     ah.style.transition = "0.5s";
-    ah.style.top = "calc(env(safe-area-inset-top)"
+    ah.style.top = "calc(0em"
     ah.style.left = "0";
     ah.style.width = "100dvw";
     ah.style.height = "100dvh";
@@ -1078,7 +1078,7 @@ function howToFullscreen(a,b,searchError){
     hTFCover.style.width = "50dvw";
     hTFCover.style.height = "100dvh";
     hTFCover.style.left = "0";
-    hTFCover.style.top = "env(safe-area-inset-top)";
+    hTFCover.style.top = "0em";
     hTFCover.style.zIndex = "100000";
     hTFCover.style.position = "absolute";
     hTFCover.style.opacity = "0";
@@ -1251,7 +1251,7 @@ function editModeAnimation() {
         setTimeout(function () {
             ah.style.transition = "0s";
             pg1.append(ah);
-            ah.style.top = "calc(" + (pg1.offsetTop) + "px + 1em + env(safe-area-inset-top))";
+            ah.style.top = "calc(" + (pg1.offsetTop) + "px + 1em + 0em)";
             canEMAog = true;
         }, 500)
     }
@@ -1358,7 +1358,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 //kghghj
                 // ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em)";
 
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + 0em)";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height;
                 ah.style.transition = "0.5s";
@@ -1367,7 +1367,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 ahBcr = pg2.querySelector('.pgCover').getBoundingClientRect();
                 var ahBcrOG = pg1.querySelector('.pgCover').getBoundingClientRect();
                 ah.style.width = ahBcr.width + "px";
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + 0em)";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height + "px";
                 editModeFunction(simmilar, pgGivenData, neww);
@@ -1378,11 +1378,11 @@ function eMA2(simmilar, pgGivenData, neww) {
                 var ahBcr = ah.getBoundingClientRect();
                 ah.style.width = ahBcr.width;
                 pg.scrollTo(0, pg.scrollHeight);
-                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
+                ah.style.top = "calc(" + (pg2.getBoundingClientRect().top) + "px + 1em + 0em)";
                 ah.style.left = ahBcr.x + "px";
                 ah.style.height = ahBcr.height;
                 ah.style.transition = "0.5s";
-                ah.style.top = "calc(0px + env(safe-area-inset-top))";
+                ah.style.top = "calc(0px + 0em)";
                 ah.style.left = "0";
                 ah.style.width = "100dvw";
                 ah.style.height = "100dvh";
@@ -1409,14 +1409,14 @@ function pgCancel(text) {
         var ahBcr = ah.getBoundingClientRect();
         ah.style.width = ahBcr.width;
         pg.scrollTo(0, pg.scrollHeight);
-        ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em + env(safe-area-inset-top))";
+        ah.style.top = "calc(" + (pg1.getBoundingClientRect().top) + "px + 1em + 0em)";
         ah.style.left = ahBcr.x + "px";
         ah.style.height = ahBcr.height + "px";
         ah.style.width = ahBcr.width + "px";
         document.body.append(ah);
         ah.style.transition = "0.5s";
         setTimeout(function () {
-            ah.style.top = "calc(0px + env(safe-area-inset-top))";
+            ah.style.top = "calc(0px + 0em)";
             ah.style.left = "0";
             ah.style.width = "100dvw";
             ah.style.height = "100dvh";
@@ -1720,7 +1720,7 @@ window.addEventListener('scroll', () => {
         // Get the current vertical scroll position (in pixels)
         var sht = document.querySelector('#pgTitle');
         var tb = document.querySelector('#titleBar');
-        if (tb.getBoundingClientRect().top + tb.getBoundingClientRect().height > 0) { sht.style.top = "calc(env(safe-area-inset-top) + 1em + " + tb.getBoundingClientRect().top + tb.getBoundingClientRect().height + "px)" } else { sht.style.top = "env(safe-area-inset-top)" }
+        if (tb.getBoundingClientRect().top + tb.getBoundingClientRect().height > 0) { sht.style.top = "calc(0em + 1em + " + tb.getBoundingClientRect().top + tb.getBoundingClientRect().height + "px)" } else { sht.style.top = "0em" }
     }
 });
 window.addEventListener('touchmove', function (e) {
@@ -2422,7 +2422,7 @@ function nextSaved() {
                 Gaza.style.opacity = 0;
                 Gaza.style.position = "absolute";
                 Gaza.style.backgroundColor = "var(--bg)";
-                Gaza.style.top = "calc(-150dvh + env(safe-area-inset-top))";
+                Gaza.style.top = "calc(-150dvh + 0em)";
                 Gaza.style.filter = "blur(0.25em)";
                 Gaza.style.width = "100dvw";
                 Gaza.style.height = "100dvh";
@@ -2523,14 +2523,14 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     console.warn([mH, clone]);
                     clone.style.width = "50%";
                     clone.style.height = "50%"
-                    clone.style.top = "calc(25% + env(safe-area-inset-top))";
+                    clone.style.top = "calc(25% + 0em)";
                     clone.style.opacity = "1";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
                         i.style.left = (parseFloat(i.style.left) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
-                        i.style.top = "calc(env(safe-area-inset-top) + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
+                        i.style.top = "calc(0em + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
@@ -2562,13 +2562,13 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     clone.style.width = "50%";
                     clone.style.opacity = "1";
                     clone.style.height = "50%";
-                    clone.style.top = "calc(25% + env(safe-area-inset-top))";
+                    clone.style.top = "calc(25% + 0em)";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
                         i.style.left = (parseFloat(i.style.left) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
-                        i.style.top = "calc(env(safe-area-inset-top) + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
+                        i.style.top = "calc(0em + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
@@ -2588,7 +2588,7 @@ async function getSaved() {
         pl.style.opacity = 0;
         pl.style.position = "absolute";
         pl.style.backgroundColor = "var(--bg)";
-        pl.style.top = "calc(-150dvh + env(safe-area-inset-top))";
+        pl.style.top = "calc(-150dvh + 0em)";
         pl.style.width = "100dvw";
         pl.style.height = "100dvh";
         document.querySelector("#allHold").append(pl);
@@ -2747,10 +2747,10 @@ try{
         var ooh = document.querySelector('#uLine');
         var mem = document.querySelector('#uMiniball');
         setTimeout(function () {
-            q.style.top = "calc(1em + env(safe-area-inset-top))";
+            q.style.top = "calc(1em + 0em)";
             ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-            ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
-            mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
+            ooh.style.top = "calc(50% + 0em + 30dvh - (var(--ballSize) / 2))";
+            mem.style.top = "calc(50% + 0em - var(--margin) + 20dvh)";
             funnyC = 0;
             setTimeout(function () {
 
@@ -2760,10 +2760,10 @@ try{
                 //document.querySelector('#uvula').style.transform = "rotateZ(0deg)";
 
                 setTimeout(function () {
-                    q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
+                    q.style.top = "calc(-50dvh + 0em + 4em)";
                     ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                    ooh.style.top = "calc(50% + env(safe-area-inset-top))"
-                    mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
+                    ooh.style.top = "calc(50% + 0em)"
+                    mem.style.top = "calc(50% - 0.5em + 0em)";
 
                    // document.querySelector('#uvula').style.transform = "rotateZ(0deg)";
                     var n = document.querySelectorAll(".teShape");
@@ -2772,10 +2772,10 @@ try{
                     nn.style.opacity = "1";
                     // nn.style.filter = "";
                     setTimeout(function () {
-                        q.style.top = "calc(1em + env(safe-area-inset-top))";
+                        q.style.top = "calc(1em + 0em)";
                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                        ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
-                        mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
+                        ooh.style.top = "calc(50% + 0em + 30dvh - (var(--ballSize) / 2))";
+                        mem.style.top = "calc(50% + 0em - var(--margin) + 20dvh)";
                         
                         for (var i of document.querySelectorAll(".teShape")) {
                             if (Math.random() < 0.5) {
@@ -2801,10 +2801,10 @@ try{
                             }
                         }
                         setTimeout(function () {
-                            q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
+                            q.style.top = "calc(-50dvh + 0em + 4em)";
                             ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                            ooh.style.top = "calc(50% + env(safe-area-inset-top))"
-                            mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
+                            ooh.style.top = "calc(50% + 0em)"
+                            mem.style.top = "calc(50% - 0.5em + 0em)";
                           /*  for (var i of document.querySelectorAll(".teShape")) {
                                 var r = Math.floor(Math.random() * 3);
                                 if (r == 0) {
@@ -2849,10 +2849,10 @@ try{
                     }
                         */
                             setTimeout(function () {
-                                q.style.top = "calc(1em + env(safe-area-inset-top))";
+                                q.style.top = "calc(1em + 0em)";
                                 ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                ooh.style.top = "calc(50% + env(safe-area-inset-top) + 30dvh - (var(--ballSize) / 2))";
-                                mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
+                                ooh.style.top = "calc(50% + 0em + 30dvh - (var(--ballSize) / 2))";
+                                mem.style.top = "calc(50% + 0em - var(--margin) + 20dvh)";
                                 for (var ayi of document.querySelectorAll(".teShape")) {
 
                                     ayi.style.backgroundColor = "var(--oj)";
@@ -2877,10 +2877,10 @@ try{
 
                                 }
                                 setTimeout(function () {
-                                    q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
+                                    q.style.top = "calc(-50dvh + 0em + 4em)";
                                     ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                                    ooh.style.top = "calc(50% + env(safe-area-inset-top))"
-                                    mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
+                                    ooh.style.top = "calc(50% + 0em)"
+                                    mem.style.top = "calc(50% - 0.5em + 0em)";
                                    /* for (var i of document.querySelectorAll(".teShape")) {
                                         if (i.style.backgroundColor != "var(--oj)") {
                                             i.style.backgroundColor = "var(--oj)";
@@ -2895,25 +2895,25 @@ try{
                                     }*/
                                    document.querySelector('.uBall').style.overflow = "visible";
                                     setTimeout(function () {
-                                        q.style.top = "calc(1em + env(safe-area-inset-top))";
+                                        q.style.top = "calc(1em + 0em)";
                                         ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                        ooh.style.top = "calc(50% + 30dvh + env(safe-area-inset-top) - (var(--ballSize) / 2))";
-                                        mem.style.top = "calc(50% + env(safe-area-inset-top) - var(--margin) + 20dvh)";
+                                        ooh.style.top = "calc(50% + 30dvh + 0em - (var(--ballSize) / 2))";
+                                        mem.style.top = "calc(50% + 0em - var(--margin) + 20dvh)";
                                        
                                         setTimeout(function () {
-                                            q.style.top = "calc(-50dvh + env(safe-area-inset-top) + 4em)";
+                                            q.style.top = "calc(-50dvh + 0em + 4em)";
                                             ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
-                                            ooh.style.top = "calc(50% + env(safe-area-inset-top))"
-                                            mem.style.top = "calc(50% - 0.5em + env(safe-area-inset-top))";
+                                            ooh.style.top = "calc(50% + 0em)"
+                                            mem.style.top = "calc(50% - 0.5em + 0em)";
                                             if (!bypass) {
                                                 swapTe(17, function () { }, 18, function () { }, true);
                                             }
 
                                             setTimeout(function () {
-                                                q.style.top = "calc(1em + env(safe-area-inset-top))";
+                                                q.style.top = "calc(1em + 0em)";
                                                 ooh.style.height = "calc(20dvh - (var(--ballSize) / 2))";
-                                                ooh.style.top = "calc(50% + 30dvh - env(safe-area-inset-top) + (var(--ballSize) / 2))";
-                                                mem.style.top = "calc(50% - env(safe-area-inset-top) + var(--margin) + 20dvh)";
+                                                ooh.style.top = "calc(50% + 30dvh - 0em + (var(--ballSize) / 2))";
+                                                mem.style.top = "calc(50% - 0em + var(--margin) + 20dvh)";
                                                 document.querySelector('#textEnter').style.background = "";
                                                
                                                 
@@ -2975,9 +2975,9 @@ try{
                                                                    // document.querySelector('#leftButton').style.width = "calc(" + document.querySelector('#rightButton').getBoundingClientRect().width + "px - 1em)";
                                                                     t.append(v);
                                                                     funnyC = 1; newConsoleLog('HERE');
-                                                                    v.style.top = "calc(6em + env(safe-area-inset-top))";
+                                                                    v.style.top = "calc(6em + 0em)";
                                                                     var tOo = document.querySelector('#touchOverlay');
-                                                                    tOo.style.top = "calc(4em + env(safe-area-inset-top))";
+                                                                    tOo.style.top = "calc(4em + 0em)";
                                                                     tOo.style.display = "block";
                                                                     v.style.bottom = "2em";
                                                                     happeningNow = false;
@@ -3243,7 +3243,7 @@ function reverseUball() {
         var countt = 0;
         var plLength = document.querySelectorAll(".palestine").length;
         var plList = [...document.querySelectorAll(".palestine")].reverse().slice(-5);
-        for (let el of plList) { el.style.transition = "0.5s"; el.style.opacity = "0"; el.style.top = "env(safe-area-inset-top)"; }
+        for (let el of plList) { el.style.transition = "0.5s"; el.style.opacity = "0"; el.style.top = "0em"; }
         // 2. Force browser to commit the initial state
         void document.querySelector("#allHold").offsetHeight;
         var count2 = 0;
@@ -3283,7 +3283,7 @@ function reverseUball() {
             }, ((1000 / plList.length) * countt) + 500)
         }
         setTimeout(function () {
-            document.querySelector('#background').style.top = "calc(-50dvh + env(safe-area-inset-top))";
+            document.querySelector('#background').style.top = "calc(-50dvh + 0em)";
             setTimeout(function () {
                 document.querySelector('.uBall').innerHTML = "";
                 funnyC = 1; newConsoleLog('HERE');
@@ -3991,7 +3991,7 @@ function swipeUp() {
         orbit.style.backgroundColor = "var(--swText)";
         orbit.style.position = "absolute";
         orbit.style.left = sVl['no'][0];
-        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
+        orbit.style.top = "calc(0em + " + sVt['no'][1] +")";
         orbitf.setAttribute('class', 'videoOrbit yes');
         orbitf.style.borderRadius = "5px";
         orbitf.style.zIndex = "200";
@@ -4001,7 +4001,7 @@ function swipeUp() {
         orbitf.style.backgroundColor = "var(--swText)";
         orbitf.style.position = "absolute";
         orbitf.style.left = sVl['yes'][0];
-        orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] + ")";
+        orbitf.style.top = "calc(0em + " + sVt['yes'][1] + ")";
         tsMT = Math.random();
         if(tsMT < 0.3){
             tsMT = 0.3;
@@ -4016,32 +4016,32 @@ function swipeUp() {
         setTimeout(function () {
             // Move RIGHT
             orbit.style.left = sVl['no'][0];
-            orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][0] + ")";
+            orbit.style.top = "calc(0em + " + sVt['no'][0] + ")";
             orbitf.style.left = sVl['yes'][0];
-            orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][0] +")";
+            orbitf.style.top = "calc(0em + " + sVt['yes'][0] +")";
             setTimeout(function () {
                 // Move UP
                 orbit.style.transform = "rotate(90deg)";
                 orbit.style.left = sVl['no'][1];
-                orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][0]+")";
+                orbit.style.top = "calc(0em + " + sVt['no'][0]+")";
                 orbitf.style.left = sVl['yes'][1];
-                orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][0] +")";
+                orbitf.style.top = "calc(0em + " + sVt['yes'][0] +")";
 
                 setTimeout(function () {
                     // Move LEFT
                     orbit.style.transform = "rotate(180deg)";
                     orbit.style.left = sVl['no'][1];
-                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1]+")";
+                    orbit.style.top = "calc(0em + " + sVt['no'][1]+")";
                     orbitf.style.left = sVl['yes'][1];
-                    orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1]+")";
+                    orbitf.style.top = "calc(0em + " + sVt['yes'][1]+")";
 
                     setTimeout(function () {
                         // Move DOWN
                         orbit.style.transform = "rotate(270deg)";
                         orbit.style.left = sVl['no'][2];
-                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
+                        orbit.style.top = "calc(0em + " + sVt['no'][1] +")";
                         orbitf.style.left = sVl['yes'][2];
-                        orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] +")";
+                        orbitf.style.top = "calc(0em + " + sVt['yes'][1] +")";
 
                         setTimeout(function () {
                             orbit.style.transform = "rotate(360deg)";
@@ -4067,7 +4067,7 @@ function swipeUp() {
 
                 bigjae.style.left = thebigjae.x + "px";
                 newConsoleLog(thebigjae.left);
-                bigjae.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
+                bigjae.style.top = "calc(0em + " + thebigjae.y + "px)";
                 newConsoleLog(thebigjae.top);
                 document.querySelector("#allHold").append(bigjae);
                 newConsoleLog([thebigjae, tsMT]);
@@ -4075,7 +4075,7 @@ function swipeUp() {
                 var bigjae2 = orbit.cloneNode();
                 bigjae2.style.left = thebigjae.x + "px";
                 document.querySelector("#allHold").append(bigjae2);
-                bigjae2.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
+                bigjae2.style.top = "calc(0em + " + thebigjae.y + "px)";
                 bigjae2.style.backgroundColor = "var(--swText)";
                 // bigjae2.style.opacity = "0.2";
                 bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
@@ -4084,7 +4084,7 @@ function swipeUp() {
 
                 bigjaef.style.left = thebigjaef.x + "px";
                 newConsoleLog(thebigjaef.left);
-                bigjaef.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
+                bigjaef.style.top = "calc(0em + " + thebigjaef.y + "px)";
                 newConsoleLog(thebigjaef.top);
                 document.querySelector("#allHold").append(bigjaef);
                 newConsoleLog([thebigjaef, tsMT]);
@@ -4092,7 +4092,7 @@ function swipeUp() {
                 var bigjae2f = orbitf.cloneNode();
                 bigjae2f.style.left = thebigjaef.x + "px";
                 document.querySelector("#allHold").append(bigjae2f);
-                bigjae2f.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
+                bigjae2f.style.top = "calc(0em + " + thebigjaef.y + "px)";
                 bigjae2f.style.backgroundColor = "var(--swText)";
                 //bigjae2f.style.opacity = "0.2";
                 bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
@@ -4118,7 +4118,7 @@ function swipeUp() {
                         bigjae.style.height = "calc(100dvh - 10em)";
                         bigjae.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
                         bigjae.style.borderRadius = "5px";
-                        bigjae.style.top = "calc(env(safe-area-inset-top) + " + "4em)";
+                        bigjae.style.top = "calc(0em + " + "4em)";
                         bigjae.style.transform = "rotate(360deg)";
                         bigjae.style.backgroundColor = "var(--swText)";
                        
@@ -4193,7 +4193,7 @@ if (currentPlace < allVideos.length-3) {
                         bigjaef.style.height = "100dvh";
                         bigjaef.style.left = "0";
                         bigjaef.style.borderRadius = "5px";
-                        bigjaef.style.top = "env(safe-area-inset-top)"
+                        bigjaef.style.top = "0em"
                         bigjaef.style.transform = "rotate(360deg)";
                         bigjaef.style.backgroundColor = "var(--swText)";
                         
@@ -4306,13 +4306,13 @@ function swipeDown() {
             bj.style.height = "calc(100dvh - 10em)";
             bj.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
             bj.style.borderRadius = "5px";
-            bj.style.top = "calc(4em + env(safe-area-inset-top))";
+            bj.style.top = "calc(4em + 0em)";
         } else {
             bj.style.width = "100dvw";
             bj.style.height = "100dvh";
             bj.style.left = "0";
             bj.style.borderRadius = "5px";
-            bj.style.top = "calc(env(safe-area-inset-top) + var(--margin))";
+            bj.style.top = "calc(0em + var(--margin))";
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
@@ -4324,7 +4324,7 @@ function swipeDown() {
        // orbit.style.opacity = 0;
         setTimeout(function () {
             bj.style.left = o2.left + "px";
-            bj.style.top = "calc(env(safe-area-inset-top) + " + o2.top + "px)";
+            bj.style.top = "calc(0em + " + o2.top + "px)";
             bj.style.width = o2.width + "px";
             bj.style.height = o2.height + "px";
             bj.style.transform = "rotate(0deg)";
@@ -4352,7 +4352,7 @@ function swipeDown() {
                // bj.remove();
                 setTimeout(function () {
                     orbit.style.left = sVl[fullsc][2];
-                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] + ")";
+                    orbit.style.top = "calc(0em + " + sVt[fullsc][1] + ")";
                 }, 125);
                 
                 setTimeout(function () {
@@ -4368,16 +4368,16 @@ function swipeDown() {
                    // bj.remove();
                     orbit.style.transform = "rotate(90deg)";
                     orbit.style.left = sVl[fullsc][1];
-                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
+                    orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
                    
                     setTimeout(function () {
 
                         orbit.style.left = sVl[fullsc][0];
-                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
+                        orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
                         setTimeout(function () {
 
                             orbit.style.left = sVl[fullsc][2];
-                            orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] +")";
+                            orbit.style.top = "calc(0em + " + sVt[fullsc][1] +")";
                             
                             setTimeout(function () {
                                 orbit.remove();
@@ -4395,12 +4395,12 @@ function swipeDown() {
                    // bj.remove();
 
                     orbit.style.left = sVl[fullsc][0];
-                    orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][0] +")";
+                    orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
                     
                     setTimeout(function () {
                         
                         orbit.style.left = sVl[fullsc][2];
-                        orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt[fullsc][1] +")";
+                        orbit.style.top = "calc(0em + " + sVt[fullsc][1] +")";
                        
                         setTimeout(function () {
                             orbit.remove();
