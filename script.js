@@ -5060,7 +5060,11 @@ async function requestVideos(value) {
             try{
                 
             allVideos = localStorage.getItem('nst_'+userEnc).split('[NSTSPLIT]');
+            if(allVideos.length<1){
+                getFromnet = true;
+            }else{
                  getFromNet = false;
+            }
             
            
             
@@ -5078,7 +5082,7 @@ async function requestVideos(value) {
             }
         }
         console.log[getFromNet,allVideos,'TWIZZZZYYYYY'];
-        if(allVideos[0].includes('Error')){
+        if(allVideos.length>0&&allVideos[0].includes('Error')){
             getFromNet = true;
         }
     if (getFromNet) {
