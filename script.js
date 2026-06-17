@@ -1278,6 +1278,11 @@ function pgFormat(text) {
 }
 var oldUser = {};
 function eMA2(simmilar, pgGivenData, neww) {
+    if(allVideos.length < 1){
+        allVideos.push(Ads[1]);
+        allVideos.push(Ads[1]);
+        allVideos.push(Ads[1]);
+    }
     for(var iA of [...document.querySelectorAll('.videoOrbit')]){
         iA.remove();
     }
@@ -3257,7 +3262,7 @@ function reverseUball() {
                     var jaeValues = document.querySelector('.uBall').getBoundingClientRect();
                     i.setAttribute('style', '');
                     i.style.transition = "0.5s";
-                    i.style.top = "env(safe-area-inset-top)";
+                    i.style.top = "calc(-1 * env(safe-area-inset-top))";
                     i.style.left = "0";
                     i.style.width = "calc(40dvw + 100dvw)";
                     i.style.height = "calc(40dvw + 100dvh)";
@@ -3266,7 +3271,7 @@ function reverseUball() {
                     i.style.zIndex = "100";
                     setTimeout(function () {
                         i.style.transition = "0.5s";
-                        i.style.top = "calc(env(safe-area-inset-top) + " + jaeValues.y + "px)";
+                        i.style.top = "calc((-1 * env(safe-area-inset-top)) + " + jaeValues.y + "px)";
                         i.style.left = jaeValues.x + "px";
                         i.style.width = jaeValues.width + "px";
                         i.style.height = jaeValues.height + "px";
@@ -5072,7 +5077,10 @@ async function requestVideos(value) {
                 localStorage.setItem('nst_'+userEnc,'');
             }
         }
-        console.log[getFromNet,allVideos,'TWIZZZZYYYYY']
+        console.log[getFromNet,allVideos,'TWIZZZZYYYYY'];
+        if(allVideos[0].includes('Error')){
+            getFromNet = true;
+        }
     if (getFromNet) {
         try {
             const result = await requestVideosInner(value);
