@@ -3087,7 +3087,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                     if(fullsc=='yes'){
-                                                                    for(var Qqiq of document.querySelectorAll('.yes')){
+                                                                    for(var Qqiq of [...document.querySelectorAll('.yes')]){
                                                                         Qqiq.style.transition = "0.2s";
                                                                         Qqiq.style.opacity = 1;
                                                                         }
@@ -3095,12 +3095,12 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     setTimeout(function(){
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     },200);
-                                                                    setTimemout(function(){
-                                                                        for(var Qqiq of document.querySelectorAll('.yes')){
+                                                                    setTimeout(function(){
+                                                                        for(var Qqiq of [...document.querySelectorAll('.yes')]){
                                                                         Qqiq.style.transition = "0.2s";
                                                                         Qqiq.style.opacity = 0;
                                                                         }
-                                                                        },200);
+                                                                        },1000);
                                                                     });
 
                                                                     // MOUSE DOWN
@@ -3178,7 +3178,21 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }catch(e){console.log(e)}
                                                                       document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                        document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
-                                                                        handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
+                                                                        if(fullsc=='yes'){
+                                                                    for(var Qqiq of [...document.querySelectorAll('.yes')]){
+                                                                        Qqiq.style.transition = "0.2s";
+                                                                        Qqiq.style.opacity = 1;
+                                                                        }
+                                                                        }
+                                                                    setTimeout(function(){
+                                                                      handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
+                                                                    },200);
+                                                                    setTimeout(function(){
+                                                                        for(var Qqiq of [...document.querySelectorAll('.yes')]){
+                                                                        Qqiq.style.transition = "0.2s";
+                                                                        Qqiq.style.opacity = 0;
+                                                                        }
+                                                                        },1000);
                                                                     
                                                                     });
 
@@ -3982,7 +3996,7 @@ function evaluateFullscreenReminder(n){
         setTimeout(function(){
             activeItem.style.color = "var(--text)";
             if(!n){
-            activeItem.innerText = [wnl100[0],wnl100[1]][fsNumber % 2] + wnl100[2];
+            activeItem.innerText = [wnl100[0],wnl100[1]][Math.round(Math.random()) % 2] + wnl100[2];
             }else{
                 activeItem.innerText = words[navLang][n];
             }
