@@ -3086,8 +3086,21 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }catch(e){console.log(e)}
                                                                      document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
+                                                                    if(fullsc=='yes'){
+                                                                    for(var Qqiq of document.querySelectorAll('.yes')){
+                                                                        Qqiq.style.transition = "0.2s";
+                                                                        Qqiq.style.opacity = 1;
+                                                                        }
+                                                                        }
+                                                                    setTimeout(function(){
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
-                                                                    
+                                                                    },200);
+                                                                    setTimemout(function(){
+                                                                        for(var Qqiq of document.querySelectorAll('.yes')){
+                                                                        Qqiq.style.transition = "0.2s";
+                                                                        Qqiq.style.opacity = 0;
+                                                                        }
+                                                                        },200);
                                                                     });
 
                                                                     // MOUSE DOWN
