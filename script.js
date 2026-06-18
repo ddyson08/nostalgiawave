@@ -2457,7 +2457,7 @@ function nextSaved() {
             }, 50)
             setTimeout(function () {
                 console.warn("4 cleanup:", document.querySelector('#textEnter').innerHTML);
-                q.setAttribute('style', 'transition: 2s; left:' + (qqq.x) + 'px; top:' + (qqq.y) + 'px; opacity: 1; background-color: var(--accent); width:' + (qqq.width) + 'px; height:' + (qqq.height) + 'px; z-index: 1000; filter: blur(0.25em);');
+                q.setAttribute('style', 'transition: 2s; left:' + (qqq.x) + 'px; top: calc(' + (qqq.y) + 'px + env(safe-area-inset-height)); opacity: 1; background-color: var(--accent); width:' + (qqq.width) + 'px; height:' + (qqq.height) + 'px; z-index: 1000; filter: blur(0.25em);');
                 document.querySelector('.uBall').setAttribute('style', 'position: fixed; opacity: 0; left: -70dvw; top:-20dvh; width: 180dvw; height: 180dvw; filter: blur(0.25em);');
               //  document.querySelector('#uvula').style.transition = "opacity 1s, top 1s, z-index 1s, background-color 1s, margin-top 1s, width 1s, height 1s, position 1s, left 1s, transform 0s, margin-left 1s, filter 1s  ";
             }, 100);
@@ -2471,7 +2471,7 @@ function nextSaved() {
                 Gaza.style.opacity = 0;
                 Gaza.style.position = "absolute";
                 Gaza.style.backgroundColor = "var(--bg)";
-                Gaza.style.top = "calc(-150dvh + 0em)";
+                Gaza.style.top = "calc(-150dvh + env(safe-area-inset-height))";
                 Gaza.style.filter = "blur(0.25em)";
                 Gaza.style.width = "100dvw";
                 Gaza.style.height = "100dvh";
@@ -2572,14 +2572,14 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     console.warn([mH, clone]);
                     clone.style.width = "50%";
                     clone.style.height = "50%"
-                    clone.style.top = "calc(25% + 0em)";
+                    clone.style.top = "calc(25% + env(safe-area-inset-height))";
                     clone.style.opacity = "1";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
                         i.style.left = (parseFloat(i.style.left) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
-                        i.style.top = "calc(0em + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
+                        i.style.top = "calc(env(safe-area-inset-height) + " + (parseFloat(i.style.top) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%)";
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
@@ -2611,7 +2611,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     clone.style.width = "50%";
                     clone.style.opacity = "1";
                     clone.style.height = "50%";
-                    clone.style.top = "calc(25% + 0em)";
+                    clone.style.top = "calc(25% + env(safe-area-inset-height))";
                     clone.style.left = "25%";
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
@@ -3647,7 +3647,7 @@ function makeShapes(n, y, extra, t, c) {
         }
         //newConsoleLog(properties)
         pp = ((parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", "")) * 0.70) / 999 - (0.02 / 999) + (parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", "")) * 0.17) / 999);
-        properties = [properties[0], (parseInt(q.slice(1, 4)) * pp + 0.01 / 999), (parseInt(q.slice(4, 7)) * pp + 0.01 / 999), (0.1*parseInt(q.slice(7,8))*2) + 3 + "em", (parseInt(q.slice(7, 8)) * 50) - 100 + "deg"];
+        properties = [properties[0], (parseInt(q.slice(1, 4)) * pp + 0.01 / 999), (parseInt(q.slice(4, 7)) * pp + 0.006 / 999), (0.1*parseInt(q.slice(7,8))*2) + 3 + "em", (parseInt(q.slice(7, 8)) * 50) - 100 + "deg"];
         Shapez2.push(properties);
         var sh = document.createElement('div');
         sh.setAttribute('style', 'border-radius:' + properties[0])
@@ -4039,10 +4039,10 @@ function swipeUp() {
         orbit.style.width = "0.5em";
         orbit.style.height = "0.5em";
         // orbit.style.opacity = "1";
-        orbit.style.backgroundColor = "var(--swText)";
+        orbit.style.backgroundColor = "var(--pgText)";
         orbit.style.position = "absolute";
         orbit.style.left = sVl['no'][0];
-        orbit.style.top = "calc(0em + " + sVt['no'][1] +")";
+        orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt['no'][1] +")";
         orbitf.setAttribute('class', 'videoOrbit yes');
         orbitf.style.borderRadius = "5px";
         orbitf.style.zIndex = "200";
@@ -4052,7 +4052,7 @@ function swipeUp() {
         orbitf.style.backgroundColor = "var(--swText)";
         orbitf.style.position = "absolute";
         orbitf.style.left = sVl['yes'][0];
-        orbitf.style.top = "calc(0em + " + sVt['yes'][1] + ")";
+        orbitf.style.top = "calc(env(safe-area-inset-height) + " + sVt['yes'][1] + ")";
         tsMT = Math.random();
         if(tsMT < 0.3){
             tsMT = 0.3;
@@ -4067,14 +4067,14 @@ function swipeUp() {
         setTimeout(function () {
             // Move RIGHT
             orbit.style.left = sVl['no'][0];
-            orbit.style.top = "calc(0em + " + sVt['no'][0] + ")";
+            orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt['no'][0] + ")";
             orbitf.style.left = sVl['yes'][0];
             orbitf.style.top = "calc(0em + " + sVt['yes'][0] +")";
             setTimeout(function () {
                 // Move UP
                 orbit.style.transform = "rotate(90deg)";
                 orbit.style.left = sVl['no'][1];
-                orbit.style.top = "calc(0em + " + sVt['no'][0]+")";
+                orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt['no'][0]+")";
                 orbitf.style.left = sVl['yes'][1];
                 orbitf.style.top = "calc(0em + " + sVt['yes'][0] +")";
 
@@ -4082,7 +4082,7 @@ function swipeUp() {
                     // Move LEFT
                     orbit.style.transform = "rotate(180deg)";
                     orbit.style.left = sVl['no'][1];
-                    orbit.style.top = "calc(0em + " + sVt['no'][1]+")";
+                    orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt['no'][1]+")";
                     orbitf.style.left = sVl['yes'][1];
                     orbitf.style.top = "calc(0em + " + sVt['yes'][1]+")";
 
@@ -4090,9 +4090,9 @@ function swipeUp() {
                         // Move DOWN
                         orbit.style.transform = "rotate(270deg)";
                         orbit.style.left = sVl['no'][2];
-                        orbit.style.top = "calc(0em + " + sVt['no'][1] +")";
+                        orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt['no'][1] +")";
                         orbitf.style.left = sVl['yes'][2];
-                        orbitf.style.top = "calc(0em + " + sVt['yes'][1] +")";
+                        orbitf.style.top = "calc(env(safe-area-inset-height) + " + sVt['yes'][1] +")";
 
                         setTimeout(function () {
                             orbit.style.transform = "rotate(360deg)";
@@ -4118,7 +4118,7 @@ function swipeUp() {
 
                 bigjae.style.left = thebigjae.x + "px";
                 newConsoleLog(thebigjae.left);
-                bigjae.style.top = "calc(0em + " + thebigjae.y + "px)";
+                bigjae.style.top = "calc(env(safe-area-inset-height) + " + thebigjae.y + "px)";
                 newConsoleLog(thebigjae.top);
                 document.querySelector("#allHold").append(bigjae);
                 newConsoleLog([thebigjae, tsMT]);
@@ -4126,7 +4126,7 @@ function swipeUp() {
                 var bigjae2 = orbit.cloneNode();
                 bigjae2.style.left = thebigjae.x + "px";
                 document.querySelector("#allHold").append(bigjae2);
-                bigjae2.style.top = "calc(0em + " + thebigjae.y + "px)";
+                bigjae2.style.top = "calc(env(safe-area-inset-height) + " + thebigjae.y + "px)";
                 bigjae2.style.backgroundColor = "var(--swText)";
                 // bigjae2.style.opacity = "0.2";
                 bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
@@ -4135,7 +4135,7 @@ function swipeUp() {
 
                 bigjaef.style.left = thebigjaef.x + "px";
                 newConsoleLog(thebigjaef.left);
-                bigjaef.style.top = "calc(0em + " + thebigjaef.y + "px)";
+                bigjaef.style.top = "calc(env(safe-area-inset-height) + " + thebigjaef.y + "px)";
                 newConsoleLog(thebigjaef.top);
                 document.querySelector("#allHold").append(bigjaef);
                 newConsoleLog([thebigjaef, tsMT]);
@@ -4143,7 +4143,7 @@ function swipeUp() {
                 var bigjae2f = orbitf.cloneNode();
                 bigjae2f.style.left = thebigjaef.x + "px";
                 document.querySelector("#allHold").append(bigjae2f);
-                bigjae2f.style.top = "calc(0em + " + thebigjaef.y + "px)";
+                bigjae2f.style.top = "calc(env(safe-area-inset-height) + " + thebigjaef.y + "px)";
                 bigjae2f.style.backgroundColor = "var(--swText)";
                 //bigjae2f.style.opacity = "0.2";
                 bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
@@ -4169,7 +4169,7 @@ function swipeUp() {
                         bigjae.style.height = "calc(100dvh - 10em)";
                         bigjae.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
                         bigjae.style.borderRadius = "5px";
-                        bigjae.style.top = "calc(0em + " + "4em)";
+                        bigjae.style.top = "calc(env(safe-area-inset-height) + " + "4em)";
                         bigjae.style.transform = "rotate(360deg)";
                         bigjae.style.backgroundColor = "var(--swText)";
                        
@@ -4250,7 +4250,7 @@ if (currentPlace < allVideos.length-3) {
                         bigjaef.style.height = "100dvh";
                         bigjaef.style.left = "0";
                         bigjaef.style.borderRadius = "5px";
-                        bigjaef.style.top = "0em"
+                        bigjaef.style.top = "env(safe-area-inset-height)"
                         bigjaef.style.transform = "rotate(360deg)";
                         bigjaef.style.backgroundColor = "var(--swText)";
                         
@@ -4367,17 +4367,17 @@ function swipeDown() {
             bj.style.height = "calc(100dvh - 10em)";
             bj.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
             bj.style.borderRadius = "5px";
-            bj.style.top = "calc(4em + 0em)";
+            bj.style.top = "calc(4em + env(safe-area-inset-height))";
         } else {
             bj.style.width = "100dvw";
             bj.style.height = "100dvh";
             bj.style.left = "0";
             bj.style.borderRadius = "5px";
-            bj.style.top = "calc(0em + var(--margin))";
+            bj.style.top = "calc(env(safe-area-inset-height) + var(--margin))";
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
-        bj.style.backgroundColor = "var(--swText)";
+        bj.style.backgroundColor = "var(--pgText)";
         bj.style.position = "absolute";
         bj.style.zIndex = 10000;
         bj.style.opacity = 0.5;
@@ -4385,7 +4385,7 @@ function swipeDown() {
        // orbit.style.opacity = 0;
         setTimeout(function () {
             bj.style.left = o2.left + "px";
-            bj.style.top = "calc(0em + " + o2.top + "px)";
+            bj.style.top = "calc(env(safe-area-inset-height) + " + o2.top + "px)";
             bj.style.width = o2.width + "px";
             bj.style.height = o2.height + "px";
             bj.style.transform = "rotate(0deg)";
@@ -4413,7 +4413,7 @@ function swipeDown() {
                // bj.remove();
                 setTimeout(function () {
                     orbit.style.left = sVl[fullsc][2];
-                    orbit.style.top = "calc(0em + " + sVt[fullsc][1] + ")";
+                    orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][1] + ")";
                 }, 125*2);
                 
                 setTimeout(function () {
@@ -4429,16 +4429,16 @@ function swipeDown() {
                    // bj.remove();
                     orbit.style.transform = "rotate(90deg)";
                     orbit.style.left = sVl[fullsc][1];
-                    orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
+                    orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][0] +")";
                    
                     setTimeout(function () {
 
                         orbit.style.left = sVl[fullsc][0];
-                        orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
+                        orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][0] +")";
                         setTimeout(function () {
 
                             orbit.style.left = sVl[fullsc][2];
-                            orbit.style.top = "calc(0em + " + sVt[fullsc][1] +")";
+                            orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][1] +")";
                             
                             setTimeout(function () {
                                 orbit.remove();
@@ -4456,12 +4456,12 @@ function swipeDown() {
                    // bj.remove();
 
                     orbit.style.left = sVl[fullsc][0];
-                    orbit.style.top = "calc(0em + " + sVt[fullsc][0] +")";
+                    orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][0] +")";
                     
                     setTimeout(function () {
                         
                         orbit.style.left = sVl[fullsc][2];
-                        orbit.style.top = "calc(0em + " + sVt[fullsc][1] +")";
+                        orbit.style.top = "calc(env(safe-area-inset-height) + " + sVt[fullsc][1] +")";
                        
                         setTimeout(function () {
                             orbit.remove();
