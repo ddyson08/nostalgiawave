@@ -110,7 +110,6 @@ scrollable {
     background-color: rgba(0,0,0,0);
      -webkit-filter: invert(1);
   -filter: invert(1);
-color: rgba(0,0,0,0);
 }
 
 * {
@@ -572,10 +571,11 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    height: calc(100dvh - var(--margin));
+    height: calc(100dvh - (2*var(--margin)));
     width: 100dvw;
     overflow-y: scroll;
     text-wrap: normal;
+    padding-bottom: var(--margin);
     z-index: 5;
     opacity: 0;
     padding-top: 3em;
