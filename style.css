@@ -108,6 +108,8 @@ scrollable {
     margin: 0.5em;
     z-index: 9999;
     background-color: rgba(0,0,0,0);
+     -webkit-backdrop-filter: invert(1);
+  backdrop-filter: invert(1);
 }
 
 * {
@@ -811,4 +813,7 @@ height: calc(100vh - env(safe-area-inset-top));
 }
 html, body {
     height: 100%;
+}
+videoOrbit{
+    background-color: var(--pgText) !important;
 }
