@@ -5,6 +5,6 @@ hope you guys like it I spent really long on this :)
 
 Dev started Nov 18, 2025
 
-Most recent work done: June 12, 2026
+Most recent work done: June 18, 2026
 
 You can use this code to spin up your own version of nostalgiaWave. Just download the file, decompress it, and then click on Index.html to open it.
