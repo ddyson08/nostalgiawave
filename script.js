@@ -35,7 +35,7 @@ var clearItInterval = setInterval(function(){
             var teClear = document.createElement('div');
             teClear.setAttribute('id','teClear');
             teClear.innerText = "X";
-            teClear.setAttribute('onclick','this.parentNode.querySelector("input").value="";');
+            teClear.setAttribute('onclick','this.parentNode.querySelector("input").value=""; this.parentNode.querySelector("input").focus()');
             document.body.append(teClear);
             document.querySelector('.teFlexx').insertBefore(teClear, document.querySelector('.teFlexx').querySelector('input'));
         }
@@ -181,8 +181,8 @@ const words = {
 "nostalgiaWave", //1
 "peiLamed", //2
 "Как тебя зовут? <br><span class='nstLower'>После этого нажмите Enter ☺️</span>", //3
-"next", //4
-"your", //5
+"Далее", //4
+"твоя", //5
 "nostalgia", //6
 "По какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
 "Какой автор?<br><span class='nstLower'>(придерживайтесь одного или ни одного, можно изменить позже)</span>", //8
@@ -1482,7 +1482,7 @@ function pgCancel(text) {
         document.querySelector('#uvula').style.display = "none";
         pg1.remove();
         if ([...document.querySelectorAll('.pgButtonHold')].length < 2) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
         } else {
             document.querySelector('.primaryButton').setAttribute('class', '');
         }
@@ -1524,7 +1524,7 @@ function pgCancel(text) {
         
         pgt.querySelector('b').innerText = words[navLang][109];
          if ([...document.querySelectorAll('.pgButtonHold')].length <= 1) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][28]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
                 }
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
@@ -3664,6 +3664,7 @@ var shapes = ['circle', 'rounded square'];
 var savefunnyn = 0;
 function makeShapes(n, y, extra, t, c) {
    // alert([n,y,extra,t,c]);
+setTimeout(function(){document.querySelector("input").focus()},1000);
     var newShi = true;
     var a;
     if (t) {
