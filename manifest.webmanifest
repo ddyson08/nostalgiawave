@@ -5,8 +5,8 @@
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "HSL(152, 6%, 50%)",
-  "theme_color": "HSL(152, 6%, 50%)",
+  "background_color": "none",
+  "theme_color": "none",
   "prefer_related_applications": false,
   "icons": [
     {
