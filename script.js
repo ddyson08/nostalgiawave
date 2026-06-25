@@ -1498,14 +1498,14 @@ function pgCancel(text) {
          var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                 
                                       // console     
@@ -1549,14 +1549,14 @@ function pgCancel(text) {
                                               var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                             setTimeout(function(){
                                             var TOOO = document.querySelector('#touchOverlay');
@@ -3305,7 +3305,7 @@ function requestTheFullscreen(a) {
         //alert(touchOverlay.style.marginTop);
         touchOverlay.style.top = "4em";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(true)')
-        fullscreenButton.innerText = '↘';
+        fullscreenButton.innerText = ({'no': '↘','yes': '↖'})[fullsc];
          Tee.style.zIndex = "";
     video.style.zIndex = "0";
     document.querySelector('#titleBar').style.zIndex = "2000";
@@ -4255,14 +4255,14 @@ if (currentPlace < allVideos.length-3) {
                                             var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                 
                                              setTimeout(function(){
@@ -4297,14 +4297,14 @@ if (currentPlace < allVideos.length-3) {
                                             var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                 
                                              setTimeout(function(){
@@ -4379,14 +4379,14 @@ if (currentPlace < allVideos.length-3) {
                                            var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                 
                                              
@@ -5438,14 +5438,14 @@ function giveError3() {
      var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
                                             
                                             }else{
-                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
                                           
         try{
@@ -5473,7 +5473,7 @@ function giveError3() {
           var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
                                                 
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc]
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
