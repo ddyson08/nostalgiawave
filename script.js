@@ -4291,6 +4291,46 @@ if (currentPlace < allVideos.length-3) {
                                         }
                                     } else {
                                        // alert(5);
+                                    if (allVideos[currentPlace] == "Error") {
+                                            giveError();
+                                        }  else {
+                                            var avcp = allVideos[currentPlace];
+                                            if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
+                                                
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+'↘';
+                                                avcp = allVideos[currentPlace].replace('📺','');
+                                                if(allVideos[currentPlace] == "ERROR"){
+                                                    avcp = Ads[1];
+                                                }
+                                            
+                                            }else{
+                                                 document.querySelector('#fullscreenButton').innerText = '↘';
+                                            }
+                                
+                                             setTimeout(function(){
+                                            var TOOO = document.querySelector('#touchOverlay');
+                                            TOOO.style.transition ="0";
+                                            TOOO.style.marginLeft = "-1000vw";
+                                            try{
+                                            player.loadVideoById(avcp)
+                                            }
+                                            catch(e){}
+                                            setTimeout(function(){ TOOO.style.marginLeft = "";},600)
+                                            try{
+                                             player.loadVideoById(avcp);
+                                            }
+                                            catch(e){}
+                                            },100);
+                                          // alert([allVideos[currentPlace], currentPlace])
+                                          try{
+                                           document.querySelector('#loadNext').setAttribute('src','https://youtube.com/embed/'+allVideos[((currentPlace)+1)].replace('📺',''));
+                                          }
+                                          catch(e){
+                                            console.log(e);
+                                          }
+                                           // alert([allVideos[((currentPlace)+1)], currentPlace+1, document.querySelector('#loadNext').getAttribute('src')])
+                                         console.error(allVideos);
+                                        }
                                         if (allVideos[currentPlace] == "Error") {
                                             giveError();
                                         } else {
