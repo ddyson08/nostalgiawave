@@ -12,7 +12,9 @@
     font-style: normal;
     font-display: swap;
 }
-
+*{
+  touch-action: manipulation;
+}
 #loadNext{
     position: absolute;
     top: 105vh;
