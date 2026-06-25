@@ -29,10 +29,36 @@ function isPWA() {
 // --- Example Usage ---
 
 
+var clearItInterval = setInterval(function(){
+    if(document.querySelector('.teFlexx')){
+        if((document.querySelector('.teFlexx').querySelector('input') && document.querySelector('.teFlexx').querySelector('input').checkVisibility()) && !document.querySelector('.teFlexx').querySelector('#teClear')){
+            var teClear = document.createElement('div');
+            teClear.setAttribute('id','teClear');
+            teClear.innerText = "X";
+            teClear.setAttribute('onclick','this.parentNode.querySelector("input").value="";');
+            document.body.append(teClear);
+            document.querySelector('.teFlexx').insertBefore(teClear, document.querySelector('.teFlexx').querySelector('input'));
+        }
+        if((!document.querySelector('.teFlexx').querySelector('input') || !document.querySelector('.teFlexx').querySelector('input').checkVisibility()) && document.querySelector('.teFlexx').querySelector('#teClear')){
+            document.querySelector('.teFlexx').querySelector('#teClear').remove();
+        }
+    }
+    if(document.querySelector('#playground').checkVisibility()){
+        for(var i of document.querySelectorAll('.pgButtonHold')){
+            try{
+                i.children[1].remove();
+            }
+            catch(e){
+                newConsoleLog(e);
+            }
+        }
+    }
 
+},100)
 function newConsoleLog(message) {
-
+console.log('old'+message)
 }
+var rateLimit = true;
 const words = {
   "en-US": [
     "by", //0
@@ -1003,7 +1029,7 @@ function endFollow() {
 }
 }
 var Arr = [];
-var posinar = 0;
+var posinar = -1;
 var whatYouScrolled = [];
 var oldSearches = [];
 var canEMAog = true;
@@ -1558,6 +1584,16 @@ function pgCancel(text) {
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+    try{
+         for (var yes of [...document.querySelectorAll('.yes')]) {
+            yes.style.opacity = 0;
+        }
+        for (var no of [...document.querySelectorAll('.no')]) {
+            no.style.opacity = 0;
+        }
+    }catch(e){
+
+    }
 try{
     document.querySelector('#uvula').style.zIndex = "1";
     //document.querySelector('#playground').scrollTo(0, 0);
@@ -1591,7 +1627,9 @@ document.querySelector('#playground').style.opacity = 0;
         setTimeout(function () {
             teTee.innerHTML = `
 <b id="teTitle" words="7">what time period are you nostalgic for?</b>
+<div class="teFlexx">
         <input n="0" type="text" class="hasBorder" id="teInput" />
+        </div>
 <button id="teButton" words="4" onclick='  if (doneAnimation) {
       var thisVall = validateDate(document.querySelector("#teInput").value);
       if (!thisVall.includes("Year Error")) {
@@ -1864,8 +1902,8 @@ setTimeout(function(){
     document.querySelector('#uvula').style.opacity = "1";
     user = JSON.parse(decodeURIComponent(urlParams.get('user')));
     makeShapes(user.year,'   ','y',true);
-    makeShapes(user.topics,'   ','y',true);
-    makeShapes(user.preferences,'   ','y',true);
+    makeShapes(user.topics,'   ','p',true);
+    makeShapes(user.preferences,'   ','t',true);
     setTimeout(function(){runAnimation();},500);
 },1000);
 }
@@ -1898,7 +1936,7 @@ setTimeout(function(){
         yes: ["calc(100dvh - 0.25em - 1em)", "1.25em"]
     }
     var Arr = [];
-    var posinar = 0;
+    var posinar = -1;
     var whatYouScrolled = [];
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // User prefers dark mode
@@ -2418,17 +2456,12 @@ function nextSaved() {
         setTimeout(function () {
             var minHeight;
             var mH;
-            for (var Yuval of document.querySelector('.uBall').children) {
-                if ([...document.querySelector('.uBall').children].indexOf(Yuval) == 0) {
-                    minHeight = parseFloat(Yuval.style.top);
-                    mH = Yuval;
-                } else {
-                    if ((parseFloat(Yuval.style.top) < minHeight) && Yuval.getBoundingClientRect().width >= 1) {
-                        minHeight = parseFloat(Yuval.style.top);
-                        mH = Yuval;
-                    }
+            for(var iI of document.querySelector('.uBall').children){
+                if(iI.children.length>0){
+                    mH = iI;
                 }
             }
+            mH.style.zIndex = "1000";
             var q;
             var qq;
             var qqq;
@@ -2550,19 +2583,9 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                 console.warn("9 cleanup:", document.querySelector('#textEnter').innerHTML);
                 newConsoleLog([document.querySelector('.uBall').innerHTML, document.querySelector('.uBall').children])
                 var minHeight;
-                var mH;
-                for (var Yuval of document.querySelector('.uBall').children) {
-                    if ([...document.querySelector('.uBall').children].indexOf(Yuval) == 0) {
-                        minHeight = parseFloat(Yuval.style.top);
-                        mH = Yuval;
-                    } else {
-                        if ((parseFloat(Yuval.style.top) < minHeight) && Yuval.getBoundingClientRect().width >= 1) {
-                            minHeight = parseFloat(Yuval.style.top);
-                            mH = Yuval;
-                        }
-                    }
-                }
-                clone.style.width = "0px";
+                 var mH = document.querySelector('.uBall').children[Math.ceil(document.querySelector('.uBall').children.length*Math.random())-1];
+              mH.style.zIndex = "1000";
+                 clone.style.width = "0px";
                 clone.style.length = "0px";
                 clone.style.opacity = "0";
                 clone.style.transition = "0.5s";
@@ -2589,18 +2612,8 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                 console.warn("9 cleanup:", document.querySelector('#textEnter').innerHTML);
                 newConsoleLog([document.querySelector('.uBall').innerHTML, document.querySelector('.uBall').querySelector('.teShape')])
                 var minHeight;
-                var mH;
-                for (var Yuval of document.querySelector('.uBall').querySelectorAll('.teShape')) {
-                    if ([...document.querySelector('.uBall').querySelectorAll('.teShape')].indexOf(Yuval) == 0) {
-                        minHeight = parseFloat(Yuval.style.top);
-                        mH = Yuval;
-                    } else {
-                        if ((parseFloat(Yuval.style.top) < minHeight) && Yuval.getBoundingClientRect().width >= 1) {
-                            minHeight = parseFloat(Yuval.style.top);
-                            mH = Yuval;
-                        }
-                    }
-                }
+                var mH = document.querySelector('.uBall').children[Math.ceil(document.querySelector('.uBall').children.length*Math.random())-1];
+           mH.style.zIndex = "1000";
                 mH.append(clone);
                 clone.style.width = "0px";
                 clone.style.length = "0px";
@@ -2626,6 +2639,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
     }
 }
 async function getSaved() {
+posinar = 0;
     if (true) {
         Arr = localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]');
         if (Arr[0] == "null") {
@@ -3061,7 +3075,7 @@ var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},500);
                                                                     });
-
+player.playVideo();
                                                                     // TOUCH END
                                                                    TOOO.addEventListener('touchend', function (event) {
                                                                         autoplay = 0; 
@@ -3100,10 +3114,32 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         Qqiq.style.transition = "0.2s";
                                                                         Qqiq.style.opacity = 0;
                                                                         }
-                                                                        },1000);
+                                                                        },2000);
                                                                     });
 
                                                                     // MOUSE DOWN
+                                                                    window.addEventListener('keyup', function(event){
+                                                                        
+                                                                        if(event.keyCode == '38' && TOOO.checkVisibility()){
+                                                                            swipeDown()
+                                                                        }
+                                                                        if(event.keyCode == '40' && TOOO.checkVisibility()){
+                                                                            swipeUp()
+                                                                        }
+                                                                    })
+                                                                    window.addEventListener("wheel", event => {
+ // if(rateLimit){
+                                                               const delta = Math.sign(event.deltaY);
+    if(TOOO.checkVisibility()){
+        if(delta == "1"){
+            swipeUp();
+        }else{
+            swipeDown();
+        }
+    }
+   // setTimeout(function(){rateLimit = true}, 2000);
+//}
+});
                                                                     TOOO.addEventListener('mousedown', function (event) {
                                                                        
                                                                         isTE = false;
@@ -3192,15 +3228,18 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         Qqiq.style.transition = "0.2s";
                                                                         Qqiq.style.opacity = 0;
                                                                         }
-                                                                        },1000);
+                                                                        },2000);
                                                                     
                                                                     });
 
  isSharing = "false";
                                                                   
                                                                     try{
-                                                                    player.loadVideoById(allVideos[currentPlace].replace('📺',''))
+                                                                    player.loadVideoById(allVideos[currentPlace].replace('📺',''));
                                                                     player.playVideo();
+                                                                    setTimeout(function(){
+                                                                        player.playVideo();
+                                                                    })
                                                                     }
                                                                     catch(e){}
                     
@@ -3378,7 +3417,7 @@ function reverseUball() {
             e1.style.opacity = 1;
             var e2 = document.createElement('input');
             e2.setAttribute('id', 'teInput');
-            document.querySelector('#textEnter').append(e2);
+            document.querySelector('#textEnter').querySelector('.teFlexx').append(e2);
             document.querySelector('#textEnter').append(e1);
             document.querySelector('#textEnter').querySelector('button').remove();
             document.querySelector('#textEnter').querySelector('button').remove();
@@ -3452,7 +3491,7 @@ function reverseUball() {
 }
 function nvm() {
     if (!dontRun) {
-        posinar = 0;
+        posinar = -1;
         document.querySelector('#b4').innerText += "✅";
         dontRun = true;
         /* var biggest = 0;
@@ -3498,18 +3537,9 @@ function chooseSaved() {
     user = JSON.parse((Arr[posinar % Arr.length].split('[NTS2]')[1]))
     runAnimation();
     var minHeight;
-    var mH;
-    for (var Yuval of document.querySelector('.uBall').children) {
-        if ([...document.querySelector('.uBall').children].indexOf(Yuval) == 0) {
-            minHeight = parseFloat(Yuval.style.top);
-            mH = Yuval;
-        } else {
-            if ((parseFloat(Yuval.style.top) < minHeight) && Yuval.getBoundingClientRect().width >= 1) {
-                minHeight = parseFloat(Yuval.style.top);
-                mH = Yuval;
-            }
-        }
-    }
+    var mH = document.querySelector('.uBall').children[Math.ceil(document.querySelector('.uBall').children.length*Math.random())-1];
+           mH.style.zIndex = "1000";
+   
     mH.children[0].style.width = "0";
     mH.children[0].style.height = "0";
     mH.children[0].style.transition = "0.5s";
@@ -3633,6 +3663,7 @@ function enterName() {
 var shapes = ['circle', 'rounded square'];
 var savefunnyn = 0;
 function makeShapes(n, y, extra, t, c) {
+   // alert([n,y,extra,t,c]);
     var newShi = true;
     var a;
     if (t) {
@@ -3675,6 +3706,13 @@ function makeShapes(n, y, extra, t, c) {
         //newConsoleLog(properties)
         pp = ((parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", "")) * 0.70) / 999 - (0.02 / 999) + (parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", "")) * 0.17) / 999);
         properties = [properties[0], (parseInt(q.slice(1, 4)) * pp + 0.01 / 999), (parseInt(q.slice(4, 7)) * pp + 0.006 / 999), (0.1*parseInt(q.slice(7,8))*2) + 3 + "em", (parseInt(q.slice(7, 8)) * 50) - 100 + "deg"];
+     // alert([properties[1]+properties[3] > parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", "")),properties[1]+properties[3],parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", ""))])
+        while(properties[1]+parseInt((properties[3]).replace('em','')) > parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", ""))){
+        properties[1] = properties[1]-0.2;
+       }
+       while(properties[2]+parseInt((properties[3]).replace('em','')) > parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('--ballSize').replace("em", ""))){
+        properties[2] = properties[2]-0.2;
+       }
         Shapez2.push(properties);
         var sh = document.createElement('div');
         sh.setAttribute('style', 'border-radius:' + properties[0])
@@ -3682,7 +3720,7 @@ function makeShapes(n, y, extra, t, c) {
         Shapez.push(sh);
         console.warn(Shapez);
         // if (t) {
-        if (posinar == 0) {
+        if (posinar < 0) {
             if (!happeningNow) {
                 happeningNow = true;
                 funnyC = 0;
@@ -3721,12 +3759,13 @@ function makeShapes(n, y, extra, t, c) {
             //document.querySelector('#uvula').style.transform = "rotateZ(0deg)";
 
         } else {
+           // alert(properties[2])
             console.log('HERE');
 
             a.append(sh);
             sh.style.left = properties[1] + "em";
             sh.style.opacity = "1";
-            sh.style.top = "calc(env(safe-area-inset-top) + " + properties[2] + "em)";
+            sh.style.top = properties[2] + "em";
             sh.style.height = properties[3];
             sh.style.width = properties[3];
             sh.style.zIndex = "50";
@@ -3737,6 +3776,7 @@ function makeShapes(n, y, extra, t, c) {
             newShi = false;
         }
         // }
+       // alert(newShi);
         if (newShi) {
             setTimeout(function () {
                 let twin1 = sh;
@@ -3837,7 +3877,7 @@ function makeShapes(n, y, extra, t, c) {
             }, tempvar)
 
         }
-        if (t && posinar == 0) {
+        if (t && posinar < 0) {
             var sh3 = [...Shapez];
             setTimeout(function () {
                 for (var j of Shapez) {
@@ -4025,6 +4065,8 @@ function evaluateFullscreenReminder(n){
     localStorage.setItem("nstFSRN",fsNumber);
 }
 function swipeUp() {
+    if(rateLimit){
+        rateLimit = false;
     if(currentPlace >= allVideos.length - 1){
         if(nextToken!==""){
             giveError3();
@@ -4361,8 +4403,12 @@ if (currentPlace < allVideos.length-3) {
             }, (tsMT * 1000))
 }
     }
+     setTimeout(function(){rateLimit = true}, 2000);
+}
 };
 function swipeDown() {
+    if(rateLimit){
+        rateLimit = false;
      try{
     document.querySelector('#giveError').remove();
     }
@@ -4579,6 +4625,8 @@ function swipeDown() {
         }, (tsMT * 1000))
         */
     }
+ setTimeout(function(){rateLimit = true}, 2000);
+}
 };
 
 function validateDate(tex) {
@@ -5310,6 +5358,9 @@ function giveError3() {
       //    after the API code downloads.
       var ErrCount = 0;
       function createOrReloadYouTubePlayer(avcp) {
+        if(avcp.length < 7){
+            avcp = Ads[1];
+        }
         if(document.querySelector('div#videoFrame') != null){
         player = new YT.Player('videoFrame', {
           height: '390',
