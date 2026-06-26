@@ -1995,7 +1995,7 @@ setTimeout(function(){
                 var exii = document.querySelector('#exitsw');
                 exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
-                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}} document.querySelector('#uNameplate').innerText = vall.trim(); SF = true; endSwipeFunc();}`)
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}} document.querySelector('#uNameplate').innerText = words[navLang][11] + words[navLang][12] + vall.trim() + words[navLang][10] + words[navLang][6]; SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
@@ -3250,12 +3250,11 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
             avcp = Ads[1];
         }
                                                                     try{
-																		createOrReloadYouTubePlayer(avcp);
-                                                                   onYouTubeIframeAPIReady();
+																		 onYouTubeIframeAPIReady();
+                                                                  
                                                                     setTimeout(function(){
-																		 player.loadVideoById(avcp);
-                                                                    player.playVideo();
-                                                                        player.playVideo();
+																		player.loadVideoById(avcp);
+																		player.playVideo();
                                                                     },1000)
                                                                     }
                                                                     catch(e){}
