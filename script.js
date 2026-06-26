@@ -2742,7 +2742,7 @@ function runAnimation(bypass, bypass2) {
     currentPlace = 0;
     }
     //if(document.querySelector('iframe#videoFrame') == null){
-    allVideos = [];
+    allVideos = [...Ads[1]];
     requestVideos(currentToken);    
 	 try{
 																		 onYouTubeIframeAPIReady();
