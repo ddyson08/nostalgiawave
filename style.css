@@ -38,6 +38,7 @@
 }
 .pgButtonHold :is(button){
 min-width: calc(4 * var(--margin));
+    text-align: center;
 }
 #riseup{
     transition:1s;
