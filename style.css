@@ -857,3 +857,6 @@ button[show="nah"]{
 display: none !important;
 opacity: 0;
 }
+html{
+background-color: black;
+}
