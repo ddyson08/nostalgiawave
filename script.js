@@ -1506,11 +1506,13 @@ function pgCancel(text) {
                                                 if(allVideos[currentPlace] == "ERROR"){
                                                     avcp = Ads[1];
                                                 }
-                                            
+                                          
                                             }else{
                                                  document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
-                                
+                                  if(avcp.length < 7){
+avcp = Ads[1];
+											}
                                       // console     
                                       //player.destroy();
         if (typeof YT !== 'undefined' && YT.Player) {
@@ -5476,6 +5478,9 @@ function giveError3() {
                                             }else{
                                                  document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                             }
+		    if(avcp.length < 7){
+avcp = Ads[1];
+											}
                                           
         try{
           createOrReloadYouTubePlayer(avcp);
