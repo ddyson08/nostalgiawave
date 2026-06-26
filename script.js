@@ -5296,7 +5296,7 @@ async function requestVideos(value) {
                 
             allVideos = localStorage.getItem('nst_'+userEnc).split('[NSTSPLIT]');
             if(allVideos.length<1){
-                getFromnet = true;
+                getFromNet = true;
             }else{
                  getFromNet = false;
             }
