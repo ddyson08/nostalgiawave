@@ -3243,11 +3243,12 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     });
 
  isSharing = "false";
+																	var avcp = allVideos[currentPlace].replace('📺','');
                                                                   if(avcp.length < 7){
             avcp = Ads[1];
         }
                                                                     try{
-                                                                    player.loadVideoById(allVideos[currentPlace].replace('📺',''));
+                                                                    player.loadVideoById(avcp);
                                                                     player.playVideo();
                                                                     setTimeout(function(){
                                                                         player.playVideo();
