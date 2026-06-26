@@ -869,7 +869,6 @@ doNow = true;
 var happeningNow = false;
 var editMode = false;
 function reloadName(){
-setTimeout(function () {
             var ni = document.querySelector("#uNameplate");
             ni.style.color = "var(--accent)";
             ni.style.transition = "0.5s";
