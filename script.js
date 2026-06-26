@@ -3251,9 +3251,10 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
         }
                                                                     try{
 																		createOrReloadYouTubePlayer(avcp);
-                                                                    player.loadVideoById(avcp);
-                                                                    player.playVideo();
+                                                                   onYouTubeIframeAPIReady();
                                                                     setTimeout(function(){
+																		 player.loadVideoById(avcp);
+                                                                    player.playVideo();
                                                                         player.playVideo();
                                                                     },1000)
                                                                     }
