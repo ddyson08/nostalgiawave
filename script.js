@@ -3084,6 +3084,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 player.playVideo();
                                                                     // TOUCH END
                                                                    TOOO.addEventListener('touchend', function (event) {
+                                                                    try{
                                                                         autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
@@ -3121,6 +3122,9 @@ player.playVideo();
                                                                         Qqiq.style.opacity = 0;
                                                                         }
                                                                         },2000);
+                                                                        }catch(ErrE){
+                                                                            alert(ErrE);
+                                                                            }
                                                                     });
 
                                                                     // MOUSE DOWN
