@@ -26,7 +26,7 @@
     background-color: var(--second);
 }
 .teFlexx :is(div){
-    border: 1px solid var(--accent);
+    border: 1px solid var(--text);
     padding: calc(var(--margin)/8);
     display: flex;
     height: 1em;
@@ -34,6 +34,10 @@
     background-color: var(--second);
     text-align: bottom;
     margin-right: calc(var(--margin)/4)
+    border-radius: 5px;
+}
+.pgButtonHold :is(button){
+min-width: calc(4 * var(--margin));
 }
 #riseup{
     transition:1s;
