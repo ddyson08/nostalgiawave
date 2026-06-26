@@ -33,7 +33,7 @@
      align-self: flex-start;
     background-color: var(--second);
     text-align: bottom;
-    margin-right: calc(var(--margin)/4)
+    margin-right: calc(var(--margin)/4);
     border-radius: 5px;
 }
 .pgButtonHold :is(button){
