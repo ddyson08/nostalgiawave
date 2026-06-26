@@ -1995,7 +1995,7 @@ setTimeout(function(){
                 var exii = document.querySelector('#exitsw');
                 exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
-                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value;if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall)}} SF = true; endSwipeFunc();}`)
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}} document.querySelector('#uNameplate').innerText = vall.trim(); SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
@@ -3626,6 +3626,11 @@ function fkAround() {
 function enterName() {
     var i = document.querySelector("#teInput");
     userName = i.value;
+	try{
+		userName = i.value.trim();
+	}catch(e){
+		console.log(e);
+	}
     if (userName == "") {
         userName = words[navLang][5]
     } else {
