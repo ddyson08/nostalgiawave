@@ -868,6 +868,23 @@ var doNow = false;
 doNow = true;
 var happeningNow = false;
 var editMode = false;
+function reloadName(){
+setTimeout(function () {
+            var ni = document.querySelector("#uNameplate");
+            ni.style.color = "var(--accent)";
+            ni.style.transition = "0.5s";
+            ni.style.width = "0px";
+            setTimeout(function () {
+                ni.innerText = words[navLang][11] + words[navLang][12] + userName + words[navLang][10] + words[navLang][6];
+                ni.style.color = "var(--text)";
+                ni.style.width = "max-content";
+                ni.style.left = "calc(50% + 0.5em)"
+                setTimeout(function () {
+                    ni.style.transition = "1s";
+                    ni.style.left = "calc(50% - " + (ni.getBoundingClientRect().width / 2) +"px + 0.5em)"
+                }, 500);
+            }, 500);
+}
 function jumpLogo() {
     var logo = document.querySelector("#titleBar");
     for (var i of logo.children[0].children) {
@@ -1995,7 +2012,7 @@ setTimeout(function(){
                 var exii = document.querySelector('#exitsw');
                 exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
-                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}} document.querySelector('#uNameplate').innerText = words[navLang][11] + words[navLang][12] + vall.trim() + words[navLang][10] + words[navLang][6]; SF = true; endSwipeFunc();}`)
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}}; userName = vall.trim(); reloadName(); SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
