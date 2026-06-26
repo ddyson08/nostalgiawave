@@ -506,7 +506,7 @@ const words = {
     "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
     "buscar semelhantes", "histórico de buscas", "nova busca", "buscando...", "não funcionou", "Selecione este link e copie-o :)"
   ],
-  "zh-cn": [
+  "zh": [
     "由", "nostalgiaWave", "peiLamed",
     "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
