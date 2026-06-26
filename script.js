@@ -3250,6 +3250,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
             avcp = Ads[1];
         }
                                                                     try{
+																		createOrReloadYouTubePlayer(avcp);
                                                                     player.loadVideoById(avcp);
                                                                     player.playVideo();
                                                                     setTimeout(function(){
