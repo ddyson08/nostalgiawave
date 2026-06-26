@@ -2749,7 +2749,7 @@ function runAnimation(bypass, bypass2) {
                                                                   
                                                             
                                                                     }
-                                                                    catch(e){alert(e)}
+                                                                    catch(e){console.log(e)}
    
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
