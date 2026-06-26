@@ -5507,15 +5507,7 @@ avcp = Ads[1];
         }
         catch(e){
             console.log(e);
-            if(ErrCount < 4){
-                ErrCount++;
-                console.log('EC<4');
-                currentPlace += 1;
-                onYouTubeIframeAPIReady();
-            }else{
-                giveError();
-                ErrCount = 0;
-            }
+            
         }
       }
 
