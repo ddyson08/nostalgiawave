@@ -5357,11 +5357,11 @@ for (var i = 0; i < allVideos.length; i++) {
   var logicalPos = position + offset;
 
   // time to insert an ad?
-  if (logicalPos % interval === 0) {
+  if (logicalPos % interval == 0) {
     // pick a random ad (skip index 0)
     var inn = Math.floor(Math.random() * (Ads.length - 1)) + 1;
     result.push('📺' + Ads[inn]);
-    position++; // ad also takes a slot
+    offset++; // ad also takes a slot
   }
 }
 
