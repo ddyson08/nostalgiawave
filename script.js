@@ -2743,7 +2743,13 @@ function runAnimation(bypass, bypass2) {
     }
     //if(document.querySelector('iframe#videoFrame') == null){
     allVideos = [];
-    requestVideos(currentToken);                      
+    requestVideos(currentToken);    
+	 try{
+																		 onYouTubeIframeAPIReady();
+                                                                  
+                                                            
+                                                                    }
+                                                                    catch(e){alert(e)}
    
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
@@ -3265,12 +3271,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                   if(avcp.length < 7){
             avcp = Ads[1];
         }
-                                                                    try{
-																		 onYouTubeIframeAPIReady();
-                                                                  
-                                                            
-                                                                    }
-                                                                    catch(e){alert(e)}
+                                                                   
                     
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
