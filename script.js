@@ -2744,12 +2744,6 @@ function runAnimation(bypass, bypass2) {
     //if(document.querySelector('iframe#videoFrame') == null){
     allVideos = [...Ads[1]];
     requestVideos(currentToken);    
-	 try{
-																		 onYouTubeIframeAPIReady();
-                                                                  
-                                                            
-                                                                    }
-                                                                    catch(e){console.log(e)}
    
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
