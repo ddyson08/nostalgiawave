@@ -3261,9 +3261,27 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     });
 
  isSharing = "false";
-																	var avcp = allVideos[currentPlace].replace('📺','');
-                                                                  if(avcp.length < 7){
-            avcp = Ads[1];
+																	   var avcp = allVideos[currentPlace];
+                                            if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
+                                                
+                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
+                                                avcp = allVideos[currentPlace].replace('📺','');
+                                                if(allVideos[currentPlace] == "ERROR"){
+                                                    avcp = Ads[1];
+                                                }
+                                          
+                                            }else{
+                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
+                                            }
+                                  if(avcp.length < 7){
+avcp = Ads[1];
+											}
+                                      // console     
+                                      //player.destroy();
+        if (typeof YT !== 'undefined' && YT.Player) {
+            createOrReloadYouTubePlayer(avcp);
+        } else {
+            onYouTubeIframeAPIReady();
         }
                                                                    
                     
