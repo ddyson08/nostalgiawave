@@ -3268,12 +3268,9 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     try{
 																		 onYouTubeIframeAPIReady();
                                                                   
-                                                                    setTimeout(function(){
-																		player.loadVideoById(avcp);
-																		player.playVideo();
-                                                                    },1000)
+                                                            
                                                                     }
-                                                                    catch(e){}
+                                                                    catch(e){alert(e)}
                     
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
