@@ -1005,7 +1005,7 @@ function endFollow() {
     } catch (error) {
       // Handles user cancellation or system errors
       console.log('Sharing failed or was canceled:', error.message);
-       fallbackShare(shareData);
+       
     }
   } else {
     // 3. Fallback behavior if Web Share API is missing
