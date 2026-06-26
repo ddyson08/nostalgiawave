@@ -31,6 +31,9 @@ function isPWA() {
 
 var clearItInterval = setInterval(function(){
     if(document.querySelector('.teFlexx')){
+		try{
+			for(var iIi of document.querySelector('#textEnter').children){if(iIi.innerText.includes('null')){iIi.remove()}}}
+		catch(e){}
         if((document.querySelector('.teFlexx').querySelector('input') && document.querySelector('.teFlexx').querySelector('input').checkVisibility()) && !document.querySelector('.teFlexx').querySelector('#teClear')){
             var teClear = document.createElement('div');
             teClear.setAttribute('id','teClear');
@@ -1562,6 +1565,9 @@ function pgCancel(text) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+												if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                             try{
                                             player.loadVideoById(avcp)
                                             }catch(e){}
@@ -3233,13 +3239,15 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     });
 
  isSharing = "false";
-                                                                  
+                                                                  if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                                                     try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''));
                                                                     player.playVideo();
                                                                     setTimeout(function(){
                                                                         player.playVideo();
-                                                                    })
+                                                                    },1000)
                                                                     }
                                                                     catch(e){}
                     
@@ -4269,6 +4277,9 @@ if (currentPlace < allVideos.length-3) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+												 if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                             try{
                                             player.loadVideoById(avcp)
                                             }
@@ -4311,6 +4322,9 @@ if (currentPlace < allVideos.length-3) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+												 if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                             try{
                                             player.loadVideoById(avcp)
                                             }
@@ -4394,6 +4408,9 @@ if (currentPlace < allVideos.length-3) {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+												 if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                             try{
                                             player.loadVideoById(avcp)
                                             }catch(e){}
@@ -4509,6 +4526,13 @@ function swipeDown() {
                     if (allVideos[currentPlace] == "Error") {
                         giveError();
                     } else {
+						var avcp = allVideos[currentPlace].replace('📺','');
+                                                if(allVideos[currentPlace] == "ERROR"){
+                                                    avcp = Ads[1];
+                                                }
+						if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                         //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
                         player.loadVideoById(allVideos[currentPlace]);
                         
@@ -5485,6 +5509,9 @@ function giveError3() {
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
+		  if(avcp.length < 7){
+            avcp = Ads[1];
+        }
                                             try{
                                             player.loadVideoById(avcp)
                                             }catch(e){}
