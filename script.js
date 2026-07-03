@@ -178,9 +178,13 @@ const words = {
     "searching...", //111
     "sharing didn't work", //112
     "select this link and copy it :)", //113
-    "btw these will go away if u (___) <br> to save your data permanently, hit the &quot;export&quot; button and read the filename :)" //114
+    "btw these will go away if u (___). <br> to save ur data permanently, hit the &quot;export&quot; button and read the filename :)", //114
     "delete this app", //115
-    "clear your browsing data" //116
+    "clear your browsing data", //116
+    "export",//117
+    "copy the data within this text file and paste it in the name entry bar", //118
+    "when you clear your browsing data or install/reinstall nostalgiaWave, copy the data of the file that just downloaded (including the word &quot;NOSTALGIAWAVE&quot;) and paste in in the input box when it asks your name<br>", //119
+    "got it" //120
   ],
   "ru": [
 "от", //0
@@ -309,7 +313,14 @@ const words = {
 "поиск новых", //110
 "поиск...", //111
 "совместное использование не сработало", //112
-"Выделите эту ссылку и скопируйте её :)" //113
+"Выделите эту ссылку и скопируйте её :)", //113
+"кстати, эти данные исчезнут, если вы (___). <br> чтобы сохранить данные навсегда, нажмите кнопку «экспорт» и запомните имя файла :)", //114
+"удалите это приложение", //115
+"очистите историю браузера", //116
+"экспорт",//117
+"скопируйте содержимое этого текстового файла и вставьте его в поле ввода имени", //118
+"когда вы очистите историю браузера или установите/переустановите nostalgiaWave, скопируйте данные из только что скачанного файла (включая слово «NOSTALGIAWAVE») и вставьте их в поле ввода, когда приложение запросит ваше имя<br>", //119
+"понятно" //120
 
 ],
   "ja": [
@@ -344,7 +355,13 @@ const words = {
     "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
     "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
     "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました。いずれにせよ、共有してくれてありがとう！", //107
-    "類似の検索", "検索履歴", "新しく検索", "検索中...", "うまくいきませんでした", "このリンクを選択してコピーしてください :)"
+    "類似の検索", "検索履歴", "新しく検索", "検索中...", "うまくいきませんでした", "このリンクを選択してコピーしてください :)", "ちなみに、(___)するとこれらは消えてしまいます。<br>データを永続的に保存するには、「エクスポート」ボタンを押してファイル名を確認してください :)", //114
+"このアプリを削除する", //115
+"ブラウザのデータを消去する", //116
+"エクスポート",//117
+"このテキストファイル内のデータをコピーして、名前入力欄に貼り付けてください", //118
+"ブラウザのデータを消去したり、nostalgiaWaveをインストール（または再インストール）したりする際は、ダウンロードされたファイル内のデータ（「NOSTALGIAWAVE」という文字列を含む）をコピーし、名前の入力が求められた際にその入力ボックスへ貼り付けてください<br>", //119
+"了解" //120
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -374,7 +391,13 @@ const words = {
     "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
     "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
     "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك. شكراً للمشاركة على أي حال!", //107
-    "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث...", "لم ينجح الأمر", "حدد هذا الرابط وانسخه :)"
+    "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث...", "لم ينجح الأمر", "حدد هذا الرابط وانسخه :)", "بالمناسبة، ستختفي هذه البيانات إذا قمت بـ (___). <br> لحفظ بياناتك بشكل دائم، اضغط على زر &quot;تصدير&quot; (export) واطلع على اسم الملف :)", //114
+"حذف هذا التطبيق", //115
+"مسح بيانات التصفح", //116
+"تصدير",//117
+"انسخ البيانات الموجودة داخل هذا الملف النصي وألصقها في خانة إدخال الاسم", //118
+"عند مسح بيانات التصفح أو تثبيت/إعادة تثبيت تطبيق nostalgiaWave، انسخ بيانات الملف الذي تم تنزيله للتو (بما في ذلك كلمة &quot;NOSTALGIAWAVE&quot;) وألصقها في مربع الإدخال عند طلب اسمك<br>", //119
+"فهمت" //120
   ],
   "es": [
     "por", "nostalgiaWave", "peiLamed",
@@ -407,7 +430,13 @@ const words = {
     "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
     "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
     "Compartir no funciona en tu navegador, así que copié el enlace en su lugar. ¡Gracias por compartir de todos modos!", //107
-    "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando...", "No funcionó", "Selecciona este enlace y cópialo :)"
+    "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando...", "No funcionó", "Selecciona este enlace y cópialo :)", "por cierto, esto desaparecerá si tú (___). <br> para guardar tus datos permanentemente, pulsa el botón «exportar» y lee el nombre del archivo :)", //114
+"eliminas esta aplicación", //115
+"borras tus datos de navegación", //116
+"exportar",//117
+"copia los datos de este archivo de texto y pégalos en la barra de entrada de nombre", //118
+"cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
+"entendido" //120
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -441,7 +470,13 @@ const words = {
     "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
     "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
     "Le partage ne fonctionne pas sur votre navigateur, j'ai donc copié le lien à la place. Merci pour le partage en tout cas !", //107
-    "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours...", "Ça n'a pas marché", "Sélectionnez ce lien et copiez-le :)"
+    "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours...", "Ça n'a pas marché", "Sélectionnez ce lien et copiez-le :)", "au fait, ces éléments disparaîtront si vous (___). <br> pour sauvegarder vos données de façon permanente, cliquez sur le bouton « exporter » et notez le nom du fichier :)", //114
+"supprimez cette application", //115
+"effacez vos données de navigation", //116
+"exporter",//117
+"copiez les données contenues dans ce fichier texte et collez-les dans le champ de saisie du nom", //118
+"lorsque vous effacez vos données de navigation ou que vous installez/réinstallez nostalgiaWave, copiez les données du fichier qui vient d'être téléchargé (y compris le mot « NOSTALGIAWAVE ») et collez-les dans la zone de saisie lorsque votre nom est demandé<br>", //119
+"compris" //120
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -474,7 +509,13 @@ const words = {
     "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
     "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
     "Teilen funktioniert in deinem Browser nicht, deshalb habe ich stattdessen den Link kopiert. Danke fürs Teilen übrigens!", //107
-    "ähnliche suchen", "suchverlauf", "neu suchen", "sucht...", "Es hat nicht funktioniert", "Wähle diesen Link aus und kopiere ihn :)"
+    "ähnliche suchen", "suchverlauf", "neu suchen", "sucht...", "Es hat nicht funktioniert", "Wähle diesen Link aus und kopiere ihn :)", "übrigens: diese daten gehen verloren, wenn du (___). <br> um deine daten dauerhaft zu speichern, klicke auf die schaltfläche „exportieren“ und merke dir den dateinamen :)", //114
+"diese app löschst", //115
+"deine browserdaten löschst", //116
+"exportieren",//117
+"kopiere den inhalt dieser textdatei und füge ihn in das namenseingabefeld ein", //118
+"wenn du deine browserdaten löschst oder nostalgiawave (neu) installierst: kopiere den inhalt der gerade heruntergeladenen datei (einschließlich des wortes &quot;NOSTALGIAWAVE&quot;) und füge ihn in das eingabefeld ein, wenn nach deinem namen gefragt wird<br>", //119
+"verstanden" //120
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -507,7 +548,13 @@ const words = {
     "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartir vídeo",
     "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
     "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
-    "buscar semelhantes", "histórico de buscas", "nova busca", "buscando...", "não funcionou", "Selecione este link e copie-o :)"
+    "buscar semelhantes", "histórico de buscas", "nova busca", "buscando...", "não funcionou", "Selecione este link e copie-o :)", "aliás, isso será apagado se você (___). <br> para salvar seus dados permanentemente, clique no botão 'exportar' e anote o nome do arquivo :)", //114
+"apagar este aplicativo", //115
+"limpar seus dados de navegação", //116
+"exportar",//117
+"copie os dados deste arquivo de texto e cole-os no campo de nome", //118
+"ao limpar seus dados de navegação ou instalar/reinstalar o nostalgiaWave, copie os dados do arquivo que acabou de ser baixado (incluindo a palavra 'NOSTALGIAWAVE') e cole-os no campo de entrada quando o aplicativo pedir seu nome<br>", //119
+"entendido" //120
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -534,7 +581,13 @@ const words = {
     "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
     "查看指南", "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
     "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
-    "搜索相似", "搜索历史", "搜索全新", "正在搜索...", "没用", "选中此链接并复制 :)"
+    "搜索相似", "搜索历史", "搜索全新", "正在搜索...", "没用", "选中此链接并复制 :)", "顺便说一下，如果你 (___)，这些数据就会消失。<br>若要永久保存数据，请点击“导出”按钮并查看文件名 :)", //114
+"删除此应用", //115
+"清除浏览数据", //116
+"导出",//117
+"复制该文本文件中的数据，并将其粘贴到名称输入栏中", //118
+"当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
+"明白了" //120
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -568,7 +621,13 @@ const words = {
     "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
     "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
     "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने इसकी जगह लिंक कॉपी कर लिया है। फिर भी साझा करने के लिए धन्यवाद!", //107
-    "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है...", "काम नहीं किया", "इस लिंक को चुनें और कॉपी करें :)"
+    "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है...", "काम नहीं किया", "इस लिंक को चुनें और कॉपी करें :)", "वैसे, अगर आप (___) करेंगे तो ये हट जाएंगे। <br> अपना डेटा हमेशा के लिए सेव करने के लिए, 'एक्सपोर्ट' बटन दबाएं और फ़ाइल का नाम देखें :)", //114
+"इस ऐप को डिलीट करें", //115
+"अपना ब्राउज़िंग डेटा क्लियर करें", //116
+"एक्सपोर्ट",//117
+"इस टेक्स्ट फ़ाइल के डेटा को कॉपी करें और नाम डालने वाली जगह पर पेस्ट करें", //118
+"जब आप अपना ब्राउज़िंग डेटा क्लियर करते हैं या nostalgiaWave को इंस्टॉल/रीइंस्टॉल करते हैं, तो अभी डाउनलोड हुई फ़ाइल का डेटा कॉपी करें ('NOSTALGIAWAVE' शब्द सहित) और जब ऐप आपका नाम पूछे तो उसे इनपुट बॉक्स में पेस्ट करें<br>", //119
+"समझ गया" //120
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -601,7 +660,13 @@ const words = {
     "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
     "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
     "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ። ለማንኛውም ስላጋሩ እናመሰግናለን!", //107
-    "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ...", "አልሰራም", "ይህንን ሊንክ ምረጥና ኮፒ አድርገው :)"
+    "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ...", "አልሰራም", "ይህንን ሊንክ ምረጥና ኮፒ አድርገው :)", "እነዚህ (____) ከሆኑ ይጠፋሉ። <br> ውሂብዎን በቋሚነት ለማስቀመጥ የ&quot;ላክ&quot; አዝራሩን ይጫኑ እና የፋይል ስሙን ያንብቡ :)", //114
+"ይህንን መተግበሪያ ይሰርዙ", //115
+"የአሰሳ ውሂብዎን ያጽዱ", //116
+"ላክ", //117
+"በዚህ የጽሑፍ ፋይል ውስጥ ያለውን ውሂብ ይቅዱ እና በስም ግቤት አሞሌ ውስጥ ይለጥፉት", //118
+"ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙⴻⵏ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119
+"ገባኝ" //120
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
@@ -630,7 +695,13 @@ const words = {
     "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
     "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
     "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ, ⴰይⴰ ଖⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ. ⵜⴰⵏⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ!", //107
-    "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ...", "ⵓⵔ ⵉⵅⴻⴷⴷⴻⵎ ⴰⵔⴰ", "ⴼⵔⴻⵏ ⴰⵙⴻⵏⵇⴻⴷⴰ ⵓ ⵙⵏⵓⵍⴼⵓⵜ :)"
+    "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ...", "ⵓⵔ ⵉⵅⴻⴷⴷⴻⵎ ⴰⵔⴰ", "ⴼⵔⴻⵏ ⴰⵙⴻⵏⵇⴻⴷⴰ ⵓ ⵙⵏⵓⵍⴼⵓⵜ :)", "ⴱⵜⵡ ⵡⵉⴳⵉ ⴰⴷ ⴼⴼⵖⴻⵏ ⵎⴰ ⵢⴻⵍⵍⴰ ⵓ (___). <ⴱⵔ> ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⴻⴽⵍⴻⵙⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵉ ⵍⴻⴱⴷⴰ, ⴹⴻⴳⴳⴻⵔ ⵜⴰⵖⴻⵛⵜ &quot;ⴰⵙⴻⴽⵛⴻⵎ&quot; ⵓ ⵖⴻⵔ ⵉⵙⴻⵎ ⵏ ⵓⴼⴰⵢⵍⵓ :)", //114 
+"ⴽⴽⴻⵙ ⴰⵀⵉⵍⴰ", //115 
+"ⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ", //116 
+"ⴰⵙⵓⴼⴻⵖ",//117 
+"ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵢⴻⵍⵍⴰⵏ ⴷⴰⵅⴻⵍ ⵏ ⵓⴼⴰⵢⵍⵓⴰⴳⵉ ⵏ ⵓⴹⵔⵉⵙ ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⴻⴽⵛⴻⵎ ⵏ ⵢⵉⵙⴻⵎ", //118 
+"ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵇⴻⴷⵛⴻⴹ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119 
+"ⵓⴼⵉⵖⵜ" //120
   ],
  "kri": [ 
 "bay", //0 
@@ -746,7 +817,13 @@ const words = {
 "sɔch nyu", //110 
 "we de luk fɔ...", //111 
 "sharing nɔ bin wok", //112 
-"tiise link raus suuche un kopiire :)"
+"tiise link raus suuche un kopiire :)", "btw dis go go if u (___). <br> fɔ sev yu data fɔ ɔltɛm, hit di &quot;ɛkspɔt&quot; bɔtin ɛn rid di fayl nem :)", //114 
+"dilit dis ap", //115 
+"kliar yu browsing data", //116 
+"ɛkspɔt",//117 
+"kɔpi di data insay dis tɛks fayl ɛn pas am na di nem ɛntri bar", //118 
+"we yu klia yu brawzin data ɔ dawnlod/riinstɔl nostalgiaWave, kɔpi di data fɔ di fayl we yu jɔs dawnlod (inklud di wɔd &quot;NOSTALGIAWAVE&quot;) ɛn pas insay di input bɔks we i aks yu nem<br>", //119 
+"gɛt am" //120
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
@@ -776,10 +853,16 @@ const words = {
     "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 저를 사용하세요 :)", "동영상 공유",
     "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
     "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다. 어쨌든 공유해 주셔서 고마워요!", //107
-    "유사한 검색", "검색 기록", "새로 검색", "검색 중...", "작동하지 않았습니다", "이 링크를 선택해서 복사하세요 :)"
+    "유사한 검색", "검색 기록", "새로 검색", "검색 중...", "작동하지 않았습니다", "이 링크를 선택해서 복사하세요 :)", "참고로 (___)하면 이 데이터는 사라집니다. <br> 데이터를 영구적으로 저장하려면 '내보내기(export)' 버튼을 누르고 파일 이름을 확인하세요 :)", //114
+"이 앱을 삭제", //115
+"브라우징 데이터 삭제", //116
+"내보내기",//117
+"이 텍스트 파일의 데이터를 복사하여 이름 입력란에 붙여넣으세요", //118
+"브라우징 데이터를 삭제하거나 nostalgiaWave를 설치/재설치할 때, 방금 다운로드한 파일의 데이터('NOSTALGIAWAVE'라는 단어 포함)를 복사하여 이름을 묻는 입력란에 붙여넣으세요<br>", //119
+"알겠습니다" //120
   ],
   "he": [
-    "על ידי", "nostalgiaWave 🇵🇸", "peiLamed",
+    "על ידי", "nostalgiaWave", "peiLamed",
     "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
     "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2019 - אביב 2023)</span>",
@@ -805,7 +888,13 @@ const words = {
     "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
     "תודה בכל מקרה :)", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
     "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום. תודה על השיתוף בכל מקרה!", //107
-    "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש...", "לא עבד", "תבחרו את הקישור הזה ותעתיקו אותו :)"
+    "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש...", "לא עבד", "תבחרו את הקישור הזה ותעתיקו אותו :)","דרך אגב, אלה ייעלמו אם ת (___). <br> כדי לשמור את הנתונים שלך לצמיתות, לחץ על כפתור 'ייצוא' וקרא את שם הקובץ :)", //114
+"מחק אפליקציה זו", //115
+"נקה את נתוני הגלישה שלך", //116
+"ייצוא", //117
+"העתק את הנתונים בתוך קובץ הטקסט הזה והדבק אותם בשורת הזנת השם", //118
+"כאשר אתה מנקה את נתוני הגלישה שלך או מתקין/מתקין מחדש את nostalgiaWave, העתק את הנתונים של הקובץ שהורדת זה עתה (כולל המילה 'NOSTALGIAWAVE') והדבק אותם בתיבת הקלט כאשר היא מבקשת את שמך<br>", //119
+"הבנתי" //120
   ]
 };
 var navLang = navigator.language;
@@ -824,15 +913,21 @@ if(words[navLang] == undefined){
     }
     var savePerm = false;
 try{
-    savePerm = localStorage.getItem('nst_sp');
-    if(!savePerm){
+    var nstsp = localStorage.getItem('nst_sp');
+    if(!nstsp || nstsp !== 'nstStop'){
         savePerm = true;
-        localStorage.setItem('nst_sp','1');
         }
 }
 catch(e){
     savePerm = true;
-    localStorage.setItem('nst_sp','1');
+}
+try{
+if(JSON.stringify(localStorage).length > 4000){
+    localStorage.setItem('nostalgiaTokOldVideos','')
+}
+}
+catch(e){
+
 }
  async function reqA() {
     let urli ="https://script.google.com/macros/s/AKfycbzZFj_09O6q6EQpHZepUbUbiOe8aO-6eWEQT92VJ1wshJiu-3TdlSpXPsrVTFniNbykxw/exec";
@@ -1130,7 +1225,9 @@ document.querySelector('#allHold').style.marginLeft = "0vw";
 }
 function howToFullscreen(a,b,searchError){
     setTimeout(function(){
+        try{
     player.mute();
+        }catch(e){}
     document.querySelector('#allHold').style.marginLeft = "-50vw";
     hTFCover = document.createElement('div');
     hTFCover.setAttribute('class','hTFCover');
@@ -1350,7 +1447,6 @@ function pgFormat(text) {
 var oldUser = {};
 function eMA2(simmilar, pgGivenData, neww) {
     if(allVideos.length < 1){
-        allVideos.push(Ads[1]);
         allVideos.push(Ads[1]);
         allVideos.push(Ads[1]);
     }
@@ -2026,7 +2122,7 @@ setTimeout(function(){
                 var exii = document.querySelector('#exitsw');
                 exii.setAttribute('onmouseup','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
                 exii.setAttribute('ontouchend','SF = false; this.querySelector("input").focus(); this.querySelector("input").click();');
-                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}}; userName = vall.trim(); reloadName(); SF = true; endSwipeFunc();}`)
+                inp.setAttribute('onkeyup',`if(event.keyCode == 13){ var vall = document.querySelector('#inpName').value; if(vall.startsWith('NOSTALGIAWAVE')){var localStoragei =JSON.parse(vall.split('NOSTALGIAWAVE')[1]); Object.entries(localStoragei).forEach(([key, value]) => {localStorage.setItem(key, value);});userName=localStorage.getItem('nostalgiaTokName');window.location.reload();}else{if(vall!==undefined && vall.length > 0 && vall!==""){if(false){}else{localStorage.setItem('nostalgiaTokName',vall.trim())}}; userName = vall.trim(); reloadName();} SF = true; endSwipeFunc();}`)
                 inp.setAttribute('id','inpName');
                 if(false){
 
@@ -2351,9 +2447,9 @@ function swapTe(n, f, m, g, t) {
             b4.setAttribute('id', 'b4');
             b4.innerHTML = words[navLang][36];
             var b5 = document.createElement('button');
-            b4.setAttribute('onclick', 'nstExport()');
-            b4.setAttribute('id', 'b5');
-            b4.innerHTML = words[navLang][117];
+            b5.setAttribute('onclick', 'nstExport()');
+            b5.setAttribute('id', 'b5');
+            b5.innerHTML = words[navLang][117];
             setTimeout(function () {
                 nee.append(b2);
                 nee.append(b1);
@@ -2362,26 +2458,33 @@ function swapTe(n, f, m, g, t) {
                 nee.append(b5);
                 setTimeout(function(){
                     if(savePerm){
+                         localStorage.setItem('nst_sp','nstStop');
+                         savePerm = false;
                         var tEE = document.querySelector('#textEnter');
-                        var tEEl = [tEE.getBoundingClientRect().y,tEE.getBoundingClientRect().x,tEE.getBoundingClient.width];
+                        var tEEl = [tEE.getBoundingClientRect().y,tEE.getBoundingClientRect().x,tEE.getBoundingClientRect().width];
                         tEE.style.transition = "0.5s";
-                        tEE.style.marginTop = "50vh";
+                        tEE.style.bottom = "-50vh";
                         setTimeout(function(){
                             var newMess = document.createElement('div');
-                            newMess.setAttribute('style', "transition: 0.25s; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
-                            var pwanumb = 0;
+                            newMess.setAttribute('style', "transition: 1s; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            newMess.setAttribute('id','newMess');
+                            var pwanumb = 1;
                             if(isPWA()){
-                                pwanumb = 1;
+                                pwanumb = 0;
                                 }
-                            newMess.innerHTML = words[navLang][114].replace("(___)",words[navLang][[115,116][pwaNumb]]);
+                            newMess.innerHTML = words[navLang][114].replace("(___)",words[navLang][[115,116][pwanumb]]);
                             var nMb = document.createElement("button");
-                            nMb.innerText = "✅";
-                            nMb.setAttribute("onclick", "document.querySelector('#textEnter').style.marginTop = 0; this.parentNode.opacity = 0; setTimeout(function(){this.parentNode.remove()},250)");
+                            nMb.innerText = words[navLang][120];
+                            nMb.setAttribute("onclick", "document.querySelector('#textEnter').style.bottom = '2em'; document.querySelector('#newMess').style.opacity = 0; setTimeout(function(){document.querySelector('#newMess').remove()},500)");
+                           newMess.append(document.createElement('br'));
                             newMess.append(nMb);
                             document.body.append(newMess);
-                        },250);
+                            setTimeout(function(){
+                            newMess.style.opacity = 1;
+                            },250);
+                        },500);
                         }
-                },1100);
+                },600);
             }, 50);
 
         }
@@ -2788,8 +2891,8 @@ function runAnimation(bypass, bypass2) {
     currentPlace = 0;
     }
     //if(document.querySelector('iframe#videoFrame') == null){
-    allVideos = [...Ads[1]];
-    requestVideos(currentToken);    
+    allVideos = [];
+    requestVideos(currentToken);                      
    
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
@@ -3145,10 +3248,9 @@ var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},500);
                                                                     });
-player.playVideo();
+
                                                                     // TOUCH END
                                                                    TOOO.addEventListener('touchend', function (event) {
-                                                                    try{
                                                                         autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
@@ -3171,49 +3273,11 @@ player.playVideo();
                                                                         }catch(e){console.log(e)}
                                                                      document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
-                                                                    if(fullsc=='yes'){
-                                                                    for(var Qqiq of [...document.querySelectorAll('.yes')]){
-                                                                        Qqiq.style.transition = "0.2s";
-                                                                        Qqiq.style.opacity = 1;
-                                                                        }
-                                                                        }
-                                                                    setTimeout(function(){
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
-                                                                    },200);
-                                                                    setTimeout(function(){
-                                                                        for(var Qqiq of [...document.querySelectorAll('.yes')]){
-                                                                        Qqiq.style.transition = "0.2s";
-                                                                        Qqiq.style.opacity = 0;
-                                                                        }
-                                                                        },2000);
-                                                                        }catch(ErrE){
-                                                                            alert(ErrE);
-                                                                            }
+                                                                    
                                                                     });
 
                                                                     // MOUSE DOWN
-                                                                    window.addEventListener('keyup', function(event){
-                                                                        
-                                                                        if(event.keyCode == '38' && TOOO.checkVisibility()){
-                                                                            swipeDown()
-                                                                        }
-                                                                        if(event.keyCode == '40' && TOOO.checkVisibility()){
-                                                                            swipeUp()
-                                                                        }
-                                                                    })
-                                                                    window.addEventListener("wheel", event => {
- // if(rateLimit){
-                                                               const delta = Math.sign(event.deltaY);
-    if(TOOO.checkVisibility()){
-        if(delta == "1"){
-            swipeUp();
-        }else{
-            swipeDown();
-        }
-    }
-   // setTimeout(function(){rateLimit = true}, 2000);
-//}
-});
                                                                     TOOO.addEventListener('mousedown', function (event) {
                                                                        
                                                                         isTE = false;
@@ -3288,48 +3352,17 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }catch(e){console.log(e)}
                                                                       document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                        document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
-                                                                        if(fullsc=='yes'){
-                                                                    for(var Qqiq of [...document.querySelectorAll('.yes')]){
-                                                                        Qqiq.style.transition = "0.2s";
-                                                                        Qqiq.style.opacity = 1;
-                                                                        }
-                                                                        }
-                                                                    setTimeout(function(){
-                                                                      handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
-                                                                    },200);
-                                                                    setTimeout(function(){
-                                                                        for(var Qqiq of [...document.querySelectorAll('.yes')]){
-                                                                        Qqiq.style.transition = "0.2s";
-                                                                        Qqiq.style.opacity = 0;
-                                                                        }
-                                                                        },2000);
+                                                                        handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
                                                                     
                                                                     });
 
  isSharing = "false";
-																	   var avcp = allVideos[currentPlace];
-                                            if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
-                                                
-                                                document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
-                                                avcp = allVideos[currentPlace].replace('📺','');
-                                                if(allVideos[currentPlace] == "ERROR"){
-                                                    avcp = Ads[1];
-                                                }
-                                          
-                                            }else{
-                                                 document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
-                                            }
-                                  if(avcp.length < 7){
-avcp = Ads[1];
-											}
-                                      // console     
-                                      //player.destroy();
-        if (typeof YT !== 'undefined' && YT.Player) {
-            createOrReloadYouTubePlayer(avcp);
-        } else {
-            onYouTubeIframeAPIReady();
-        }
-                                                                   
+                                                                  
+                                                                    try{
+                                                                    player.loadVideoById(allVideos[currentPlace].replace('📺',''))
+                                                                    player.playVideo();
+                                                                    }
+                                                                    catch(e){}
                     
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
@@ -3577,6 +3610,29 @@ function reverseUball() {
         }, (1000))
     }, tempvar);
 }
+function nstExport(){
+  // 1. Create a Blob with your data and specify the MIME type
+  const blob = new Blob(['NOSTALGIAWAVE'+JSON.stringify(localStorage)], { type: 'textXYZW' });
+  
+  // 2. Generate a temporary object URL representing the file
+  const url = URL.createObjectURL(blob);
+  
+  // 3. Create a hidden link and simulate a click
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = words[navLang][118];
+  
+  document.body.appendChild(link);
+  link.click();
+  
+  // 4. Clean up the DOM and release the object URL from browser memory
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+howToFullscreen(true, [117,119]);
+
+// Example usage: Exporting JSON data
+
+}
 function nvm() {
     if (!dontRun) {
         posinar = -1;
@@ -3697,12 +3753,14 @@ function fkAround() {
 }
 function enterName() {
     var i = document.querySelector("#teInput");
+    if(i.value.startsWith('NOSTALGIAWAVE')){var localStoragei =JSON.parse(i.value.split('NOSTALGIAWAVE')[1]); Object.entries(localStoragei).forEach(([key, value]) => {localStorage.setItem(key, value);});userName=localStorage.getItem('nostalgiaTokName');window.location.reload();}else{
     userName = i.value;
 	try{
 		userName = i.value.trim();
 	}catch(e){
 		console.log(e);
 	}
+}
     if (userName == "") {
         userName = words[navLang][5]
     } else {
@@ -5317,6 +5375,7 @@ function handleError(Error) {
 var ogArr = [];
 var ogArr2 = [];
 var gotNew = false;
+var rateLimit = {};
 //text = text.toLowerCase();
 async function requestVideos(value) {
     //alert('twinnn'+value);
@@ -5342,7 +5401,16 @@ async function requestVideos(value) {
                 
             allVideos = localStorage.getItem('nst_'+userEnc).split('[NSTSPLIT]');
             if(allVideos.length<1){
+                localStorage.removeItem('next_'+userEnc);
+                localStorage.removeItem('pag_'+userEnc);
+                if(rateLimit[userEnc]){
+                rateLimit[userEnc] +=1;
+                }else{
+                    rateLimit[userEnc] = 0;
+                }
+                if(rateLimit[userEnc] < 2){
                 getFromNet = true;
+                }
             }else{
                  getFromNet = false;
             }
@@ -5397,36 +5465,6 @@ async function requestVideos(value) {
     allVideos = allVideos.filter((item, index) => allVideos.indexOf(item) === index);
     const newArr = allVideos.filter(item => !item.startsWith("📺"));
     allVideos = [...newArr];
-    try{
-var interval = parseFloat(Ads[0]); // e.g. "5"
-var offset = 3;                    // your +3 start
-var position = 0;                  // counts items in the final stream
-var result = [];
-
-for (var i = 0; i < allVideos.length; i++) {
-  // add the next video
-  result.push(allVideos[i]);
-  position++;
-
-  // logical position with your +3 offset
-  var logicalPos = position + offset;
-
-  // time to insert an ad?
-  if (logicalPos % interval == 0) {
-    // pick a random ad (skip index 0)
-    var inn = Math.floor(Math.random() * (Ads.length - 1)) + 1;
-    result.push('📺' + Ads[inn]);
-    offset++; // ad also takes a slot
-  }
-}
-
-// replace original list
-allVideos = result;
-
-}
-catch(e){
-  console.log(e);
-}
             var tbss = "";
             ogArr = [...allVideos];
             console.log(allVideos);
@@ -5464,7 +5502,36 @@ catch(e){
 allVideos.unshift(shareVarr);
 console.log(allVideos);
             }
-        
+         try{
+var interval = parseFloat(Ads[0]); // e.g. "5"
+var offset = 3;                    // your +3 start
+var position = 0;                  // counts items in the final stream
+var result = [];
+
+for (var i = 0; i < allVideos.length; i++) {
+  // add the next video
+  result.push(allVideos[i]);
+  position++;
+
+  // logical position with your +3 offset
+  var logicalPos = position + offset;
+
+  // time to insert an ad?
+  if (logicalPos % interval == 0) {
+    // pick a random ad (skip index 0)
+    var inn = Math.floor(Math.random() * (Ads.length - 1)) + 1;
+    result.push('📺' + Ads[inn]);
+    offset++; // ad also takes a slot
+  }
+}
+
+// replace original list
+allVideos = [...result];
+
+}
+catch(e){
+  console.log(e);
+}
      onYouTubeIframeAPIReady();
 }
 
@@ -5542,7 +5609,7 @@ function giveError3() {
         }
        
         if(allVideos.length == 0){
-            allVideos == [...Ads[1]];
+            allVideos[0] = Ads[1];
         }
      var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
@@ -5572,7 +5639,7 @@ avcp = Ads[1];
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         if(allVideos.length == 0){
-            allVideos == [...Ads[1]];
+            allVideos[0] = Ads[1];
         }
           var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace] == "ERROR"){
