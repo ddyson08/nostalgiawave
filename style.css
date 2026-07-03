@@ -860,6 +860,7 @@ body {
 
 html, body {
     height: 100%;
+    background-color: black;
 }
 videoOrbit{
     background-color: var(--pgText) !important;
