@@ -811,7 +811,7 @@ const words = {
 "thx btw :)", //104 we de sho aw fɔ du am 
 "kɔpi, thx 4 sheb :)", //105 
 "ɛnjɔy dis blast frɔm di past", //106 
-"shɛrin nɔ de wok na yu brawza <br> yuz 'open video' ɛn afta dat sheri frɔm de", //107 
+"shɛrin nɔ de wok na yu brawza <br> yuz 'opin vidio' ɛn afta dat sheri frɔm de", //107 
 "suk we fiba am", //108 
 "sech istri", //109 
 "sɔch nyu", //110 
@@ -1083,7 +1083,7 @@ function endFollow() {
         editModeAnimation();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
-        window.open("https://youtube.com/shorts/" + allVideos[currentPlace]);
+        window.open("https://youtube.com/shorts/" + allVideos[currentPlace].replace('📺',''));
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
        //change name
@@ -2466,7 +2466,7 @@ function swapTe(n, f, m, g, t) {
                         tEE.style.bottom = "-50vh";
                         setTimeout(function(){
                             var newMess = document.createElement('div');
-                            newMess.setAttribute('style', "transition: 1s; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            newMess.setAttribute('style', "transition: 1s; width: 80vw; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
                             newMess.setAttribute('id','newMess');
                             var pwanumb = 1;
                             if(isPWA()){
@@ -3620,7 +3620,7 @@ function nstExport(){
   // 3. Create a hidden link and simulate a click
   const link = document.createElement('a');
   link.href = url;
-  link.download = words[navLang][118];
+  link.download = words[navLang][118]+'.txt';
   
   document.body.appendChild(link);
   link.click();
