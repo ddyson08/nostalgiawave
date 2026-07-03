@@ -177,7 +177,10 @@ const words = {
     "search new", //110
     "searching...", //111
     "sharing didn't work", //112
-    "select this link and copy it :)" //113
+    "select this link and copy it :)", //113
+    "btw these will go away if u (___) <br> to save your data permanently, hit the &quot;export&quot; button and read the filename :)" //114
+    "delete this app", //115
+    "clear your browsing data" //116
   ],
   "ru": [
 "от", //0
@@ -819,6 +822,18 @@ if(words[navLang] == undefined){
         navLang = "en-US";
     }
     }
+    var savePerm = false;
+try{
+    savePerm = localStorage.getItem('nst_sp');
+    if(!savePerm){
+        savePerm = true;
+        localStorage.setItem('nst_sp','1');
+        }
+}
+catch(e){
+    savePerm = true;
+    localStorage.setItem('nst_sp','1');
+}
  async function reqA() {
     let urli ="https://script.google.com/macros/s/AKfycbzZFj_09O6q6EQpHZepUbUbiOe8aO-6eWEQT92VJ1wshJiu-3TdlSpXPsrVTFniNbykxw/exec";
 
@@ -2310,6 +2325,10 @@ function swapTe(n, f, m, g, t) {
                 nee.querySelector("#b4").remove();
             } catch (e) {
             }
+            try {
+                nee.querySelector("#b5").remove();
+            } catch (e) {
+            }
             if (nee.querySelector('#viewSaved') !== null) {
                 nee.querySelector('#viewSaved').remove();
             }
@@ -2331,11 +2350,38 @@ function swapTe(n, f, m, g, t) {
             b4.setAttribute('onclick', 'nvm()');
             b4.setAttribute('id', 'b4');
             b4.innerHTML = words[navLang][36];
+            var b5 = document.createElement('button');
+            b4.setAttribute('onclick', 'nstExport()');
+            b4.setAttribute('id', 'b5');
+            b4.innerHTML = words[navLang][117];
             setTimeout(function () {
                 nee.append(b2);
                 nee.append(b1);
                 nee.append(b3);
                 nee.append(b4);
+                nee.append(b5);
+                setTimeout(function(){
+                    if(savePerm){
+                        var tEE = document.querySelector('#textEnter');
+                        var tEEl = [tEE.getBoundingClientRect().y,tEE.getBoundingClientRect().x,tEE.getBoundingClient.width];
+                        tEE.style.transition = "0.5s";
+                        tEE.style.marginTop = "50vh";
+                        setTimeout(function(){
+                            var newMess = document.createElement('div');
+                            newMess.setAttribute('style', "transition: 0.25s; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            var pwanumb = 0;
+                            if(isPWA()){
+                                pwanumb = 1;
+                                }
+                            newMess.innerHTML = words[navLang][114].replace("(___)",words[navLang][[115,116][pwaNumb]]);
+                            var nMb = document.createElement("button");
+                            nMb.innerText = "✅";
+                            nMb.setAttribute("onclick", "document.querySelector('#textEnter').style.marginTop = 0; this.parentNode.opacity = 0; setTimeout(function(){this.parentNode.remove()},250)");
+                            newMess.append(nMb);
+                            document.body.append(newMess);
+                        },250);
+                        }
+                },1100);
             }, 50);
 
         }
