@@ -897,6 +897,7 @@ const words = {
 "הבנתי" //120
   ]
 };
+document.body.style.backgroundColor = "var(--bg)";
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
