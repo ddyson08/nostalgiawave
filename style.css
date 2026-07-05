@@ -496,7 +496,7 @@ body {
 }
 
 
-#swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstShare, #nstCredits, #nstExit {
+#swFirst, #creator, #swDiff, #swTopic, #exitsw, #sharenos, #nstFs, #nstShare, #nstCredits, #exportData, #nstExit {
     padding-top: 1em;
     display: flex;
     gap: var(--margin);
