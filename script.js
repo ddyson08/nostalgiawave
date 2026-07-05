@@ -330,7 +330,7 @@ const words = {
 "когда вы очистите историю браузера или установите/переустановите nostalgiaWave, скопируйте данные из только что скачанного файла (включая слово «NOSTALGIAWAVE») и вставьте их в поле ввода, когда приложение запросит ваше имя<br>", //119
 "понятно", //120
 "экспорт nostalgiaWave",
-"Для постоянного сохранения" 
+"cохранить навсегда" 
 
 ],
   "ja": [
@@ -373,7 +373,7 @@ const words = {
 "ブラウザのデータを消去したり、nostalgiaWaveをインストール（または再インストール）したりする際は、ダウンロードされたファイル内のデータ（「NOSTALGIAWAVE」という文字列を含む）をコピーし、名前の入力が求められた際にその入力ボックスへ貼り付けてください<br>", //119
 "了解", //120
 "エクスポート nostalgiaWave",
-"永久保存用"
+"永久に保存"
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -408,7 +408,7 @@ const words = {
 "مسح بيانات التصفح", //116
 "تصدير",//117
 "انسخ البيانات الموجودة داخل هذا الملف النصي وألصقها في خانة إدخال الاسم", //118
-"عند مسح بيانات التصفح أو تثبيت/إعادة تثبيت تطبيق nostalgiaWave، انسخ بيانات الملف الذي تم تنزيله للتو (بما في ذلك كلمة &quot;NOSTALGIAWAVE&quot;) وألصقها في مربع الإدخال عند طلب اسمك<br>", //119
+"عند مسح بيانات التصفح أو تثبيت/إعادة تثبيت تطبيق nostalgiaWave، انسخ بيانات الملف الذي تم تنزيله للتو (بما في ذلك كلمة 'NOSTALGIAWAVE') وألصقها في مربع الإدخال عند طلب اسمك<br>", //119
  "فهمت" //120
   ],
   "es": [
@@ -448,7 +448,7 @@ const words = {
 "exportar",//117
 "copia los datos de este archivo de texto y pégalos en la barra de entrada de nombre", //118
 "cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
-"entendido", "exportar nostalgiaWave", "Para un ahorro permanente"
+"entendido", "exportar nostalgiaWave", "guardar permanentemente"
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -488,7 +488,7 @@ const words = {
 "exporter",//117
 "copiez les données contenues dans ce fichier texte et collez-les dans le champ de saisie du nom", //118
 "lorsque vous effacez vos données de navigation ou que vous installez/réinstallez nostalgiaWave, copiez les données du fichier qui vient d'être téléchargé (y compris le mot « NOSTALGIAWAVE ») et collez-les dans la zone de saisie lorsque votre nom est demandé<br>", //119
-"compris", "exporter", "Pour une épargne permanente"
+"compris", "exporter nostalgiaWave", "enregistrer définitivement"
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -527,7 +527,7 @@ const words = {
 "exportieren",//117
 "kopiere den inhalt dieser textdatei und füge ihn in das namenseingabefeld ein", //118
 "wenn du deine browserdaten löschst oder nostalgiawave (neu) installierst: kopiere den inhalt der gerade heruntergeladenen datei (einschließlich des wortes &quot;NOSTALGIAWAVE&quot;) und füge ihn in das eingabefeld ein, wenn nach deinem namen gefragt wird<br>", //119
-"verstanden", "exportieren nostalgiaWave", "Für dauerhaftes Sparen"
+"verstanden", "exportieren nostalgiaWave", "dauerhaft speichern"
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -566,7 +566,7 @@ const words = {
 "exportar",//117
 "copie os dados deste arquivo de texto e cole-os no campo de nome", //118
 "ao limpar seus dados de navegação ou instalar/reinstalar o nostalgiaWave, copie os dados do arquivo que acabou de ser baixado (incluindo a palavra 'NOSTALGIAWAVE') e cole-os no campo de entrada quando o aplicativo pedir seu nome<br>", //119
-"entendido", "exportar nostalgiaWave", "Para economia permanente"
+"entendido", "exportar nostalgiaWave", "salvar permanentemente"
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -599,7 +599,7 @@ const words = {
 "导出",//117
 "复制该文本文件中的数据，并将其粘贴到名称输入栏中", //118
 "当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
-"明白了", "导出", "用于永久储蓄"
+"明白了", "导出 nostalgiaWave", "永久保存"
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -639,7 +639,7 @@ const words = {
 "एक्सपोर्ट",//117
 "इस टेक्स्ट फ़ाइल के डेटा को कॉपी करें और नाम डालने वाली जगह पर पेस्ट करें", //118
 "जब आप अपना ब्राउज़िंग डेटा क्लियर करते हैं या nostalgiaWave को इंस्टॉल/रीइंस्टॉल करते हैं, तो अभी डाउनलोड हुई फ़ाइल का डेटा कॉपी करें ('NOSTALGIAWAVE' शब्द सहित) और जब ऐप आपका नाम पूछे तो उसे इनपुट बॉक्स में पेस्ट करें<br>", //119
-"समझ गया", "एक्सपोर्ट nostalgiaWave", "for permanent"
+"समझ गया", "एक्सपोर्ट nostalgiaWave", "स्थायी रूप से बचाएं"
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -678,7 +678,7 @@ const words = {
 "ላክ", //117
 "በዚህ የጽሑፍ ፋይል ውስጥ ያለውን ውሂብ ይቅዱ እና በስም ግቤት አሞሌ ውስጥ ይለጥፉት", //118
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙⴻⵏ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119
-"ገባኝ" //120
+"ገባኝ", "ላክ nostalgiaWave", "ለዘላለም ያቆዩት"
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
@@ -713,7 +713,8 @@ const words = {
 "ⴰⵙⵓⴼⴻⵖ",//117 
 "ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵢⴻⵍⵍⴰⵏ ⴷⴰⵅⴻⵍ ⵏ ⵓⴼⴰⵢⵍⵓⴰⴳⵉ ⵏ ⵓⴹⵔⵉⵙ ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⴻⴽⵛⴻⵎ ⵏ ⵢⵉⵙⴻⵎ", //118 
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵇⴻⴷⵛⴻⴹ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119 
-"ⵓⴼⵉⵖⵜ" //120
+"ⵓⴼⵉⵖⵜ",
+"ⴰⵙⵓⴼⴻⵖ nostalgiaWave", "ⵃⵔⴻⵣ ⵉ ⵍⴻⴱⴷⴰ"
   ],
  "kri": [ 
 "bay", //0 
@@ -835,7 +836,9 @@ const words = {
 "ɛkspɔt",//117 
 "kɔpi di data insay dis tɛks fayl ɛn pas am na di nem ɛntri bar", //118 
 "we yu klia yu brawzin data ɔ dawnlod/riinstɔl nostalgiaWave, kɔpi di data fɔ di fayl we yu jɔs dawnlod (inklud di wɔd &quot;NOSTALGIAWAVE&quot;) ɛn pas insay di input bɔks we i aks yu nem<br>", //119 
-"gɛt am" //120
+"gɛt am",
+"ɛkspɔt nostalgiaWave",
+"sev fɔ ɔltɛm"
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
@@ -871,7 +874,8 @@ const words = {
 "내보내기",//117
 "이 텍스트 파일의 데이터를 복사하여 이름 입력란에 붙여넣으세요", //118
 "브라우징 데이터를 삭제하거나 nostalgiaWave를 설치/재설치할 때, 방금 다운로드한 파일의 데이터('NOSTALGIAWAVE'라는 단어 포함)를 복사하여 이름을 묻는 입력란에 붙여넣으세요<br>", //119
-"알겠습니다" //120
+"알겠습니다",
+"내보내기 nostalgiaWave", "영구적으로 저장"
   ],
   "he": [
     "על ידי", "nostalgiaWave", "peiLamed",
@@ -909,6 +913,10 @@ const words = {
 "הבנתי" //120
   ]
 };
+words["ar"].push("nostalgiaWave تصدير ");
+words["ar"].push("احفظ بشكل دائم");
+words["he"].push("nostalgiaWave ייצוא");
+words["he"].push("שמור לצמיתות");
 document.body.style.backgroundColor = "var(--bg)";
 var navLang = navigator.language;
 if(words[navLang] == undefined){
@@ -2485,7 +2493,7 @@ function swapTe(n, f, m, g, t) {
                         tEE.style.bottom = "-50vh";
                         setTimeout(function(){
                             var newMess = document.createElement('div');
-                            newMess.setAttribute('style', "transition: 1s; width: 80vw; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            newMess.setAttribute('style', "transition: 1s; max-width: "+tEEl[2]+"px; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
                             newMess.setAttribute('id','newMess');
                             var pwanumb = 1;
                             if(isPWA()){
