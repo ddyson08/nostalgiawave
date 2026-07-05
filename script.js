@@ -68,7 +68,7 @@ function newConsoleLog(message) {
 console.log('old'+message)
 }
 var rateLimit = true;
-const words = {
+var words = {
   "en-US": [
     "by", //0
     "nostalgiaWave", //1
