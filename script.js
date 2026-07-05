@@ -25,6 +25,12 @@ function isPWA() {
     // If none of the above are true, it's likely a normal browser tab
     return false;
 }
+try{
+if(isPWA()){
+    document.querySelector("#nstFs").remove();
+    }
+    }
+    catch(e){}
 
 // --- Example Usage ---
 
@@ -184,7 +190,9 @@ const words = {
     "export",//117
     "copy the data within this text file and paste it in the name entry bar", //118
     "when you clear your browsing data or install/reinstall nostalgiaWave, copy the data of the file that just downloaded (including the word &quot;NOSTALGIAWAVE&quot;) and paste in in the input box when it asks your name<br>", //119
-    "got it" //120
+    "got it", //120
+"export nostalgiaWave", //121
+"for permanent saving" //122
   ],
   "ru": [
 "от", //0
@@ -320,7 +328,9 @@ const words = {
 "экспорт",//117
 "скопируйте содержимое этого текстового файла и вставьте его в поле ввода имени", //118
 "когда вы очистите историю браузера или установите/переустановите nostalgiaWave, скопируйте данные из только что скачанного файла (включая слово «NOSTALGIAWAVE») и вставьте их в поле ввода, когда приложение запросит ваше имя<br>", //119
-"понятно" //120
+"понятно", //120
+"экспорт nostalgiaWave",
+"Для постоянного сохранения" 
 
 ],
   "ja": [
@@ -361,7 +371,9 @@ const words = {
 "エクスポート",//117
 "このテキストファイル内のデータをコピーして、名前入力欄に貼り付けてください", //118
 "ブラウザのデータを消去したり、nostalgiaWaveをインストール（または再インストール）したりする際は、ダウンロードされたファイル内のデータ（「NOSTALGIAWAVE」という文字列を含む）をコピーし、名前の入力が求められた際にその入力ボックスへ貼り付けてください<br>", //119
-"了解" //120
+"了解", //120
+"エクスポート nostalgiaWave",
+"永久保存用"
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -397,7 +409,7 @@ const words = {
 "تصدير",//117
 "انسخ البيانات الموجودة داخل هذا الملف النصي وألصقها في خانة إدخال الاسم", //118
 "عند مسح بيانات التصفح أو تثبيت/إعادة تثبيت تطبيق nostalgiaWave، انسخ بيانات الملف الذي تم تنزيله للتو (بما في ذلك كلمة &quot;NOSTALGIAWAVE&quot;) وألصقها في مربع الإدخال عند طلب اسمك<br>", //119
-"فهمت" //120
+ "فهمت" //120
   ],
   "es": [
     "por", "nostalgiaWave", "peiLamed",
@@ -436,7 +448,7 @@ const words = {
 "exportar",//117
 "copia los datos de este archivo de texto y pégalos en la barra de entrada de nombre", //118
 "cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
-"entendido" //120
+"entendido", "exportar nostalgiaWave", "Para un ahorro permanente"
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -476,7 +488,7 @@ const words = {
 "exporter",//117
 "copiez les données contenues dans ce fichier texte et collez-les dans le champ de saisie du nom", //118
 "lorsque vous effacez vos données de navigation ou que vous installez/réinstallez nostalgiaWave, copiez les données du fichier qui vient d'être téléchargé (y compris le mot « NOSTALGIAWAVE ») et collez-les dans la zone de saisie lorsque votre nom est demandé<br>", //119
-"compris" //120
+"compris", "exporter", "Pour une épargne permanente"
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -515,7 +527,7 @@ const words = {
 "exportieren",//117
 "kopiere den inhalt dieser textdatei und füge ihn in das namenseingabefeld ein", //118
 "wenn du deine browserdaten löschst oder nostalgiawave (neu) installierst: kopiere den inhalt der gerade heruntergeladenen datei (einschließlich des wortes &quot;NOSTALGIAWAVE&quot;) und füge ihn in das eingabefeld ein, wenn nach deinem namen gefragt wird<br>", //119
-"verstanden" //120
+"verstanden", "exportieren nostalgiaWave", "Für dauerhaftes Sparen"
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -554,7 +566,7 @@ const words = {
 "exportar",//117
 "copie os dados deste arquivo de texto e cole-os no campo de nome", //118
 "ao limpar seus dados de navegação ou instalar/reinstalar o nostalgiaWave, copie os dados do arquivo que acabou de ser baixado (incluindo a palavra 'NOSTALGIAWAVE') e cole-os no campo de entrada quando o aplicativo pedir seu nome<br>", //119
-"entendido" //120
+"entendido", "exportar nostalgiaWave", "Para economia permanente"
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -587,7 +599,7 @@ const words = {
 "导出",//117
 "复制该文本文件中的数据，并将其粘贴到名称输入栏中", //118
 "当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
-"明白了" //120
+"明白了", "导出", "用于永久储蓄"
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -627,7 +639,7 @@ const words = {
 "एक्सपोर्ट",//117
 "इस टेक्स्ट फ़ाइल के डेटा को कॉपी करें और नाम डालने वाली जगह पर पेस्ट करें", //118
 "जब आप अपना ब्राउज़िंग डेटा क्लियर करते हैं या nostalgiaWave को इंस्टॉल/रीइंस्टॉल करते हैं, तो अभी डाउनलोड हुई फ़ाइल का डेटा कॉपी करें ('NOSTALGIAWAVE' शब्द सहित) और जब ऐप आपका नाम पूछे तो उसे इनपुट बॉक्स में पेस्ट करें<br>", //119
-"समझ गया" //120
+"समझ गया", "एक्सपोर्ट nostalgiaWave", "for permanent"
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -1107,6 +1119,9 @@ function endFollow() {
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')) {
        howToFullscreen();
     }
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#exportData')) {
+       nstExport();
+    }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')) {
        howToFullscreen(true, [88,98]);
     }
@@ -1147,7 +1162,7 @@ function endFollow() {
     prompt(words[navLang][113],window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
 }
     }
-    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')){
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
@@ -2154,6 +2169,9 @@ setTimeout(function(){
             if (closest[1] == "#nstFs") {
                 document.querySelector('#swDrag').innerText = words[navLang][99];
             }
+            if (closest[1] == "#exportData") {
+                document.querySelector('#swDrag').innerText = words[navLang][122];
+            }
             if(closest[1] == "#nstCredits"){
                 document.querySelector('#swDrag').innerText = words[navLang][85];
             }
@@ -2458,7 +2476,7 @@ function swapTe(n, f, m, g, t) {
                 nee.append(b4);
                 nee.append(b5);
                 setTimeout(function(){
-                    if(savePerm){
+                    if(savePerm && !checkVisibility(document.querySelector("#pgTitle").querySelector("button"))){
                          localStorage.setItem('nst_sp','nstStop');
                          savePerm = false;
                         var tEE = document.querySelector('#textEnter');
@@ -2840,7 +2858,7 @@ posinar = 0;
     }
 }
 
-list = ['#creator', '#swTopic', '#exitsw','#sharenos','#nstFs','#nstCredits','#nstExit', '#nstShare'];
+list = ['#creator', '#swTopic', '#exitsw','#sharenos','#nstFs','#exportData','#nstCredits','#nstExit', '#nstShare'];
 function generatePreferences() {
     user.preferences = document.querySelector("#teInput").value;
     makeShapes(user.preferences, ',', 'p', true);
