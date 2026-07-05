@@ -917,7 +917,6 @@ words["ar"].push("nostalgiaWave تصدير ");
 words["ar"].push("احفظ بشكل دائم");
 words["he"].push("nostalgiaWave ייצוא");
 words["he"].push("שמור לצמיתות");
-document.body.style.backgroundColor = "var(--bg)";
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
