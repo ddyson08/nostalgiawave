@@ -15,7 +15,6 @@ function isPWA() {
             return true;
         }
     }
-
     // Fallback for older iOS Safari before matchMedia support was reliable
     // navigator.standalone is an iOS-specific property
     if (('standalone' in navigator) && (navigator.standalone)) {
