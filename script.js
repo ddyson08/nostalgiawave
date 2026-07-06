@@ -29,7 +29,7 @@ if(isPWA()){
     document.querySelector("#nstFs").remove();
     }
     }
-    catch(e){}
+    catch(e){} 
 
 // --- Example Usage ---
 
