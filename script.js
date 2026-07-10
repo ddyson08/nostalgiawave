@@ -149,7 +149,7 @@ var words = {
     "all watched", //77
     "you watched all the videos for this search", //78
     "still loading", //79
-    "the player will auto-scroll when videos arrive", //80
+    "more videos will arrive soon, try scrolling to see them", //80
     "✅ -> ❌", //81
     "❌ -> ✅", //82
     "hold again to toggle 2x speed", //83
@@ -191,7 +191,9 @@ var words = {
     "when you clear your browsing data or install/reinstall nostalgiaWave, copy the data of the file that just downloaded (including the word &quot;NOSTALGIAWAVE&quot;) and paste in in the input box when it asks your name<br>", //119
     "got it", //120
 "export nostalgiaWave", //121
-"for permanent saving" //122
+"for permanent saving", //122
+"storage full :(", //123
+"try deleting some saved nostalgias to free up space." //124
   ],
   "ru": [
 "от", //0
@@ -222,7 +224,7 @@ var words = {
 "Следующее, -", //24
 "Параметры", //25
 "➢", //26
-"Ещё от TS", //27
+"побольше такого", //27
 "Поиск снова", //28
 "Открыть видео", //29
 "Изменить имя", //30
@@ -277,7 +279,7 @@ var words = {
 
 "все еще загружается", //79
 
-"плеер будет автоматически прокручиваться по мере поступления видео", //80
+"cкоро появятся новые видео, попробуйте пролистать их", //80
 
 "✅ -> ❌", //81
 
@@ -329,7 +331,8 @@ var words = {
 "когда вы очистите историю браузера или установите/переустановите nostalgiaWave, скопируйте данные из только что скачанного файла (включая слово «NOSTALGIAWAVE») и вставьте их в поле ввода, когда приложение запросит ваше имя<br>", //119
 "понятно", //120
 "экспорт nostalgiaWave",
-"cохранить навсегда" 
+"cохранить навсегда", "память переполнена :(",
+"попробуйте удалить часть сохраненных воспоминаний, чтобы освободить место."
 
 ],
   "ja": [
@@ -349,7 +352,7 @@ var words = {
     "9月", "10月", "11月", "12月", "2019年以降でお願いします", "というか、今年より前でお願いします",
     "2019年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
     "正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
-    "まだ読み込み中", "動画が届くとプレイヤーが自動スクロールします本地", "✅ -> ❌", "❌ -> ✅",
+    "まだ読み込み中", "さらに多くの動画が近日公開されますので、スクロールしてご覧ください", "✅ -> ❌", "❌ -> ✅",
     "長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
     "または「𐄛」メニュー --> 「アプリをインストール」をクリック",
     "または「𐄛」メニュー --> 「アプリ」 --> 「このサイトをアプリとしてインストール」をクリック",
@@ -372,7 +375,8 @@ var words = {
 "ブラウザのデータを消去したり、nostalgiaWaveをインストール（または再インストール）したりする際は、ダウンロードされたファイル内のデータ（「NOSTALGIAWAVE」という文字列を含む）をコピーし、名前の入力が求められた際にその入力ボックスへ貼り付けてください<br>", //119
 "了解", //120
 "エクスポート nostalgiaWave",
-"永久に保存"
+"永久に保存", "ストレージがいっぱいです :(",
+"保存された『思い出』をいくつか削除して、空き容量を確保してみてください。"
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -391,7 +395,7 @@ var words = {
     "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2019 رجاءً",
     "حسنًا، قبل هذه السنة رجاءً", "بين 2019 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
     "حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
-    "سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديو", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
+    "سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديوالمزيد من الفيديوهات ستصل قريبا، جرب التمرير لمشاهدتهاالمزيد من الفيديوهات ستصل قريبا، جرب التمرير لمشاهدتها", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
     "إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
     "أو انقر على قائمة '𐄛' --> 'التطبيقات' --> 'تثبيت هذا الموقع كتطبيق'",
     "أو انقر على قائمة '𐄛' --> 'البث والحفظ والمشاركة' --> 'تثبيت التطبيق'", "أو انقر على قائمة المشاركة --> 'إضافة إلى dock'",
@@ -409,6 +413,7 @@ var words = {
 "انسخ البيانات الموجودة داخل هذا الملف النصي وألصقها في خانة إدخال الاسم", //118
 "عند مسح بيانات التصفح أو تثبيت/إعادة تثبيت تطبيق nostalgiaWave، انسخ بيانات الملف الذي تم تنزيله للتو (بما في ذلك كلمة 'NOSTALGIAWAVE') وألصقها في مربع الإدخال عند طلب اسمك<br>", //119
  "فهمت" //120
+
   ],
   "es": [
     "por", "nostalgiaWave", "peiLamed",
@@ -427,7 +432,7 @@ var words = {
     "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2019 porfa",
     "bueno, antes de este año porfa", "entre 2019 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
     "¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
-    "todavía cargando", "el reproductor se desplazará automáticamente cuando lleguen los videos", "✅ -> ❌", "❌ -> ✅",
+    "todavía cargando", "pronto llegarán más vídeos, prueba a desplazarte para verlos", "✅ -> ❌", "❌ -> ✅",
     "mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
     "créditos", "o haz clic en el menú '𐄛' --> 'instalar aplicación'",
     "o haz clic en el menú '𐄛' --> 'aplicaciones' --> 'instalar este sitio como una aplicación'",
@@ -447,7 +452,7 @@ var words = {
 "exportar",//117
 "copia los datos de este archivo de texto y pégalos en la barra de entrada de nombre", //118
 "cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
-"entendido", "exportar nostalgiaWave", "guardar permanentemente"
+"entendido", "exportar nostalgiaWave", "guardar permanentemente", "almacenamiento lleno :(", "intenta borrar algunos recuerdos guardados para liberar espacio."
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -467,7 +472,7 @@ var words = {
     "octobre", "novembre", "décembre", "après 2019 stp", "enfin, avant cette année stp", "entre 2019 et maintenant stp",
     "désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
     "tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
-    "le lecteur défilera automatiquement quand les vidéos arriveront", "✅ -> ❌", "❌ -> ✅",
+    "d'autres vidéos arriveront bientôt, essayez de faire défiler pour les voir", "✅ -> ❌", "❌ -> ✅",
     "maintiens enfoncé pour basculer en vitesse 2x", "publicité", "produit de 🇸🇱", "plein écran", "quitter ce menu", "crédits",
     "ou clique sur le menu '𐄛' --> 'installer l'application'",
     "ou clique sur le menu '𐄛' --> 'applications' --> 'installer ce site en tant qu'application'",
@@ -487,7 +492,8 @@ var words = {
 "exporter",//117
 "copiez les données contenues dans ce fichier texte et collez-les dans le champ de saisie du nom", //118
 "lorsque vous effacez vos données de navigation ou que vous installez/réinstallez nostalgiaWave, copiez les données du fichier qui vient d'être téléchargé (y compris le mot « NOSTALGIAWAVE ») et collez-les dans la zone de saisie lorsque votre nom est demandé<br>", //119
-"compris", "exporter nostalgiaWave", "enregistrer définitivement"
+"compris", "exporter nostalgiaWave", "enregistrer définitivement", "espace de stockage plein :(",
+"essayez de supprimer quelques souvenirs enregistrés pour libérer de l'espace."
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -506,7 +512,7 @@ var words = {
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
     "nach 2019 bitte", "na ja, vor diesem jahr bitte", "between 2019 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
     "vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
-    "du hast alle videos für diese suche angesehen", "lädt noch", "der player scrollt automatisch, wenn videos geladen sind",
+    "du hast alle videos für diese suche angesehen", "lädt noch", "weitere videos werden bald erscheinen, versuch mal zu scrollen, um sie zu sehen",
     "✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
     "menü verlassen", "credits", "oder klicke auf das '𐄛'-menü --> 'app installieren'",
     "oder klicke auf das '𐄛'-menü --> 'apps' --> 'diese website als app installieren'",
@@ -526,7 +532,8 @@ var words = {
 "exportieren",//117
 "kopiere den inhalt dieser textdatei und füge ihn in das namenseingabefeld ein", //118
 "wenn du deine browserdaten löschst oder nostalgiawave (neu) installierst: kopiere den inhalt der gerade heruntergeladenen datei (einschließlich des wortes &quot;NOSTALGIAWAVE&quot;) und füge ihn in das eingabefeld ein, wenn nach deinem namen gefragt wird<br>", //119
-"verstanden", "exportieren nostalgiaWave", "dauerhaft speichern"
+"verstanden", "exportieren nostalgiaWave", "dauerhaft speichern", "speicher voll :(",
+"versuche, einige gespeicherte erinnerungen zu löschen, um speicherplatz freizugeben."
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -545,7 +552,7 @@ var words = {
     "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2019 por favor",
     "bem, antes deste ano por favor", "entre 2019 e agora por favor", "desculpe, tente de novo por favor",
     "muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
-    "você assistiu a todos os vídeos desta busca", "ainda carregando", "o player vai rolar automaticamente quando os vídeos chegarem",
+    "você assistiu a todos os vídeos desta busca", "ainda carregando", "mais vídeos vão chegar em breve, tente rolar para ver",
     "✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
     "sair deste menu", "créditos", "ou clique no menu '𐄛' --> 'instalar aplicativo'",
     "ou clique no menu '𐄛' --> 'aplicativos' --> 'instalar este site como aplicativo'",
@@ -565,7 +572,8 @@ var words = {
 "exportar",//117
 "copie os dados deste arquivo de texto e cole-os no campo de nome", //118
 "ao limpar seus dados de navegação ou instalar/reinstalar o nostalgiaWave, copie os dados do arquivo que acabou de ser baixado (incluindo a palavra 'NOSTALGIAWAVE') e cole-os no campo de entrada quando o aplicativo pedir seu nome<br>", //119
-"entendido", "exportar nostalgiaWave", "salvar permanentemente"
+"entendido", "exportar nostalgiaWave", "salvar permanentemente", "armazenamento cheio :(",
+"tente excluir alguns itens nostálgicos salvos para liberar espaço."
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -583,7 +591,7 @@ var words = {
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
     "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "好吧，求今年之前的吧", "求2019年到现在之间的吧",
     "抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
-    "你已看完了此搜索下的所有视频", "还在加载中", "视频到达后播放器会自动滚动", "✅ -> ❌", "❌ -> ✅",
+    "你已看完了此搜索下的所有视频", "还在加载中", "更多视频很快会陆续发布，试着浏览看看", "✅ -> ❌", "❌ -> ✅",
     "再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
     "或点击 '𐄛' 菜单 --> '应用' --> '将此站点安装为应用'", "或点击 '𐄛' 菜单 --> '投放、保存和分享' --> '安装应用'",
     "或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
@@ -598,7 +606,7 @@ var words = {
 "导出",//117
 "复制该文本文件中的数据，并将其粘贴到名称输入栏中", //118
 "当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
-"明白了", "导出 nostalgiaWave", "永久保存"
+"明白了", "导出 nostalgiaWave", "永久保存", "存储空间已满 :(", "尝试删除一些已保存的怀旧内容来释放空间。"
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -618,7 +626,7 @@ var words = {
     "कृपया 2019 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2019 और अब के बीच का दें",
     "क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
     "सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
-    "वीडियो आने पर प्लेयर अपने आप स्क्रॉल करेगा", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
+    "जल्द ही और भी वीडियो आएंगे, उन्हें देखने के लिए स्क्रॉल करने का प्रयास करें", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
     "विज्ञापन", "🇸🇱 का उत्पाद", "पूर्ण स्क्रीन करें", "इस मेनू से बाहर निकलें", "क्रेडिट",
     "या '𐄛' मेनू पर क्लिक करें --> 'ऐप इंस्टॉल करें'",
     "या '𐄛' मेनू पर क्लिक करें --> 'ऐप्स' --> 'इस साइट को ऐप के रूप में इंस्टॉल करें'",
@@ -638,7 +646,8 @@ var words = {
 "एक्सपोर्ट",//117
 "इस टेक्स्ट फ़ाइल के डेटा को कॉपी करें और नाम डालने वाली जगह पर पेस्ट करें", //118
 "जब आप अपना ब्राउज़िंग डेटा क्लियर करते हैं या nostalgiaWave को इंस्टॉल/रीइंस्टॉल करते हैं, तो अभी डाउनलोड हुई फ़ाइल का डेटा कॉपी करें ('NOSTALGIAWAVE' शब्द सहित) और जब ऐप आपका नाम पूछे तो उसे इनपुट बॉक्स में पेस्ट करें<br>", //119
-"समझ गया", "एक्सपोर्ट nostalgiaWave", "स्थायी रूप से बचाएं"
+"समझ गया", "एक्सपोर्ट nostalgiaWave", "स्थायी रूप से बचाएं", "स्टोरेज फुल :(",
+"जगह खाली करने के लिए कुछ सेव की हुई पुरानी यादें डिलीट करके देखें।"
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -657,7 +666,7 @@ var words = {
     "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2019 በኋላ ይሁን እባክህ",
     "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2019 እና አሁን መካከል ይሁን እባክህ", "አዘንባለሁ፣ እባክህ እንደገና ሞክር",
     "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!", "የሆነ ነገር አልሰራም<br>እባክህ እንደገና ለመፈለግ ሞክር", "ሁሉም ታይተዋል",
-    "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ቪዲዮዎች ሲደርሱ ማጫወቻው በራሱ ይሸብልላል", "✅ -> ❌",
+    "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ተጨማሪ ቪዲዮዎች በቅርቡ ይመጣሉ፣ እነሱን ለማየት ለማሸብለል ይሞክሩ", "✅ -> ❌",
     "❌ -> ✅", "ወደ 2 እጥፍ ፍጥነት ለመቀየር እንደገና ተጭነው ይቆዩ", "ማስታወቂያ", "የ 🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ",
     "ከዚህ ምናሌ ውጣ", "ምስጋናዎች", "ወይም '𐄛' ምናሌን ጠቅ ያድርጉ --> 'መተግበሪያ ጫን'",
     "ወይም '𐄛' ምናሌን ጠቅ ያድርጉ --> 'መተግበሪያዎች' --> 'ይህንን ጣቢያ እንደ መተግበሪያ ጫን'",
@@ -677,7 +686,8 @@ var words = {
 "ላክ", //117
 "በዚህ የጽሑፍ ፋይል ውስጥ ያለውን ውሂብ ይቅዱ እና በስም ግቤት አሞሌ ውስጥ ይለጥፉት", //118
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙⴻⵏ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119
-"ገባኝ", "ላክ nostalgiaWave", "ለዘላለም ያቆዩት"
+"ገባኝ", "ላክ nostalgiaWave", "ለዘላለም ያቆዩት", "ማከማቻ ሙሉ ነው :(",
+"ቦታ ለማስለቀቅ የተቀመጡ አንዳንድ የናፍቆት ስሜቶችን ለመሰረዝ ይሞክሩ።"
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
@@ -695,7 +705,7 @@ var words = {
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
     "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
     "ⴱⵉⵏ 2019 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
-    "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⴰⵎⵓⵔⴰⵔ ⴰⴷ ⵉⵜⵜⴷⴷⵓ ⵡⴰⵃⴷⵓⵙ ⵉⴳ ⴷ ⵍⴽⵎⵏ ⵉⴼⵉⴷⵢⵓⵜⵏ",
+    "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⴰⴷ ⴷⴰⵡⴹⴻⵏ ⵓⴳⴰⵔ ⵏ yividyuten ⵙ ⵍⵇⴻⵔⴱ, ⵄⵔⴻⴹ ⴰⴷ ⵜⵜⴻⵥⵔⴻⴹ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵏⵜⵡⴰⵍⵉⴹ",
     "✅ -> ❌", "❌ -> ✅", "ⵄⴰⵡⴷ ⴹⵕⵥ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵙ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼⴰⵔⵉⵙ ⵏ 🇸🇱", "ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ", "ⴼⴼⵖ ⵙⴳ ⵜⵍⴳⴰⵎⵜ ⴰ",
     "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⵡⴰ ⴰⵎ ⴰⵙⵉⵜ'",
     "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⴰⵣⵓⵣⵣⵡ, ⴰⵃⴼⴰⴹ ⴷ ⵓⴱⴹⴰ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⴰⵔⵏⵓ ⵙ dock'",
@@ -713,7 +723,8 @@ var words = {
 "ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵢⴻⵍⵍⴰⵏ ⴷⴰⵅⴻⵍ ⵏ ⵓⴼⴰⵢⵍⵓⴰⴳⵉ ⵏ ⵓⴹⵔⵉⵙ ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⴻⴽⵛⴻⵎ ⵏ ⵢⵉⵙⴻⵎ", //118 
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵇⴻⴷⵛⴻⴹ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119 
 "ⵓⴼⵉⵖⵜ",
-"ⴰⵙⵓⴼⴻⵖ nostalgiaWave", "ⵃⵔⴻⵣ ⵉ ⵍⴻⴱⴷⴰ"
+"ⴰⵙⵓⴼⴻⵖ nostalgiaWave", "ⵃⵔⴻⵣ ⵉ ⵍⴻⴱⴷⴰ", "ⴰⵃⴻⵣⵣⴻⴱ ⵢⴻⵞⵞⵓⵔ :(",
+"ⵄⵔⴻⴹ ⴰⴷ ⵜⴻⵙⴼⴻⴹ ⴽⵔⴰ ⵏ ⵜⵎⵓⵖⵍⵉⵡⵉⵏ ⵢⴻⵜⵜⵡⴰⵃⴻⵔⵣⴻⵏ ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⵓⴼⵖⴻⴹ ⴰⵎⴹⵉⵇ."
   ],
  "kri": [ 
 "bay", //0 
@@ -796,7 +807,7 @@ var words = {
 "ɔl dɛn bin de wach", //77 
 "yu wach ol di vidio dem fo dis sach", //78 
 "stil de lod", //79 
-"di pleya go ɔto-skrol we vidio dɛn kam", //80 
+"mɔ fim dɛn go kam jisnɔ, tray fɔ skrol fɔ si dɛn", //80 
 "✅ -> ❌", //81 
 "❌ -> ✅", //82 
 "hold bak fɔ toggle 2x spid", //83 
@@ -837,7 +848,9 @@ var words = {
 "we yu klia yu brawzin data ɔ dawnlod/riinstɔl nostalgiaWave, kɔpi di data fɔ di fayl we yu jɔs dawnlod (inklud di wɔd &quot;NOSTALGIAWAVE&quot;) ɛn pas insay di input bɔks we i aks yu nem<br>", //119 
 "gɛt am",
 "ɛkspɔt nostalgiaWave",
-"sev fɔ ɔltɛm"
+"sev fɔ ɔltɛm",
+"stɔrɔj ​​ful :(",
+"tray fɔ dilit sɔm sev nostaljia fɔ fri ples."
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
@@ -855,7 +868,7 @@ var words = {
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
     "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2019년에서 현재 사이로 해주세요",
     "죄송합니다, 다시 시도해 주세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
-    "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "동영상이 도착하면 플레이어가 자동으로 스크롤됩니다",
+    "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "곧 더 많은 영상이 올라올 예정이니, 스크롤해서 보시면 됩니다",
     "✅ -> ❌", "❌ -> ✅", "다시 길게 누르면 2배속 전환", "광고", "🇸🇱의 제품", "전체 화면", "이 메뉴 나가기", "크레딧",
     "또는 '𐄛' 메뉴 --> '앱 설치'를 클릭하세요",
     "또는 '𐄛' 메뉴 --> '앱' --> '이 사이트를 앱으로 설치'를 클릭하세요",
@@ -874,7 +887,8 @@ var words = {
 "이 텍스트 파일의 데이터를 복사하여 이름 입력란에 붙여넣으세요", //118
 "브라우징 데이터를 삭제하거나 nostalgiaWave를 설치/재설치할 때, 방금 다운로드한 파일의 데이터('NOSTALGIAWAVE'라는 단어 포함)를 복사하여 이름을 묻는 입력란에 붙여넣으세요<br>", //119
 "알겠습니다",
-"내보내기 nostalgiaWave", "영구적으로 저장"
+"내보내기 nostalgiaWave", "영구적으로 저장", "저장 공간이 부족해요 :(",
+"저장된 추억이 담긴 사진들을 삭제해서 공간을 확보해 보세요."
   ],
   "he": [
     "על ידי", "nostalgiaWave", "peiLamed",
@@ -892,7 +906,7 @@ var words = {
     "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
     "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2019 בבקשה", "ובכן, לפני השנה הזו בבקשה",
     "בין 2019 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
-    "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעו", "✅ -> ❌", "❌ -> ✅",
+    "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעועוד סרטונים יגיעו בקרוב, נסו לגלול כדי לראות אותם", "✅ -> ❌", "❌ -> ✅",
     "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
     "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
     "או לחץ על תפריט '𐄛' --> 'הזרמה, שמירה ושיתוף' --> 'התקן אפליקציה'", "או לחץ על תפריט השיתוף --> 'הוסף ל-Dock'",
@@ -914,8 +928,12 @@ var words = {
 };
 words["ar"].push("nostalgiaWave تصدير ");
 words["ar"].push("احفظ بشكل دائم");
+words["ar"].push(" مساحة التخزين ممتلئة :(");
+words["ar"].push("حاول حذف بعض الذكريات المحفوظة لتوفير مساحة.");
 words["he"].push("nostalgiaWave ייצוא");
 words["he"].push("שמור לצמיתות");
+words["he"].push("אחסון מלא :(");
+words["he"].push("נסה למחוק כמה נוסטלגיות שנשמרו כדי לפנות מקום.");
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
@@ -941,9 +959,21 @@ catch(e){
     savePerm = true;
 }
 try{
-if(JSON.stringify(localStorage).length > 4000){
-    localStorage.setItem('nostalgiaTokOldVideos','')
+// Source - https://stackoverflow.com/a/43116397
+// Posted by dmoo
+// Retrieved 2026-07-10, License - CC BY-SA 3.0
+//Additions by peiLamed
+var numberR = Math.random();
+try {
+  localStorage.setItem(numberR, "Hello World!"); //saves to the database, "key", "value"
+} catch (e) {
+  if (e == QUOTA_EXCEEDED_ERR) {
+    howToFullscreen(true,[123,124]);
+    localStorage.setItem('nostalgiaTokOldVideos','');
+  }
 }
+localStorage.removeItem(numberR, "Hello World!");
+
 }
 catch(e){
 
@@ -1126,12 +1156,16 @@ function endFollow() {
        howToFullscreen();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exportData')) {
+        if(document.querySelector('#swDrag').innerText=="-->"){
+
+        }else{
        nstExport();
+        }
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')) {
        howToFullscreen(true, [88,98]);
     }
-    if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')) {
+    if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstex2') ) {
       
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare')) {
@@ -1168,7 +1202,7 @@ function endFollow() {
     prompt(words[navLang][113],window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
 }
     }
-    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData')){
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstex2')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
@@ -1416,8 +1450,8 @@ function editModeAnimation() {
         if ([...pg.querySelectorAll('.pgMain')].length > 1) {
             var pqb = [...pg.querySelectorAll('.pgMain')[0].querySelectorAll('button')];
             pqb[0].style.display = "block";
-            pqb[1].innerText = words[navLang][108];
-            pqb[1].setAttribute('class', 'primaryButton');
+            //pqb[1].innerText = words[navLang][108];
+            //pqb[1].setAttribute('class', 'primaryButton');
         }
         var swr = window.innerWidth / window.innerHeight;
         // Source - https://stackoverflow.com/a/41371037
@@ -1491,11 +1525,11 @@ function eMA2(simmilar, pgGivenData, neww) {
         }, 1000)
         var pqb = [...pg2.querySelectorAll('button')];
         pqb[0].style.display = "block";
-        pqb[1].innerText = words[navLang][108];
-        pqb[1].setAttribute('class', 'primaryButton');
+        //pqb[1].innerText = words[navLang][108];
+        //pqb[1].setAttribute('class', 'primaryButton');
         var pqb2 = [...pg1.querySelectorAll('button')];
         pqb2[0].setAttribute('class', 'special');
-        pqb2[1].setAttribute('class', 'special');
+        //pqb2[1].setAttribute('class', 'special');
         
         var pg = document.querySelector('#playground');
         pg.scrollTo(0, pg.scrollHeight);
@@ -2130,7 +2164,7 @@ setTimeout(function(){
             lilWidth = clientY
             var closest = [10000000, '']; for (var i of list) { var Aa = document.querySelector(i).getBoundingClientRect(); var Aaa = Aa.y + Aa.height / 2; if (closest[0] > Math.abs(lilWidth - Aaa)) { closest[0] = Math.abs(lilWidth - Aaa); closest[1] = i; newConsoleLog(closest) } }
             if (closest[1] == "#creator") {
-                document.querySelector('#swDrag').innerText = "-->";
+                document.querySelector('#swDrag').innerText = "🔎";
                
                // document.querySelector('#touchOverlay').style.display = "block";
             }
@@ -2188,6 +2222,12 @@ setTimeout(function(){
                 
           
                 document.querySelector('#swDrag').innerText = words[navLang][104];
+            
+            }
+            if(closest[1] == "#nstex2"){
+                
+          
+               document.querySelector('#swDrag').innerText = "-->";
             
             }
             document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
@@ -2482,7 +2522,7 @@ function swapTe(n, f, m, g, t) {
                 nee.append(b4);
                 nee.append(b5);
                 setTimeout(function(){
-                    if(savePerm && !checkVisibility(document.querySelector("#pgTitle").querySelector("button"))){
+                    if(savePerm && !(document.querySelector("#pgTitle").querySelector("button").checkVisibility())){
                          localStorage.setItem('nst_sp','nstStop');
                          savePerm = false;
                         var tEE = document.querySelector('#textEnter');
@@ -2491,7 +2531,7 @@ function swapTe(n, f, m, g, t) {
                         tEE.style.bottom = "-50vh";
                         setTimeout(function(){
                             var newMess = document.createElement('div');
-                            newMess.setAttribute('style', "transition: 1s; max-width: "+tEEl[2]+"px; z-index: 100; border-radius: 5px; position: absolute; opacity: 0; width:"+tEEl[2]+"px; top:"+tEEl[0]+"px; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            newMess.setAttribute('style', "transition: 1s; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); z-index: 100; border-radius: 5px; position: absolute; opacity: 0; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); bottom: 2em; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
                             newMess.setAttribute('id','newMess');
                             var pwanumb = 1;
                             if(isPWA()){
@@ -2600,19 +2640,24 @@ function swapTe(n, f, m, g, t) {
 }
 var userName = "";
 async function saveNew(val) {
+    try{
     //  newConsoleLog(val);
     if (false) {
         await appendToStringStore('[nostalgiaTokSPLIT]' + val + '[NTS2]' + JSON.stringify(user))
     } else {
         var jsu = localStorage.getItem('nostalgiaTokSaved');
         if (jsu !== null) {
+        
             localStorage.setItem('nostalgiaTokSaved', jsu + '[nostalgiaTokSPLIT]' + val + '[NTS2]' + JSON.stringify(user));
+       
         }
         else {
             localStorage.setItem('nostalgiaTokSaved', val + '[NTS2]' + JSON.stringify(user));
         }
        
     }
+}
+catch(e){}
 }
 
 function nextSaved() {
@@ -2756,7 +2801,12 @@ function genNext(t, two, x) {
     });
 if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
     Arr.splice(posinar % Arr.length, 1);
+    try{
     localStorage.setItem('nostalgiaTokSaved',Arr.join('[nostalgiaTokSPLIT]'));
+    }
+    catch(e){
+
+    }
 }
     document.querySelector('#uvula').append(document.querySelector('.uBall'));
     var clone = document.querySelector('.uBall').cloneNode();
@@ -2864,7 +2914,7 @@ posinar = 0;
     }
 }
 
-list = ['#creator', '#swTopic', '#exitsw','#sharenos','#nstFs','#exportData','#nstCredits','#nstExit', '#nstShare'];
+list = ['#creator', '#swTopic', '#exitsw','#sharenos','#nstFs','#exportData','#nstCredits','#nstExit', '#nstShare', '#nstex2'];
 function generatePreferences() {
     user.preferences = document.querySelector("#teInput").value;
     makeShapes(user.preferences, ',', 'p', true);
@@ -2944,7 +2994,10 @@ function runAnimation(bypass, bypass2) {
      else {
              totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
      }
+     try{
      localStorage.setItem('nostalgiaTokSaved', totalNST.join('[nostalgiaTokSPLIT]'));
+     }
+     catch(e){}
     }else{
         localStorage.setItem('nostalgiaTokSaved', '""');
         if (localStorage.getItem('nostalgiaTokSaved').split('[nostalgiaTokSPLIT]') !== undefined) {
@@ -2958,7 +3011,10 @@ function runAnimation(bypass, bypass2) {
      else {
              totalNST.unshift('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
      }
+     try{
      localStorage.setItem('nostalgiaTokSaved', totalNST.join('[nostalgiaTokSPLIT]'));
+     }
+     catch(e){}
     }
     }
     ra = true;
@@ -3689,6 +3745,7 @@ function nvm() {
     }
 }
 function delSaved() {
+    try{
     Arr.splice((posinar - 1) % Arr.length, 1);
     if (true) {
         localStorage.setItem('nostalgiaTokSaved', Arr.join('[nostalgiaTokSPLIT]'));
@@ -3699,6 +3756,7 @@ function delSaved() {
         });
     }
     nextSaved();
+}catch(e){}
 }
 function chooseSaved() {
     ra = true;
@@ -4244,11 +4302,11 @@ function evaluateFullscreenReminder(n){
 function swipeUp() {
     if(rateLimit){
         rateLimit = false;
-    if(currentPlace >= allVideos.length - 1){
+    if(currentPlace >= allVideos.length - 3){
         if(nextToken!==""){
-            giveError3();
-        }else{
             giveError2();
+        }else{
+            giveError3();
         }
         /*document.querySelector('.giveError').style.borderBottom="1px dotted var(--emphasizedText)";
         setTimeout(function(){document.querySelector('.giveError').style.border=""},250)*/
@@ -4280,7 +4338,7 @@ function swipeUp() {
             orbit.style.opacity = "0.25";
         }
         orbit.setAttribute('class', 'videoOrbit no');
-        orbit.style.borderRadius = "5px";
+        orbit.style.borderRadius = "50%";
         orbit.style.zIndex = "200";
         orbit.style.width = "0.5em";
         orbit.style.height = "0.5em";
@@ -4309,6 +4367,7 @@ function swipeUp() {
         orbitf.style.transition = "0.25s";
         // orbitf.setAttribute('class', "videoOrbit");
         document.querySelector("#allHold").append(orbitf);
+        
         tsMTs.push(tsMT);
         setTimeout(function () {
             // Move RIGHT
@@ -4316,6 +4375,10 @@ function swipeUp() {
             orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][0] + ")";
             orbitf.style.left = sVl['yes'][0];
             orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][0] +")";
+            orbit.style.width="2em";
+        orbit.style.height="2em";
+        orbitf.style.width="2em";
+        orbitf.style.height="2em";
             setTimeout(function () {
                 // Move UP
                 orbit.style.transform = "rotate(90deg)";
@@ -4339,12 +4402,10 @@ function swipeUp() {
                         orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
                         orbitf.style.left = sVl['yes'][2];
                         orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] +")";
-
                         setTimeout(function () {
                             orbit.style.transform = "rotate(360deg)";
                            
-                                    localStorage.setItem('nostalgiaTokOldVideos', localStorage.getItem('nostalgiaTokOldVideos') + "|SPLIT|"+allVideos[currentPlace]);
-                              
+                                              
                         }, 125);
 
                     }, 250);
@@ -4356,12 +4417,17 @@ function swipeUp() {
         }, 250);
 
         setTimeout(function () {
+             orbit.style.width="0.5em";
+                        orbit.style.height="0.5em";
+                        orbitf.style.width="0.5em";
+                         orbitf.style.height="0.5em";
                 var bigjaef = orbitf.cloneNode();
+                bigjaef.style.width = "0.5em";
                 var thebigjaef = orbitf.getBoundingClientRect();
 
                 var bigjae = orbit.cloneNode();
+                bigjae.style.width="0.5em";
                 var thebigjae = orbit.getBoundingClientRect();
-
                 bigjae.style.left = thebigjae.x + "px";
                 newConsoleLog(thebigjae.left);
                 bigjae.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
@@ -4449,7 +4515,8 @@ if (currentPlace < allVideos.length-3) {
             avcp = Ads[1];
         }
                                             try{
-                                            player.loadVideoById(avcp)
+                                            player.loadVideoById(avcp);
+                                            localStorage.setItem('nostalgiaTokOldVideos', localStorage.getItem('nostalgiaTokOldVideos') + "|SPLIT|"+allVideos[currentPlace]);
                                             }
                                             catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
@@ -4500,6 +4567,7 @@ if (currentPlace < allVideos.length-3) {
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
                                             try{
                                              player.loadVideoById(avcp);
+                                              localStorage.setItem('nostalgiaTokOldVideos', localStorage.getItem('nostalgiaTokOldVideos') + "|SPLIT|"+allVideos[currentPlace]);
                                             }
                                             catch(e){}
                                             },100);
@@ -4681,6 +4749,9 @@ function swipeDown() {
         bj.style.zIndex = 10000;
         bj.style.opacity = 0.5;
         document.querySelector("#allHold").append(bj);
+          bj.style.width="2em";
+                        bj.style.height="2em";
+                        
        // orbit.style.opacity = 0;
         setTimeout(function () {
             bj.style.left = o2.left + "px";
@@ -4725,7 +4796,8 @@ function swipeDown() {
                 setTimeout(function () {
                     orbit.remove();
                     canSwipe = true;
-
+ bj.style.width="2em";
+                        bj.style.height="2em";
                    // bj.remove();
                 }, 250)
             }
@@ -4749,6 +4821,8 @@ function swipeDown() {
                             setTimeout(function () {
                                 orbit.remove();
                                 canSwipe = true;
+                                 bj.style.width="2em";
+                        bj.style.height="2em";
                                 //bj.remove();
                             }, 125*2)
                         }, 125*2);
@@ -4772,6 +4846,8 @@ function swipeDown() {
                         setTimeout(function () {
                             orbit.remove();
                             canSwipe = true;
+                             bj.style.width="2em";
+                        bj.style.height="2em";
                            // bj.remove();
                         }, 125*2)
                     }, 125*2);
@@ -5418,7 +5494,10 @@ async function requestVideos(value) {
             pages = localStorage.getItem('pag_'+userEnc).split('[PAGSPLIT]');
         }
         catch(e){
+            try{
             localStorage.setItem('pag_'+userEnc,value)
+            }
+            catch(e){}
         }
        // alert([currentToken,value])
         if(pages.includes(value)){
@@ -5445,14 +5524,18 @@ async function requestVideos(value) {
                 
             }
             catch(e){
+                try{
                 localStorage.setItem('nst_'+userEnc,'');
+                }catch(e){}
             }
         }else{
             try{
             localStorage.getItem('nst_'+userEnc).split('[NSTSPLIT]');
             }
             catch(e){
+                try{
                 localStorage.setItem('nst_'+userEnc,'');
+                }catch(e){}
             }
         }
         console.log[getFromNet,allVideos,'TWIZZZZYYYYY'];
@@ -5465,7 +5548,10 @@ async function requestVideos(value) {
             var sanitized = result.split('NEXT_TOKEN:')[0];
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
+            try{
             localStorage.setItem('next_'+userEnc,nextToken);
+            }
+            catch(e){}
             var tbaa = [];
                 for (var i of sanitized.split(' ~ ')) {
                     tbaa.push(i);
@@ -5474,10 +5560,11 @@ async function requestVideos(value) {
                 tbaa = [...tbaa.sort(() => Math.random() - 0.5)];
             allVideos = [...allVideos, ...tbaa];
 
-
+try{
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
-           gotNew = true;
+}catch(e){}
+            gotNew = true;
         } catch (err) {
             console.error(err);
             allVideos[0] = "ERROR";
