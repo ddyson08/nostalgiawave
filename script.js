@@ -5589,7 +5589,7 @@ try{
                 }
             }
             if(innerBool){
-                var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("[SPLIT]");
+                var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("|SPLIT|");
                 var offset = 0;
             allVideos = [...allVideos.filter(n => !innerValls.includes(n))]
             }
