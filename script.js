@@ -62,7 +62,7 @@ var clearItInterval = setInterval(function(){
         }
     }
 
-},100)
+},500)
 function newConsoleLog(message) {
 console.log('old'+message)
 }
@@ -1144,10 +1144,10 @@ function endFollow() {
                     var bool = localStorage.getItem('nostalgiaTokAllowOldVideos');
                     if(bool == "false"){
                        localStorage.setItem('nostalgiaTokAllowOldVideos','true');    
-                       words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
+                      // words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
                     }else{
                         localStorage.setItem('nostalgiaTokAllowOldVideos','false');
-                        words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
+                        //words[navLang][31] = (localStorage.getItem('nostalgiaTokAllowOldVideos')=="true"?"✅":"❌") + words[navLang][31].replace('✅','').replace('❌','');
                            }
                     
                 }
@@ -5589,15 +5589,9 @@ try{
                 }
             }
             if(innerBool){
-                var innerValls = localStorage.getItem('nostalgiaTokOldVideos');
+                var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("[SPLIT]");
                 var offset = 0;
-            for(var excludeWatched in allVideos){
-                console.log([allVideos[excludeWatched-offset],innerValls,innerValls.includes(allVideos[excludeWatched-offset])])
-                if(innerValls.includes(allVideos[excludeWatched-offset])){
-                    allVideos.splice(excludeWatched-offset,1);
-                    offset++;
-                }
-            }
+            allVideos = [...allVideos.filter(n => !innerValls.includes(n))]
             }
             console.log(allVideos);
             ogArr2 = [...allVideos];
