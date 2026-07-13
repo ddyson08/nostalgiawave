@@ -8,7 +8,7 @@ const APP_SHELL = [
   '/style.css',
   '/GlacialIndifference-Regular.otf',
   '/GlacialIndifference-Bold.otf',
-  'logo.png',
+  'logo.PNG',
 ];
 
 // Install: cache app shell
