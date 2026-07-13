@@ -191,7 +191,7 @@ var words = {
     "hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
     "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
     "see directions", //99
-    "「」 | 『』 | fullscreen available :)", //100
+    "「」 | 『』 | fullscreen available", //100
     "use me instead :)", //101
     "share video", //102
     "your video is loading", //103
@@ -333,7 +333,7 @@ var words = {
 "нажмите эту кнопку <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97
 "создано ddyson bang-ura (aka peiLamed / פילמד) <br><br> помощь со Stack Overflow и немного отладки ИИ <br><br> разработано peiLamed <br><br> продукт из Сьерра-Леоне 🇸🇱 <br><br> свободная Палестина 🇵🇸🇸🇩🇨🇩", //98
 "см. указания", //99
-"「」 | 『』 | доступен полноэкранный режим :)", //100
+"「」 | 『』 | доступен полноэкранный режим", //100
 "используйте меня вместо :)", //101
 "поделиться видео", //102
 "ваше видео загружается", //103
@@ -391,7 +391,7 @@ var words = {
     "「nostalgiaWaveをインストール」をクリック<br>",
     "このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
-    "手順を見る", "「」 | 『』 | 全画面表示が利用可能です :)", "代わりにこちらを使ってください :)", "動画を共有",
+    "手順を見る", "「」 | 『』 | 全画面表示が利用可能です", "代わりにこちらを使ってください :)", "動画を共有",
     "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
     "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました。いずれにせよ、共有してくれてありがとう！", //107
     "類似の検索", "検索履歴", "新しく検索", "検索中...", "うまくいきませんでした", "このリンクを選択してコピーしてください :)", "ちなみに、(___)するとこれらは消えてしまいます。<br>データを永続的に保存するには、「エクスポート」ボタンを押してファイル名を確認してください :)", //114
@@ -433,7 +433,7 @@ var words = {
     "لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> მაგრამ ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
     "انقر فوق 'تثبيت nostalgiaWave'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
-    "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة :)", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
+    "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
     "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
     "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك. شكراً للمشاركة على أي حال!", //107
     "بحث عن مماثل", "سجل البحث", "بحث جديد", "جاري البحث...", "لم ينجح الأمر", "حدد هذا الرابط وانسخه :)", "بالمناسبة، ستختفي هذه البيانات إذا قمت بـ (___). <br> لحفظ بياناتك بشكل دائم، اضغط على زر &quot;تصدير&quot; (export) واطلع على اسم الملف :)", //114
@@ -473,7 +473,7 @@ var words = {
     "no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
     "haz clic en 'instalar nostalgiaWave'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
-    "ver instrucciones", "「」 | 『』 | pantalla completa disponible :)", "usa este en su lugar :)", "compartir video",
+    "ver instrucciones", "「」 | 『』 | pantalla completa disponible", "usa este en su lugar :)", "compartir video",
     "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
     "Compartir no funciona en tu navegador, así que copié el enlace en su lugar. ¡Gracias por compartir de todos modos!", //107
     "buscar similares", "historial de búsqueda", "nueva búsqueda", "buscando...", "No funcionó", "Selecciona este enlace y cópialo :)", "por cierto, esto desaparecerá si tú (___). <br> para guardar tus datos permanentemente, pulsa el botón «exportar» y lee el nombre del archivo :)", //114
@@ -515,7 +515,7 @@ var words = {
     "je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
     "clique sur 'installer nostalgiaWave'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
-    "voir les instructions", "「」 | 『』 | plein écran disponible :)", "utilise-moi plutôt :)", "partager la vidéo",
+    "voir les instructions", "「」 | 『』 | plein écran disponible", "utilise-moi plutôt :)", "partager la vidéo",
     "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
     "Le partage ne fonctionne pas sur votre navigateur, j'ai donc copié le lien à la place. Merci pour le partage en tout cas !", //107
     "rechercher similaire", "historique de recherche", "nouvelle recherche", "recherche en cours...", "Ça n'a pas marché", "Sélectionnez ce lien et copiez-le :)", "au fait, ces éléments disparaîtront si vous (___). <br> pour sauvegarder vos données de façon permanente, cliquez sur le bouton « exporter » et notez le nom du fichier :)", //114
@@ -557,7 +557,7 @@ var words = {
     "ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
     "klicke auf 'nostalgiaWave installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
-    "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar :)", "nutz mich stattdessen :)", "video teilen",
+    "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar", "nutz mich stattdessen :)", "video teilen",
     "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
     "Teilen funktioniert in deinem Browser nicht, deshalb habe ich stattdessen den Link kopiert. Danke fürs Teilen übrigens!", //107
     "ähnliche suchen", "suchverlauf", "neu suchen", "sucht...", "Es hat nicht funktioniert", "Wähle diesen Link aus und kopiere ihn :)", "übrigens: diese daten gehen verloren, wenn du (___). <br> um deine daten dauerhaft zu speichern, klicke auf die schaltfläche „exportieren“ und merke dir den dateinamen :)", //114
@@ -600,7 +600,7 @@ var words = {
     "não tenho certeza de como fazer no seu navegador <br> mais procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
     "clique em 'instalar nostalgiaWave'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
-    "ver instruções", "「」 | 『』 | tela cheia disponível :)", "use-me em vez disso :)", "compartir vídeo",
+    "ver instruções", "「」 | 『』 | tela cheia disponível", "use-me em vez disso :)", "compartir vídeo",
     "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
     "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
     "buscar semelhantes", "histórico de buscas", "nova busca", "buscando...", "não funcionou", "Selecione este link e copie-o :)", "aliás, isso será apagado se você (___). <br> para salvar seus dados permanentemente, clique no botão 'exportar' e anote o nome do arquivo :)", //114
@@ -637,7 +637,7 @@ var words = {
     "我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
     "点击“安装 nostalgiaWave”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
-    "查看指南", "「」 | 『』 | 全屏可用 :)", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
+    "查看指南", "「」 | 『』 | 全屏可用", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
     "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
     "搜索相似", "搜索历史", "搜索全新", "正在搜索...", "没用", "选中此链接并复制 :)", "顺便说一下，如果你 (___)，这些数据就会消失。<br>若要永久保存数据，请点击“导出”按钮并查看文件名 :)", //114
 "删除此应用", //115
@@ -678,7 +678,7 @@ var words = {
     "मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
     "'nostalgiaWave इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
-    "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है :)", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
+    "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
     "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
     "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने इसकी जगह लिंक कॉपी कर लिया है। फिर भी साझा करने के लिए धन्यवाद!", //107
     "समान खोजें", "खोज इतिहास", "नया खोजें", "खोज रहा है...", "काम नहीं किया", "इस लिंक को चुनें और कॉपी करें :)", "वैसे, अगर आप (___) करेंगे तो ये हट जाएंगे। <br> अपना डेटा हमेशा के लिए सेव करने के लिए, 'एक्सपोर्ट' बटन दबाएं और फ़ाइल का नाम देखें :)", //114
@@ -720,7 +720,7 @@ var words = {
     "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ምናሌው ወይም በአሳሽ ምናሌው ውስጥ 'ወደ መነሻ ማያ ገጽ አክል' ወይም 'መተግበሪያ ጫን' የሚል ቁልፍ ይፈልጉ እና ጠቅ ያድርጉት",
     "'nostalgiaWave ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "በ ddyson bang-ura (በቅጽል ስሙ peiLamed / פילמד) የተሰራ <br><br> ከ stack overflow እና ጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peiLamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
-    "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል :)", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
+    "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
     "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
     "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ። ለማንኛውም ስላጋሩ እናመሰግናለን!", //107
     "ተመሳሳይ ፈልግ", "የፍለጋ ታሪክ", "አዲስ ፍለጋ", "በመፈለግ ላይ...", "አልሰራም", "ይህንን ሊንክ ምረጥና ኮፒ አድርገው :)", "እነዚህ (____) ከሆኑ ይጠፋሉ። <br> ውሂብዎን በቋሚነት ለማስቀመጥ የ&quot;ላክ&quot; አዝራሩን ይጫኑ እና የፋይል ስሙን ያንብቡ :)", //114
@@ -758,7 +758,7 @@ var words = {
     "ⵓⵔ ⵙⵙⵉⵏⵅ ⵎⴰⵏⵎⴽ ⴰⴷ ⵜ ⵜⴳⴷ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ <br> ⵎⴰⵛⴰ ⴰⵔⵣⴰ ⴼ ⵓⵇⴼⵍ ⴰⵎ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⴳ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ ⵏⵖ ⵓⵎⵙⵏⴼﻠول ⵜⴽⵍⵉⴽⵢⴷ ⴼⵍⴰⵙ",
     "ⵜⴽⵍⵉⴽⵢ ⴼ 'ⵙⴱⴷⴷ nostalgiaWave'<br>", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵓⵇⴼⵍ ⵡⴰ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "ⵉⵜⵢⵓⵙⴽⴰⵔ ⵙ ⵓⴼⵓⵙ ⵏ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ ⵢⴰⴹⵏ peiLamed / פילמד) <br><br> ⵜⴰⵡⵉⵣⴰ ⵙⴳ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ⵓⵙⴳⴳⴷ ⵙ ai <br><br> ⴰⵙⵓⵏⴼⵔ ⵏ peiLamed <br><br> ⴰⴼⴰⵔⵉⵙ ⵏ ⵙⵉⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⴰⵍⴰⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
-    "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ :)", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
+    "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
     "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
     "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ, ⴰይⴰ ଖⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ. ⵜⴰⵏⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ!", //107
     "ⴰⵔⵣⵣⵓ ⴼ ⵡⴰ ⵉⵔⵡⴰⵏ", "ⴰⵎⵣⵔⵓⵢ ⵏ ⵓⵔⵣⵣⵓ", "ⴰⵔⵣⵣⵓ ⴰⵎⴰⵢⵏⵓ", "ⴰⵔⵣⵣⵓ ⵉⵙⴰⵍⴰⵢ...", "ⵓⵔ ⵉⵅⴻⴷⴷⴻⵎ ⴰⵔⴰ", "ⴼⵔⴻⵏ ⴰⵙⴻⵏⵇⴻⴷⴰ ⵓ ⵙⵏⵓⵍⴼⵓⵜ :)", "ⴱⵜⵡ ⵡⵉⴳⵉ ⴰⴷ ⴼⴼⵖⴻⵏ ⵎⴰ ⵢⴻⵍⵍⴰ ⵓ (___). <ⴱⵔ> ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⴻⴽⵍⴻⵙⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵉ ⵍⴻⴱⴷⴰ, ⴹⴻⴳⴳⴻⵔ ⵜⴰⵖⴻⵛⵜ &quot;ⴰⵙⴻⴽⵛⴻⵎ&quot; ⵓ ⵖⴻⵔ ⵉⵙⴻⵎ ⵏ ⵓⴼⴰⵢⵍⵓ :)", //114 
@@ -874,7 +874,7 @@ var words = {
 "hit dis bɔtin <br> <bɔtin id='nstFirefoxFullscreen'>「 」</bɔtin>", //97 
 "we ddyson bang-ura (aka peiLamed / פילמד) mek am <br><br> ɛp frɔm stak ɔvaflɔ & smɔl bit fɔ ai dibɔg <br><br> we peiLamed disayn am <br><br> prodakt fɔ siera liɔn 🇸🇱 <br><br> fri palestayn 🇵🇸🇸🇩🇨🇩", //98 
 "luk di dairekshɔn dɛn", //99 
-"「」 | 『』 | fulskrin de :)", //100 
+"「」 | 『』 | fulskrin de", //100 
 "yuz mi insted :)", //101 
 "shɛri vidio", //102 
 "yu vidio de lod", //103 
@@ -926,7 +926,7 @@ var words = {
     "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치'와 같은 버튼을 찾아 클릭해 보세요",
     "'nostalgiaWave 설치'를 클릭하세요<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "제작: ddyson bang-ura (별명 peiLamed / פילמד) <br><br> stack overflow의 도움 및 약간의 AI 디버깅 <br><br> 디자인: peiLamed <br><br> 시에라리온의 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
-    "안내 보기", "「」 | 『』 | 전체 화면 이용 가능 :)", "대신 저를 사용하세요 :)", "동영상 공유",
+    "안내 보기", "「」 | 『』 | 전체 화면 이용 가능", "대신 저를 사용하세요 :)", "동영상 공유",
     "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
     "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다. 어쨌든 공유해 주셔서 고마워요!", //107
     "유사한 검색", "검색 기록", "새로 검색", "검색 중...", "작동하지 않았습니다", "이 링크를 선택해서 복사하세요 :)", "참고로 (___)하면 이 데이터는 사라집니다. <br> 데이터를 영구적으로 저장하려면 '내보내기(export)' 버튼을 누르고 파일 이름을 확인하세요 :)", //114
@@ -967,7 +967,7 @@ var words = {
     "לחץ על 'התקן את nostalgiaWave'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
     "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩 <br> עם פלשתינה חי",
     "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
-    "תודה בכל מקרה :)", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
+    "תודה בכל מקרה", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
     "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום. תודה על השיתוף בכל מקרה!", //107
     "חפש דומה", "היסטוריית חיפושים", "חיפוש חדש", "מחפש...", "לא עבד", "תבחרו את הקישור הזה ותעתיקו אותו :)","דרך אגב, אלה ייעלמו אם ת (___). <br> כדי לשמור את הנתונים שלך לצמיתות, לחץ על כפתור 'ייצוא' וקרא את שם הקובץ :)", //114
 "מחק אפליקציה זו", //115
@@ -1792,7 +1792,7 @@ avcp = Ads[1];
         
         pgt.querySelector('b').innerText = words[navLang][109];
          if ([...document.querySelectorAll('.pgButtonHold')].length <= 1) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][25]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][25]+`</button>`
                 }
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
@@ -4376,7 +4376,7 @@ function evaluateFullscreenReminder(n){
     }
     if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || currentPlace == 1 || n){
         var activeItem = document.querySelector('#leftButton');
-        var valueOg = words[navLang][25] + "+ 🔎";
+        var valueOg = words[navLang][25] + " + 🔎";
         activeItem.style.color = "var(--second)";
         var wnl100 = words[navLang][100].split('|');
 
