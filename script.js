@@ -116,7 +116,7 @@ var words = {
     "delete this one&nbsp;", //22
     "view saved nostalgias", //23
     "next one&nbsp;-&nbsp;", //24
-    "options + 🔎", //25
+    "options", //25
     "➢", //26
     "more of ts", //27
     "search again", //28
@@ -247,7 +247,7 @@ var words = {
 "Удалить это", //22
 "Просмотреть сохранённые ностальгии", //23
 "Следующее, -", //24
-"Параметры + 🔎", //25
+"Параметры", //25
 "➢", //26
 "побольше такого", //27
 "Поиск снова", //28
@@ -4376,7 +4376,7 @@ function evaluateFullscreenReminder(n){
     }
     if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || currentPlace == 1 || n){
         var activeItem = document.querySelector('#leftButton');
-        var valueOg = words[navLang][25];
+        var valueOg = words[navLang][25] + "+ 🔎";
         activeItem.style.color = "var(--second)";
         var wnl100 = words[navLang][100].split('|');
 
