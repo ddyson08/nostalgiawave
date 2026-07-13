@@ -1792,7 +1792,7 @@ avcp = Ads[1];
         
         pgt.querySelector('b').innerText = words[navLang][109];
          if ([...document.querySelectorAll('.pgButtonHold')].length <= 1) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][25]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][25]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button  class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][110]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
                 }
     }
   setTimeout(function(){  if (allVideos[currentPlace] == "Error") {
