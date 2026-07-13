@@ -3426,6 +3426,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     // TOUCH END
                                                                    TOOO.addEventListener('touchend', function (event) {
+                                                                    if(event.touches.length > 1){
+                                                                        }else{
                                                                         autoplay = 0; 
                                                                         isTE = true;
                                                                             if(!isPD){
@@ -3449,7 +3451,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      document.querySelector('#fullscreenButton').setAttribute('style','');
                                                                       document.querySelector('#fullscreenButton').innerText = ({'no': '↘','yes': '↖'})[fullsc];
                                                                       handleTouch(initialTouchX, finalTouchX, swipeUp, swipeDown);
-                                                                    
+                                                                    }
                                                                     });
 
                                                                     // MOUSE DOWN
@@ -4415,7 +4417,7 @@ function swipeUp() {
     if(rateLimit){
         rateLimit = false;
     if(currentPlace >= allVideos.length - 3){
-        if(nextToken!==""){
+        if(nextToken!=="" && nextToken!=="undefined" && nextToken!=="null"){
             giveError2();
         }else{
             giveError3();
