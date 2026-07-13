@@ -1687,6 +1687,7 @@ function eMA2(simmilar, pgGivenData, neww) {
                 document.querySelector('.uBall').style.overflow = "hidden";
                 document.querySelector('#uvula').style.zIndex = "1";
                 document.querySelector('#textEnter').style.opacity = "0.8";
+                reloadName();
                 canEMA = true;
             }, 1000)
         }, 50)
