@@ -737,6 +737,10 @@ button {
     z-index: 1000;
     transition: 0.5s;
     color: var(--emphasizedText);
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
 }
 
     #pgTitle :is(b) {
