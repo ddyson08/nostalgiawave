@@ -99,8 +99,8 @@ var words = {
     "your", //5
     "nostalgia", //6
     "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
-    "what creator?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //8
-    "what topic?<br><span class='nstLower'>(stick to one or none, can be changed later)</span>", //9
+    "what creator?<br><span class='nstLower'>(optional, can be changed later)</span>", //8
+    "what topic?<br><span class='nstLower'>(optional, can be changed later)</span>", //9
     "'s ", //10
     "", //11
     "", //12
@@ -229,8 +229,8 @@ var words = {
 "твоя", //5
 "nostalgia", //6
 "По какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
-"Какой автор?<br><span class='nstLower'>(придерживайтесь одного или ни одного, можно изменить позже)</span>", //8
-"Какая тема?<br><span class='nstLower'>(придерживайтесь одного или ни одного, можно изменить позже)</span>", //9
+"Какой автор?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //8
+"Какая тема?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //9
 "'s ", //10
 "", //11
 "", //12
@@ -367,8 +367,8 @@ var words = {
     "お名前は何ですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
     "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2019年3月 - 2023年春)</span>",
-    "どのクリエイターですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
-    "どのトピックですか？<br><span class='nstLower'>(1人に絞るか、または選択しないでください。後で変更できます)</span>",
+    "どのクリエイターですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
+    "どのトピックですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
     "の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
     "動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
     "これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
@@ -413,8 +413,8 @@ var words = {
     "ما اسمك؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
     "التالي", "الخاص بك", "الحنين",
     "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2019 - ربيع 2023)</span>",
-    "أي منشئ محتوى؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
-    "أي موضوع؟<br><span class='nstLower'>(اختر واحداً أو لا شيء، ويمكن تغييره لاحقاً)</span>",
+    "أي منشئ محتوى؟<br><span class='nstLower'>(اختياري، ويمكن تغييره لاحقاً)</span>",
+    "أي موضوع؟<br><span class='nstLower'>(اختياري، ويمكن تغييره لاحقاً)</span>",
     " لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
     "الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر this&nbsp;-&nbsp;", "احذف this&nbsp;",
     "عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
@@ -450,8 +450,8 @@ var words = {
     "¿cómo te llamas? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
     "siguiente", "tu", "nostalgia",
     "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2019 - primavera 2023)</span>",
-    "¿qué creador?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
-    "¿qué tema?<br><span class='nstLower'>(elige uno o ninguno, se puede cambiar más tarde)</span>",
+    "¿qué creador?<br><span class='nstLower'>(opcional, se puede modificar posteriormente)</span>",
+    "¿qué tema?<br><span class='nstLower'>(opcional, se puede modificar posteriormente)</span>",
     "de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
     "un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
     "ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
@@ -491,8 +491,8 @@ var words = {
     "quel est ton nom ? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
     "suivant", "ton", "nostalgie",
     "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2019 - printemps 2023)</span>",
-    "quel créateur ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
-    "quel sujet ?<br><span class='nstLower'>(choisis-en un ou aucun, modifiable plus tard)</span>",
+    "quel créateur ?<br><span class='nstLower'>(facultatif, peut être modifié ultérieurement.)</span>",
+    "quel sujet ?<br><span class='nstLower'>(facultatif, peut être modifié ultérieurement.)</span>",
     "de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
     "on récupère tes vidéos", "un sacré paquet", "lecteur", "ceci lit des vidéos", "chargement...", "", "choisis celle-ci&nbsp;-&nbsp;",
     "supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
@@ -534,8 +534,8 @@ var words = {
     "wie heißt du? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
     "weiter", "dein", "nostalgie",
     "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2019 - frühjahr 2023)</span>",
-    "welcher creator?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
-    "welches thema?<br><span class='nstLower'>(bleib bei einem oder keinem, kann später geändert werden)</span>",
+    "welcher creator?<br><span class='nstLower'>(optional, kann später geändert werden)</span>",
+    "welches thema?<br><span class='nstLower'>(optional, kann später geändert werden)</span>",
     "von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
     "deine videos werden herausgefischt", "eine ganze menge davon", "player", "dieser spielt videos ab", "lädt...", "",
     "dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
@@ -577,8 +577,8 @@ var words = {
     "qual o seu nome? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
     "seguinte", "seu", "nostalgia",
     "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2019 - primavera de 2023)</span>",
-    "qual criador?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
-    "qual tema?<br><span class='nstLower'>(escolha um ou nenhum, pode ser alterado depois)</span>",
+    "qual criador?<br><span class='nstLower'>(opcional, pode ser alterado posteriormente)</span>",
+    "qual tema?<br><span class='nstLower'>(opcional, pode ser alterado posteriormente)</span>",
     "de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
     "um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
     "ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
@@ -619,8 +619,8 @@ var words = {
     "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
     "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2019年3月 - 2023年春季)</span>",
-    "哪位创作者？<br><span class='nstLower'>(请固定选择一位或不选，稍后可更改)</span>",
-    "什么主题？<br><span class='nstLower'>(请固定选择一个或不选，稍后可更改)</span>",
+    "哪位创作者？<br><span class='nstLower'>(可选，之后可以更改)</span>",
+    "什么主题？<br><span class='nstLower'>(可选，之后可以更改)</span>",
     "的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
     "超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
     "查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
@@ -654,8 +654,8 @@ var words = {
     "आपका नाम क्या है? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
     "आगे", "आपका", "पुरानी यादें",
     "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2019 - वसंत 2023)</span>",
-    "कौन सा क्रिएटर?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
-    "कौन सा विषय?<br><span class='nstLower'>(एक या कोई भी नहीं चुनें, बाद में बदला जा सकता है)</span>",
+    "कौन सा क्रिएटर?<br><span class='nstLower'>(ऑप्शनल, बाद में बदला जा सकता है)</span>",
+    "कौन सा विषय?<br><span class='nstLower'>(ऑप्शनल, बाद में बदला जा सकता है)</span>",
     " का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
     "आपके वीडियो निकाले जा रहे हैं", "बहुत सारे वीडियो हैं", "प्लेयर", "यह वीडियो चलाता है", "लोड हो रहा है...", "",
     "इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
@@ -697,8 +697,8 @@ var words = {
     "ስምህ ማን ነው? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
     "ቀጣይ", "የእርስዎ", "ትዝታ",
     "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2019 - ጸደይ 2023)</span>",
-    "የትኛው ፈጣሪ?<br><span class='nstLower'>(ከአንድ ሰው ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
-    "ምን ርዕስ?<br><span class='nstlower'>(ከአንድ ጋር ተጣበቅ፣ በኋላ ሊቀየር ይችላል)</span>",
+    "የትኛው ፈጣሪ?<br><span class='nstLower'>(አማራጭ፣ በኋላ ላይ ሊቀየር ይችላል)</span>",
+    "ምን ርዕስ?<br><span class='nstlower'>(አማራጭ፣ በኋላ ላይ ሊቀየር ይችላል)</span>",
     " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
     "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
     "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት",
@@ -739,8 +739,8 @@ var words = {
     "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
     "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
     "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2019 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
-    "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
-    "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⴰⴼⵔ ⵉⵊⵊ ⵏⵖ ⵓⵔⵓ, ⵜⵣⵎⵔⴷ ⴰⴷ ⵜⴱⴷⵍⴷ ⴱⵄⴷ)</span>",
+    "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴷ ⴰⴼⵔⴰⵏ, ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⴱⴻⴷⴷⴻⵍ ⵎⴱⴻⵄⴷ)</span>",
+    "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⴷ ⴰⴼⵔⴰⵏ, ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⴱⴻⴷⴷⴻⵍ ⵎⴱⴻⵄⴷ)</span>",
     " ⵏ ", "", "", "ⵉⴳ ⵜⵅⵙⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⴰⵙ ⴷⵖⵉ", "ⵏⵖ ⵓⵔⵓ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⵏⵙⵙⵓⴼⵖ ⴷ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
     "ⴱⵣⵣⴰⴼ ⴷⵉⴳⵙⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⵉⵜⵜⵓⵔⴰⵔ ⵉⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵙⴰⵍⵉ...", "", "ⴰⴼⵔ ⵡⴰ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰ&nbsp;",
     "ⵥⵕ ⵜⵉⵡարգⵉⵡⵉⵏ ⵜⵢⵓⵃⴼⴹⵏ", "ⵡⴰ ⴷⵉⴳⵙⵏ ⴱⵄⴷ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰ", "ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴰⵔⵥⵎ ⵉⴼⵉⴷⵢⵓ",
@@ -782,8 +782,8 @@ var words = {
 "yu", //5 
 "nɔstaljia", //6 
 "wetin tɛm yu de nostaljik fɔ?<br><span class='nstLower'>(ex 2022, sɔma 2023, mar 2019 - spring 2023)</span>", //7 
-"wetin krieta?<br><span class='nstLower'>(stik to wan ɔ nɔ, yu kin chenj leta)</span>", //8 
-"wetin tɔpik?<br><span class='nstLower'>(stik to wan ɔ nɔ, yu kin chenj leta)</span>", //9 
+"wetin krieta?<br><span class='nstLower'>(opshɔnal, dɛn kin chenj am leta)</span>", //8 
+"wetin tɔpik?<br><span class='nstLower'>(opshɔnal, dɛn kin chenj am leta)</span>", //9 
 "'s ", //10 
 "", //11 
 "", //12 
@@ -906,8 +906,8 @@ var words = {
     "이름이 무엇인가요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
     "다음", "당신의", "향수",
     "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2019년 3월 - 2023년 봄)</span>",
-    "어떤 크리에이터인가요?<br><span class='nstLower'>(한 명만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
-    "어떤 주제인가요?<br><span class='nstLower'>(하나만 선택하거나 선택하지 마세요. 나중에 변경할 수 있습니다)</span>",
+    "어떤 크리에이터인가요?<br><span class='nstLower'>(선택 사항이며, 나중에 변경할 수 있습니다)</span>",
+    "어떤 주제인가요?<br><span class='nstLower'>(선택 사항이며, 나중에 변경할 수 있습니다)</span>",
     "의 ", "", "", "나중에 보려고 향수를 저장하고 싶다면 여기에 이름을 입력하세요", "아니어도 괜찮습니다", "동영상을 가져오는 중",
     "엄청나게 많네요", "플레이어", "동영상을 재생하는 중", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
     "저장된 향수 보기", "다음&nbsp;-&nbsp;", "옵션", "➢", "자세히 보기", "다시 검색", "동영상 열기", "이름 변경",
@@ -947,8 +947,8 @@ var words = {
     "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
     "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2019 - אביב 2023)</span>",
-    "איזה יוצר?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
-    "איזה נושא?<br><span class='nstLower'>(היצמד לאחד או לאף אחד, ניתן לשינוי מאוחר יותר)</span>",
+    "איזה יוצר?<br><span class='nstLower'>(אופציונלי, ניתן לשינוי מאוחר יותר)</span>",
+    "איזה נושא?<br><span class='nstLower'>(אופציונלי, ניתן לשינוי מאוחר יותר)</span>",
     " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך למאוחר יותר, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
     "המון מהם", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
     "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
