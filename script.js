@@ -1087,6 +1087,7 @@ var happeningNow = false;
 var editMode = false;
 function reloadName(){
             var ni = document.querySelector("#uNameplate");
+           // ni.innerText = userName.trim();
             ni.style.color = "var(--accent)";
             ni.style.transition = "0.5s";
             ni.style.width = "0px";
@@ -4417,7 +4418,7 @@ function swipeUp() {
     if(rateLimit){
         rateLimit = false;
     if(currentPlace >= allVideos.length - 3){
-        if(nextToken!=="" && nextToken!=="undefined" && nextToken!=="null"){
+        if(nextToken!=="" && !nextToken.includes("undefined") && nextToken.includes("null")){
             giveError2();
         }else{
             giveError3();
