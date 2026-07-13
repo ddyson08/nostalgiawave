@@ -49,15 +49,15 @@
 
         <div class="pgMain" dir="right">
             <div class="pgP">
-                <p class="pgFlex"><span>🗓️</span><span class="pgData"></span></p>
+                <p class="pgFlex"><span words="125">🗓️</span><span class="pgData"></span></p>
                 <p class="pgFlex">
-                    <span>👤</span><span class="pgData"></span>
+                    <span words="126">👤</span><span class="pgData"></span>
                 </p>
                 <p class="pgFlex">
-                    <span>❓</span><span class="pgData"></span>
+                    <span words="127">❓</span><span class="pgData"></span>
                 </p>
                 <div class="pgButtonHold">
-                    <button class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button show="nah" id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">search new</button>
+                    <button words="110" class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button show="nah" id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">search new</button>
                 </div>
             </div>
             <div class="pgCover">
@@ -83,7 +83,9 @@
             <div id="uNameplate"></div>
         </div>
         <div id="displayVideos">
+            <div id="vfCrop">
             <div id="videoFrame" src="" frameborder="0" allow="autoplay">
+            </div>
             </div>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
@@ -95,7 +97,7 @@
                 <p class="swText scrollable"></p>
                 <div class="scrollable" id="swDrag" words="38" onmousedown="startFollow()" ontouchstart="startFollow()" ontouchend="endFollow()" onmouseup="endFollow()"></div>
             </div>
-            <div class="scrollable" id="swLine"></div>
+            <div class="scrollable swLine"></div>
             <div class="scrollable" id="nstExit">
                 <p class="swText scrollable" words="87"></p>
                 <div class="swGive scrollable"></div>
@@ -104,10 +106,15 @@
                 <p class="swText scrollable" words="28"></p>
                 <div class="swGive scrollable"></div>
             </div>
+            <div class="scrollable" id="nstShare">
+                <p class="swText scrollable" words="102"></p>
+                <div class="swGive scrollable"></div>
+            </div>
             <div class="scrollable" id="swTopic">
                 <p class="swText scrollable" words="29"></p>
                 <div class="swGive scrollable"></div>
             </div>
+            <div class="scrollable swLine"></div>
             <div class="scrollable" id="exitsw">
                 <p class="swText scrollable" words="30"></p>
                 <div class="swGive scrollable"></div>
@@ -124,10 +131,7 @@
                 <p class="swText scrollable" words="88"></p>
                 <div class="swGive scrollable"></div>
             </div>
-            <div class="scrollable" id="nstShare">
-                <p class="swText scrollable" words="102"></p>
-                <div class="swGive scrollable"></div>
-            </div>
+            
             <div class="scrollable" id="exportData">
                 <p class="swText scrollable" words="121"></p>
                 <div class="swGive scrollable"></div>

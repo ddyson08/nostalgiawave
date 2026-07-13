@@ -37,6 +37,28 @@ if(isPWA()){
 var clearItInterval = setInterval(function(){
     if(document.querySelector('.teFlexx')){
 		try{
+            var TE = document.querySelector('#textEnter');
+            if(TE.innerHTML == "null"){
+                var TEQ = "";
+                try{
+                TEQ = TE.querySelector('input').value;
+                }catch(e){
+
+                }
+                TE.innerHTML.replace(/null/g,'');
+                try{
+                TE.querySelector('input').value = TEQ;
+                }catch(e){}
+            }
+            try{
+                for(var iy of TE.querySelectorAll('button')){
+                    if(document.querySelectorAll('#'+iy.getAttribute('id')).length > 1){
+                     //   iy.remove();
+                    }
+                }
+            }catch(e){
+
+            }
 			for(var iIi of document.querySelector('#textEnter').children){if(iIi.innerText.includes('null')){iIi.remove()}}}
 		catch(e){}
         if((document.querySelector('.teFlexx').querySelector('input') && document.querySelector('.teFlexx').querySelector('input').checkVisibility()) && !document.querySelector('.teFlexx').querySelector('#teClear')){
@@ -94,7 +116,7 @@ var words = {
     "delete this one&nbsp;", //22
     "view saved nostalgias", //23
     "next one&nbsp;-&nbsp;", //24
-    "options", //25
+    "options + 🔎", //25
     "➢", //26
     "more of ts", //27
     "search again", //28
@@ -179,7 +201,7 @@ var words = {
     "sharing doesn't work on your browser <br> use 'open video' and then share from there", //107
     "search similar", //108
     "search history", //109
-    "search new", //110
+    "search again", //110
     "searching...", //111
     "sharing didn't work", //112
     "select this link and copy it :)", //113
@@ -193,7 +215,10 @@ var words = {
 "export nostalgiaWave", //121
 "for permanent saving", //122
 "storage full :(", //123
-"try deleting some saved nostalgias to free up space." //124
+"try deleting some saved nostalgias to free up space.", //124
+"year:", //125
+"creator:", //126
+"topic:" //127
   ],
   "ru": [
 "от", //0
@@ -222,7 +247,7 @@ var words = {
 "Удалить это", //22
 "Просмотреть сохранённые ностальгии", //23
 "Следующее, -", //24
-"Параметры", //25
+"Параметры + 🔎", //25
 "➢", //26
 "побольше такого", //27
 "Поиск снова", //28
@@ -332,7 +357,9 @@ var words = {
 "понятно", //120
 "экспорт nostalgiaWave",
 "cохранить навсегда", "память переполнена :(",
-"попробуйте удалить часть сохраненных воспоминаний, чтобы освободить место."
+"попробуйте удалить часть сохраненных воспоминаний, чтобы освободить место.", "год:", //125
+"создатель:", //126
+"тема:" //127
 
 ],
   "ja": [
@@ -376,7 +403,10 @@ var words = {
 "了解", //120
 "エクスポート nostalgiaWave",
 "永久に保存", "ストレージがいっぱいです :(",
-"保存された『思い出』をいくつか削除して、空き容量を確保してみてください。"
+"保存された『思い出』をいくつか削除して、空き容量を確保してみてください。",
+"年:", //125
+"作成者:", //126
+"トピック:" //127
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -452,7 +482,9 @@ var words = {
 "exportar",//117
 "copia los datos de este archivo de texto y pégalos en la barra de entrada de nombre", //118
 "cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
-"entendido", "exportar nostalgiaWave", "guardar permanentemente", "almacenamiento lleno :(", "intenta borrar algunos recuerdos guardados para liberar espacio."
+"entendido", "exportar nostalgiaWave", "guardar permanentemente", "almacenamiento lleno :(", "intenta borrar algunos recuerdos guardados para liberar espacio.", "año:", //125
+"creador:", //126
+"tema:" //127
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -493,7 +525,9 @@ var words = {
 "copiez les données contenues dans ce fichier texte et collez-les dans le champ de saisie du nom", //118
 "lorsque vous effacez vos données de navigation ou que vous installez/réinstallez nostalgiaWave, copiez les données du fichier qui vient d'être téléchargé (y compris le mot « NOSTALGIAWAVE ») et collez-les dans la zone de saisie lorsque votre nom est demandé<br>", //119
 "compris", "exporter nostalgiaWave", "enregistrer définitivement", "espace de stockage plein :(",
-"essayez de supprimer quelques souvenirs enregistrés pour libérer de l'espace."
+"essayez de supprimer quelques souvenirs enregistrés pour libérer de l'espace.", "année :", //125
+"créateur :", //126
+"sujet :" //127
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -533,7 +567,10 @@ var words = {
 "kopiere den inhalt dieser textdatei und füge ihn in das namenseingabefeld ein", //118
 "wenn du deine browserdaten löschst oder nostalgiawave (neu) installierst: kopiere den inhalt der gerade heruntergeladenen datei (einschließlich des wortes &quot;NOSTALGIAWAVE&quot;) und füge ihn in das eingabefeld ein, wenn nach deinem namen gefragt wird<br>", //119
 "verstanden", "exportieren nostalgiaWave", "dauerhaft speichern", "speicher voll :(",
-"versuche, einige gespeicherte erinnerungen zu löschen, um speicherplatz freizugeben."
+"versuche, einige gespeicherte erinnerungen zu löschen, um speicherplatz freizugeben.",
+"Jahr:", //125
+"Ersteller:", //126
+"Thema:" //127
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -573,7 +610,9 @@ var words = {
 "copie os dados deste arquivo de texto e cole-os no campo de nome", //118
 "ao limpar seus dados de navegação ou instalar/reinstalar o nostalgiaWave, copie os dados do arquivo que acabou de ser baixado (incluindo a palavra 'NOSTALGIAWAVE') e cole-os no campo de entrada quando o aplicativo pedir seu nome<br>", //119
 "entendido", "exportar nostalgiaWave", "salvar permanentemente", "armazenamento cheio :(",
-"tente excluir alguns itens nostálgicos salvos para liberar espaço."
+"tente excluir alguns itens nostálgicos salvos para liberar espaço.", "ano:", //125
+"criador:", //126
+"tópico:" //127
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -606,7 +645,9 @@ var words = {
 "导出",//117
 "复制该文本文件中的数据，并将其粘贴到名称输入栏中", //118
 "当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
-"明白了", "导出 nostalgiaWave", "永久保存", "存储空间已满 :(", "尝试删除一些已保存的怀旧内容来释放空间。"
+"明白了", "导出 nostalgiaWave", "永久保存", "存储空间已满 :(", "尝试删除一些已保存的怀旧内容来释放空间。", "年份：", //125
+"创建者：", //126
+"主题：" //127
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -647,7 +688,9 @@ var words = {
 "इस टेक्स्ट फ़ाइल के डेटा को कॉपी करें और नाम डालने वाली जगह पर पेस्ट करें", //118
 "जब आप अपना ब्राउज़िंग डेटा क्लियर करते हैं या nostalgiaWave को इंस्टॉल/रीइंस्टॉल करते हैं, तो अभी डाउनलोड हुई फ़ाइल का डेटा कॉपी करें ('NOSTALGIAWAVE' शब्द सहित) और जब ऐप आपका नाम पूछे तो उसे इनपुट बॉक्स में पेस्ट करें<br>", //119
 "समझ गया", "एक्सपोर्ट nostalgiaWave", "स्थायी रूप से बचाएं", "स्टोरेज फुल :(",
-"जगह खाली करने के लिए कुछ सेव की हुई पुरानी यादें डिलीट करके देखें।"
+"जगह खाली करने के लिए कुछ सेव की हुई पुरानी यादें डिलीट करके देखें।", "वर्ष:", //125
+"निर्माता:", //126
+"विषय:" //127
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -687,7 +730,9 @@ var words = {
 "በዚህ የጽሑፍ ፋይል ውስጥ ያለውን ውሂብ ይቅዱ እና በስም ግቤት አሞሌ ውስጥ ይለጥፉት", //118
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵏⵓⵍⴼⵓⴷ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙⴻⵏ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119
 "ገባኝ", "ላክ nostalgiaWave", "ለዘላለም ያቆዩት", "ማከማቻ ሙሉ ነው :(",
-"ቦታ ለማስለቀቅ የተቀመጡ አንዳንድ የናፍቆት ስሜቶችን ለመሰረዝ ይሞክሩ።"
+"ቦታ ለማስለቀቅ የተቀመጡ አንዳንድ የናፍቆት ስሜቶችን ለመሰረዝ ይሞክሩ።", "ዓመት:", //125
+"ፈጣሪ:", //126
+"ርዕስ:" //127
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
@@ -724,7 +769,9 @@ var words = {
 "ⵎⵉ ⴰⵔⴰ ⵜⴻⵙⴼⴻⴹ ⵉⵙⴻⴼⴽⴰⵉⵏⴻⴽ ⵏ ⵓⴼⴻⵔⴷⵉⵙ ⵏⴻⵖ ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ/ⴰⴷ ⵜⴻⵙⴱⴻⴷⴷⴻⴹ nostalgiaWave, ⵙⵇⴻⴷⵛⴻⴹ ⵉⵙⴻⴼⴽⴰ ⵏ ⵓⴼⴰⵢⵍⵓ ⵉ ⴷⵢⴻⴼⴼⵖⴻⵏ ⵜⵓⵔⴰ ⴽⴰⵏ (ⴷⴻⴳⵙ ⴰⵡⴰⵍ &quot;NOSTALGIAWAVE&quot;) ⵓ ⵙⴱⴻⴷⴷⵉⵜⴻⵏ ⴷⴻⴳ ⵜⴼⴻⵍⵡⵉⵜ ⵏ ⵓⵙⵎⴻⵍ ⵎⵉ ⴰⵔⴰ ⴷⵢⴻⵙⵜⴻⵇⵙⵉ ⵉⵙⴻⵎⵉⴽ<ⴱⵔ>", //119 
 "ⵓⴼⵉⵖⵜ",
 "ⴰⵙⵓⴼⴻⵖ nostalgiaWave", "ⵃⵔⴻⵣ ⵉ ⵍⴻⴱⴷⴰ", "ⴰⵃⴻⵣⵣⴻⴱ ⵢⴻⵞⵞⵓⵔ :(",
-"ⵄⵔⴻⴹ ⴰⴷ ⵜⴻⵙⴼⴻⴹ ⴽⵔⴰ ⵏ ⵜⵎⵓⵖⵍⵉⵡⵉⵏ ⵢⴻⵜⵜⵡⴰⵃⴻⵔⵣⴻⵏ ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⵓⴼⵖⴻⴹ ⴰⵎⴹⵉⵇ."
+"ⵄⵔⴻⴹ ⴰⴷ ⵜⴻⵙⴼⴻⴹ ⴽⵔⴰ ⵏ ⵜⵎⵓⵖⵍⵉⵡⵉⵏ ⵢⴻⵜⵜⵡⴰⵃⴻⵔⵣⴻⵏ ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⵓⴼⵖⴻⴹ ⴰⵎⴹⵉⵇ.", "ⴰⵙⴻⴳⴳⴰⵙ:", //125
+"ⴰⵙⵏⵓⵍⴼⵓ:", //126
+"ⴰⵙⴻⵏⵜⴻⵍ:" //127
   ],
  "kri": [ 
 "bay", //0 
@@ -850,7 +897,9 @@ var words = {
 "ɛkspɔt nostalgiaWave",
 "sev fɔ ɔltɛm",
 "stɔrɔj ​​ful :(",
-"tray fɔ dilit sɔm sev nostaljia fɔ fri ples."
+"tray fɔ dilit sɔm sev nostaljia fɔ fri ples.", "ia:", //125
+"krieta:", //126
+"tɔpik:" //127
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
@@ -888,7 +937,10 @@ var words = {
 "브라우징 데이터를 삭제하거나 nostalgiaWave를 설치/재설치할 때, 방금 다운로드한 파일의 데이터('NOSTALGIAWAVE'라는 단어 포함)를 복사하여 이름을 묻는 입력란에 붙여넣으세요<br>", //119
 "알겠습니다",
 "내보내기 nostalgiaWave", "영구적으로 저장", "저장 공간이 부족해요 :(",
-"저장된 추억이 담긴 사진들을 삭제해서 공간을 확보해 보세요."
+"저장된 추억이 담긴 사진들을 삭제해서 공간을 확보해 보세요.",
+"연도:", //125
+"제작자:", //126
+"주제:" //127
   ],
   "he": [
     "על ידי", "nostalgiaWave", "peiLamed",
@@ -930,10 +982,16 @@ words["ar"].push("nostalgiaWave تصدير ");
 words["ar"].push("احفظ بشكل دائم");
 words["ar"].push(" مساحة التخزين ممتلئة :(");
 words["ar"].push("حاول حذف بعض الذكريات المحفوظة لتوفير مساحة.");
+words["ar"].push("السنة:");
+words["ar"].push("المُنشِئ:");
+words["ar"].push("الموضوع:");
 words["he"].push("nostalgiaWave ייצוא");
 words["he"].push("שמור לצמיתות");
 words["he"].push("אחסון מלא :(");
 words["he"].push("נסה למחוק כמה נוסטלגיות שנשמרו כדי לפנות מקום.");
+words["he"].push("שנה:")
+words["he"].push("יוצר:")
+words["he"].push("נושא:")
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
@@ -1209,7 +1267,7 @@ function endFollow() {
     },100)
     document.querySelector('#swipeScreen').style.opacity = 0;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
-    document.querySelector('#swDrag').innerText = words[navLang][38];
+    document.querySelector('#swDrag').innerText = words[navLang][38].split('+')[0];
     setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
 }
 }
@@ -1415,6 +1473,19 @@ function firefoxFullsc() {
   hTFEnd();
 }
 function editModeAnimation() {
+    try{
+        document.querySelector('#uMiniball').style.display = "none";
+        document.querySelector('#uMiniball').style.opacity = "0";
+        document.querySelector('#uMiniball').style.transform = "scale(0)";
+    }catch(e){
+
+    }
+    posinar = -1;
+     var bB = [...document.querySelector('#playground').querySelectorAll('button')];
+    for(var iIii of bB){
+        iIii.setAttribute('class','notspecial');
+    }
+            bB[bB.length - 1].setAttribute('class','primaryButton special');
     for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 0;
         }
@@ -1622,6 +1693,9 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
+    //var bB = [...document.querySelector('#playground').querySelectorAll('button')];
+   // bB[bB.length - 1].setAttribute('class','primaryButton');
+    
     var oldPlayer;
        for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 1;
@@ -1668,11 +1742,17 @@ function pgCancel(text) {
         document.querySelector('#uvula').style.display = "none";
         pg1.remove();
         if ([...document.querySelectorAll('.pgButtonHold')].length < 2) {
-            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">🔎</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
+            document.querySelector('.pgButtonHold').innerHTML = `<button class="notspecial primaryButton" onclick="eMA2(true, this)">`+words[navLang][110]+`</button><button id="pgSN" class="notspecial pgButton" onclick="eMA2(true, this, true)">`+words[navLang][110]+`</button>`
         } else {
+            var bB = [...document.querySelector('#playground').querySelectorAll('button')];
+    for(var iIii of bB){
+        iIii.setAttribute('class','notspecial');
+    }
+            bB[bB.length - 1].setAttribute('class','primaryButton special');
+   
             document.querySelector('.primaryButton').setAttribute('class', '');
         }
-       oldPlayer = document.querySelector('#videoFrame');
+       oldPlayer = document.querySelector('#vfCrop');
         document.querySelector('.uBall').innerHTML = `<div class='teShape'></div><div class='teShape'></div>`;
         swapTe(17, function () { }, 18, function () { }, true);
         document.querySelector('#textEnter').innerHTML += ` <div id="displayVideos">
@@ -1849,8 +1929,8 @@ document.querySelector('#playground').style.opacity = 0;
     `;
             var dv = document.createElement('div');
             dv.setAttribute('id', 'displayVideos');
-            dv.innerHTML = ` <div id="videoFrame" src="" frameborder="0" allow="autoplay">
-            </div>
+            dv.innerHTML = ` <div id="vfCrop"><div id="videoFrame" src="" frameborder="0" allow="autoplay">
+            </div></div>
             <div id="buttonHolder">
                 <div id="leftButton" class="sideButton" words="25"></div>
             </div>`;
@@ -2023,54 +2103,60 @@ var teby = 0;
 var shareWorks = true;
 window.onload = function () {
     try{
+setTimeout(
+    function(){
+        document.querySelector('body').style.backgroundColor="var(--bg)";
+    },200)
+    }catch(e){
+console.log(e);
+    }
+    try{
         setInterval(function(){
              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // User prefers dark mode
         newConsoleLog('Dark mode is preferred');
         var root = document.documentElement;
-        root.style.setProperty('--bg', 'HSL(60, 2%, 2%)');
-        root.style.setProperty('--accent', 'HSL(152, 6%, 15%)');
-        root.style.setProperty('--second', 'HSL(340, 100%, 10%)');
-        root.style.setProperty('--text', 'HSL(60, 10%, 60%)');
-        root.style.setProperty('--oj', ' HSL(11, 42%, 20%)');
-        root.style.setProperty('--swText', 'HSL(152, 6%, 50%)');
-        root.style.setProperty('--lightText', 'HSL(60, 56%, 10%)');
-        root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
-        root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
-        root.style.setProperty('--contrast', 'HSL(60, 2%, 7%)');
-         root.style.setProperty('--emphasizedText', 'HSL(60, 10%, 100%)');
-          root.style.setProperty('--pgText', 'HSL(60, 10%, 60%)');
-           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 100%)');
-        /*
-         * :root {
-    --bg: HSL(60, 56%, 90%);
-    --accent: HSL(152, 6%, 70%);
-    --second: HSL(340, 85%, 60%);
-    --text: HSL(60, 56%, 90%);
-    --font: 'GlacialIndifference';
-    --ballSize: 10em;
-    --oj: HSL(11, 42%, 58%);
-    --swText: HSL(152, 6%, 50%);
-    --lightTxt: HSL(60, 56%, 90%);
-}
-*/
+      root.style.setProperty('--bg', '#5E3023')
+    root.style.setProperty('--accent', '#5E3023')
+    root.style.setProperty('--second', '#5D675B')
+    root.style.setProperty('--text', 'hsl(330, 8.33%, 85%)')
+    root.style.setProperty('--font', 'Elms Sans')
+    root.style.setProperty('--ballSize', '10em')
+    root.style.setProperty('--oj', '#5D675B')
+    root.style.setProperty('--swText', '#5E3023')
+    root.style.setProperty('--lightTxt', '#5E3023')
+    root.style.setProperty('--emphText', '#5E3023')
+    root.style.setProperty('--emphBg', '#5E3023')
+    root.style.setProperty('--contrast', '#000000')
+    root.style.setProperty('--margin', '1em')
+    root.style.setProperty('--emphasizedText', '#f4f2f3')
+    root.style.setProperty('--lighterText', '18px')
+    root.style.setProperty('--pgText', '#5E3023')
+    root.style.setProperty('--pgButtonText', '#f4f2f3d7')
+    root.style.setProperty('--uvulaColor','hsl(13.22, 45.74%, 45.29%)');
+       
     }else{
  // User prefers dark mode
         newConsoleLog('Light mode is preferred');
         var root = document.documentElement;
-        root.style.setProperty('--bg', 'HSL(60, 56%, 90%)');
-        root.style.setProperty('--accent', 'HSL(152, 6%, 50%)');
-        root.style.setProperty('--second', 'HSL(340, 65%, 40%)');
-        root.style.setProperty('--text', 'HSL(60, 10%, 80%)');
-        root.style.setProperty('--oj', 'HSL(11, 42%, 58%)');
-        root.style.setProperty('--swText', 'HSL(152, 6%, 50%)');
-        root.style.setProperty('--lightText', 'HSL(60, 56%, 90%)');
-        root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
-        root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
-        root.style.setProperty('--contrast', 'HSL(60, 2%, 80%)');
-         root.style.setProperty('--emphasizedText', ' HSL(60, 56%, 90%)');
-          root.style.setProperty('--pgText', ' HSL(60, 10%, 10%)');
-           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 10%)');
+       root.style.setProperty('--bg', '#9EBC9F')
+    root.style.setProperty('--accent', '#9EBC9F')
+    root.style.setProperty('--second', '#5E3023')
+    root.style.setProperty('--text', 'hsl(330, 8.33%, 85%)')
+    root.style.setProperty('--font', 'Elms Sans')
+    root.style.setProperty('--ballSize', '10em')
+    root.style.setProperty('--oj', '#5E3023')
+    root.style.setProperty('--swText', '#9EBC9F')
+    root.style.setProperty('--lightTxt', '#9EBC9F')
+    root.style.setProperty('--emphText', '#9EBC9F')
+    root.style.setProperty('--emphBg', '#9EBC9F')
+    root.style.setProperty('--contrast', '#F4F2F3')
+    root.style.setProperty('--margin', '1em')
+    root.style.setProperty('--emphasizedText', '#F4F2F3')
+    root.style.setProperty('--lighterText', '18px')
+    root.style.setProperty('--pgText', '#9EBC9F')
+    root.style.setProperty('--pgButtonText', '#f4f2f3d7');
+     root.style.setProperty('--uvulaColor', 'hsl(122, 18.29%, 87.84%)')
     }
         }, 1000)
     }catch(e){
@@ -3308,6 +3394,13 @@ document.querySelector('.uBall').style.overflow = "hidden";
 
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                   TOOO.addEventListener('touchstart', function (event) {
+                                                                    if(event.touches.length > 1) {
+    if(document.querySelector('#videoFrame').style.transform !== "scale(3.161)"){
+document.querySelector('#videoFrame').style.transform = "scale(3.161)";
+    }else{
+        document.querySelector('#videoFrame').style.transform = "scale(1)";
+    }
+  }else{
                                                                         isTE = false;
                                                                         console.log("ts");
                                                                         initialTouchX = event.touches[0].clientX;
@@ -3328,6 +3421,7 @@ var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true
 var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},500);
+                                                                    }
                                                                     });
 
                                                                     // TOUCH END
@@ -3466,6 +3560,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 }
 function requestTheFullscreen(a) {
     var video = document.querySelector('#videoFrame');
+    var v2 = document.querySelector('#vfCrop');
     var touchOverlay = document.querySelector('#touchOverlay');
     var fullscreenButton = document.querySelector('#fullscreenButton');
     var Tee = document.querySelector('#textEnter');
@@ -3473,9 +3568,13 @@ function requestTheFullscreen(a) {
         fullsc = 'yes';
 		document.querySelector('#uvula').style.display = "none";
     video.style.width = "100dvw";
+    v2.style.width = "100dvw";
     video.style.height = "100dvh";
+    v2.style.height = "100dvh";
     video.style.left = "0";
-    video.style.top = "-4em";
+    v2.style.left = "0";
+    video.style.top = "0";
+    v2.style.top = "-4em";
      touchOverlay.style.width = "100dvw";
     touchOverlay.style.height = "85dvh";
     touchOverlay.style.marginTop = "5dvh";
@@ -3483,6 +3582,7 @@ function requestTheFullscreen(a) {
     touchOverlay.style.top = "0";
     Tee.style.zIndex = "152";
     video.style.zIndex = "152";
+    v2.style.zIndex = "152";
     document.querySelector('#titleBar').style.zIndex = "0";
     touchOverlay.style.zIndex = "155";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(false)');
@@ -3497,8 +3597,14 @@ function requestTheFullscreen(a) {
         fullsc = 'no';
         video.style.width = "calc(calc(100dvh - 10em) * (9/16))";
         video.style.height = "calc(-10em + 100dvh)";
-        video.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
+        video.style.left = "0";
         video.style.top = "0em";
+
+v2.style.width = "calc(calc(100dvh - 10em) * (9/16))";
+        v2.style.height = "calc(-10em + 100dvh)";
+        v2.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
+        v2.style.top = "0em";
+
         touchOverlay.style.width = "calc(calc(100dvh - 10em) * (9/16))";
         touchOverlay.style.height = "calc(calc(100dvh - 10em) * 0.75)";
         touchOverlay.style.left = "calc((100dvw - ((100dvh - 10em) * (9/16)))/2)";
@@ -3510,6 +3616,7 @@ function requestTheFullscreen(a) {
         fullscreenButton.innerText = ({'no': '↘','yes': '↖'})[fullsc];
          Tee.style.zIndex = "";
     video.style.zIndex = "0";
+    v2.style.zIndex = "0";
     document.querySelector('#titleBar').style.zIndex = "2000";
         for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 0;
@@ -3625,8 +3732,13 @@ function reverseUball() {
             document.querySelector('#textEnter').querySelector('button').remove();
             document.querySelector('#textEnter').querySelector('button').remove();
             //.querySelector('#textEnter').querySelector('input').remove();
+            
             try {
-                document.querySelector('#textEnter').querySelector('button').remove();
+                jIntI = 0;
+                fkAround();
+                document.querySelector('#textEnter').querySelector('#b5').setAttribute('id','b1')
+                document.querySelector('#textEnter').querySelector('#b1').setAttribute('onclick','nextSaved()');
+                document.querySelector('#textEnter').querySelector('#b1').setAttribute('class','primaryButton')
             }
             catch (e) {
                 newConsoleLog(e);
@@ -4206,9 +4318,9 @@ function displaySwipe(lr) {
         swsc.style.opacity = 1;
 
         if (lr == "l") {
-            swsc.querySelector('p').innerText = words[navLang][25].replace('(', '').replace(')', '') + "↓";
+            swsc.querySelector('p').innerText = words[navLang][25].split('+')[0].replace('(', '').replace(')', '') + "↓";
         } else {
-            swsc.querySelector('p').innerText = words[navLang][27].replace('(', '').replace(')', '') + "↓";
+            swsc.querySelector('p').innerText = words[navLang][27].split('+')[0].replace('(', '').replace(')', '') + "↓";
         }
     }, 100);
 }
@@ -4343,7 +4455,7 @@ function swipeUp() {
         orbit.style.width = "0.5em";
         orbit.style.height = "0.5em";
         // orbit.style.opacity = "1";
-        orbit.style.backgroundColor = "var(--pgText)";
+        orbit.style.backgroundColor = "var(--emphasizedText)";
         orbit.style.position = "absolute";
         orbit.style.left = sVl['no'][0];
         orbit.style.top = "calc(env(safe-area-inset-top) + " + sVt['no'][1] +")";
@@ -4353,7 +4465,7 @@ function swipeUp() {
         orbitf.style.width = "0.5em";
         orbitf.style.height = "0.5em";
         // orbitf.style.opacity = "1";
-        orbitf.style.backgroundColor = "var(--pgText)";
+        orbitf.style.backgroundColor = "var(--emphasizedText)";
         orbitf.style.position = "absolute";
         orbitf.style.left = sVl['yes'][0];
         orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] + ")";
@@ -4434,12 +4546,12 @@ function swipeUp() {
                 newConsoleLog(thebigjae.top);
                 document.querySelector("#allHold").append(bigjae);
                 newConsoleLog([thebigjae, tsMT]);
-                bigjae.style.backgroundColor = "var(--swText)";
+                bigjae.style.backgroundColor = "var(--emphasizedText)";
                 var bigjae2 = orbit.cloneNode();
                 bigjae2.style.left = thebigjae.x + "px";
                 document.querySelector("#allHold").append(bigjae2);
                 bigjae2.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
-                bigjae2.style.backgroundColor = "var(--swText)";
+                bigjae2.style.backgroundColor = "var(--emphasizedText)";
                 // bigjae2.style.opacity = "0.2";
                 bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbit.remove();
@@ -4451,12 +4563,12 @@ function swipeUp() {
                 newConsoleLog(thebigjaef.top);
                 document.querySelector("#allHold").append(bigjaef);
                 newConsoleLog([thebigjaef, tsMT]);
-                bigjaef.style.backgroundColor = "var(--swText)";
+                bigjaef.style.backgroundColor = "var(--emphasizedText)";
                 var bigjae2f = orbitf.cloneNode();
                 bigjae2f.style.left = thebigjaef.x + "px";
                 document.querySelector("#allHold").append(bigjae2f);
                 bigjae2f.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
-                bigjae2f.style.backgroundColor = "var(--swText)";
+                bigjae2f.style.backgroundColor = "var(--emphasizedText)";
                 //bigjae2f.style.opacity = "0.2";
                 bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbitf.remove();
@@ -4483,12 +4595,12 @@ function swipeUp() {
                         bigjae.style.borderRadius = "5px";
                         bigjae.style.top = "calc(env(safe-area-inset-top) + " + "4em)";
                         bigjae.style.transform = "rotate(360deg)";
-                        bigjae.style.backgroundColor = "var(--swText)";
+                        bigjae.style.backgroundColor = "var(--emphasizedText)";
                        
                         setTimeout(function () {
                             
                             setTimeout(function () {
-                                bigjae.style.backgroundColor = "var(--accent)";
+                                bigjae.style.backgroundColor = "var(--emphasizedText)";
 if (currentPlace < allVideos.length-3) {
                                         
                                         if (allVideos[currentPlace] == "Error") {
@@ -4612,13 +4724,13 @@ if (currentPlace < allVideos.length-3) {
                         bigjaef.style.borderRadius = "5px";
                         bigjaef.style.top = "env(safe-area-inset-top)"
                         bigjaef.style.transform = "rotate(360deg)";
-                        bigjaef.style.backgroundColor = "var(--swText)";
+                        bigjaef.style.backgroundColor = "var(--emphasizedText)";
                         
                         setTimeout(function () {
                            
                             setTimeout(function () {
                                // alert(1);
-                                bigjaef.style.backgroundColor = "var(--accent)";
+                                bigjaef.style.backgroundColor = "var(--emphasizedText)";
 //alert(2);
   if (currentPlace < allVideos.length - 3) {
                                         
@@ -4744,7 +4856,7 @@ function swipeDown() {
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
-        bj.style.backgroundColor = "var(--pgText)";
+        bj.style.backgroundColor = "var(--emphasizedText)";
         bj.style.position = "absolute";
         bj.style.zIndex = 10000;
         bj.style.opacity = 0.5;
