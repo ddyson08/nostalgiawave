@@ -437,7 +437,7 @@ body {
 .teShape {
     background-color: var(--uvulaColor);
     position: absolute;
-    border: 0.125em dashed var(--second);
+    border: 0.125em dashed var(--contrast);
     transition: 0.5s;
     opacity: 0;
     display: grid;
@@ -695,6 +695,7 @@ body {
     width: 100dvw;
     height: 100dvh;
     transition: 0.5s;
+    border: 1px solid var(--contrast);
 }
 
 body, #allHold, #playground {
