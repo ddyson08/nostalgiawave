@@ -18,6 +18,7 @@
 #vfCrop{
     overflow: hidden;
     position: absolute;
+    border-radius: 5px;
 
 }
 #loadNext{
