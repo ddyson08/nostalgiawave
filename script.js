@@ -2221,21 +2221,25 @@ setTimeout(function(){
         // User prefers dark mode
         newConsoleLog('Dark mode is preferred');
         const root = document.documentElement;
-        root.style.setProperty('--bg', 'HSL(60, 2%, 2%)');
-        root.style.setProperty('--accent', 'HSL(152, 6%, 15%)');
-        root.style.setProperty('--second', 'HSL(340, 100%, 10%)');
-        root.style.setProperty('--text', 'HSL(60, 10%, 60%)');
-        root.style.setProperty('--oj', ' HSL(11, 42%, 20%)');
-        root.style.setProperty('--swText', 'HSL(152, 6%, 50%)');
-        root.style.setProperty('--lightText', 'HSL(60, 56%, 10%)');
-        root.style.setProperty('--lightText', 'HSL(60, 56%, 10%)');
-        root.style.setProperty('--emphText', 'HSL(152, 6%, 40%)');
-        root.style.setProperty('--emphBg', 'HSL(60, 2%, 96%)');
-        root.style.setProperty('--contrast', 'HSL(60, 2%, 7%)');
-         root.style.setProperty('--emphasizedText', 'HSL(60, 10%, 100%)');
-          root.style.setProperty('--pgText', 'HSL(60, 10%, 60%)');
-           root.style.setProperty('--pgButtonText', 'HSL(60, 10%, 100%)');
-
+        root.style.setProperty('--bg', '#5E3023')
+    root.style.setProperty('--accent', '#5E3023')
+    root.style.setProperty('--second', '#5D675B')
+    root.style.setProperty('--text', 'hsl(330, 8.33%, 85%)')
+    root.style.setProperty('--font', 'Elms Sans')
+    root.style.setProperty('--ballSize', '10em')
+    root.style.setProperty('--oj', '#5D675B')
+    root.style.setProperty('--swText', '#5E3023')
+    root.style.setProperty('--lightTxt', '#5E3023')
+    root.style.setProperty('--emphText', '#5E3023')
+    root.style.setProperty('--emphBg', '#5E3023')
+    root.style.setProperty('--contrast', '#000000')
+    root.style.setProperty('--margin', '1em')
+    root.style.setProperty('--emphasizedText', '#f4f2f3')
+    root.style.setProperty('--lighterText', '18px')
+    root.style.setProperty('--pgText', '#5E3023')
+    root.style.setProperty('--pgButtonText', '#f4f2f3d7')
+    root.style.setProperty('--uvulaColor','hsl(13.22, 45.74%, 45.29%)');
+       
     } 
     newConsoleLog(1);
     for (var ii of jintArr) {
