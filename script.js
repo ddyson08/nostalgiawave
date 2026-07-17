@@ -35,6 +35,13 @@ if(isPWA()){
 
 
 var clearItInterval = setInterval(function(){
+    try{
+        if(allVideos.length == 0){
+            allVideos = [...Ads[1]];
+        
+            }
+        }
+        catch(e){}
     if(document.querySelector('.teFlexx')){
 		try{
             var TE = document.querySelector('#textEnter');
@@ -3401,6 +3408,7 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                   TOOO.addEventListener('touchstart', function (event) {
                                                                     if(event.touches.length > 1) {
+                                                        
     if(document.querySelector('#videoFrame').style.transform !== "scale(3.161)"){
 document.querySelector('#videoFrame').style.transform = "scale(3.161)";
     }else{
@@ -4338,7 +4346,7 @@ var tsMT = 0;
 var canSwipe = true;
 var initialTouchX, initialTouchY,
     finalTouchX, finalTouchY;
-var swipeThreshold = 100;
+var swipeThreshold = 200;
 var dynamicStyle =
     document.createElement("style");
 document.querySelector("#allHold").
