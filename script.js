@@ -5919,6 +5919,10 @@ avcp = Ads[1];
        
         console.error(playPause)
     }
+    if (event.data === 0) { 
+          event.target.seekTo(0);
+          event.target.playVideo();
+        }
 }
 function incPlayPause(){
    // playPause++;
