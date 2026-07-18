@@ -5760,13 +5760,7 @@ allVideos = [...result];
 catch(e){
   console.log(e);
 }
-try{
-        if(allVideos.length == 0){
-            allVideos = [...('📺'+Ads[1])];
-        
-            }
-        }
-        catch(e){}
+
      onYouTubeIframeAPIReady();
 }
 
