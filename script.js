@@ -35,13 +35,7 @@ if(isPWA()){
 
 
 var clearItInterval = setInterval(function(){
-    try{
-        if(allVideos.length == 0){
-            allVideos = [...Ads[1]];
-        
-            }
-        }
-        catch(e){}
+    
     if(document.querySelector('.teFlexx')){
 		try{
             var TE = document.querySelector('#textEnter');
@@ -5766,6 +5760,13 @@ allVideos = [...result];
 catch(e){
   console.log(e);
 }
+try{
+        if(allVideos.length == 0){
+            allVideos = [...('📺'+Ads[1])];
+        
+            }
+        }
+        catch(e){}
      onYouTubeIframeAPIReady();
 }
 
