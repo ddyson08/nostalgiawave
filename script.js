@@ -2104,7 +2104,26 @@ function nameClick(a){
 var shareVarr;
 var teby = 0;
 var shareWorks = true;
+function onPlayerStateChange(event) {
+        //alert(5);
+    if (event.data == YT.PlayerState.PAUSED) {
+       
+        console.error(playPause)
+        if(withinSpeedUp){
+            player.playVideo();
+        }
+    }
+     if (event.data == YT.PlayerState.PLAYING) {
+       
+        console.error(playPause)
+    }
+    if (event.data === 0) { 
+          event.target.seekTo(0);
+          event.target.playVideo();
+        }
+}
 window.onload = function () {
+	
     try{
 setTimeout(
     function(){
@@ -3500,7 +3519,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      playPause +=1; 
                                                                      if(!withinSpeedUp){
-                                                                    if(playPause % 2 == 0){
+																		 try{
+                                                                    if(player.getPlayerState == 1){
                                                                          player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
@@ -3520,6 +3540,30 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 
                                                                     }
                                                                     }
+																		 }
+																		 catch(e){
+																				console.log(e);
+																			 if(playPause % 2 == 1){
+                                                                         player.pauseVideo();
+                                                                          try{
+                                                                        if(fullsc == 'yes'){
+                                                                        document.querySelector('#titleBar').style.zIndex = "0";
+                                                                        }
+                                                                    }
+                                                                    catch(e){
+                                                                    }
+                                                                     }else{
+                                                                         player.playVideo();
+                                                                          try{
+                                                                       
+                                                                        document.querySelector('#titleBar').style.zIndex = "2000";
+                                                                        
+                                                                    }
+                                                                    catch(e){
+
+                                                                    }
+                                                                    }
+																		 }
                                                                 }
                                                                 }else{
                                                                     console.log('yes');
@@ -5424,9 +5468,6 @@ function backValidateDate(tex, first) {
         if (text.includes("03/17/2020")) {
             tbr = words[navLang][58 + 12];
         }
-        if (tbr == "01/01/"+theYear) {
-            tbr = theYear;
-        }
     }else{
          if (text.includes("05/31/"+theYear)) {
             tbr = words[navLang][39];
@@ -5507,9 +5548,7 @@ function backValidateDate(tex, first) {
         if (text.includes("01/01/2022")) {
             tbr = words[navLang][58 + 12]
         }
-        if (tbr == "01/01/XXXY") {
-            tbr = theYear + 1;
-        }
+        
     }
         return tbr.charAt(0).toUpperCase() + tbr.slice(1);
     }
@@ -5901,24 +5940,7 @@ avcp = Ads[1];
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
       var done = false;
-      function onPlayerStateChange(event) {
-        //alert(5);
-    if (event.data == YT.PlayerState.PAUSED) {
-       
-        console.error(playPause)
-        if(withinSpeedUp){
-            player.playVideo();
-        }
-    }
-     if (event.data == YT.PlayerState.PLAYING) {
-       
-        console.error(playPause)
-    }
-    if (event.data === 0) { 
-          event.target.seekTo(0);
-          event.target.playVideo();
-        }
-}
+      
 function incPlayPause(){
    // playPause++;
 }
