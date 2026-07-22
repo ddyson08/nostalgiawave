@@ -2059,8 +2059,8 @@ document.querySelector('#playground').style.opacity = 0;
                 }
                 try {
                     i.innerHTML = ah[0] + words[this.navLang][i.getAttribute('words')] + ah[1];
-					if(i.getAttribute('words') == "25"){
-i.innerHTML += "+ 🔎";
+					if(i.getAttribute('words') == "25" || parseInt(i.getAttribute('words')) == 25){
+i.innerHTML = words[navLang][i.getAttribute('words')]+ " + 🔎";
 					}
                 }
                 catch (e) {
