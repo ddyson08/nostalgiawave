@@ -2104,24 +2104,6 @@ function nameClick(a){
 var shareVarr;
 var teby = 0;
 var shareWorks = true;
-function onPlayerStateChange(event) {
-        //alert(5);
-    if (event.data == YT.PlayerState.PAUSED) {
-       
-        console.error(playPause)
-        if(withinSpeedUp){
-            player.playVideo();
-        }
-    }
-     if (event.data == YT.PlayerState.PLAYING) {
-       
-        console.error(playPause)
-    }
-    if (event.data === 0) { 
-          event.target.seekTo(0);
-          event.target.playVideo();
-        }
-}
 window.onload = function () {
 	
     try{
@@ -3520,7 +3502,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      playPause +=1; 
                                                                      if(!withinSpeedUp){
 																		 try{
-                                                                    if(player.getPlayerState() == 1){
+                                                                    if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
