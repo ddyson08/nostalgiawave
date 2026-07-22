@@ -686,7 +686,11 @@ body {
     border: 1px solid var(--textColor) !important;
     opacity: 0 !important;
 }
-
+.pgMain :is(#allHold){
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+}
 #allHold {
     z-index: 6;
     position: absolute;
@@ -695,7 +699,6 @@ body {
     width: 100dvw;
     height: 100dvh;
     transition: 0.5s;
-    border: 1px solid var(--contrast);
 }
 
 body, #allHold, #playground {
@@ -751,6 +754,9 @@ button {
         justify-content: left;
         align-items: center;
         color: var(--emphasizedText);
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
 
     }
 
