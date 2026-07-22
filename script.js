@@ -3520,7 +3520,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                      playPause +=1; 
                                                                      if(!withinSpeedUp){
 																		 try{
-                                                                    if(player.getPlayerState == 1){
+                                                                    if(player.getPlayerState() == 1){
                                                                          player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
@@ -3613,6 +3613,18 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
     }, 500);
 }
 function requestTheFullscreen(a) {
+	try{
+	if(player.getPlayerState() == 1){
+                                                                        
+                                                                          
+                                                                        if(fullsc == 'yes'){
+                                                                        document.querySelector('#titleBar').style.zIndex = "0";
+                                                                        }
+                                                                    }
+	}
+	catch(e){
+		console.log(e)
+	}
     var video = document.querySelector('#videoFrame');
     var v2 = document.querySelector('#vfCrop');
     var touchOverlay = document.querySelector('#touchOverlay');
@@ -5869,7 +5881,24 @@ function giveError3() {
         });
     }
       }
-
+function onPlayerStateChange(event) {
+        //alert(5);
+    if (event.data == YT.PlayerState.PAUSED) {
+       
+        console.error(playPause)
+        if(withinSpeedUp){
+            player.playVideo();
+        }
+    }
+     if (event.data == YT.PlayerState.PLAYING) {
+       
+        console.error(playPause)
+    }
+    if (event.data === 0) { 
+          event.target.seekTo(0);
+          event.target.playVideo();
+        }
+}
       function onYouTubeIframeAPIReady() {
         try{
              requestTheFullscreen({'yes':true,'no':false}[fullsc]);
