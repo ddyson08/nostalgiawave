@@ -24,6 +24,15 @@
     border-radius: 5px;
 
 }
+#adBar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  transition: 1s;
+  overflow: hidden;
+  }
 #loadNext{
     position: absolute;
     top: 105vh;
