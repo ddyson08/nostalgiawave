@@ -2120,18 +2120,17 @@ window.onload = function () {
     'params' : {}
   };
 </script>
-<script src="https://www.highperformanceformat.com/4f35bc4a63f00c2de9cba85b89f94959/invoke.js"></script>
-`;
+<script src="https://www.highperformanceformat.com/4f35bc4a63f00c2de9cba85b89f94959/invoke.js"></script>`;
  adBar.style.opacity = "1";
  adBar.style.width = "100vw";
 adBar.style.height = "2em";
 setTimeout(function(){
     adBar.style.opacity = "0";
  adBar.style.width = "0";
-},5000);
+},10000);
         
         }catch(e){alert(e);}
-        },10000);
+        },20000);
 	
     try{
 setTimeout(
