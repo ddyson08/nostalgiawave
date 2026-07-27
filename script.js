@@ -89,6 +89,7 @@ var clearItInterval = setInterval(function(){
 function newConsoleLog(message) {
 console.log('old'+message)
 }
+var allowAd = true;
 var rateLimit = true;
 var words = {
   "en-US": [
@@ -993,6 +994,9 @@ words["he"].push("נסה למחוק כמה נוסטלגיות שנשמרו כד�
 words["he"].push("שנה:")
 words["he"].push("יוצר:")
 words["he"].push("נושא:")
+for(var WORDX of Object.keys(words)){
+    words[WORDX][25] = words[WORDX][25] + " + 🔎";
+}
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
@@ -2060,7 +2064,7 @@ document.querySelector('#playground').style.opacity = 0;
                 try {
                     i.innerHTML = ah[0] + words[this.navLang][i.getAttribute('words')] + ah[1];
 					if(i.getAttribute('words') == "25" || parseInt(i.getAttribute('words')) == 25){
-i.innerHTML = words[navLang][i.getAttribute('words')]+ " + 🔎";
+i.innerHTML = words[navLang][i.getAttribute('words')]+ "";
 					}
                 }
                 catch (e) {
@@ -2108,8 +2112,59 @@ var shareVarr;
 var teby = 0;
 var shareWorks = true;
 window.onload = function () {
+    document.body.addEventListener('keypress',function(event){
+        if(event.keyCode == "32"){
+             if(player.getPlayerState() === 1){
+                                                                         player.pauseVideo();
+                                                                          try{
+                                                                        if(fullsc == 'yes'){
+                                                                        document.querySelector('#titleBar').style.zIndex = "0";
+                                                                        }
+                                                                    }
+                                                                    catch(e){
+                                                                    }
+                                                                     }else{
+                                                                         player.playVideo();
+                                                                          try{
+                                                                       
+                                                                         document.querySelector('#titleBar').style.zIndex = "2000";
+                                                                        
+                                                                    }
+                                                                    catch(e){
+
+                                                                    }
+                                                                    }
+        }
+    })
+    document.body.addEventListener('keydown',function(event){
+        if(document.querySelector('#displayVideos').style.display == "block" && document.querySelector('#swipeScreen').style.opacity == 0 && (document.querySelector('#playground').style.opacity == "0" || document.querySelector('#playground').style.opacity == "")){
+       console.error(event.key == "ArrowUp");
+            if(event.key == "ArrowUp"){
+            swipeDown();
+        }
+        if(event.key == "ArrowDown"){
+            swipeUp();
+        }
+        }
+    })
+    // Source - https://stackoverflow.com/a/51276012
+// Posted by Lucio Paiva, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-07-27, License - CC BY-SA 4.0
+
+document.body.addEventListener("wheel", event => {
+    if(document.querySelector('#leftButton').checkVisibility()){
+    const delta = Math.sign(event.deltaY);
+    if(delta > 0){
+        swipeUp();
+    }else{
+        swipeDown();
+    }
+}
+});
+
     setInterval(function(){
     try{
+        if(allowAd){
         var adBar = document.querySelector("#adBar")
        /* adBar.innerHTML = `<script>
   atOptions = {
@@ -2130,7 +2185,7 @@ setTimeout(function(){
  adBar.style.width = "0";
 },10000);
         
-        }catch(e){alert(e);}
+       } }catch(e){alert(e);}
         },20000);
 	
     try{
@@ -3087,8 +3142,10 @@ function runAnimation(bypass, bypass2) {
     currentPlace = 0;
     }
     //if(document.querySelector('iframe#videoFrame') == null){
-    allVideos = [];
-    requestVideos(currentToken);                      
+    if(!bypass && !bypass2){
+        allVideos = [];
+    requestVideos(currentToken);  
+    }                    
    
     //}              
     document.querySelector('#pgTitle').style.opacity = 0;
@@ -3513,7 +3570,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
 var data = {event: 'command', func: 'setPlaybackRate', args: [playbackRate, true]};
 var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
-                                                                        }},500);
+                                                                        }},1000);
                                                                     });
 
                                                                     // TOUCH END
@@ -3578,6 +3635,7 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                     console.log('yes');
                                                                     //console.log(document.getElementById('fullscreenButton').click());
                                                                     document.getElementById('fullscreenButton').click();
+                                                                     document.querySelector('#titleBar').style.zIndex = "2000";
                                                                 }
                                                                 withinSpeedUp = false;
                                                             }
@@ -3598,7 +3656,12 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                   
                                                                     try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''))
-                                                                    player.playVideo();
+                                                                    var dv = document.querySelector('#vfCrop');
+            dv.innerHTML = ` <div id="videoFrame" src="" frameborder="0" allow="autoplay">
+            </div>`;
+            onYouTubeIframeAPIReady();
+            player.playVideo();
+            player.playVideo();
                                                                     }
                                                                     catch(e){}
                     
@@ -3627,7 +3690,7 @@ function requestTheFullscreen(a) {
                                                                         
                                                                           
                                                                         if(fullsc == 'yes'){
-                                                                        document.querySelector('#titleBar').style.zIndex = "0";
+                                                                        document.querySelector('#titleBar').style.zIndex = "2000";
                                                                         }
                                                                     }
 	}
@@ -3640,7 +3703,10 @@ function requestTheFullscreen(a) {
     var fullscreenButton = document.querySelector('#fullscreenButton');
     var Tee = document.querySelector('#textEnter');
     if (a) {
+        allowAd = false;
         fullsc = 'yes';
+        player.playVideo();
+        document.querySelector('#titleBar').style.zIndex = "2000";
 		document.querySelector('#uvula').style.display = "none";
     video.style.width = "100dvw";
     v2.style.width = "100dvw";
@@ -3669,6 +3735,7 @@ function requestTheFullscreen(a) {
             no.style.opacity = 0;
         }
     } else {
+        allowAd = true;
         fullsc = 'no';
         video.style.width = "calc(calc(100dvh - 10em) * (9/16))";
         video.style.height = "calc(-10em + 100dvh)";
@@ -4451,7 +4518,7 @@ function evaluateFullscreenReminder(n){
     }
     if((fsNumber % 15 == 0 && fsNumber !== 0) || fsNumber == 3 || currentPlace == 1 || n){
         var activeItem = document.querySelector('#leftButton');
-        var valueOg = words[navLang][25] + " + 🔎";
+        var valueOg = words[navLang][25] + "";
         activeItem.style.color = "var(--second)";
         var wnl100 = words[navLang][100].split('|');
 
@@ -4890,6 +4957,7 @@ if (currentPlace < allVideos.length-3) {
 function swipeDown() {
     if(rateLimit){
         rateLimit = false;
+        if(currentPlace > 0){
      try{
     document.querySelector('#giveError').remove();
     }
@@ -5122,6 +5190,7 @@ function swipeDown() {
         */
     }
  setTimeout(function(){rateLimit = true}, 2000);
+}
 }
 };
 
@@ -5407,7 +5476,7 @@ function backValidateDate(tex, first) {
         if (theYear.length < 3) {
             theYear = 2000 + theYear;
         }
-       
+       theYear = parseInt(theYear);
            
    
         //spring
@@ -5558,17 +5627,16 @@ function backValidateDate(tex, first) {
         if (text.includes("12/01/"+theYear)) {
             tbr = words[navLang][56];
         }
-        //dec
-        tbr+=" "+theYear;
-        if (text.includes("01/01/"+theYear)) {
+
+        if (text.includes("01/01/"+(theYear))) {
             tbr = words[navLang][57];
              tbr+=" "+(theYear-1);
         }
-       
-        //quarantine
-        if (text.includes("01/01/2022")) {
-            tbr = words[navLang][58 + 12]
+        if (text.includes("1/01/"+(theYear))) {
+            tbr = words[navLang][57];
+             tbr+=" "+(theYear-1);
         }
+     
         
     }
         return tbr.charAt(0).toUpperCase() + tbr.slice(1);
@@ -5814,6 +5882,19 @@ for (var i = 0; i < allVideos.length; i++) {
 }
 
 // replace original list
+ var innerBool = true;
+            if(false){
+
+            }else{
+                if(localStorage.getItem('nostalgiaTokAllowOldVideos') == "true"){
+                    innerBool = false;
+                }
+            }
+            if(innerBool){
+                var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("|SPLIT|");
+                var offset = 0;
+            allVideos = [...allVideos.filter(n => !innerValls.includes(n))]
+            }
 allVideos = [...result];
 
 }
@@ -5863,6 +5944,28 @@ function giveError3() {
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var ErrCount = 0;
+      function onPlayerStateChange(event) {
+      //  alert(1);
+        //alert(5);
+         if (event.data == 0) { 
+          //  alert(2);
+          player.seekTo(0);
+          player.playVideo();
+        }
+    if (event.data == YT.PlayerState.PAUSED) {
+       
+        console.error(playPause)
+        if(withinSpeedUp){
+            player.playVideo();
+        }
+    }
+     if (event.data == YT.PlayerState.PLAYING) {
+       
+        console.error(playPause)
+    }
+   
+}
+  
       function createOrReloadYouTubePlayer(avcp) {
         if(avcp.length < 7){
             avcp = Ads[1];
@@ -5890,25 +5993,7 @@ function giveError3() {
         });
     }
       }
-function onPlayerStateChange(event) {
-        //alert(5);
-    if (event.data == YT.PlayerState.PAUSED) {
-       
-        console.error(playPause)
-        if(withinSpeedUp){
-            player.playVideo();
-        }
-    }
-     if (event.data == YT.PlayerState.PLAYING) {
-       
-        console.error(playPause)
-    }
-    if (event.data === 0) { 
-          event.target.seekTo(0);
-          event.target.playVideo();
-        }
-}
-      function onYouTubeIframeAPIReady() {
+    function onYouTubeIframeAPIReady() {
         try{
              requestTheFullscreen({'yes':true,'no':false}[fullsc]);
         }catch(e){
@@ -5944,6 +6029,7 @@ avcp = Ads[1];
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
+       // alert(5);
         if(allVideos.length == 0){
             allVideos[0] = Ads[1];
         }
