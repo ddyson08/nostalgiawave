@@ -2111,8 +2111,17 @@ window.onload = function () {
     setInterval(function(){
     try{
         var adBar = document.querySelector("#adBar")
-        adBar.innerHTML = `<script async="async" data-cfasync="false" src="https://pl30552728.effectivecpmnetwork.com/6a6ea004daace83924093c810eeb434d/invoke.js"></script>
-<div id="container-6a6ea004daace83924093c810eeb434d"></div>`;
+        adBar.innerHTML = `<script>
+  atOptions = {
+    'key' : '4f35bc4a63f00c2de9cba85b89f94959',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/4f35bc4a63f00c2de9cba85b89f94959/invoke.js"></script>
+`;
  adBar.style.opacity = "1";
  adBar.style.width = "100vw";
 adBar.style.height = "2em";
