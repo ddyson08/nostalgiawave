@@ -2111,7 +2111,7 @@ window.onload = function () {
     setInterval(function(){
     try{
         var adBar = document.querySelector("#adBar")
-        adBar.innerHTML = `<script>
+       /* adBar.innerHTML = `<script>
   atOptions = {
     'key' : '4f35bc4a63f00c2de9cba85b89f94959',
     'format' : 'iframe',
@@ -2121,6 +2121,7 @@ window.onload = function () {
   };
 </script>
 <script src="https://www.highperformanceformat.com/4f35bc4a63f00c2de9cba85b89f94959/invoke.js"></script>`;
+*/
  adBar.style.opacity = "1";
  adBar.style.width = "100vw";
 adBar.style.height = "2em";
