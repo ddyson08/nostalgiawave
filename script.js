@@ -2115,12 +2115,13 @@ window.onload = function () {
 <div id="container-6a6ea004daace83924093c810eeb434d"></div>`;
  adBar.style.opacity = "1";
  adBar.style.width = "100vw";
+adBar.style.height = "2em";
 setTimeout(function(){
     adBar.style.opacity = "0";
  adBar.style.width = "0";
 },5000);
         
-        }catch(e){}
+        }catch(e){alert(e);}
         },10000);
 	
     try{
