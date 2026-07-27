@@ -2108,6 +2108,20 @@ var shareVarr;
 var teby = 0;
 var shareWorks = true;
 window.onload = function () {
+    setInterval(function(){
+    try{
+        var adBar = document.querySelector("#adBar")
+        adBar.innerHTML = `<script async="async" data-cfasync="false" src="https://pl30552728.effectivecpmnetwork.com/6a6ea004daace83924093c810eeb434d/invoke.js"></script>
+<div id="container-6a6ea004daace83924093c810eeb434d"></div>`;
+ adBar.style.opacity = "1";
+ adBar.style.width = "100vw";
+setTimeout(function(){
+    adBar.style.opacity = "0";
+ adBar.style.width = "0";
+},5000);
+        
+        }catch(e){}
+        },10000);
 	
     try{
 setTimeout(
