@@ -5627,7 +5627,7 @@ function backValidateDate(tex, first) {
         if (text.includes("12/01/"+theYear)) {
             tbr = words[navLang][56];
         }
-
+tbr+=" "+theYear;
         if (text.includes("01/01/"+(theYear))) {
             tbr = words[navLang][57];
              tbr+=" "+(theYear-1);
