@@ -752,10 +752,11 @@ button {
     margin-left: 1em;
     margin-right: 1.5em;
     width: max-content;
-    background-color: rgba(0,0,0,0);
+    background-color: var(--accent);
     z-index: 1000;
     transition: 0.5s;
-    color: var(--emphasizedText);
+    padding: 0.5em;
+    
 }
 
     #pgTitle :is(b) {
@@ -768,6 +769,7 @@ button {
         color: rgba(0,0,0,0);
         filter: invert(1);
         -webkit-filter: invert(1);
+        color: var(--emphasizedText);
         -moz-filter: invert(1);
 
     }
