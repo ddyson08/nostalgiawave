@@ -6068,7 +6068,7 @@ avcp = Ads[1];
                                             }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
         readyy = true;
-        player.pauseVideo();
+        player.playVideo();
                                         
       }
 
