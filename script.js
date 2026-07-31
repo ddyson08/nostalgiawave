@@ -2679,14 +2679,16 @@ function swapTe(n, f, m, g, t) {
             b2.setAttribute('class', 'primaryButton');
             b2.setAttribute('id', 'b2');
             b2.innerHTML = words[navLang][21];
+            var b4 = document.createElement('button');
+            b4.setAttribute('onclick', 'nvm()');
+            b4.setAttribute('class', 'primaryButton');
+            b4.setAttribute('id', 'b4');
+            b4.innerHTML = words[navLang][36];
             var b3 = document.createElement('button');
             b3.setAttribute('onclick', 'delSaved()');
             b3.setAttribute('id', 'b3');
             b3.innerHTML = words[navLang][22];
-            var b4 = document.createElement('button');
-            b4.setAttribute('onclick', 'nvm()');
-            b4.setAttribute('id', 'b4');
-            b4.innerHTML = words[navLang][36];
+            
             var b5 = document.createElement('button');
             b5.setAttribute('onclick', 'nstExport()');
             b5.setAttribute('id', 'b5');
@@ -3012,7 +3014,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                  clone.style.width = "0px";
                 clone.style.length = "0px";
                 clone.style.opacity = "0";
-                clone.style.transition = "0.5s";
+                clone.style.transition = "1s";
                     mH.append(clone);
                     clone.setAttribute('id', 'clonedUball' + Math.random());
                     //document.querySelector("#allHold").append(clone);
@@ -3042,7 +3044,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                 clone.style.width = "0px";
                 clone.style.length = "0px";
                 clone.style.opacity = "0";
-                clone.style.transition = "0.5s";
+                clone.style.transition = "1s";
                     console.warn([mH, clone]);
                     clone.setAttribute('id', 'clonedUball');
                     clone.style.width = "50%";
@@ -3664,7 +3666,8 @@ document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
             player.playVideo();
                                                                     }
                                                                     catch(e){}
-                    
+                                                            player.playVideo();
+                                                            setTimeout(function(){player.playVideo()},500);
                                                                 }, 500 * multiplier)
                                                             }, 50 * multiplier)
                                                         }, 50 * multiplier)
@@ -4009,6 +4012,7 @@ function delSaved() {
             await appendToStringStore(nArr);
         });
     }
+    posinar -= 1;
     nextSaved();
 }catch(e){}
 }
@@ -4258,6 +4262,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
             sh.style.height = properties[3];
             sh.style.width = properties[3];
             sh.style.zIndex = "50";
+            sh.style.transform = "rotateZ(0deg)";
             sh.style.transform = "rotateZ(" + properties[4] + ")";
             sh.style.border = "0px solid black";
             sh.setAttribute('class', 'teShape');
@@ -4280,6 +4285,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                             twin1.style.height = ppy1[3];
                             twin1.style.width = ppy1[3];
                             twin1.style.zIndex = "50";
+                            twin1.style.transform = "rotateZ(0deg)";
                             twin1.style.transform = "rotateZ(" + ppy1[4] + ")";
                             twin1.setAttribute('class', 'teShape');
                             twin1.style.borderRadius = properties[0];
@@ -4298,6 +4304,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                                     twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                     twin.style.height = ppy[3];
                                     twin.style.width = ppy[3];
+                                    twin.style.transform = "rotateZ(0deg)";
                                     twin.style.transform = "rotate(" + ppy[4] + ")";
                                     newConsoleLog([twin.style.transform, "rotateZ(" + ppy[4] + ")", ppy[4]])
                                     twin.style.transition = "0.5s";
@@ -4328,6 +4335,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                         twin1.style.height = ppy1[3];
                         twin1.style.width = ppy1[3];
                         twin1.style.zIndex = "50";
+                        twin1.style.transform = "rotateZ(0deg)";
                         twin1.style.transform = "rotateZ(" + ppy1[4] + "deg)"
                         twin1.setAttribute('class', 'teShape');
                         twin1.style.borderRadius = properties[0];
@@ -4344,6 +4352,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                                 twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                 twin.style.height = ppy[3];
                                 twin.style.width = ppy[3];
+                                twin.style.transform = "rotateZ(0deg)";
                                 twin.style.transform = "rotateZ(" + ppy[4] + ")";
                                 newConsoleLog[twin.style.transform, "rotateZ(" + ppy[4] + ")", ppy[4]]
                                 twin.style.transition = "0.5s";
@@ -4381,6 +4390,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                     sh.style.left = "0dvw";
                     sh.style.transition = "0.5s";
                     sh.style.position = "absolute";
+                    sh.style.transform = "rotateZ(0deg)";
                     sh.style.transform = "rotate(" + properties[4] + ")";
                     sh.style.borderRadius = properties[0];
 
@@ -4395,6 +4405,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                         sh.style.height = ppyy[3];
                         sh.style.width = ppyy[3];
                         sh.style.zIndex = "50";
+                        sh.style.transform = "rotateZ(0deg)";
                         sh.style.transform = "rotateZ(" + ppyy[4] + ")";
                         sh.setAttribute('class', 'teShape');
                         sh.style.borderRadius = properties[0];
@@ -4413,6 +4424,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                                 twin.style.top = "calc(env(safe-area-inset-top) + " + ppy[2] + "em)";
                                 twin.style.height = ppy[3];
                                 twin.style.width = ppy[3];
+                                twin.style.transform = "rotateZ(0deg)";
                                 twin.style.transform = "rotate(" + ppy[4] + ")";
                                 newConsoleLog([twin.style.transform, "rotateZ(" + ppy[4] + ")", ppy[4]])
                                 twin.style.transition = "0.5s";
