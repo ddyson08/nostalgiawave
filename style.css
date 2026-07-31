@@ -750,27 +750,22 @@ button {
     top: 2.5em !important;
     display: none;
     margin-left: 1em;
-    margin-right: 1.5em;
     width: max-content;
-    background-color: var(--accent);
+    background-color: var(--second);
     z-index: 1000;
     transition: 0.5s;
     padding: 0.5em;
+    border-radius: 5px;
     
 }
 
     #pgTitle :is(b) {
-        margin-right: 0.5em;
-        width: 50dvw;
+        width: max-content;
         vertical-align: text-bottom;
         display: flex;
         justify-content: left;
         align-items: center;
-        color: rgba(0,0,0,0);
-        filter: invert(1);
-        -webkit-filter: invert(1);
         color: var(--emphasizedText);
-        -moz-filter: invert(1);
 
     }
 
