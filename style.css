@@ -756,10 +756,6 @@ button {
     z-index: 1000;
     transition: 0.5s;
     color: var(--emphasizedText);
-    filter: invert(1);
-    -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -o-filter: invert(1);
 }
 
     #pgTitle :is(b) {
@@ -769,7 +765,7 @@ button {
         display: flex;
         justify-content: left;
         align-items: center;
-        color: var(--emphasizedText);
+        color: rgba(0,0,0,0);
         filter: invert(1);
         -webkit-filter: invert(1);
         -moz-filter: invert(1);
@@ -788,7 +784,7 @@ button {
     display: none;
     position: absolute;
 }
-#playground :is(.primaryButton), #pgTitle :is(.primaryButton), [words = "38"] {
+#playground :is(.primaryButton), #pgTitle :is(.primaryButton), #pgTitle :is(button), [words = "38"] {
     background-color: var(--emphasizedText) !important;
     color: var(--pgText) !important;
 }
