@@ -4257,7 +4257,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
 
             a.append(sh);
             sh.style.left = properties[1] + "em";
-            sh.style.opacity = "1";
+            sh.style.opacity = "0.5";
             sh.style.top = properties[2] + "em";
             sh.style.height = properties[3];
             sh.style.width = properties[3];
@@ -4280,7 +4280,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                         document.querySelector('.uBall').style.filter = "blur(0.25em)";
                         setTimeout(function () {
                             twin1.style.left = "calc(50dvw - var(--ballSize)/2 + " + ppy1[1] + "em)";
-                            twin1.style.opacity = "1";
+                            twin1.style.opacity = "0.5";
                             twin1.style.top = "calc(" + ppy1[2] + "em + env(safe-area-inset-top) + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
                             twin1.style.height = ppy1[3];
                             twin1.style.width = ppy1[3];
@@ -4400,7 +4400,7 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
                     for (sh of Shapez) {
                         let ppyy = Shapez2[Shapez.indexOf(sh)]
                         sh.style.left = "calc(50dvw - var(--ballSize)/2 + " + ppyy[1] + "em)";
-                        sh.style.opacity = "1";
+                        sh.style.opacity = "0.5";
                         sh.style.top = "calc(" + ppyy[2] + "em + " + document.querySelector('#uvula').getBoundingClientRect().height + "px " + " - " + Math.abs(parseFloat(document.querySelector('#uvula').getBoundingClientRect().y)) + "px - var(--ballSize))"
                         sh.style.height = ppyy[3];
                         sh.style.width = ppyy[3];
