@@ -4568,7 +4568,7 @@ function evaluateFullscreenReminder(n){
 function swipeUp() {
     if(rateLimit){
         rateLimit = false;
-    if(currentPlace >= allVideos.length - 3){
+    if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 1)){
         if(nextToken!=="" && !nextToken.includes("undefined") && nextToken.includes("null")){
             giveError2();
         }else{
