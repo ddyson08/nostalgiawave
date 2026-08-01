@@ -632,7 +632,7 @@ body {
     z-index: 9999;
     background: transparent;
     display: none;
-    height: calc((100dvh - 10em) * 0.75);
+    height: calc((100dvh - 10em) * 0.85);
     margin-top: calc((100dvh - 10em) * 0.05);
 }
 
