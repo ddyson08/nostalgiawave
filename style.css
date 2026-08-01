@@ -647,7 +647,7 @@ body {
     padding-bottom: var(--margin);
     z-index: 5;
     opacity: 0;
-    padding-top: 3.25em;
+    padding-top: 3.5em;
     color: var(--text) !important;
 }
 
