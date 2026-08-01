@@ -4571,8 +4571,10 @@ function swipeUp() {
     if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 1)){
         if(nextToken!=="" && !nextToken.includes("undefined") && nextToken.includes("null")){
             giveError2();
+            rateLimit = true;
         }else{
             giveError3();
+            rateLimit = true;
         }
         /*document.querySelector('.giveError').style.borderBottom="1px dotted var(--emphasizedText)";
         setTimeout(function(){document.querySelector('.giveError').style.border=""},250)*/
