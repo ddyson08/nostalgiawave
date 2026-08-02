@@ -2164,6 +2164,8 @@ document.body.addEventListener("wheel", event => {
 
     setInterval(function(){
     try{
+        //remove the false when i turn this back on
+        allowAd = false;
         if(allowAd){
         var adBar = document.querySelector("#adBar")
        /* adBar.innerHTML = `<script>
@@ -3489,7 +3491,8 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                   TOOO.addEventListener('touchstart', function (event) {
                                                                     if(event.touches.length > 1) {
-                                                        
+                                                        rateLimit = false;
+                                                        setTimeout(function(){rateLimit = true}, 2500);
     if(document.querySelector('#videoFrame').style.transform !== "scale(3.161)"){
 document.querySelector('#videoFrame').style.transform = "scale(3.161)";
     }else{
@@ -4500,8 +4503,6 @@ function handleTouch(startX, endX,
     console.log([finalTouchX, initialTouchX, (finalTouchX - initialTouchX), horizontalDistance, swipeThreshold, (horizontalDistance < (-1 * swipeThreshold))])
 
     if (Math.abs(verticalDistance) >
-        Math.abs(horizontalDistance) &&
-        Math.abs(verticalDistance) >
         swipeThreshold) {
         if (finalTouchY -
             initialTouchY < 0) {
@@ -4512,8 +4513,8 @@ function handleTouch(startX, endX,
     } else {
         if (horizontalDistance < (-1 * swipeThreshold)) {
            // alert('left');
-            editMode = true;
-            editModeFunction()
+          //  editMode = true;
+            // editModeFunction()
         }
     }
 }
