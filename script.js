@@ -4487,7 +4487,7 @@ var tsMT = 0;
 var canSwipe = true;
 var initialTouchX, initialTouchY,
     finalTouchX, finalTouchY;
-var swipeThreshold = 200;
+var swipeThreshold = 100;
 var dynamicStyle =
     document.createElement("style");
 document.querySelector("#allHold").
@@ -4504,8 +4504,8 @@ function handleTouch(startX, endX,
 
     if (Math.abs(verticalDistance) >
         swipeThreshold) {
-        if (finalTouchY -
-            initialTouchY < 0) {
+        if ((finalTouchY -
+            initialTouchY) < 0) {
             swipeUp();
         } else {
             swipeDown();
@@ -5250,7 +5250,7 @@ function validateDate(tex) {
             if (theYear < 2019) {
                 return ("Year Error: Too low~Year Error: Too low")
             }
-            if (theYear > d.getFullYear()) {
+            if (theYear >= d.getFullYear()) {
                 return ("Year Error: Too high~Year Error: Too high")
             }
     }
