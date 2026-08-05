@@ -5818,7 +5818,7 @@ async function requestVideos(value) {
 				if(!sanitized.trim().startsWith('<')){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
-					giveError3();
+					giveError();
 				}
             }
             catch(e){}
@@ -5835,7 +5835,7 @@ try{
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
 	}else{
-					giveError3();
+					giveError();
 				}
 }catch(e){}
             gotNew = true;
