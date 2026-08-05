@@ -5744,6 +5744,7 @@ var gotNew = false;
 var rateLimit = {};
 //text = text.toLowerCase();
 async function requestVideos(value) {
+	autoplay = 1;
     //alert('twinnn'+value);
     var getFromNet = true;
     var userEnc = encodeURIComponent(user.year)+encodeURIComponent(user.preferences)+encodeURIComponent(user.topics);
@@ -5814,7 +5815,11 @@ async function requestVideos(value) {
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
             try{
+				if(!sanitized.trim().startsWith('ERROR')){
             localStorage.setItem('next_'+userEnc,nextToken);
+				}else{
+					giveError3();
+				}
             }
             catch(e){}
             var tbaa = [];
@@ -5826,8 +5831,12 @@ async function requestVideos(value) {
             allVideos = [...allVideos, ...tbaa];
 
 try{
+	if(!sanitized.trim().startsWith('ERROR')){
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
+	}else{
+					giveError3();
+				}
 }catch(e){}
             gotNew = true;
         } catch (err) {
@@ -5992,7 +6001,7 @@ function giveError3() {
           videoId: avcp,
           playerVars: {
             'playsinline': 1,
-            'autoplay': 1,
+            'autoplay': [1,0][autoplay],
             'muted': autoplay,
             'loop': 1,
             'playlist': avcp,
