@@ -5815,7 +5815,7 @@ async function requestVideos(value) {
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
             try{
-				if(!sanitized.trim().startsWith('ERROR')){
+				if(!sanitized.trim().startsWith('<')){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
 					giveError3();
@@ -5831,7 +5831,7 @@ async function requestVideos(value) {
             allVideos = [...allVideos, ...tbaa];
 
 try{
-	if(!sanitized.trim().startsWith('ERROR')){
+	if(!sanitized.trim().startsWith('<')){
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
 	}else{
