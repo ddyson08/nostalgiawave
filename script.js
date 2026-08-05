@@ -97,7 +97,7 @@ var words = {
     "nostalgiaWave", //1
     "peiLamed", //2
     "what should i call u? <br><span class='nstLower'>hit enter afterwards ☺️</span>", //3
-    "next", //4
+    "--->", //4
     "your", //5
     "nostalgia", //6
     "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
@@ -126,7 +126,7 @@ var words = {
     "change name", //30
     "unseen vids only", //31
     "what's good, ", //32
-    "anqrzfeubxkmlpwhdvocty", //33
+    "a-qrzf-ub-kmlpwhdvoc>y", //33
     "abcd_efghijklmn_opqrstudvwxyz_", //34
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
     "nevermind", //36
@@ -257,9 +257,9 @@ var words = {
 "Изменить имя".toLowerCase(), //30
 "Только непросмотренные видео".toLowerCase(), //31
 "Что хорошего, ".toLowerCase(), //32
-"длавилемес", //33
+"a-qrzf-ub-kmlpwhdvoc>y", //33
 "abcd_efghijklmn_opqrstudvwxyz_", //34
-"1,3,5,7,9", //35
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35
 "неважно", //36
 "в прошлый раз, когда вы использовали nostalgiaWave", //37
 "перетащите меня к нужному варианту", //38
@@ -369,13 +369,13 @@ var words = {
     "あなたのことを何と呼べばいいですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
     "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2019年3月 - 2023年春)</span>",
-    "どのクリエイターですか？<br><span class='nstLower'>(任意項目であ読、後で変更可能です)</span>",
+    "どのクリエイターですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
     "どのトピックですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
     "の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
     "動画を読み込み中", "大量の動画", "プレイヤー", "動画を再生中", "読み込み中...", "", "これを選択&nbsp;-&nbsp;",
     "これを削除&nbsp;", "保存したノスタルジーを表示", "次へ&nbsp;-&nbsp;", "オプション", "➢", "詳細情報", "再検索",
-    "動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "次読へ読であ読", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,4,5,6", "気にしないで", "最後にnostalgiaWaveを使用した日時",
+    "動画を開く", "名前変更", "未視聴のみ", "調子はどう、", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaWaveを使用した日時",
     "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
     "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
     "9月", "10月", "11月", "12月", "2019年以降でお願いします", "というか、今年より前でお願いします",
@@ -420,8 +420,8 @@ var words = {
     " لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
     "الكثير منها", "المشغل", "المشغل يعرض مقاطع الفيديو", "جارٍ التحميل...", "", "اختر this&nbsp;-&nbsp;", "احذف this&nbsp;",
     "عرض الحنين المحفوظ", "التالي&nbsp;-&nbsp;", "الخيارات", "➢", "المزيد من المشغل", "ابحث مجدداً", "افتح الفيديو",
-    "تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "الاتبابلبي", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,5,7", "لا يهم", "آخر مرة استخدمت فيها nostalgiaWave",
+    "تغيير الاسم", "الفيديوهات غير المشاهدة فقط", "ما الأخبار، ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaWave",
     "اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
     "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
     "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2019 رجاءً",
@@ -457,8 +457,8 @@ var words = {
     "de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
     "un montón de ellos", "reproductor", "este reproduce videos", "cargando...", "", "elige este&nbsp;-&nbsp;", "elimina este&nbsp;",
     "ver nostalgias guardadas", "siguiente&nbsp;-&nbsp;", "opciones", "➢", "más de este", "buscar de nuevo", "abrir video",
-    "cambiar nombre", "solo videos no vistos", "¿qué tal, ", "sqihgtuuiopente", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,5,7,9,10", "olvídalo", "última vez que usaste nostalgiaWave",
+    "cambiar nombre", "solo videos no vistos", "¿qué tal, ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaWave",
     "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
     "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
     "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2019 porfa",
@@ -499,7 +499,7 @@ var words = {
     "on récupère tes vidéos", "un sacré paquet", "lecteur", "ceci lit des vidéos", "chargement...", "", "choisis celle-ci&nbsp;-&nbsp;",
     "supprime celle-ci&nbsp;", "voir les nostalgies sauvegardées", "suivante&nbsp;-&nbsp;", "options", "➢", "plus de ceci",
     "rechercher à nouveau", "ouvrir la vidéo", "changer de nom", "vidéos non vues uniquement", "quoi de neuf, ",
-    "sautihjviant", "abcd_efghijklmn_opqrstudvwxyz_", "1,3,5,6,8",
+    "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
     "laisse tomber", "dernière fois que tu as utilisé nostalgiaWave", "glisse-moi vers l'option de ton choix", "printemps",
     "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
@@ -542,7 +542,7 @@ var words = {
     "deine videos werden herausgefischt", "eine ganze menge davon", "player", "dieser spielt videos ab", "lädt...", "",
     "dieses auswählen&nbsp;-&nbsp;", "dieses löschen&nbsp;", "gespeicherte nostalgien anzeigen", "nächstes&nbsp;-&nbsp;",
     "optionen", "➢", "mehr davon", "erneut suchen", "video öffnen", "name ändern", "nur ungesehene videos", "was geht, ",
-    "wweribtueior", "abcd_efghijklmn_opqrstudvwxyz_", "1,3,5,7,9,10", "egal",
+    "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "egal",
     "letztes mal, als du nostalgiaWave benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
     "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
@@ -584,8 +584,8 @@ var words = {
     "de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
     "um monte deles", "player", "este reproduz vídeos", "carregando...", "", "escolha este&nbsp;-&nbsp;", "exclua este&nbsp;",
     "ver nostalgias salvas", "próximo&nbsp;-&nbsp;", "opções", "➢", "mais deste", "buscar de novo", "abrir vídeo",
-    "alterar nome", "apenas vídeos não vistos", "e aí, ", "syeuigoupinte", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,4,6,8", "deixa para lá", "última vez que você usou o nostalgiaWave",
+    "alterar nome", "apenas vídeos não vistos", "e aí, ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaWave",
     "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
     "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
     "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2019 por favor",
@@ -626,8 +626,8 @@ var words = {
     "的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
     "超多好视频", "播放器", "这个正在播放视频", "加载中...", "", "选择这一个&nbsp;-&nbsp;", "删除这一个&nbsp;",
     "查看已保存的怀旧", "下一个&nbsp;-&nbsp;", "选项", "➢", "更多关于这个", "重新搜索", "打开视频", "更改名称",
-    "仅看未看过的视频", "嗨，最近怎么样，", "下由一题个载更", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,5,6", "算了吧", "上一次你使用 nostalgiaWave",
+    "仅看未看过的视频", "嗨，最近怎么样，", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaWave",
     "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
     "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "请早点儿 :)", "求2019年到现在之间的吧",
@@ -662,7 +662,7 @@ var words = {
     "आपके वीडियो निकाले जा रहे हैं", "बहुत सारे वीडियो हैं", "प्लेयर", "यह वीडियो चलाता है", "लोड हो रहा है...", "",
     "इसे चुनें&nbsp;-&nbsp;", "इसे हटाएं&nbsp;", "सहेजी गई पुरानी यादें देखें", "अगला वाला&nbsp;-&nbsp;", "विकल्प", "➢",
     "इसके बारे में और जानें", "फिर से खोजें", "वीडियो खोलें", "नाम बदलें", "केवल अनदेखे वीडियो", "क्या चल रहा है, ",
-    "मेंकआद्वगे", "abcd_efghijklmn_opqrstudvwxyz_", "0,1,4",
+    "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_", "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21",
     "रहने दो", "पिछली बार आपने nostalgiaWave का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
     "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
     "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
@@ -704,8 +704,8 @@ var words = {
     " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
     "በጣም ብዙ ናቸው", "ተጫዋች", "ይህ ቪዲዮዎችን ያጫውታል", "በመጫን ላይ...", "", "ይህንን ምረጥ&nbsp;-&nbsp;", "ይህንን ሰርዝ&nbsp;",
     "የተቀመጡ ትዝታዎችን እይ", "ቀጣዩ&nbsp;-&nbsp;", "አማራጮች", "➢", "ተጨማሪ የዚህ", "እንደገና ፈልግ", "ቪዲዮ ክፈት",
-    "ስም ቀይር", "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "ቀበጣልይች", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,5", "ተውት", "nostalgiaWaveን ለመጨረሻ ጊዜ የተጠቀሙበት",
+    "ስም ቀይር", "ያልታዩ ቪዲዮዎች ብቻ", "እንዴት ነህ፣ ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiaWaveን ለመጨረሻ ጊዜ የተጠቀሙበት",
     "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
     "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
     "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2019 በኋላ ይሁን እባክህ",
@@ -746,8 +746,8 @@ var words = {
     " ⵏ ", "", "", "ⵉⴳ ⵜⵅⵙⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⴰⵙ ⴷⵖⵉ", "ⵏⵖ ⵓⵔⵓ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⵏⵙⵙⵓⴼⵖ ⴷ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
     "ⴱⵣⵣⴰⴼ ⴷⵉⴳⵙⵏ", "ⴰⵎⵓⵔⴰⵔ", "ⵡⴰ ⵉⵜⵜⵓⵔⴰⵔ ⵉⴼⵉⴷⵢⵓⵜⵏ", "ⴰⵙⴰⵍⵉ...", "", "ⴰⴼⵔ ⵡⴰ&nbsp;-&nbsp;", "ⴽⴽⵙ ⵡⴰ&nbsp;",
     "ⵥⵕ ⵜⵉⵡարգⵉⵡⵉⵏ ⵜⵢⵓⵃⴼⴹⵏ", "ⵡⴰ ⴷⵉⴳⵙⵏ ⴱⵄⴷ&nbsp;-&nbsp;", "ⵉⵙⵜⵉⵢⵏ", "➢", "ⵓⴳⴳⴰⵔ ⵏ ⵡⴰ", "ⴰⵔⵣⵣⵓ ⴷⴰⵖ", "ⴰⵔⵥⵎ ⵉⴼⵉⴷⵢⵓ",
-    "ⴱⴷⴷⵍ ⵉⵙⵎ", "ⵉⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⵓⵥⵕⴰⵏ  wale ⴷ", "ⵎⴰⵅ ⵉⵅⴱⴰⵔⵏ, ", "ⴰⵙⴼⵉⵔⴼⴰⵏ", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,5", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
+    "ⴱⴷⴷⵍ ⵉⵙⵎ", "ⵉⴼⵉⴷⵢⵓⵜⵏ ⵓⵔ ⵜⵢⵓⵥⵕⴰⵏ  wale ⴷ", "ⵎⴰⵅ ⵉⵅⴱⴰⵔⵏ, ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
     "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
     "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵣⵉⴽ, ⵄⴰⴼⴰⴽ :)",
@@ -809,9 +809,9 @@ var words = {
 "chenj nem", //30 
 "vids we nɔ de si nɔmɔ", //31 
 "wetin gud, ", //32 
-"nɔɛeupkusmu", //33 
+"a-qrzf-ub-kmlpwhdvoc>y", //33 
 "abcd_efghijklmn_opqrstudvwxyz_", //34 
-"1,4,5,7,9,10", //35 
+"0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", //35 
 "kɔmɔt", //36 
 "las tɛm we yu yuz nostalgiaWave", //37 
 "drag mi to di opshɔn we yu want", //38 
@@ -913,8 +913,8 @@ var words = {
     "의 ", "", "", "나중에 보려고 향수를 저장하고 싶다면 여기에 이름을 입력하세요", "아니어도 괜찮습니다", "동영상을 가져오는 중",
     "엄청나게 많네요", "플레이어", "동영상을 재생하는 중", "로딩 중...", "", "이것을 선택&nbsp;-&nbsp;", "이것을 삭제&nbsp;",
     "저장된 향수 보기", "다음&nbsp;-&nbsp;", "옵션", "➢", "자세히 보기", "다시 검색", "동영상 열기", "이름 변경",
-    "시청하지 않은 동영상만", "잘 지냈어요, ", "다션음딩딩", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,4", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
+    "시청하지 않은 동영상만", "잘 지냈어요, ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
     "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
     "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "좀 더 일찍 부탁드립니다 :)", "2019년에서 현재 사이로 해주세요",
@@ -954,8 +954,8 @@ var words = {
     " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך למאוחר יותר, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
     "המון מהם", "נגן", "זה מנגן סרטונים", "טוען...", "", "בחר את זה&nbsp;-&nbsp;", "מחק את זה&nbsp;",
     "הצג נוסטלגיות שמורות", "הבא&nbsp;-&nbsp;", "אפשרויות", "➢", "עוד מזה", "חפש שוב", "פתח סרטון", "שנה שם",
-    "סרטונים שלא נצפו בלבד", "מה קורה, ", "התבתתא", "abcd_efghijklmn_opqrstudvwxyz_",
-    "1,3,4", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaWave",
+    "סרטונים שלא נצפו בלבד", "מה קורה, ", "a-qrzf-ub-kmlpwhdvoc>y", "abcd_efghijklmn_opqrstudvwxyz_",
+    "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaWave",
     "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
     "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
     "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2019 בבקשה", "ובכן, לפני השנה הזו בבקשה",
@@ -980,6 +980,9 @@ var words = {
 "הבנתי" //120
   ]
 };
+for(var WORDKEY of Object.keys(words)){
+words[WORDKEY][4] = "--->";
+}
 words["ar"][71] = "من فضلك، في وقت سابق :)";
 words["he"][71] = "מוקדם יותר, בבקשה :)";
 words["ar"].push("nostalgiaWave تصدير ");
