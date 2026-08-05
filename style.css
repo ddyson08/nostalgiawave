@@ -25,7 +25,10 @@
 
 }
 #videoFrame:before{
-    content: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXc0ZTJkN2RzanF2dGw3eGkya3JjZzZkYWQ5bmE4NnhrbGV3c2tyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVXyJy2k7WO1n49bGg/giphy.gif");
+    content: url("https://c.tenor.com/tJEkKGDG_bQAAAAC/tenor.gif");
+    left: calc(0.5 * (100dvw - (56.25dvh - 5.625em)));
+    position: absolute;
+    width: calc(56.25dvh - 5.625em); 
 }
 #adBar{
   position: absolute;
