@@ -4011,7 +4011,7 @@ function nvm() {
 }
 function delSaved() {
     try{
-    Arr.splice((posinar - 1) % Arr.length, 1);
+    Arr.splice((posinar) % Arr.length, 1);
     if (true) {
         localStorage.setItem('nostalgiaTokSaved', Arr.join('[nostalgiaTokSPLIT]'));
     } else {
