@@ -164,7 +164,7 @@ var words = {
     "november", //68
     "december", //69
     "past 2019 plzz", //70
-    "well, before this year plzz", //71
+    "earlier, please :)", //71
     "between 2019 - now plzz", //72
     "sorry, try again plzz", //73
     "tysm btw ☺", //74
@@ -295,7 +295,7 @@ var words = {
 "ноябрь", //68
 "декабрь", //69
 "после 2019 года, пожалуйста", //70
-"ну, до этого года, пожалуйста", //71
+"пораннее время, пожалуйста :)", //71
 "между 2019 годом - сейчас, пожалуйста", //72
 "извините, попробуйте еще раз, пожалуйста", //73
 "большое спасибо, кстати ☺", //74
@@ -379,7 +379,7 @@ var words = {
     "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
     "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
     "9月", "10月", "11月", "12月", "2019年以降でお願いします", "というか、今年より前でお願いします",
-    "2019年から現在までの間でお願いします", "すみません、もう一度試してください", "ありがとう ☺", "おっと！",
+    "2019年から現在までの間でお願いします", "もっと早くお願いします :)", "ありがとう ☺", "おっと！",
     "正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
     "まだ読み込み中", "さらに多くの動画が近日公開されますので、スクロールしてご覧ください", "✅ -> ❌", "❌ -> ✅",
     "長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
@@ -462,7 +462,7 @@ var words = {
     "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
     "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
     "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2019 porfa",
-    "bueno, antes de este año porfa", "entre 2019 y ahora porfa", "lo siento, intenta de nuevo porfa", "gracias de todos modos ☺",
+    "bueno, antes de este año porfa", "entre 2019 y ahora porfa", "antes, por favor :)", "gracias de todos modos ☺",
     "¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
     "todavía cargando", "pronto llegarán más vídeos, prueba a desplazarte para verlos", "✅ -> ❌", "❌ -> ✅",
     "mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
@@ -503,7 +503,7 @@ var words = {
     "laisse tomber", "dernière fois que tu as utilisé nostalgiaWave", "glisse-moi vers l'option de ton choix", "printemps",
     "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
-    "octobre", "novembre", "décembre", "après 2019 stp", "enfin, avant cette année stp", "entre 2019 et maintenant stp",
+    "octobre", "novembre", "décembre", "après 2019 stp", "plus tôt, s'il vous plaît :)", "entre 2019 et maintenant stp",
     "désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
     "tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
     "d'autres vidéos arriveront bientôt, essayez de faire défiler pour les voir", "✅ -> ❌", "❌ -> ✅",
@@ -546,7 +546,7 @@ var words = {
     "letztes mal, als du nostalgiaWave benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
     "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
-    "nach 2019 bitte", "na ja, vor diesem jahr bitte", "between 2019 und jetzt bitte", "tut mir leid, versuch es bitte nochmal",
+    "nach 2019 bitte", "na ja, vor diesem jahr bitte", "between 2019 und jetzt bitte", "früher, bitte :)",
     "vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
     "du hast alle videos für diese suche angesehen", "lädt noch", "weitere videos werden bald erscheinen, versuch mal zu scrollen, um sie zu sehen",
     "✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
@@ -589,7 +589,7 @@ var words = {
     "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
     "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
     "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2019 por favor",
-    "bem, antes deste ano por favor", "entre 2019 e agora por favor", "desculpe, tente de novo por favor",
+    "bem, antes deste ano por favor", "entre 2019 e agora por favor", "mais cedo, por favor :)",
     "muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
     "você assistiu a todos os vídeos desta busca", "ainda carregando", "mais vídeos vão chegar em breve, tente rolar para ver",
     "✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
@@ -630,7 +630,7 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaWave",
     "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
-    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "好吧，求今年之前的吧", "求2019年到现在之间的吧",
+    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "请早点儿 :)", "求2019年到现在之间的吧",
     "抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
     "你已看完了此搜索下的所有视频", "还在加载中", "更多视频很快会陆续发布，试着浏览看看", "✅ -> ❌", "❌ -> ✅",
     "再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
@@ -666,7 +666,7 @@ var words = {
     "रहने दो", "पिछली बार आपने nostalgiaWave का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
     "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
     "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
-    "कृपया 2019 के बाद का दें", "खैर, कृपया इस वर्ष से पहले का दें", "कृपया 2019 और अब के बीच का दें",
+    "कृपया 2019 के बाद का दें", "पहले, कृपया :)", "कृपया 2019 और अब के बीच का दें",
     "क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
     "सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
     "जल्द ही और भी वीडियो आएंगे, उन्हें देखने के लिए स्क्रॉल करने का प्रयास करें", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
@@ -709,7 +709,7 @@ var words = {
     "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
     "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
     "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2019 በኋላ ይሁን እባክህ",
-    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2019 እና አሁን መካከል ይሁን እባክህ", "አዘንባለሁ፣ እባክህ እንደገና ሞክር",
+    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2019 እና አሁን መካከል ይሁን እባክህ", "ቀደም ብሎ፣ እባክዎን :)",
     "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!", "የሆነ ነገር አልሰራም<br>እባክህ እንደገና ለመፈለግ ሞክር", "ሁሉም ታይተዋል",
     "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ተጨማሪ ቪዲዮዎች በቅርቡ ይመጣሉ፣ እነሱን ለማየት ለማሸብለል ይሞክሩ", "✅ -> ❌",
     "❌ -> ✅", "ወደ 2 እጥፍ ፍጥነት ለመቀየር እንደገና ተጭነው ይቆዩ", "ማስታወቂያ", "የ 🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ",
@@ -750,9 +750,9 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
     "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
-    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵉⵡⴰ, ⵇⴱⵍ ⴰⵙⴳⴳⵯⴰⵙ ⴰⴷ ⵄⴰⴼⴰⴽ",
+    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵣⵉⴽ, ⵄⴰⴼⴰⴽ :)",
     "ⴱⵉⵏ 2019 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
-    "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⴰⴷ ⴷⴰⵡⴹⴻⵏ ⵓⴳⴰⵔ ⵏ yividyuten ⵙ ⵍⵇⴻⵔⴱ, ⵄⵔⴻⴹ ⴰⴷ ⵜⵜⴻⵥⵔⴻⴹ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵏⵜⵡⴰⵍⵉⴹ",
+    "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⵓⴳⴰⵔ ⵏ yividyuten ⴰⵔⴰ ⴷⵢⴰⵙⴻⵏ ⵙ ⵍⵇⴻⵔⴱ, ⵜⵜⵅⵉⵍⴽ ⴹⴻⴳⴳⴻⵔ ⵖⴻⵔ ⴷⴷⴰⵡ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜⵜⵡⴰⵍⵉⴹ",
     "✅ -> ❌", "❌ -> ✅", "ⵄⴰⵡⴷ ⴹⵕⵥ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵙ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼⴰⵔⵉⵙ ⵏ 🇸🇱", "ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ", "ⴼⴼⵖ ⵙⴳ ⵜⵍⴳⴰⵎⵜ ⴰ",
     "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⵡⴰ ⴰⵎ ⴰⵙⵉⵜ'",
     "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⴰⵣⵓⵣⵣⵡ, ⴰⵃⴼⴰⴹ ⴷ ⵓⴱⴹⴰ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⴰⵔⵏⵓ ⵙ dock'",
@@ -847,7 +847,7 @@ var words = {
 "nɔvemba", //68 
 "disɛmba", //69 
 "pas 2019 plzz", //70 
-"wɛl, bifo dis ia plzz", //71 
+"bifo dat, duya :)", //71 
 "bitwin 2019 - naw plzz", //72 
 "sɔri, tray bak plzz", //73 
 "tysm btw ☺", //74 we de sho aw fɔ du am 
@@ -917,7 +917,7 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
     "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
-    "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "아니, 올해 전으로 해주세요", "2019년에서 현재 사이로 해주세요",
+    "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "좀 더 일찍 부탁드립니다 :)", "2019년에서 현재 사이로 해주세요",
     "죄송합니다, 다시 시도해 주세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
     "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "곧 더 많은 영상이 올라올 예정이니, 스크롤해서 보시면 됩니다",
     "✅ -> ❌", "❌ -> ✅", "다시 길게 누르면 2배속 전환", "광고", "🇸🇱의 제품", "전체 화면", "이 메뉴 나가기", "크레딧",
@@ -980,6 +980,8 @@ var words = {
 "הבנתי" //120
   ]
 };
+words["ar"][71] = "من فضلك، في وقت سابق :)";
+words["he"][71] = "מוקדם יותר, בבקשה :)";
 words["ar"].push("nostalgiaWave تصدير ");
 words["ar"].push("احفظ بشكل دائم");
 words["ar"].push(" مساحة التخزين ممتلئة :(");
@@ -5250,7 +5252,7 @@ function validateDate(tex) {
             if (theYear < 2019) {
                 return ("Year Error: Too low~Year Error: Too low")
             }
-            if (theYear >= d.getFullYear()) {
+            if (theYear > d.getFullYear()) {
                 return ("Year Error: Too high~Year Error: Too high")
             }
     }
@@ -5337,7 +5339,13 @@ function validateDate(tex) {
         if (tbr == '') {
             tbr = "01/01/XXXX ~ 01/01/XXXY";
         }
-        tbr = tbr.replace(/XXXX/g, theYear).replace(/XXXY/g, theYear + 1)
+		
+        tbr = tbr.replace(/XXXX/g, theYear).replace(/XXXY/g, theYear + 1);
+		for(var XXY of tbr.split('~')){
+		if((XXY.replace(/0/g,'').split('/')[0] >= (d.getMonth()+1)) && (d.getFullYear() == XXY.split('/')[2])){
+			return ("Year Error: Too high~Year Error: Too high")
+		}
+		}
         return tbr;
     }
     return tbr;
