@@ -36,10 +36,10 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     
-    if(document.querySelector('.teFlexx')){
+    if(true){
 		try{
             var TE = document.querySelector('#textEnter');
-            if(TE.innerHTML == "null"){
+            if(TE.innerHTML.includes("null")){
                 var TEQ = "";
                 try{
                 TEQ = TE.querySelector('input').value;
@@ -5345,7 +5345,7 @@ function validateDate(tex) {
 		
         tbr = tbr.replace(/XXXX/g, theYear).replace(/XXXY/g, theYear + 1);
 		for(var XXY of tbr.split('~')){
-		if((XXY.replace(/0/g,'').split('/')[0] >= (d.getMonth()+1)) && (d.getFullYear() == XXY.split('/')[2])){
+		if(((XXY.replace(/0/g,'').split('/')[0] >= (d.getMonth()+1)) && (d.getFullYear() == XXY.split('/')[2])) || (XXY.split('/')[2] > d.getFullYear)){
 			return ("Year Error: Too high~Year Error: Too high")
 		}
 		}
