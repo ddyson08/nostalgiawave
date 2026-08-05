@@ -5342,7 +5342,7 @@ function validateDate(tex) {
         if (tbr == '') {
             tbr = "01/01/XXXX ~ 01/01/XXXY";
         }
-        if(text == d.getFullYear() || text == d.getFullYear().toString.substr(-2)){
+        if(text.trim() == d.getFullYear() || text.trim() == d.getFullYear().toString().substr(-2)){
             return ("Year Error: Too high~Year Error: Too high")
             }
 		
