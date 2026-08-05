@@ -46,7 +46,7 @@ var clearItInterval = setInterval(function(){
                 }catch(e){
 
                 }
-                TE.innerHTML.replace(/null/g,'');
+                TE.innerHTML=TE.innerHTML.replace(/null/g,'');
                 try{
                 TE.querySelector('input').value = TEQ;
                 }catch(e){}
@@ -5342,10 +5342,13 @@ function validateDate(tex) {
         if (tbr == '') {
             tbr = "01/01/XXXX ~ 01/01/XXXY";
         }
+        if(text == d.getFullYear() || text == d.getFullYear().toString.substr(-2)){
+            return ("Year Error: Too high~Year Error: Too high")
+            }
 		
         tbr = tbr.replace(/XXXX/g, theYear).replace(/XXXY/g, theYear + 1);
 		for(var XXY of tbr.split('~')){
-		if(((XXY.replace(/0/g,'').split('/')[0] >= (d.getMonth()+1)) && (d.getFullYear() == XXY.split('/')[2])) || (XXY.split('/')[2] > d.getFullYear)){
+		if(((XXY.replace(/0/g,'').split('/')[0] >= (d.getMonth()+1)) && (d.getFullYear() == XXY.split('/')[2]))){
 			return ("Year Error: Too high~Year Error: Too high")
 		}
 		}
