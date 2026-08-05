@@ -96,7 +96,7 @@ var words = {
     "by", //0
     "nostalgiaWave", //1
     "peiLamed", //2
-    "what's your name? <br><span class='nstLower'>hit enter afterwards ☺️</span>", //3
+    "what should i call u? <br><span class='nstLower'>hit enter afterwards ☺️</span>", //3
     "next", //4
     "your", //5
     "nostalgia", //6
@@ -226,17 +226,17 @@ var words = {
 "от", //0
 "nostalgiaWave", //1
 "peiLamed", //2
-"Как тебя зовут? <br><span class='nstLower'>После этого нажмите Enter ☺️</span>", //3
-"Далее", //4
+"kак мне тебя называть? <br><span class='nstLower'>После этого нажмите Enter ☺️</span>", //3
+"далее", //4
 "твоя", //5
 "nostalgia", //6
-"По какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
-"Какой автор?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //8
-"Какая тема?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //9
+"по какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
+"kакой автор?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //8
+"kакая тема?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //9
 "'s ", //10
 "", //11
 "", //12
-"Если хотите сохранить свою ностальгию на потом, назовите её здесь", //13
+"eсли хотите сохранить свою ностальгию на потом, назовите её здесь", //13
 
 "Или нет, это нормально", //14
 "Поиск ваших видео", //15
@@ -366,7 +366,7 @@ var words = {
 ],
   "ja": [
     "によって", "nostalgiaWave", "peiLamed",
-    "お名前は何ですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
+    "あなたのことを何と呼べばいいですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
     "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2019年3月 - 2023年春)</span>",
     "どのクリエイターですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
@@ -412,7 +412,7 @@ var words = {
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
-    "ما اسمك؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
+    "ماذا أناديكِ؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
     "التالي", "الخاص بك", "الحنين",
     "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2019 - ربيع 2023)</span>",
     "أي منشئ محتوى؟<br><span class='nstLower'>(اختياري، ويمكن تغييره لاحقاً)</span>",
@@ -449,7 +449,7 @@ var words = {
   ],
   "es": [
     "por", "nostalgiaWave", "peiLamed",
-    "¿cómo te llamas? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
+    "¿cómo debería llamarte? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
     "siguiente", "tu", "nostalgia",
     "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2019 - primavera 2023)</span>",
     "¿qué creador?<br><span class='nstLower'>(opcional, se puede modificar posteriormente)</span>",
@@ -490,7 +490,7 @@ var words = {
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
-    "quel est ton nom ? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
+    "comment dois-je vous appeler? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
     "suivant", "ton", "nostalgie",
     "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2019 - printemps 2023)</span>",
     "quel créateur ?<br><span class='nstLower'>(facultatif, peut être modifié ultérieurement.)</span>",
@@ -533,7 +533,7 @@ var words = {
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
-    "wie heißt du? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
+    "wie soll ich dich nennen? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
     "weiter", "dein", "nostalgie",
     "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2019 - frühjahr 2023)</span>",
     "welcher creator?<br><span class='nstLower'>(optional, kann später geändert werden)</span>",
@@ -576,7 +576,7 @@ var words = {
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
-    "qual o seu nome? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
+    "como devo te chamar? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
     "seguinte", "seu", "nostalgia",
     "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2019 - primavera de 2023)</span>",
     "qual criador?<br><span class='nstLower'>(opcional, pode ser alterado posteriormente)</span>",
@@ -618,7 +618,7 @@ var words = {
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
-    "你叫什么名字？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
+    "我该怎么称呼你？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
     "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2019年3月 - 2023年春季)</span>",
     "哪位创作者？<br><span class='nstLower'>(可选，之后可以更改)</span>",
@@ -653,7 +653,7 @@ var words = {
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
-    "आपका नाम क्या है? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
+    "क्या कहकर बुलाऊँ तुम्हें? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
     "आगे", "आपका", "पुरानी यादें",
     "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2019 - वसंत 2023)</span>",
     "कौन सा क्रिएटर?<br><span class='nstLower'>(ऑप्शनल, बाद में बदला जा सकता है)</span>",
@@ -696,7 +696,7 @@ var words = {
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
-    "ስምህ ማን ነው? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
+    "ምን ልበልህ? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
     "ቀጣይ", "የእርስዎ", "ትዝታ",
     "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2019 - ጸደይ 2023)</span>",
     "የትኛው ፈጣሪ?<br><span class='nstLower'>(አማራጭ፣ በኋላ ላይ ሊቀየር ይችላል)</span>",
@@ -738,7 +738,7 @@ var words = {
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
-    "ⵎⴰⵅ ⵉⵙⵎ ⵏⵏⴽ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
+    "ⴰⵎⴻⴽ ⴰⵔⴰ ⴰⴽⵉⵏⵉⵖ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
     "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
     "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2019 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
     "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴷ ⴰⴼⵔⴰⵏ, ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⴱⴻⴷⴷⴻⵍ ⵎⴱⴻⵄⴷ)</span>",
@@ -779,7 +779,7 @@ var words = {
 "bay", //0 
 "nostaljiaWev", //1 
 "peiLamed", //2 
-"wetin na yu nem? <br><span class='nstLower'>hit enta afta ☺️</span>", //3 
+"wetin a fɔ kɔl yu? <br><span class='nstLower'>hit enta afta ☺️</span>", //3 
 "nɛks", //4 
 "yu", //5 
 "nɔstaljia", //6 
@@ -905,7 +905,7 @@ var words = {
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
-    "이름이 무엇인가요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
+    "당신을 뭐라고 불러야 할까요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
     "다음", "당신의", "향수",
     "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2019년 3월 - 2023년 봄)</span>",
     "어떤 크리에이터인가요?<br><span class='nstLower'>(선택 사항이며, 나중에 변경할 수 있습니다)</span>",
@@ -946,7 +946,7 @@ var words = {
   ],
   "he": [
     "על ידי", "nostalgiaWave", "peiLamed",
-    "מה שמך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
+    "איך אני אמור לקרוא לך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
     "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2019 - אביב 2023)</span>",
     "איזה יוצר?<br><span class='nstLower'>(אופציונלי, ניתן לשינוי מאוחר יותר)</span>",
