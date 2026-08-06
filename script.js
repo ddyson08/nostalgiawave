@@ -191,7 +191,7 @@ var words = {
     "i'm not exactly sure how to do it on your browser <br> but look for an 'add to homescreen'-esque or 'install app'-esque button in the share menu or browser menu and click that", //95
     "click 'install nostalgiaWave'<br>", //96
     "hit this button <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97 
-    "made by ddyson bang-ura (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
+    "made by dice b (aka peiLamed / פילמד) <br><br> help from stack overflow & a little bit of ai debugging <br><br> designed by peiLamed <br><br> product of sierra leone 🇸🇱 <br><br> free palestine 🇵🇸🇸🇩🇨🇩", //98
     "see directions", //99
     "「」 | 『』 | fullscreen available", //100
     "use me instead :)", //101
@@ -333,7 +333,7 @@ var words = {
 "я не совсем уверен, как это сделать в вашем браузере, <br> но найдите кнопку, похожую на 'Добавить на главный экран' или 'Установить приложение', в меню 'Поделиться' или меню браузера и нажмите на нее'", //95
 "нажмите 'Установить nostalgiaWave'<br>", //96
 "нажмите эту кнопку <br> <button id='nstFirefoxFullscreen'>「 」</button>", //97
-"создано ddyson bang-ura (aka peiLamed / פילמד) <br><br> помощь со Stack Overflow и немного отладки ИИ <br><br> разработано peiLamed <br><br> продукт из Сьерра-Леоне 🇸🇱 <br><br> свободная Палестина 🇵🇸🇸🇩🇨🇩", //98
+"создано dice b (aka peiLamed / פילמד) <br><br> помощь со Stack Overflow и немного отладки ИИ <br><br> разработано peiLamed <br><br> продукт из Сьерра-Леоне 🇸🇱 <br><br> свободная Палестина 🇵🇸🇸🇩🇨🇩", //98
 "см. указания", //99
 "「」 | 『』 | доступен полноэкранный режим", //100
 "используйте меня вместо :)", //101
@@ -392,7 +392,7 @@ var words = {
     "お使いのブラウザでの方法が正確にわかりません<br>共有メニューやブラウザメニューにある「ホーム画面に追加」または「アプリをインストール」のようなボタンを探してクリックしてください",
     "「nostalgiaWaveをインストール」をクリック<br>",
     "このボタンを押してください <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "制作：ddyson bang-ura (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
+    "制作：dice b (別名 peiLamed / פילמד) <br><br> 協力：stack overflow ＆ aiデバッグ少々 <br><br> デザイン：peiLamed <br><br> シエラレオネ産 🇸🇱 <br><br> パレスチナに自由を 🇵🇸🇸🇩🇨🇩",
     "手順を見る", "「」 | 『』 | 全画面表示が利用可能です", "代わりにこちらを使ってください :)", "動画を共有",
     "動画を読み込み中", "ありがとう :)", "コピーしました、共有ありがとう :)", "懐かしい過去をお楽しみください",
     "お使いのブラウザでは共有機能が動作しないため、代わりにリンクをコピーしました。いずれにせよ、共有してくれてありがとう！", //107
@@ -434,7 +434,7 @@ var words = {
     "أو انقر على قائمة المشاركة --> 'تثبيت التطبيق' أو 'إضافة إلى الشاشة الرئيسية'", "انقر على قائمة المشاركة --> إضافة إلى الشاشة الرئيسية",
     "لست متأكداً تماماً من كيفية القيام بذلك على متصفحك <br> მაგრამ ابحث عن زر يشبه 'إضافة إلى الشاشة الرئيسية' أو 'تثبيت التطبيق' في قائمة المشاركة أو قائمة المتصفح وانقر عليه",
     "انقر فوق 'تثبيت nostalgiaWave'<br>", "اضغط على هذا الزر <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "صنع بواسطة ddyson bang-ura (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
+    "صنع بواسطة dice b (المعروف بـ peiLamed / פילמד) <br><br> مساعدة من stack overflow وقليل من تصحيح الأخطاء بالذكاء الاصطناعي <br><br> تصميم peiLamed <br><br> منتج من سيراليون 🇸🇱 <br><br> الحرية لفلسطين 🇵🇸🇸🇩🇨🇩",
     "انظر التوجيهات", "「」 | 『』 | الشاشة الكاملة متوفرة", "استخدم هذا بدلاً من ذلك :)", "مشاركة الفيديو",
     "الفيديو الخاص بك قيد التحميل", "شكراً على أي حال :)", "تم النسخ، شكراً للمشاركة :)", "استمتع بلمحة من الماضي",
     "المشاركة لا تعمل على متصفحك، لذلك قمت بنسخ الرابط بدلاً من ذلك. شكراً للمشاركة على أي حال!", //107
@@ -474,7 +474,7 @@ var words = {
     "haz clic en el menú compartir --> añadir a la pantalla de inicio",
     "no estoy seguro de cómo hacerlo en tu navegador <br> pero busca un botón tipo 'añadir a la pantalla de inicio' o 'instalar aplicación' en el menú de compartir o del navegador y haz clic en él",
     "haz clic en 'instalar nostalgiaWave'<br>", "presiona este botón <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "hecho por ddyson bang-ura (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
+    "hecho por dice b (alias peiLamed / פילמד) <br><br> ayuda de stack overflow y un poco de depuración con ia <br><br> diseñado por peiLamed <br><br> producto de sierra leona 🇸🇱 <br><br> palestina libre 🇵🇸🇸🇩🇨🇩",
     "ver instrucciones", "「」 | 『』 | pantalla completa disponible", "usa este en su lugar :)", "compartir video",
     "tu video se está cargando", "gracias por cierto :)", "copiado, gracias por compartir :)", "disfruta de este viaje al pasado",
     "Compartir no funciona en tu navegador, así que copié el enlace en su lugar. ¡Gracias por compartir de todos modos!", //107
@@ -516,7 +516,7 @@ var words = {
     "clique sur le menu de partage --> ajouter à l'écran d'accueil",
     "je ne sais pas exactement comment faire sur ton navigateur <br> mais cherche un bouton du style 'ajouter à l'écran d'accueil' ou 'installer l'app' dans le menu de partage ou du navigateur",
     "clique sur 'installer nostalgiaWave'<br>", "appuie sur ce bouton <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "fait par ddyson bang-ura (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
+    "fait par dice b (alias peiLamed / פילמד) <br><br> aide de stack overflow & un peu de débogage par ia <br><br> conçu par peiLamed <br><br> produit de sierra leone 🇸🇱 <br><br> palestine libre 🇵🇸🇸🇩🇨🇩",
     "voir les instructions", "「」 | 『』 | plein écran disponible", "utilise-moi plutôt :)", "partager la vidéo",
     "ta vidéo est en cours de chargement", "merci au fait :)", "copié, merci pour le partage :)", "profite de ce retour dans le passé",
     "Le partage ne fonctionne pas sur votre navigateur, j'ai donc copié le lien à la place. Merci pour le partage en tout cas !", //107
@@ -558,7 +558,7 @@ var words = {
     "klicke auf das teilen-menü --> zum startbildschirm hinzufügen",
     "ich bin mir nicht sicher, wie das auf deinem browser geht <br> aber suche nach einer option wie 'zum startbildschirm hinzufügen' oder 'app installieren' im teilen- oder browsermenü",
     "klicke auf 'nostalgiaWave installieren'<br>", "klicke diesen button <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "erstellt von ddyson bang-ura (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
+    "erstellt von dice b (alias peiLamed / פילמד) <br><br> hilfe von stack overflow & ein bisschen ki-debugging <br><br> design von peiLamed <br><br> produkt aus sierra leone 🇸🇱 <br><br> freies palästina 🇵🇸🇸🇩🇨🇩",
     "anleitung anzeigen", "「」 | 『』 | vollbild verfügbar", "nutz mich stattdessen :)", "video teilen",
     "dein video lädt", "danke übrigens :)", "kopiert, danke fürs teilen :)", "genieße diesen blick in die vergangenheit",
     "Teilen funktioniert in deinem Browser nicht, deshalb habe ich stattdessen den Link kopiert. Danke fürs Teilen übrigens!", //107
@@ -601,7 +601,7 @@ var words = {
     "clique no menu de compartilhamento --> adicionar à tela inicial",
     "não tenho certeza de como fazer no seu navegador <br> mais procure por um botão como 'adicionar à tela inicial' ou 'instalar aplicativo' no menu de compartilhamento ou do navegador",
     "clique em 'instalar nostalgiaWave'<br>", "pressione este botão <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "feito por ddyson bang-ura (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
+    "feito por dice b (vulgo peiLamed / פילמד) <br><br> ajuda do stack overflow & um pouco de depuração por ia <br><br> projetado por peiLamed <br><br> produto de serra leoa 🇸🇱 <br><br> palestina livre 🇵🇸🇸🇩🇨🇩",
     "ver instruções", "「」 | 『』 | tela cheia disponível", "use-me em vez disso :)", "compartir vídeo",
     "seu vídeo está carregando", "obrigado aliás :)", "copiado, obrigado por compartilhar :)", "aproveite essa viagem ao passado",
     "O compartilhamento não funciona no seu navegador, então copiei o link. Obrigado por compartilhar de qualquer forma!", //107
@@ -638,7 +638,7 @@ var words = {
     "或点击分享菜单 --> '添加到 dock'", "或点击分享菜单 --> '安装应用' 或 '添加到主屏幕'", "点击分享菜单 --> 添加到主屏幕",
     "我不确定在您的浏览器上具体如何操作 <br> 但请在分享菜单或浏览器菜单中寻找类似“添加到主屏幕”或“安装应用”的按钮并点击它",
     "点击“安装 nostalgiaWave”<br>", "点击此按钮 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "制作者：ddyson bang-ura (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
+    "制作者：dice b (又名 peiLamed / פילמד) <br><br> 得到了来自 stack overflow 的帮助以及少许 ai 调试 <br><br> 设计者：peiLamed <br><br> 塞拉利昂产品 🇸🇱 <br><br> 自由巴勒斯坦 🇵🇸🇸🇩🇨🇩",
     "查看指南", "「」 | 『』 | 全屏可用", "用我替代吧 :)", "分享视频", "您的视频正在加载", "顺便谢啦 :)",
     "已复制，顺便谢谢分享 :)", "享受这段来自过去的旧时光吧", "分享功能在您的浏览器上无法使用，因此我复制了链接。无论如何，谢谢您的分享！", //107
     "搜索相似", "搜索历史", "搜索全新", "正在搜索...", "没用", "选中此链接并复制 :)", "顺便说一下，如果你 (___)，这些数据就会消失。<br>若要永久保存数据，请点击“导出”按钮并查看文件名 :)", //114
@@ -679,7 +679,7 @@ var words = {
     "साझा करें मेनू पर क्लिक करें --> होम स्क्रीन पर जोड़ें",
     "मुझे पक्का नहीं पता कि आपके ब्राउज़र पर यह कैसे करना है <br> लेकिन साझा करें मेनू या ब्राउज़र मेनू में 'होम स्क्रीन पर जोड़ें' या 'ऐप इंस्टॉल करें' जैसा बटन ढूंढें और उस पर क्लिक करें",
     "'nostalgiaWave इंस्टॉल करें' पर क्लिक करें<br>", "इस बटन को दबाएं <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "ddyson bang-ura (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
+    "dice b (उर्फ peiLamed / פילמד) द्वारा निर्मित <br><br> स्टैक ओवरफ़्लो और थोड़ी एआई डिबगिंग से मदद मिली <br><br> peiLamed द्वारा डिज़ाइन किया गया <br><br> सिएरा लियोन का उत्पाद 🇸🇱 <br><br> स्वतंत्र फ़िलिस्तीन 🇵🇸🇸🇩🇨🇩",
     "निर्देश देखें", "「」 | 『』 | पूर्ण स्क्रीन उपलब्ध है", "इसके बजाय मेरा उपयोग करें :)", "वीडियो साझा करें",
     "आपका वीडियो लोड हो रहा है", "वैसे धन्यवाद :)", "कॉपी कर लिया गया, साझा करने के लिए धन्यवाद :)", "अतीत के इस झोंके का आनंद लें",
     "साझा करना आपके ब्राउज़र पर काम नहीं करता है, इसलिए मैंने इसकी जगह लिंक कॉपी कर लिया है। फिर भी साझा करने के लिए धन्यवाद!", //107
@@ -721,7 +721,7 @@ var words = {
     "የማጋሪያ ምናሌውን ጠቅ ያድርጉ --> ወደ መነሻ ማያ ገጽ አክል",
     "በእርስዎ አሳሽ ላይ እንዴት እንደሚያደርጉት እርግጠኛ አይደለሁም <br> ነገር ግን በማጋሪያ ምናሌው ወይም በአሳሽ ምናሌው ውስጥ 'ወደ መነሻ ማያ ገጽ አክል' ወይም 'መተግበሪያ ጫን' የሚል ቁልፍ ይፈልጉ እና ጠቅ ያድርጉት",
     "'nostalgiaWave ጫን' የሚለውን ጠቅ ያድርጉ<br>", "ይህንን ቁልፍ ይጫኑ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "በ ddyson bang-ura (በቅጽል ስሙ peiLamed / פילמד) የተሰራ <br><br> ከ stack overflow እና ጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peiLamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
+    "በ dice b (በቅጽል ስሙ peiLamed / פילמד) የተሰራ <br><br> ከ stack overflow እና ጥቂት የ ai ማረሚያ እገዛ የተገኘ <br><br> በ peiLamed የተነደፈ <br><br> የሴራሊዮን ምርት 🇸🇱 <br><br> ነፃ ፍልስጤም 🇵🇸🇸🇩🇨🇩",
     "መመሪያዎችን ይመልከቱ", "「」 | 『』 | ሙሉ ማያ ገጽ ይገኛል", "በምትኩ እኔን ተጠቀም :)", "ቪዲዮ አጋራ",
     "ቪዲዮዎ በመጫን ላይ ነው", "ለማንኛውም አመሰግናለሁ :)", "ተቀድቷል፣ ስላጋሩ እናመሰግናለን :)", "ከቀደመው ጊዜ በዚህ አስደሳች ጊዜ ይደሰቱ",
     "ማጋራት በእርስዎ አሳሽ ላይ አይሰራም፣ ስለዚህ በምትኩ ሊንኩን ቀድቼዋለሁ። ለማንኛውም ስላጋሩ እናመሰግናለን!", //107
@@ -759,7 +759,7 @@ var words = {
     "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⵏⵖ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ'", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ --> ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ",
     "ⵓⵔ ⵙⵙⵉⵏⵅ ⵎⴰⵏⵎⴽ ⴰⴷ ⵜ ⵜⴳⴷ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ <br> ⵎⴰⵛⴰ ⴰⵔⵣⴰ ⴼ ⵓⵇⴼⵍ ⴰⵎ 'ⴰⵔⵏⵓ ⵙ ⵓⵙⴽⵔⵉⵏ ⴰⵎⵣⵡⴰⵔⵓ' ⵏⵖ 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ' ⴳ ⵜⵍⴳⴰⵎⵜ ⵓⴱⴹⴰ ⵏⵖ ⵓⵎⵙⵏⴼﻠول ⵜⴽⵍⵉⴽⵢⴷ ⴼⵍⴰⵙ",
     "ⵜⴽⵍⵉⴽⵢ ⴼ 'ⵙⴱⴷⴷ nostalgiaWave'<br>", "ⵜⴽⵍⵉⴽⵢ ⴼ ⵓⵇⴼⵍ ⵡⴰ <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "ⵉⵜⵢⵓⵙⴽⴰⵔ ⵙ ⵓⴼⵓⵙ ⵏ ddyson bang-ura (ⵉⵙⵎ ⵏⵏⵙ ⵢⴰⴹⵏ peiLamed / פילמד) <br><br> ⵜⴰⵡⵉⵣⴰ ⵙⴳ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ⵓⵙⴳⴳⴷ ⵙ ai <br><br> ⴰⵙⵓⵏⴼⵔ ⵏ peiLamed <br><br> ⴰⴼⴰⵔⵉⵙ ⵏ ⵙⵉⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⴰⵍⴰⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
+    "ⵉⵜⵢⵓⵙⴽⴰⵔ ⵙ ⵓⴼⵓⵙ ⵏ dice b (ⵉⵙⵎ ⵏⵏⵙ ⵢⴰⴹⵏ peiLamed / פילמד) <br><br> ⵜⴰⵡⵉⵣⴰ ⵙⴳ stack overflow ⴷ ⵉⵎⵉⴽ ⵏ ⵓⵙⴳⴳⴷ ⵙ ai <br><br> ⴰⵙⵓⵏⴼⵔ ⵏ peiLamed <br><br> ⴰⴼⴰⵔⵉⵙ ⵏ ⵙⵉⵔⴰⵍⵢⵓⵏ 🇸🇱 <br><br> ⴼⴰⵍⴰⵙⵟⵉⵏ ⵜⴰⴷⵔⴼⵉⵜ 🇵🇸🇸🇩🇨🇩",
     "ⵥⵕ ⵉⵙⵡⴰⵍⴰⵜⵏ", "「」 | 『』 | ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ ⵉⵍⵍⴰ", "ⵙⵡⵓⵔⵉ ⵙⵉⵙ ⴳ ⵡⴰⵙⴰ :)", "ⴱⴹⴰ ⵉⴼⵉⴷⵢⵓ", "ⵉⴼⵉⴷⵢⵓ ⵏⵏⴽ ⵉⵙⴰⵍⴰⵢ",
     "ⵜⴰནⵎⵎⵉⵔⵜ ⴱⵄⴷ :)", "ⵜⵢⵓⵙⴰⵖⵅ, ⵜⴰ難ⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ :)", "ⵜⵙⵜⵎⵜⵄ ⵙ ⵜⴰⵡարգⵉⵜ ⴰ ⵙⴳ ⵓⵎⵣⵔⵓⵢ",
     "ⴰⴱⴹⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉ ⴳ ⵓⵎⵙⵏⴼﻠⵓﻠ ⵏⵏⴽ, ⴰይⴰ ଖⴼ ⵏⵙⴰⵖⵅ ⴰⵙⵖⵏ. ⵜⴰⵏⵎⵎⵉⵔⵜ ⴼ ⵓⴱⴹⴰ!", //107
@@ -874,7 +874,7 @@ var words = {
 "a nɔ rili shɔ aw fɔ du am na yu brawza <br> bɔt luk fɔ wan 'add to homescreen'-esque ɔ 'install app'-esque bɔtin na di sheri mɛnyu ɔ brawza mɛnyu ɛn klik dat", //95 
 "klik 'instɔl nostaljiaWev'<br>", //96 
 "hit dis bɔtin <br> <bɔtin id='nstFirefoxFullscreen'>「 」</bɔtin>", //97 
-"we ddyson bang-ura (aka peiLamed / פילמד) mek am <br><br> ɛp frɔm stak ɔvaflɔ & smɔl bit fɔ ai dibɔg <br><br> we peiLamed disayn am <br><br> prodakt fɔ siera liɔn 🇸🇱 <br><br> fri palestayn 🇵🇸🇸🇩🇨🇩", //98 
+"we dice b (aka peiLamed / פילמד) mek am <br><br> ɛp frɔm stak ɔvaflɔ & smɔl bit fɔ ai dibɔg <br><br> we peiLamed disayn am <br><br> prodakt fɔ siera liɔn 🇸🇱 <br><br> fri palestayn 🇵🇸🇸🇩🇨🇩", //98 
 "luk di dairekshɔn dɛn", //99 
 "「」 | 『』 | fulskrin de", //100 
 "yuz mi insted :)", //101 
@@ -927,7 +927,7 @@ var words = {
     "또는 공유 메뉴 --> '앱 설치' 또는 '홈 화면에 추가'를 클릭하세요", "공유 메뉴 클릭 --> 홈 화면에 추가",
     "사용 중인 브라우저에서 어떻게 하는지 정확히 모르겠습니다 <br> 하지만 공유 메뉴나 브라우저 메뉴에서 '홈 화면에 추가' 또는 '앱 설치'와 같은 버튼을 찾아 클릭해 보세요",
     "'nostalgiaWave 설치'를 클릭하세요<br>", "이 버튼을 누르세요 <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "제작: ddyson bang-ura (별명 peiLamed / פילמד) <br><br> stack overflow의 도움 및 약간의 AI 디버깅 <br><br> 디자인: peiLamed <br><br> 시에라리온의 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
+    "제작: dice b (별명 peiLamed / פילמד) <br><br> stack overflow의 도움 및 약간의 AI 디버깅 <br><br> 디자인: peiLamed <br><br> 시에라리온의 제품 🇸🇱 <br><br> 자유 팔레스타인 🇵🇸🇸🇩🇨🇩",
     "안내 보기", "「」 | 『』 | 전체 화면 이용 가능", "대신 저를 사용하세요 :)", "동영상 공유",
     "동영상을 로딩 중입니다", "어쨌든 고마워요 :)", "복사되었습니다, 공유해 주셔서 고마워요 :)", "지나간 추억을 즐겨보세요",
     "사용 중인 브라우저에서는 공유 기능이 작동하지 않아 대신 링크를 복사했습니다. 어쨌든 공유해 주셔서 고마워요!", //107
@@ -967,7 +967,7 @@ var words = {
     "או לחץ על תפריט השיתוף --> 'התקן אפליקציה' או 'הוסף למסך הבית'", "לחץ על תפריט השיתוף --> הוסף למסך הבית",
     "אני לא לגמרי בטוח איך עושים את זה בדפדפן שלך <br> אבל חפש כפתור בסגנון 'הוסף למסך הבית' או 'התקן אפליקציה' בתפריט השיתוף או הדפדפן ולחץ עליו",
     "לחץ על 'התקן את nostalgiaWave'<br>", "לחץ על כפתור זה <br> <button id='nstFirefoxFullscreen'>「 」</button>",
-    "נוצר על ידי ddyson bang-ura (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩 <br> עם פלשתינה חי",
+    "נוצר על ידי dice b (ידוע גם כ-peiLamed / פילמד) <br><br> עזרה מ-stack overflow וקצת ניקוי באגים של ai <br><br> עוצב על ידי peiLamed <br><br> מוצר של סיירה לאון 🇸🇱 <br><br> פלסטין חופשית 🇵🇸🇸🇩🇨🇩 <br> עם פלשתינה חי",
     "ראה הנחיות", "「」 | 『』 | מסך מלא זמין :)", "השתמש בי במקום :)", "שתף סרטון", "הסרטון שלך נטען",
     "תודה בכל מקרה", "הועתק, תודה על השיתוף :)", "תהנה מההבזק הזה מהעבר",
     "שיתוף לא עובד בדפדפן שלך, אז העתקתי את הקישור במקום. תודה על השיתוף בכל מקרה!", //107
