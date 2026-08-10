@@ -35,7 +35,14 @@ if(isPWA()){
 
 
 var clearItInterval = setInterval(function(){
-    
+    try{
+    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector('.primaryButton').checkVisibility()){
+        player.pauseVideo();
+       }
+    }catch(e){
+        console.log(e);
+    }
+    try{
     if(true){
 		try{
             var TE = document.querySelector('#textEnter');
@@ -74,6 +81,10 @@ var clearItInterval = setInterval(function(){
             document.querySelector('.teFlexx').querySelector('#teClear').remove();
         }
     }
+}
+catch(e){
+
+}
     if(document.querySelector('#playground').checkVisibility()){
         for(var i of document.querySelectorAll('.pgButtonHold')){
             try{
@@ -91,6 +102,7 @@ console.log('old'+message)
 }
 var allowAd = true;
 var rateLimit = true;
+var tetVar = false;
 var words = {
   "en-US": [
     "by", //0
@@ -1196,6 +1208,7 @@ function fallbackShare(data) {
   }
 }
 function endFollow() {
+    if(document.querySelector('#swipeScreen').style.opacity == "1"){
     SF = false;
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#creator')) {
         editModeAnimation();
@@ -1279,8 +1292,10 @@ function endFollow() {
     document.querySelector('#swipeScreen').style.opacity = 0;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
     document.querySelector('#swDrag').innerText = words[navLang][38].split('+')[0];
-    setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
+    document.querySelector('#swipeScreen').style.opacity = "0";
+    setTimeout(function () {  document.querySelector('#swipeScreen').style.display = "none";}, 500)
 }
+    }
 }
 var Arr = [];
 var posinar = -1;
@@ -1307,7 +1322,7 @@ function endSwipeFunc(){
     document.querySelector('#swipeScreen').style.opacity = 0;
     document.querySelector('#swFirst').append(document.querySelector('#swDrag'));
     document.querySelector('#swDrag').innerText = "";
-    setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 100)
+    setTimeout(function () { document.querySelector('#swipeScreen').style.display = "none"; }, 500)
 }
 var hTFInterval;
 var hTFInt = 0;
@@ -1705,6 +1720,7 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
+    tetVar = true;
     //var bB = [...document.querySelector('#playground').querySelectorAll('button')];
    // bB[bB.length - 1].setAttribute('class','primaryButton');
     
@@ -1867,6 +1883,7 @@ avcp = Ads[1];
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+    tetVar = true;
     try{
          for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 0;
@@ -1976,13 +1993,13 @@ document.querySelector('#playground').style.opacity = 0;
                     document.querySelector("#teTitle").style.opacity = 1;
                 }
                 catch (e) {
-                    console.log(e);
+                    console.error(e);
                 }
                     try {
                         document.querySelector("#teButton").style.opacity = 1;
                     }
                     catch (e) {
-                        console.log(e);
+                        console.error(e);
                     }
             doneAnimation = true;
             uv.style.top = "calc(-50dvh + 1.5em)";
@@ -1991,6 +2008,18 @@ document.querySelector('#playground').style.opacity = 0;
             ul.style.top = "50%";
             //document.querySelector('#fullscreenButton').style.display = "none";
             if (!neww) {
+                 try {
+                    document.querySelector("#teTitle").style.opacity = 1;
+                }
+                catch (e) {
+                    console.error(e);
+                }
+                    try {
+                        document.querySelector("#teButton").style.opacity = 1;
+                    }
+                    catch (e) {
+                        console.error(e);
+                    }
                 editMode = true;
                 swapTe(shVar[isSharing][0], function () {
                     if (doneAnimation) {
@@ -2110,7 +2139,7 @@ function nameClick(a){
     if(a == "false"){
         evaluateFullscreenReminder(101);
     }else{
-        window.open('https://ddyson08.github.io/nostalgiaTok/index.html')
+        window.open('nostalgiawave.me')
     }
 }
 var shareVarr;
@@ -2590,6 +2619,7 @@ function swapTe(n, f, m, g, t) {
         is8 = false;
     }
     var ne = document.querySelector("#textEnter");
+    ne.style.transition = (0.5*nextIntt)+"s";
     var nee = ne.cloneNode(true);
     nee.style.left = "100dvw";
     if (n == 15 || n == 17) {
@@ -2731,10 +2761,10 @@ function swapTe(n, f, m, g, t) {
                             document.body.append(newMess);
                             setTimeout(function(){
                             newMess.style.opacity = 1;
-                            },250);
-                        },500);
+                            },250*nextIntt);
+                        },500*nextIntt);
                         }
-                },600);
+                },600*nextIntt);
             }, 50);
 
         }
@@ -2820,7 +2850,7 @@ function swapTe(n, f, m, g, t) {
         }
         document.querySelector('#teButton').setAttribute('onclick', "var jaeee = " + g + "; jaeee();");
         stopdouble = false;
-    }, 250));
+    }, 250*nextIntt));
     // }
 }
 var userName = "";
@@ -2844,8 +2874,9 @@ async function saveNew(val) {
 }
 catch(e){}
 }
-
+var nextIntt = 1;
 function nextSaved() {
+    var nextIntt = 0.5;
     console.warn("1 cleanup:", document.querySelector('#textEnter').innerHTML);
     if (!happeningNow) {
         happeningNow = true;
@@ -2946,7 +2977,7 @@ function nextSaved() {
                     funnyC = 1; newConsoleLog('HERE');
                     happeningNow = false;
                 }, 50);
-            }, 900);
+            }, 400);
         }, 10);
         setTimeout(function () {
             var ooh = document.querySelector('#uLine');
@@ -2958,7 +2989,7 @@ function nextSaved() {
                 ooh.style.height = "calc(50dvh - (var(--ballSize) / 2))";
                 document.getElementById('uvula').style.transition = "opacity 0s, top 0s, z-index 0s, background-color 0s, margin-top 0s, width 0s, height 0s, position 0s, left 0s, margin-left 0s, filter 0s";
                 console.warn("7 cleanup:", document.querySelector('#textEnter').innerHTML);
-            }, 500);
+            }, 250);
         }, 50)
         //document.getElementById('uvula').style.transition = "opacity 0s, top 0s, z-index 0s, background-color 0s, margin-top 0s, width 0s, height 0s, position 0s, left 0s, margin-left 0s, filter 0s";
     }, tempvar)
@@ -3039,7 +3070,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
-            }, 1100);
+            }, 600);
         } else {
             setTimeout(function () {
                 console.warn("9 cleanup:", document.querySelector('#textEnter').innerHTML);
@@ -3067,7 +3098,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                         i.style.width = (parseFloat(i.style.width) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                         i.style.height = (parseFloat(i.style.height) / parseFloat(window.getComputedStyle(document.querySelector("#allHold")).getPropertyValue('--ballSize'))) * 100 + "%";
                     }
-            }, 1100);
+            }, 600);
         }
     }
 }
@@ -3143,6 +3174,7 @@ user = {
 }
 var ra = false;
 function runAnimation(bypass, bypass2) {
+    tetVar = false;
     teby = document.querySelector('#textEnter').getBoundingClientRect().y;
      for (var j of [...document.querySelectorAll('.videoOrbit')]) {
         j.remove();
@@ -3166,6 +3198,9 @@ function runAnimation(bypass, bypass2) {
     if (bypass) {
         multiplier = 0.1
     }
+    if(bypass || bypass2){
+     multiplier = 0.5;
+    } 
  if (false) {
       //  await appendToStringStore('[nostalgiaTokSPLIT][NOSTALGIATOK973LASTTIMEINUSERLANGUAGE][NTS2]' + JSON.stringify(user))
  } else {
@@ -3491,9 +3526,16 @@ try{
                                                                     var TOOO2 = TOOO.cloneNode(true);
                                                                     TOOO.replaceWith(TOOO2);
                                                                     TOOO = document.querySelector('#touchOverlay');
+                                                                    if(tetVar){
+                                                                        TOOO.style.display = "none";
+                                                                    }
 document.querySelector('.uBall').style.overflow = "hidden";
 
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
+                                                                    if(tetVar){
+                                                                         document.querySelector('#teTitle').style = "opacity:1; transition: 1s;";
+                                                                    }
+                                                                    document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
                                                                   TOOO.addEventListener('touchstart', function (event) {
                                                                     if(event.touches.length > 1) {
                                                         rateLimit = false;
@@ -3738,7 +3780,7 @@ function requestTheFullscreen(a) {
     document.querySelector('#titleBar').style.zIndex = "0";
     touchOverlay.style.zIndex = "155";
         fullscreenButton.setAttribute('onclick', 'requestTheFullscreen(false)');
-        fullscreenButton.innerText = '↖';
+        fullscreenButton.innerText = ({'no': '↘','yes': '↖'})[fullsc];
         for (var yes of [...document.querySelectorAll('.yes')]) {
             yes.style.opacity = 1;
         }
@@ -3980,6 +4022,7 @@ howToFullscreen(true, [117,119]);
 
 }
 function nvm() {
+    nextIntt = 1;
     if (!dontRun) {
         posinar = -1;
         document.querySelector('#b4').innerText += "✅";
@@ -4463,7 +4506,10 @@ setTimeout(function(){document.querySelector("input").focus()},1000);
 function displaySwipe(lr) {
     document.querySelector('#touchOverlay').style.display = "none";
     var swsc = document.querySelector('#swipeScreen');
+    swsc.style.display = "block";
+    setTimeout(function(){
     swsc.setAttribute('style', `
+        display: block;
     opacity: 1;
     left: 0;
     top: var(--margin);
@@ -4472,8 +4518,10 @@ function displaySwipe(lr) {
     width: 100dvw;
     height: calc(100dvh - var(--margin));
     padding: calc(var(--margin));
+    transition: 0.5s;
    `)
-    swsc.style.display = "block";
+    },500);
+   
     // document.querySelector('#swDrag').style.width = "calc(100dvw - (2 * var(--margin)) - " + document.querySelector('#swDrag').getBoundingClientRect().x + "px)";
    
     setTimeout(function () {
@@ -5264,7 +5312,7 @@ function validateDate(tex) {
         }
         //spring
         if (text.includes(words[navLang][39])) {
-            tbr = "03/15/XXXX ~ 05/31/XXXX"
+            tbr = "03/01/XXXX ~ 05/31/XXXX"
         }
         //summer
         if (text.includes(words[navLang][40])) {
@@ -5276,7 +5324,7 @@ function validateDate(tex) {
         }
         //winter
         if (text.includes(words[navLang][42])) {
-            tbr = "12/01/XXXX ~ 03/14/XXXY"
+            tbr = "12/01/XXXX ~ 03/01/XXXY"
         }
         if (text.includes(words[navLang][43])) {
             tbr = "01/01/XXXX ~ 03/31/XXXX"
@@ -5285,7 +5333,7 @@ function validateDate(tex) {
             tbr = "04/01/XXXX ~ 09/30/XXXX"
         }
         if (text.includes(words[navLang][45])) {
-            tbr = "10/01/XXXX ~ 12/31/XXXX"
+            tbr = "10/01/XXXX ~ 01/01/XXXY"
         }
         //jan 
         if (text.toLowerCase().includes(words[navLang][46]) || text.includes(words[navLang][46+12])) {
@@ -5497,7 +5545,7 @@ function backValidateDate(tex, first) {
       if((parseFloat(tex.split('~')[0].split('/')[2]) == (parseInt(tex.split('~')[1].split('/')[2])-1)) && tex.split('~')[0].includes('01/01/') && tex.split('~')[1].includes('01/01/')){
         return parseFloat(tex.split('~')[0].split('/')[2]);
       }
-        var retValue = backValidateDate(tex.split('~')[0], true) + "- " + backValidateDate(tex.split('~')[1], false);
+        var retValue = backValidateDate(tex.split('~')[0], true) + " - " + backValidateDate(tex.split('~')[1], false);
         return retValue;
     } else {
         var tbr = "";
@@ -5511,29 +5559,9 @@ function backValidateDate(tex, first) {
         //spring
         if(first){
         if (text.includes("03/15/"+theYear)) {
-            tbr = words[navLang][39];
+            tbr = words[navLang][48];
         }
-        //summer
-        if (text.includes("06/01/"+theYear)) {
-            tbr = words[navLang][40];
-        }
-        //fall
-        if (text.includes("09/01/"+theYear)) {
-            tbr = words[navLang][41]
-        }
-        //winter
-        if (text.includes("12/01/"+theYear)) {
-            tbr = words[navLang][42]
-        }
-        if (text.includes("01/01/"+theYear)) {
-            tbr = words[navLang][43];
-        }
-        if (text.includes("04/01/"+theYear)) {
-            tbr = words[navLang][44];
-        }
-        if (text.includes("10/01/"+theYear)) {
-            tbr = words[navLang][45];
-        }
+        
         //jan 
         if (text.toLowerCase().includes("01/01/"+theYear)) {
             tbr = words[navLang][46];
@@ -5585,33 +5613,10 @@ function backValidateDate(tex, first) {
         tbr+=" "+theYear;
         //quarantine
         if (text.includes("03/17/2020")) {
-            tbr = words[navLang][58 + 12];
+            tbr = words[navLang][48] + "2020";
         }
     }else{
-         if (text.includes("05/31/"+theYear)) {
-            tbr = words[navLang][39];
-        }
-        //summer
-        if (text.includes("09/01/"+theYear)) {
-            tbr = words[navLang][40];
-        }
-        //fall
-        if (text.includes("11/30/"+theYear)) {
-            tbr = words[navLang][41];
-        }
-        //winter
-        if (text.includes("03/14/"+theYear)) {
-            tbr = words[navLang][42];
-        }
-        if (text.includes("03/31/"+theYear)) {
-            tbr = words[navLang][43];
-        }
-        if (text.includes("09/30/"+theYear)) {
-            tbr = words[navLang][44];
-        }
-        if (text.includes("02/31/"+theYear)) {
-            tbr = words[navLang][45];
-        }
+         
         //jan 
         if (text.toLowerCase().includes("02/01/"+theYear)) {
             tbr = words[navLang][46];
@@ -5997,7 +6002,9 @@ function giveError3() {
         }
     }
      if (event.data == YT.PlayerState.PLAYING) {
-       
+       if(!document.querySelector('#touchOverlay').checkVisibility()){
+        player.pauseVideo();
+       }
         console.error(playPause)
     }
    
