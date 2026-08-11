@@ -2291,8 +2291,8 @@ var shareUrl = decodeURIComponent(urlParams.get('share'));
 if(shareUrl!=="null"){
      
      shareVarr = shareUrl;
-     words[navLang][32] = words[navLang][103];
-     words[navLang][3] = words[navLang][103];
+     words[navLang][32] = " "+words[navLang][103];
+     words[navLang][3] = " "+words[navLang][103];
      isSharing = "true";
      console.log(window.isSharing);
 setTimeout(function(){
