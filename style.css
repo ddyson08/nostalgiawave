@@ -67,7 +67,7 @@ min-width: calc(4 * var(--margin));
 }
 #riseup{
     transition:1s;
-      background: rgba(244, 244, 215, 0.8); /* Semi-transparent background */
+      background: rgba(244, 244, 215, 0.4); /* Semi-transparent background */
   backdrop-filter: blur(10px);          /* Blurs what is behind this div */
   -webkit-backdrop-filter: blur(10px); 
   border-radius:5px;
