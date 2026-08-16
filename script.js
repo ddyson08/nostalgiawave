@@ -1,10 +1,4 @@
- // =======================================================
-// Self-contained IndexedDB Helper Functions
-// =======================================================
-/**
- * Checks if the current browser session is running in a PWA-like display mode.
- * @returns {boolean} True if installed (standalone, fullscreen, or minimal-ui), false otherwise (browser tab).
- */
+//Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 function isPWA() {
     const displayModes = ["fullscreen", "standalone", "minimal-ui"];
 
@@ -31,7 +25,7 @@ if(isPWA()){
     }
     catch(e){} 
 
-// --- Example Usage ---
+
 
 
 var clearItInterval = setInterval(function(){
@@ -126,10 +120,10 @@ var words = {
     "ts plays videos", //18
     "loading...", //19
     "", //20
-    "choose this one&nbsp;-&nbsp;", //21
-    "delete this one&nbsp;", //22
+    "choose this one", //21
+    "delete this one", //22
     "view saved nostalgias", //23
-    "next one&nbsp;-&nbsp;", //24
+    "next one", //24
     "options", //25
     "➢", //26
     "more of ts", //27
@@ -3535,6 +3529,9 @@ document.querySelector('.uBall').style.overflow = "hidden";
                                                                     document.querySelector('#teTitle').style = "opacity:0; transition: 1s;";
                                                                     if(tetVar){
                                                                          document.querySelector('#teTitle').style = "opacity:1; transition: 1s;";
+                                                                        setTimeout(function(){
+                                                                            TOOO.style.display = "block";
+                                                                            },1000);
                                                                     }
                                                                     document.querySelector("#leftButton").setAttribute("onclick", "displaySwipe('l')");
                                                                   TOOO.addEventListener('touchstart', function (event) {
@@ -4072,6 +4069,11 @@ function chooseSaved() {
     ra = true;
     swapTe(15, function () { }, 16, function () { }, true);
     user = JSON.parse((Arr[posinar % Arr.length].split('[NTS2]')[1]))
+    //smart re-arrange technology, were the last used one comes first
+    var toBeMoved = Arr[posinar % Arr.length];
+    Arr.splice((posinar) % Arr.length, 1);
+    Arr.splice(1, 0, toBeMoved);
+    localStorage.setItem('nostalgiaTokSaved', Arr.join('[nostalgiaTokSPLIT]'));
     runAnimation();
     var minHeight;
     var mH = document.querySelector('.uBall').children[Math.ceil(document.querySelector('.uBall').children.length*Math.random())-1];
