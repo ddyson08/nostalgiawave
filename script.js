@@ -1760,6 +1760,7 @@ function pgCancel(text) {
                 document.querySelector('#pgTitle').style.display = "none";
                 document.querySelector("#allHold").style.border = "";
                 requestTheFullscreen({'yes':true,'no':false}[fullsc]);
+				document.querySelector('#touchOverlay').style.display="block";
             }, 500);
         }, 100);
     } else {
