@@ -5791,6 +5791,7 @@ async function requestVideos(value) {
             allVideos = localStorage.getItem('nst_'+userEnc).split('[NSTSPLIT]');
             if(allVideos.length<1){
                 localStorage.removeItem('next_'+userEnc);
+                localStorage.removeItem('nst_'+userEnc);
                 localStorage.removeItem('pag_'+userEnc);
                 if(rateLimit[userEnc]){
                 rateLimit[userEnc] +=1;
