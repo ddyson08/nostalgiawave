@@ -30,7 +30,7 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     try{
-    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector('.primaryButton').checkVisibility()){
+    if(!document.querySelector('#touchOverlay').checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
         player.pauseVideo();
        }
     }catch(e){
