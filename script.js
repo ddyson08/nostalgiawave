@@ -5315,7 +5315,7 @@ function validateDate(tex) {
         }
         //spring
         if (text.includes(words[navLang][39])) {
-            tbr = "03/01/XXXX ~ 05/31/XXXX"
+            tbr = "03/01/XXXX ~ 06/01/XXXX"
         }
         //summer
         if (text.includes(words[navLang][40])) {
@@ -5323,17 +5323,17 @@ function validateDate(tex) {
         }
         //fall
         if (text.includes(words[navLang][41])) {
-            tbr = "09/01/XXXX ~ 11/30/XXXX"
+            tbr = "09/01/XXXX ~ 12/01/XXXX"
         }
         //winter
         if (text.includes(words[navLang][42])) {
             tbr = "12/01/XXXX ~ 03/01/XXXY"
         }
         if (text.includes(words[navLang][43])) {
-            tbr = "01/01/XXXX ~ 03/31/XXXX"
+            tbr = "01/01/XXXX ~ 04/01/XXXX"
         }
         if (text.includes(words[navLang][44])) {
-            tbr = "04/01/XXXX ~ 09/30/XXXX"
+            tbr = "04/01/XXXX ~ 10/01/XXXX"
         }
         if (text.includes(words[navLang][45])) {
             tbr = "10/01/XXXX ~ 01/01/XXXY"
