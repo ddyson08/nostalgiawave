@@ -1,4 +1,26 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
+function setSavedSwipe(){
+document.querySelector('#textEnter').addEventListener('mousedown',function(event){swipeXx = event.clientX});
+document.querySelector('#textEnter').addEventListener('mousemove',function(event){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}});
+document.body.addEventListener('onkeydown', function(event){if(event.keyCode == 39){nextSaved();) if(event.keyCode == 37){backSaved();}});
+document.body.addEventListener("wheel", function(event) {
+    const deltaY = Math.sign(event.deltaY);
+    const deltaX = Math.sign(event.deltaX);
+    if(deltaY > 0 || deltaX > 0){
+        nextSaved();
+    }else{
+        backSaved();
+    }
+});
+}
+
+function endSavedSwipe(){
+document.querySelector('#textEnter').removeEventListener('mousedown')//,function(){swipeXx = event.clientX});
+document.querySelector('#textEnter').removeEventListener('mousemove')//,function(){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}});
+document.body.removeEventListener('onkeydown')//, function(){if(event.keyCode == 37){nextSaved();) if(event.keyCode == 39){backSaved();}});
+document.body.removeEventListener('wheel');
+}
+
 function isPWA() {
     const displayModes = ["fullscreen", "standalone", "minimal-ui"];
 
@@ -2820,7 +2842,7 @@ function swapTe(n, f, m, g, t) {
 
         if (n < 8) {
             if (window.localStorage.getItem('nostalgiaTokSaved') !== null) {
-                nee.innerHTML += `<button style="display: block" id="viewSaved" class = "vs2" onclick="swapTe(19,function(){},25,function(){}); getSaved();">` + words[navLang][23] + `</button>`
+                nee.innerHTML += `<button style="display: block" id="viewSaved" class = "vs2" onclick="swapTe(19,function(){},25,function(){}); getSaved(); setSavedSwipe()">` + words[navLang][23] + `</button>`
             }
             var inputEl = nee.querySelector("input");
             if (editMode) {
@@ -3057,6 +3079,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     clone.style.top = "calc(25% + env(safe-area-inset-top))";
                     clone.style.opacity = "1";
                     clone.style.left = "25%";
+                    
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
                         i.style.transition = "0s";
@@ -3828,6 +3851,63 @@ function removeAllEventListeners(element) {
     return newElement; // Return the new element reference
 }
 var dontRun = false;
+function backSaved(){
+    if (!happeningNow) {
+        happeningNow = true;
+        funnyC = 0;
+        savefunnyn = funnyN;
+         var tempvar = Math.abs(funnyN - (20.94 + Math.floor(funnyN / ((Math.PI)/0.075))*((Math.PI)/0.075))) * 18;
+            //console.log(tempvar +":"+ (15 * ((20.94 + Math.floor(funnyN / ((Math.PI)/0.075))*((Math.PI)/0.075)));
+            const closest0 = (20.94 + Math.floor(funnyN / ((Math.PI)/0.075))*((Math.PI)/0.075));
+            
+        newConsoleLog(savefunnyn + 'soupppppppppp');
+        var msi = setInterval(function () {
+            document.querySelector('#uvula').style.transform = "rotateZ(" + (15 * (Math.cos(0.005 * ((funnyN * 30) * 0.5)))) + "deg)";
+            if (funnyN >= closest0) {
+                funnyN -= 1;
+                if (funnyN < closest0) {
+                    clearInterval(msi);
+                }
+            } else {
+                funnyN += 1;
+                if (funnyN > closest0) {
+                    clearInterval(msi);
+                }
+            }
+
+        }, 18);
+    } else {
+        var tempvar = 0;
+    }
+    setTimeout(function(){
+        var countt = 0;
+        var plLength = document.querySelectorAll(".palestine").length;
+        var plList = [...document.querySelectorAll(".palestine")].reverse().slice(-5);
+        var pal = plList[0];
+        var ubb = document.querySelector('#uBall').getBoundingClientRect;
+        pal.style.transition = "0.5s";
+        pal.style.position = "absolute";
+        pal.style.top = ubb.top + "px";
+        pal.style.left = ubb.left + "px";
+        pal.style.width = ubb.width;
+        pal.style.height = ubb.height;
+        pal.style.opacity = 1;
+                        pal.style.filter = "";
+                        pal.style.backgroundColor = "var(--accent)";
+                        posinar -= 1;
+                        
+    setTimeout(function(){
+        words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
+    var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
+    makeShapes(obj.year, ' ', 'y', false, clone);
+    makeShapes(obj.preferences, ',', 'p', false, clone);
+    makeShapes(obj.topics, ',', 't', false, clone);
+    pal.remove();
+    },500);
+                     
+        
+    },tempvar);
+    }
 function reverseUball() {
     if (!happeningNow) {
         happeningNow = true;
@@ -4020,6 +4100,7 @@ howToFullscreen(true, [117,119]);
 
 }
 function nvm() {
+    endSavedSwipe();
     nextIntt = 1;
     if (!dontRun) {
         posinar = -1;
@@ -4066,6 +4147,7 @@ function delSaved() {
 }catch(e){}
 }
 function chooseSaved() {
+    endSavedSwipe();
     ra = true;
     swapTe(15, function () { }, 16, function () { }, true);
     user = JSON.parse((Arr[posinar % Arr.length].split('[NTS2]')[1]))
