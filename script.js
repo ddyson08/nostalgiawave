@@ -248,7 +248,8 @@ var words = {
 "try deleting some saved nostalgias to free up space.", //124
 "year:", //125
 "creator:", //126
-"topic:" //127
+"topic:", //127
+"swipe this box to cycle thru saves" //128
   ],
   "ru": [
 "от", //0
@@ -2728,6 +2729,7 @@ function swapTe(n, f, m, g, t) {
             b1.setAttribute('class', 'primaryButton');
             b1.setAttribute('id', 'b1');
             b1.innerHTML = words[navLang][24];
+            b1.style.display = "none";
             var b2 = document.createElement('button');
             b2.setAttribute('onclick', 'chooseSaved()');
             b2.setAttribute('class', 'primaryButton');
@@ -3044,11 +3046,12 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
     document.querySelector('#uvula').append(document.querySelector('.uBall'));
     var clone = document.querySelector('.uBall').cloneNode();
     clone.style.zIndex = "1000";
-    words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
+    words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ") - " + words[127] +"</span>"
     var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
     makeShapes(obj.year, ' ', 'y', false, clone);
     makeShapes(obj.preferences, ',', 'p', false, clone);
     makeShapes(obj.topics, ',', 't', false, clone);
+    
    // posinar += 1;
     if (!t) {
         genNext(true, clone, x);
@@ -3079,6 +3082,10 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
                     clone.style.top = "calc(25% + env(safe-area-inset-top))";
                     clone.style.opacity = "1";
                     clone.style.left = "25%";
+                    var oldRot = clone.parentNode.style.transform;
+    oldRot = oldRot.replace("rotate(","").replace(")","");
+    
+                    clone.style.transform="rotate(-"+oldRot+")";
                     
                     clone.setAttribute("special", "true");
                     for (var i of clone.querySelectorAll('.teShape')) {
@@ -3899,9 +3906,10 @@ function backSaved(){
     setTimeout(function(){
         words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
     var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
-    makeShapes(obj.year, ' ', 'y', false, clone);
-    makeShapes(obj.preferences, ',', 'p', false, clone);
-    makeShapes(obj.topics, ',', 't', false, clone);
+    var dqsu = document.querySelector("#uBall")
+    makeShapes(obj.year, ' ', 'y', false, dqsu);
+    makeShapes(obj.preferences, ',', 'p', false, dqsu);
+    makeShapes(obj.topics, ',', 't', false, dqsu);
     pal.remove();
     },500);
                      
