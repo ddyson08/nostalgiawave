@@ -1,7 +1,7 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 function setSavedSwipe(){
 document.querySelector('#textEnter').addEventListener('mousedown',function(event){swipeXx = event.clientX});
-document.querySelector('#textEnter').addEventListener('mousemove',function(event){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}});
+document.querySelector('#textEnter').addEventListener('mousemove',function(event){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}}});
 document.body.addEventListener('onkeydown', function(event){if(event.keyCode == 39){nextSaved();) if(event.keyCode == 37){backSaved();}});
 document.body.addEventListener("wheel", function(event) {
     const deltaY = Math.sign(event.deltaY);
