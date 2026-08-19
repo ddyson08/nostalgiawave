@@ -4,11 +4,11 @@ var swipeInterval = true;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>20){ if(swd<0){nextSaved();}else{backSaved();}}}
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; console.log([event.clientX, swd]); if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
 function sskd(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
 function ssts(event){ if(swipeInterval){
-        swipeInterval = false;swipeXx = event.x} setTimeout(function(){swipeInterval = true;}, 1000)}
+        swipeInterval = false;swipeXx = event.x; console.log(event.x)} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssw(event) {
     if(swipeInterval){
         swipeInterval = false;
