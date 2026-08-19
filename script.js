@@ -2712,11 +2712,14 @@ function swapTe(n, f, m, g, t) {
     try{
     document.querySelector('#teButton').setAttribute('onclick', "var jaeee = " + g + "; jaeee();");
 } catch(e){}
+try{
     if (n !== 7 && document.querySelector('#teButton') !== "undefined") {
         document.querySelector('#teButton').style.display = "block";
     } else {
         document.querySelector('#teButton').style.display = "none";
     }
+    }
+    catch(e){};
     tmo.push(setTimeout(function () {
         if (n >= 19) {
             newConsoleLog("made it >=19");
