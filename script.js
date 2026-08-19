@@ -5,14 +5,14 @@ var swipeInterval = true;
 function setSavedSwipe(){
 document.body.addEventListener('mousedown',function(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.addEventListener('mouseup',function(event){ if(swipeInterval){
-        swipeInterval = false;var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.addEventListener('mouseup',function(event){
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
 document.body.addEventListener('keydown', function(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
 document.body.addEventListener('touchstart',function(event){ if(swipeInterval){
         swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.addEventListener('touchend',function(event){ if(swipeInterval){
-        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.addEventListener('touchend',function(event){ 
+        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
 
 document.body.addEventListener("wheel", function(event) {
     if(swipeInterval){
@@ -33,13 +33,13 @@ setTimeout(function(){swipeInterval = true;}, 1000)
 function endSavedSwipe(){
     document.body.removeEventListener('touchstart',function(event){ if(swipeInterval){
         swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.removeEventListener('touchend',function(event){ if(swipeInterval){
-        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.addEventListener('touchend',function(event){ 
+        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
 
 document.body.removeEventListener('mousedown',function(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.removeEventListener('mouseup',function(event){ if(swipeInterval){
-        swipeInterval = false;var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.addEventListener('mouseup',function(event){
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
 document.body.removeEventListener('keydown',function(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
 document.body.removeEventListener('wheel', function(event) {
