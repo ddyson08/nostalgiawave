@@ -5,7 +5,7 @@ var swipeInterval = true;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}}
 function sskd(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
 function ssts(event){ if(swipeInterval){
@@ -2770,9 +2770,9 @@ try{
             b5.innerHTML = words[navLang][117];
             setTimeout(function () {
                 nee.append(b2);
+                nee.append(b4);
                 nee.append(b1);
                 nee.append(b3);
-                nee.append(b4);
                 nee.append(b5);
                 setTimeout(function(){
                     if(savePerm && !(document.querySelector("#pgTitle").querySelector("button").checkVisibility())){
@@ -3945,8 +3945,11 @@ function backSaved(){
         pal.style.left = ubb.left + "px";
         pal.style.width = ubb.width + "px";
         pal.style.height = ubb.height + "px";
-        pal.style.opacity = 1;
-                        pal.style.filter = "";
+        pal.style.opacity = 0;
+        setTimeout(function(){
+            pal.style.opacity = 1;
+            pal.style.filter = "blur(0px)";
+            }, 150);
                         pal.style.backgroundColor = "var(--accent)";
                         posinar -= 1;
                        
@@ -3972,7 +3975,7 @@ function backSaved(){
    },500);
                      
         
-    },tempvar);
+    },tempvar + 100);
 }
 }
     }
