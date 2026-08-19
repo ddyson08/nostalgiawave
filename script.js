@@ -11,7 +11,7 @@ function sskd(event){if(swipeInterval){
 function ssts(event){ if(swipeInterval){
         swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function sste(event){ 
-        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
+        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}}
 function ssw(event) {
     if(swipeInterval){
         swipeInterval = false;
