@@ -1,9 +1,17 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
+var swipeXx = 0;
+var swipeInterval = true;
 function setSavedSwipe(){
-document.querySelector('#textEnter').addEventListener('mousedown',function(event){swipeXx = event.clientX});
-document.querySelector('#textEnter').addEventListener('mousemove',function(event){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}}});
-document.body.addEventListener('onkeydown', function(event){if(event.keyCode == 39){nextSaved();) if(event.keyCode == 37){backSaved();}});
+document.body.addEventListener('mousedown',function(event){ if(swipeInterval){
+        swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
+document.body.addEventListener('mouseup',function(event){ if(swipeInterval){
+        swipeInterval = false;var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.addEventListener('keydown', function(event){if(swipeInterval){
+        swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
 document.body.addEventListener("wheel", function(event) {
+    if(swipeInterval){
+        swipeInterval = false;
+    
     const deltaY = Math.sign(event.deltaY);
     const deltaX = Math.sign(event.deltaX);
     if(deltaY > 0 || deltaX > 0){
@@ -11,14 +19,32 @@ document.body.addEventListener("wheel", function(event) {
     }else{
         backSaved();
     }
+}
+setTimeout(function(){swipeInterval = true;}, 1000)
 });
 }
 
 function endSavedSwipe(){
-document.querySelector('#textEnter').removeEventListener('mousedown')//,function(){swipeXx = event.clientX});
-document.querySelector('#textEnter').removeEventListener('mousemove')//,function(){var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>100){ if(swd>0){nextSaved();}else{backSaved();}});
-document.body.removeEventListener('onkeydown')//, function(){if(event.keyCode == 37){nextSaved();) if(event.keyCode == 39){backSaved();}});
-document.body.removeEventListener('wheel');
+document.body.removeEventListener('mousedown',function(event){ if(swipeInterval){
+        swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
+document.body.removeEventListener('mouseup',function(event){ if(swipeInterval){
+        swipeInterval = false;var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.removeEventListener('keydown',function(event){if(swipeInterval){
+        swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
+document.body.removeEventListener('wheel', function(event) {
+    if(swipeInterval){
+        swipeInterval = false;
+    
+    const deltaY = Math.sign(event.deltaY);
+    const deltaX = Math.sign(event.deltaX);
+    if(deltaY > 0 || deltaX > 0){
+        nextSaved();
+    }else{
+        backSaved();
+    }
+}
+setTimeout(function(){swipeInterval = true;}, 1000)
+});
 }
 
 function isPWA() {
@@ -2203,16 +2229,7 @@ window.onload = function () {
 // Posted by Lucio Paiva, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-07-27, License - CC BY-SA 4.0
 
-document.body.addEventListener("wheel", event => {
-    if(document.querySelector('#leftButton').checkVisibility()){
-    const delta = Math.sign(event.deltaY);
-    if(delta > 0){
-        swipeUp();
-    }else{
-        swipeDown();
-    }
-}
-});
+
 
     setInterval(function(){
     try{
@@ -2692,7 +2709,9 @@ function swapTe(n, f, m, g, t) {
         }
     }
     ne.style.left = "-100dvw";
+    try{
     document.querySelector('#teButton').setAttribute('onclick', "var jaeee = " + g + "; jaeee();");
+} catch(e){}
     if (n !== 7 && document.querySelector('#teButton') !== "undefined") {
         document.querySelector('#teButton').style.display = "block";
     } else {
@@ -2986,7 +3005,7 @@ function nextSaved() {
                 Gaza.style.filter = "blur(0.25em)";
                 Gaza.style.width = "100dvw";
                 Gaza.style.height = "100dvh";
-                genNext(false, false, true);
+                genNext(false, false, true, true);
                 var nBb = document.createElement('button'); nBb.setAttribute('id', 'teButton'); document.querySelector('#textEnter').append(nBb);
                 // document.querySelector('.uBall').style.filter = "";
                 swapTe(20, function () { }, 25, function () { });
@@ -3013,7 +3032,12 @@ function nextSaved() {
         //document.getElementById('uvula').style.transition = "opacity 0s, top 0s, z-index 0s, background-color 0s, margin-top 0s, width 0s, height 0s, position 0s, left 0s, margin-left 0s, filter 0s";
     }, tempvar)
 }
-function genNext(t, two, x) {
+function genNext(t, two, x,y) {
+    if(y){
+        for(var Ioiu of document.querySelectorAll('.teShape')){
+            Ioiu.innerHTML =="";
+        }
+    }
     console.warn("8 cleanup:", document.querySelector('#textEnter').innerHTML);
     // Select all elements that have an 'id' attribute
     const allElementsWithIds = document.querySelectorAll('[id]');
@@ -3046,7 +3070,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
     document.querySelector('#uvula').append(document.querySelector('.uBall'));
     var clone = document.querySelector('.uBall').cloneNode();
     clone.style.zIndex = "1000";
-    words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ") - " + words[127] +"</span>"
+    words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ") ~ " + words[navLang][128] +"</span>"
     var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
     makeShapes(obj.year, ' ', 'y', false, clone);
     makeShapes(obj.preferences, ',', 'p', false, clone);
@@ -3062,7 +3086,7 @@ if(Arr[posinar % Arr.length].split('[NTS2]').length < 2){
             document.querySelector('#uvula').append(two);
             console.warn(two);
         }
-        if (posinar) {
+        if (posinar || swipe0var) {
             setTimeout(function () {
                 console.warn("9 cleanup:", document.querySelector('#textEnter').innerHTML);
                 newConsoleLog([document.querySelector('.uBall').innerHTML, document.querySelector('.uBall').children])
@@ -3652,7 +3676,16 @@ var message = JSON.stringify(data);
 document.querySelector('#videoFrame').contentWindow.postMessage(message, '*');
                                                                         }},1000);
                                                                     });
-
+document.body.addEventListener("wheel", event => {
+    if(document.querySelector('#leftButton').checkVisibility()){
+    const delta = Math.sign(event.deltaY);
+    if(delta > 0){
+        swipeUp();
+    }else{
+        swipeDown();
+    }
+}
+});
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
                                                                      
@@ -3858,7 +3891,19 @@ function removeAllEventListeners(element) {
     return newElement; // Return the new element reference
 }
 var dontRun = false;
+swipe0var = false;
 function backSaved(){
+    if(posinar%Arr.length < 1){
+         happeningNow = false;
+            nvm();
+        }else{
+        var ytt = false;
+        for(var IU of document.querySelectorAll('.teShape')){
+            if(IU.children.length>0){
+                ytt = true;
+            }
+        }
+        if(ytt){
     if (!happeningNow) {
         happeningNow = true;
         funnyC = 0;
@@ -3887,34 +3932,49 @@ function backSaved(){
         var tempvar = 0;
     }
     setTimeout(function(){
+        document.querySelector('#background').style.top = "calc(-50dvh + 0em)";
+         happeningNow = false;
         var countt = 0;
         var plLength = document.querySelectorAll(".palestine").length;
-        var plList = [...document.querySelectorAll(".palestine")].reverse().slice(-5);
+        var plList = [...document.querySelectorAll(".palestine")].reverse();
         var pal = plList[0];
-        var ubb = document.querySelector('#uBall').getBoundingClientRect;
+        var ubb = document.querySelector('.uBall').getBoundingClientRect();
         pal.style.transition = "0.5s";
         pal.style.position = "absolute";
         pal.style.top = ubb.top + "px";
         pal.style.left = ubb.left + "px";
-        pal.style.width = ubb.width;
-        pal.style.height = ubb.height;
+        pal.style.width = ubb.width + "px";
+        pal.style.height = ubb.height + "px";
         pal.style.opacity = 1;
                         pal.style.filter = "";
                         pal.style.backgroundColor = "var(--accent)";
                         posinar -= 1;
+                       
                         
     setTimeout(function(){
-        words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ")</span>";
+        words[navLang][20] = Arr[posinar % Arr.length].split('[NTS2]')[0].replace('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]',words[navLang][37]) + "<br><span class='nstLower'>(" + (parseFloat(posinar % Arr.length) + 1) + " / " + Arr.length + ") ~ " + words[navLang][128] +"</span>";
     var obj = JSON.parse(Arr[posinar % Arr.length].split('[NTS2]')[1]);
-    var dqsu = document.querySelector("#uBall")
+    var dqsu = document.querySelector(".uBall");
+    dqsu.innerHTML = "";
     makeShapes(obj.year, ' ', 'y', false, dqsu);
     makeShapes(obj.preferences, ',', 'p', false, dqsu);
     makeShapes(obj.topics, ',', 't', false, dqsu);
-    pal.remove();
+     swapTe(20, function () { }, 25, function () { });
+     var opp = posinar;
+         swipe0var = true;
+         setTimeout(function(){
+    genNext(false, false, true,true); swipe0var = false;
     },500);
+       console.error(posinar);
+    pal.remove();
+     happeningNow = false;
+      document.querySelector('#background').style.top = "env(safe-area-inset-top)";
+   },500);
                      
         
     },tempvar);
+}
+}
     }
 function reverseUball() {
     if (!happeningNow) {
@@ -4161,8 +4221,10 @@ function chooseSaved() {
     user = JSON.parse((Arr[posinar % Arr.length].split('[NTS2]')[1]))
     //smart re-arrange technology, were the last used one comes first
     var toBeMoved = Arr[posinar % Arr.length];
+    if(!toBeMoved.includes('[NOSTALGIATOK973LASTTIMEINUSERLANGUAGE]')){
     Arr.splice((posinar) % Arr.length, 1);
     Arr.splice(1, 0, toBeMoved);
+}
     localStorage.setItem('nostalgiaTokSaved', Arr.join('[nostalgiaTokSPLIT]'));
     runAnimation();
     var minHeight;
