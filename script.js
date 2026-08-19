@@ -414,7 +414,7 @@ var words = {
 "попробуйте удалить часть сохраненных воспоминаний, чтобы освободить место.", "год:", //125
 "создатель:", //126
 "тема:", //127
-"Проведите пальцем по экрану, чтобы переключаться между сохранениями.".toLowerCase();
+"Проведите пальцем по экрану, чтобы переключаться между сохранениями.".toLowerCase()
 
 ],
   "ja": [
@@ -629,7 +629,7 @@ var words = {
 "Jahr:", //125
 "Ersteller:", //126
 "Thema:",
-"Wischen Sie, um zwischen den Speicherständen zu wechseln.".toLowerCase();
+"Wischen Sie, um zwischen den Speicherständen zu wechseln.".toLowerCase()
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
