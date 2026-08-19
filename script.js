@@ -413,7 +413,8 @@ var words = {
 "cохранить навсегда", "память переполнена :(",
 "попробуйте удалить часть сохраненных воспоминаний, чтобы освободить место.", "год:", //125
 "создатель:", //126
-"тема:" //127
+"тема:", //127
+"Проведите пальцем по экрану, чтобы переключаться между сохранениями.".toLowerCase();
 
 ],
   "ja": [
@@ -460,7 +461,8 @@ var words = {
 "保存された『思い出』をいくつか削除して、空き容量を確保してみてください。",
 "年:", //125
 "作成者:", //126
-"トピック:" //127
+"トピック:",
+"スワイプして保存先を切り替える"
   ],
   "ar": [
     "بواسطة", "nostalgiaWave", "peiLamed",
@@ -538,7 +540,8 @@ var words = {
 "cuando borres tus datos de navegación o instales/reinstales nostalgiaWave, copia los datos del archivo que se acaba de descargar (incluida la palabra «NOSTALGIAWAVE») y pégalos en el campo de entrada cuando se te pida el nombre<br>", //119
 "entendido", "exportar nostalgiaWave", "guardar permanentemente", "almacenamiento lleno :(", "intenta borrar algunos recuerdos guardados para liberar espacio.", "año:", //125
 "creador:", //126
-"tema:" //127
+"tema:",
+"desliza para alternar entre las nostalgias guardadas"
   ],
   "fr": [
     "par", "nostalgiaWave", "peiLamed",
@@ -581,7 +584,8 @@ var words = {
 "compris", "exporter nostalgiaWave", "enregistrer définitivement", "espace de stockage plein :(",
 "essayez de supprimer quelques souvenirs enregistrés pour libérer de l'espace.", "année :", //125
 "créateur :", //126
-"sujet :" //127
+"sujet :",
+"faites glisser votre doigt pour passer d'une sauvegarde à l'autre."
   ],
   "de": [
     "von", "nostalgiaWave", "peiLamed",
@@ -624,7 +628,8 @@ var words = {
 "versuche, einige gespeicherte erinnerungen zu löschen, um speicherplatz freizugeben.",
 "Jahr:", //125
 "Ersteller:", //126
-"Thema:" //127
+"Thema:",
+"Wischen Sie, um zwischen den Speicherständen zu wechseln.".toLowerCase();
   ],
   "pt": [
     "por", "nostalgiaWave", "peiLamed",
@@ -666,7 +671,8 @@ var words = {
 "entendido", "exportar nostalgiaWave", "salvar permanentemente", "armazenamento cheio :(",
 "tente excluir alguns itens nostálgicos salvos para liberar espaço.", "ano:", //125
 "criador:", //126
-"tópico:" //127
+"tópico:", //127
+"deslize para alternar entre as lembranças salvas."
   ],
   "zh": [
     "由", "nostalgiaWave", "peiLamed",
@@ -701,7 +707,8 @@ var words = {
 "当你清除浏览数据或安装/重新安装 nostalgiaWave 时，请复制刚才下载的文件中的数据（包含“NOSTALGIAWAVE”字样），并在系统要求输入名称时将其粘贴到输入框中<br>", //119
 "明白了", "导出 nostalgiaWave", "永久保存", "存储空间已满 :(", "尝试删除一些已保存的怀旧内容来释放空间。", "年份：", //125
 "创建者：", //126
-"主题：" //127
+"主题：",
+"滑动切换保存"
   ],
   "hi": [
     "द्वारा", "nostalgiaWave", "peiLamed",
@@ -744,7 +751,8 @@ var words = {
 "समझ गया", "एक्सपोर्ट nostalgiaWave", "स्थायी रूप से बचाएं", "स्टोरेज फुल :(",
 "जगह खाली करने के लिए कुछ सेव की हुई पुरानी यादें डिलीट करके देखें।", "वर्ष:", //125
 "निर्माता:", //126
-"विषय:" //127
+"विषय:",
+"सेव के बीच स्विच करने के लिए स्वाइप करें"
   ],
   "am": [
     "በ", "nostalgiaWave", "peiLamed",
@@ -786,7 +794,8 @@ var words = {
 "ገባኝ", "ላክ nostalgiaWave", "ለዘላለም ያቆዩት", "ማከማቻ ሙሉ ነው :(",
 "ቦታ ለማስለቀቅ የተቀመጡ አንዳንድ የናፍቆት ስሜቶችን ለመሰረዝ ይሞክሩ።", "ዓመት:", //125
 "ፈጣሪ:", //126
-"ርዕስ:" //127
+"ርዕስ:", //127
+"በተቀመጡት የናፍቆት ትዝታዎች መካከል ለመቀያየር ያንሸራትቱ"
   ],
   "zgh": [
     "ⵙ", "nostalgiaWave", "peiLamed",
@@ -825,7 +834,8 @@ var words = {
 "ⴰⵙⵓⴼⴻⵖ nostalgiaWave", "ⵃⵔⴻⵣ ⵉ ⵍⴻⴱⴷⴰ", "ⴰⵃⴻⵣⵣⴻⴱ ⵢⴻⵞⵞⵓⵔ :(",
 "ⵄⵔⴻⴹ ⴰⴷ ⵜⴻⵙⴼⴻⴹ ⴽⵔⴰ ⵏ ⵜⵎⵓⵖⵍⵉⵡⵉⵏ ⵢⴻⵜⵜⵡⴰⵃⴻⵔⵣⴻⵏ ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴻⵙⵙⵓⴼⵖⴻⴹ ⴰⵎⴹⵉⵇ.", "ⴰⵙⴻⴳⴳⴰⵙ:", //125
 "ⴰⵙⵏⵓⵍⴼⵓ:", //126
-"ⴰⵙⴻⵏⵜⴻⵍ:" //127
+"ⴰⵙⴻⵏⵜⴻⵍ:",
+"ⵙⵡⵉⴼ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜⴱⴻⴷⴷⴻⵍⴻⴹ ⴳⴰⵔ ⵜⵎⴻⵖⵔⵉⵡⵉⵏ ⵢⴻⵜⵜⵡⴰⵃⴻⵔⵣⴻⵏ"
   ],
  "kri": [ 
 "bay", //0 
@@ -953,7 +963,8 @@ var words = {
 "stɔrɔj ​​ful :(",
 "tray fɔ dilit sɔm sev nostaljia fɔ fri ples.", "ia:", //125
 "krieta:", //126
-"tɔpik:" //127
+"tɔpik:",
+"swip fɔ chenj bitwin nostaljia dɛn we yu dɔn sev"
 ],
   "ko": [
     "에 의해", "nostalgiaWave", "peiLamed",
@@ -994,7 +1005,8 @@ var words = {
 "저장된 추억이 담긴 사진들을 삭제해서 공간을 확보해 보세요.",
 "연도:", //125
 "제작자:", //126
-"주제:" //127
+"주제:", //127
+"스와이프하여 저장된 파일을 전환하세요"
   ],
   "he": [
     "על ידי", "nostalgiaWave", "peiLamed",
@@ -1044,6 +1056,7 @@ words["ar"].push("حاول حذف بعض الذكريات المحفوظة لت�
 words["ar"].push("السنة:");
 words["ar"].push("المُنشِئ:");
 words["ar"].push("الموضوع:");
+words["ar"].push("اسحب للتنقل بين عمليات الحفظ");
 words["he"].push("nostalgiaWave ייצוא");
 words["he"].push("שמור לצמיתות");
 words["he"].push("אחסון מלא :(");
@@ -1051,6 +1064,7 @@ words["he"].push("נסה למחוק כמה נוסטלגיות שנשמרו כד�
 words["he"].push("שנה:")
 words["he"].push("יוצר:")
 words["he"].push("נושא:")
+words["he"].push("החלק כדי לעבור בין שמירות");
 for(var WORDX of Object.keys(words)){
     words[WORDX][25] = words[WORDX][25] + " + 🔎";
 }
