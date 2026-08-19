@@ -1,6 +1,6 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 var swipeXx = 0;
-swipeXxx
+var swipeXxx = 0;
 var swipeInterval = true;
 function setSavedSwipe(){
 document.body.addEventListener('mousedown',function(event){ if(swipeInterval){
