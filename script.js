@@ -4,7 +4,7 @@ var swipeInterval = true;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; console.log([event.clientX, swd]); if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
+        var swipeX2 = event.x; var swd = swipeX2-swipeXx; console.log([event.x, swd]); if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
 function sskd(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
 function ssts(event){ if(swipeInterval){
@@ -25,7 +25,7 @@ setTimeout(function(){swipeInterval = true;}, 1000)
 }
 function setSavedSwipe(){
 document.body.addEventListener('mousedown',ssmd);
-    document.body.addEventListener('mouseup',ssmu);
+    document.body.addEventListener('pointerup',ssmu);
     document.body.addEventListener('keydown', sskd);
     document.body.addEventListener('pointerdown',ssts);
 document.body.addEventListener("wheel", ssw);
@@ -33,7 +33,7 @@ document.body.addEventListener("wheel", ssw);
 
 function endSavedSwipe(){
     document.body.removeEventListener('mousedown',ssmd);
-    document.body.removeEventListener('mouseup',ssmu);
+    document.body.removeEventListener('pointerup',ssmu);
     document.body.removeEventListener('keydown', sskd);
     document.body.removeEventListener('pointerdown',ssts);
 document.body.removeEventListener("wheel", ssw);
