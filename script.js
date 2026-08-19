@@ -1,6 +1,5 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 var swipeXx = 0;
-var swipeXxx = 0;
 var swipeInterval = true;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
@@ -9,9 +8,7 @@ function ssmu(event){
 function sskd(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
 function ssts(event){ if(swipeInterval){
-        swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
-function sste(event){ 
-        swipeInterval = false;var swipeX2 = event.changesTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}}
+        swipeInterval = false;swipeXx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssw(event) {
     if(swipeInterval){
         swipeInterval = false;
@@ -31,7 +28,6 @@ document.body.addEventListener('mousedown',ssmd);
     document.body.addEventListener('mouseup',ssmu);
     document.body.addEventListener('keydown', sskd);
     document.body.addEventListener('touchstart',ssts);
-    document.body.addEventListener('touchmove',sste);
 document.body.addEventListener("wheel", ssw);
 }
 
@@ -40,7 +36,6 @@ function endSavedSwipe(){
     document.body.removeEventListener('mouseup',ssmu);
     document.body.removeEventListener('keydown', sskd);
     document.body.removeEventListener('touchstart',ssts);
-    document.body.removeEventListener('touchmove',sste);
 document.body.removeEventListener("wheel", ssw);
 }
 
