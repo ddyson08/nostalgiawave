@@ -2,19 +2,17 @@
 var swipeXx = 0;
 var swipeXxx = 0;
 var swipeInterval = true;
-function setSavedSwipe(){
-document.body.addEventListener('mousedown',function(event){ if(swipeInterval){
-        swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.addEventListener('mouseup',function(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
-document.body.addEventListener('keydown', function(event){if(swipeInterval){
-        swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
-document.body.addEventListener('touchstart',function(event){ if(swipeInterval){
-        swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.addEventListener('touchend',function(event){ 
+function ssmd(event){ if(swipeInterval){
+        swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
+function ssmu(event){
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}}
+function sskd(event){if(swipeInterval){
+        swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
+function ssts(event){ if(swipeInterval){
+        swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
+function sste(event){ 
         swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
-
-document.body.addEventListener("wheel", function(event) {
+function ssw(event) {
     if(swipeInterval){
         swipeInterval = false;
     
@@ -27,35 +25,23 @@ document.body.addEventListener("wheel", function(event) {
     }
 }
 setTimeout(function(){swipeInterval = true;}, 1000)
-});
+}
+function setSavedSwipe(){
+document.body.addEventListener('mousedown',ssmd);
+    document.body.addEventListener('mouseup',ssmu);
+    document.body.addEventListener('keydown', sskd);
+    document.body.addEventListener('touchstart',ssts);
+    document.body.addEventListener('touchend',sste);
+document.body.addEventListener("wheel", ssw);
 }
 
 function endSavedSwipe(){
-    document.body.removeEventListener('mousedown',function(event){ if(swipeInterval){
-        swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.removeEventListener('mouseup',function(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
-document.body.removeEventListener('keydown', function(event){if(swipeInterval){
-        swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)});
-document.body.removeEventListener('touchstart',function(event){ if(swipeInterval){
-        swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)});
-document.body.removeEventListener('touchend',function(event){ 
-        swipeInterval = false;var swipeX2 = event.changedTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>5){ if(swd<0){nextSaved();}else{backSaved();}}});
-
-document.body.removeEventListener("wheel", function(event) {
-    if(swipeInterval){
-        swipeInterval = false;
-    
-    const deltaY = Math.sign(event.deltaY);
-    const deltaX = Math.sign(event.deltaX);
-    if(deltaY > 0 || deltaX > 0){
-        nextSaved();
-    }else{
-        backSaved();
-    }
-}
-setTimeout(function(){swipeInterval = true;}, 1000)
-});
+    document.body.removeEventListener('mousedown',ssmd);
+    document.body.removeEventListener('mouseup',ssmu);
+    document.body.removeEventListener('keydown', sskd);
+    document.body.removeEventListener('touchstart',ssts);
+    document.body.removeEventListener('touchend',sste);
+document.body.removeEventListener("wheel", ssw);
 }
 
 function isPWA() {
