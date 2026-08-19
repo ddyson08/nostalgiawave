@@ -5,13 +5,13 @@ var swipeInterval = true;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
-        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}}
+        var swipeX2 = event.clientX; var swd = swipeX2-swipeXx; if(Math.abs(swd)>20){ if(swd<0){nextSaved();}else{backSaved();}}}
 function sskd(event){if(swipeInterval){
         swipeInterval = false;if(event.keyCode == 39){nextSaved();} if(event.keyCode == 37){backSaved();}} setTimeout(function(){swipeInterval = true;},1000)}
 function ssts(event){ if(swipeInterval){
         swipeInterval = false;swipeXxx = event.touches[0].clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function sste(event){ 
-        swipeInterval = false;var swipeX2 = event.touches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>50){ if(swd<0){nextSaved();}else{backSaved();}}}
+        swipeInterval = false;var swipeX2 = event.changesTouches[0].clientX; var swd = swipeX2-swipeXxx; if(Math.abs(swd)>50 && document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY).nodeName !== "BUTTON"){ if(swd<0){nextSaved();}else{backSaved();}}}
 function ssw(event) {
     if(swipeInterval){
         swipeInterval = false;
