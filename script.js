@@ -1257,6 +1257,7 @@ function fallbackShare(data) {
   }
 }
 function endFollow() {
+    if(document.querySelector("#swDrag").checkVisibility()){
     if(document.querySelector('#swipeScreen').style.opacity == "1"){
     SF = false;
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#creator')) {
@@ -1332,6 +1333,7 @@ function endFollow() {
 }else{
     prompt(words[navLang][113],window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
 }
+    }
     }
     if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstex2')){
     document.querySelector('#touchOverlay').style.display = "block";
