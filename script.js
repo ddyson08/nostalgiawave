@@ -4097,9 +4097,7 @@ function reverseUball() {
             try {
                 jIntI = 0;
                 fkAround();
-                document.querySelector('#textEnter').querySelector('#b5').setAttribute('id','b1')
-                document.querySelector('#textEnter').querySelector('#b1').setAttribute('onclick','nextSaved()');
-                document.querySelector('#textEnter').querySelector('#b1').setAttribute('class','primaryButton')
+                document.querySelector('#textEnter').querySelector('#b5').remove();
             }
             catch (e) {
                 newConsoleLog(e);
