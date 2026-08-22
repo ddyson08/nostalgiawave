@@ -26,8 +26,6 @@
 }
 #videoFrame:before{
     content: url("https://c.tenor.com/tJEkKGDG_bQAAAAC/tenor.gif");
-    left: 0;
-    position: absolute;
     width: calc(56.25dvh - 5.625em); 
 }
 #adBar{
