@@ -4267,7 +4267,7 @@ function fkAround2() {
         console.log(e);
     }
     var newH = 0;
-    if(document.querySelector('#textEnter').querySelectorAll("button").length < 2){
+    if(document.querySelector('#textEnter').querySelectorAll("button").length < 3){
     if (document.querySelector('.vs2') == null) {
         var newW = document.createElement('button');
         newW.innerText = words[navLang][33];
