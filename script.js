@@ -1771,6 +1771,12 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
+    try{
+    endSavedSwipe();
+    }
+    catch(e){
+        console.log(e);
+        }
     tetVar = true;
     //var bB = [...document.querySelector('#playground').querySelectorAll('button')];
    // bB[bB.length - 1].setAttribute('class','primaryButton');
@@ -4263,6 +4269,7 @@ function fkAround2() {
         console.log(e);
     }
     var newH = 0;
+    if(!document.querySelector('#textEnter').innerHTML.includes("--->")){
     if (document.querySelector('.vs2') == null) {
         var newW = document.createElement('button');
         newW.innerText = words[navLang][33];
@@ -4305,6 +4312,7 @@ function fkAround2() {
         }, 30);
 
     }, 30);
+    }
 }
 var secondfunnyN = 20.94395;
 function fkAround() {
