@@ -577,7 +577,7 @@ body {
 }
 .swText, .swGive {
     color: var(--emphasizedText);
-    font-size: 1.6em;
+    font-size: var(--lighterText);
     max-width: calc(50vh - 3em - 0.5*var(--margin));
 }
 #swDrag{
