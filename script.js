@@ -3949,7 +3949,7 @@ function backSaved(){
         var tempvar = 0;
     }
     setTimeout(function(){
-        document.querySelector('#background').style.top = "calc(-50dvh + 0em)";
+        document.querySelector('#background').style.top = "env(safe-area-inset-top)";
          happeningNow = false;
         var countt = 0;
         var plLength = document.querySelectorAll(".palestine").length;
@@ -3958,15 +3958,22 @@ function backSaved(){
         var ubb = document.querySelector('.uBall').getBoundingClientRect();
         pal.style.transition = "0.5s";
         pal.style.position = "absolute";
+        pal.style.top = "-2em";
+        pal.style.left = "-2em";
+        pal.style.width ="calc(4em+100vw)";
+        pal.style.height = "calc(4em+100vh)";
+        pal.style.opacity = 0;
+		  pal.style.filter = "blur(0.25em)";
+        setTimeout(function(){
+            pal.style.opacity = 1;
+            pal.style.filter = "blur(0px)";
+			pal.style.transition = "0.5s";
+        pal.style.position = "absolute";
         pal.style.top = ubb.top + "px";
         pal.style.left = ubb.left + "px";
         pal.style.width = ubb.width + "px";
         pal.style.height = ubb.height + "px";
-        pal.style.opacity = 0;
-        setTimeout(function(){
-            pal.style.opacity = 1;
-            pal.style.filter = "blur(0px)";
-            }, 150);
+            }, 10);
                         pal.style.backgroundColor = "var(--accent)";
                         posinar -= 1;
                        
@@ -3988,7 +3995,8 @@ function backSaved(){
        console.error(posinar);
     pal.remove();
      happeningNow = false;
-      document.querySelector('#background').style.top = "env(safe-area-inset-top)";
+      
+		document.querySelector('#background').style.top = "calc(-50dvh + 0em)";
    },500);
                      
         
