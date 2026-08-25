@@ -3957,6 +3957,7 @@ function backSaved(){
         var pal = plList[0];
         var ubb = document.querySelector('.uBall').getBoundingClientRect();
         pal.style.transition = "0.5s";
+		pal.zIndex="99";
         pal.style.position = "absolute";
         pal.style.top = "-2em";
         pal.style.left = "-2em";
@@ -3965,6 +3966,7 @@ function backSaved(){
         pal.style.opacity = 0;
 		  pal.style.filter = "blur(0.25em)";
         setTimeout(function(){
+			pal.zIndex="99";
             pal.style.opacity = 1;
             pal.style.filter = "blur(0px)";
 			pal.style.transition = "0.5s";
