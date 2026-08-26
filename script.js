@@ -2204,6 +2204,20 @@ var shareVarr;
 var teby = 0;
 var shareWorks = true;
 window.onload = function () {
+    try{
+        document.head.innerHTML +=`   <!-- Add this line to the <head> of your index.html file -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V9LC1BD89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8V9LC1BD89');
+</script>
+    <link rel="icon" type="image/png" href="logo.png" />`;
+    }
+    catch(e){}
+   
     document.body.addEventListener('keypress',function(event){
         if(event.keyCode == "32"){
              if(player.getPlayerState() === 1){
