@@ -556,7 +556,7 @@ body {
     background-color: var(--second);
 }
 .hTFMessage :is(button){
-    border: 0px solid var(--bg);
+    border: 1px solid var(--bg);
 }
 .hTFMessage :is(b){
     width: var(--margin) * 2;
