@@ -1520,7 +1520,9 @@ hTFMessage.querySelector('p').innerHTML = words[navLang][96] + words[navLang][nu
 }
     }
     var Bb = document.createElement('button');
-    Bb.innerText = words[navLang][120];
+    Bb.setAttribute("class","Bbbutt");
+    Bb.innerText = words[navLang][120] + " ✅";
+
     var extraPress = "";
     if(a && (b[0] == 77 || b[0] == 75) && !searchError){
         
