@@ -70,7 +70,7 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     try{
-    if(!document.querySelector('#touchOverlay').checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
+    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
         player.pauseVideo();
        }
     }catch(e){
@@ -6240,7 +6240,8 @@ function giveError3() {
             'muted': autoplay,
             'loop': 1,
             'playlist': avcp,
-            'showcontrols': 0
+            'showcontrols': 0,
+            'controls':0
           },
           events: {
             'onReady': onPlayerReady,
