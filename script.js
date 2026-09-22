@@ -2377,12 +2377,13 @@ if(shareUrl!=="null"){
 	localStorage.setItem('nostalgiaTokName','👤');
 		userName = '👤'
 	}
+	document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';
      console.log(window.isSharing);
 setTimeout(function(){
     happeningNow = false;
     document.querySelector('#uvula').style.display = "block";
     document.querySelector('#uvula').style.opacity = "1";
-	document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';
+	
     user = JSON.parse(decodeURIComponent(urlParams.get('user')));
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
@@ -3857,7 +3858,7 @@ document.body.addEventListener("wheel", event => {
                                                         }, 50 * multiplier)
                                                     }, 625 * multiplier)
                                                 }, 950 * multiplier)
-                                            }, 850 * multiplier)
+                                            }, 1350 * multiplier)
                                         }, 250 * multiplier)
                                     }, 250 * multiplier)
                                 }, 250 * multiplier)
