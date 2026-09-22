@@ -2377,7 +2377,6 @@ if(shareUrl!=="null"){
 	localStorage.setItem('nostalgiaTokName','👤');
 		userName = '👤'
 	}
-	document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';
      console.log(window.isSharing);
 setTimeout(function(){
     happeningNow = false;
@@ -2388,7 +2387,7 @@ setTimeout(function(){
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
     makeShapes(user.preferences,'   ','t',true);
-    setTimeout(function(){runAnimation();},500);
+    setTimeout(function(){document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)'; runAnimation();},500);
 },1000);
 }
 
