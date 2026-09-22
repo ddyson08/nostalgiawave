@@ -2382,7 +2382,7 @@ setTimeout(function(){
     happeningNow = false;
     document.querySelector('#uvula').style.display = "block";
     document.querySelector('#uvula').style.opacity = "1";
-	document.querySelector("#textEnter').style.height = 'calc(var(--ballSize) + 1em)';
+	document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';
     user = JSON.parse(decodeURIComponent(urlParams.get('user')));
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
