@@ -2368,7 +2368,10 @@ if(shareUrl!=="null"){
      words[navLang][32] = " "+words[navLang][103]+ " ";;
      words[navLang][3] = " "+words[navLang][103]+" ";
      isSharing = "true";
+	if(localStorage.getItem('nostalgiaTokName') == null||!localStorage.getItem('nostalgiaTokName')){
 	localStorage.setItem('nostalgiaTokName','👤');
+		userName = '👤'
+	}
      console.log(window.isSharing);
 setTimeout(function(){
     happeningNow = false;
@@ -2523,7 +2526,7 @@ setTimeout(function(){
         }
     }
     newConsoleLog(3);
-    if (localStorage.getItem('nostalgiaTokName') !== null) {
+    if (localStorage.getItem('nostalgiaTokName') !== null || (!isSharing && localStorage.getItem('nostalgiaTokName') == '👤')) {
         document.querySelector('#teInput').setAttribute('class', 'noBorder')
         document.querySelector('#teTitle').style.textDecoration = "none";
         document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
