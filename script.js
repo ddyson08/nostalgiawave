@@ -3733,6 +3733,8 @@ document.body.addEventListener("wheel", event => {
 });
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
+																		const element = document.elementFromPoint(event.clientX, event.clientY);
+                                                                          console.log([!(element && element.getAttribute('id') == 'fullscreenButton'), element.getAttribute('id')])
                                                                      if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                       //playPause +=1; 
                                                                 
@@ -3743,8 +3745,7 @@ document.body.addEventListener("wheel", event => {
                                                                         isTE = true;
                                                                           if(!isPD){
                                                                             
-                                                                          const element = document.elementFromPoint(event.clientX, event.clientY);
-                                                                          console.log([!(element && element.getAttribute('id') == 'fullscreenButton'), element.getAttribute('id')])
+                                                                          
                                                                 if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
                                                                      playPause +=1; 
                                                                      if(!withinSpeedUp){
@@ -6308,6 +6309,7 @@ avcp = Ads[1];
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
+		  if(!firstTime){
 		  
        // alert(5);
         if(allVideos.length == 0){
@@ -6336,7 +6338,7 @@ avcp = Ads[1];
                                             }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
         readyy = true;
-		  if(!firstTime){
+		  
         player.playVideo();
 		  }
 		  firstTime=false;
