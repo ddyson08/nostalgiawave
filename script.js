@@ -2387,7 +2387,7 @@ setTimeout(function(){
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
     makeShapes(user.preferences,'   ','t',true);
-    setTimeout(function(){ runAnimation(); document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';},500);
+    setTimeout(function(){  document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)'; runAnimation();},500);
 },1000);
 }
 
@@ -3551,6 +3551,7 @@ try{
                                             mem.style.top = "calc(50% - 0.5em + 0em)";
                                             if (!bypass) {
                                                 swapTe(17, function () { }, 18, function () { }, true);
+												
                                             }
 
                                             setTimeout(function () {
