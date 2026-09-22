@@ -70,7 +70,7 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     try{
-    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
+    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || document.querySelector("#swDrag").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
         player.pauseVideo();
 	}
     }catch(e){
@@ -146,7 +146,7 @@ var words = {
     "--->", //4
     "your", //5
     "nostalgia", //6
-    "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
+    "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2014 - spring 2023)</span>", //7
     "what creator?<br><span class='nstLower'>(optional, can be changed later)</span>", //8
     "what topic?<br><span class='nstLower'>(optional, can be changed later)</span>", //9
     "'s ", //10
@@ -209,9 +209,9 @@ var words = {
     "october", //67
     "november", //68
     "december", //69
-    "past 2019 plzz", //70
+    "past 2014 plzz", //70
     "earlier, please :)", //71
-    "between 2019 - now plzz", //72
+    "between 2014 - now plzz", //72
     "sorry, try again plzz", //73
     "tysm btw ☺", //74
     "oopsie!", //75
@@ -277,7 +277,7 @@ var words = {
 "далее", //4
 "твоя", //5
 "nostalgia", //6
-"по какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2019 - весна 2023)</span>", //7
+"по какому периоду времени ты испытываешь ностальгию?<br><span class='nstLower'>(например, 2022, лето 2023, март 2014 - весна 2023)</span>", //7
 "kакой автор?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //8
 "kакая тема?<br><span class='nstLower'>(необязательный параметр, можно изменить позже)</span>", //9
 "'s ", //10
@@ -341,9 +341,9 @@ var words = {
 "октябрь", //67
 "ноябрь", //68
 "декабрь", //69
-"после 2019 года, пожалуйста", //70
+"после 2014 года, пожалуйста", //70
 "пораннее время, пожалуйста :)", //71
-"между 2019 годом - сейчас, пожалуйста", //72
+"между 2014 годом - сейчас, пожалуйста", //72
 "извините, попробуйте еще раз, пожалуйста", //73
 "большое спасибо, кстати ☺", //74
 "ой!", //75
@@ -416,7 +416,7 @@ var words = {
     "によって", "nostalgiaWave", "peiLamed",
     "あなたのことを何と呼べばいいですか？ <br><span class='nstLower'>その後、Enterキーを押してください ☺️</span>", //3
     "次へ", "あなたの", "ノスタルジー",
-    "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2019年3月 - 2023年春)</span>",
+    "どの時代にノスタルジーを感じますか？<br><span class='nstLower'>(例: 2022年、2023年夏、2014年3月 - 2023年春)</span>",
     "どのクリエイターですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
     "どのトピックですか？<br><span class='nstLower'>(任意項目であり、後で変更可能です)</span>",
     "の ", "", "", "後で見るためにノスタルジーを保存したい場合は、ここに名前を入力してください", "入力しなくても大丈夫です",
@@ -426,8 +426,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "気にしないで", "最後にnostalgiaWaveを使用した日時",
     "希望するオプションにドラッグしてください", "春", "夏", "秋", "冬", "上旬", "中旬", "下旬", "1月", "2月", 
     "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月",
-    "9月", "10月", "11月", "12月", "2019年以降でお願いします", "というか、今年より前でお願いします",
-    "2019年から現在までの間でお願いします", "もっと早くお願いします :)", "ありがとう ☺", "おっと！",
+    "9月", "10月", "11月", "12月", "2014年以降でお願いします", "というか、今年より前でお願いします",
+    "2014年から現在までの間でお願いします", "もっと早くお願いします :)", "ありがとう ☺", "おっと！",
     "正常に動作しませんでした<br>もう一度検索してください", "すべて視聴済み", "この検索の動画をすべて視聴しました",
     "まだ読み込み中", "さらに多くの動画が近日公開されますので、スクロールしてご覧ください", "✅ -> ❌", "❌ -> ✅",
     "長押しで2倍速を切り替え", "広告", "シエラレオネ産 🇸🇱", "全画面表示", "メニューを閉じる", "クレジット",
@@ -463,7 +463,7 @@ var words = {
     "بواسطة", "nostalgiaWave", "peiLamed",
     "ماذا أناديكِ؟ <br><span class='nstLower'>اضغط على enter بعد ذلك ☺️</span>", //3
     "التالي", "الخاص بك", "الحنين",
-    "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2019 - ربيع 2023)</span>",
+    "ما الفترة الزمنية التي تشعر بالحنين إليها؟<br><span class='nstLower'>(مثال: 2022، صيف 2023، مارس 2014 - ربيع 2023)</span>",
     "أي منشئ محتوى؟<br><span class='nstLower'>(اختياري، ويمكن تغييره لاحقاً)</span>",
     "أي موضوع؟<br><span class='nstLower'>(اختياري، ويمكن تغييره لاحقاً)</span>",
     " لـ ", "", "", "إذا كنت تريد حفظ الحنين لوقت لاحق، فقم بتسميته هنا", "أو لا، لا بأس بذلك", "نستخرج مقاطع الفيديو الخاصة بك",
@@ -473,8 +473,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "لا يهم", "آخر مرة استخدمت فيها nostalgiaWave",
     "اسحبني إلى الخيار الذي تريده", "الربيع", "الصيف", "الخريف", "الشتاء", "مبكر", "منتصف", "أواخر", "يناير", "فبراير",
     "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير", "مارس",
-    "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2019 رجاءً",
-    "حسنًا، قبل هذه السنة رجاءً", "بين 2019 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
+    "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "بعد 2014 رجاءً",
+    "حسنًا، قبل هذه السنة رجاءً", "بين 2014 والآن رجاءً", "عذرًا، حاول مرة أخرى رجاءً", "شكراً جزيلاً على أي حال ☺", "أوبس!",
     "حدث خطأ ما<br>حاول البحث مجدداً", "تمت مشاهدة الكل", "لقد شاهدت جميع مقاطع الفيديو لهذا البحث", "لا يزال يحمل",
     "سيقوم المشغل بالتمرير التلقائي عند وصول مقاطع الفيديوالمزيد من الفيديوهات ستصل قريبا، جرب التمرير لمشاهدتهاالمزيد من الفيديوهات ستصل قريبا، جرب التمرير لمشاهدتها", "✅ -> ❌", "❌ -> ✅", "اضغط مطولاً للتبديل إلى السرعة 2x",
     "إعلان", "منتج من 🇸🇱", "شاشة كاملة", "الخروج من القائمة", "الحقوق", "أو انقر على قائمة '𐄛' --> 'تثبيت التطبيق'",
@@ -500,7 +500,7 @@ var words = {
     "por", "nostalgiaWave", "peiLamed",
     "¿cómo debería llamarte? <br><span class='nstLower'>presiona enter después ☺️</span>", //3
     "siguiente", "tu", "nostalgia",
-    "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2019 - primavera 2023)</span>",
+    "¿de qué época sientes nostalgia?<br><span class='nstLower'>(ej. 2022, verano 2023, mar 2014 - primavera 2023)</span>",
     "¿qué creador?<br><span class='nstLower'>(opcional, se puede modificar posteriormente)</span>",
     "¿qué tema?<br><span class='nstLower'>(opcional, se puede modificar posteriormente)</span>",
     "de ", "", "", "si quieres guardar tu nostalgia para luego, dale un nombre aquí", "o no, está bien", "buscando tus videos",
@@ -510,8 +510,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "olvídalo", "última vez que usaste nostalgiaWave",
     "arrástrame a la option que quieras", "primavera", "verano", "otoño", "invierno", "principios de", "mediados de",
     "finales de", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic", "enero", "febrero",
-    "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2019 porfa",
-    "bueno, antes de este año porfa", "entre 2019 y ahora porfa", "antes, por favor :)", "gracias de todos modos ☺",
+    "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre", "pasado el 2014 porfa",
+    "bueno, antes de este año porfa", "entre 2014 y ahora porfa", "antes, por favor :)", "gracias de todos modos ☺",
     "¡oops!", "algo no funcionó<br>intenta buscar de nuevo", "todo visto", "ya viste todos los videos de esta búsqueda",
     "todavía cargando", "pronto llegarán más vídeos, prueba a desplazarte para verlos", "✅ -> ❌", "❌ -> ✅",
     "mantén presionado de nuevo para cambiar a velocidad 2x", "anuncio", "producto de 🇸🇱", "pantalla completa", "salir de este menú",
@@ -542,7 +542,7 @@ var words = {
     "par", "nostalgiaWave", "peiLamed",
     "comment dois-je vous appeler? <br><span class='nstLower'>appuie sur entrée ensuite ☺️</span>", //3
     "suivant", "ton", "nostalgie",
-    "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2019 - printemps 2023)</span>",
+    "de quelle période es-tu nostalgique ?<br><span class='nstLower'>(ex: 2022, été 2023, mars 2014 - printemps 2023)</span>",
     "quel créateur ?<br><span class='nstLower'>(facultatif, peut être modifié ultérieurement.)</span>",
     "quel sujet ?<br><span class='nstLower'>(facultatif, peut être modifié ultérieurement.)</span>",
     "de ", "", "", "si tu veux sauvegarder ta nostalgie pour plus tard, nomme-la ici", "ou pas, c'est pas grave",
@@ -553,7 +553,7 @@ var words = {
     "laisse tomber", "dernière fois que tu as utilisé nostalgiaWave", "glisse-moi vers l'option de ton choix", "printemps",
     "été", "automne", "hiver", "début", "milieu", "fin", "janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc.", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
-    "octobre", "novembre", "décembre", "après 2019 stp", "plus tôt, s'il vous plaît :)", "entre 2019 et maintenant stp",
+    "octobre", "novembre", "décembre", "après 2014 stp", "plus tôt, s'il vous plaît :)", "entre 2014 et maintenant stp",
     "désolé, réessaie stp", "merci bcp au fait ☺", "oups !", "un problème est survenu<br>essaie de rechercher à nouveau",
     "tout est vu", "tu as vu toutes les vidéos de cette recherche", "toujours en cours de chargement",
     "d'autres vidéos arriveront bientôt, essayez de faire défiler pour les voir", "✅ -> ❌", "❌ -> ✅",
@@ -586,7 +586,7 @@ var words = {
     "von", "nostalgiaWave", "peiLamed",
     "wie soll ich dich nennen? <br><span class='nstLower'>drücke danach enter ☺️</span>", //3
     "weiter", "dein", "nostalgie",
-    "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2019 - frühjahr 2023)</span>",
+    "nach welchem zeitraum bist du nostalgisch?<br><span class='nstLower'>(z.b. 2022, sommer 2023, märz 2014 - frühjahr 2023)</span>",
     "welcher creator?<br><span class='nstLower'>(optional, kann später geändert werden)</span>",
     "welches thema?<br><span class='nstLower'>(optional, kann später geändert werden)</span>",
     "von ", "", "", "wenn du deine nostalgie für später speichern willst, benenne sie hier", "oder nicht, auch okay",
@@ -597,7 +597,7 @@ var words = {
     "letztes mal, als du nostalgiaWave benutzt hast", "zieh mich auf die gewünschte option", "frühling", "sommer", "herbst",
     "winter", "anfang", "mitte", "ende", "jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez",
     "januar", "februar", "märz", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "dezember",
-    "nach 2019 bitte", "na ja, vor diesem jahr bitte", "between 2019 und jetzt bitte", "früher, bitte :)",
+    "nach 2014 bitte", "na ja, vor diesem jahr bitte", "between 2014 und jetzt bitte", "früher, bitte :)",
     "vielen dank übrigens ☺", "ups!", "etwas hat nicht funktioniert<br>versuche es erneut zu suchen", "alle angesehen",
     "du hast alle videos für diese suche angesehen", "lädt noch", "weitere videos werden bald erscheinen, versuch mal zu scrollen, um sie zu sehen",
     "✅ -> ❌", "❌ -> ✅", "erneut gedrückt halten für 2x geschwindigkeit", "werbung", "produkt aus 🇸🇱", "vollbild",
@@ -630,7 +630,7 @@ var words = {
     "por", "nostalgiaWave", "peiLamed",
     "como devo te chamar? <br><span class='nstLower'>aperte enter depois ☺️</span>", //3
     "seguinte", "seu", "nostalgia",
-    "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2019 - primavera de 2023)</span>",
+    "de qual época você tem nostalgia?<br><span class='nstLower'>(ex: 2022, verão de 2023, mar de 2014 - primavera de 2023)</span>",
     "qual criador?<br><span class='nstLower'>(opcional, pode ser alterado posteriormente)</span>",
     "qual tema?<br><span class='nstLower'>(opcional, pode ser alterado posteriormente)</span>",
     "de ", "", "", "se quiser salvar sua nostalgia para mais tarde, dê um nome aqui", "ou não, tudo bem", "pescando seus vídeos",
@@ -640,8 +640,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "deixa para lá", "última vez que você usou o nostalgiaWave",
     "arraste-me para a opção que deseja", "primavera", "verão", "outono", "inverno", "início de", "meados de", "final de",
     "jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez", "janeiro", "fevereiro", "março",
-    "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2019 por favor",
-    "bem, antes deste ano por favor", "entre 2019 e agora por favor", "mais cedo, por favor :)",
+    "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "depois de 2014 por favor",
+    "bem, antes deste ano por favor", "entre 2014 e agora por favor", "mais cedo, por favor :)",
     "muito obrigado aliás ☺", "opa!", "algo não funcionou<br>tente buscar de novo", "todos assistidos",
     "você assistiu a todos os vídeos desta busca", "ainda carregando", "mais vídeos vão chegar em breve, tente rolar para ver",
     "✅ -> ❌", "❌ -> ✅", "segure novamente para alternar para velocidade 2x", "anúncio", "produto de 🇸🇱", "tela cheia",
@@ -673,7 +673,7 @@ var words = {
     "由", "nostalgiaWave", "peiLamed",
     "我该怎么称呼你？ <br><span class='nstLower'>完成后请按回车键 ☺️</span>", //3
     "下一个", "你的", "怀旧",
-    "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2019年3月 - 2023年春季)</span>",
+    "你怀念哪个时期？<br><span class='nstLower'>(例如 2022、2023夏季、2014年3月 - 2023年春季)</span>",
     "哪位创作者？<br><span class='nstLower'>(可选，之后可以更改)</span>",
     "什么主题？<br><span class='nstLower'>(可选，之后可以更改)</span>",
     "的 ", "", "", "如果你想把这段怀旧留到以后，请在这里命名", "不命名也行，没关系", "正在为你搜寻视频",
@@ -683,7 +683,7 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "算了吧", "上一次你使用 nostalgiaWave",
     "请将我拖动到你想要的选项", "春季", "夏季", "秋季", "冬季", "上旬/初", "中旬/中", "下旬/末", "1月", 
     "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "一月", "二月", "三月", "四月", "五月", "六月",
-    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2019年之后的吧", "请早点儿 :)", "求2019年到现在之间的吧",
+    "七月", "八月", "九月", "十月", "十一月", "十二月", "求2014年之后的吧", "请早点儿 :)", "求2014年到现在之间的吧",
     "抱歉，求再试一次吧", "顺便非常感谢 ☺", "哎呀！", "有些东西没正常运行<br>请尝试重新搜索", "已全部看完",
     "你已看完了此搜索下的所有视频", "还在加载中", "更多视频很快会陆续发布，试着浏览看看", "✅ -> ❌", "❌ -> ✅",
     "再次长按可切换2倍速", "广告", "🇸🇱 的产品", "进入全屏", "退出此菜单", "致谢", "或点击 '𐄛' 菜单 --> '安装应用'",
@@ -709,7 +709,7 @@ var words = {
     "द्वारा", "nostalgiaWave", "peiLamed",
     "क्या कहकर बुलाऊँ तुम्हें? <br><span class='nstLower'>बाद में एंटर दबाएं ☺️</span>", //3
     "आगे", "आपका", "पुरानी यादें",
-    "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2019 - वसंत 2023)</span>",
+    "आप किस समय अवधि के लिए पुरानी यादों में खोए हैं?<br><span class='nstLower'>(उदा. 2022, गर्मी 2023, मार्च 2014 - वसंत 2023)</span>",
     "कौन सा क्रिएटर?<br><span class='nstLower'>(ऑप्शनल, बाद में बदला जा सकता है)</span>",
     "कौन सा विषय?<br><span class='nstLower'>(ऑप्शनल, बाद में बदला जा सकता है)</span>",
     " का ", "", "", "यदि आप अपनी पुरानी यादों को बाद के लिए सहेजना चाहते हैं, तो इसे यहाँ नाम दें", "या नहीं, कोई बात नहीं",
@@ -720,7 +720,7 @@ var words = {
     "रहने दो", "पिछली बार आपने nostalgiaWave का उपयोग किया था", "मुझे अपनी पसंद के विकल्प पर खींचें", "वसंत", "गर्मी",
     "पतझड़", "सर्दियाँ", "शुरुआत", "मध्य", "अंत", "जन", "फर", "मार्च", "अप्रैल", "मई", "जून", "जुल", "अगस्त", "सित", 
     "अक्तू", "नव", "दिस", "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
-    "कृपया 2019 के बाद का दें", "पहले, कृपया :)", "कृपया 2019 और अब के बीच का दें",
+    "कृपया 2014 के बाद का दें", "पहले, कृपया :)", "कृपया 2014 और अब के बीच का दें",
     "क्षमा करें, कृपया पुनः प्रयास करें", "वैसे बहुत-बहुत धन्यवाद ☺", "ओह!", "कुछ काम नहीं कर पाया<br>फिर से खोजने का प्रयास करें",
     "सभी देख लिए", "आपने इस खोज के सभी वीडियो देख लिए हैं", "अभी भी लोड हो रहा है",
     "जल्द ही और भी वीडियो आएंगे, उन्हें देखने के लिए स्क्रॉल करने का प्रयास करें", "✅ -> ❌", "❌ -> ✅", "2x स्पीड चालू/बंद करने के लिए फिर से दबाकर रखें",
@@ -753,7 +753,7 @@ var words = {
     "በ", "nostalgiaWave", "peiLamed",
     "ምን ልበልህ? <br><span class='nstLower'>ከዚያ በኋላ enterን ይጫኑ ☺️</span>", //3
     "ቀጣይ", "የእርስዎ", "ትዝታ",
-    "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2019 - ጸደይ 2023)</span>",
+    "ለየትኛው የጊዜ ወቅት ነው ትዝታ የሚሰማህ?<br><span class='nstLower'>(ምሳሌ፡ 2022፣ በጋ 2023፣ መጋቢት 2014 - ጸደይ 2023)</span>",
     "የትኛው ፈጣሪ?<br><span class='nstLower'>(አማራጭ፣ በኋላ ላይ ሊቀየር ይችላል)</span>",
     "ምን ርዕስ?<br><span class='nstlower'>(አማራጭ፣ በኋላ ላይ ሊቀየር ይችላል)</span>",
     " የ ", "", "", "ትዝታህን ለበኋላ ማስቀመጥ ከፈለግህ እዚህ ሰይምው", "ካልሆነም ችግር የለውም", "ቪዲዮዎችህን በማውጣት ላይ",
@@ -763,8 +763,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ተውት", "nostalgiaWaveን ለመጨረሻ ጊዜ የተጠቀሙበት",
     "ወደሚፈልጉት አማራጭ ይጎትቱኝ", "ጸደይ", "በጋ", "በልግ", "ክረምት", "መጀመሪያ", "አጋማሽ", "መጨረሻ", "ጥር", "የካ",
     "መጋ", "ሚያ", "ግን", "ሰኔ", "ሐምሌ", "ነሐሴ", "መስ", "ጥቅ", "ህዳ", "ታህ", "ጃንዋሪ", "ፌብሩዋሪ", "ማርች", "ኤፕሪል",
-    "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2019 በኋላ ይሁን እባክህ",
-    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2019 እና አሁን መካከል ይሁን እባክህ", "ቀደም ብሎ፣ እባክዎን :)",
+    "ሜይ", "ጁን", "ጁላይ", "ኦገስት", "ሴፕቴምበር", "ኦክቶበር", "ኖቬምበር", "ዲሴምበር", "ከ2014 በኋላ ይሁን እባክህ",
+    "ደህና፣ ከዚህ ዓመት በፊት ይሁን እባክህ", "በ2014 እና አሁን መካከል ይሁን እባክህ", "ቀደም ብሎ፣ እባክዎን :)",
     "ለማንኛውም በጣም አመሰግናለሁ ☺", "ውይ!", "የሆነ ነገር አልሰራም<br>እባክህ እንደገና ለመፈለግ ሞክር", "ሁሉም ታይተዋል",
     "ለዚህ ፍለጋ ሁሉንም ቪዲዮዎች አይተሃል", "አሁንም በመጫን ላይ ነው", "ተጨማሪ ቪዲዮዎች በቅርቡ ይመጣሉ፣ እነሱን ለማየት ለማሸብለል ይሞክሩ", "✅ -> ❌",
     "❌ -> ✅", "ወደ 2 እጥፍ ፍጥነት ለመቀየር እንደገና ተጭነው ይቆዩ", "ማስታወቂያ", "የ 🇸🇱 ምርት", "ሙሉ ማያ ገጽ አድርግ",
@@ -796,7 +796,7 @@ var words = {
     "ⵙ", "nostalgiaWave", "peiLamed",
     "ⴰⵎⴻⴽ ⴰⵔⴰ ⴰⴽⵉⵏⵉⵖ? <br><span class='nstLower'>تكሊክⵢ ⴼ enter ⴱⵄⴷ ☺️</span>", //3
     "ⴰⴼⵔⴰⵏ", "ⵏⵏⴽ", "ⵜⴰⵡարգⵉⵜ",
-    "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2019 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
+    "ⵎⴰⵏ ⴰⵣⵎⵣ ⵉⴳⴰⵏ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ?<br><span class='nstLower'>(ⴰⵎⴷⵢⴰ: 2022, ⴰⵏⴱⴷⵓ 2023, ⵎⴰⵕⵚ 2014 - ⵜⴰⴼⵙⵓⵜ 2023)</span>",
     "ⵎⴰⵏ ⴰⵎⵙⵏⴼⵍⵓⵍ?<br><span class='nstLower'>(ⴷ ⴰⴼⵔⴰⵏ, ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⴱⴻⴷⴷⴻⵍ ⵎⴱⴻⵄⴷ)</span>",
     "ⵎⴰⵏ ⴰⵙⵏⵜⵍ?<br><span class='nstLower'>(ⴷ ⴰⴼⵔⴰⵏ, ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⵜⵜⵡⴰⴱⴻⴷⴷⴻⵍ ⵎⴱⴻⵄⴷ)</span>",
     " ⵏ ", "", "", "ⵉⴳ ⵜⵅⵙⴷ ⴰⴷ ⵜⵃⴼⴹⴷ ⵜⴰⵡարգⵉⵜ ⵏⵏⴽ, ⵉⵙⵎ ⴰⵙ ⴷⵖⵉ", "ⵏⵖ ⵓⵔⵓ, ⵎⴰⵛⵉ ⵎⵓⵛⴽⵉⵍ", "ⵏⵙⵙⵓⴼⵖ ⴷ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏⵏⴽ",
@@ -806,8 +806,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "ⴱⵍⴰⵛ", "ⴰⴱⵔⵉⴷ ⴰⵏⴳⴳⴰⵔⵓ ⵍⵍⵉⴳ ⵜⵙⵡⵓⵔⵉⴷ ⵙ nostalgiaWave",
     "ⵊⴱⴷ ⵉⵢⵉ ⵙ ⵓⵙⵜⵉ ⵍⵍⵉ ⵜⵅⵙⴷ", "ⵜⴰⴼⵙⵓⵜ", "ⴰⵏⴱⴷⵓ", "ⴰⵎⵡⴰⵏ", "ⵜⴰⴳⵔⵙⵜ", "ⵜⵉⵣⵡⵉⵔⵉ ⵏ", "ⵜⵓⵣⵓⵎⵜ ⵏ", "ⵜⴰⴳⴰⵔⴰ ⵏ", "ⵢⵏⵏ", "ⴱⵕⴰ",
     "ⵎⴰⵕ", "ⵉⴱⵔ", "ⵎⴰⵢ", "ⵢⵓⵏ", "ⵢⵓⵍ", "ⵖⵓⵛ", "ⵛⵓⵜ", "ⴽⵜⵓ", "ⵏⵓⵡ", "ⴷⵓⵊ", "ⵢⵏⵏⴰⵢⵔ", "ⴱⵕⴰⵢⵕ", "ⵎⴰⵕⵚ", "ⵉⴱⵔⵉⵍ", "ⵎⴰⵢⵓ",
-    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2019 ⵄⴰⴼⴰⴽ", "ⵣⵉⴽ, ⵄⴰⴼⴰⴽ :)",
-    "ⴱⵉⵏ 2019 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
+    "ⵢⵓⵏⵢⵓ", "ⵢⵓⵍⵢⵓⵣ", "ⵖⵓⵛⵜ", "ⵛⵓⵜⴰⵏⴱⵉⵔ", "ⴽⵜⵓⴱⵔ", "ⵏⵓⵡⴰⵏⴱⵉⵔ", "ⴷⵓⵊⴰⵏⴱⵉⵔ", "ⴱⵄⴷ 2014 ⵄⴰⴼⴰⴽ", "ⵣⵉⴽ, ⵄⴰⴼⴰⴽ :)",
+    "ⴱⵉⵏ 2014 ⴷ ⴷⵖⵉ ⵄⴰⴼⴰⴽ", "ⵙⴰⵎⵃ ⵉⵢⵉ, ⵄⴰⵡⴷ ⴷⴰⵖ ⵄⴰⴼⴰⴽ", "ⵜⴰⵏⵎⵎⵉⵔⵜ ⴱⵣⵣⴰⴼ ⵄⵍⴰ ⴰⵢⴽⴽⴰⵏ ☺", "ⵓⵅ!", "ⵉⵍⵍⴰ ⵎⴰ ⵓⵔ ⵉⵙⵡⵓⵔⵉⵏ<br>ⵄⴰⵡⴷ ⴰⵔⵣⵣⵓ ⴷⴰⵖ",
     "ⵜⵢⵓⵥⵕⴰ ⴽⵓⵍⵍⵓ", "ⵜⵥⵔⵉⴷ ⴽⵓⵍⵍⵓ ⵉⴼⵉⴷⵢⵓⵜⵏ ⵏ ⵓⵔⵣⵣⵓ ⵡⴰ", "ⵙⵓⵍ ⵉⵙⴰⵍⴰⵢ", "ⵓⴳⴰⵔ ⵏ yividyuten ⴰⵔⴰ ⴷⵢⴰⵙⴻⵏ ⵙ ⵍⵇⴻⵔⴱ, ⵜⵜⵅⵉⵍⴽ ⴹⴻⴳⴳⴻⵔ ⵖⴻⵔ ⴷⴷⴰⵡ ⵉⵡⴰⴽⴽⴻⵏ ⴰⴷ ⵜⵜⵡⴰⵍⵉⴹ",
     "✅ -> ❌", "❌ -> ✅", "ⵄⴰⵡⴷ ⴹⵕⵥ ⴰⴷ ⵜⴱⴷⴷⵍⴷ ⵙ ⵜⵉⵣⵣⵍⴰ 2x", "ⴰⴼⵙⴰⵔ", "ⴰⴼⴰⵔⵉⵙ ⵏ 🇸🇱", "ⴰⵙⴽⵔⵉⵏ ⴽⵓⵍⵍⵓ", "ⴼⴼⵖ ⵙⴳ ⵜⵍⴳⴰⵎⵜ ⴰ",
     "ⵉⵙⵎⴰⵡⵏ", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ'", "ⵏⵖ ⵜⴽⵍⵉⴽⵢⴷ ⴼ ⵜⵍⴳⴰⵎⵜ '𐄛' --> 'ⵉⵙⵉⵜⵏ' --> 'ⵙⴱⴷⴷ ⴰⵙⵉⵜ ⵡⴰ ⴰⵎ ⴰⵙⵉⵜ'",
@@ -840,7 +840,7 @@ var words = {
 "nɛks", //4 
 "yu", //5 
 "nɔstaljia", //6 
-"wetin tɛm yu de nostaljik fɔ?<br><span class='nstLower'>(ex 2022, sɔma 2023, mar 2019 - spring 2023)</span>", //7 
+"wetin tɛm yu de nostaljik fɔ?<br><span class='nstLower'>(ex 2022, sɔma 2023, mar 2014 - spring 2023)</span>", //7 
 "wetin krieta?<br><span class='nstLower'>(opshɔnal, dɛn kin chenj am leta)</span>", //8 
 "wetin tɔpik?<br><span class='nstLower'>(opshɔnal, dɛn kin chenj am leta)</span>", //9 
 "'s ", //10 
@@ -903,9 +903,9 @@ var words = {
 "ɔktoba", //67 
 "nɔvemba", //68 
 "disɛmba", //69 
-"pas 2019 plzz", //70 
+"pas 2014 plzz", //70 
 "bifo dat, duya :)", //71 
-"bitwin 2019 - naw plzz", //72 
+"bitwin 2014 - naw plzz", //72 
 "sɔri, tray bak plzz", //73 
 "tysm btw ☺", //74 we de sho aw fɔ du am 
 "oopsie!", //75 we de tɔk bɔt 
@@ -965,7 +965,7 @@ var words = {
     "에 의해", "nostalgiaWave", "peiLamed",
     "당신을 뭐라고 불러야 할까요? <br><span class='nstLower'>입력 후 엔터를 눌러주세요 ☺️</span>", //3
     "다음", "당신의", "향수",
-    "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2019년 3월 - 2023년 봄)</span>",
+    "어떤 시기의 향수를 느끼시나요?<br><span class='nstLower'>(예: 2022, 2023년 여름, 2014년 3월 - 2023년 봄)</span>",
     "어떤 크리에이터인가요?<br><span class='nstLower'>(선택 사항이며, 나중에 변경할 수 있습니다)</span>",
     "어떤 주제인가요?<br><span class='nstLower'>(선택 사항이며, 나중에 변경할 수 있습니다)</span>",
     "의 ", "", "", "나중에 보려고 향수를 저장하고 싶다면 여기에 이름을 입력하세요", "아니어도 괜찮습니다", "동영상을 가져오는 중",
@@ -975,7 +975,7 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "신경 쓰지 마세요", "마지막으로 nostalgiaWave을 사용한 시간",
     "원하는 옵션으로 저를 드래그하세요", "봄", "여름", "가을", "겨울", "초", "중순", "말", "1월", "2월", "3월", "4월",
     "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월", "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월",
-    "9월", "10월", "11월", "12월", "2019년 이후로 해주세요", "좀 더 일찍 부탁드립니다 :)", "2019년에서 현재 사이로 해주세요",
+    "9월", "10월", "11월", "12월", "2014년 이후로 해주세요", "좀 더 일찍 부탁드립니다 :)", "2014년에서 현재 사이로 해주세요",
     "죄송합니다, 다시 시도해 주세요", "어쨌든 정말 고마워요 ☺", "이런!", "문제가 발생했습니다<br>다시 검색해 보세요", "모두 시청함",
     "이 검색에 대한 모든 동영상을 시청하셨습니다", "아직 로딩 중", "곧 더 많은 영상이 올라올 예정이니, 스크롤해서 보시면 됩니다",
     "✅ -> ❌", "❌ -> ✅", "다시 길게 누르면 2배속 전환", "광고", "🇸🇱의 제품", "전체 화면", "이 메뉴 나가기", "크레딧",
@@ -1007,7 +1007,7 @@ var words = {
     "על ידי", "nostalgiaWave", "peiLamed",
     "איך אני אמור לקרוא לך? <br><span class='nstLower'>לחץ אנטר לאחר מכן ☺️</span>", //3
     "הבא", "שלך", "נוסטלגיה",
-    "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2019 - אביב 2023)</span>",
+    "לאיזו תקופת זמן אתה נוסטלגי?<br><span class='nstLower'>(דוגמה: 2022, קיץ 2023, מרץ 2014 - אביב 2023)</span>",
     "איזה יוצר?<br><span class='nstLower'>(אופציונלי, ניתן לשינוי מאוחר יותר)</span>",
     "איזה נושא?<br><span class='nstLower'>(אופציונלי, ניתן לשינוי מאוחר יותר)</span>",
     " של ", "", "", "אם אתה רוצה לשמור את הנוסטלגיה שלך למאוחר יותר, תן לה שם כאן", "או שלא, זה בסדר", "דגים את הסרטונים שלך",
@@ -1017,8 +1017,8 @@ var words = {
     "0,2,3,4,5,7,8,10,11,12,13,14,15,16,17,18,19,21", "לא משנה", "הפעם האחרונה שהשתמשת ב-nostalgiaWave",
     "גרור אותי לאפשרות שאתה רוצה", "אביב", "קיץ", "סתיו", "חורף", "תחילת", "אמצע", "סוף", "ינו׳", "פבר׳", "מרץ", "אפר׳",
     "מאי", "יוני", "יולי", "אוג׳", "ספט׳", "אוק׳", "נוב׳", "דצמ׳", "ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני",
-    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2019 בבקשה", "ובכן, לפני השנה הזו בבקשה",
-    "בין 2019 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
+    "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר", "אחרי 2014 בבקשה", "ובכן, לפני השנה הזו בבקשה",
+    "בין 2014 לעכשיו בבקשה", "סליחה, נסה שוב בבקשה", "תודה רבה בכל מקרה ☺", "אופסי!", "משהו לא עבד<br>נסה לחפש שוב", "הכל נצפה",
     "צפית בכל הסרטונים עבור חיפוש זה", "עדיין טוען", "הנגן יגלול אוטומטית כשהסרטונים יגיעועוד סרטונים יגיעו בקרוב, נסו לגלול כדי לראות אותם", "✅ -> ❌", "❌ -> ✅",
     "החזק שוב כדי להעביר למהירות כפולה x2", "פרסומת", "מוצר של 🇸🇱", "מסך מלא", "צא מתפריט זה", "קרדיטים",
     "או לחץ על תפריט '𐄛' --> 'התקן אפליקציה'", "או לחץ על תפריט '𐄛' --> 'אפליקציות' --> 'התקן אתר זה כאפליקציה'",
@@ -2179,7 +2179,7 @@ var fullsc;
 var itzLater = false;
 var onScroll = false;
 var nsTimesNumber = 1;
-
+var firstTime = false;
 window.addEventListener('scroll', () => {
     if (onScroll) {
         // Get the current vertical scroll position (in pixels)
@@ -2226,6 +2226,7 @@ window.onload = function () {
     document.body.addEventListener('keypress',function(event){
         if(event.keyCode == "32"){
              if(player.getPlayerState() === 1){
+				 firstTime=true;
                                                                          player.pauseVideo();
 				 createOrReloadYouTubePlayer(allVideos[currentPlace],1);
 				  player.pauseVideo();
@@ -2237,6 +2238,7 @@ window.onload = function () {
                                                                     catch(e){
                                                                     }
                                                                      }else{
+				  firstTime=true;
                                                                          player.playVideo();
 				 createOrReloadYouTubePlayer(allVideos[currentPlace],0);
 				 player.playVideo();
@@ -2582,7 +2584,7 @@ setTimeout(function(){
         }, 2000, {})
         newConsoleLog(5);
         this.setTimeout(function () {
-            document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + "?";
+            document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + ((isSharing)?"?":"");
             document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
             document.querySelector('#textEnter').style.width = " calc(100dvw - (4 * var(--margin)) - 2em)";
         }, 1000);
@@ -3850,7 +3852,7 @@ document.body.addEventListener("wheel", event => {
                     }, 250 * multiplier)
                 }, 250 * multiplier)
             }, 550 * multiplier)
-        }, tempvar);
+        }, tempvar+500);
 
 
     }, 500);
@@ -5529,7 +5531,7 @@ function validateDate(tex) {
             theYear = 2000 + theYear;
         }
         var d = new Date();
-            if (theYear < 2019) {
+            if (theYear < 2014) {
                 return ("Year Error: Too low~Year Error: Too low")
             }
             if (theYear > d.getFullYear()) {
@@ -5643,7 +5645,7 @@ function validateDate(tex) {
         "next", //4
         "Your", //5
         "nostalgia", //6
-        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2019 - spring 2023)</span>", //7
+        "what time period are you nostalgic for?<br><span class='nstLower'>(ex 2022, summer 2023, mar 2014 - spring 2023)</span>", //7
         "what creator?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //8
         "what topic?<br><span class='nstLower'>(stick to one, can be changed later)</span>", //9
         "'s ", //10
@@ -5706,9 +5708,9 @@ function validateDate(tex) {
         "october", //67
         "november", //68
         "december", //69
-        "past 2019 plzz", //70
+        "past 2014 plzz", //70
         "well, before this year plzz", //71
-        "between 2019 - now plzz", //72
+        "between 2014 - now plzz", //72
         "sorry, try again plzz", //73
         "tysm btw ☺", //74
         "oopsie!", //75
@@ -6304,6 +6306,7 @@ avcp = Ads[1];
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
+		  
        // alert(5);
         if(allVideos.length == 0){
             allVideos[0] = Ads[1];
@@ -6331,7 +6334,9 @@ avcp = Ads[1];
                                             }catch(e){}
                                             setTimeout(function(){ TOOO.style.marginLeft = "";},600)
         readyy = true;
+		  if(!firstTime){
         player.playVideo();
+		  }
                                         
       }
 
