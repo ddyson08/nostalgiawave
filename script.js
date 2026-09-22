@@ -2387,7 +2387,7 @@ setTimeout(function(){
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
     makeShapes(user.preferences,'   ','t',true);
-    setTimeout(function(){  document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)'; runAnimation();},500);
+    setTimeout(function(){   runAnimation();},500);
 },1000);
 }
 
@@ -2532,7 +2532,7 @@ setTimeout(function(){
         }
     }
     newConsoleLog(3);
-    if (localStorage.getItem('nostalgiaTokName') !== null || (!isSharing && !localStorage.getItem('nostalgiaTokName') == '👤')) {
+    if (localStorage.getItem('nostalgiaTokName') !== null && (!isSharing || !localStorage.getItem('nostalgiaTokName') == '👤')) {
         document.querySelector('#teInput').setAttribute('class', 'noBorder')
         document.querySelector('#teTitle').style.textDecoration = "none";
         document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
@@ -2879,8 +2879,9 @@ try{
             nee.style.left = "0em";
             nee.style.width = "100dvw";
             nee.style.bottom = "0"
-            nee.style.height = "calc(2 * var(--ballSize))  "
+            nee.style.height = "calc(var(--ballSize) + 1em)  "
             nee.setAttribute('class', 'te2');
+			
         }
         try {
             document.querySelector('#teInput').setAttribute('class', 'hasBorder');
