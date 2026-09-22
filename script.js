@@ -72,7 +72,7 @@ var clearItInterval = setInterval(function(){
     try{
     if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
         player.pauseVideo();
-       }
+		
     }catch(e){
         console.log(e);
     }
@@ -2364,7 +2364,7 @@ if(shareUrl!=="null"){
      isSharing = "true";
      console.log(window.isSharing);
 setTimeout(function(){
-    
+    happeningNow = false;
     document.querySelector('#uvula').style.display = "block";
     document.querySelector('#uvula').style.opacity = "1";
     user = JSON.parse(decodeURIComponent(urlParams.get('user')));
@@ -3738,6 +3738,7 @@ document.body.addEventListener("wheel", event => {
 																		 try{
                                                                     if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
+																		createOrReloadYoutubePlayer(allVideos[currentPlace],1)
                                                                           try{
                                                                         if(fullsc == 'yes'){
                                                                         document.querySelector('#titleBar').style.zIndex = "0";
@@ -3747,6 +3748,7 @@ document.body.addEventListener("wheel", event => {
                                                                     }
                                                                      }else{
                                                                          player.playVideo();
+																		createOrReloadYoutubePlayer(allVideos[currentPlace],0)
                                                                           try{
                                                                        
                                                                         document.querySelector('#titleBar').style.zIndex = "2000";
@@ -6225,7 +6227,7 @@ function giveError3() {
    
 }
   
-      function createOrReloadYouTubePlayer(avcp) {
+      function createOrReloadYouTubePlayer(avcp, bool) {
         if(avcp.length < 7){
             avcp = Ads[1];
         }
@@ -6241,7 +6243,7 @@ function giveError3() {
             'loop': 1,
             'playlist': avcp,
             'showcontrols': 0,
-            'controls':0
+            'controls':[0,1][bool]
           },
           events: {
             'onReady': onPlayerReady,
