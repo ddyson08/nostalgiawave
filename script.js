@@ -72,7 +72,7 @@ var clearItInterval = setInterval(function(){
     try{
     if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
         player.pauseVideo();
-		
+	}
     }catch(e){
         console.log(e);
     }
