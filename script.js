@@ -2,6 +2,7 @@
 var swipeXx = 0;
 var swipeInterval = true;
 var isSharing = false;
+var is1 = false;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
@@ -1656,6 +1657,8 @@ function pgFormat(text) {
 }
 var oldUser = {};
 function eMA2(simmilar, pgGivenData, neww) {
+	startPendulum();
+	is1 = false;
     if(allVideos.length < 1){
         allVideos.push(Ads[1]);
         allVideos.push(Ads[1]);
@@ -2369,6 +2372,7 @@ if(shareUrl!=="null"){
      words[navLang][32] = " "+words[navLang][103]+ " ";;
      words[navLang][3] = " "+words[navLang][103]+" ";
      isSharing = true;
+	is1 = true;
 	if(localStorage.getItem('nostalgiaTokName') == null||!localStorage.getItem('nostalgiaTokName')){
 	localStorage.setItem('nostalgiaTokName','👤');
 		userName = '👤'
@@ -2580,7 +2584,7 @@ setTimeout(function(){
                 fkAround();
             }, 500);
             document.querySelector("#uvula").style.opacity = "1";
-			if(!isSharing){
+			if(!is1){
             startPendulum();
 			}
             document.documentElement.scrollTop = 0;
@@ -3604,7 +3608,7 @@ try{
                                                                 t.style.left = 0;
                                                                 t.style.width = "100dvw";
                                                                 setTimeout(function () {
-                                                                    
+                                                                    is1 = false;
                                                                     t.style.height = "100dvh";
                                                                     t.style.maxHeight = "100dvh"
                                                                     t.style.bottom = "-var(--margin)";
@@ -3828,6 +3832,7 @@ document.body.addEventListener("wheel", event => {
                                                                     });
 
  isSharing = false;
+																	is1=false;
                                                                   
                                                                     try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''))
@@ -6136,7 +6141,7 @@ try{
 
 			allVideos = [...new Set(allVideos)]
             console.log(result);
-            if(isSharing!=="false"){
+            if(isSharing!==false){
                 console.log(allVideos);
 allVideos.unshift(shareVarr);
 console.log(allVideos);
