@@ -3750,6 +3750,7 @@ document.body.addEventListener("wheel", event => {
                                                                      if(!withinSpeedUp){
 																		 try{
                                                                     if(player.getPlayerState() === 1){
+																		firstTime=true;
                                                                          player.pauseVideo();
 																		createOrReloadYouTubePlayer(allVideos[currentPlace],1);
 																		player.pauseVideo();
@@ -3761,6 +3762,7 @@ document.body.addEventListener("wheel", event => {
                                                                     catch(e){
                                                                     }
                                                                      }else{
+																		firstTime=true;
                                                                          player.playVideo();
 																		createOrReloadYouTubePlayer(allVideos[currentPlace],0);
 																		player.playVideo();
@@ -4850,7 +4852,7 @@ function swipeUp() {
     if(rateLimit){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
-    if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 1)){
+    if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 3)){
         if(nextToken!=="" && !nextToken.includes("undefined") && nextToken.includes("null")){
             giveError2();
             rateLimit = true;
@@ -5279,7 +5281,7 @@ function swipeDown() {
             otherOrbit.remove();
         }
        
-        orbit.style.transition = "0.25s";
+        orbit.style.transition = "0.13s";
         var o2 = orbit.getBoundingClientRect();
         var bj = document.createElement('div');
         if (fullsc == "no") {
@@ -6337,6 +6339,7 @@ avcp = Ads[1];
 		  if(!firstTime){
         player.playVideo();
 		  }
+		  firstTime=false;
                                         
       }
 
