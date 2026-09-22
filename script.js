@@ -2593,7 +2593,7 @@ setTimeout(function(){
         }, 2000, {})
         newConsoleLog(5);
         this.setTimeout(function () {
-            document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + ((isSharing)?"?":"");
+            document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + ((isSharing)?"":"?");
             document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
             document.querySelector('#textEnter').style.width = " calc(100dvw - (4 * var(--margin)) - 2em)";
         }, 1000);
