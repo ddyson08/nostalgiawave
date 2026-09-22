@@ -912,7 +912,7 @@ html, body {
     height: 100%;
     background-color: black;
 }
-videoOrbit{
+.videoOrbit{
     background-color: var(--contrast) !important;
 }
 button[show="nah"]{
