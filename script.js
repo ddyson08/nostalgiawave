@@ -1,6 +1,7 @@
 //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 var swipeXx = 0;
 var swipeInterval = true;
+var isSharing = false;
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
 function ssmu(event){
@@ -2193,7 +2194,7 @@ window.addEventListener('touchmove', function (e) {
         e.preventDefault(); // Prevents page scrolling
     }
 }, { passive: false });
-var isSharing = "false";
+
 var shVar = {
     "true": [15,0,15,0],
     "false": [7,4,8,4]
@@ -2367,7 +2368,7 @@ if(shareUrl!=="null"){
      shareVarr = shareUrl;
      words[navLang][32] = " "+words[navLang][103]+ " ";;
      words[navLang][3] = " "+words[navLang][103]+" ";
-     isSharing = "true";
+     isSharing = true;
 	if(localStorage.getItem('nostalgiaTokName') == null||!localStorage.getItem('nostalgiaTokName')){
 	localStorage.setItem('nostalgiaTokName','👤');
 		userName = '👤'
@@ -3826,7 +3827,7 @@ document.body.addEventListener("wheel", event => {
                                                                     
                                                                     });
 
- isSharing = "false";
+ isSharing = false;
                                                                   
                                                                     try{
                                                                     player.loadVideoById(allVideos[currentPlace].replace('📺',''))
