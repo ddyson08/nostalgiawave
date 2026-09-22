@@ -2529,7 +2529,7 @@ setTimeout(function(){
         document.querySelector('#textEnter').style.width = " calc(100dvw - (4 * var(--margin)) - 2em)";
         document.querySelector('#teButton').style.display = "none";
         userName = localStorage.getItem('nostalgiaTokName');
-        document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + "?";
+        document.querySelector('#teTitle').innerHTML = words[navLang][32] + localStorage.getItem('nostalgiaTokName') + (isSharing?"":"?");
         setTimeout(function () {
             var ni = document.querySelector("#uNameplate");
             ni.style.color = "var(--accent)";
