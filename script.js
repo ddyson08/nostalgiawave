@@ -70,7 +70,7 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     try{
-    if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#pgTitle").checkVisibility() || document.querySelector("#swDrag").checkVisibility() || parseInt(document.querySelector('#allHold').width)<90){
+      if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#swipeScreen").style.opacity != 0 || parseInt(document.querySelector('#allHold').style.width)<90){
         player.pauseVideo();
 	}
     }catch(e){
