@@ -2203,9 +2203,9 @@ var shVar = {
     "false": [7,4,8,4]
 }
 function nameClick(a){
-    if(a == "false"){
+    //if(a == "false"){
         evaluateFullscreenReminder(101);
-    }
+//    }
 }
 var shareVarr;
 var teby = 0;
