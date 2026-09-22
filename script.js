@@ -2382,6 +2382,7 @@ setTimeout(function(){
     happeningNow = false;
     document.querySelector('#uvula').style.display = "block";
     document.querySelector('#uvula').style.opacity = "1";
+	document.querySelector("#textEnter').style.height = 'calc(var(--ballSize) + 1em)';
     user = JSON.parse(decodeURIComponent(urlParams.get('user')));
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
@@ -6129,7 +6130,9 @@ try{
             if(innerBool){
                 var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("|SPLIT|");
                 var offset = 0;
+				if(!is1){
             allVideos = [...allVideos.filter(n => !innerValls.includes(n))]
+				}
             }
             console.log(allVideos);
             ogArr2 = [...allVideos];
