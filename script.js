@@ -1065,6 +1065,7 @@ words["he"].push("החלק כדי לעבור בין שמירות");
 for(var WORDX of Object.keys(words)){
     words[WORDX][25] = words[WORDX][25] + " + 🔎";
 }
+
 var navLang = navigator.language;
 if(words[navLang] == undefined){
     try{
@@ -2210,6 +2211,23 @@ function nameClick(a){
 var shareVarr;
 var teby = 0;
 var shareWorks = true;
+function startPendulum() {
+        if(!isStarted){
+            
+      //  var start = performance.now();
+        wiggle = setInterval(function () {
+            if (funnyC !== 0) {
+                pendulum.style.transform = "rotateZ(" + (15 * (Math.cos(0.005 * ((funnyN*30) * 0.5)))) + "deg)";
+				if(doNow){
+					newConsoleLog(pendulum.style.transform);
+					doNow = false;
+				}
+				funnyN +=1;
+            }
+        }, 18); // ~60fps
+        isStarted = true;
+    }
+    }
 window.onload = function () {
     try{
         document.head.innerHTML +=`   <!-- Add this line to the <head> of your index.html file -->
@@ -2624,23 +2642,7 @@ setTimeout(function(){
     funnyC = 1; newConsoleLog('HERE');
   
     newConsoleLog(8);
-    function startPendulum() {
-        if(!isStarted){
-            
-      //  var start = performance.now();
-        wiggle = setInterval(function () {
-            if (funnyC !== 0) {
-                pendulum.style.transform = "rotateZ(" + (15 * (Math.cos(0.005 * ((funnyN*30) * 0.5)))) + "deg)";
-				if(doNow){
-					newConsoleLog(pendulum.style.transform);
-					doNow = false;
-				}
-				funnyN +=1;
-            }
-        }, 18); // ~60fps
-        isStarted = true;
-    }
-    }
+    
     newConsoleLog(9);
     function stopPendulum() {
         clearInterval(wiggle);
