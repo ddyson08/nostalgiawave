@@ -2205,8 +2205,6 @@ var shVar = {
 function nameClick(a){
     if(a == "false"){
         evaluateFullscreenReminder(101);
-    }else{
-        window.open('nostalgiawave.me')
     }
 }
 var shareVarr;
