@@ -2387,7 +2387,7 @@ setTimeout(function(){
     makeShapes(user.year,'   ','y',true);
     makeShapes(user.topics,'   ','p',true);
     makeShapes(user.preferences,'   ','t',true);
-    setTimeout(function(){document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)'; runAnimation();},500);
+    setTimeout(function(){ runAnimation(); document.querySelector("#textEnter").style.height = 'calc(var(--ballSize) + 1em)';},500);
 },1000);
 }
 
@@ -2532,7 +2532,7 @@ setTimeout(function(){
         }
     }
     newConsoleLog(3);
-    if (localStorage.getItem('nostalgiaTokName') !== null || (!isSharing && localStorage.getItem('nostalgiaTokName') == '👤')) {
+    if (localStorage.getItem('nostalgiaTokName') !== null || (!isSharing && !localStorage.getItem('nostalgiaTokName') == '👤')) {
         document.querySelector('#teInput').setAttribute('class', 'noBorder')
         document.querySelector('#teTitle').style.textDecoration = "none";
         document.querySelector('#textEnter').style.left = "calc(2 * var(--margin))";
