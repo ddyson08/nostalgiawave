@@ -2368,6 +2368,7 @@ if(shareUrl!=="null"){
      words[navLang][32] = " "+words[navLang][103]+ " ";;
      words[navLang][3] = " "+words[navLang][103]+" ";
      isSharing = "true";
+	localStorage.setItem('nostalgiaTokName','👤');
      console.log(window.isSharing);
 setTimeout(function(){
     happeningNow = false;
