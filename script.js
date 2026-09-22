@@ -2227,6 +2227,7 @@ window.onload = function () {
         if(event.keyCode == "32"){
              if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
+				 createOrReloadYouTubePlayer(allVideos[currentPlace],1)
                                                                           try{
                                                                         if(fullsc == 'yes'){
                                                                         document.querySelector('#titleBar').style.zIndex = "0";
@@ -2236,6 +2237,7 @@ window.onload = function () {
                                                                     }
                                                                      }else{
                                                                          player.playVideo();
+				 createOrReloadYouTubePlayer(allVideos[currentPlace],0)
                                                                           try{
                                                                        
                                                                          document.querySelector('#titleBar').style.zIndex = "2000";
@@ -3725,7 +3727,12 @@ document.body.addEventListener("wheel", event => {
 });
                                                                     // TOUCH END
                                                                     TOOO.addEventListener('mouseup', function (event) {
-                                                                     
+                                                                     if (!(element && element.getAttribute('id') == 'fullscreenButton')) {
+                                                                      //playPause +=1; 
+                                                                
+                                                                }else{
+                                                                    document.getElementById('fullscreenButton').click();
+                                                                }
                                                                       autoplay = 0; 
                                                                         isTE = true;
                                                                           if(!isPD){
@@ -3738,7 +3745,7 @@ document.body.addEventListener("wheel", event => {
 																		 try{
                                                                     if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
-																		createOrReloadYoutubePlayer(allVideos[currentPlace],1)
+																		createOrReloadYouTubePlayer(allVideos[currentPlace],1)
                                                                           try{
                                                                         if(fullsc == 'yes'){
                                                                         document.querySelector('#titleBar').style.zIndex = "0";
@@ -3748,7 +3755,7 @@ document.body.addEventListener("wheel", event => {
                                                                     }
                                                                      }else{
                                                                          player.playVideo();
-																		createOrReloadYoutubePlayer(allVideos[currentPlace],0)
+																		createOrReloadYouTubePlayer(allVideos[currentPlace],0)
                                                                           try{
                                                                        
                                                                         document.querySelector('#titleBar').style.zIndex = "2000";
