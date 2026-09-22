@@ -2227,7 +2227,8 @@ window.onload = function () {
         if(event.keyCode == "32"){
              if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
-				 createOrReloadYouTubePlayer(allVideos[currentPlace],1)
+				 createOrReloadYouTubePlayer(allVideos[currentPlace],1);
+				  player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
                                                                         document.querySelector('#titleBar').style.zIndex = "0";
@@ -2237,7 +2238,8 @@ window.onload = function () {
                                                                     }
                                                                      }else{
                                                                          player.playVideo();
-				 createOrReloadYouTubePlayer(allVideos[currentPlace],0)
+				 createOrReloadYouTubePlayer(allVideos[currentPlace],0);
+				 player.playVideo();
                                                                           try{
                                                                        
                                                                          document.querySelector('#titleBar').style.zIndex = "2000";
@@ -2571,7 +2573,9 @@ setTimeout(function(){
                 fkAround();
             }, 500);
             document.querySelector("#uvula").style.opacity = "1";
+			if(!isSharing){
             startPendulum();
+			}
             document.documentElement.scrollTop = 0;
             document.documentElement.scrollLeft = 0;
             document.querySelector("#allHold").style.overflow = "hidden";
@@ -3745,7 +3749,8 @@ document.body.addEventListener("wheel", event => {
 																		 try{
                                                                     if(player.getPlayerState() === 1){
                                                                          player.pauseVideo();
-																		createOrReloadYouTubePlayer(allVideos[currentPlace],1)
+																		createOrReloadYouTubePlayer(allVideos[currentPlace],1);
+																		player.pauseVideo();
                                                                           try{
                                                                         if(fullsc == 'yes'){
                                                                         document.querySelector('#titleBar').style.zIndex = "0";
@@ -3755,7 +3760,8 @@ document.body.addEventListener("wheel", event => {
                                                                     }
                                                                      }else{
                                                                          player.playVideo();
-																		createOrReloadYouTubePlayer(allVideos[currentPlace],0)
+																		createOrReloadYouTubePlayer(allVideos[currentPlace],0);
+																		player.playVideo();
                                                                           try{
                                                                        
                                                                         document.querySelector('#titleBar').style.zIndex = "2000";
