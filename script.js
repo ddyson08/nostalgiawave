@@ -6175,6 +6175,8 @@ for (var i = 0; i < allVideos.length; i++) {
 }
 
 // replace original list
+result.filter(n => !n.includes("Error"));
+result.filter(n => !n.length<4);
 if(!isSharing){
  var innerBool = true;
             if(false){
