@@ -6146,7 +6146,7 @@ try{
 
 			allVideos = [...new Set(allVideos)]
             console.log(result);
-            if(isSharing!==false){
+            if(isSharing){
                 console.log(allVideos);
 allVideos.unshift(shareVarr);
 console.log(allVideos);
@@ -6175,6 +6175,7 @@ for (var i = 0; i < allVideos.length; i++) {
 }
 
 // replace original list
+if(!isSharing){
  var innerBool = true;
             if(false){
 
@@ -6187,6 +6188,7 @@ for (var i = 0; i < allVideos.length; i++) {
                 var innerValls = localStorage.getItem('nostalgiaTokOldVideos').split("|SPLIT|");
                 var offset = 0;
             result = [...result.filter(n => !innerValls.includes(n))]
+            }
             }
 allVideos = [...result];
 
