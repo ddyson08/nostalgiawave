@@ -6183,7 +6183,7 @@ for (var i = 0; i < allVideos.length; i++) {
 
 // replace original list
 result = [...result.filter(n => !n.includes("Error"))];
-result=[...result.filter(n => !n.length<4)];
+result=[...result.filter(n => n.length>4)];
 if(!isSharing){
  var innerBool = true;
             if(false){
@@ -6331,7 +6331,7 @@ avcp = tempURL;
         }
         catch(e){
             console.log(e);
-            giveError();
+           
         }
       }
 
