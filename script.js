@@ -1864,7 +1864,7 @@ function pgCancel(text) {
                                                 document.querySelector('#fullscreenButton').innerText = words[navLang][84]+({'no': '↘','yes': '↖'})[fullsc];
                                                 avcp = allVideos[currentPlace].replace('📺','');
                                                 if(allVideos[currentPlace].includes("Error")){
-                                                    giveError();
+                                                   // giveError();
                                                     avcp = tempURL;
                                                 }
                                           
@@ -6200,6 +6200,7 @@ if(!isSharing){
             }
             }
 allVideos = [...result];
+			 allVideos=[...allVideos.filter(n => n.length>4)];
 
 }
 catch(e){
