@@ -6182,8 +6182,8 @@ for (var i = 0; i < allVideos.length; i++) {
 }
 
 // replace original list
-result.filter(n => !n.includes("Error"));
-result.filter(n => !n.length<4);
+result = [...result.filter(n => !n.includes("Error"))];
+result=[...result.filter(n => !n.length<4)];
 if(!isSharing){
  var innerBool = true;
             if(false){
@@ -6272,9 +6272,7 @@ function giveError3() {
 }
   
       function createOrReloadYouTubePlayer(avcp, bool) {
-        if(avcp.length < 7){
-            avcp = tempURL;
-        }
+        
         if(document.querySelector('div#videoFrame') != null){
         player = new YT.Player('videoFrame', {
           height: '390',
@@ -6361,9 +6359,7 @@ avcp = tempURL;
                                             var TOOO = document.querySelector('#touchOverlay');
                                             TOOO.style.transition ="0";
                                             TOOO.style.marginLeft = "-1000vw";
-		  if(avcp.length < 7){
-            avcp = tempURL;
-        }
+		  
                                             try{
                                             player.loadVideoById(avcp)
                                             }catch(e){}
