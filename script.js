@@ -4944,7 +4944,7 @@ function swipeUp() {
         howToFullscreen(true, [131,132], true);
         lst = [];
         }
-        if(lstl>4){
+        if(lstl>5){
             lst.pop();
             }
         }
@@ -6316,7 +6316,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},10000);
+		},15000);
         response = await fetch(url);
 
         if (!response.ok) {
