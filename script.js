@@ -6239,7 +6239,7 @@ catch(e){
 
      onYouTubeIframeAPIReady();
 }
-var response;
+var response = "";
 async function requestVideosInner(value) {
 	response = "";
     let url =
