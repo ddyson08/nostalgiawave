@@ -5003,12 +5003,12 @@ function swipeUp() {
                 newConsoleLog(thebigjae.top);
                 document.querySelector("#allHold").append(bigjae);
                 newConsoleLog([thebigjae, tsMT]);
-                bigjae.style.backgroundColor = "var(--emphasizedText)";
+                bigjae.style.backgroundColor = "var(--contrast)";
                 var bigjae2 = orbit.cloneNode();
                 bigjae2.style.left = thebigjae.x + "px";
                 document.querySelector("#allHold").append(bigjae2);
                 bigjae2.style.top = "calc(env(safe-area-inset-top) + " + thebigjae.y + "px)";
-                bigjae2.style.backgroundColor = "var(--emphasizedText)";
+                bigjae2.style.backgroundColor = "var(--contrast)";
                 // bigjae2.style.opacity = "0.2";
                 bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbit.remove();
@@ -5020,12 +5020,12 @@ function swipeUp() {
                 newConsoleLog(thebigjaef.top);
                 document.querySelector("#allHold").append(bigjaef);
                 newConsoleLog([thebigjaef, tsMT]);
-                bigjaef.style.backgroundColor = "var(--emphasizedText)";
+                bigjaef.style.backgroundColor = "var(--contrast)";
                 var bigjae2f = orbitf.cloneNode();
                 bigjae2f.style.left = thebigjaef.x + "px";
                 document.querySelector("#allHold").append(bigjae2f);
                 bigjae2f.style.top = "calc(env(safe-area-inset-top) + " + thebigjaef.y + "px)";
-                bigjae2f.style.backgroundColor = "var(--emphasizedText)";
+                bigjae2f.style.backgroundColor = "var(--contrast)";
                 //bigjae2f.style.opacity = "0.2";
                 bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbitf.remove();
@@ -5052,12 +5052,12 @@ function swipeUp() {
                         bigjae.style.borderRadius = "5px";
                         bigjae.style.top = "calc(env(safe-area-inset-top) + " + "4em)";
                         bigjae.style.transform = "rotate(360deg)";
-                        bigjae.style.backgroundColor = "var(--emphasizedText)";
+                        bigjae.style.backgroundColor = "var(--contrast)";
                        
                         setTimeout(function () {
                             
                             setTimeout(function () {
-                                bigjae.style.backgroundColor = "var(--emphasizedText)";
+                                bigjae.style.backgroundColor = "var(--contrast)";
 if (currentPlace < allVideos.length-3) {
                                         
                                         if (allVideos[currentPlace].includes("Error")) {
@@ -5183,13 +5183,13 @@ if (currentPlace < allVideos.length-3) {
                         bigjaef.style.borderRadius = "5px";
                         bigjaef.style.top = "env(safe-area-inset-top)"
                         bigjaef.style.transform = "rotate(360deg)";
-                        bigjaef.style.backgroundColor = "var(--emphasizedText)";
+                        bigjaef.style.backgroundColor = "var(--contrast)";
                         
                         setTimeout(function () {
                            
                             setTimeout(function () {
                                // alert(1);
-                                bigjaef.style.backgroundColor = "var(--emphasizedText)";
+                                bigjaef.style.backgroundColor = "var(--contrast)";
 //alert(2);
   if (currentPlace < allVideos.length - 3) {
                                         
