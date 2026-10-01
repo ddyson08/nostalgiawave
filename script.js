@@ -1072,7 +1072,7 @@ words['ja'].push("インターネット接続が遅いか、切断されてい�
 words['ar'].push("تحقق من شبكتك")
 words['ar'].push("قد يكون اتصالك بالإنترنت بطيئًا أو غير متصل. يمكنك محاولة تحديث الصفحة واستخدام زر " + words['ar'][23] + " للبحث عن هذا مرة أخرى بسرعة!")
 words['es'].push("comprueba tu red")
-words['es'].push("tu conexión a internet podría estar lenta o desconectada. puedes intentar actualizar la página y usar el botón " + words['es'][23]" + " para buscar rápidamente de nuevo.")
+words['es'].push("tu conexión a internet podría estar lenta o desconectada. puedes intentar actualizar la página y usar el botón " + words['es'][23] + " para buscar rápidamente de nuevo.")
 words['pt'].push("verifique sua rede")
 words['pt'].push("sua internet pode estar lenta ou desconectada. você pode tentar atualizar a página e usar o botão " + words['pt'][23] + " para pesquisar novamente rapidamente!")
 words['fr'].push("vérifiez votre réseau")
