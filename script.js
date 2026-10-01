@@ -1172,7 +1172,7 @@ var withinSpeedUp = false;
 var currentPlace = 0;
 var allVideos = [];
 var additions = {
-    "en-US": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
+    "en": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "en": [" ", "<b>&nbsp;  </b>", "<a> </a>"],
     "ar": [" ", "<a>&nbsp;  </a>", "<b> </b>"],
     "he": [" ", "<a>&nbsp;  </a>", "<b> </b>"],
@@ -2204,7 +2204,7 @@ i.innerHTML = words[navLang][i.getAttribute('words')]+ "";
                 }
                 catch (e) {
                     newConsoleLog(e);
-                    i.innerHTML = ah[0] + words["en-US"][i.getAttribute('words')] + ah[1];
+                    i.innerHTML = ah[0] + words["en"][i.getAttribute('words')] + ah[1];
                 }
             }
         }, 1000)
@@ -2662,7 +2662,7 @@ setTimeout(function(){
         }
         catch (e) {
             newConsoleLog(e);
-            i.innerHTML = ah[0] + words["en-US"][i.getAttribute('words')] + ah[1];
+            i.innerHTML = ah[0] + words["en"][i.getAttribute('words')] + ah[1];
         }
     }
     newConsoleLog(7);
