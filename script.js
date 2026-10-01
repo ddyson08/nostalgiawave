@@ -6126,10 +6126,12 @@ async function requestVideos(value) {
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
             try{
-				if(!sanitized.trim().startsWith('<') || !allVideos[0].includes("Error")){
+				!allVideos[0].includes("Error")){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
-				//	giveError();
+localStorage.removeItem('next_'+userEnc);
+localStorage.removeItem('pag_'+userEnc);
+localStorage.removeItem('nst_'+userEnc);
 				}
             }
             catch(e){}
@@ -6142,7 +6144,7 @@ async function requestVideos(value) {
             allVideos = [...allVideos, ...tbaa];
 
 try{
-	if(!sanitized.trim().startsWith('<') || !allVideos[0].includes("Error")){
+	if(!allVideos[0].includes("Error")){
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
 	}else{
@@ -6274,6 +6276,10 @@ async function requestVideosInner(value) {
         if (!response.ok) {
             allVideos[0] = "Error";
         }
+        if (!navigator.onLine) {
+} else {
+ howToFullscreen(true,[129,130]);
+}
 		try{
 		document.querySelector('.Bbbutt').click();
 		}catch(e){}
