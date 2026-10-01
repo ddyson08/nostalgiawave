@@ -1045,8 +1045,6 @@ var words = {
 for(var WORDKEY of Object.keys(words)){
 words[WORDKEY][4] = "--->";
 }
-words['en'].push("check ur network")
-words['en'].push("your internet might be slow or disconnected. u can try refershing the page & using the " + words['en'][23] + " button to quickly search this again!")
 words["ar"][71] = "من فضلك، في وقت سابق :)";
 words["he"][71] = "מוקדם יותר, בבקשה :)";
 words["ar"].push("nostalgiaWave تصدير ");
@@ -1065,6 +1063,8 @@ words["he"].push("שנה:")
 words["he"].push("יוצר:")
 words["he"].push("נושא:")
 words["he"].push("החלק כדי לעבור בין שמירות");
+words['en'].push("check ur network")
+words['en'].push("your internet might be slow or disconnected. u can try refershing the page & using the " + words['en'][23] + " button to quickly search this again!")
 words['ru'].push("проверьте свою сеть"),
 words['ru'].push("bозможно, у вас медленное или отключенное интернет-соединение. Попробуйте обновить страницу и использовать кнопку ".toLowerCase() + words['ru'][23] + " для быстрого повторного поиска!")
 words['ja'].push("ネットワークを確認してください")
@@ -1093,6 +1093,34 @@ words['he'].push("בדוק את הרשת שלך")
 words['he'].push("ייתכן שהאינטרנט שלך איטי או מנותק. אתה יכול לנסות לרענן את הדף וללחוץ על כפתור " + words['he'][23] + " כדי לחפש שוב במהירות!")
 words['hi'].push("अपना नेटवर्क चेक करें।")
 words['hi'].push("आपका इंटरनेट धीमा हो सकता है या डिस्कनेक्ट हो सकता है। आप पेज को रिफ्रेश करके और इसे फिर से जल्दी से सर्च करने के लिए " + words['hi'][23] + " बटन पर क्लिक करके देख सकते हैं!")
+words['en'].push("these videos probably suck huh 😕")
+words['en'].push("in the topic field, you can use a '-' and then type what you dont want to see, eg. '-ai'.")
+words['ru'].push("Эти видео, наверное, отстой, да 😕".toLowerCase())
+words['ru'].push("b поле темы вы можете использовать '-', а затем ввести то, что вы не хотите видеть, например, '-ai'.")
+words['ar'].push("ربما تكون مقاطع الفيديو هذه سيئة هاه 😕")
+words['ar'].push("في حقل الموضوع، يمكنك استخدام '-' ثم كتابة ما لا تريد رؤيته، على سبيل المثال. '-ai'.")
+words['ja'].push("この動画、たぶん最悪だね 😕")
+words['ja'].push("トピックフィールドでは、'-' を使用し、見たくない項目（例: '-ai'）を入力できます。")
+words['hi'].push("ये वीडियो शायद बेकार हैं हुह 😕")
+words['hi'].push("विषय क्षेत्र में, आप '-' का उपयोग कर सकते हैं और फिर वह टाइप कर सकते हैं जिसे आप देखना नहीं चाहते हैं, उदाहरण के लिए। '-ai'।")
+words['es'].push("estos vídeos probablemente apestan, ¿eh? 😕")
+words['es'].push("en el campo del tema, puedes usar un '-' y luego escribir lo que no quieres ver, por ejemplo, '-ai'.")
+words['fr'].push("ces vidéos sont probablement nulles hein 😕")
+words['fr'].push("dans le champ thématique, vous pouvez utiliser un '-', puis taper ce que vous ne voulez pas voir, par exemple '-ai'.")
+words['de'].push("Diese Videos sind wahrscheinlich scheiße, hm 😕".toLowerCase())
+words['de'].push("Im Themenfeld können Sie ein '-' verwenden und dann eingeben, was Sie nicht sehen möchten, z.B. '-ai'.".toLowerCase())
+words['pt'].push("esses vídeos provavelmente são uma droga hein 😕")
+words['pt'].push("no campo do tópico, você pode usar um '-' e depois digitar o que não quer ver, por exemplo, '-ai'.")
+words['zh'].push("这些视频可能很糟糕，呵呵😕")
+words['zh'].push("在主题字段中，您可以使用'-'，然后输入您不想看到的内容，例如'-ai'。")
+words['ko'].push("이 영상들 아마 별로네 😕")
+words['ko'].push("주제 필드에 '-'를 입력한 다음, 보고 싶지 않은 항목을 입력할 수 있습니다. 예를 들어 '-ai'.")
+words['am'].push("እነዚህ ቪዲዮዎች ምናልባት አሰልቺ ናቸው አይደል? 😕")
+words['am'].push("በ ርዕስ መስኩ ላይ '-' ምልክትን በመጠቀም ማየት የማይፈልጉትን ነገር መጻፍ ይችላሉ፤ ለምሳሌ፡ '-ai'።")
+words['zgh'].push("ⵉvidyutenagi ⴰⵀⴰⵜ ⵙⵙⵓⵙⵙⵓⴼⴻⵏ ⵀⵓⵀ 😕")
+words['zgh'].push("ⴷⴻⴳ ⵓⵏⵏⴰⵔ ⵏ ⵓⵙⴻⵏⵜⴻⵍ, ⵜⵣⴻⵎⵔⴻⴹ ⴰⴷ ⵜⴻⵙⵇⴻⴷⵛⴻⴹ '-' ⵙⵢⴻⵏ ⴰⴷ ⵜⴰⵔⵓⴹ ⴰⵢⴻⵏ ⵓⵔ ⵜⴻⴱⵖⵉⴹ ⴰⵔⴰ ⴰⴷ ⵜⵜⵡⴰⵍⵉⴹ, ⴰⵎⴻⴷⵢⴰ. '-ⴰⵉ'.")
+words['kri'].push("dis vidio dem probabli sok huh 😕")
+words['kri'].push("insay di tɔpik fil, yu kin yuz wan '-' ɛn afta dat yu kin tayp wetin yu nɔ want fɔ si, ɛgz. '-ai'.")
 for(var WORDX of Object.keys(words)){
     words[WORDX][25] = words[WORDX][25] + " + 🔎";
 }
@@ -1984,6 +2012,10 @@ avcp = tempURL;
 }
 
 function editModeFunction(simmilar, pgGivenData, neww) {
+    try{
+        lst=[];
+        }
+        catch(e){}
     tetVar = true;
     try{
          for (var yes of [...document.querySelectorAll('.yes')]) {
@@ -2878,7 +2910,7 @@ try{
                         tEE.style.bottom = "-50vh";
                         setTimeout(function(){
                             var newMess = document.createElement('div');
-                            newMess.setAttribute('style', "transition: 1s; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); z-index: 100; border-radius: 5px; position: absolute; opacity: 0; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); bottom: 2em; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
+                            newMess.setAttribute('style', "transition: 1s; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); z-index: 100; border-radius: 5px; position: absolute; opacity: 0; max-width: calc("+tEEl[2]+"px - "+tEEl[1]+"px); bottom: 2em !important; left:"+tEEl[1]+"px; background-color: var(--second); padding: 1em");
                             newMess.setAttribute('id','newMess');
                             var pwanumb = 1;
                             if(isPWA()){
@@ -4902,7 +4934,21 @@ function evaluateFullscreenReminder(n){
     fsNumber++;
     localStorage.setItem("nstFSRN",fsNumber);
 }
+var lst = [];
 function swipeUp() {
+    try{
+    var Qdate = parseInt(Date.now());
+    lst.push(Qdate);
+    var lstl = lst.length;
+    if(lst[lstl-1] - lst[lstl-2] < 5000 && lst[lstl-2] - lst[lstl-3] < 5000 && lst[lstl-3] - lst[lstl-4] < 5000){
+        howToFullscreen(true, [131,132], true);
+        lst = [];
+        }
+        if(lstl>4){
+            lst.pop();
+            }
+        }
+    catch(e){}
     if(rateLimit){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
@@ -6270,7 +6316,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},6000);
+		},10000);
         response = await fetch(url);
 
         if (!response.ok) {
