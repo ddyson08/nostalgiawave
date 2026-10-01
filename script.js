@@ -1,4 +1,4 @@
-//Hello! most of this code is mine, some is from StackOverflow and other helpful websites
+ //Hello! most of this code is mine, some is from StackOverflow and other helpful websites
 var swipeXx = 0;
 var swipeInterval = true;
 var isSharing = false;
