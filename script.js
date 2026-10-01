@@ -141,7 +141,7 @@ var allowAd = true;
 var rateLimit = true;
 var tetVar = false;
 var words = {
-  "en-US": [
+  "en": [
     "by", //0
     "nostalgiaWave", //1
     "peiLamed", //2
@@ -270,7 +270,9 @@ var words = {
 "year:", //125
 "creator:", //126
 "topic:", //127
-"swipe this box to cycle thru saves" //128
+"swipe this box to cycle thru saves", //128
+	  "check ur network", //129
+	  "your internet might be slow or disconnected. u can try refershing the page & using the '" + words['en'][23] + "' button to quickly search this again!"
   ],
   "ru": [
 "от", //0
@@ -1063,6 +1065,34 @@ words["he"].push("שנה:")
 words["he"].push("יוצר:")
 words["he"].push("נושא:")
 words["he"].push("החלק כדי לעבור בין שמירות");
+words['ru'].push("проверьте свою сеть"),
+words['ru'].push("bозможно, у вас медленное или отключенное интернет-соединение. Попробуйте обновить страницу и использовать кнопку ".toLowerCase() + words['ru'][23] + " для быстрого повторного поиска!")
+words['ja'].push("ネットワークを確認してください")
+words['ja'].push("インターネット接続が遅いか、切断されている可能性があります。ページを更新して、".toLowerCase() + words['ja'][23] + " ボタンを使用して、すばやく再度検索してみてください。")
+words['ar'].push("تحقق من شبكتك")
+words['ar'].push("قد يكون اتصالك بالإنترنت بطيئًا أو غير متصل. يمكنك محاولة تحديث الصفحة واستخدام زر " + words['ar'][23] + " للبحث عن هذا مرة أخرى بسرعة!")
+words['es'].push("comprueba tu red")
+words['es'].push("tu conexión a internet podría estar lenta o desconectada. puedes intentar actualizar la página y usar el botón " + words['es'][23]" + " para buscar rápidamente de nuevo.")
+words['pt'].push("verifique sua rede")
+words['pt'].push("sua internet pode estar lenta ou desconectada. você pode tentar atualizar a página e usar o botão " + words['pt'][23] + " para pesquisar novamente rapidamente!")
+words['fr'].push("vérifiez votre réseau")
+words['fr'].push("votre connexion internet est peut-être lente ou interrompue. vous pouvez essayer d'actualiser la page et d'utiliser le bouton " + words['fr'][23] + " pour effectuer une nouvelle recherche rapide")
+words['de'].push("Überprüfen Sie Ihr Netzwerk".toLowerCase())
+words['de'].push("Ihre Internetverbindung ist möglicherweise langsam oder unterbrochen. Versuchen Sie, die Seite neu zu laden und die Schaltfläche ".toLowerCase() + words['de'][23] + " zu verwenden, um erneut schnell danach zu suchen!".toLowerCase())
+words['zh'].push("检查您的网络")
+words['zh'].push("您的网络可能速度较慢或已断开连接。您可以尝试刷新页面，然后使用 " + words['zh'][23] + " 按钮快速再次搜索！")
+words['am'].push("አውታረ መረብዎን ይፈትሹ")
+words['am'].push("ኢንተርኔትዎ ቀርፋፋ ወይም ተቋርጦ ሊሆን ይችላል። ገጹን ለማደስ እና "+ words['am'][23] + " የሚለውን ቁልፍ በመጠቀም እንደገና በፍጥነት ለመፈለግ መሞከር ይችላሉ!")
+words['zgh'].push("ⵙⴻⴼⵇⴻⴷ ⴰⵥⴻⴹⴹⴰⵉⵏⴻⴽ.")
+words['zgh'].push("ⵉⵏⵜⴻⵔⵏⴻⵜⵉⴽ ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⵉⵍⵉ ⴷ ⴰⵥⵉⴹⴰⵏ ⵏⴻⵖ ⴷ ⴰⵢⴻⵏ ⵉⵅⵓⵚⵚⴻⵏ. ⵓ ⵜⵣⴻⵎⵔⴻⴹ ⴰⴷ ⵜⵄⴻⵔⴹⴻⴹ ⴰⴷ ⵜⴻⵙⵏⴻⴼⵍⵉⴹ ⴰⵙⴻⴱⵜⴻⵔ & ⴰⴷ ⵜⵜⴹⴻⴳⴳⵔⴻⴹ " + words['zgh'][23] + " ⴰⴽⴽⴻⵏ ⴰⴷ ⵜⵏⴰⴷⵉⴹ ⵙ ⵜⵖⴰⵡⵍⴰ ⴰⵢⴰ ⵜⵉⴽⴽⴻⵍⵜ ⵏⵏⵉⴹⴻⵏ!")
+words['kri'].push("chek yu netwok")
+words['kri'].push("yu intanet kin slo ɔ yu nɔ gɛt kɔnekshɔn. u kin tray fɔ rifresh di pej & klik di " + words['kri'][23] + " bɔtin fɔ fɛn dis kwik kwik wan bak!")
+words['ko'].push("네트워크 상태를 확인하세요")
+words['ko'].push("인터넷 속도가 느리거나 연결이 끊어졌을 수 있습니다. 페이지를 새로고침하고 " + words['ko'][23] + " 버튼을 클릭하여 다시 빠르게 검색해 보세요!")
+words['he'].push("בדוק את הרשת שלך")
+words['he'].push("ייתכן שהאינטרנט שלך איטי או מנותק. אתה יכול לנסות לרענן את הדף וללחוץ על כפתור " + words['he'][23] + " כדי לחפש שוב במהירות!")
+words['hi'].push("अपना नेटवर्क चेक करें।")
+words['hi'].push("आपका इंटरनेट धीमा हो सकता है या डिस्कनेक्ट हो सकता है। आप पेज को रिफ्रेश करके और इसे फिर से जल्दी से सर्च करने के लिए " + words['hi'][23] + " बटन पर क्लिक करके देख सकते हैं!")
 for(var WORDX of Object.keys(words)){
     words[WORDX][25] = words[WORDX][25] + " + 🔎";
 }
@@ -1075,10 +1105,10 @@ if(words[navLang] == undefined){
             navLang = "zgh";
         }
         if(words[navLang] == undefined){
-            navLang = "en-US";
+            navLang = "en";
         }
     }catch(e){
-        navLang = "en-US";
+        navLang = "en";
     }
     }
     var savePerm = false;
@@ -6209,8 +6239,9 @@ catch(e){
 
      onYouTubeIframeAPIReady();
 }
-
+var response;
 async function requestVideosInner(value) {
+	response = "";
     let url =
         "https://script.google.com/macros/s/AKfycbyRGI3dRtizuTd9bAfHw6xu7VzwpBQobP9o6ULFSMht5laEduw5QtoHHRVoC_qAJHo/exec"
         + "?year=" + encodeURIComponent(user.year)
@@ -6221,11 +6252,24 @@ async function requestVideosInner(value) {
     }
 
     try {
-        const response = await fetch(url);
+		setTimeout(function(){
+			if(response == ""){
+				try{
+				howToFullscreen(true,[128,129]);
+				}
+				catch(e){
+					console.log(e);
+				}
+			}
+		},5000);
+        response = await fetch(url);
 
         if (!response.ok) {
             allVideos[0] = "Error";
         }
+		try{
+		document.querySelector('.Bbbutt').click();
+		}catch(e){}
         console.log(response);
 
         const result = await response.text();
