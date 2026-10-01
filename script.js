@@ -270,10 +270,8 @@ var words = {
 "year:", //125
 "creator:", //126
 "topic:", //127
-"swipe this box to cycle thru saves", //128
-	  "check ur network", //129
-	  "your internet might be slow or disconnected. u can try refershing the page & using the '" + words['en'][23] + "' button to quickly search this again!"
-  ],
+"swipe this box to cycle thru saves" //128
+	],
   "ru": [
 "от", //0
 "nostalgiaWave", //1
@@ -1047,6 +1045,8 @@ var words = {
 for(var WORDKEY of Object.keys(words)){
 words[WORDKEY][4] = "--->";
 }
+words['en'].push("check ur network")
+words['en'].push("your internet might be slow or disconnected. u can try refershing the page & using the " + words['en'][23] + " button to quickly search this again!")
 words["ar"][71] = "من فضلك، في وقت سابق :)";
 words["he"][71] = "מוקדם יותר, בבקשה :)";
 words["ar"].push("nostalgiaWave تصدير ");
