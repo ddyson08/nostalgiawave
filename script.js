@@ -4940,12 +4940,16 @@ function swipeUp() {
     var Qdate = parseInt(Date.now());
     lst.push(Qdate);
     var lstl = lst.length;
-    if(lst[lstl-1] - lst[lstl-2] < 5000 && lst[lstl-2] - lst[lstl-3] < 5000 && lst[lstl-3] - lst[lstl-4] < 5000){
+    if(lst[lstl-1] - lst[lstl-2] < 6000 && lst[lstl-2] - lst[lstl-3] < 6000 && lst[lstl-3] - lst[lstl-4] < 6000){
+        var checkDate = new Date();
+        if(localStorage.getItem(checkDate.toDateString()+'prolly')!=="true"){
         howToFullscreen(true, [131,132], true);
+        localStorage.setItem(checkDate.toDateString()+'prolly','true')
+       }
         lst = [];
-        }
+         }
         if(lstl>5){
-            lst.pop();
+            lst.shift();
             }
         }
     catch(e){}
