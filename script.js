@@ -6126,7 +6126,7 @@ async function requestVideos(value) {
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
             try{
-				!allVideos[0].includes("Error")){
+				if(!allVideos[0].includes("Error")){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
 localStorage.removeItem('next_'+userEnc);
