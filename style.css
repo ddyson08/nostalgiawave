@@ -360,7 +360,7 @@ body {
     width: 100vw;
 }
 
-.card, #textEnter, .uBall, #uBalance, #uLine, #uNameplate, #titleBar {
+.card, #textEnter, .uBall, #uBalance, #uLine, .videoOrbit, #uNameplate, #titleBar {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     opacity: 0.9;
@@ -914,6 +914,7 @@ html, body {
 }
 .videoOrbit{
     background-color: var(--contrast) !important;
+    border: 2px solid var(--second) !important;
 }
 button[show="nah"]{
 display: none !important;
