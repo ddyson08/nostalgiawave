@@ -6261,7 +6261,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},5000);
+		},6000);
         response = await fetch(url);
 
         if (!response.ok) {
@@ -6276,6 +6276,10 @@ async function requestVideosInner(value) {
         return result;   
     } catch (error) {
         console.error(error.message);
+		if (!navigator.onLine) {
+} else {
+ howToFullscreen(true,[128,129]);
+}
         allVideos[0] = "Error";
     }
 }
