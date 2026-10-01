@@ -3,6 +3,7 @@ var swipeXx = 0;
 var swipeInterval = true;
 var isSharing = false;
 var is1 = false;
+var lst = [];
 const tempURL = "xo5TvNrhmZY";
 function ssmd(event){ if(swipeInterval){
         swipeInterval = false;swipeXx = event.clientX} setTimeout(function(){swipeInterval = true;}, 1000)}
@@ -1589,7 +1590,7 @@ hTFMessage.querySelector('p').innerHTML = words[navLang][96] + words[navLang][nu
     Bb.innerText = words[navLang][120] + " ✅";
 
     var extraPress = "";
-    if(a && (b[0] == 77 || b[0] == 75) && !searchError){
+    if((a && (b[0] == 77 || b[0] == 75) && !searchError)||searchError){
         
         extraPress = "; evaluateFullscreenReminder(28);"
     }
@@ -4934,12 +4935,14 @@ function evaluateFullscreenReminder(n){
     fsNumber++;
     localStorage.setItem("nstFSRN",fsNumber);
 }
-var lst = [];
+
 function swipeUp() {
     try{
     var Qdate = parseInt(Date.now());
     lst.push(Qdate);
+    console.warn("QQ"+lst);
     var lstl = lst.length;
+    console.warn("QQ"+(lst[lstl-1] - lst[lstl-2] < 6000 && lst[lstl-2] - lst[lstl-3] < 6000 && lst[lstl-3] - lst[lstl-4] < 6000));
     if(lst[lstl-1] - lst[lstl-2] < 6000 && lst[lstl-2] - lst[lstl-3] < 6000 && lst[lstl-3] - lst[lstl-4] < 6000){
         var checkDate = new Date();
         if(localStorage.getItem(checkDate.toDateString()+'prolly')!=="true"){
@@ -5406,7 +5409,7 @@ function swipeDown() {
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
-        bj.style.backgroundColor = "var(--emphasizedText)";
+        bj.style.backgroundColor = "var(--contrast)";
         bj.style.position = "absolute";
         bj.style.zIndex = 10000;
         bj.style.opacity = 0.5;
@@ -6176,7 +6179,7 @@ async function requestVideos(value) {
             sanitized = sanitized.replace(/\n/g,'');
             nextToken = result.split('NEXT_TOKEN:')[1];
             try{
-				if(!allVideos[0].includes("Error")){
+				if(!allVideos[0].includes("Error")&&allVideos[0].length>4&&!allVideos[0].includes("undefined")){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
 localStorage.removeItem('next_'+userEnc);
@@ -6194,7 +6197,7 @@ localStorage.removeItem('nst_'+userEnc);
             allVideos = [...allVideos, ...tbaa];
 
 try{
-	if(!allVideos[0].includes("Error")){
+	if(!allVideos[0].includes("Error")&&allVideos[0].length>4&&!allVideos[0].includes("undefined")){
             localStorage.setItem('nst_'+userEnc,localStorage.getItem('nst_'+userEnc,'')+'[NSTSPLIT]'+allVideos.join('[NSTSPLIT]'));
             localStorage.setItem('pag_'+userEnc,localStorage.getItem('pag_'+userEnc,'')+'[PAGSPLIT]'+value);
 	}else{
@@ -6320,7 +6323,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},15000);
+		},16000);
         response = await fetch(url);
 
         if (!response.ok) {
