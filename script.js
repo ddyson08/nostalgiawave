@@ -2263,6 +2263,13 @@ function startPendulum() {
     }
 window.onload = function () {
     try{
+        document.querySelector("#hone").style.transition = "0.2s";
+        document.querySelector("#hone").style.opacity = 0;
+        setTimeout(function(){document.querySelector("#hone").remove()},1000);
+        }
+        catch(e){
+            }
+    try{
         document.head.innerHTML +=`   <!-- Add this line to the <head> of your index.html file -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V9LC1BD89"></script>
 <script>
@@ -6255,7 +6262,7 @@ async function requestVideosInner(value) {
 		setTimeout(function(){
 			if(response == ""){
 				try{
-				howToFullscreen(true,[128,129]);
+				howToFullscreen(true,[129,130]);
 				}
 				catch(e){
 					console.log(e);
@@ -6278,7 +6285,7 @@ async function requestVideosInner(value) {
         console.error(error.message);
 		if (!navigator.onLine) {
 } else {
- howToFullscreen(true,[128,129]);
+ howToFullscreen(true,[129,130]);
 }
         allVideos[0] = "Error";
     }
