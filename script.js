@@ -6360,8 +6360,9 @@ async function requestVideosInner(value) {
     } catch (error) {
         console.error(error.message);
 		if (!navigator.onLine) {
+            howToFullscreen(true,[129,130]);
 } else {
- howToFullscreen(true,[129,130]);
+ 
 }
         allVideos[0] = "Error";
     }
