@@ -74,6 +74,11 @@ if(isPWA()){
 
 var clearItInterval = setInterval(function(){
     try{
+        if(!navigator.onLine){
+            words[navLang][15] = "------"
+            }
+        }catch(e){}
+    try{
       if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector("#swipeScreen").style.opacity != 0 || parseInt(document.querySelector('#allHold').style.width)<90){
         player.pauseVideo();
 	}
@@ -3576,6 +3581,12 @@ try{
 
                                     ayi.style.backgroundColor = "var(--oj)";
                                     ayi.style.opacity = "1";
+                                    try{
+        if(!navigator.onLine){
+            ayi.style.transition="0";
+            ayi.style.opacity = "0";
+            }
+        }catch(e){}
 
                                     //  i.innerHTML = "";
                                     ayi.style.filter = "";
@@ -6320,7 +6331,7 @@ async function requestVideosInner(value) {
 
     try {
 		setTimeout(function(){
-			if(response == ""){
+			if(!response.ok){
 				try{
 				howToFullscreen(true,[129,130]);
 				}
