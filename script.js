@@ -4958,7 +4958,7 @@ function swipeUp() {
     if(lst[lstl-1] - lst[lstl-2] < 6000 && lst[lstl-2] - lst[lstl-3] < 6000 && lst[lstl-3] - lst[lstl-4] < 6000){
         var checkDate = new Date();
         if(localStorage.getItem(checkDate.toDateString()+'prolly')!=="true"){
-        howToFullscreen(true, [131,132], true);
+        setTimeout(function(){howToFullscreen(true, [131,132], true)},1000);
         localStorage.setItem(checkDate.toDateString()+'prolly','true')
        }
         lst = [];
