@@ -6169,6 +6169,7 @@ async function requestVideos(value) {
             catch(e){
                 try{
                 localStorage.setItem('nst_'+userEnc,'');
+                getFromNet = true;
                 }catch(e){}
             }
         }else{
