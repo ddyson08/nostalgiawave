@@ -6323,7 +6323,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},16000);
+		},25000);
         response = await fetch(url);
 
         if (!response.ok) {
