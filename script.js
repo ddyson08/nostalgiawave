@@ -2924,6 +2924,7 @@ try{
                            newMess.append(document.createElement('br'));
                             newMess.append(nMb);
                             document.body.append(newMess);
+                            newMess.style.bottom = "3em";
                             setTimeout(function(){
                             newMess.style.opacity = 1;
                             },250*nextIntt);
