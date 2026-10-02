@@ -6185,7 +6185,7 @@ async function requestVideos(value) {
         if(allVideos.length>0&&allVideos[0].includes('Error')){
             getFromNet = true;
         }
-        if(allVideos.toString().includes("Error")||allVideos[0]==""||allVideos[0].includes("Error")){
+        if(allVideos.toString().includes("Error")||allVideos[0]==""||allVideos[0]=="undefined"||allVideos[0]==undefined||allVideos[0].includes("Error")){
             getFromNet = true;
             }
     if (getFromNet) {
