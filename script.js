@@ -6138,6 +6138,7 @@ async function requestVideos(value) {
                 localStorage.removeItem('next_'+userEnc);
                 localStorage.removeItem('nst_'+userEnc);
                 localStorage.removeItem('pag_'+userEnc);
+                
                 if(rateLimit[userEnc]){
                 rateLimit[userEnc] +=1;
                 }else{
@@ -6173,6 +6174,9 @@ async function requestVideos(value) {
         if(allVideos.length>0&&allVideos[0].includes('Error')){
             getFromNet = true;
         }
+        if(allVideos.toString().includes("Error")||allVideos[0]==""||allVideos[0].includes("Error")){
+            getFromNet = true;
+            }
     if (getFromNet) {
         try {
             const result = await requestVideosInner(value);
