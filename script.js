@@ -6328,15 +6328,16 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
-		},25000);
+		},15000);
         response = await fetch(url);
 
         if (!response.ok) {
             allVideos[0] = "Error";
         }
         if (!navigator.onLine) {
+            howToFullscreen(true,[129,130]);
 } else {
- howToFullscreen(true,[129,130]);
+ 
 }
 		try{
 		document.querySelector('.Bbbutt').click();
