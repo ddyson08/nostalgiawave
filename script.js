@@ -1335,7 +1335,9 @@ function endFollow() {
         var BUTTON = document.createElement("a");
         BUTTON.setAttribute("href",("https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺','')));
         BUTTON.setAttribute("target","_blank");
+        document.append(BUTTON);
         BUTTON.click();
+        BUTTON.remove();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
        //change name
@@ -1846,18 +1848,7 @@ function eMA2(simmilar, pgGivenData, neww) {
 
 }
 function pgCancel(text) {
-    try{
-        // Source - https://stackoverflow.com/a/63491194
-// Posted by charri
-// Retrieved 2026-10-12, License - CC BY-SA 4.0
-
-const highestId = window.setTimeout(() => {
-  for (let i = highestId; i >= 0; i--) {
-    window.clearInterval(i);
-  }
-}, 0);
-
-        }catch(e){}
+    
     try{
     endSavedSwipe();
     }
@@ -1882,6 +1873,7 @@ const highestId = window.setTimeout(() => {
     user.preferences = oldUser.preferences;
     user.topics = oldUser.topics;
     if (text == "X") {
+        
         ah.style.transition = "0s";
         ah = document.querySelector('#allHold');
         var ahBcr = ah.getBoundingClientRect();
@@ -1908,6 +1900,18 @@ const highestId = window.setTimeout(() => {
             }, 500);
         }, 100);
     } else {
+        try{
+        // Source - https://stackoverflow.com/a/63491194
+// Posted by charri
+// Retrieved 2026-10-12, License - CC BY-SA 4.0
+
+const highestId = window.setTimeout(() => {
+  for (let i = highestId; i >= 0; i--) {
+    window.clearInterval(i);
+  }
+}, 0);
+
+        }catch(e){}
         var voHold = [];
         for(var Aiy of [...document.querySelectorAll('.videoOrbit')]){
             voHold.push(Aiy);
