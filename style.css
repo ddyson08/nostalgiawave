@@ -913,8 +913,8 @@ html, body {
     background-color: black;
 }
 .videoOrbit{
-    background-color: var(--contrast) !important;
-    border: 2px solid var(--second) !important;
+    background-color: var(--second) !important;
+    border: 4px solid var(--contrast) !important;
 }
 button[show="nah"]{
 display: none !important;
