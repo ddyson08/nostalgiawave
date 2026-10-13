@@ -1335,7 +1335,7 @@ function endFollow() {
         var BUTTON = document.createElement("a");
         BUTTON.setAttribute("href",("https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺','')));
         BUTTON.setAttribute("target","_blank");
-        document.append(BUTTON);
+        document.body.append(BUTTON);
         BUTTON.click();
         BUTTON.remove();
     }
