@@ -5019,10 +5019,10 @@ function swipeUp() {
         var orbitf = document.createElement('div');
         if (fullsc == 'yes') {
             orbit.style.opacity = "0";
-            orbitf.style.opacity = "0.25";
+            orbitf.style.opacity = "1";
         } else {
             orbitf.style.opacity = "0";
-            orbit.style.opacity = "0.25";
+            orbit.style.opacity = "1";
         }
         orbit.setAttribute('class', 'videoOrbit no');
         orbit.style.borderRadius = "50%";
@@ -5048,10 +5048,10 @@ function swipeUp() {
         if(tsMT < 0.3){
             tsMT = 0.3;
         }
-        orbit.style.transition = "0.25s";
+        orbit.style.transition = "0.5s";
         // orbit.setAttribute('class', "videoOrbit");
         document.querySelector("#allHold").append(orbit);
-        orbitf.style.transition = "0.25s";
+        orbitf.style.transition = "0.5s";
         // orbitf.setAttribute('class', "videoOrbit");
         document.querySelector("#allHold").append(orbitf);
         
@@ -5095,13 +5095,13 @@ function swipeUp() {
                                               
                         }, 125);
 
-                    }, 250);
+                    }, 500);
 
-                }, 250);
+                }, 500);
 
-            }, 250);
+            }, 500);
 
-        }, 250);
+        }, 500);
 
         setTimeout(function () {
              orbit.style.width="0.5em";
@@ -5130,7 +5130,7 @@ function swipeUp() {
                 // bigjae2.style.opacity = "0.2";
                 bigjae2.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbit.remove();
-                bigjae.style.transition = "0.1s";
+                bigjae.style.transition = "0.2s";
 
                 bigjaef.style.left = thebigjaef.x + "px";
                 newConsoleLog(thebigjaef.left);
@@ -5147,19 +5147,19 @@ function swipeUp() {
                 //bigjae2f.style.opacity = "0.2";
                 bigjae2f.setAttribute('id', 'j' + tsMT.toString().replace('.', 'o'));
                 orbitf.remove();
-                bigjaef.style.transition = "0.1s";
+                bigjaef.style.transition = "0.2s";
                 if (fullsc == 'yes') {
-                    bigjae2f.style.opacity = "0.25";
+                    bigjae2f.style.opacity = "1";
                     bigjae2.style.opacity = "0";
                 } else {
-                    bigjae2.style.opacity = "0.25";
+                    bigjae2.style.opacity = "1";
                     bigjae2f.style.opacity = "0";
 
                 }
 
                 setTimeout(function () {
                     if (fullsc == 'no') {
-                        bigjae.style.opacity = 0.6;
+                        bigjae.style.opacity = 0.5;
                          bigjae.style.width = "0.5em";
                         bigjae.style.height = "0.5em";
                         bigjae.style.transition = "0.5s";
@@ -5170,7 +5170,7 @@ function swipeUp() {
                         bigjae.style.borderRadius = "5px";
                         bigjae.style.top = "calc(env(safe-area-inset-top) + " + "4em)";
                         bigjae.style.transform = "rotate(360deg)";
-                        bigjae.style.backgroundColor = "var(--contrast)";
+                        bigjae.style.backgroundColor = "var(--second)";
                        
                         setTimeout(function () {
                             
@@ -5293,7 +5293,7 @@ if (currentPlace < allVideos.length-3) {
                          bigjaef.style.width = "0.5em";
                         bigjaef.style.height = "0.5em";
                         bigjaef.style.transition = "0.5s";
-                        bigjaef.style.opacity = 0.6;
+                        bigjaef.style.opacity = 0.5;
                         bigjaef.setAttribute('class','glass');
                         bigjaef.style.width = "100dvw";
                         bigjaef.style.height = "100dvh";
@@ -5301,7 +5301,7 @@ if (currentPlace < allVideos.length-3) {
                         bigjaef.style.borderRadius = "5px";
                         bigjaef.style.top = "env(safe-area-inset-top)"
                         bigjaef.style.transform = "rotate(360deg)";
-                        bigjaef.style.backgroundColor = "var(--contrast)";
+                        bigjaef.style.backgroundColor = "var(--second)";
                         
                         setTimeout(function () {
                            
@@ -5437,7 +5437,7 @@ function swipeDown() {
         }
         bj.style.transform = "rotate(360deg)";
         bj.style.transition = "0.125s";
-        bj.style.backgroundColor = "var(--contrast)";
+        bj.style.backgroundColor = "var(--second)";
         bj.style.position = "absolute";
         bj.style.zIndex = 10000;
         bj.style.opacity = 0.5;
