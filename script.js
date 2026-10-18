@@ -5046,7 +5046,7 @@ function swipeUp() {
         orbitf.style.top = "calc(env(safe-area-inset-top) + " + sVt['yes'][1] + ")";
         tsMT = Math.random();
         if(tsMT < 0.3){
-            tsMT = 0.3;
+            tsMT += 0.3;
         }
         orbit.style.transition = "0.5s";
         // orbit.setAttribute('class', "videoOrbit");
@@ -5384,7 +5384,7 @@ if (currentPlace < allVideos.length-3) {
                     }
                 }, 100)
 
-            }, (tsMT * 1000))
+            }, (tsMT * 1700))
 }
     }
      
