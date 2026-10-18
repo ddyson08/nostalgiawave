@@ -5101,7 +5101,7 @@ function swipeUp() {
 
             }, 500);
 
-        }, 500);
+        }, 50);
 
         setTimeout(function () {
              orbit.style.width="0.5em";
