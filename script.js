@@ -6215,9 +6215,11 @@ async function requestVideos(value) {
 				if(!allVideos[0].includes("Error")&&allVideos[0].length>4&&!allVideos[0].includes("undefined")){
             localStorage.setItem('next_'+userEnc,nextToken);
 				}else{
+                    try{
 localStorage.removeItem('next_'+userEnc);
 localStorage.removeItem('pag_'+userEnc);
 localStorage.removeItem('nst_'+userEnc);
+}catch(e){}
 				}
             }
             catch(e){}
@@ -6337,7 +6339,7 @@ catch(e){
 var response = "";
 async function requestVideosInner(value) {
 	response = "";
-    let url =
+    var url =
         "https://script.google.com/macros/s/AKfycbyRGI3dRtizuTd9bAfHw6xu7VzwpBQobP9o6ULFSMht5laEduw5QtoHHRVoC_qAJHo/exec"
         + "?year=" + encodeURIComponent(user.year)
         + "&creator=" + encodeURIComponent(user.preferences)
@@ -6348,6 +6350,7 @@ async function requestVideosInner(value) {
 
     try {
 		setTimeout(function(){
+            try{
 			if(!response.ok){
 				try{
 				howToFullscreen(true,[129,130]);
@@ -6356,6 +6359,7 @@ async function requestVideosInner(value) {
 					console.log(e);
 				}
 			}
+            }catch(e){}
 		},15000);
         response = await fetch(url);
 
@@ -6372,7 +6376,7 @@ async function requestVideosInner(value) {
 		}catch(e){}
         console.log(response);
 
-        const result = await response.text();
+        var result = await response.text();
         return result;   
     } catch (error) {
         console.error(error.message);
@@ -6454,7 +6458,7 @@ function giveError3() {
         }
        
         if(allVideos.length == 0){
-            allVideos[0] = tempURL;
+            //allVideos[0] = tempURL;
         }
      var avcp = allVideos[currentPlace];
                                             if(allVideos[currentPlace].startsWith('📺') || allVideos[currentPlace].includes("Error")){
