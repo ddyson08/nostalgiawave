@@ -2577,7 +2577,7 @@ setTimeout(function(){
                 var BUTTON1 = document.createElement("a");
         BUTTON1.setAttribute("href","https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺',''));
         BUTTON1.setAttribute("target","_blank");
-        document.querySelector('#swDrag').appendChild(BUTTON1);
+        document.querySelector('#swDrag').append(BUTTON1);
         
         BUTTON1.style.textDecoration = "underline";
         
@@ -4344,7 +4344,7 @@ function reverseUball() {
 function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
 var localCopy = {};
-for(var key of Object.keys(localStorage)){
+for(var key in Object.keys(localStorage)){
     localCopy[key]=localStorage.getItem(key);
     }
  localCopy.nostalgiaTokOldVideos = "";
