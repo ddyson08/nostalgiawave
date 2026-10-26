@@ -1333,7 +1333,7 @@ function endFollow() {
         editModeAnimation();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
-        window.open("https://youtube.com/watch?v="+allVideos[currentPlace].replace('📺',''));
+        window.location = ("https://youtube.com/watch?v="+allVideos[currentPlace].replace('📺',''));
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
        //change name
@@ -4337,7 +4337,9 @@ function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
 var localCopy = {};
 for(var key of Object.keys(localStorage)){
+    if(!key.startsWith("nst_")){
     localCopy[key]=localStorage.getItem(key);
+    }
     }
  localCopy.nostalgiaTokOldVideos = "";
   const blob = new Blob(['NOSTALGIAWAVE'+JSON.stringify(localCopy)], { type: 'textXYZW' });
