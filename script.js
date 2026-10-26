@@ -4341,7 +4341,7 @@ function reverseUball() {
 function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
 var localCopy = Object.create(localStorage);
-delete localCopy.nostalgiaTokOldVideos;
+ localCopy.nostalgiaTokOldVideos = "";
   const blob = new Blob(['NOSTALGIAWAVE'+JSON.stringify(localCopy)], { type: 'textXYZW' });
   
   // 2. Generate a temporary object URL representing the file
