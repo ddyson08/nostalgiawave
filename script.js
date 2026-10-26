@@ -1317,6 +1317,7 @@ function startFollow() {
 }
 function fallbackShare(data) {
     shareWorks = false;
+    prompt(words[navLang][113],window.location.href.split('?')[0]+"?share="+encodeURIComponent(allVideos[currentPlace].replace('📺',''))+"&user="+encodeURIComponent(JSON.stringify(user)));
   // Example: Fallback to copying the link to the clipboard
   try{
     evaluateFullscreenReminder(112);
@@ -1333,11 +1334,11 @@ function endFollow() {
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
         var BUTTON = document.createElement("a");
-        BUTTON.setAttribute("href",("https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺','')));
+        BUTTON.setAttribute("href","https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺',''));
         BUTTON.setAttribute("target","_blank");
         document.body.append(BUTTON);
         BUTTON.click();
-        BUTTON.remove();
+        setTimeout(function(){BUTTON.remove();},1000);
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
        //change name
@@ -1391,6 +1392,7 @@ function endFollow() {
       console.log('Content shared successfully!');
     } catch (error) {
       // Handles user cancellation or system errors
+fallbackShare(shareData);
       console.log('Sharing failed or was canceled:', error.message);
        
     }
@@ -2342,6 +2344,7 @@ window.onload = function () {
              if(player.getPlayerState() === 1){
 				 firstTime=true;
                                                                          player.pauseVideo();
+                                                                        document.querySelector("#touchOverlay").style.marginLeft="100vw";
 				 createOrReloadYouTubePlayer(allVideos[currentPlace],1);
 				  player.pauseVideo();
                                                                           try{
@@ -2353,6 +2356,7 @@ window.onload = function () {
                                                                     }
                                                                      }else{
 				  firstTime=true;
+                document.querySelector("#touchOverlay").style.marginLeft="0vw";
                                                                          player.playVideo();
 				 createOrReloadYouTubePlayer(allVideos[currentPlace],0);
 				 player.playVideo();
@@ -3866,6 +3870,7 @@ document.body.addEventListener("wheel", event => {
                                                                     if(player.getPlayerState() === 1){
 																		firstTime=true;
                                                                          player.pauseVideo();
+                                                                        document.querySelector("#touchOverlay").style.marginLeft="100vw";
 																		createOrReloadYouTubePlayer(allVideos[currentPlace],1);
 																		player.pauseVideo();
                                                                           try{
@@ -3878,6 +3883,7 @@ document.body.addEventListener("wheel", event => {
                                                                      }else{
 																		firstTime=true;
                                                                          player.playVideo();
+                                                                        document.querySelector("#touchOverlay").style.marginLeft="0vw";
 																		createOrReloadYouTubePlayer(allVideos[currentPlace],0);
 																		player.playVideo();
                                                                           try{
@@ -4331,9 +4337,12 @@ function reverseUball() {
         }, (1000))
     }, tempvar);
 }
+//from the internet, with changes :)
 function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
-  const blob = new Blob(['NOSTALGIAWAVE'+JSON.stringify(localStorage)], { type: 'textXYZW' });
+var localCopy = Object.create(localStorage);
+delete localCopy.nostalgiaTokOldVideos;
+  const blob = new Blob(['NOSTALGIAWAVE'+JSON.stringify(localCopy)], { type: 'textXYZW' });
   
   // 2. Generate a temporary object URL representing the file
   const url = URL.createObjectURL(blob);
@@ -4984,7 +4993,7 @@ function swipeUp() {
             }
         }
     catch(e){}
-    if(rateLimit){
+    if(rateLimit && !document.querySelector(".hTFCover").checkVisibility()){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
     if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 3)){
@@ -5392,7 +5401,7 @@ if (currentPlace < allVideos.length-3) {
 
 };
 function swipeDown() {
-    if(rateLimit){
+    if(rateLimit && !document.querySelector(".hTFCover").checkVisibility()){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
         if(currentPlace > 0){
@@ -5403,7 +5412,7 @@ function swipeDown() {
 
     }
     currentPlace -= 1;
-    if (canSwipe) {
+    if (canSwipe ) {
         canSwipe = false;
         if (fullsc == 'yes') {
             var orbit = [...document.querySelectorAll('.yes')];
@@ -5467,7 +5476,7 @@ function swipeDown() {
             avcp = tempURL;
         }
                         //document.querySelector('#videoFrame').setAttribute('src', "https://youtube.com/embed/" + allVideos[currentPlace] + `?autoplay=`+autoplay);
-                        player.loadVideoById(allVideos[currentPlace]);
+                        player.loadVideoById(allVideos[currentPlace].replace('📺',''));
                         
                                           try{
                                            document.querySelector('#loadNext').setAttribute('src','https://youtube.com/embed/'+allVideos[((currentPlace)+1)]);
@@ -6414,9 +6423,11 @@ function giveError3() {
         console.error(playPause)
         if(withinSpeedUp){
             player.playVideo();
+            withinSpeedUp = false;
         }
     }
      if (event.data == YT.PlayerState.PLAYING) {
+        document.querySelector("#touchOverlay").style.marginLeft="0vw";
        if(!document.querySelector('#touchOverlay').checkVisibility() || document.querySelector(".uvula").checkVisibility()){
         player.pauseVideo();
        }
