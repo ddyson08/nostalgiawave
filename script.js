@@ -4993,7 +4993,7 @@ function swipeUp() {
             }
         }
     catch(e){}
-    if(rateLimit && !document.querySelector(".hTFCover").checkVisibility()){
+    if(rateLimit && !document.querySelector(".hTFCover")){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
     if((currentPlace >= allVideos.length - 3) || (currentPlace >= allVideos.length - 3)){
@@ -5401,7 +5401,7 @@ if (currentPlace < allVideos.length-3) {
 
 };
 function swipeDown() {
-    if(rateLimit && !document.querySelector(".hTFCover").checkVisibility()){
+    if(rateLimit && !document.querySelector(".hTFCover")){
         setTimeout(function(){rateLimit = true}, 2000);
         rateLimit = false;
         if(currentPlace > 0){
@@ -6419,7 +6419,7 @@ function giveError3() {
           player.playVideo();
         }
     if (event.data == YT.PlayerState.PAUSED) {
-       
+       document.querySelector("#touchOverlay").style.marginLeft="100vw";
         console.error(playPause)
         if(withinSpeedUp){
             player.playVideo();
