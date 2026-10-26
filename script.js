@@ -1333,7 +1333,7 @@ function endFollow() {
         editModeAnimation();
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic')) {
-        //open
+        window.open("https://youtube.com/watch?v="+allVideos[currentPlace].replace('📺',''));
     }
     if (document.querySelector('#swDrag').parentNode == document.querySelector('#exitsw')) {
        //change name
@@ -1405,7 +1405,7 @@ fallbackShare(shareData);
 }
     }
     }
-    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstex2')){
+    if(document.querySelector('#swDrag').parentNode == document.querySelector('#creator') || document.querySelector('#swDrag').parentNode == document.querySelector('#swTopic') ||document.querySelector('#swDrag').parentNode == document.querySelector('#sharenos')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstCredits')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstFs')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstExit')|| document.querySelector('#swDrag').parentNode == document.querySelector('#nstShare') || document.querySelector('#swDrag').parentNode == document.querySelector('#exportData') || document.querySelector('#swDrag').parentNode == document.querySelector('#nstex2')){
     document.querySelector('#touchOverlay').style.display = "block";
     setTimeout(function () {
         document.querySelector('#touchOverlay').style.display = "block";
@@ -2574,15 +2574,7 @@ setTimeout(function(){
                // document.querySelector('#touchOverlay').style.display = "block";
             }
             if (closest[1] == "#swTopic") {
-                var BUTTON1 = document.createElement("a");
-        BUTTON1.setAttribute("href","https://youtube.com/watch?v=" + allVideos[currentPlace].replace('📺',''));
-        BUTTON1.setAttribute("target","_blank");
-        document.querySelector('#swDrag').append(BUTTON1);
-        
-        BUTTON1.style.textDecoration = "underline";
-        
-    
-                BUTTON1.innerText = allVideos[currentPlace];
+                document.querySelector('#swDrag').innerText = allVideos[currentPlace];
               
                // document.querySelector('#touchOverlay').style.display = "block";
             }
@@ -4344,7 +4336,7 @@ function reverseUball() {
 function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
 var localCopy = {};
-for(var key in Object.keys(localStorage)){
+for(var key of Object.keys(localStorage)){
     localCopy[key]=localStorage.getItem(key);
     }
  localCopy.nostalgiaTokOldVideos = "";
