@@ -4337,7 +4337,7 @@ function nstExport(){
   // 1. Create a Blob with your data and specify the MIME type
 var localCopy = {};
 for(var key of Object.keys(localStorage)){
-    if(!key.startsWith("nst_")){
+    if(!key.startsWith("nst_") && !key.startsWith("pag_") && !key.startsWith("next_")){
     localCopy[key]=localStorage.getItem(key);
     }
     }
